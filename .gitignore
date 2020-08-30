@@ -1,0 +1,14 @@
+/.gradle
+/.gradle/*
+/libs/
+/libs/*
+/files/
+/files/*
+/run/
+/build/
+/build/*
+/out
+/out/*
+/*.iws
+/*.ipr
+/*.iml
