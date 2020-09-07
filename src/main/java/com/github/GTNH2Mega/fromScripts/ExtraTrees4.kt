@@ -473,8 +473,8 @@ class ExtraTrees4 : Runnable {
         array402[n576]= item484.withTag(ExpandAnyDict.asData(hashMap484))
         array402[2]= null
         array401[n575]= array402
-        array401[1]= arrayOf(null, null, null)
-        array401[2]= arrayOf(null, null, null)
+        array401[1]= arrayOfNulls(3)
+        array401[2]= arrayOfNulls(3)
         recipes167.addShaped(withTag143, array401, null)
         val recipes168 = MineTweakerAPI.recipes
         val item485 = ItemBracketHandler.getItem("ExtraTrees:door", 572)
@@ -490,15 +490,15 @@ class ExtraTrees4 : Runnable {
         hashMap486["meta"] = ExpandInt.toData(60)
         array404[n578]= item486.withTag(ExpandAnyDict.asData(hashMap486))
         array403[n577]= array404
-        array403[1]= arrayOf(null, null, null)
-        array403[2]= arrayOf(null, null, null)
+        array403[1]= arrayOfNulls(3)
+        array403[2]= arrayOfNulls(3)
         recipes168.addShaped(withTag144, array403, null)
         val recipes169 = MineTweakerAPI.recipes
         val item487 = ItemBracketHandler.getItem("ExtraTrees:door", 828)
         val hashMap487 = HashMap<String, IData>()
         hashMap487["meta"] = ExpandInt.toData(828)
         val withTag145 = item487.withTag(ExpandAnyDict.asData(hashMap487))
-        val array405 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array405 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n579 = 1
         val array406 = arrayOfNulls<IIngredient>(3)
         val n580 = 0
@@ -508,7 +508,7 @@ class ExtraTrees4 : Runnable {
         array406[n580]= item488.withTag(ExpandAnyDict.asData(hashMap488))
         array406[2] = (null.also { array406[1] = it })
         array405[n579]= array406
-        array405[2]= arrayOf(null, null, null)
+        array405[2]= arrayOfNulls(3)
         recipes169.addShaped(withTag145, array405, null)
         val recipes170 = MineTweakerAPI.recipes
         val item489 = ItemBracketHandler.getItem("ExtraTrees:door", 61)
@@ -607,8 +607,8 @@ class ExtraTrees4 : Runnable {
         array416[n596]= item500.withTag(ExpandAnyDict.asData(hashMap500))
         array416[2]= null
         array415[n595]= array416
-        array415[1]= arrayOf(null, null, null)
-        array415[2]= arrayOf(null, null, null)
+        array415[1]= arrayOfNulls(3)
+        array415[2]= arrayOfNulls(3)
         recipes172.addShaped(withTag148, array415, null)
         val recipes173 = MineTweakerAPI.recipes
         val item501 = ItemBracketHandler.getItem("ExtraTrees:door", 573)
@@ -624,15 +624,15 @@ class ExtraTrees4 : Runnable {
         hashMap502["meta"] = ExpandInt.toData(61)
         array418[n598]= item502.withTag(ExpandAnyDict.asData(hashMap502))
         array417[n597]= array418
-        array417[1]= arrayOf(null, null, null)
-        array417[2]= arrayOf(null, null, null)
+        array417[1]= arrayOfNulls(3)
+        array417[2]= arrayOfNulls(3)
         recipes173.addShaped(withTag149, array417, null)
         val recipes174 = MineTweakerAPI.recipes
         val item503 = ItemBracketHandler.getItem("ExtraTrees:door", 829)
         val hashMap503 = HashMap<String, IData>()
         hashMap503["meta"] = ExpandInt.toData(829)
         val withTag150 = item503.withTag(ExpandAnyDict.asData(hashMap503))
-        val array419 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array419 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n599 = 1
         val array420 = arrayOfNulls<IIngredient>(3)
         val n600 = 0
@@ -642,7 +642,7 @@ class ExtraTrees4 : Runnable {
         array420[n600]= item504.withTag(ExpandAnyDict.asData(hashMap504))
         array420[2] = (null.also { array420[1] = it })
         array419[n599]= array420
-        array419[2]= arrayOf(null, null, null)
+        array419[2]= arrayOfNulls(3)
         recipes174.addShaped(withTag150, array419, null)
         val recipes175 = MineTweakerAPI.recipes
         val item505 = ItemBracketHandler.getItem("ExtraTrees:door", 62)
@@ -741,8 +741,8 @@ class ExtraTrees4 : Runnable {
         array430[n616]= item516.withTag(ExpandAnyDict.asData(hashMap516))
         array430[2]= null
         array429[n615]= array430
-        array429[1]= arrayOf(null, null, null)
-        array429[2]= arrayOf(null, null, null)
+        array429[1]= arrayOfNulls(3)
+        array429[2]= arrayOfNulls(3)
         recipes177.addShaped(withTag153, array429, null)
         val recipes178 = MineTweakerAPI.recipes
         val item517 = ItemBracketHandler.getItem("ExtraTrees:door", 574)
@@ -758,15 +758,15 @@ class ExtraTrees4 : Runnable {
         hashMap518["meta"] = ExpandInt.toData(62)
         array432[n618]= item518.withTag(ExpandAnyDict.asData(hashMap518))
         array431[n617]= array432
-        array431[1]= arrayOf(null, null, null)
-        array431[2]= arrayOf(null, null, null)
+        array431[1]= arrayOfNulls(3)
+        array431[2]= arrayOfNulls(3)
         recipes178.addShaped(withTag154, array431, null)
         val recipes179 = MineTweakerAPI.recipes
         val item519 = ItemBracketHandler.getItem("ExtraTrees:door", 830)
         val hashMap519 = HashMap<String, IData>()
         hashMap519["meta"] = ExpandInt.toData(830)
         val withTag155 = item519.withTag(ExpandAnyDict.asData(hashMap519))
-        val array433 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array433 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n619 = 1
         val array434 = arrayOfNulls<IIngredient>(3)
         val n620 = 0
@@ -776,7 +776,7 @@ class ExtraTrees4 : Runnable {
         array434[n620]= item520.withTag(ExpandAnyDict.asData(hashMap520))
         array434[2] = (null.also { array434[1]= it })
         array433[n619]= array434
-        array433[2]= arrayOf(null, null, null)
+        array433[2]= arrayOfNulls(3)
         recipes179.addShaped(withTag155, array433, null)
         val recipes180 = MineTweakerAPI.recipes
         val item521 = ItemBracketHandler.getItem("ExtraTrees:door", 63)
@@ -875,8 +875,8 @@ class ExtraTrees4 : Runnable {
         array444[n636]= item532.withTag(ExpandAnyDict.asData(hashMap532))
         array444[2]= null
         array443[n635]= array444
-        array443[1]= arrayOf(null, null, null)
-        array443[2]= arrayOf(null, null, null)
+        array443[1]= arrayOfNulls(3)
+        array443[2]= arrayOfNulls(3)
         recipes182.addShaped(withTag158, array443, null)
         val recipes183 = MineTweakerAPI.recipes
         val item533 = ItemBracketHandler.getItem("ExtraTrees:door", 575)
@@ -892,15 +892,15 @@ class ExtraTrees4 : Runnable {
         hashMap534["meta"] = ExpandInt.toData(63)
         array446[n638]= item534.withTag(ExpandAnyDict.asData(hashMap534))
         array445[n637]= array446
-        array445[1]= arrayOf(null, null, null)
-        array445[2]= arrayOf(null, null, null)
+        array445[1]= arrayOfNulls(3)
+        array445[2]= arrayOfNulls(3)
         recipes183.addShaped(withTag159, array445, null)
         val recipes184 = MineTweakerAPI.recipes
         val item535 = ItemBracketHandler.getItem("ExtraTrees:door", 831)
         val hashMap535 = HashMap<String, IData>()
         hashMap535["meta"] = ExpandInt.toData(831)
         val withTag160 = item535.withTag(ExpandAnyDict.asData(hashMap535))
-        val array447 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array447 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n639 = 1
         val array448 = arrayOfNulls<IIngredient>(3)
         val n640 = 0
@@ -910,7 +910,7 @@ class ExtraTrees4 : Runnable {
         array448[n640]= item536.withTag(ExpandAnyDict.asData(hashMap536))
         array448[2] = (null.also { array448[1]= it })
         array447[n639]= array448
-        array447[2]= arrayOf(null, null, null)
+        array447[2]= arrayOfNulls(3)
         recipes184.addShaped(withTag160, array447, null)
         val recipes185 = MineTweakerAPI.recipes
         val item537 = ItemBracketHandler.getItem("ExtraTrees:door", 64)
@@ -1009,8 +1009,8 @@ class ExtraTrees4 : Runnable {
         array458[n656]= item548.withTag(ExpandAnyDict.asData(hashMap548))
         array458[2]= null
         array457[n655]= array458
-        array457[1]= arrayOf(null, null, null)
-        array457[2]= arrayOf(null, null, null)
+        array457[1]= arrayOfNulls(3)
+        array457[2]= arrayOfNulls(3)
         recipes187.addShaped(withTag163, array457, null)
         val recipes188 = MineTweakerAPI.recipes
         val item549 = ItemBracketHandler.getItem("ExtraTrees:door", 576)
@@ -1026,15 +1026,15 @@ class ExtraTrees4 : Runnable {
         hashMap550["meta"] = ExpandInt.toData(64)
         array460[n658]= item550.withTag(ExpandAnyDict.asData(hashMap550))
         array459[n657]= array460
-        array459[1]= arrayOf(null, null, null)
-        array459[2]= arrayOf(null, null, null)
+        array459[1]= arrayOfNulls(3)
+        array459[2]= arrayOfNulls(3)
         recipes188.addShaped(withTag164, array459, null)
         val recipes189 = MineTweakerAPI.recipes
         val item551 = ItemBracketHandler.getItem("ExtraTrees:door", 832)
         val hashMap551 = HashMap<String, IData>()
         hashMap551["meta"] = ExpandInt.toData(832)
         val withTag165 = item551.withTag(ExpandAnyDict.asData(hashMap551))
-        val array461 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array461 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n659 = 1
         val array462 = arrayOfNulls<IIngredient>(3)
         val n660 = 0
@@ -1044,7 +1044,7 @@ class ExtraTrees4 : Runnable {
         array462[n660]= item552.withTag(ExpandAnyDict.asData(hashMap552))
         array462[2] = (null.also { array462[1]= it })
         array461[n659]= array462
-        array461[2]= arrayOf(null, null, null)
+        array461[2]= arrayOfNulls(3)
         recipes189.addShaped(withTag165, array461, null)
         val recipes190 = MineTweakerAPI.recipes
         val item553 = ItemBracketHandler.getItem("ExtraTrees:door", 65)
@@ -1143,8 +1143,8 @@ class ExtraTrees4 : Runnable {
         array472[n676]= item564.withTag(ExpandAnyDict.asData(hashMap564))
         array472[2]= null
         array471[n675]= array472
-        array471[1]= arrayOf(null, null, null)
-        array471[2]= arrayOf(null, null, null)
+        array471[1]= arrayOfNulls(3)
+        array471[2]= arrayOfNulls(3)
         recipes192.addShaped(withTag168, array471, null)
         val recipes193 = MineTweakerAPI.recipes
         val item565 = ItemBracketHandler.getItem("ExtraTrees:door", 577)
@@ -1160,15 +1160,15 @@ class ExtraTrees4 : Runnable {
         hashMap566["meta"] = ExpandInt.toData(65)
         array474[n678]= item566.withTag(ExpandAnyDict.asData(hashMap566))
         array473[n677]= array474
-        array473[1]= arrayOf(null, null, null)
-        array473[2]= arrayOf(null, null, null)
+        array473[1]= arrayOfNulls(3)
+        array473[2]= arrayOfNulls(3)
         recipes193.addShaped(withTag169, array473, null)
         val recipes194 = MineTweakerAPI.recipes
         val item567 = ItemBracketHandler.getItem("ExtraTrees:door", 833)
         val hashMap567 = HashMap<String, IData>()
         hashMap567["meta"] = ExpandInt.toData(833)
         val withTag170 = item567.withTag(ExpandAnyDict.asData(hashMap567))
-        val array475 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array475 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n679 = 1
         val array476 = arrayOfNulls<IIngredient>(3)
         val n680 = 0
@@ -1178,7 +1178,7 @@ class ExtraTrees4 : Runnable {
         array476[n680]= item568.withTag(ExpandAnyDict.asData(hashMap568))
         array476[2] = (null.also { array476[1]= it })
         array475[n679]= array476
-        array475[2]= arrayOf(null, null, null)
+        array475[2]= arrayOfNulls(3)
         recipes194.addShaped(withTag170, array475, null)
         val recipes195 = MineTweakerAPI.recipes
         val item569 = ItemBracketHandler.getItem("ExtraTrees:door", 66)
@@ -1277,8 +1277,8 @@ class ExtraTrees4 : Runnable {
         array486[n696]= item580.withTag(ExpandAnyDict.asData(hashMap580))
         array486[2]= null
         array485[n695]= array486
-        array485[1]= arrayOf(null, null, null)
-        array485[2]= arrayOf(null, null, null)
+        array485[1]= arrayOfNulls(3)
+        array485[2]= arrayOfNulls(3)
         recipes197.addShaped(withTag173, array485, null)
         val recipes198 = MineTweakerAPI.recipes
         val item581 = ItemBracketHandler.getItem("ExtraTrees:door", 578)
@@ -1294,15 +1294,15 @@ class ExtraTrees4 : Runnable {
         hashMap582["meta"] = ExpandInt.toData(66)
         array488[n698]= item582.withTag(ExpandAnyDict.asData(hashMap582))
         array487[n697]= array488
-        array487[1]= arrayOf(null, null, null)
-        array487[2]= arrayOf(null, null, null)
+        array487[1]= arrayOfNulls(3)
+        array487[2]= arrayOfNulls(3)
         recipes198.addShaped(withTag174, array487, null)
         val recipes199 = MineTweakerAPI.recipes
         val item583 = ItemBracketHandler.getItem("ExtraTrees:door", 834)
         val hashMap583 = HashMap<String, IData>()
         hashMap583["meta"] = ExpandInt.toData(834)
         val withTag175 = item583.withTag(ExpandAnyDict.asData(hashMap583))
-        val array489 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array489 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n699 = 1
         val array490 = arrayOfNulls<IIngredient>(3)
         val n700 = 0
@@ -1312,7 +1312,7 @@ class ExtraTrees4 : Runnable {
         array490[n700]= item584.withTag(ExpandAnyDict.asData(hashMap584))
         array490[2] = (null.also { array490[1]= it })
         array489[n699]= array490
-        array489[2]= arrayOf(null, null, null)
+        array489[2]= arrayOfNulls(3)
         recipes199.addShaped(withTag175, array489, null)
         val recipes200 = MineTweakerAPI.recipes
         val item585 = ItemBracketHandler.getItem("ExtraTrees:door", 128)
@@ -1339,8 +1339,8 @@ class ExtraTrees4 : Runnable {
         array492[n702]= item588.withTag(ExpandAnyDict.asData(hashMap588))
         array492[2]= null
         array491[n701]= array492
-        array491[1]= arrayOf(null, null, null)
-        array491[2]= arrayOf(null, null, null)
+        array491[1]= arrayOfNulls(3)
+        array491[2]= arrayOfNulls(3)
         recipes202.addShaped(withTag176, array491, null)
         val recipes203 = MineTweakerAPI.recipes
         val item589 = ItemBracketHandler.getItem("ExtraTrees:door", 640)
@@ -1356,15 +1356,15 @@ class ExtraTrees4 : Runnable {
         hashMap590["meta"] = ExpandInt.toData(128)
         array494[n704]= item590.withTag(ExpandAnyDict.asData(hashMap590))
         array493[n703]= array494
-        array493[1]= arrayOf(null, null, null)
-        array493[2]= arrayOf(null, null, null)
+        array493[1]= arrayOfNulls(3)
+        array493[2]= arrayOfNulls(3)
         recipes203.addShaped(withTag177, array493, null)
         val recipes204 = MineTweakerAPI.recipes
         val item591 = ItemBracketHandler.getItem("ExtraTrees:door", 896)
         val hashMap591 = HashMap<String, IData>()
         hashMap591["meta"] = ExpandInt.toData(896)
         val withTag178 = item591.withTag(ExpandAnyDict.asData(hashMap591))
-        val array495 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array495 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n705 = 1
         val array496 = arrayOfNulls<IIngredient>(3)
         val n706 = 0
@@ -1374,7 +1374,7 @@ class ExtraTrees4 : Runnable {
         array496[n706]= item592.withTag(ExpandAnyDict.asData(hashMap592))
         array496[2] = (null.also { array496[1]= it })
         array495[n705]= array496
-        array495[2]= arrayOf(null, null, null)
+        array495[2]= arrayOfNulls(3)
         recipes204.addShaped(withTag178, array495, null)
         val recipes205 = MineTweakerAPI.recipes
         val item593 = ItemBracketHandler.getItem("ExtraTrees:door", 129)
@@ -1401,8 +1401,8 @@ class ExtraTrees4 : Runnable {
         array498[n708]= item596.withTag(ExpandAnyDict.asData(hashMap596))
         array498[2]= null
         array497[n707]= array498
-        array497[1]= arrayOf(null, null, null)
-        array497[2]= arrayOf(null, null, null)
+        array497[1]= arrayOfNulls(3)
+        array497[2]= arrayOfNulls(3)
         recipes207.addShaped(withTag179, array497, null)
         val recipes208 = MineTweakerAPI.recipes
         val item597 = ItemBracketHandler.getItem("ExtraTrees:door", 641)
@@ -1418,15 +1418,15 @@ class ExtraTrees4 : Runnable {
         hashMap598["meta"] = ExpandInt.toData(129)
         array500[n710]= item598.withTag(ExpandAnyDict.asData(hashMap598))
         array499[n709]= array500
-        array499[1]= arrayOf(null, null, null)
-        array499[2]= arrayOf(null, null, null)
+        array499[1]= arrayOfNulls(3)
+        array499[2]= arrayOfNulls(3)
         recipes208.addShaped(withTag180, array499, null)
         val recipes209 = MineTweakerAPI.recipes
         val item599 = ItemBracketHandler.getItem("ExtraTrees:door", 897)
         val hashMap599 = HashMap<String, IData>()
         hashMap599["meta"] = ExpandInt.toData(897)
         val withTag181 = item599.withTag(ExpandAnyDict.asData(hashMap599))
-        val array501 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array501 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n711 = 1
         val array502 = arrayOfNulls<IIngredient>(3)
         val n712 = 0
@@ -1436,7 +1436,7 @@ class ExtraTrees4 : Runnable {
         array502[n712]= item600.withTag(ExpandAnyDict.asData(hashMap600))
         array502[2] = (null.also { array502[1]= it })
         array501[n711]= array502
-        array501[2]= arrayOf(null, null, null)
+        array501[2]= arrayOfNulls(3)
         recipes209.addShaped(withTag181, array501, null)
         val recipes210 = MineTweakerAPI.recipes
         val item601 = ItemBracketHandler.getItem("ExtraTrees:door", 130)
@@ -1463,8 +1463,8 @@ class ExtraTrees4 : Runnable {
         array504[n714]= item604.withTag(ExpandAnyDict.asData(hashMap604))
         array504[2]= null
         array503[n713]= array504
-        array503[1]= arrayOf(null, null, null)
-        array503[2]= arrayOf(null, null, null)
+        array503[1]= arrayOfNulls(3)
+        array503[2]= arrayOfNulls(3)
         recipes212.addShaped(withTag182, array503, null)
         val recipes213 = MineTweakerAPI.recipes
         val item605 = ItemBracketHandler.getItem("ExtraTrees:door", 642)
@@ -1480,15 +1480,15 @@ class ExtraTrees4 : Runnable {
         hashMap606["meta"] = ExpandInt.toData(130)
         array506[n716]= item606.withTag(ExpandAnyDict.asData(hashMap606))
         array505[n715]= array506
-        array505[1]= arrayOf(null, null, null)
-        array505[2]= arrayOf(null, null, null)
+        array505[1]= arrayOfNulls(3)
+        array505[2]= arrayOfNulls(3)
         recipes213.addShaped(withTag183, array505, null)
         val recipes214 = MineTweakerAPI.recipes
         val item607 = ItemBracketHandler.getItem("ExtraTrees:door", 898)
         val hashMap607 = HashMap<String, IData>()
         hashMap607["meta"] = ExpandInt.toData(898)
         val withTag184 = item607.withTag(ExpandAnyDict.asData(hashMap607))
-        val array507 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array507 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n717 = 1
         val array508 = arrayOfNulls<IIngredient>(3)
         val n718 = 0
@@ -1498,7 +1498,7 @@ class ExtraTrees4 : Runnable {
         array508[n718]= item608.withTag(ExpandAnyDict.asData(hashMap608))
         array508[2] = (null.also { array508[1]= it })
         array507[n717]= array508
-        array507[2]= arrayOf(null, null, null)
+        array507[2]= arrayOfNulls(3)
         recipes214.addShaped(withTag184, array507, null)
         val recipes215 = MineTweakerAPI.recipes
         val item609 = ItemBracketHandler.getItem("ExtraTrees:door", 131)
@@ -1525,8 +1525,8 @@ class ExtraTrees4 : Runnable {
         array510[n720]= item612.withTag(ExpandAnyDict.asData(hashMap612))
         array510[2]= null
         array509[n719]= array510
-        array509[1]= arrayOf(null, null, null)
-        array509[2]= arrayOf(null, null, null)
+        array509[1]= arrayOfNulls(3)
+        array509[2]= arrayOfNulls(3)
         recipes217.addShaped(withTag185, array509, null)
         val recipes218 = MineTweakerAPI.recipes
         val item613 = ItemBracketHandler.getItem("ExtraTrees:door", 643)
@@ -1542,15 +1542,15 @@ class ExtraTrees4 : Runnable {
         hashMap614["meta"] = ExpandInt.toData(131)
         array512[n722]= item614.withTag(ExpandAnyDict.asData(hashMap614))
         array511[n721]= array512
-        array511[1]= arrayOf(null, null, null)
-        array511[2]= arrayOf(null, null, null)
+        array511[1]= arrayOfNulls(3)
+        array511[2]= arrayOfNulls(3)
         recipes218.addShaped(withTag186, array511, null)
         val recipes219 = MineTweakerAPI.recipes
         val item615 = ItemBracketHandler.getItem("ExtraTrees:door", 899)
         val hashMap615 = HashMap<String, IData>()
         hashMap615["meta"] = ExpandInt.toData(899)
         val withTag187 = item615.withTag(ExpandAnyDict.asData(hashMap615))
-        val array513 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array513 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n723 = 1
         val array514 = arrayOfNulls<IIngredient>(3)
         val n724 = 0
@@ -1560,7 +1560,7 @@ class ExtraTrees4 : Runnable {
         array514[n724]= item616.withTag(ExpandAnyDict.asData(hashMap616))
         array514[2] = (null.also { array514[1]= it })
         array513[n723]= array514
-        array513[2]= arrayOf(null, null, null)
+        array513[2]= arrayOfNulls(3)
         recipes219.addShaped(withTag187, array513, null)
         val recipes220 = MineTweakerAPI.recipes
         val item617 = ItemBracketHandler.getItem("ExtraTrees:door", 132)
@@ -1587,8 +1587,8 @@ class ExtraTrees4 : Runnable {
         array516[n726]= item620.withTag(ExpandAnyDict.asData(hashMap620))
         array516[2]= null
         array515[n725]= array516
-        array515[1]= arrayOf(null, null, null)
-        array515[2]= arrayOf(null, null, null)
+        array515[1]= arrayOfNulls(3)
+        array515[2]= arrayOfNulls(3)
         recipes222.addShaped(withTag188, array515, null)
         val recipes223 = MineTweakerAPI.recipes
         val item621 = ItemBracketHandler.getItem("ExtraTrees:door", 644)
@@ -1604,15 +1604,15 @@ class ExtraTrees4 : Runnable {
         hashMap622["meta"] = ExpandInt.toData(132)
         array518[n728]= item622.withTag(ExpandAnyDict.asData(hashMap622))
         array517[n727]= array518
-        array517[1]= arrayOf(null, null, null)
-        array517[2]= arrayOf(null, null, null)
+        array517[1]= arrayOfNulls(3)
+        array517[2]= arrayOfNulls(3)
         recipes223.addShaped(withTag189, array517, null)
         val recipes224 = MineTweakerAPI.recipes
         val item623 = ItemBracketHandler.getItem("ExtraTrees:door", 900)
         val hashMap623 = HashMap<String, IData>()
         hashMap623["meta"] = ExpandInt.toData(900)
         val withTag190 = item623.withTag(ExpandAnyDict.asData(hashMap623))
-        val array519 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array519 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n729 = 1
         val array520 = arrayOfNulls<IIngredient>(3)
         val n730 = 0
@@ -1622,7 +1622,7 @@ class ExtraTrees4 : Runnable {
         array520[n730]= item624.withTag(ExpandAnyDict.asData(hashMap624))
         array520[2] = (null.also { array520[1]= it })
         array519[n729]= array520
-        array519[2]= arrayOf(null, null, null)
+        array519[2]= arrayOfNulls(3)
         recipes224.addShaped(withTag190, array519, null)
         val recipes225 = MineTweakerAPI.recipes
         val item625 = ItemBracketHandler.getItem("ExtraTrees:door", 133)
@@ -1649,8 +1649,8 @@ class ExtraTrees4 : Runnable {
         array522[n732]= item628.withTag(ExpandAnyDict.asData(hashMap628))
         array522[2]= null
         array521[n731]= array522
-        array521[1]= arrayOf(null, null, null)
-        array521[2]= arrayOf(null, null, null)
+        array521[1]= arrayOfNulls(3)
+        array521[2]= arrayOfNulls(3)
         recipes227.addShaped(withTag191, array521, null)
         val recipes228 = MineTweakerAPI.recipes
         val item629 = ItemBracketHandler.getItem("ExtraTrees:door", 645)
@@ -1666,15 +1666,15 @@ class ExtraTrees4 : Runnable {
         hashMap630["meta"] = ExpandInt.toData(133)
         array524[n734]= item630.withTag(ExpandAnyDict.asData(hashMap630))
         array523[n733]= array524
-        array523[1]= arrayOf(null, null, null)
-        array523[2]= arrayOf(null, null, null)
+        array523[1]= arrayOfNulls(3)
+        array523[2]= arrayOfNulls(3)
         recipes228.addShaped(withTag192, array523, null)
         val recipes229 = MineTweakerAPI.recipes
         val item631 = ItemBracketHandler.getItem("ExtraTrees:door", 901)
         val hashMap631 = HashMap<String, IData>()
         hashMap631["meta"] = ExpandInt.toData(901)
         val withTag193 = item631.withTag(ExpandAnyDict.asData(hashMap631))
-        val array525 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array525 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n735 = 1
         val array526 = arrayOfNulls<IIngredient>(3)
         val n736 = 0
@@ -1684,7 +1684,7 @@ class ExtraTrees4 : Runnable {
         array526[n736]= item632.withTag(ExpandAnyDict.asData(hashMap632))
         array526[2] = (null.also { array526[1]= it })
         array525[n735]= array526
-        array525[2]= arrayOf(null, null, null)
+        array525[2]= arrayOfNulls(3)
         recipes229.addShaped(withTag193, array525, null)
         val recipes230 = MineTweakerAPI.recipes
         val item633 = ItemBracketHandler.getItem("ExtraTrees:door", 134)
@@ -1711,8 +1711,8 @@ class ExtraTrees4 : Runnable {
         array528[n738]= item636.withTag(ExpandAnyDict.asData(hashMap636))
         array528[2]= null
         array527[n737]= array528
-        array527[1]= arrayOf(null, null, null)
-        array527[2]= arrayOf(null, null, null)
+        array527[1]= arrayOfNulls(3)
+        array527[2]= arrayOfNulls(3)
         recipes232.addShaped(withTag194, array527, null)
         val recipes233 = MineTweakerAPI.recipes
         val item637 = ItemBracketHandler.getItem("ExtraTrees:door", 646)
@@ -1728,15 +1728,15 @@ class ExtraTrees4 : Runnable {
         hashMap638["meta"] = ExpandInt.toData(134)
         array530[n740]= item638.withTag(ExpandAnyDict.asData(hashMap638))
         array529[n739]= array530
-        array529[1]= arrayOf(null, null, null)
-        array529[2]= arrayOf(null, null, null)
+        array529[1]= arrayOfNulls(3)
+        array529[2]= arrayOfNulls(3)
         recipes233.addShaped(withTag195, array529, null)
         val recipes234 = MineTweakerAPI.recipes
         val item639 = ItemBracketHandler.getItem("ExtraTrees:door", 902)
         val hashMap639 = HashMap<String, IData>()
         hashMap639["meta"] = ExpandInt.toData(902)
         val withTag196 = item639.withTag(ExpandAnyDict.asData(hashMap639))
-        val array531 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array531 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n741 = 1
         val array532 = arrayOfNulls<IIngredient>(3)
         val n742 = 0
@@ -1746,7 +1746,7 @@ class ExtraTrees4 : Runnable {
         array532[n742]= item640.withTag(ExpandAnyDict.asData(hashMap640))
         array532[2] = (null.also { array532[1]= it })
         array531[n741]= array532
-        array531[2]= arrayOf(null, null, null)
+        array531[2]= arrayOfNulls(3)
         recipes234.addShaped(withTag196, array531, null)
         val recipes235 = MineTweakerAPI.recipes
         val item641 = ItemBracketHandler.getItem("ExtraTrees:door", 135)
@@ -1772,8 +1772,8 @@ class ExtraTrees4 : Runnable {
         array108[n156]= item148.withTag(ExpandAnyDict.asData(hashMap148))
         array108[2]= null
         array107[n155]= array108
-        array107[1]= arrayOf(null, null, null)
-        array107[2]= arrayOf(null, null, null)
+        array107[1]= arrayOfNulls(3)
+        array107[2]= arrayOfNulls(3)
         recipes62.addShaped(withTag38, array107, null)
         val recipes63 = MineTweakerAPI.recipes
         val item149 = ItemBracketHandler.getItem("ExtraTrees:door", 551)
@@ -1789,15 +1789,15 @@ class ExtraTrees4 : Runnable {
         hashMap150["meta"] = ExpandInt.toData(39)
         array110[n158]= item150.withTag(ExpandAnyDict.asData(hashMap150))
         array109[n157]= array110
-        array109[1]= arrayOf(null, null, null)
-        array109[2]= arrayOf(null, null, null)
+        array109[1]= arrayOfNulls(3)
+        array109[2]= arrayOfNulls(3)
         recipes63.addShaped(withTag39, array109, null)
         val recipes64 = MineTweakerAPI.recipes
         val item151 = ItemBracketHandler.getItem("ExtraTrees:door", 807)
         val hashMap151 = HashMap<String, IData>()
         hashMap151["meta"] = ExpandInt.toData(807)
         val withTag40 = item151.withTag(ExpandAnyDict.asData(hashMap151))
-        val array111 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array111 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n159 = 1
         val array112 = arrayOfNulls<IIngredient>(3)
         val n160 = 0
@@ -1807,7 +1807,7 @@ class ExtraTrees4 : Runnable {
         array112[n160]= item152.withTag(ExpandAnyDict.asData(hashMap152))
         array112[2] = (null.also { array112[1]= it })
         array111[n159]= array112
-        array111[2]= arrayOf(null, null, null)
+        array111[2]= arrayOfNulls(3)
         recipes64.addShaped(withTag40, array111, null)
         val recipes65 = MineTweakerAPI.recipes
         val item153 = ItemBracketHandler.getItem("ExtraTrees:door", 40)
@@ -1906,8 +1906,8 @@ class ExtraTrees4 : Runnable {
         array122[n176]= item164.withTag(ExpandAnyDict.asData(hashMap164))
         array122[2]= null
         array121[n175]= array122
-        array121[1]= arrayOf(null, null, null)
-        array121[2]= arrayOf(null, null, null)
+        array121[1]= arrayOfNulls(3)
+        array121[2]= arrayOfNulls(3)
         recipes67.addShaped(withTag43, array121, null)
         val recipes68 = MineTweakerAPI.recipes
         val item165 = ItemBracketHandler.getItem("ExtraTrees:door", 552)
@@ -1923,15 +1923,15 @@ class ExtraTrees4 : Runnable {
         hashMap166["meta"] = ExpandInt.toData(40)
         array124[n178]= item166.withTag(ExpandAnyDict.asData(hashMap166))
         array123[n177]= array124
-        array123[1]= arrayOf(null, null, null)
-        array123[2]= arrayOf(null, null, null)
+        array123[1]= arrayOfNulls(3)
+        array123[2]= arrayOfNulls(3)
         recipes68.addShaped(withTag44, array123, null)
         val recipes69 = MineTweakerAPI.recipes
         val item167 = ItemBracketHandler.getItem("ExtraTrees:door", 808)
         val hashMap167 = HashMap<String, IData>()
         hashMap167["meta"] = ExpandInt.toData(808)
         val withTag45 = item167.withTag(ExpandAnyDict.asData(hashMap167))
-        val array125 = arrayOf<Array<IIngredient?>?>(arrayOf(null, null, null), null, null)
+        val array125 = arrayOf<Array<IIngredient?>?>(arrayOfNulls(3), null, null)
         val n179 = 1
         val array126 = arrayOfNulls<IIngredient>(3)
         val n180 = 0
@@ -1941,7 +1941,7 @@ class ExtraTrees4 : Runnable {
         array126[n180]= item168.withTag(ExpandAnyDict.asData(hashMap168))
         array126[2] = (null.also { array126[1]= it })
         array125[n179]= array126
-        array125[2]= arrayOf(null, null, null)
+        array125[2]= arrayOfNulls(3)
         recipes69.addShaped(withTag45, array125, null)
         val recipes70 = MineTweakerAPI.recipes
         val item169 = ItemBracketHandler.getItem("ExtraTrees:door", 41)
@@ -2032,7 +2032,7 @@ class ExtraTrees4 : Runnable {
         val withTag48: IItemStack = item179.withTag(ExpandAnyDict.asData(hashMap179))
         val array135: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n195 = 0
-        val array136: Array<IIngredient?> = arrayOf(null, null, null)
+        val array136: Array<IIngredient?> = arrayOfNulls(3)
         val n196 = 1
         val item180: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 41)
         val hashMap180: HashMap<String, IData> = HashMap<String, IData>()
@@ -2040,8 +2040,8 @@ class ExtraTrees4 : Runnable {
         array136[n196]= item180.withTag(ExpandAnyDict.asData(hashMap180))
         array136[2]= null
         array135[n195]= array136
-        array135[1]= arrayOf(null, null, null)
-        array135[2]= arrayOf(null, null, null)
+        array135[1]= arrayOfNulls(3)
+        array135[2]= arrayOfNulls(3)
         recipes72.addShaped(withTag48, array135, null)
         val recipes73: IRecipeManager = MineTweakerAPI.recipes
         val item181: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 553)
@@ -2050,22 +2050,22 @@ class ExtraTrees4 : Runnable {
         val withTag49: IItemStack = item181.withTag(ExpandAnyDict.asData(hashMap181))
         val array137: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n197 = 0
-        val array138: Array<IIngredient?> = arrayOf(null, null, null)
+        val array138: Array<IIngredient?> = arrayOfNulls(3)
         val n198 = 2
         val item182: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 41)
         val hashMap182: HashMap<String, IData> = HashMap<String, IData>()
         hashMap182["meta"] = ExpandInt.toData(41)
         array138[n198]= item182.withTag(ExpandAnyDict.asData(hashMap182))
         array137[n197]= array138
-        array137[1]= arrayOf(null, null, null)
-        array137[2]= arrayOf(null, null, null)
+        array137[1]= arrayOfNulls(3)
+        array137[2]= arrayOfNulls(3)
         recipes73.addShaped(withTag49, array137, null)
         val recipes74: IRecipeManager = MineTweakerAPI.recipes
         val item183: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 809)
         val hashMap183: HashMap<String, IData> = HashMap<String, IData>()
         hashMap183["meta"] = ExpandInt.toData(809)
         val withTag50: IItemStack = item183.withTag(ExpandAnyDict.asData(hashMap183))
-        val array139: Array<Array<IIngredient?>?> = arrayOf(arrayOf(null, null, null), null, null)
+        val array139: Array<Array<IIngredient?>?> = arrayOf(arrayOfNulls(3), null, null)
         val n199 = 1
         val array140: Array<IIngredient?> = arrayOfNulls(3)
         val n200 = 0
@@ -2075,7 +2075,7 @@ class ExtraTrees4 : Runnable {
         array140[n200]= item184.withTag(ExpandAnyDict.asData(hashMap184))
         array140[2] = (null.also { array140[1]= it })
         array139[n199]= array140
-        array139[2]= arrayOf(null, null, null)
+        array139[2]= arrayOfNulls(3)
         recipes74.addShaped(withTag50, array139, null)
         val recipes75: IRecipeManager = MineTweakerAPI.recipes
         val item185: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 42)
@@ -2166,7 +2166,7 @@ class ExtraTrees4 : Runnable {
         val withTag53: IItemStack = item195.withTag(ExpandAnyDict.asData(hashMap195))
         val array149: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n215 = 0
-        val array150: Array<IIngredient?> = arrayOf(null, null, null)
+        val array150: Array<IIngredient?> = arrayOfNulls(3)
         val n216 = 1
         val item196: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 42)
         val hashMap196: HashMap<String, IData> = HashMap<String, IData>()
@@ -2174,8 +2174,8 @@ class ExtraTrees4 : Runnable {
         array150[n216]= item196.withTag(ExpandAnyDict.asData(hashMap196))
         array150[2]= null
         array149[n215]= array150
-        array149[1]= arrayOf(null, null, null)
-        array149[2]= arrayOf(null, null, null)
+        array149[1]= arrayOfNulls(3)
+        array149[2]= arrayOfNulls(3)
         recipes77.addShaped(withTag53, array149, null)
         val recipes78: IRecipeManager = MineTweakerAPI.recipes
         val item197: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 554)
@@ -2184,22 +2184,22 @@ class ExtraTrees4 : Runnable {
         val withTag54: IItemStack = item197.withTag(ExpandAnyDict.asData(hashMap197))
         val array151: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n217 = 0
-        val array152: Array<IIngredient?> = arrayOf(null, null, null)
+        val array152: Array<IIngredient?> = arrayOfNulls(3)
         val n218 = 2
         val item198: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 42)
         val hashMap198: HashMap<String, IData> = HashMap<String, IData>()
         hashMap198["meta"] = ExpandInt.toData(42)
         array152[n218]= item198.withTag(ExpandAnyDict.asData(hashMap198))
         array151[n217]= array152
-        array151[1]= arrayOf(null, null, null)
-        array151[2]= arrayOf(null, null, null)
+        array151[1]= arrayOfNulls(3)
+        array151[2]= arrayOfNulls(3)
         recipes78.addShaped(withTag54, array151, null)
         val recipes79: IRecipeManager = MineTweakerAPI.recipes
         val item199: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 810)
         val hashMap199: HashMap<String, IData> = HashMap<String, IData>()
         hashMap199["meta"] = ExpandInt.toData(810)
         val withTag55: IItemStack = item199.withTag(ExpandAnyDict.asData(hashMap199))
-        val array153: Array<Array<IIngredient?>?> = arrayOf(arrayOf(null, null, null), null, null)
+        val array153: Array<Array<IIngredient?>?> = arrayOf(arrayOfNulls(3), null, null)
         val n219 = 1
         val array154: Array<IIngredient?> = arrayOfNulls(3)
         val n220 = 0
@@ -2209,7 +2209,7 @@ class ExtraTrees4 : Runnable {
         array154[n220]= item200.withTag(ExpandAnyDict.asData(hashMap200))
         array154[2] = (null.also { array154[1]= it })
         array153[n219]= array154
-        array153[2]= arrayOf(null, null, null)
+        array153[2]= arrayOfNulls(3)
         recipes79.addShaped(withTag55, array153, null)
         val recipes80: IRecipeManager = MineTweakerAPI.recipes
         val item201: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 43)
@@ -2300,7 +2300,7 @@ class ExtraTrees4 : Runnable {
         val withTag58: IItemStack = item211.withTag(ExpandAnyDict.asData(hashMap211))
         val array163: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n235 = 0
-        val array164: Array<IIngredient?> = arrayOf(null, null, null)
+        val array164: Array<IIngredient?> = arrayOfNulls(3)
         val n236 = 1
         val item212: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 43)
         val hashMap212: HashMap<String, IData> = HashMap<String, IData>()
@@ -2308,8 +2308,8 @@ class ExtraTrees4 : Runnable {
         array164[n236]= item212.withTag(ExpandAnyDict.asData(hashMap212))
         array164[2]= null
         array163[n235]= array164
-        array163[1]= arrayOf(null, null, null)
-        array163[2]= arrayOf(null, null, null)
+        array163[1]= arrayOfNulls(3)
+        array163[2]= arrayOfNulls(3)
         recipes82.addShaped(withTag58, array163, null)
         val recipes83: IRecipeManager = MineTweakerAPI.recipes
         val item213: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 555)
@@ -2318,22 +2318,22 @@ class ExtraTrees4 : Runnable {
         val withTag59: IItemStack = item213.withTag(ExpandAnyDict.asData(hashMap213))
         val array165: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n237 = 0
-        val array166: Array<IIngredient?> = arrayOf(null, null, null)
+        val array166: Array<IIngredient?> = arrayOfNulls(3)
         val n238 = 2
         val item214: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 43)
         val hashMap214: HashMap<String, IData> = HashMap<String, IData>()
         hashMap214["meta"] = ExpandInt.toData(43)
         array166[n238]= item214.withTag(ExpandAnyDict.asData(hashMap214))
         array165[n237]= array166
-        array165[1]= arrayOf(null, null, null)
-        array165[2]= arrayOf(null, null, null)
+        array165[1]= arrayOfNulls(3)
+        array165[2]= arrayOfNulls(3)
         recipes83.addShaped(withTag59, array165, null)
         val recipes84: IRecipeManager = MineTweakerAPI.recipes
         val item215: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 811)
         val hashMap215: HashMap<String, IData> = HashMap<String, IData>()
         hashMap215["meta"] = ExpandInt.toData(811)
         val withTag60: IItemStack = item215.withTag(ExpandAnyDict.asData(hashMap215))
-        val array167: Array<Array<IIngredient?>?> = arrayOf(arrayOf(null, null, null), null, null)
+        val array167: Array<Array<IIngredient?>?> = arrayOf(arrayOfNulls(3), null, null)
         val n239 = 1
         val array168: Array<IIngredient?> = arrayOfNulls(3)
         val n240 = 0
@@ -2343,7 +2343,7 @@ class ExtraTrees4 : Runnable {
         array168[n240]= item216.withTag(ExpandAnyDict.asData(hashMap216))
         array168[2] = (null.also { array168[1]= it })
         array167[n239]= array168
-        array167[2]= arrayOf(null, null, null)
+        array167[2]= arrayOfNulls(3)
         recipes84.addShaped(withTag60, array167, null)
         val recipes85: IRecipeManager = MineTweakerAPI.recipes
         val item217: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 44)
@@ -2434,7 +2434,7 @@ class ExtraTrees4 : Runnable {
         val withTag63: IItemStack = item227.withTag(ExpandAnyDict.asData(hashMap227))
         val array177: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n255 = 0
-        val array178: Array<IIngredient?> = arrayOf(null, null, null)
+        val array178: Array<IIngredient?> = arrayOfNulls(3)
         val n256 = 1
         val item228: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 44)
         val hashMap228: HashMap<String, IData> = HashMap<String, IData>()
@@ -2442,8 +2442,8 @@ class ExtraTrees4 : Runnable {
         array178[n256]= item228.withTag(ExpandAnyDict.asData(hashMap228))
         array178[2]= null
         array177[n255]= array178
-        array177[1]= arrayOf(null, null, null)
-        array177[2]= arrayOf(null, null, null)
+        array177[1]= arrayOfNulls(3)
+        array177[2]= arrayOfNulls(3)
         recipes87.addShaped(withTag63, array177, null)
         val recipes88: IRecipeManager = MineTweakerAPI.recipes
         val item229: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 556)
@@ -2452,22 +2452,22 @@ class ExtraTrees4 : Runnable {
         val withTag64: IItemStack = item229.withTag(ExpandAnyDict.asData(hashMap229))
         val array179: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n257 = 0
-        val array180: Array<IIngredient?> = arrayOf(null, null, null)
+        val array180: Array<IIngredient?> = arrayOfNulls(3)
         val n258 = 2
         val item230: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 44)
         val hashMap230: HashMap<String, IData> = HashMap<String, IData>()
         hashMap230["meta"] = ExpandInt.toData(44)
         array180[n258]= item230.withTag(ExpandAnyDict.asData(hashMap230))
         array179[n257]= array180
-        array179[1]= arrayOf(null, null, null)
-        array179[2]= arrayOf(null, null, null)
+        array179[1]= arrayOfNulls(3)
+        array179[2]= arrayOfNulls(3)
         recipes88.addShaped(withTag64, array179, null)
         val recipes89: IRecipeManager = MineTweakerAPI.recipes
         val item231: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 812)
         val hashMap231: HashMap<String, IData> = HashMap<String, IData>()
         hashMap231["meta"] = ExpandInt.toData(812)
         val withTag65: IItemStack = item231.withTag(ExpandAnyDict.asData(hashMap231))
-        val array181: Array<Array<IIngredient?>?> = arrayOf(arrayOf(null, null, null), null, null)
+        val array181: Array<Array<IIngredient?>?> = arrayOf(arrayOfNulls(3), null, null)
         val n259 = 1
         val array182: Array<IIngredient?> = arrayOfNulls(3)
         val n260 = 0
@@ -2477,7 +2477,7 @@ class ExtraTrees4 : Runnable {
         array182[n260]= item232.withTag(ExpandAnyDict.asData(hashMap232))
         array182[2] = (null.also { array182[1]= it })
         array181[n259]= array182
-        array181[2]= arrayOf(null, null, null)
+        array181[2]= arrayOfNulls(3)
         recipes89.addShaped(withTag65, array181, null)
         val recipes90: IRecipeManager = MineTweakerAPI.recipes
         val item233: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 45)
@@ -2568,7 +2568,7 @@ class ExtraTrees4 : Runnable {
         val withTag68: IItemStack = item243.withTag(ExpandAnyDict.asData(hashMap243))
         val array191: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n275 = 0
-        val array192: Array<IIngredient?> = arrayOf(null, null, null)
+        val array192: Array<IIngredient?> = arrayOfNulls(3)
         val n276 = 1
         val item244: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 45)
         val hashMap244: HashMap<String, IData> = HashMap<String, IData>()
@@ -2576,8 +2576,8 @@ class ExtraTrees4 : Runnable {
         array192[n276]= item244.withTag(ExpandAnyDict.asData(hashMap244))
         array192[2]= null
         array191[n275]= array192
-        array191[1]= arrayOf(null, null, null)
-        array191[2]= arrayOf(null, null, null)
+        array191[1]= arrayOfNulls(3)
+        array191[2]= arrayOfNulls(3)
         recipes92.addShaped(withTag68, array191, null)
         val recipes93: IRecipeManager = MineTweakerAPI.recipes
         val item245: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 557)
@@ -2586,22 +2586,22 @@ class ExtraTrees4 : Runnable {
         val withTag69: IItemStack = item245.withTag(ExpandAnyDict.asData(hashMap245))
         val array193: Array<Array<IIngredient?>?> = arrayOfNulls<Array<IIngredient?>?>(3)
         val n277 = 0
-        val array194: Array<IIngredient?> = arrayOf(null, null, null)
+        val array194: Array<IIngredient?> = arrayOfNulls(3)
         val n278 = 2
         val item246: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 45)
         val hashMap246: HashMap<String, IData> = HashMap<String, IData>()
         hashMap246["meta"] = ExpandInt.toData(45)
         array194[n278]= item246.withTag(ExpandAnyDict.asData(hashMap246))
         array193[n277]= array194
-        array193[1]= arrayOf(null, null, null)
-        array193[2]= arrayOf(null, null, null)
+        array193[1]= arrayOfNulls(3)
+        array193[2]= arrayOfNulls(3)
         recipes93.addShaped(withTag69, array193, null)
         val recipes94: IRecipeManager = MineTweakerAPI.recipes
         val item247: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 813)
         val hashMap247: HashMap<String, IData> = HashMap<String, IData>()
         hashMap247["meta"] = ExpandInt.toData(813)
         val withTag70: IItemStack = item247.withTag(ExpandAnyDict.asData(hashMap247))
-        val array195: Array<Array<IIngredient?>?> = arrayOf(arrayOf(null, null, null), null, null)
+        val array195: Array<Array<IIngredient?>?> = arrayOf(arrayOfNulls(3), null, null)
         val n279 = 1
         val array196: Array<IIngredient?> = arrayOfNulls(3)
         val n280 = 0
@@ -2611,7 +2611,7 @@ class ExtraTrees4 : Runnable {
         array196[n280]= item248.withTag(ExpandAnyDict.asData(hashMap248))
         array196[2] = (null.also { array196[1]= it })
         array195[n279]= array196
-        array195[2]= arrayOf(null, null, null)
+        array195[2]= arrayOfNulls(3)
         recipes94.addShaped(withTag70, array195, null)
         val recipes95: IRecipeManager = MineTweakerAPI.recipes
         val item249: IItemStack = ItemBracketHandler.getItem("ExtraTrees:door", 46)
