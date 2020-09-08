@@ -40,7 +40,10 @@ class Gendustry : Runnable {
         val item22 = ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)
         val item23 = ItemBracketHandler.getItem("Forestry:royalJelly", 0)
         val item24 = ItemBracketHandler.getItem("Forestry:grafter", 0)
-        val item25 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //val item25 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
         OreBracketHandler.getOre("gearAluminium")
         OreBracketHandler.getOre("gearStainlessSteel")
         val ore = OreBracketHandler.getOre("gearTitanium")
@@ -98,7 +101,10 @@ class Gendustry : Runnable {
         OreBracketHandler.getOre("craftingToolWrench")
         val ore17 = OreBracketHandler.getOre("blockHopper")
         val item32 = ItemBracketHandler.getItem("minecraft:grass", 0)
-        val item33 = ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
+
+        //TODO Replace ("ExtraUtilities:decorativeBlock2", 7)
+        //val item33 = ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
+
         ItemBracketHandler.getItem("Natura:heatsand", 0)
         val item34 = ItemBracketHandler.getItem("minecraft:sand", 32767)
         val item35 = ItemBracketHandler.getItem("minecraft:cactus", 0)
@@ -252,9 +258,12 @@ class Gendustry : Runnable {
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 17),
                 arrayOf(arrayOf(ore3, item20, ore3), arrayOf<IIngredient>(item32, item19, item32),
                         arrayOf(ore5, item18, ore5)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 11),
-                arrayOf(arrayOf(ore3, item33, ore3), arrayOf<IIngredient>(item33, item19, item33),
-                        arrayOf(ore5, item33, ore5)), null)
+
+        //TODO Replace ("ExtraUtilities:decorativeBlock2", 7) in item33
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 11),
+        //        arrayOf(arrayOf(ore3, item33, ore3), arrayOf<IIngredient>(item33, item19, item33),
+        //                arrayOf(ore5, item33, ore5)), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 2),
                 arrayOf(arrayOf(ore3, ItemBracketHandler.getItem("minecraft:red_flower", 0), ore3),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("Botany:pollen", 32767), item19,
@@ -305,10 +314,13 @@ class Gendustry : Runnable {
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 21),
                 arrayOf(arrayOf(ore3, item20, ore3), arrayOf<IIngredient>(item36, item19, item36),
                         arrayOf(ore5, item18, ore5)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 12),
-                arrayOf(arrayOf(ore3,
-                        ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 27), ore3),
-                        arrayOf<IIngredient>(item25, item19, item25), arrayOf(ore5, item25, ore5)), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0) in item25
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 12),
+        //        arrayOf(arrayOf(ore3,
+        //                ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 27), ore3),
+        //                arrayOf<IIngredient>(item25, item19, item25), arrayOf(ore5, item25, ore5)), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 6),
                 arrayOf(arrayOf(ore3, item20, ore3), arrayOf<IIngredient>(item43, item19, item43),
                         arrayOf(ore5, item37, ore5)), null)

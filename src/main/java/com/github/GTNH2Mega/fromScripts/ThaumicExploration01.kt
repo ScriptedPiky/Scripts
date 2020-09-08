@@ -529,21 +529,24 @@ class ThaumicExploration01 : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_text.TrashjarGTNH", "Essentia disposal")
         Research.addPage("TrashjarGTNH", "te.text.TRASHJAR.1")
         Research.addPage("TrashjarGTNH", "te.text.TRASHJAR.2")
-        Infusion.addRecipe("TrashjarGTNH", ItemBracketHandler.getItem("Thaumcraft:blockJar", 3),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:blockChestHungry", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
-                        ItemBracketHandler.getItem("ExtraUtilities:trashcan", 1),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2)),
-                "alienis 16, fames 14, perditio 24, vacuos 32, praecantatio 12, tenebrae 8",
-                ItemBracketHandler.getItem("ThaumicExploration:trashJar", 0), 9)
+
+        //TODO Replace ("ExtraUtilities:trashcan", 1)
+        //Infusion.addRecipe("TrashjarGTNH", ItemBracketHandler.getItem("Thaumcraft:blockJar", 3),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:blockChestHungry", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
+        //                ItemBracketHandler.getItem("ExtraUtilities:trashcan", 1),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2)),
+        //        "alienis 16, fames 14, perditio 24, vacuos 32, praecantatio 12, tenebrae 8",
+        //        ItemBracketHandler.getItem("ThaumicExploration:trashJar", 0), 9)
+
         Research.addInfusionPage("TrashjarGTNH", ItemBracketHandler.getItem("ThaumicExploration:trashJar", 0))
         Warp.addToResearch("TrashjarGTNH", 1)
         Research.orphanResearch("METEORBOOTS")
@@ -806,31 +809,36 @@ class ThaumicExploration01 : Runnable {
                 "ordo 32, sano 12, humanus 12, alienis 24, cognitio 16, praecantatio 8",
                 ItemBracketHandler.getItem("ThaumicExploration:pureZombieBrain", 0), 5)
         Research.addInfusionPage("BraincureGTNH", ItemBracketHandler.getItem("ThaumicExploration:pureZombieBrain", 0))
-        Research.orphanResearch("TALISMANFOOD")
-        Research.removeResearch("TALISMANFOOD")
-        Research.addResearch("TalismanfoodtGTNH", "TX", "fames 18, pannus 15, messis 12, sano 9, permutatio 6, ordo 3",
-                -1, -11, 4, ItemBracketHandler.getItem("ThaumicExploration:talismanFood", 0))
-        Research.addPrereq("TalismanfoodtGTNH", "FleshcureGTNH", false)
-        Research.addPrereq("TalismanfoodtGTNH", "TXINFUSION", false)
-        Research.setConcealed("TalismanfoodtGTNH", true)
-        MineTweakerAPI.game.setLocalization("tc.research_name.TalismanfoodtGTNH", "Talisman of Nourishment")
-        MineTweakerAPI.game.setLocalization("tc.research_text.TalismanfoodtGTNH", "Everfull belly")
-        Research.addPage("TalismanfoodtGTNH", "tc.research_page.TalismanfoodtGTNH")
-        MineTweakerAPI.game.setLocalization("tc.research_page.TalismanfoodtGTNH",
-                "You often find yourself needing to take breaks during marathon researching sessions to satisfy your hunger. Finally you have found a way to get past your need for food.<BR><BR>By infusing a diamond with the essence of hunger, you have created an item that is able to suck the nourishing energy from various food items in your hotbar and store this energy within. It will then automatically replenish your food meter if it is depleted.<BR><BR>This device will only work on simple food items, so foods that invoke effects such as Rotten Flesh and Golden Apples must be consumed normally.")
-        Infusion.addRecipe("TalismanfoodtGTNH", ItemBracketHandler.getItem("Thaumcraft:ItemResource", 15),
-                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30502),
-                        ItemBracketHandler.getItem("harvestcraft:heartybreakfastItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:rainbowcurryItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:supremepizzaItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:sausageinbreadItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:beefwellingtonItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:epicbaconItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:meatfeastpizzaItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:delightedmealItem", 0)),
-                "fames 64, pannus 48, messis 24, sano 24, permutatio 32, ordo 16",
-                ItemBracketHandler.getItem("ThaumicExploration:talismanFood", 0), 6)
-        Research.addInfusionPage("TalismanfoodtGTNH", ItemBracketHandler.getItem("ThaumicExploration:talismanFood", 0))
+
+        //TODO Replace ("harvestcraft:heartybreakfastItem", 0), ("harvestcraft:rainbowcurryItem", 0), ("harvestcraft:supremepizzaItem", 0)
+        // ("harvestcraft:sausageinbreadItem", 0), ("harvestcraft:beefwellingtonItem", 0), ("harvestcraft:epicbaconItem", 0),
+        // ("harvestcraft:meatfeastpizzaItem", 0) and ("harvestcraft:delightedmealItem", 0)
+        //Research.orphanResearch("TALISMANFOOD")
+        //Research.removeResearch("TALISMANFOOD")
+        //Research.addResearch("TalismanfoodtGTNH", "TX", "fames 18, pannus 15, messis 12, sano 9, permutatio 6, ordo 3",
+        //        -1, -11, 4, ItemBracketHandler.getItem("ThaumicExploration:talismanFood", 0))
+        //Research.addPrereq("TalismanfoodtGTNH", "FleshcureGTNH", false)
+        //Research.addPrereq("TalismanfoodtGTNH", "TXINFUSION", false)
+        //Research.setConcealed("TalismanfoodtGTNH", true)
+        //MineTweakerAPI.game.setLocalization("tc.research_name.TalismanfoodtGTNH", "Talisman of Nourishment")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.TalismanfoodtGTNH", "Everfull belly")
+        //Research.addPage("TalismanfoodtGTNH", "tc.research_page.TalismanfoodtGTNH")
+        //MineTweakerAPI.game.setLocalization("tc.research_page.TalismanfoodtGTNH",
+        //        "You often find yourself needing to take breaks during marathon researching sessions to satisfy your hunger. Finally you have found a way to get past your need for food.<BR><BR>By infusing a diamond with the essence of hunger, you have created an item that is able to suck the nourishing energy from various food items in your hotbar and store this energy within. It will then automatically replenish your food meter if it is depleted.<BR><BR>This device will only work on simple food items, so foods that invoke effects such as Rotten Flesh and Golden Apples must be consumed normally.")
+        //Infusion.addRecipe("TalismanfoodtGTNH", ItemBracketHandler.getItem("Thaumcraft:ItemResource", 15),
+        //        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30502),
+        //                ItemBracketHandler.getItem("harvestcraft:heartybreakfastItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:rainbowcurryItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:supremepizzaItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:sausageinbreadItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:beefwellingtonItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:epicbaconItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:meatfeastpizzaItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:delightedmealItem", 0)),
+        //        "fames 64, pannus 48, messis 24, sano 24, permutatio 32, ordo 16",
+        //        ItemBracketHandler.getItem("ThaumicExploration:talismanFood", 0), 6)
+        //Research.addInfusionPage("TalismanfoodtGTNH", ItemBracketHandler.getItem("ThaumicExploration:talismanFood", 0))
+
         Research.addPrereq("THINKTANK", "BraincureGTNH", false)
         Warp.addToResearch("THINKTANK", 2)
         Research.orphanResearch("DREAMCATCHER")

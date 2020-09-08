@@ -238,15 +238,18 @@ class GalaxySpace : Runnable {
         array10[2] = ItemBracketHandler.getItem("GalacticraftCore:tile.aluminumWire", 1)
         array9[n9] = array10
         recipes5.addShaped(withTag5, array9, null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalaxySpace:item.QuantBow", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("stickLongLead"),
-                        ItemBracketHandler.getItem("dreamcraft:item.MytrylCrystal", 0),
-                        ItemBracketHandler.getItem("TConstruct:bowstring", 2)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("dreamcraft:item.MysteriousCrystal", 0), null,
-                                ItemBracketHandler.getItem("TConstruct:bowstring", 2)),
-                        arrayOf(OreBracketHandler.getOre("stickLongLead"),
-                                ItemBracketHandler.getItem("dreamcraft:item.MytrylCrystal", 0),
-                                ItemBracketHandler.getItem("TConstruct:bowstring", 2))), null)
+
+        //TODO Replace ("TConstruct:bowstring", 2)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalaxySpace:item.QuantBow", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("stickLongLead"),
+        //                ItemBracketHandler.getItem("dreamcraft:item.MytrylCrystal", 0),
+        //                ItemBracketHandler.getItem("TConstruct:bowstring", 2)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("dreamcraft:item.MysteriousCrystal", 0), null,
+        //                        ItemBracketHandler.getItem("TConstruct:bowstring", 2)),
+        //                arrayOf(OreBracketHandler.getOre("stickLongLead"),
+        //                        ItemBracketHandler.getItem("dreamcraft:item.MytrylCrystal", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:bowstring", 2))), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.RawSDHCAlloy", 0),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwStainlessSteel"),
                         OreBracketHandler.getOre("craftingToolScrewdriver"),

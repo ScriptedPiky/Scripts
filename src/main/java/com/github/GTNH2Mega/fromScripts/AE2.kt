@@ -70,13 +70,23 @@ class AE2 : Runnable {
         val item39 = ItemBracketHandler.getItem("appliedenergistics2:item.ToolWirelessTerminal", 0)
         val item40 = ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 140)
         val item41 = ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 180)
-        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
+
+        //TODO investigate getters with no target field for ("ExtraUtilities:decorativeBlock2", 7)
+        //ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
         val item42 = ItemBracketHandler.getItem("appliedenergistics2:tile.BlockQuartzGlass", 0)
         val item43 = ItemBracketHandler.getItem("appliedenergistics2:tile.BlockQuartzLamp", 0)
-        val item44 = ItemBracketHandler.getItem("TConstruct:CraftingSlab", 0)
+
+        //TODO Replace ("TConstruct:CraftingSlab", 0)
+        //val item44 = ItemBracketHandler.getItem("TConstruct:CraftingSlab", 0)
+
         val item45 = ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 52)
-        val item46 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
-        ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //val item46 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
+        //TODO investigate getters with no target field for ("TConstruct:GlassBlock", 0)
+        //ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)
+
         val ore12 = OreBracketHandler.getOre("plateGlowstone")
         OreBracketHandler.getOre("dustGlowstone")
         OreBracketHandler.getOre("plateGlass")
@@ -435,12 +445,15 @@ class AE2 : Runnable {
         MineTweakerAPI.recipes.addShaped(item25,
                 arrayOf(arrayOf<IIngredient?>(item40, item26, item40), arrayOf<IIngredient?>(null, ore, null),
                         arrayOf(item59, ore9, item59)), null)
-        MineTweakerAPI.recipes.addShaped(item10,
-                arrayOf(arrayOf(ore14, item46, ore24), arrayOf<IIngredient>(ore17, ore25, ore17),
-                        arrayOf<IIngredient>(ore24, ore17, ore16)), null)
-        MineTweakerAPI.recipes.addShaped(item10,
-                arrayOf(arrayOf(ore16, item46, ore24), arrayOf<IIngredient>(ore17, ore25, ore17),
-                        arrayOf<IIngredient>(ore24, ore17, ore14)), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0) in item46
+        //MineTweakerAPI.recipes.addShaped(item10,
+        //        arrayOf(arrayOf(ore14, item46, ore24), arrayOf<IIngredient>(ore17, ore25, ore17),
+        //                arrayOf<IIngredient>(ore24, ore17, ore16)), null)
+        //MineTweakerAPI.recipes.addShaped(item10,
+        //        arrayOf(arrayOf(ore16, item46, ore24), arrayOf<IIngredient>(ore17, ore25, ore17),
+        //                arrayOf<IIngredient>(ore24, ore17, ore14)), null)
+
         MineTweakerAPI.recipes.addShaped(item41, arrayOf(arrayOf<IIngredient>(ore14, ore19, ore16),
                 arrayOf(ore24, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32740), ore24),
                 arrayOf<IIngredient>(ore12, OreBracketHandler.getOre("plateRedAlloy"), ore12)), null)
@@ -450,8 +463,11 @@ class AE2 : Runnable {
         MineTweakerAPI.recipes.addShaped(item34,
                 arrayOf(arrayOf<IIngredient>(ore22, ore14, ore22), arrayOf(item41, ore8, item59),
                         arrayOf<IIngredient>(ore22, ore23, ore22)), null)
-        MineTweakerAPI.recipes.addShaped(item35, arrayOf(arrayOf(ore14, item34, ore15), arrayOf(ore24, item44, ore24),
-                arrayOf<IIngredient>(item60, item58, item60)), null)
+
+        //TODO Replace ("TConstruct:CraftingSlab", 0) in item44
+        //MineTweakerAPI.recipes.addShaped(item35, arrayOf(arrayOf(ore14, item34, ore15), arrayOf(ore24, item44, ore24),
+        //        arrayOf<IIngredient>(item60, item58, item60)), null)
+
         MineTweakerAPI.recipes.addShaped(item36, arrayOf(arrayOf(ore14, item35, ore15), arrayOf<IIngredient>(item62,
                 ItemBracketHandler.getItem("dreamcraft:item.EngineeringProcessorItemAdvEmeraldCore", 0), item62),
                 arrayOf<IIngredient>(item61, item63, item61)), null)
@@ -757,10 +773,13 @@ class AE2 : Runnable {
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemSpatialStorageCell.128Cubed", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 39),
                         ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 34)), null)
-        MineTweakerAPI.recipes.addShaped(item51, arrayOf(arrayOf(ore16, item59, ore24), arrayOf(ore11, item46, ore11),
-                arrayOf<IIngredient>(ore24, ore18, ore14)), null)
-        MineTweakerAPI.recipes.addShaped(item51, arrayOf(arrayOf(ore14, item59, ore24), arrayOf(ore11, item46, ore11),
-                arrayOf<IIngredient>(ore24, ore18, ore16)), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0) in item46
+        //MineTweakerAPI.recipes.addShaped(item51, arrayOf(arrayOf(ore16, item59, ore24), arrayOf(ore11, item46, ore11),
+        //        arrayOf<IIngredient>(ore24, ore18, ore14)), null)
+        //MineTweakerAPI.recipes.addShaped(item51, arrayOf(arrayOf(ore14, item59, ore24), arrayOf(ore11, item46, ore11),
+        //        arrayOf<IIngredient>(ore24, ore18, ore16)), null)
+
         MineTweakerAPI.recipes.addShaped(item52,
                 arrayOf(arrayOf(ore6, ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0), ore6),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0),
@@ -915,9 +934,12 @@ class AE2 : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2516).amount(4), 400, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockQuartzLamp", 0), item42,
                 ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(8), 200, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockQuartzLamp", 0),
-                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 8).amount(2), 200, 30)
+
+        //TODO replace ("ExtraUtilities:decorativeBlock2", 7)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockQuartzLamp", 0),
+        //        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7),
+        //        ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 8).amount(2), 200, 30)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockSkyChest", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockSkyStone", 0).amount(8),
                 ItemBracketHandler.getItem("minecraft:chest", 0), 200, 30)

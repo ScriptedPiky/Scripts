@@ -463,16 +463,19 @@ class IC2 : Runnable {
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0),
                                 ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0),
                                 ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemwcarbonrotor", 1),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("miscutils:itemTungstenSteelShaft", 0),
-                        ItemBracketHandler.getItem("IC2:itemRecipePart", 9),
-                        OreBracketHandler.getOre("craftingToolHardHammer")),
-                        arrayOf(ItemBracketHandler.getItem("IC2:itemRecipePart", 9),
-                                OreBracketHandler.getOre("ringIridium"),
-                                ItemBracketHandler.getItem("IC2:itemRecipePart", 9)),
-                        arrayOf(OreBracketHandler.getOre("craftingToolWrench"),
-                                ItemBracketHandler.getItem("IC2:itemRecipePart", 9),
-                                ItemBracketHandler.getItem("miscutils:itemTungstenSteelShaft", 0))), null)
+
+        //TODO Replace ("miscutils:itemTungstenSteelShaft", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemwcarbonrotor", 1),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("miscutils:itemTungstenSteelShaft", 0),
+        //                ItemBracketHandler.getItem("IC2:itemRecipePart", 9),
+        //                OreBracketHandler.getOre("craftingToolHardHammer")),
+        //                arrayOf(ItemBracketHandler.getItem("IC2:itemRecipePart", 9),
+        //                        OreBracketHandler.getOre("ringIridium"),
+        //                        ItemBracketHandler.getItem("IC2:itemRecipePart", 9)),
+        //                arrayOf(OreBracketHandler.getOre("craftingToolWrench"),
+        //                        ItemBracketHandler.getItem("IC2:itemRecipePart", 9),
+        //                        ItemBracketHandler.getItem("miscutils:itemTungstenSteelShaft", 0))), null)
+
         ExtremeCrafting.addShaped(ItemBracketHandler.getItem("IC2:blockKineticGenerator", 4),
                 arrayOf(arrayOfNulls(9), arrayOfNulls(9),
                         arrayOf(null, null, OreBracketHandler.getOre("plateDoubleStainlessSteel"),
@@ -822,23 +825,26 @@ class IC2 : Runnable {
                         arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingSteel"),
                                 OreBracketHandler.getOre("craftingToolScrewdriver"),
                                 OreBracketHandler.getOre("itemCasingSteel"))), null)
-        val recipes = MineTweakerAPI.recipes
-        val item4 = ItemBracketHandler.getItem("IC2:itemNanoSaber", 0)
-        val array: Array<Array<IIngredient?>?> = arrayOfNulls(3)
-        val n = 0
-        val array2 = arrayOf<IIngredient?>(OreBracketHandler.getOre("plateAlloyIridium"), null, null)
-        val n2 = 1
-        val item5 = ItemBracketHandler.getItem("TGregworks:tGregToolPartLargeSwordBlade", 1529)
-        val hashMap = HashMap<String, IData>()
-        hashMap["material"] = ExpandString.asData("TungstenSteel")
-        array2[n2] = item5.withTag(ExpandAnyDict.asData(hashMap))
-        array2[2] = OreBracketHandler.getOre("plateAlloyIridium")
-        array[n] = array2
-        array[1] = arrayOf(OreBracketHandler.getOre("circuitMaster"), OreBracketHandler.getOre("batteryMaster"),
-                OreBracketHandler.getOre("circuitMaster"))
-        array[2] = arrayOf(OreBracketHandler.getOre("craftingToolFile"),
-                ItemBracketHandler.getItem("IC2:itemRecipePart", 2), OreBracketHandler.getOre("craftingToolHardHammer"))
-        recipes.addShaped(item4, array, null)
+
+        //TODO Replace ("TGregworks:tGregToolPartLargeSwordBlade", 1529)
+        //val recipes = MineTweakerAPI.recipes
+        //val item4 = ItemBracketHandler.getItem("IC2:itemNanoSaber", 0)
+        //val array: Array<Array<IIngredient?>?> = arrayOfNulls(3)
+        //val n = 0
+        //val array2 = arrayOf<IIngredient?>(OreBracketHandler.getOre("plateAlloyIridium"), null, null)
+        //val n2 = 1
+        //val item5 = ItemBracketHandler.getItem("TGregworks:tGregToolPartLargeSwordBlade", 1529)
+        //val hashMap = HashMap<String, IData>()
+        //hashMap["material"] = ExpandString.asData("TungstenSteel")
+        //array2[n2] = item5.withTag(ExpandAnyDict.asData(hashMap))
+        //array2[2] = OreBracketHandler.getOre("plateAlloyIridium")
+        //array[n] = array2
+        //array[1] = arrayOf(OreBracketHandler.getOre("circuitMaster"), OreBracketHandler.getOre("batteryMaster"),
+        //        OreBracketHandler.getOre("circuitMaster"))
+        //array[2] = arrayOf(OreBracketHandler.getOre("craftingToolFile"),
+        //        ItemBracketHandler.getItem("IC2:itemRecipePart", 2), OreBracketHandler.getOre("craftingToolHardHammer"))
+        //recipes.addShaped(item4, array, null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:obscurator", 0),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwSteel"),
                         OreBracketHandler.getOre("craftingToolScrewdriver"), OreBracketHandler.getOre("screwSteel")),
@@ -1272,34 +1278,37 @@ class IC2 : Runnable {
                         OreBracketHandler.getOre("dustCalcite"), OreBracketHandler.getOre("dustStone")),
                         arrayOf<IIngredient?>(OreBracketHandler.getOre("dustClay"),
                                 OreBracketHandler.getOre("dustQuartzSand"), null), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemArmorRubBoots", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("plateRubber"),
-                        ItemBracketHandler.getItem("IC2:itemArmorRubBoots", 32767),
-                        OreBracketHandler.getOre("plateRubber")),
-                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSoftHammer"), null),
-                        arrayOf(null, IngredientTransform.giveBack(ItemBracketHandler.getItem("TConstruct:buckets", 25),
-                                ItemBracketHandler.getItem("minecraft:bucket", 0)), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("plateRubber"),
-                        ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 32767),
-                        OreBracketHandler.getOre("plateRubber")),
-                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSoftHammer"), null),
-                        arrayOf(null, IngredientTransform.giveBack(ItemBracketHandler.getItem("TConstruct:buckets", 25),
-                                ItemBracketHandler.getItem("minecraft:bucket", 0)), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemArmorHazmatChestplate", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("plateRubber"),
-                        ItemBracketHandler.getItem("IC2:itemArmorHazmatChestplate", 32767),
-                        OreBracketHandler.getOre("plateRubber")),
-                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSoftHammer"), null),
-                        arrayOf(null, IngredientTransform.giveBack(ItemBracketHandler.getItem("TConstruct:buckets", 25),
-                                ItemBracketHandler.getItem("minecraft:bucket", 0)), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemArmorHazmatLeggings", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("plateRubber"),
-                        ItemBracketHandler.getItem("IC2:itemArmorHazmatLeggings", 32767),
-                        OreBracketHandler.getOre("plateRubber")),
-                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSoftHammer"), null),
-                        arrayOf(null, IngredientTransform.giveBack(ItemBracketHandler.getItem("TConstruct:buckets", 25),
-                                ItemBracketHandler.getItem("minecraft:bucket", 0)), null)), null)
+
+        //TODO Replace ("TConstruct:buckets", 25)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemArmorRubBoots", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("plateRubber"),
+        //                ItemBracketHandler.getItem("IC2:itemArmorRubBoots", 32767),
+        //                OreBracketHandler.getOre("plateRubber")),
+        //                arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSoftHammer"), null),
+        //                arrayOf(null, IngredientTransform.giveBack(ItemBracketHandler.getItem("TConstruct:buckets", 25),
+        //                        ItemBracketHandler.getItem("minecraft:bucket", 0)), null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("plateRubber"),
+        //                ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 32767),
+        //                OreBracketHandler.getOre("plateRubber")),
+        //                arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSoftHammer"), null),
+        //                arrayOf(null, IngredientTransform.giveBack(ItemBracketHandler.getItem("TConstruct:buckets", 25),
+        //                        ItemBracketHandler.getItem("minecraft:bucket", 0)), null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemArmorHazmatChestplate", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("plateRubber"),
+        //                ItemBracketHandler.getItem("IC2:itemArmorHazmatChestplate", 32767),
+        //                OreBracketHandler.getOre("plateRubber")),
+        //                arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSoftHammer"), null),
+        //                arrayOf(null, IngredientTransform.giveBack(ItemBracketHandler.getItem("TConstruct:buckets", 25),
+        //                        ItemBracketHandler.getItem("minecraft:bucket", 0)), null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("IC2:itemArmorHazmatLeggings", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("plateRubber"),
+        //                ItemBracketHandler.getItem("IC2:itemArmorHazmatLeggings", 32767),
+        //                OreBracketHandler.getOre("plateRubber")),
+        //                arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSoftHammer"), null),
+        //                arrayOf(null, IngredientTransform.giveBack(ItemBracketHandler.getItem("TConstruct:buckets", 25),
+        //                        ItemBracketHandler.getItem("minecraft:bucket", 0)), null)), null)
+
         val item7 = ItemBracketHandler.getItem("IC2:itemFluidCell", 0)
         val item8 = ItemBracketHandler.getItem("IC2:itemFluidCell", 0)
         val hashMap4 = HashMap<String, IData>()

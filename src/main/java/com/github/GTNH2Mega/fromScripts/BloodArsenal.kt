@@ -13,7 +13,6 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
-import modtweaker2.mods.tconstruct.handlers.Casting
 
 class BloodArsenal : Runnable {
     override fun run() {
@@ -74,33 +73,6 @@ class BloodArsenal : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BloodArsenal:glass_dagger_of_sacrifice", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BloodArsenal:vampire_ring", 0))
         BloodAltar.removeRecipe(ItemBracketHandler.getItem("BloodArsenal:soul_fragment", 0))
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:binding", 251), null, null)
-        Casting.removeTableRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 251), null, null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_lamp", 0),
                 arrayOf(arrayOf(OreBracketHandler.getOre("plateBloodInfusedIron"),
                         ItemBracketHandler.getItem("BloodArsenal:blood_stained_glass", 0),
@@ -149,46 +121,49 @@ class BloodArsenal : Runnable {
                                 OreBracketHandler.getOre("craftingToolScrewdriver")),
                         arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("BloodArsenal:blood_infused_stick", 0),
                                 null)))
-        BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_pickaxe_iron", 0),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        OreBracketHandler.getOre("ingotBloodInfusedIron"),
-                        OreBracketHandler.getOre("ingotBloodInfusedIron")),
-                        arrayOf(OreBracketHandler.getOre("screwBloodInfusedIron"),
-                                ItemBracketHandler.getItem("BloodArsenal:blood_infused_pickaxe_wood", 0),
-                                OreBracketHandler.getOre("craftingToolScrewdriver")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
-                                ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0))))
-        BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_axe_iron", 0),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        OreBracketHandler.getOre("ingotBloodInfusedIron"),
-                        OreBracketHandler.getOre("screwBloodInfusedIron")),
-                        arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("BloodArsenal:blood_infused_axe_wood", 0),
-                                OreBracketHandler.getOre("craftingToolScrewdriver")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
-                                ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0))))
-        BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_shovel_iron", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("screwBloodInfusedIron"),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        OreBracketHandler.getOre("screwBloodInfusedIron")),
-                        arrayOf(OreBracketHandler.getOre("craftingToolScrewdriver"),
-                                ItemBracketHandler.getItem("BloodArsenal:blood_infused_shovel_wood", 0),
-                                OreBracketHandler.getOre("screwBloodInfusedIron")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
-                                ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0))))
-        BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_sword_iron", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("screwBloodInfusedIron"),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        OreBracketHandler.getOre("craftingToolScrewdriver")),
-                        arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("BloodArsenal:blood_infused_sword_wood", 0),
-                                OreBracketHandler.getOre("screwBloodInfusedIron")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
-                                ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0))))
+
+        //TODO Replace ("TConstruct:heavyPlate", 251)
+        //BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_pickaxe_iron", 0),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                OreBracketHandler.getOre("ingotBloodInfusedIron"),
+        //                OreBracketHandler.getOre("ingotBloodInfusedIron")),
+        //                arrayOf(OreBracketHandler.getOre("screwBloodInfusedIron"),
+        //                        ItemBracketHandler.getItem("BloodArsenal:blood_infused_pickaxe_wood", 0),
+        //                        OreBracketHandler.getOre("craftingToolScrewdriver")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
+        //                        ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0))))
+        //BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_axe_iron", 0),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                OreBracketHandler.getOre("ingotBloodInfusedIron"),
+        //                OreBracketHandler.getOre("screwBloodInfusedIron")),
+        //                arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("BloodArsenal:blood_infused_axe_wood", 0),
+        //                        OreBracketHandler.getOre("craftingToolScrewdriver")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
+        //                        ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0))))
+        //BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_shovel_iron", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("screwBloodInfusedIron"),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                OreBracketHandler.getOre("screwBloodInfusedIron")),
+        //                arrayOf(OreBracketHandler.getOre("craftingToolScrewdriver"),
+        //                        ItemBracketHandler.getItem("BloodArsenal:blood_infused_shovel_wood", 0),
+        //                        OreBracketHandler.getOre("screwBloodInfusedIron")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
+        //                        ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0))))
+        //BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_sword_iron", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("screwBloodInfusedIron"),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                OreBracketHandler.getOre("craftingToolScrewdriver")),
+        //                arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("BloodArsenal:blood_infused_sword_wood", 0),
+        //                        OreBracketHandler.getOre("screwBloodInfusedIron")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
+        //                        ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0))))
+
         BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:blood_infused_pickaxe_diamond", 0),
                 arrayOf(arrayOf(OreBracketHandler.getOre("screwTungstenSteel"),
                         ItemBracketHandler.getItem("BloodArsenal:blood_infused_diamond_block", 0),
@@ -269,26 +244,29 @@ class BloodArsenal : Runnable {
                         arrayOf(OreBracketHandler.getOre("gemExquisiteGarnetYellow"),
                                 ItemBracketHandler.getItem("AWWayofTime:runeOfSelfSacrifice", 0),
                                 OreBracketHandler.getOre("stickLongBlaze"))))
-        BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:glass_sacrificial_dagger", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32200),
-                        ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:sacrificialKnife", 0),
-                                ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
-        BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:glass_dagger_of_sacrifice", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32200),
-                        ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:daggerOfSacrifice", 0),
-                                ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
+
+        //TODO Replace ("TConstruct:heavyPlate", 251)
+        //BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:glass_sacrificial_dagger", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32200),
+        //                ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:sacrificialKnife", 0),
+        //                        ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
+        //BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:glass_dagger_of_sacrifice", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32200),
+        //                ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:daggerOfSacrifice", 0),
+        //                        ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
+
         BloodOrb.addShaped(ItemBracketHandler.getItem("BloodArsenal:vampire_ring", 0),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("BloodArsenal:blood_infused_diamond_bound", 0),
                         OreBracketHandler.getOre("wireFineBloodInfusedIron"), null),

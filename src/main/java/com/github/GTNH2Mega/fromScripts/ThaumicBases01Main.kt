@@ -192,16 +192,19 @@ class ThaumicBases01Main : Runnable {
                         ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 4)),
                 "motus 32, vitreus 32, iter 16, sensus 16",
                 ItemBracketHandler.getItem("thaumicbases:fociActivation", 0), 4)
-        Infusion.addRecipe("TB.Foci.Drain", ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24543),
-                arrayOf(ItemBracketHandler.getItem("minecraft:bucket", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2),
-                        ItemBracketHandler.getItem("Thaumcraft:blockJar", 3),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2),
-                        ItemBracketHandler.getItem("irontank:ironTank", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2),
-                        ItemBracketHandler.getItem("ExtraUtilities:trashcan", 1),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2)), "vacuos 32, perditio 32, aqua 16",
-                ItemBracketHandler.getItem("thaumicbases:fociDrain", 0), 5)
+
+        //TODO Replace ("ExtraUtilities:trashcan", 1)
+        //Infusion.addRecipe("TB.Foci.Drain", ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24543),
+        //        arrayOf(ItemBracketHandler.getItem("minecraft:bucket", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockJar", 3),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2),
+        //                ItemBracketHandler.getItem("irontank:ironTank", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2),
+        //                ItemBracketHandler.getItem("ExtraUtilities:trashcan", 1),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2)), "vacuos 32, perditio 32, aqua 16",
+        //        ItemBracketHandler.getItem("thaumicbases:fociDrain", 0), 5)
+
         Infusion.addRecipe("TB.Foci.Flux", ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24533),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 6),
                         ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 4),
@@ -212,13 +215,16 @@ class ThaumicBases01Main : Runnable {
                         ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 6)),
                 "vitium 32, perditio 32, ordo 16, praecantatio 16, sano 16",
                 ItemBracketHandler.getItem("thaumicbases:fociFlux", 0), 7)
-        Infusion.addRecipe("TB.CryingObs", ItemBracketHandler.getItem("miscutils:blockCompressedObsidian", 1),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemDensePlates", 8),
-                        ItemBracketHandler.getItem("CarpentersBlocks:itemCarpentersBed", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22330)),
-                "iter 32,vinculum 32, desidia 16,sensus 16",
-                ItemBracketHandler.getItem("thaumicbases:cryingObsidian", 0), 5)
+
+        //TODO Replace ("miscutils:blockCompressedObsidian", 1)
+        //Infusion.addRecipe("TB.CryingObs", ItemBracketHandler.getItem("miscutils:blockCompressedObsidian", 1),
+        //        arrayOf(ItemBracketHandler.getItem("IC2:itemDensePlates", 8),
+        //                ItemBracketHandler.getItem("CarpentersBlocks:itemCarpentersBed", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22330)),
+        //        "iter 32,vinculum 32, desidia 16,sensus 16",
+        //        ItemBracketHandler.getItem("thaumicbases:cryingObsidian", 0), 5)
+
         Infusion.addRecipe("TB.TaintFlask", ItemBracketHandler.getItem("Thaumcraft:ItemBottleTaint", 0),
                 arrayOf(ItemBracketHandler.getItem("thaumicbases:knoseFragment", 7), item4,
                         ItemBracketHandler.getItem("thaumicbases:knoseFragment", 7), item4,
@@ -431,17 +437,20 @@ class ThaumicBases01Main : Runnable {
                         ItemBracketHandler.getItem("thaumicbases:blockSalisMundus", 0)),
                 "auram 256 ,lux 192, potentia 128, superbia 64 ,nebrisum 32",
                 ItemBracketHandler.getItem("thaumicbases:nodeFoci", 0), 10)
-        Infusion.addRecipe("TB.NodeFoci.Destr", ItemBracketHandler.getItem("Thaumcraft:blockMetalDevice", 12),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:FocusPrimal", 0),
-                        ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
-                        ItemBracketHandler.getItem("miscutils:blockCompressedObsidian", 1),
-                        ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
-                        ItemBracketHandler.getItem("miscutils:blockCompressedObsidian", 1),
-                        ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
-                        ItemBracketHandler.getItem("miscutils:blockCompressedObsidian", 1),
-                        ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5)),
-                "auram 128 ,perditio 96, vacuos 64, mortuus 32", ItemBracketHandler.getItem("thaumicbases:nodeFoci", 1),
-                8)
+
+        //TODO Replace ("miscutils:blockCompressedObsidian", 1)
+        //Infusion.addRecipe("TB.NodeFoci.Destr", ItemBracketHandler.getItem("Thaumcraft:blockMetalDevice", 12),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:FocusPrimal", 0),
+        //                ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
+        //                ItemBracketHandler.getItem("miscutils:blockCompressedObsidian", 1),
+        //                ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
+        //                ItemBracketHandler.getItem("miscutils:blockCompressedObsidian", 1),
+        //                ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
+        //                ItemBracketHandler.getItem("miscutils:blockCompressedObsidian", 1),
+        //                ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5)),
+        //        "auram 128 ,perditio 96, vacuos 64, mortuus 32", ItemBracketHandler.getItem("thaumicbases:nodeFoci", 1),
+        //        8)
+
         Infusion.addRecipe("TB.NodeFoci.Efficiency", ItemBracketHandler.getItem("Thaumcraft:blockMetalDevice", 12),
                 arrayOf(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0),
                         ItemBracketHandler.getItem("thaumicbases:crystalBlock", 1),

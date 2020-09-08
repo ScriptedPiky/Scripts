@@ -102,8 +102,11 @@ class RandomThings : Runnable {
                         arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650),
                                 OreBracketHandler.getOre("stickObsidian"), OreBracketHandler.getOre("blockHopper")),
                         arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateRedstone"), null)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("RandomThings:advancedItemCollector", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraUtilities:enderCollector", 0)), null)
+
+        //TODO Replace ("ExtraUtilities:enderCollector", 0)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("RandomThings:advancedItemCollector", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraUtilities:enderCollector", 0)), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("RandomThings:dyeingMachine", 0),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809),
                         ItemBracketHandler.getItem("minecraft:crafting_table", 0),
@@ -117,19 +120,25 @@ class RandomThings : Runnable {
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("RandomThings:playerinterface", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("RIO:tile.remote_interface", 0),
                         ItemBracketHandler.getItem("RandomThings:ingredient", 0)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("RandomThings:voidStone", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraUtilities:trashcan", 0),
-                        ItemBracketHandler.getItem("minecraft:ender_pearl", 0)), null)
+
+        //TODO Replace ("ExtraUtilities:trashcan", 0)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("RandomThings:voidStone", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraUtilities:trashcan", 0),
+        //                ItemBracketHandler.getItem("minecraft:ender_pearl", 0)), null)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:ingredient", 5),
                 ItemBracketHandler.getItem("minecraft:ender_pearl", 0),
                 ItemBracketHandler.getItem("minecraft:nether_wart", 0), 150, 120)
         Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:ingredient", 0),
                 ItemBracketHandler.getItem("minecraft:emerald", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17526).amount(4), 250, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:fluidDisplay", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:GlassPane", 0).amount(16),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("refinedglue").withAmount(72), 200, 30)
+
+        //TODO Replace (TConstruct:GlassPane)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:fluidDisplay", 0).amount(8),
+        //        ItemBracketHandler.getItem("TConstruct:GlassPane", 0).amount(16),
+        //        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
+        //        LiquidBracketHandler.getLiquid("refinedglue").withAmount(72), 200, 30)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:advancedFluidDisplay", 0),
                 ItemBracketHandler.getItem("RandomThings:fluidDisplay", 0),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
@@ -154,10 +163,13 @@ class RandomThings : Runnable {
                 ItemBracketHandler.getItem("TwilightForest:item.charmOfKeeping3", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
                 LiquidBracketHandler.getLiquid("ender").withAmount(4000), 1200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:dropFilter", 1),
-                ItemBracketHandler.getItem("ExtraUtilities:trashcan", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(250), 300, 30)
+
+        //TODO Replace ("ExtraUtilities:trashcan", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:dropFilter", 1),
+        //        ItemBracketHandler.getItem("ExtraUtilities:trashcan", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(250), 300, 30)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:spectreKey", 0),
                 ItemBracketHandler.getItem("RandomThings:ingredient", 4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23028),

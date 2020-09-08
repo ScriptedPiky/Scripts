@@ -188,48 +188,51 @@ class Thaumcraft06Eldritch : Runnable {
         Research.setAspects("ROD_primal_staff",
                 "aqua 15, ignis 15, aer 12, terra 12, ordo 12, perditio 9, praecantatio 9, instrumentum 6, alienis 3")
         Research.setComplexity("ROD_primal_staff", 4)
-        Infusion.addRecipe("ARMORVOIDFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemHelmetVoid", 0),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemGoggles", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7)),
-                "alienis 24, metallum 24, pannus 24, sensus 24, tutamen 24, vacuos 24, praecantatio 24",
-                ItemBracketHandler.getItem("Thaumcraft:ItemHelmetVoidFortress", 0), 8)
-        Research.setAspects("ARMORVOIDFORTRESS",
-                "vacuos 15, tenebrae 15, tutamen 12, pannus 12, alienis 9, praecantatio 9, sensus 6, metallum 3")
-        Research.setComplexity("ARMORVOIDFORTRESS", 4)
-        Infusion.addRecipe("ARMORVOIDFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemChestplateVoid", 0),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemChestplateRobe", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7)),
-                "alienis 32, metallum 32, pannus 32, sensus 32, tutamen 32, vacuos 32, praecantatio 32",
-                ItemBracketHandler.getItem("Thaumcraft:ItemChestplateVoidFortress", 0), 8)
-        Infusion.addRecipe("ARMORVOIDFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsVoid", 0),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsRobe", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7)),
-                "alienis 28, metallum 28, pannus 28, sensus 28, tutamen 28, vacuos 28, praecantatio 28",
-                ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsVoidFortress", 0), 8)
+
+        //TODO Replace ("harvestcraft:hardenedleatherItem", 0)
+        //Infusion.addRecipe("ARMORVOIDFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemHelmetVoid", 0),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemGoggles", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7)),
+        //        "alienis 24, metallum 24, pannus 24, sensus 24, tutamen 24, vacuos 24, praecantatio 24",
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemHelmetVoidFortress", 0), 8)
+        //Research.setAspects("ARMORVOIDFORTRESS",
+        //        "vacuos 15, tenebrae 15, tutamen 12, pannus 12, alienis 9, praecantatio 9, sensus 6, metallum 3")
+        //Research.setComplexity("ARMORVOIDFORTRESS", 4)
+        //Infusion.addRecipe("ARMORVOIDFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemChestplateVoid", 0),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemChestplateRobe", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7)),
+        //        "alienis 32, metallum 32, pannus 32, sensus 32, tutamen 32, vacuos 32, praecantatio 32",
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemChestplateVoidFortress", 0), 8)
+        //Infusion.addRecipe("ARMORVOIDFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsVoid", 0),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsRobe", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7)),
+        //        "alienis 28, metallum 28, pannus 28, sensus 28, tutamen 28, vacuos 28, praecantatio 28",
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsVoidFortress", 0), 8)
+
         Infusion.addRecipe("SANITYCHECK", ItemBracketHandler.getItem("Thaumcraft:ItemThaumometer", 0),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:blockMirror", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330),
@@ -243,17 +246,20 @@ class Thaumcraft06Eldritch : Runnable {
                 ItemBracketHandler.getItem("Thaumcraft:ItemSanityChecker", 0), 5)
         Research.setAspects("SANITYCHECK", "sensus 12, cognitio 12, alienis 12, praecantatio 9, sano 6, victus 3")
         Research.setComplexity("SANITYCHECK", 3)
-        Infusion.addRecipe("OCULUS", ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 45),
-                arrayOf(ItemBracketHandler.getItem("minecraft:ender_eye", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 17),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 17),
-                        ItemBracketHandler.getItem("minecraft:ender_eye", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 17),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 17)),
-                "alienis 64, iter 32, tenebrae 32, vacuos 32",
-                ItemBracketHandler.getItem("Thaumcraft:ItemEldritchObject", 0), 7)
+
+        //TODO Replace ("StevesCarts:ModuleComponents", 45)
+        //Infusion.addRecipe("OCULUS", ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 45),
+        //        arrayOf(ItemBracketHandler.getItem("minecraft:ender_eye", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 17),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 17),
+        //                ItemBracketHandler.getItem("minecraft:ender_eye", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 17),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 17)),
+        //        "alienis 64, iter 32, tenebrae 32, vacuos 32",
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemEldritchObject", 0), 7)
+
         Research.setAspects("OCULUS",
                 "alienis 12, cognitio 12, tenebrae 9, iter 9, permutatio 9, vitium 6, praecantatio 3")
         Research.setComplexity("OCULUS", 3)

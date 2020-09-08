@@ -649,13 +649,16 @@ class Galacticraft : Runnable {
                                 ItemBracketHandler.getItem("CarpentersBlocks:itemCarpentersBed", 0),
                                 ItemBracketHandler.getItem("GalacticraftMars:item.null", 3)),
                         arrayOf<IIngredient>(item6, ItemBracketHandler.getItem("minecraft:clock", 0), item6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalacticraftMars:tile.marsMachine", 0),
-                arrayOf(arrayOf(ore7, ItemBracketHandler.getItem("GalacticraftCore:item.oxygenConcentrator", 0), ore7),
-                        arrayOf<IIngredient>(item11, ItemBracketHandler.getItem("gregtech:gt.blockcasings2", 4),
-                                item11),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32602),
-                                ItemBracketHandler.getItem("extracells:certustank", 0),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32612))), null)
+
+        //TODO Replace ("extracells:certustank", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalacticraftMars:tile.marsMachine", 0),
+        //        arrayOf(arrayOf(ore7, ItemBracketHandler.getItem("GalacticraftCore:item.oxygenConcentrator", 0), ore7),
+        //                arrayOf<IIngredient>(item11, ItemBracketHandler.getItem("gregtech:gt.blockcasings2", 4),
+        //                        item11),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32602),
+        //                        ItemBracketHandler.getItem("extracells:certustank", 0),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32612))), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalacticraftMars:tile.marsMachine", 8),
                 arrayOf(arrayOf(ore10, ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 19), ore10),
                         arrayOf<IIngredient>(item11, ItemBracketHandler.getItem("gregtech:gt.blockmachines", 13),
@@ -685,14 +688,17 @@ class Galacticraft : Runnable {
                         arrayOf(OreBracketHandler.getOre("compressedSteel"),
                                 ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 8),
                                 OreBracketHandler.getOre("compressedSteel"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalacticraftCore:item.canvas", 0),
-                arrayOf(arrayOf(null, ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        OreBracketHandler.getOre("stickPlastic")),
-                        arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                OreBracketHandler.getOre("stickPlastic"),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("stickPlastic"),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null)), null)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalacticraftCore:item.canvas", 0),
+        //        arrayOf(arrayOf(null, ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                OreBracketHandler.getOre("stickPlastic")),
+        //                arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        OreBracketHandler.getOre("stickPlastic"),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("stickPlastic"),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null)), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 20),
                 arrayOf(arrayOf(OreBracketHandler.getOre("circuitAdvanced"),
                         ItemBracketHandler.getItem("GalacticraftCore:item.airVent", 0),
@@ -1352,12 +1358,15 @@ class Galacticraft : Runnable {
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 1200,
                 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0).amount(8),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29019).amount(8),
-                        ItemBracketHandler.getItem("dreamcraft:item.MeteoricIronString", 0).amount(8),
-                        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(144), 300, 480)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0).amount(8),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29019).amount(8),
+        //                ItemBracketHandler.getItem("dreamcraft:item.MeteoricIronString", 0).amount(8),
+        //                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
+        //        LiquidBracketHandler.getLiquid("molten.silicone").withAmount(144), 300, 480)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:tile.glowstoneTorch", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23010),
                 ItemBracketHandler.getItem("minecraft:glowstone_dust", 0), 100, 16)
@@ -1412,9 +1421,12 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("molten.rubber").withAmount(72), 400, 120)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 0), item13,
                 ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 9), 200, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.canvas", 0),
-                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23874).amount(2), 300, 480)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.canvas", 0),
+        //        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23874).amount(2), 300, 480)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.parachute", 0),
                 ItemBracketHandler.getItem("GalacticraftCore:item.canvas", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19305).amount(3), 300, 480)

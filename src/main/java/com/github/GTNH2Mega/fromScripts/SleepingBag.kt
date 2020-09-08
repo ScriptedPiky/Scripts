@@ -14,9 +14,13 @@ class SleepingBag : Runnable {
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("sleepingbag:sleepingBag", 0),
                 arrayOf(arrayOf<IIngredient>(item, item, item), arrayOf<IIngredient>(ore, ore, ore),
                         arrayOf<IIngredient>(item2, item2, item2)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("sleepingbag:sleepingBag", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("adventurebackpack:backpackComponent", 1)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("adventurebackpack:backpackComponent", 1),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("OpenBlocks:sleepingBag", 0)), null)
+
+        //TODO Replace ("adventurebackpack:backpackComponent", 1)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("sleepingbag:sleepingBag", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("adventurebackpack:backpackComponent", 1)), null)
+
+        //TODO Replace ("adventurebackpack:backpackComponent", 1)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("adventurebackpack:backpackComponent", 1),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("OpenBlocks:sleepingBag", 0)), null)
     }
 }

@@ -508,16 +508,19 @@ class BloodMagic : Runnable {
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 8),
                                 ItemBracketHandler.getItem("AWWayofTime:masterBloodOrb", 0),
                                 ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 8))))
-        BloodOrb.addShaped(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 26),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 6),
-                        ItemBracketHandler.getItem("AWWayofTime:terrae", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 1),
-                                ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:terrae", 0))))
+
+        //TODO Replace ("TConstruct:heavyPlate", 6)
+        //BloodOrb.addShaped(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 26),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 6),
+        //                ItemBracketHandler.getItem("AWWayofTime:terrae", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 1),
+        //                        ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:terrae", 0))))
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 2).amount(3),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("platePlastic"),
                         OreBracketHandler.getOre("platePlastic"), OreBracketHandler.getOre("platePlastic")),

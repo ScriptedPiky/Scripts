@@ -396,10 +396,13 @@ class EnderIO : Runnable {
         val hashMap4 = HashMap<String, IData>()
         hashMap4["type"] = ExpandString.asData("VIBRANT")
         hashMap4["storedEnergyRF"] = ExpandInt.toData(0)
-        recipes4.addShaped(item68.withTag(ExpandAnyDict.asData(hashMap4)),
-                arrayOf(arrayOf(item16, ore3, item16), arrayOf<IIngredient>(item32, item24, item32),
-                        arrayOf<IIngredient>(item16, ItemBracketHandler.getItem("miscutils:MU-metaitem.01", 32054),
-                                item16)), null)
+
+        //TODO Replace ("miscutils:MU-metaitem.01", 32054)
+        //recipes4.addShaped(item68.withTag(ExpandAnyDict.asData(hashMap4)),
+        //        arrayOf(arrayOf(item16, ore3, item16), arrayOf<IIngredient>(item32, item24, item32),
+        //                arrayOf<IIngredient>(item16, ItemBracketHandler.getItem("miscutils:MU-metaitem.01", 32054),
+        //                        item16)), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockPainter", 0),
                 arrayOf(arrayOf<IIngredient>(ore16, ore19, ore16), arrayOf(ore, item24, ore),
                         arrayOf(item, ore19, item)), null)
@@ -1147,9 +1150,12 @@ class EnderIO : Runnable {
                 arrayOf<IIngredient>(item18.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32726),
                         ItemBracketHandler.getItem("EnderIO:itemMaterial", 13)),
                 LiquidBracketHandler.getLiquid("molten.stellaralloy").withAmount(864), 200, 30720)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockVacuumChest", 0),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 9231),
-                ItemBracketHandler.getItem("ExtraUtilities:enderCollector", 0), 200, 64)
+
+        //TODO Replace ("ExtraUtilities:enderCollector", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockVacuumChest", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 9231),
+        //        ItemBracketHandler.getItem("ExtraUtilities:enderCollector", 0), 200, 64)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockBuffer", 2),
                 ItemBracketHandler.getItem("EnderIO:blockBuffer", 0),
                 ItemBracketHandler.getItem("EnderIO:blockBuffer", 1), 400, 120)

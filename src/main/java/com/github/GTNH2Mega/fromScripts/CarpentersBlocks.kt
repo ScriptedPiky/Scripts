@@ -77,10 +77,13 @@ class CarpentersBlocks : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470)),
                 arrayOf<IIngredient>(item5, item, item5)), null)
-        MineTweakerAPI.recipes.addShaped(item11,
-                arrayOf(arrayOf(ore2, ItemBracketHandler.getItem("TConstruct:chiselHead", 2), ore),
-                        arrayOf(item6, OreBracketHandler.getOre("stickAnyIron"), item6),
-                        arrayOf(item, OreBracketHandler.getOre("stickAnyIron"), item)), null)
+
+        //TODO Replace ("TConstruct:chiselHead", 2)
+        //MineTweakerAPI.recipes.addShaped(item11,
+        //        arrayOf(arrayOf(ore2, ItemBracketHandler.getItem("TConstruct:chiselHead", 2), ore),
+        //                arrayOf(item6, OreBracketHandler.getOre("stickAnyIron"), item6),
+        //                arrayOf(item, OreBracketHandler.getOre("stickAnyIron"), item)), null)
+
         MineTweakerAPI.recipes.addShaped(item12,
                 arrayOf(arrayOf(ore2, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 5032), ore),
                         arrayOf(item6, OreBracketHandler.getOre("stickAnyIron"), item6),
@@ -173,7 +176,10 @@ class CarpentersBlocks : Runnable {
         Assembler.addRecipe(item3, item2.amount(3), item4, 300, 30)
         Assembler.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersTorch", 0).amount(10), item,
                 ItemBracketHandler.getItem("minecraft:torch", 0).amount(10), 100, 16)
-        Assembler.addRecipe(item11, item, ItemBracketHandler.getItem("TConstruct:chiselHead", 2), 200, 30)
+
+        //TODO Replace ("TConstruct:chiselHead", 2)
+        //Assembler.addRecipe(item11, item, ItemBracketHandler.getItem("TConstruct:chiselHead", 2), 200, 30)
+
         Assembler.addRecipe(item12, item, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 5032), 200, 30)
         Assembler.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:itemCarpentersTile", 0).amount(2),
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersPressurePlate", 0),

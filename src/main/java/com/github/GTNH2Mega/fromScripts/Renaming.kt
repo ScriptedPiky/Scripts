@@ -14,15 +14,6 @@ class Renaming : Runnable {
         ItemBracketHandler.getItem("minecraft:ender_chest", 0).displayName = "Personal Ender Chest"
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("minecraft:ender_chest", 0),
                 MineTweakerAPI.format.darkAqua(ExpandString.asFormattedText("Only For Personal Use")))
-        ItemBracketHandler.getItem("StevesCarts:CartModule", 61).displayName = "Infinity Engine"
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("StevesCarts:CartModule", 61),
-                MineTweakerAPI.format.lightPurple(ExpandString.asFormattedText("Perpetual Locomotion")))
-        ItemBracketHandler.getItem("StevesCarts:upgrade", 14).displayName = "Upgrade: Integrated Infinity Reactor"
-        ItemBracketHandler.getItem("StevesCarts:CartModule", 76).displayName = "Quantum Minecart Hull"
-        ItemBracketHandler.getItem("StevesCarts:CartModule", 81).displayName = "Galgadorian Minecart Hull"
-        ItemBracketHandler.getItem("StevesCarts:CartModule", 39).displayName = "Reinforced Minecart Hull"
-        ItemBracketHandler.getItem("StevesCarts:CartModule", 38).displayName = "Standard Minecart Hull"
-        ItemBracketHandler.getItem("StevesCarts:CartModule", 37).displayName = "Wooden Minecart Hull"
         ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCreativeEnergyCell",
                 0).displayName = "Neutronium Energy Cell"
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCreativeEnergyCell", 0),

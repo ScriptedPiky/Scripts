@@ -278,18 +278,21 @@ class ForbiddenMagic : Runnable {
                 "invidia 18, instrumentum 15, permutatio 12, cognitio 9, praecantatio 6, potentia 3")
         Research.setComplexity("MORPHTOOLS", 3)
         Warp.addToResearch("MORPHTOOLS", 5)
-        Infusion.addRecipe("TAINTSHOVEL", ItemBracketHandler.getItem("Thaumcraft:ItemShovelElemental", 0),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:WandRod", 2),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 4),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30514),
-                        ItemBracketHandler.getItem("TConstruct:strangeFood", 0),
-                        ItemBracketHandler.getItem("TConstruct:strangeFood", 0),
-                        ItemBracketHandler.getItem("minecraft:slime_ball", 0),
-                        ItemBracketHandler.getItem("minecraft:slime_ball", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30503),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 4)),
-                "perfodio 16, sano 16, vitreus 32, praecantatio 32, limus 8, instrumentum 8",
-                ItemBracketHandler.getItem("ForbiddenMagic:TaintShovel", 0), 10)
+
+        //TODO Replace ("TConstruct:strangeFood", 0)
+        //Infusion.addRecipe("TAINTSHOVEL", ItemBracketHandler.getItem("Thaumcraft:ItemShovelElemental", 0),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:WandRod", 2),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 4),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30514),
+        //                ItemBracketHandler.getItem("TConstruct:strangeFood", 0),
+        //                ItemBracketHandler.getItem("TConstruct:strangeFood", 0),
+        //                ItemBracketHandler.getItem("minecraft:slime_ball", 0),
+        //                ItemBracketHandler.getItem("minecraft:slime_ball", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30503),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 4)),
+        //        "perfodio 16, sano 16, vitreus 32, praecantatio 32, limus 8, instrumentum 8",
+        //        ItemBracketHandler.getItem("ForbiddenMagic:TaintShovel", 0), 10)
+
         Research.setAspects("TAINTSHOVEL",
                 "vitreus 21, vitium 18, instrumentum 15, limus 12, praecantatio 9, venenum 6, permutatio 3")
         Research.setComplexity("TAINTSHOVEL", 3)

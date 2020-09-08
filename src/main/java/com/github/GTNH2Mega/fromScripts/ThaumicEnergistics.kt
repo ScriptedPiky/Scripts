@@ -342,16 +342,19 @@ class ThaumicEnergistics : Runnable {
                                 OreBracketHandler.getOre("circuitAdvanced"))))
         Research.addArcanePage("thaumicenergistics.TESTORAGE",
                 ItemBracketHandler.getItem("thaumicenergistics:storage.component", 3))
-        Arcane.addShaped("thaumicenergistics.TESTORAGE",
-                ItemBracketHandler.getItem("thaumicenergistics:storage.casing", 0), "ordo 10, terra 10, aqua 10",
-                arrayOf(arrayOf(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
-                        OreBracketHandler.getOre("plateInfusedFire"),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2)),
-                        arrayOf(OreBracketHandler.getOre("plateInfusedEarth"),
-                                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                                OreBracketHandler.getOre("plateInfusedEarth")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateThaumium"),
-                                OreBracketHandler.getOre("plateThaumium"), OreBracketHandler.getOre("plateThaumium"))))
+
+        //TODO Replace ("TConstruct:diamondApple", 0)
+        //Arcane.addShaped("thaumicenergistics.TESTORAGE",
+        //        ItemBracketHandler.getItem("thaumicenergistics:storage.casing", 0), "ordo 10, terra 10, aqua 10",
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
+        //                OreBracketHandler.getOre("plateInfusedFire"),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2)),
+        //                arrayOf(OreBracketHandler.getOre("plateInfusedEarth"),
+        //                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                        OreBracketHandler.getOre("plateInfusedEarth")),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("plateThaumium"),
+        //                        OreBracketHandler.getOre("plateThaumium"), OreBracketHandler.getOre("plateThaumium"))))
+
         Research.addArcanePage("thaumicenergistics.TESTORAGE",
                 ItemBracketHandler.getItem("thaumicenergistics:storage.casing", 0))
         Arcane.addShaped("thaumicenergistics.TESTORAGE",

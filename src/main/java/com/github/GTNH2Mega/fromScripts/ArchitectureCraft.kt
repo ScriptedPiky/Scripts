@@ -12,16 +12,19 @@ class ArchitectureCraft : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ArchitectureCraft:largePulley", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ArchitectureCraft:hammer", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ArchitectureCraft:chisel", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ArchitectureCraft:sawbench", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("screwSteel"),
-                        ItemBracketHandler.getItem("minecraft:heavy_weighted_pressure_plate", 0),
-                        OreBracketHandler.getOre("screwSteel")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:trap.barricade.oak", 0),
-                                ItemBracketHandler.getItem("ArchitectureCraft:sawblade", 0),
-                                ItemBracketHandler.getItem("TConstruct:trap.barricade.oak", 0)),
-                        arrayOf(OreBracketHandler.getOre("craftingToolScrewdriver"),
-                                ItemBracketHandler.getItem("ArchitectureCraft:largePulley", 0),
-                                OreBracketHandler.getOre("craftingToolHardHammer"))), null)
+
+        //TODO Replace ("TConstruct:trap.barricade.oak", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ArchitectureCraft:sawbench", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("screwSteel"),
+        //                ItemBracketHandler.getItem("minecraft:heavy_weighted_pressure_plate", 0),
+        //                OreBracketHandler.getOre("screwSteel")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:trap.barricade.oak", 0),
+        //                        ItemBracketHandler.getItem("ArchitectureCraft:sawblade", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:trap.barricade.oak", 0)),
+        //                arrayOf(OreBracketHandler.getOre("craftingToolScrewdriver"),
+        //                        ItemBracketHandler.getItem("ArchitectureCraft:largePulley", 0),
+        //                        OreBracketHandler.getOre("craftingToolHardHammer"))), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("ArchitectureCraft:sawblade", 0),
                 arrayOf<IIngredient>(OreBracketHandler.getOre("toolHeadBuzzSawAnyIron")), null)
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 15032),

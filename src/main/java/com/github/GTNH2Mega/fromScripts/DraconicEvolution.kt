@@ -143,23 +143,26 @@ class DraconicEvolution : Runnable {
                 OreBracketHandler.getOre("plateNeutronium"), OreBracketHandler.getOre("plateDraconium"), null, null,
                 null), arrayOf(null, null, OreBracketHandler.getOre("plateDraconium"), null, item, null,
                 OreBracketHandler.getOre("plateDraconium"), null, null), arrayOfNulls(9), arrayOfNulls(9)))
-        ExtremeCrafting.addShaped(item3, arrayOf(arrayOfNulls(9), arrayOfNulls(9),
-                arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateDraconium"), null,
-                        OreBracketHandler.getOre("plateRedstoneAlloy"), null,
-                        OreBracketHandler.getOre("plateDraconium"), null, null),
-                arrayOf(null, null, null, OreBracketHandler.getOre("plateDraconium"),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1),
-                        OreBracketHandler.getOre("plateDraconium"), null, null, null),
-                arrayOf(null, null, OreBracketHandler.getOre("plateRedstoneAlloy"),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1), item,
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1),
-                        OreBracketHandler.getOre("plateRedstoneAlloy"), null, null),
-                arrayOf(null, null, null, OreBracketHandler.getOre("plateDraconium"),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1),
-                        OreBracketHandler.getOre("plateDraconium"), null, null, null),
-                arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateDraconium"), null,
-                        OreBracketHandler.getOre("plateRedstoneAlloy"), null,
-                        OreBracketHandler.getOre("plateDraconium"), null, null), arrayOfNulls(9), arrayOfNulls(9)))
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 1)
+        //ExtremeCrafting.addShaped(item3, arrayOf(arrayOfNulls(9), arrayOfNulls(9),
+        //        arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateDraconium"), null,
+        //                OreBracketHandler.getOre("plateRedstoneAlloy"), null,
+        //                OreBracketHandler.getOre("plateDraconium"), null, null),
+        //        arrayOf(null, null, null, OreBracketHandler.getOre("plateDraconium"),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1),
+        //                OreBracketHandler.getOre("plateDraconium"), null, null, null),
+        //        arrayOf(null, null, OreBracketHandler.getOre("plateRedstoneAlloy"),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1), item,
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1),
+        //                OreBracketHandler.getOre("plateRedstoneAlloy"), null, null),
+        //        arrayOf(null, null, null, OreBracketHandler.getOre("plateDraconium"),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1),
+        //                OreBracketHandler.getOre("plateDraconium"), null, null, null),
+        //        arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateDraconium"), null,
+        //                OreBracketHandler.getOre("plateRedstoneAlloy"), null,
+        //                OreBracketHandler.getOre("plateDraconium"), null, null), arrayOfNulls(9), arrayOfNulls(9)))
+
         val array: Array<Array<IIngredient?>?> = arrayOfNulls(9)
         array[0] = arrayOfNulls(9)
         array[1] = arrayOf(null, null, null, null, OreBracketHandler.getOre("plateDraconium"), null, null, null, null)
@@ -464,21 +467,24 @@ class DraconicEvolution : Runnable {
                 arrayOf(null, null, OreBracketHandler.getOre("plateDraconiumAwakened"), null, item2, null,
                         OreBracketHandler.getOre("plateDraconiumAwakened"), null, null), arrayOfNulls(9),
                 arrayOfNulls(9)))
-        ExtremeCrafting.addShaped(item6, arrayOf(arrayOfNulls(9), arrayOfNulls(9),
-                arrayOf(null, null, OreBracketHandler.getOre("plateDraconiumAwakened"), null, item3, null,
-                        OreBracketHandler.getOre("plateDraconiumAwakened"), null, null),
-                arrayOf(null, null, null, OreBracketHandler.getOre("plateDraconiumAwakened"),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4),
-                        OreBracketHandler.getOre("plateDraconiumAwakened"), null, null, null),
-                arrayOf<IIngredient?>(null, null, item3,
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4), item2,
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4), item3, null, null),
-                arrayOf(null, null, null, OreBracketHandler.getOre("plateDraconiumAwakened"),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4),
-                        OreBracketHandler.getOre("plateDraconiumAwakened"), null, null, null),
-                arrayOf(null, null, OreBracketHandler.getOre("plateDraconiumAwakened"), null, item3, null,
-                        OreBracketHandler.getOre("plateDraconiumAwakened"), null, null), arrayOfNulls(9),
-                arrayOfNulls(9)))
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 4)
+        //ExtremeCrafting.addShaped(item6, arrayOf(arrayOfNulls(9), arrayOfNulls(9),
+        //        arrayOf(null, null, OreBracketHandler.getOre("plateDraconiumAwakened"), null, item3, null,
+        //                OreBracketHandler.getOre("plateDraconiumAwakened"), null, null),
+        //        arrayOf(null, null, null, OreBracketHandler.getOre("plateDraconiumAwakened"),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4),
+        //                OreBracketHandler.getOre("plateDraconiumAwakened"), null, null, null),
+        //        arrayOf<IIngredient?>(null, null, item3,
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4), item2,
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4), item3, null, null),
+        //        arrayOf(null, null, null, OreBracketHandler.getOre("plateDraconiumAwakened"),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4),
+        //                OreBracketHandler.getOre("plateDraconiumAwakened"), null, null, null),
+        //        arrayOf(null, null, OreBracketHandler.getOre("plateDraconiumAwakened"), null, item3, null,
+        //                OreBracketHandler.getOre("plateDraconiumAwakened"), null, null), arrayOfNulls(9),
+        //        arrayOfNulls(9)))
+
         ExtremeCrafting.addShaped(item7, arrayOf(arrayOfNulls(9),
                 arrayOf<IIngredient?>(null, null, null, null, OreBracketHandler.getOre("plateDraconiumAwakened"), null,
                         null, null, null), arrayOf(null, null, OreBracketHandler.getOre("plateDraconiumAwakened"),

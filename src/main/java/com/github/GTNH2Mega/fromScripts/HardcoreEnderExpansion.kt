@@ -307,16 +307,19 @@ class HardcoreEnderExpansion : Runnable {
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:curse", 7),
                         OreBracketHandler.getOre("dustTinyNetherStar")), arrayOf<IIngredient?>(null,
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:arcane_shard", 0), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("HardcoreEnderExpansion:curse", 8).amount(4),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0),
-                        OreBracketHandler.getOre("cropGarlic"),
-                        ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:strangeFood", 1),
-                                ItemBracketHandler.getItem("HardcoreEnderExpansion:living_matter", 0),
-                                ItemBracketHandler.getItem("HardcoreEnderExpansion:silverfish_blood", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0),
-                                ItemBracketHandler.getItem("HardcoreEnderExpansion:igneous_rock", 0),
-                                ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0))), null)
+
+        //TODO Replace ("TConstruct:strangeFood", 1)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("HardcoreEnderExpansion:curse", 8).amount(4),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0),
+        //                OreBracketHandler.getOre("cropGarlic"),
+        //                ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:strangeFood", 1),
+        //                        ItemBracketHandler.getItem("HardcoreEnderExpansion:living_matter", 0),
+        //                        ItemBracketHandler.getItem("HardcoreEnderExpansion:silverfish_blood", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0),
+        //                        ItemBracketHandler.getItem("HardcoreEnderExpansion:igneous_rock", 0),
+        //                        ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0))), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("HardcoreEnderExpansion:curse", 264),
                 arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("HardcoreEnderExpansion:stardust", 0),
                         null), arrayOf(OreBracketHandler.getOre("dustNetherrack"),

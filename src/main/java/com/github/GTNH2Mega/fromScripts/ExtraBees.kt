@@ -173,28 +173,31 @@ class ExtraBees : Runnable {
                                 OreBracketHandler.getOre("screwIron"))))
         Research.addArcanePage("HEALINGFRAME", ItemBracketHandler.getItem("ExtraBees:hiveFrame.clay", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraBees:hiveFrame.cocoa", 0))
-        Research.addResearch("CHOCOLATEFRAME", "MAGICBEES", "praecantatio 15, fabrico 12, cognitio 9, fames 6", 7, 2, 4,
-                ItemBracketHandler.getItem("ExtraBees:hiveFrame.cocoa", 0))
-        MineTweakerAPI.game.setLocalization("tc.research_name.CHOCOLATEFRAME", "Chocolate Frame")
-        MineTweakerAPI.game.setLocalization("tc.research_text.CHOCOLATEFRAME", "[EB] Feeding the Bees")
-        Research.addPrereq("CHOCOLATEFRAME", "MB_EssenceUnstable", false)
-        Research.setConcealed("CHOCOLATEFRAME", true)
-        Research.addPage("CHOCOLATEFRAME", "ExtraBees.research_page.CHOCOLATEFRAME_1")
-        Research.addPage("CHOCOLATEFRAME", "ExtraBees.research_page.CHOCOLATEFRAME_2")
-        MineTweakerAPI.game.setLocalization("ExtraBees.research_page.CHOCOLATEFRAME_1",
-                "The Chocolate Frame is an item used in an Apiary or Alveary Frame Housing , which increases a Queens productivity at the cost of a shorter lifespan. One Chocolate Frame increases the production of the Queen by 50% while reducing her lifespan by 50%. The effects of multiple frames stack multiplicatively, so three Chocolate Frames will make the Lifespan for a Longest life Queen four minutes instead of the usual thirty two. It is constructed using Cocoa Beans and an Impregnated Frame. Chocolate Frames are most often employed to speed up generational turnover, when cloning Princesses for a pure strain or breeding for traits.")
-        MineTweakerAPI.game.setLocalization("ExtraBees.research_page.CHOCOLATEFRAME_2",
-                "For increased production, Forestrys standard Frames are more effective, unless the apiary is set up to automatically replace the drones and princess when the queen dies; in this case the chocolate frame will speed up production.")
-        Arcane.addShaped("CHOCOLATEFRAME", ItemBracketHandler.getItem("ExtraBees:hiveFrame.cocoa", 0),
-                "ordo 4, terra 4, aer 4, perditio 4, ignis 4, aqua 4",
-                arrayOf(arrayOf(OreBracketHandler.getOre("screwIron"), ItemBracketHandler.getItem("minecraft:sugar", 0),
-                        OreBracketHandler.getOre("screwIron")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:cocoapowderItem", 0),
-                                ItemBracketHandler.getItem("Forestry:frameImpregnated", 0),
-                                ItemBracketHandler.getItem("harvestcraft:cocoapowderItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("screwIron"), ItemBracketHandler.getItem("minecraft:sugar", 0),
-                                OreBracketHandler.getOre("screwIron"))))
-        Research.addArcanePage("CHOCOLATEFRAME", ItemBracketHandler.getItem("ExtraBees:hiveFrame.cocoa", 0))
+
+        //TODO Replace ("harvestcraft:cocoapowderItem", 0)
+        //Research.addResearch("CHOCOLATEFRAME", "MAGICBEES", "praecantatio 15, fabrico 12, cognitio 9, fames 6", 7, 2, 4,
+        //        ItemBracketHandler.getItem("ExtraBees:hiveFrame.cocoa", 0))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.CHOCOLATEFRAME", "Chocolate Frame")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.CHOCOLATEFRAME", "[EB] Feeding the Bees")
+        //Research.addPrereq("CHOCOLATEFRAME", "MB_EssenceUnstable", false)
+        //Research.setConcealed("CHOCOLATEFRAME", true)
+        //Research.addPage("CHOCOLATEFRAME", "ExtraBees.research_page.CHOCOLATEFRAME_1")
+        //Research.addPage("CHOCOLATEFRAME", "ExtraBees.research_page.CHOCOLATEFRAME_2")
+        //MineTweakerAPI.game.setLocalization("ExtraBees.research_page.CHOCOLATEFRAME_1",
+        //        "The Chocolate Frame is an item used in an Apiary or Alveary Frame Housing , which increases a Queens productivity at the cost of a shorter lifespan. One Chocolate Frame increases the production of the Queen by 50% while reducing her lifespan by 50%. The effects of multiple frames stack multiplicatively, so three Chocolate Frames will make the Lifespan for a Longest life Queen four minutes instead of the usual thirty two. It is constructed using Cocoa Beans and an Impregnated Frame. Chocolate Frames are most often employed to speed up generational turnover, when cloning Princesses for a pure strain or breeding for traits.")
+        //MineTweakerAPI.game.setLocalization("ExtraBees.research_page.CHOCOLATEFRAME_2",
+        //        "For increased production, Forestrys standard Frames are more effective, unless the apiary is set up to automatically replace the drones and princess when the queen dies; in this case the chocolate frame will speed up production.")
+        //Arcane.addShaped("CHOCOLATEFRAME", ItemBracketHandler.getItem("ExtraBees:hiveFrame.cocoa", 0),
+        //        "ordo 4, terra 4, aer 4, perditio 4, ignis 4, aqua 4",
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("screwIron"), ItemBracketHandler.getItem("minecraft:sugar", 0),
+        //                OreBracketHandler.getOre("screwIron")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:cocoapowderItem", 0),
+        //                        ItemBracketHandler.getItem("Forestry:frameImpregnated", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:cocoapowderItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("screwIron"), ItemBracketHandler.getItem("minecraft:sugar", 0),
+        //                        OreBracketHandler.getOre("screwIron"))))
+        //Research.addArcanePage("CHOCOLATEFRAME", ItemBracketHandler.getItem("ExtraBees:hiveFrame.cocoa", 0))
+
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraBees:hiveFrame.cage", 0))
         Research.addResearch("RESTRAINTFRAME", "MAGICBEES", "praecantatio 15, fabrico 12, cognitio 9, metallum 6", 9, 0,
                 4, ItemBracketHandler.getItem("ExtraBees:hiveFrame.cage", 0))

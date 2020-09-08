@@ -25,7 +25,10 @@ class OpenBlocks : Runnable {
         val item = ItemBracketHandler.getItem("OpenBlocks:hangglider", 0)
         val item2 = ItemBracketHandler.getItem("OpenBlocks:generic", 0)
         val item3 = ItemBracketHandler.getItem("OpenBlocks:luggage", 0)
-        ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)
+
+        //TODO investigate getters with no target field for ("TConstruct:GlassBlock", 0)
+        //ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)
+
         ItemBracketHandler.getItem("minecraft:enchanting_table", 0)
         ItemBracketHandler.getItem("minecraft:anvil", 0)
         val item4 = ItemBracketHandler.getItem("minecraft:iron_bars", 0)
@@ -232,16 +235,19 @@ class OpenBlocks : Runnable {
                                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809)),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("plateStone"),
                                 OreBracketHandler.getOre("plateStone"), OreBracketHandler.getOre("plateStone"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("OpenBlocks:sky", 0).amount(6),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        OreBracketHandler.getOre("plateEnderEye"),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0)),
-                        arrayOf(ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                                OreBracketHandler.getOre("stoneEndstone"),
-                                ItemBracketHandler.getItem("TConstruct:GlassPane", 0)),
-                        arrayOf(ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                                OreBracketHandler.getOre("plateEnderEye"),
-                                ItemBracketHandler.getItem("TConstruct:GlassPane", 0))), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("OpenBlocks:sky", 0).amount(6),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                OreBracketHandler.getOre("plateEnderEye"),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0)),
+        //                arrayOf(ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                        OreBracketHandler.getOre("stoneEndstone"),
+        //                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0)),
+        //                arrayOf(ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                        OreBracketHandler.getOre("plateEnderEye"),
+        //                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0))), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("OpenBlocks:sky", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("OpenBlocks:sky", 1)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("OpenBlocks:projector", 0),
@@ -276,25 +282,30 @@ class OpenBlocks : Runnable {
                                 OreBracketHandler.getOre("pipeSmallSteel"))), null)
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("OpenBlocks:scaffolding", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4905)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("OpenBlocks:generic", 9),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("ProjectBlue:miniatureLamp", 14),
-                        OreBracketHandler.getOre("plateEnderEye"),
-                        ItemBracketHandler.getItem("ProjectBlue:miniatureLamp", 14)),
-                        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
-                                OreBracketHandler.getOre("circuitBasic"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("rotorAluminium"),
-                                OreBracketHandler.getOre("plateEnderEye"), OreBracketHandler.getOre("rotorAluminium"))),
-                null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("OpenBlocks:slimalyzer", 0),
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwIron"),
-                        OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("screwIron")),
-                        arrayOf(OreBracketHandler.getOre("itemCasingAnyIron"),
-                                ItemBracketHandler.getItem("TConstruct:materials", 1),
-                                OreBracketHandler.getOre("itemCasingAnyIron")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolScrewdriver"),
-                                OreBracketHandler.getOre("circuitBasic"),
-                                OreBracketHandler.getOre("craftingToolFile"))), null)
+
+        //TODO Replace ("ProjectBlue:miniatureLamp", 14)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("OpenBlocks:generic", 9),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("ProjectBlue:miniatureLamp", 14),
+        //                OreBracketHandler.getOre("plateEnderEye"),
+        //                ItemBracketHandler.getItem("ProjectBlue:miniatureLamp", 14)),
+        //                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
+        //                        OreBracketHandler.getOre("circuitBasic"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("rotorAluminium"),
+        //                        OreBracketHandler.getOre("plateEnderEye"), OreBracketHandler.getOre("rotorAluminium"))),
+        //        null)
+
+        //TODO Replace ("TConstruct:materials", 1)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("OpenBlocks:slimalyzer", 0),
+        //        arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwIron"),
+        //                OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("screwIron")),
+        //                arrayOf(OreBracketHandler.getOre("itemCasingAnyIron"),
+        //                        ItemBracketHandler.getItem("TConstruct:materials", 1),
+        //                        OreBracketHandler.getOre("itemCasingAnyIron")),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolScrewdriver"),
+        //                        OreBracketHandler.getOre("circuitBasic"),
+        //                        OreBracketHandler.getOre("craftingToolFile"))), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("OpenBlocks:paintBrush", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("BuildCraft|Core:paintbrush", 0)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("OpenBlocks:sonicglasses", 0),
@@ -322,9 +333,12 @@ class OpenBlocks : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:xpbottler", 0),
                 ItemBracketHandler.getItem("Forestry:factory", 0),
                 OreBracketHandler.getOre("itemCasingAnyIron").amount(4), 600, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:generic", 10),
-                ItemBracketHandler.getItem("TConstruct:blankPattern", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), 200, 16)
+
+        //TODO Replace ("TConstruct:blankPattern", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:generic", 10),
+        //        ItemBracketHandler.getItem("TConstruct:blankPattern", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), 200, 16)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:generic", 11),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1865),

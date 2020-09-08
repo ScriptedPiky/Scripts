@@ -299,38 +299,41 @@ class TaintedMagic1 : Runnable {
         Research.addInfusionPage("EldritchFocusGTNH", ItemBracketHandler.getItem("TaintedMagic:ItemFocusEldritch", 0))
         Research.addPage("EldritchFocusGTNH", "tm.text.ELDRITCHFOCUS.2")
         Warp.addToResearch("EldritchFocusGTNH", 4)
-        Research.orphanResearch("CRYSTALDAGGER")
-        Research.removeResearch("CRYSTALDAGGER")
-        Research.addResearch("CrystalDaggerGTNH", "TM", "telum 18, ignis 15, sano 12, fames 9, infernus 6, lucrum 3", 0,
-                -3, 4, ItemBracketHandler.getItem("TaintedMagic:ItemCrystalDagger", 0))
-        Research.addPrereq("CrystalDaggerGTNH", "TAINTEDMAGIC", false)
-        Research.addPrereq("CrystalDaggerGTNH", "ShadowmetalGTNH", true)
-        Research.addPrereq("CrystalDaggerGTNH", "ENCHFABRIC", false)
-        Research.addPrereq("CrystalDaggerGTNH", "ESSENTIACRYSTAL", false)
-        Research.addPrereq("CrystalDaggerGTNH", "VOIDMETAL", false)
-        Research.setConcealed("CrystalDaggerGTNH", true)
-        MineTweakerAPI.game.setLocalization("tc.research_name.CrystalDaggerGTNH", "Crystal Blood")
-        MineTweakerAPI.game.setLocalization("tc.research_text.CrystalDaggerGTNH", "Drip, drip, drop...")
-        Research.addPage("CrystalDaggerGTNH", "tm.text.CRYSTALDAGGER.1")
-        val s = "CrystalDaggerGTNH"
-        val item = ItemBracketHandler.getItem("TaintedMagic:ItemCrystalDagger", 0)
-        val s2 = "terra 100, ignis 100, perditio 100, ordo 50, aer 50"
-        val array: Array<Array<IIngredient?>?> = arrayOfNulls(3)
-        val n = 0
-        val array2 = arrayOf<IIngredient?>(OreBracketHandler.getOre("screwThaumium"),
-                OreBracketHandler.getOre("craftingToolWrench"), null)
-        val n2 = 2
-        val item2 = ItemBracketHandler.getItem("TGregworks:tGregToolPartKnifeBlade", 1622)
-        val hashMap = HashMap<String, IData>()
-        hashMap["material"] = ExpandString.asData("Shadow")
-        array2[n2] = item2.withTag(ExpandAnyDict.asData(hashMap))
-        array[n] = array2
-        array[1] = arrayOf(null, ItemBracketHandler.getItem("Thaumcraft:blockTube", 7), null)
-        array[2] = arrayOf(ItemBracketHandler.getItem("Forestry:oakStick", 0),
-                OreBracketHandler.getOre("craftingToolScrewdriver"), OreBracketHandler.getOre("screwThaumium"))
-        Arcane.addShaped(s, item, s2, array)
-        Research.addArcanePage("CrystalDaggerGTNH", ItemBracketHandler.getItem("TaintedMagic:ItemCrystalDagger", 0))
-        Warp.addToResearch("CrystalDaggerGTNH", 3)
+
+        //TODO Replace ("TGregworks:tGregToolPartKnifeBlade", 1622)
+        //Research.orphanResearch("CRYSTALDAGGER")
+        //Research.removeResearch("CRYSTALDAGGER")
+        //Research.addResearch("CrystalDaggerGTNH", "TM", "telum 18, ignis 15, sano 12, fames 9, infernus 6, lucrum 3", 0,
+        //        -3, 4, ItemBracketHandler.getItem("TaintedMagic:ItemCrystalDagger", 0))
+        //Research.addPrereq("CrystalDaggerGTNH", "TAINTEDMAGIC", false)
+        //Research.addPrereq("CrystalDaggerGTNH", "ShadowmetalGTNH", true)
+        //Research.addPrereq("CrystalDaggerGTNH", "ENCHFABRIC", false)
+        //Research.addPrereq("CrystalDaggerGTNH", "ESSENTIACRYSTAL", false)
+        //Research.addPrereq("CrystalDaggerGTNH", "VOIDMETAL", false)
+        //Research.setConcealed("CrystalDaggerGTNH", true)
+        //MineTweakerAPI.game.setLocalization("tc.research_name.CrystalDaggerGTNH", "Crystal Blood")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.CrystalDaggerGTNH", "Drip, drip, drop...")
+        //Research.addPage("CrystalDaggerGTNH", "tm.text.CRYSTALDAGGER.1")
+        //val s = "CrystalDaggerGTNH"
+        //val item = ItemBracketHandler.getItem("TaintedMagic:ItemCrystalDagger", 0)
+        //val s2 = "terra 100, ignis 100, perditio 100, ordo 50, aer 50"
+        //val array: Array<Array<IIngredient?>?> = arrayOfNulls(3)
+        //val n = 0
+        //val array2 = arrayOf<IIngredient?>(OreBracketHandler.getOre("screwThaumium"),
+        //        OreBracketHandler.getOre("craftingToolWrench"), null)
+        //val n2 = 2
+        //val item2 = ItemBracketHandler.getItem("TGregworks:tGregToolPartKnifeBlade", 1622)
+        //val hashMap = HashMap<String, IData>()
+        //hashMap["material"] = ExpandString.asData("Shadow")
+        //array2[n2] = item2.withTag(ExpandAnyDict.asData(hashMap))
+        //array[n] = array2
+        //array[1] = arrayOf(null, ItemBracketHandler.getItem("Thaumcraft:blockTube", 7), null)
+        //array[2] = arrayOf(ItemBracketHandler.getItem("Forestry:oakStick", 0),
+        //        OreBracketHandler.getOre("craftingToolScrewdriver"), OreBracketHandler.getOre("screwThaumium"))
+        //Arcane.addShaped(s, item, s2, array)
+        //Research.addArcanePage("CrystalDaggerGTNH", ItemBracketHandler.getItem("TaintedMagic:ItemCrystalDagger", 0))
+        //Warp.addToResearch("CrystalDaggerGTNH", 3)
+
         Research.orphanResearch("CRIMSONROBES")
         Research.removeResearch("CRIMSONROBES")
         Research.addResearch("CrimsonRobesGTNH", "TM",

@@ -189,7 +189,10 @@ class Railcraft : Runnable {
         val item75 = ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1362)
         val item76 = ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1422)
         OreBracketHandler.getOre("wireGt01RedAlloy")
-        ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
+        //TODO investigate getters with no target field for ("TConstruct:GlassPane", 0)
+        //ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
         val item77 = ItemBracketHandler.getItem("ForgeMicroblock:stoneRod", 0)
         ItemBracketHandler.getItem("IC2:blockMachine", 1)
         val ore43 = OreBracketHandler.getOre("cableGt01Tin")
@@ -875,16 +878,19 @@ class Railcraft : Runnable {
                         arrayOf<IIngredient?>(ItemBracketHandler.getItem("Railcraft:slab", 21), null, null),
                         arrayOfNulls(3)), null)
         MineTweakerAPI.recipes.addShaped(item54.amount(2), arrayOf(arrayOf(ore13, item53)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:backpack.trackman.t1", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("minecraft:rail", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("minecraft:rail", 0),
-                                OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:backpack.trackman.t1", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("minecraft:rail", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("minecraft:rail", 0),
+        //                        OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Railcraft:backpack.trackman.t1", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Railcraft:backpack.trackman.t1", 0)), null)
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
@@ -899,16 +905,19 @@ class Railcraft : Runnable {
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
                 ItemBracketHandler.getItem("Railcraft:backpack.trackman.t1", 0),
                 ItemBracketHandler.getItem("Railcraft:backpack.trackman.t2", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:backpack.iceman.t1", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("BiomesOPlenty:hardIce", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("BiomesOPlenty:hardIce", 0),
-                                OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:backpack.iceman.t1", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("BiomesOPlenty:hardIce", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("BiomesOPlenty:hardIce", 0),
+        //                        OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Railcraft:backpack.iceman.t1", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Railcraft:backpack.iceman.t1", 0)), null)
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
@@ -923,16 +932,19 @@ class Railcraft : Runnable {
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
                 ItemBracketHandler.getItem("Railcraft:backpack.iceman.t1", 0),
                 ItemBracketHandler.getItem("Railcraft:backpack.iceman.t2", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:backpack.apothecary.t1", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("minecraft:potion", 8229),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("minecraft:potion", 8229),
-                                OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:backpack.apothecary.t1", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("minecraft:potion", 8229),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("minecraft:potion", 8229),
+        //                        OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Railcraft:backpack.apothecary.t1", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Railcraft:backpack.apothecary.t1", 0)), null)
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
@@ -967,16 +979,19 @@ class Railcraft : Runnable {
                                 ItemBracketHandler.getItem("minecraft:minecart", 0),
                                 OreBracketHandler.getOre("plateSteel")), arrayOf<IIngredient?>(null, ore11, null)),
                 null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:cart.track.relayer", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650),
-                        ItemBracketHandler.getItem("IC2NuclearControl:blockNuclearControlLight", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650)),
-                        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630),
-                                OreBracketHandler.getOre("circuitBasic"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
-                                ItemBracketHandler.getItem("minecraft:minecart", 0),
-                                ItemBracketHandler.getItem("StevesCarts:CartModule", 8))), null)
+
+        //TODO Replace ("StevesCarts:CartModule", 8)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:cart.track.relayer", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650),
+        //                ItemBracketHandler.getItem("IC2NuclearControl:blockNuclearControlLight", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650)),
+        //                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630),
+        //                        OreBracketHandler.getOre("circuitBasic"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
+        //                        ItemBracketHandler.getItem("minecraft:minecart", 0),
+        //                        ItemBracketHandler.getItem("StevesCarts:CartModule", 8))), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Railcraft:cart.undercutter", 0),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650),
                         ItemBracketHandler.getItem("IC2NuclearControl:blockNuclearControlLight", 0),

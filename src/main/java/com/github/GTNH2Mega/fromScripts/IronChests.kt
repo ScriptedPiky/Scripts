@@ -51,7 +51,10 @@ class IronChests : Runnable {
         val ore5 = OreBracketHandler.getOre("screwDiamond")
         val ore6 = OreBracketHandler.getOre("screwGlass")
         val item30 = ItemBracketHandler.getItem("minecraft:chest", 0)
-        ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
+        //TODO investigate getters with no target field for ("TConstruct:GlassPane", 0)
+        //ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
         ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersBlock", 0)
         val item31 = ItemBracketHandler.getItem("minecraft:dirt", 0)
         val ore7 = OreBracketHandler.getOre("craftingToolHardHammer")

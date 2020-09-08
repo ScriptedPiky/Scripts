@@ -141,12 +141,15 @@ class Thaumcraft01Basic : Runnable {
         Autoclave.addRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2514),
                 LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(200), 9000, 1500, 24)
-        Assembler.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 3),
-                ItemBracketHandler.getItem("harvestthenether:glowflowerseedItem", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 801).amount(8), 600, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 2),
-                ItemBracketHandler.getItem("harvestthenether:glowflowerseedItem", 0),
-                ItemBracketHandler.getItem("Thaumcraft:ItemNugget", 5).amount(8), 600, 30)
+
+        //TODO Replace ("harvestthenether:glowflowerseedItem", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 3),
+        //        ItemBracketHandler.getItem("harvestthenether:glowflowerseedItem", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 801).amount(8), 600, 30)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 2),
+        //        ItemBracketHandler.getItem("harvestthenether:glowflowerseedItem", 0),
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemNugget", 5).amount(8), 600, 30)
+
         Research.refreshResearchRecipe("DECONSTRUCTOR")
         Research.addResearch("WARPWARNING", "BASICS", "null", 1, 1, 1, ItemBracketHandler.getItem("minecraft:skull", 1))
         Research.addSibling("WARP", "WARPWARNING")

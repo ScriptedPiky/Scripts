@@ -70,15 +70,18 @@ class MagicBees : Runnable {
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("MagicBees:miscResources", 22)), null)
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1544),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("MagicBees:miscResources", 23)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("MagicBees:backpack.thaumaturgeT1", 0),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        OreBracketHandler.getOre("gemAmber"),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"),
-                                OreBracketHandler.getOre("gemAmber"), OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("MagicBees:backpack.thaumaturgeT1", 0),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                OreBracketHandler.getOre("gemAmber"),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"),
+        //                        OreBracketHandler.getOre("gemAmber"), OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("MagicBees:backpack.thaumaturgeT1", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("MagicBees:backpack.thaumaturgeT1", 0)), null)
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),

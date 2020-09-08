@@ -605,20 +605,23 @@ class ThaumicTinkerer01 : Runnable {
                         OreBracketHandler.getOre("plateThaumium"))))
         Research.setAspects("FUNNEL", "iter 15, instrumentum 12, aqua 9, metallum 6, praecantatio 3")
         Research.setComplexity("FUNNEL", 3)
-        Research.addPrereq("REPAIRER", "INFUSION", false)
-        Infusion.addRecipe("REPAIRER", ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 4),
-                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032),
-                        ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassPlate", 0),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
-                        ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassPlate", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086)),
-                "fabrico 32, instrumentum 32, ordo 16, praecantatio 16, potentia 8",
-                ItemBracketHandler.getItem("ThaumicTinkerer:repairer", 0), 8)
-        Research.setAspects("REPAIRER", "instrumentum 15, fabrico 12, ordo 9, potentia 6, praecantatio 3")
-        Research.setComplexity("REPAIRER", 4)
+
+        //TODO Replace ("harvestcraft:hardenedleatherItem", 0)
+        //Research.addPrereq("REPAIRER", "INFUSION", false)
+        //Infusion.addRecipe("REPAIRER", ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 4),
+        //        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032),
+        //                ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassPlate", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
+        //                ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassPlate", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086)),
+        //        "fabrico 32, instrumentum 32, ordo 16, praecantatio 16, potentia 8",
+        //        ItemBracketHandler.getItem("ThaumicTinkerer:repairer", 0), 8)
+        //Research.setAspects("REPAIRER", "instrumentum 15, fabrico 12, ordo 9, potentia 6, praecantatio 3")
+        //Research.setComplexity("REPAIRER", 4)
+
         Arcane.addShaped("MAGNETS", ItemBracketHandler.getItem("ThaumicTinkerer:magnet", 0),
                 "aer 30, terra 25, ordo 20, perditio 15",
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwThaumium"),

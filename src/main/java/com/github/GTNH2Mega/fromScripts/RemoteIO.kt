@@ -25,8 +25,13 @@ class RemoteIO : Runnable {
         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978)
         OreBracketHandler.getOre("plateHSLA")
         OreBracketHandler.getOre("stickRedAlloy")
-        val item8 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
-        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //val item8 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
+        //TODO investigate getters with no target field for ("ExtraUtilities:decorativeBlock2", 7)
+        //ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
+
         val ore = OreBracketHandler.getOre("plateObsidian")
         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32674)
         OreBracketHandler.getOre("screwNeutronium")
@@ -41,7 +46,10 @@ class RemoteIO : Runnable {
         val item11 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32693)
         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32684)
         val item12 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32683)
-        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13)
+
+        //TODO investigate getters with no target field for ("AdvancedSolarPanel:asp_crafting_items", 13)
+        //ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13)
+
         OreBracketHandler.getOre("plateNeutronium")
         val ore2 = OreBracketHandler.getOre("pipeMediumTitanium")
         val item13 = ItemBracketHandler.getItem("gregtech:gt.blockcasings", 3)
@@ -85,9 +93,12 @@ class RemoteIO : Runnable {
         MineTweakerAPI.recipes.addShaped(item2,
                 arrayOf(arrayOf<IIngredient>(item9, item9, item9), arrayOf<IIngredient>(item14, item13, item14),
                         arrayOf<IIngredient>(ore3, ore3, ore3)), null)
-        MineTweakerAPI.recipes.addShaped(item6, arrayOf(arrayOf(ore, item8, ore), arrayOf<IIngredient>(item8,
-                ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 21), item8),
-                arrayOf(ore, item8, ore)), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0) in item8
+        //MineTweakerAPI.recipes.addShaped(item6, arrayOf(arrayOf(ore, item8, ore), arrayOf<IIngredient>(item8,
+        //        ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 21), item8),
+        //        arrayOf(ore, item8, ore)), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("RIO:intelligentWorkbench", 0),
                 arrayOf(arrayOf<IIngredient?>(null, item7, null),
                         arrayOf(ore5, ItemBracketHandler.getItem("gregtech:gt.blockcasings4", 0), ore5),
@@ -138,9 +149,12 @@ class RemoteIO : Runnable {
         Assembler.addRecipe(item4, ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 0),
                 ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 1),
                 LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item15, ItemBracketHandler.getItem("TConstruct:blankPattern", 1),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17316),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(100), 200, 480)
+
+        //TODO Replace ("TConstruct:blankPattern", 1)
+        //Assembler.addRecipe(item15, ItemBracketHandler.getItem("TConstruct:blankPattern", 1),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17316),
+        //        LiquidBracketHandler.getLiquid("molten.redstone").withAmount(100), 200, 480)
+
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
                 LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
@@ -189,9 +203,12 @@ class RemoteIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 10),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1546).amount(2), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 12),
-                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("ExtraUtilities:extractor_base", 12).amount(2), 200, 480)
+
+        //TODO Replace ("ExtraUtilities:extractor_base", 12)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 12),
+        //        ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+        //        ItemBracketHandler.getItem("ExtraUtilities:extractor_base", 12).amount(2), 200, 480)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 20),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockController", 0), 200, 480)

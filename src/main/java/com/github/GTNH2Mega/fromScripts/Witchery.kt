@@ -92,15 +92,18 @@ class Witchery : Runnable {
                         arrayOf(ItemBracketHandler.getItem("witchery:ingredient", 69),
                                 ItemBracketHandler.getItem("witchery:ingredient", 156),
                                 OreBracketHandler.getOre("listAllseed"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("witchery:ingredient", 106),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:stained_hardened_clay", 0),
-                        ItemBracketHandler.getItem("BiomesOPlenty:mud", 1),
-                        ItemBracketHandler.getItem("minecraft:mycelium", 0)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("dyeBlack"),
-                                OreBracketHandler.getOre("craftingBook"), OreBracketHandler.getOre("craftingFeather")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:netherrack", 0),
-                                ItemBracketHandler.getItem("minecraft:dirt", 2),
-                                ItemBracketHandler.getItem("TConstruct:CraftedSoil", 5))), null)
+
+        //TODO Replace ("TConstruct:CraftedSoil", 5)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("witchery:ingredient", 106),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:stained_hardened_clay", 0),
+        //                ItemBracketHandler.getItem("BiomesOPlenty:mud", 1),
+        //                ItemBracketHandler.getItem("minecraft:mycelium", 0)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("dyeBlack"),
+        //                        OreBracketHandler.getOre("craftingBook"), OreBracketHandler.getOre("craftingFeather")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:netherrack", 0),
+        //                        ItemBracketHandler.getItem("minecraft:dirt", 2),
+        //                        ItemBracketHandler.getItem("TConstruct:CraftedSoil", 5))), null)
+
         val recipes = MineTweakerAPI.recipes
         val item = ItemBracketHandler.getItem("witchery:ingredient", 127)
         val array: Array<Array<IIngredient?>?> = arrayOfNulls(3)
@@ -446,43 +449,48 @@ class Witchery : Runnable {
                         arrayOf<IIngredient>(OreBracketHandler.getOre("foilThaumium"),
                                 OreBracketHandler.getOre("ingotGold"), OreBracketHandler.getOre("foilThaumium"))))
         Research.addArcanePage("CHALICE", ItemBracketHandler.getItem("witchery:ingredient", 1))
-        Research.addResearch("ARTHANA", "WITCHERY", "praecantatio 15, lucrum 12, instrumentum 9, mortuus 6", -4, -2, 4,
-                ItemBracketHandler.getItem("witchery:arthana", 0))
-        MineTweakerAPI.game.setLocalization("tc.research_name.ARTHANA", "Arthana")
-        MineTweakerAPI.game.setLocalization("tc.research_text.ARTHANA", "[WI] Ritualistic Knife")
-        Research.addPrereq("ARTHANA", "ALTAR", false)
-        Research.setConcealed("ARTHANA", true)
-        Research.addPage("ARTHANA", "Witchery.research_page.ARTHANA.1")
-        MineTweakerAPI.game.setLocalization("Witchery.research_page.ARTHANA.1",
-                "An Arthana is a ritualistic knife use by witches and warlocks to both collect special ingredients and to perform some rites. It has the same general properties as a golden sword (damage, enchantability, etc.), although it has the durability of an iron sword. It is repaired with a Gold Ingot.<BR>The main purpose of the dagger is to collect specialist ingredients used in witchcraft, and to this end it will dramatically improve the chance of a mob dropping such ingredients (e.g. Wool of Bat, Tongue of Dog, etc.). It also gives a small chance of undead dropping Spectral Dust.")
-        Research.addPage("ARTHANA", "Witchery.research_page.ARTHANA.2")
-        MineTweakerAPI.game.setLocalization("Witchery.research_page.ARTHANA.2",
-                "When only using vanilla Minecraft with Witchery (and no other mods), an Arthana dagger is the only way to get a skull to drop when a skeleton is killed, the drop chance is about 5% (the skull is a key upgrade for an altar). The dagger even gives a very small probability for other head drops (from mobs and players). All drop chances are increased with the Looting enchantment.<BR>An Arthana does not change the drop chance for Wither Skeleton Skulls, that will require the Looting enchantment as usual.<BR>Some Circle Magic rites use an Arthana as a foci, the Arthana is not consumed in the proces.")
-        Arcane.addShaped("ARTHANA", ItemBracketHandler.getItem("witchery:arthana", 0), "terra 20, perditio 15, ordo 10",
-                arrayOf(arrayOf(ItemBracketHandler.getItem("TConstruct:handGuard", 16),
-                        OreBracketHandler.getOre("craftingToolScrewdriver"),
-                        ItemBracketHandler.getItem("TConstruct:knifeBlade", 202)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwThaumium"),
-                                OreBracketHandler.getOre("gemEmerald"),
-                                OreBracketHandler.getOre("craftingToolHardHammer")),
-                        arrayOf(ItemBracketHandler.getItem("TConstruct:toolRod", 6),
-                                OreBracketHandler.getOre("screwThaumium"),
-                                ItemBracketHandler.getItem("TConstruct:handGuard", 16))))
-        Research.addArcanePage("ARTHANA", ItemBracketHandler.getItem("witchery:arthana", 0))
-        Warp.addToResearch("ARTHANA", 2)
-        Research.addResearch("WARMBLOOD", "WITCHERY", "fames 15, lucrum 12, aqua 9, exanimis 6", -2, -2, 4,
-                ItemBracketHandler.getItem("witchery:ingredient", 163))
-        MineTweakerAPI.game.setLocalization("tc.research_name.WARMBLOOD", "Warm Blood")
-        MineTweakerAPI.game.setLocalization("tc.research_text.WARMBLOOD", "[WI] Mhhh warm Blood")
-        Research.addPrereq("WARMBLOOD", "ALTAR", false)
-        Research.setConcealed("WARMBLOOD", true)
-        Research.addPage("WARMBLOOD", "Witchery.research_page.WARMBLOOD")
-        MineTweakerAPI.game.setLocalization("Witchery.research_page.WARMBLOOD",
-                "The Bottle of Warm Blood is an item that can be drunk by a player. If the player is a vampire, they will restore 2 droplets of blood to the blood pool. If the player is not a vampire they will get a hunger debuff. This item allows a players to quickly get blood, or it can be used as a ingredient for the Demonic Contract.")
-        Crucible.addRecipe("WARMBLOOD", ItemBracketHandler.getItem("witchery:ingredient", 163),
-                ItemBracketHandler.getItem("TConstruct:jerky", 7), "exanimis 4, fames 4, lucrum 4")
-        Research.addCruciblePage("WARMBLOOD", ItemBracketHandler.getItem("witchery:ingredient", 163))
-        Warp.addToResearch("WARMBLOOD", 3)
+
+        //TODO Replace ("TConstruct:handGuard", 16), ("TConstruct:knifeBlade", 202) and ("TConstruct:toolRod", 6)
+        //Research.addResearch("ARTHANA", "WITCHERY", "praecantatio 15, lucrum 12, instrumentum 9, mortuus 6", -4, -2, 4,
+        //        ItemBracketHandler.getItem("witchery:arthana", 0))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.ARTHANA", "Arthana")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.ARTHANA", "[WI] Ritualistic Knife")
+        //Research.addPrereq("ARTHANA", "ALTAR", false)
+        //Research.setConcealed("ARTHANA", true)
+        //Research.addPage("ARTHANA", "Witchery.research_page.ARTHANA.1")
+        //MineTweakerAPI.game.setLocalization("Witchery.research_page.ARTHANA.1",
+        //        "An Arthana is a ritualistic knife use by witches and warlocks to both collect special ingredients and to perform some rites. It has the same general properties as a golden sword (damage, enchantability, etc.), although it has the durability of an iron sword. It is repaired with a Gold Ingot.<BR>The main purpose of the dagger is to collect specialist ingredients used in witchcraft, and to this end it will dramatically improve the chance of a mob dropping such ingredients (e.g. Wool of Bat, Tongue of Dog, etc.). It also gives a small chance of undead dropping Spectral Dust.")
+        //Research.addPage("ARTHANA", "Witchery.research_page.ARTHANA.2")
+        //MineTweakerAPI.game.setLocalization("Witchery.research_page.ARTHANA.2",
+        //        "When only using vanilla Minecraft with Witchery (and no other mods), an Arthana dagger is the only way to get a skull to drop when a skeleton is killed, the drop chance is about 5% (the skull is a key upgrade for an altar). The dagger even gives a very small probability for other head drops (from mobs and players). All drop chances are increased with the Looting enchantment.<BR>An Arthana does not change the drop chance for Wither Skeleton Skulls, that will require the Looting enchantment as usual.<BR>Some Circle Magic rites use an Arthana as a foci, the Arthana is not consumed in the proces.")
+        //Arcane.addShaped("ARTHANA", ItemBracketHandler.getItem("witchery:arthana", 0), "terra 20, perditio 15, ordo 10",
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("TConstruct:handGuard", 16),
+        //                OreBracketHandler.getOre("craftingToolScrewdriver"),
+        //                ItemBracketHandler.getItem("TConstruct:knifeBlade", 202)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("screwThaumium"),
+        //                        OreBracketHandler.getOre("gemEmerald"),
+        //                        OreBracketHandler.getOre("craftingToolHardHammer")),
+        //                arrayOf(ItemBracketHandler.getItem("TConstruct:toolRod", 6),
+        //                        OreBracketHandler.getOre("screwThaumium"),
+        //                        ItemBracketHandler.getItem("TConstruct:handGuard", 16))))
+        //Research.addArcanePage("ARTHANA", ItemBracketHandler.getItem("witchery:arthana", 0))
+        //Warp.addToResearch("ARTHANA", 2)
+
+        //TODO Replace ("TConstruct:jerky", 7)
+        //Research.addResearch("WARMBLOOD", "WITCHERY", "fames 15, lucrum 12, aqua 9, exanimis 6", -2, -2, 4,
+        //        ItemBracketHandler.getItem("witchery:ingredient", 163))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.WARMBLOOD", "Warm Blood")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.WARMBLOOD", "[WI] Mhhh warm Blood")
+        //Research.addPrereq("WARMBLOOD", "ALTAR", false)
+        //Research.setConcealed("WARMBLOOD", true)
+        //Research.addPage("WARMBLOOD", "Witchery.research_page.WARMBLOOD")
+        //MineTweakerAPI.game.setLocalization("Witchery.research_page.WARMBLOOD",
+        //        "The Bottle of Warm Blood is an item that can be drunk by a player. If the player is a vampire, they will restore 2 droplets of blood to the blood pool. If the player is not a vampire they will get a hunger debuff. This item allows a players to quickly get blood, or it can be used as a ingredient for the Demonic Contract.")
+        //Crucible.addRecipe("WARMBLOOD", ItemBracketHandler.getItem("witchery:ingredient", 163),
+        //        ItemBracketHandler.getItem("TConstruct:jerky", 7), "exanimis 4, fames 4, lucrum 4")
+        //Research.addCruciblePage("WARMBLOOD", ItemBracketHandler.getItem("witchery:ingredient", 163))
+        //Warp.addToResearch("WARMBLOOD", 3)
+
         Research.addResearch("FUMEFUNNEL", "WITCHERY", "metallum 15, ignis 12, lux 9, sensus 6", 0, 2, 4,
                 ItemBracketHandler.getItem("witchery:fumefunnel", 0))
         MineTweakerAPI.game.setLocalization("tc.research_name.FUMEFUNNEL", "Fume Funnel")

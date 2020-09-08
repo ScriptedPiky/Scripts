@@ -381,41 +381,44 @@ class ThaumicTinkerer02Kami : Runnable {
                 "ignis 24, sano 21, lucrum 18, potentia 15, alienis 12, aer 9, lux 6, tutamen 3")
         Research.setComplexity("ICHORCLOTH_LEGS_GEM", 4)
         Warp.addToResearch("ICHORCLOTH_LEGS_GEM", 4)
-        val s7 = "ICHORCLOTH_BOOTS_GEM"
-        val item7 = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothBoots", 0)
-        val array7 = arrayOfNulls<IItemStack>(12)
-        array7[0] = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978)
-        array7[1] = ItemBracketHandler.getItem("Thaumcraft:ItemBootsThaumium", 0)
-        val n9 = 2
-        val item8 = ItemBracketHandler.getItem("ThaumicTinkerer:infusedSeeds", 0)
-        val hashMap9 = HashMap<String, IData>()
-        val s8 = "mainAspect"
-        val hashMap10 = HashMap<String, IData>()
-        val s9 = "Aspects"
-        val array8 = arrayOf<IData?>(null)
-        val n10 = 0
-        val hashMap11 = HashMap<String, IData>()
-        hashMap11["amount"] = ExpandInt.toData(1)
-        hashMap11["key"] = ExpandString.asData("terra")
-        array8[n10] = ExpandAnyDict.asData(hashMap11)
-        hashMap10[s9] = ExpandAnyArray.asData(array8)
-        hashMap9[s8] = ExpandAnyDict.asData(hashMap10)
-        array7[n9] = item8.withTag(ExpandAnyDict.asData(hashMap9))
-        array7[3] = ItemBracketHandler.getItem("Thaumcraft:ItemThaumonomicon", 0)
-        array7[4] = ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)
-        array7[5] = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30500)
-        array7[6] = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978)
-        array7[7] = ItemBracketHandler.getItem("Thaumcraft:blockMetalDevice", 8)
-        array7[8] = ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 5)
-        array7[9] = ItemBracketHandler.getItem("minecraft:lead", 0)
-        array7[10] = ItemBracketHandler.getItem("Thaumcraft:FocusPrimal", 0)
-        array7[11] = ItemBracketHandler.getItem("minecraft:grass", 0)
-        Infusion.addRecipe(s7, item7, array7, "herba 64, iter 64, lux 64, motus 64, perfodio 64, terra 64, tutamen 64",
-                ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothBootsGem", 0), 16)
-        Research.setAspects("ICHORCLOTH_BOOTS_GEM",
-                "terra 24, iter 21, perfodio 18, herba 15, lux 12, motus 9, cognitio 6, tutamen 3")
-        Research.setComplexity("ICHORCLOTH_BOOTS_GEM", 4)
-        Warp.addToResearch("ICHORCLOTH_BOOTS_GEM", 4)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //val s7 = "ICHORCLOTH_BOOTS_GEM"
+        //val item7 = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothBoots", 0)
+        //val array7 = arrayOfNulls<IItemStack>(12)
+        //array7[0] = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978)
+        //array7[1] = ItemBracketHandler.getItem("Thaumcraft:ItemBootsThaumium", 0)
+        //val n9 = 2
+        //val item8 = ItemBracketHandler.getItem("ThaumicTinkerer:infusedSeeds", 0)
+        //val hashMap9 = HashMap<String, IData>()
+        //val s8 = "mainAspect"
+        //val hashMap10 = HashMap<String, IData>()
+        //val s9 = "Aspects"
+        //val array8 = arrayOf<IData?>(null)
+        //val n10 = 0
+        //val hashMap11 = HashMap<String, IData>()
+        //hashMap11["amount"] = ExpandInt.toData(1)
+        //hashMap11["key"] = ExpandString.asData("terra")
+        //array8[n10] = ExpandAnyDict.asData(hashMap11)
+        //hashMap10[s9] = ExpandAnyArray.asData(array8)
+        //hashMap9[s8] = ExpandAnyDict.asData(hashMap10)
+        //array7[n9] = item8.withTag(ExpandAnyDict.asData(hashMap9))
+        //array7[3] = ItemBracketHandler.getItem("Thaumcraft:ItemThaumonomicon", 0)
+        //array7[4] = ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)
+        //array7[5] = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30500)
+        //array7[6] = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978)
+        //array7[7] = ItemBracketHandler.getItem("Thaumcraft:blockMetalDevice", 8)
+        //array7[8] = ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 5)
+        //array7[9] = ItemBracketHandler.getItem("minecraft:lead", 0)
+        //array7[10] = ItemBracketHandler.getItem("Thaumcraft:FocusPrimal", 0)
+        //array7[11] = ItemBracketHandler.getItem("minecraft:grass", 0)
+        //Infusion.addRecipe(s7, item7, array7, "herba 64, iter 64, lux 64, motus 64, perfodio 64, terra 64, tutamen 64",
+        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothBootsGem", 0), 16)
+        //Research.setAspects("ICHORCLOTH_BOOTS_GEM",
+        //        "terra 24, iter 21, perfodio 18, herba 15, lux 12, motus 9, cognitio 6, tutamen 3")
+        //Research.setComplexity("ICHORCLOTH_BOOTS_GEM", 4)
+        //Warp.addToResearch("ICHORCLOTH_BOOTS_GEM", 4)
+
         Infusion.addRecipe("WARP_GATE", ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 2),
                 arrayOf(ItemBracketHandler.getItem("ThaumicTinkerer:dislocator", 0),
                         ItemBracketHandler.getItem("ThaumicTinkerer:kamiResource", 7),
@@ -486,21 +489,24 @@ class ThaumicTinkerer02Kami : Runnable {
                 "instrumentum 18, telum 15, metallum 12, fabrico 9, praecantatio 6, alienis 3")
         Research.setComplexity("ICHOR_TOOLS", 4)
         Warp.addToResearch("ICHOR_TOOLS", 3)
-        Infusion.addRecipe("ICHOR_PICK_GEM", ItemBracketHandler.getItem("ThaumicTinkerer:ichorPick", 0),
-                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemPickaxeElemental", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:FocusFire", 0),
-                        ItemBracketHandler.getItem("StevesCarts:CartModule", 9),
-                        ItemBracketHandler.getItem("ThaumicTinkerer:kamiResource", 1),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30501),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30500),
-                        ItemBracketHandler.getItem("IC2:blockITNT", 0),
-                        ItemBracketHandler.getItem("StevesCarts:CartModule", 9),
-                        ItemBracketHandler.getItem("Thaumcraft:FocusFire", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemPickaxeElemental", 0)),
-                "ignis 64, lucrum 64, metallum 64, meto 64, messis 64, perfodio 64, terra 64, sensus 64",
-                ItemBracketHandler.getItem("ThaumicTinkerer:ichorPickGem", 0), 18)
+
+        //TODO Replace ("StevesCarts:CartModule", 9)
+        //Infusion.addRecipe("ICHOR_PICK_GEM", ItemBracketHandler.getItem("ThaumicTinkerer:ichorPick", 0),
+        //        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemPickaxeElemental", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:FocusFire", 0),
+        //                ItemBracketHandler.getItem("StevesCarts:CartModule", 9),
+        //                ItemBracketHandler.getItem("ThaumicTinkerer:kamiResource", 1),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30501),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30500),
+        //                ItemBracketHandler.getItem("IC2:blockITNT", 0),
+        //                ItemBracketHandler.getItem("StevesCarts:CartModule", 9),
+        //                ItemBracketHandler.getItem("Thaumcraft:FocusFire", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemPickaxeElemental", 0)),
+        //        "ignis 64, lucrum 64, metallum 64, meto 64, messis 64, perfodio 64, terra 64, sensus 64",
+        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorPickGem", 0), 18)
+
         Research.setAspects("ICHOR_PICK_GEM",
                 "ignis 24, lucrum 21, metallum 18, meto 15, messis 12, perfodio 9, terra 6, sensus 3")
         Research.setComplexity("ICHOR_PICK_GEM", 4)
@@ -543,21 +549,24 @@ class ThaumicTinkerer02Kami : Runnable {
                 "aqua 21, arbor 18, instrumentum 15, messis 12, meto 9, perfodio 6, sensus 3")
         Research.setComplexity("ICHOR_AXE_GEM", 4)
         Warp.addToResearch("ICHOR_AXE_GEM", 3)
-        Infusion.addRecipe("ICHOR_SWORD_GEM", ItemBracketHandler.getItem("ThaumicTinkerer:ichorSword", 0),
-                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemSwordElemental", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:FocusFrost", 0),
-                        ItemBracketHandler.getItem("ExtraUtilities:spike_base_diamond", 0),
-                        ItemBracketHandler.getItem("ThaumicTinkerer:kamiResource", 1),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30501),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30500),
-                        ItemBracketHandler.getItem("IC2:blockITNT", 0),
-                        ItemBracketHandler.getItem("ExtraUtilities:spike_base_diamond", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:FocusFrost", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemSwordElemental", 0)),
-                "aer 64, fames 64, ordo 64, potentia 64, spiritus 64, telum 64, vitreus 64",
-                ItemBracketHandler.getItem("ThaumicTinkerer:ichorSwordGem", 0), 18)
+
+        //TODO Replace ("ExtraUtilities:spike_base_diamond", 0)
+        //Infusion.addRecipe("ICHOR_SWORD_GEM", ItemBracketHandler.getItem("ThaumicTinkerer:ichorSword", 0),
+        //        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemSwordElemental", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:FocusFrost", 0),
+        //                ItemBracketHandler.getItem("ExtraUtilities:spike_base_diamond", 0),
+        //                ItemBracketHandler.getItem("ThaumicTinkerer:kamiResource", 1),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30501),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30500),
+        //                ItemBracketHandler.getItem("IC2:blockITNT", 0),
+        //                ItemBracketHandler.getItem("ExtraUtilities:spike_base_diamond", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:FocusFrost", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemSwordElemental", 0)),
+        //        "aer 64, fames 64, ordo 64, potentia 64, spiritus 64, telum 64, vitreus 64",
+        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorSwordGem", 0), 18)
+
         Research.setAspects("ICHOR_SWORD_GEM", "aer 21, fames 18, ordo 15, potentia 12, spiritus 9, telum 6, vitreus 3")
         Research.setComplexity("ICHOR_SWORD_GEM", 4)
         Warp.addToResearch("ICHOR_SWORD_GEM", 3)

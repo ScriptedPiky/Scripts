@@ -70,11 +70,14 @@ class Emt : Runnable {
         Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EssentiaGenerators", 32767))
         Crucible.removeRecipe(ItemBracketHandler.getItem("EMT:EssentiaGenerators", 32767))
         Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EMTMachines", 32767))
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("EMT:EMTItems", 8),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:materials", 36),
-                        ItemBracketHandler.getItem("TConstruct:materials", 36)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("TConstruct:materials", 36).amount(2),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("EMT:EMTItems", 8)), null)
+
+        //TODO Replace ("TConstruct:materials", 36)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("EMT:EMTItems", 8),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:materials", 36),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 36)), null)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("TConstruct:materials", 36).amount(2),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("EMT:EMTItems", 8)), null)
+
         Research.orphanResearch("Electric Magic Tools")
         Research.removeResearch("Electric Magic Tools")
         Research.addResearch("ElectricMagicTools", "EMT", "terra 0", 0, 0, 0,
@@ -1216,19 +1219,22 @@ class Emt : Runnable {
                 "aer 300, aqua 300, terra 300, ignis 300, ordo 300, perditio 300",
                 ItemBracketHandler.getItem("EMT:EMTSolars3", 0), 20)
         Research.addInfusionPage("CompressedSolars", ItemBracketHandler.getItem("EMT:EMTSolars3", 0))
-        Infusion.addRecipe("CompressedSolars", ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
-                arrayOf(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
-                        ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
-                        ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
-                        ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
-                        ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
-                        ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
-                        ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
-                        ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
-                        ItemBracketHandler.getItem("EMT:EMTSolars3", 0)),
-                "aer 600, aqua 600, terra 600, ignis 600, ordo 600, perditio 600",
-                ItemBracketHandler.getItem("EMT:EMTSolars3", 7), 20)
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 8)
+        //Infusion.addRecipe("CompressedSolars", ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
+        //        arrayOf(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars3", 0),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars3", 0)),
+        //        "aer 600, aqua 600, terra 600, ignis 600, ordo 600, perditio 600",
+        //        ItemBracketHandler.getItem("EMT:EMTSolars3", 7), 20)
+
         Research.addInfusionPage("CompressedSolars", ItemBracketHandler.getItem("EMT:EMTSolars3", 7))
         Infusion.addRecipe("CompressedSolars",
                 ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
@@ -1260,19 +1266,22 @@ class Emt : Runnable {
                 "aer 2400, aqua 2400, terra 2400, ignis 2400, ordo 2400, perditio 2400",
                 ItemBracketHandler.getItem("EMT:EMTSolars4", 5), 20)
         Research.addInfusionPage("CompressedSolars", ItemBracketHandler.getItem("EMT:EMTSolars4", 5))
-        Infusion.addRecipe("CompressedSolars", ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13),
-                arrayOf(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13),
-                        ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
-                        ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
-                        ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
-                        ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13),
-                        ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
-                        ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
-                        ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
-                        ItemBracketHandler.getItem("EMT:EMTSolars4", 5)),
-                "aer 4800, aqua 4800, terra 4800, ignis 4800, ordo 4800, perditio 4800",
-                ItemBracketHandler.getItem("EMT:EMTSolars4", 12), 20)
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 13)
+        //Infusion.addRecipe("CompressedSolars", ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13),
+        //        arrayOf(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars4", 5),
+        //                ItemBracketHandler.getItem("EMT:EMTSolars4", 5)),
+        //        "aer 4800, aqua 4800, terra 4800, ignis 4800, ordo 4800, perditio 4800",
+        //        ItemBracketHandler.getItem("EMT:EMTSolars4", 12), 20)
+
         Research.addInfusionPage("CompressedSolars", ItemBracketHandler.getItem("EMT:EMTSolars4", 12))
         Research.orphanResearch("Water Infused Solar Panels")
         Research.removeResearch("Water Infused Solar Panels")

@@ -12,8 +12,6 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Canner
-import minetweaker.mods.ic2.machines.Extractor
-import modtweaker2.mods.tconstruct.handlers.Casting
 import java.util.*
 
 class Gregtech : Runnable {
@@ -259,12 +257,15 @@ class Gregtech : Runnable {
                 arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("craftingToolKnife"), null, null),
                         arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809),
                                 null)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2890),
-                arrayOf(OreBracketHandler.getOre("craftingToolMortar"),
-                        ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1890),
-                arrayOf(OreBracketHandler.getOre("craftingToolMortar"),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0)), null)
+
+        //TODO Replace ("TConstruct:GlassBlock", 0)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2890),
+        //        arrayOf(OreBracketHandler.getOre("craftingToolMortar"),
+        //                ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)), null)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1890),
+        //        arrayOf(OreBracketHandler.getOre("craftingToolMortar"),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0)), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2892),
                 arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolMortar"),
                         OreBracketHandler.getOre("listAllmeatraw")), null)
@@ -503,88 +504,93 @@ class Gregtech : Runnable {
                 arrayOf<IIngredient?>(null, null, null, null,
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32053), null, null, null, null),
                 arrayOfNulls(9)))
-        ExtremeCrafting.addShaped(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32757),
-                arrayOf(arrayOf<IIngredient?>(null, null, null, null,
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32059), null, null, null, null),
-                        arrayOf<IIngredient?>(null, null, null, OreBracketHandler.getOre("wireGt02SuperconductorZPM"),
-                                OreBracketHandler.getOre("circuitInfinite"),
-                                OreBracketHandler.getOre("wireGt02SuperconductorZPM"), null, null, null),
-                        arrayOf(null, null, OreBracketHandler.getOre("wireGt02SuperconductorZPM"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32035),
-                                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32035),
-                                OreBracketHandler.getOre("wireGt02SuperconductorZPM"), null, null),
-                        arrayOf(null, null, OreBracketHandler.getOre("plateQuintupleSilicon"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32756),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
-                                OreBracketHandler.getOre("plateQuintupleSilicon"), null, null),
-                        arrayOf(null, ItemBracketHandler.getItem("supersolarpanel:solarsplitter", 0),
-                                OreBracketHandler.getOre("circuitInfinite"),
-                                OreBracketHandler.getOre("circuitInfinite"),
-                                OreBracketHandler.getOre("plateTriplePolybenzimidazole"),
-                                OreBracketHandler.getOre("circuitInfinite"),
-                                OreBracketHandler.getOre("circuitInfinite"),
-                                ItemBracketHandler.getItem("supersolarpanel:solarsplitter", 0), null),
-                        arrayOf(null, null, OreBracketHandler.getOre("plateQuintupleSilicon"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32756),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
-                                OreBracketHandler.getOre("plateQuintupleSilicon"), null, null),
-                        arrayOf(null, null, OreBracketHandler.getOre("wireGt02SuperconductorZPM"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32035),
-                                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32035),
-                                OreBracketHandler.getOre("wireGt02SuperconductorZPM"), null, null),
-                        arrayOf<IIngredient?>(null, null, null, OreBracketHandler.getOre("wireGt02SuperconductorZPM"),
-                                OreBracketHandler.getOre("circuitInfinite"),
-                                OreBracketHandler.getOre("wireGt02SuperconductorZPM"), null, null, null),
-                        arrayOf<IIngredient?>(null, null, null, null,
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32059), null, null, null, null)))
-        ExtremeCrafting.addShaped(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32758),
-                arrayOf(arrayOf(null, null, null, OreBracketHandler.getOre("wireGt04SuperconductorUV"),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32048),
-                        OreBracketHandler.getOre("wireGt04SuperconductorUV"), null, null, null),
-                        arrayOf(null, null, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32161),
-                                OreBracketHandler.getOre("wireGt04SuperconductorUV"),
-                                OreBracketHandler.getOre("circuitBio"),
-                                OreBracketHandler.getOre("wireGt04SuperconductorUV"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32161), null, null),
-                        arrayOf(null, null, OreBracketHandler.getOre("wireGt04SuperconductorUV"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
-                                ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
-                                OreBracketHandler.getOre("wireGt04SuperconductorUV"), null, null),
-                        arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32153),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32757),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32153),
-                                ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0), null, null),
-                        arrayOf(ItemBracketHandler.getItem("supersolarpanel:enderquantumcomponent", 0),
-                                ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
-                                OreBracketHandler.getOre("circuitBio"), OreBracketHandler.getOre("circuitBio"),
-                                OreBracketHandler.getOre("plateQuadruplePolybenzimidazole"),
-                                OreBracketHandler.getOre("circuitBio"), OreBracketHandler.getOre("circuitBio"),
-                                ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
-                                ItemBracketHandler.getItem("supersolarpanel:enderquantumcomponent", 0)),
-                        arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32153),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32757),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32153),
-                                ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0), null, null),
-                        arrayOf(null, null, OreBracketHandler.getOre("wireGt04SuperconductorUV"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
-                                ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
-                                OreBracketHandler.getOre("wireGt04SuperconductorUV"), null, null),
-                        arrayOf(null, null, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32161),
-                                OreBracketHandler.getOre("wireGt04SuperconductorUV"),
-                                OreBracketHandler.getOre("circuitBio"),
-                                OreBracketHandler.getOre("wireGt04SuperconductorUV"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32161), null, null),
-                        arrayOf(null, null, null, OreBracketHandler.getOre("wireGt04SuperconductorUV"),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32048),
-                                OreBracketHandler.getOre("wireGt04SuperconductorUV"), null, null, null)))
+
+        //TODO Replace ("supersolarpanel:solarsplitter", 0)
+        //ExtremeCrafting.addShaped(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32757),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, null, null,
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32059), null, null, null, null),
+        //                arrayOf<IIngredient?>(null, null, null, OreBracketHandler.getOre("wireGt02SuperconductorZPM"),
+        //                        OreBracketHandler.getOre("circuitInfinite"),
+        //                        OreBracketHandler.getOre("wireGt02SuperconductorZPM"), null, null, null),
+        //                arrayOf(null, null, OreBracketHandler.getOre("wireGt02SuperconductorZPM"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32035),
+        //                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32035),
+        //                        OreBracketHandler.getOre("wireGt02SuperconductorZPM"), null, null),
+        //                arrayOf(null, null, OreBracketHandler.getOre("plateQuintupleSilicon"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32756),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
+        //                        OreBracketHandler.getOre("plateQuintupleSilicon"), null, null),
+        //                arrayOf(null, ItemBracketHandler.getItem("supersolarpanel:solarsplitter", 0),
+        //                        OreBracketHandler.getOre("circuitInfinite"),
+        //                        OreBracketHandler.getOre("circuitInfinite"),
+        //                        OreBracketHandler.getOre("plateTriplePolybenzimidazole"),
+        //                        OreBracketHandler.getOre("circuitInfinite"),
+        //                        OreBracketHandler.getOre("circuitInfinite"),
+        //                        ItemBracketHandler.getItem("supersolarpanel:solarsplitter", 0), null),
+        //                arrayOf(null, null, OreBracketHandler.getOre("plateQuintupleSilicon"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32756),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
+        //                        OreBracketHandler.getOre("plateQuintupleSilicon"), null, null),
+        //                arrayOf(null, null, OreBracketHandler.getOre("wireGt02SuperconductorZPM"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32035),
+        //                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32035),
+        //                        OreBracketHandler.getOre("wireGt02SuperconductorZPM"), null, null),
+        //                arrayOf<IIngredient?>(null, null, null, OreBracketHandler.getOre("wireGt02SuperconductorZPM"),
+        //                        OreBracketHandler.getOre("circuitInfinite"),
+        //                        OreBracketHandler.getOre("wireGt02SuperconductorZPM"), null, null, null),
+        //                arrayOf<IIngredient?>(null, null, null, null,
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32059), null, null, null, null)))
+
+        //TODO Replace ("supersolarpanel:enderquantumcomponent", 0)
+        //ExtremeCrafting.addShaped(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32758),
+        //        arrayOf(arrayOf(null, null, null, OreBracketHandler.getOre("wireGt04SuperconductorUV"),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32048),
+        //                OreBracketHandler.getOre("wireGt04SuperconductorUV"), null, null, null),
+        //                arrayOf(null, null, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32161),
+        //                        OreBracketHandler.getOre("wireGt04SuperconductorUV"),
+        //                        OreBracketHandler.getOre("circuitBio"),
+        //                        OreBracketHandler.getOre("wireGt04SuperconductorUV"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32161), null, null),
+        //                arrayOf(null, null, OreBracketHandler.getOre("wireGt04SuperconductorUV"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
+        //                        ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
+        //                        OreBracketHandler.getOre("wireGt04SuperconductorUV"), null, null),
+        //                arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32153),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32757),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32153),
+        //                        ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0), null, null),
+        //                arrayOf(ItemBracketHandler.getItem("supersolarpanel:enderquantumcomponent", 0),
+        //                        ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
+        //                        OreBracketHandler.getOre("circuitBio"), OreBracketHandler.getOre("circuitBio"),
+        //                        OreBracketHandler.getOre("plateQuadruplePolybenzimidazole"),
+        //                        OreBracketHandler.getOre("circuitBio"), OreBracketHandler.getOre("circuitBio"),
+        //                        ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
+        //                        ItemBracketHandler.getItem("supersolarpanel:enderquantumcomponent", 0)),
+        //                arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32153),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32757),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32153),
+        //                        ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0), null, null),
+        //                arrayOf(null, null, OreBracketHandler.getOre("wireGt04SuperconductorUV"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
+        //                        ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32151),
+        //                        OreBracketHandler.getOre("wireGt04SuperconductorUV"), null, null),
+        //                arrayOf(null, null, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32161),
+        //                        OreBracketHandler.getOre("wireGt04SuperconductorUV"),
+        //                        OreBracketHandler.getOre("circuitBio"),
+        //                        OreBracketHandler.getOre("wireGt04SuperconductorUV"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32161), null, null),
+        //                arrayOf(null, null, null, OreBracketHandler.getOre("wireGt04SuperconductorUV"),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32048),
+        //                        OreBracketHandler.getOre("wireGt04SuperconductorUV"), null, null, null)))
+
         ExtremeCrafting.addShaped(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32759),
                 arrayOf(arrayOf(null, null, OreBracketHandler.getOre("wireGt08Superconductor"),
                         OreBracketHandler.getOre("plateDenseSilicon"),
@@ -918,92 +924,6 @@ class Gregtech : Runnable {
                 ItemBracketHandler.getItem("dreamcraft:item.PotassiumHydroxideDust", 0).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
                 LiquidBracketHandler.getLiquid("nitricacid").withAmount(5000), 10, 30)
-        Extractor.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2896).amount(2),
-                ItemBracketHandler.getItem("TConstruct:strangeFood", 0))
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 606, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1213, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1213, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1213, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1213, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 606, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 606, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 606, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 606, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1213, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1213, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 606, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 606, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 3639, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 3639, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 9704, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 9704, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 9704, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 9704, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 9704, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 9704, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 3639, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1213, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 606, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 4852, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 6065, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11382).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1820, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804),
-                ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 20, 64)
         FluidCanner.addRecipe(ItemBracketHandler.getItem("gregtech:gt.60k_Helium_Coolantcell", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.TenKCell", 0), null,
                 LiquidBracketHandler.getLiquid("helium").withAmount(1000))
@@ -1040,8 +960,6 @@ class Gregtech : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23533).amount(2), 20, 16)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 802).amount(2),
                 ItemBracketHandler.getItem("minecraft:flint", 0), 32, 16)
-        ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 8890),
-                ItemBracketHandler.getItem("TConstruct:GlassBlock", 0), 10, 16)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1890),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 27890), 10, 16)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0),
@@ -1065,21 +983,9 @@ class Gregtech : Runnable {
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)),
                 ItemBracketHandler.getItem("Natura:barleyFood", 0), intArrayOf(10000), 300, 2)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)),
-                ItemBracketHandler.getItem("harvestcraft:barleyItem", 0), intArrayOf(10000), 300, 2)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)),
                 ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), intArrayOf(10000), 300, 2)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)),
-                ItemBracketHandler.getItem("harvestcraft:ryeItem", 0), intArrayOf(10000), 300, 2)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)),
-                ItemBracketHandler.getItem("harvestcraft:oatsItem", 0), intArrayOf(10000), 300, 2)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2892).amount(9)),
                 ItemBracketHandler.getItem("Thaumcraft:blockTaint", 2), intArrayOf(10000), 300, 2)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2892)),
-                ItemBracketHandler.getItem("harvestcraft:walleyerawItem", 0), intArrayOf(10000), 400, 2)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2890)),
-                ItemBracketHandler.getItem("TConstruct:GlassBlock", 0), intArrayOf(10000), 300, 2)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1890)),
-                ItemBracketHandler.getItem("TConstruct:GlassPane", 0), intArrayOf(10000), 300, 2)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2890)),
                 ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0).amount(2), intArrayOf(10000), 300, 2)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 5937).amount(4)),
@@ -1098,181 +1004,181 @@ class Gregtech : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22874), 200, 16)
         PlateBender.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 23028),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23028), 200, 8)
-        PlateBender.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804),
-                ItemBracketHandler.getItem("TConstruct:materials", 18), 400, 24)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32300),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576), null, false, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32301),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormPlate", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32302),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormCasing", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32303),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormGear", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32304),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormCoinage", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32305),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormBottle", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormIngot", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormBall", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormBlock", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32309),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormNuggets", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32310),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormBuns", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32311),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormBread", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32312),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormBaguette", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32313),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormCylinder", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32314),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormAnvil", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32315),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormName", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32316),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormArrowHead", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32317),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormSmallGear", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32318),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormStick", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32319),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormBolt", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32320),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormRound", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32321),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormScrew", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32322),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormRing", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32323),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormStickLong", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32325),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormTurbineBlade", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32324),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormRotor", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32326),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeTiny", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32327),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeSmall", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32328),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeMedium", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32329),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeLarge", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32330),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeHuge", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapePlate", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32351),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeRod", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32352),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeBolt", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32354),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeCell", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32353),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeRing", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32355),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeIngot", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32356),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeWire", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32357),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeCasing", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeTinyPipe", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32359),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallPipe", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32360),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeNormalPipe", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32361),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeLargePipe", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32362),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeHugePipe", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32363),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeBlock", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32364),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeSwordBlade", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32365),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapePickaxeHead", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32366),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeShovelHead", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32367),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeAxeHead", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32368),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeHoeHead", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32369),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeHammerHead", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32370),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeFileHead", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32371),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeSawBlade", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32372),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeGear", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32373),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeBottle", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32374),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeRotor", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32376),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeTurbineBlade", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32375),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallGear", 0), true, 100)
+
+        //TODO Replace Smeltery Recipes
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32300),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576), null, false, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32301),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormPlate", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32302),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormCasing", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32303),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormGear", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32304),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormCoinage", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32305),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormBottle", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormIngot", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormBall", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormBlock", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32309),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormNuggets", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32310),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormBuns", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32311),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormBread", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32312),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormBaguette", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32313),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormCylinder", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32314),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormAnvil", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32315),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormName", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32316),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormArrowHead", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32317),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormSmallGear", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32318),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormStick", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32319),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormBolt", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32320),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormRound", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32321),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormScrew", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32322),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormRing", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32323),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormStickLong", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32325),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormTurbineBlade", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32324),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormRotor", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32326),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeTiny", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32327),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeSmall", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32328),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeMedium", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32329),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeLarge", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32330),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeHuge", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapePlate", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32351),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeRod", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32352),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeBolt", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32354),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeCell", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32353),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeRing", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32355),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeIngot", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32356),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeWire", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32357),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeCasing", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeTinyPipe", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32359),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallPipe", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32360),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeNormalPipe", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32361),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeLargePipe", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32362),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeHugePipe", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32363),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeBlock", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32364),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeSwordBlade", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32365),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapePickaxeHead", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32366),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeShovelHead", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32367),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeAxeHead", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32368),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeHoeHead", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32369),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeHammerHead", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32370),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeFileHead", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32371),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeSawBlade", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32372),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeGear", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32373),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeBottle", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32374),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeRotor", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32376),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeTurbineBlade", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32375),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallGear", 0), true, 100)
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32700),
                 MineTweakerAPI.format.red(ExpandString.asFormattedText("ULV-tier")))
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32075),

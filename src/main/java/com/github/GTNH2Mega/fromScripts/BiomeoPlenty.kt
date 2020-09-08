@@ -38,10 +38,13 @@ class BiomeoPlenty : Runnable {
                 arrayOf(ItemBracketHandler.getItem("minecraft:dirt", 0),
                         IngredientTransform.giveBack(ItemBracketHandler.getItem("minecraft:water_bucket", 0),
                                 ItemBracketHandler.getItem("minecraft:bucket", 0))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("BiomesOPlenty:mudball", 0).amount(2),
-                arrayOf(ItemBracketHandler.getItem("minecraft:dirt", 0), IngredientTransform.giveBack(
-                        ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
-                        ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketFired", 0))), null)
+
+        //TODO Replace ("IguanaTweaksTConstruct:clayBucketWater", 0) and ("IguanaTweaksTConstruct:clayBucketFired", 0)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("BiomesOPlenty:mudball", 0).amount(2),
+        //        arrayOf(ItemBracketHandler.getItem("minecraft:dirt", 0), IngredientTransform.giveBack(
+        //                ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
+        //                ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketFired", 0))), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("BiomesOPlenty:dartBlower", 0),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("BiomesOPlenty:plants", 8),
                         OreBracketHandler.getOre("ringWood"), ItemBracketHandler.getItem("BiomesOPlenty:plants", 8)),
@@ -110,15 +113,9 @@ class BiomeoPlenty : Runnable {
                 intArrayOf(10000, 5000, 2500, 1200), 4000, 8)
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("Forestry:beeswax", 0)), null,
                 ItemBracketHandler.getItem("BiomesOPlenty:misc", 2), null, null, intArrayOf(10000), 120, 5)
-        Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("Forestry:beeswax", 0)), null,
-                ItemBracketHandler.getItem("harvestcraft:waxcombItem", 0), null, null, intArrayOf(10000), 120, 5)
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("Forestry:beeswax", 0),
                 ItemBracketHandler.getItem("Forestry:honeyDrop", 0)), null,
                 ItemBracketHandler.getItem("BiomesOPlenty:food", 9), null, null, intArrayOf(10000, 9000), 120, 5)
-        Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("Forestry:beeswax", 0),
-                ItemBracketHandler.getItem("Forestry:honeyDrop", 0)), null,
-                ItemBracketHandler.getItem("harvestcraft:honeycombItem", 0), null, null, intArrayOf(10000, 9000), 120,
-                5)
         Compressor.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:hardIce", 0),
                 ItemBracketHandler.getItem("minecraft:packed_ice", 0).amount(16))
         Compressor.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:bones", 1),

@@ -40,7 +40,10 @@ class JABBA : Runnable {
         val item3 = ItemBracketHandler.getItem("minecraft:planks", 32767)
         val item4 = ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767)
         val item5 = ItemBracketHandler.getItem("ExtraTrees:planks", 32767)
-        val item6 = ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767)
+
+        //TODO Replace ("ExtraUtilities:colorWoodPlanks", 32767)
+        //val item6 = ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767)
+
         val item7 = ItemBracketHandler.getItem("Forestry:planks", 32767)
         val item8 = ItemBracketHandler.getItem("Forestry:planksFireproof", 32767)
         val item9 = ItemBracketHandler.getItem("Natura:planks", 32767)
@@ -226,7 +229,10 @@ class JABBA : Runnable {
         Assembler.addRecipe(item2, item3.amount(8), item, 200, 16)
         Assembler.addRecipe(item2, item4.amount(8), item, 200, 16)
         Assembler.addRecipe(item2, item5.amount(8), item, 200, 16)
-        Assembler.addRecipe(item2, item6.amount(8), item, 200, 16)
+
+        //TODO Replace ("ExtraUtilities:colorWoodPlanks", 32767) in item6
+        //Assembler.addRecipe(item2, item6.amount(8), item, 200, 16)
+
         Assembler.addRecipe(item2, item7.amount(8), item, 200, 16)
         Assembler.addRecipe(item2, item8.amount(8), item, 200, 16)
         Assembler.addRecipe(item2, item9.amount(8), item, 200, 16)

@@ -60,18 +60,21 @@ class ForbiddenMagic01Wands : Runnable {
                                 OreBracketHandler.getOre("foilVinteum"), OreBracketHandler.getOre("screwTitanium"))))
         Crucible.addRecipe("VINTEUM", ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9529),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9330), "permutatio 4, ordo 2, vitreus 2")
-        Infusion.addRecipe("ROD_livingwood", ItemBracketHandler.getItem("Thaumcraft:WandRod", 0),
-                arrayOf(ItemBracketHandler.getItem("AWWayofTime:bucketLife", 0),
-                        ItemBracketHandler.getItem("TConstruct:materials", 6),
-                        ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bucketLife", 0),
-                        ItemBracketHandler.getItem("TConstruct:materials", 6),
-                        ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bucketLife", 0),
-                        ItemBracketHandler.getItem("TConstruct:materials", 6),
-                        ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 0)),
-                "victus 64, herba 32, arbor 32, praecantatio 24, instrumentum 24",
-                ItemBracketHandler.getItem("ForbiddenMagic:WandCores", 7), 6)
+
+        //TODO Replace ("TConstruct:materials", 6)
+        //Infusion.addRecipe("ROD_livingwood", ItemBracketHandler.getItem("Thaumcraft:WandRod", 0),
+        //        arrayOf(ItemBracketHandler.getItem("AWWayofTime:bucketLife", 0),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 6),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:bucketLife", 0),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 6),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:bucketLife", 0),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 6),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 0)),
+        //        "victus 64, herba 32, arbor 32, praecantatio 24, instrumentum 24",
+        //        ItemBracketHandler.getItem("ForbiddenMagic:WandCores", 7), 6)
+
         Infusion.addRecipe("ROD_dreamwood", ItemBracketHandler.getItem("ForbiddenMagic:WandCores", 7),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 1),
                         ItemBracketHandler.getItem("EnderIO:itemMaterial", 5),

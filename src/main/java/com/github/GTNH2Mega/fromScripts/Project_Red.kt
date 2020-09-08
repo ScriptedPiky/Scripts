@@ -12,7 +12,6 @@ import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
 import modtweaker2.mods.chisel.handlers.Groups
-import modtweaker2.mods.tconstruct.handlers.Smeltery
 import java.util.*
 
 class Project_Red : Runnable {
@@ -177,10 +176,13 @@ class Project_Red : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.machine2", 10))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.machine2", 11))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.plan", 0))
-        Smeltery.removeAlloy(LiquidBracketHandler.getLiquid("redmetal.molten"))
-        Smeltery.addAlloy(LiquidBracketHandler.getLiquid("redmetal.molten").withAmount(144),
-                arrayOf(LiquidBracketHandler.getLiquid("redstone.molten").withAmount(576),
-                        LiquidBracketHandler.getLiquid("copper.molten").withAmount(144)))
+
+        //TODO Replace Smeltery
+        //Smeltery.removeAlloy(LiquidBracketHandler.getLiquid("redmetal.molten"))
+        //Smeltery.addAlloy(LiquidBracketHandler.getLiquid("redmetal.molten").withAmount(144),
+        //        arrayOf(LiquidBracketHandler.getLiquid("redstone.molten").withAmount(576),
+        //                LiquidBracketHandler.getLiquid("copper.molten").withAmount(144)))
+
         MineTweakerAPI.recipes.addShaped(
                 ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.machine1", 1),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:brick_block", 0),
@@ -240,17 +242,20 @@ class Project_Red : Runnable {
                         arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingAluminium"),
                                 OreBracketHandler.getOre("craftingFilter"),
                                 OreBracketHandler.getOre("itemCasingAluminium"))), null)
-        MineTweakerAPI.recipes.addShaped(
-                ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.machine2", 4),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 7)),
-                        arrayOf(OreBracketHandler.getOre("circuitBasic"),
-                                ItemBracketHandler.getItem("minecraft:flint_and_steel", 0),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingSteel"),
-                                OreBracketHandler.getOre("craftingPiston"),
-                                OreBracketHandler.getOre("itemCasingSteel"))), null)
+
+        //TODO Replace ("TConstruct:heavyPlate", 7)
+        //MineTweakerAPI.recipes.addShaped(
+        //        ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.machine2", 4),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 7)),
+        //                arrayOf(OreBracketHandler.getOre("circuitBasic"),
+        //                        ItemBracketHandler.getItem("minecraft:flint_and_steel", 0),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingSteel"),
+        //                        OreBracketHandler.getOre("craftingPiston"),
+        //                        OreBracketHandler.getOre("itemCasingSteel"))), null)
+
         MineTweakerAPI.recipes.addShaped(
                 ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.machine2", 5),
                 arrayOf(arrayOf(OreBracketHandler.getOre("plateSteel"),
@@ -669,13 +674,16 @@ class Project_Red : Runnable {
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17),
                 arrayOf<IIngredient>(
                         ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 33)), null)
-        MineTweakerAPI.recipes.addShaped(
-                ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
-                arrayOf(arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolFile"), null),
-                        arrayOf(OreBracketHandler.getOre("stickLongIron"),
-                                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                                OreBracketHandler.getOre("stickLongIron")),
-                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSaw"), null)), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //MineTweakerAPI.recipes.addShaped(
+        //        ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolFile"), null),
+        //                arrayOf(OreBracketHandler.getOre("stickLongIron"),
+        //                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                        OreBracketHandler.getOre("stickLongIron")),
+        //                arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolSaw"), null)), null)
+
         MineTweakerAPI.recipes.addShaped(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
                 arrayOf(arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolFile"), null),
@@ -988,9 +996,12 @@ class Project_Red : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17471).amount(5), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
-                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032).amount(2), 100, 30)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
+        //        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032).amount(2), 100, 30)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032).amount(2), 100, 30)
@@ -1017,9 +1028,12 @@ class Project_Red : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 8),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 7),
                 OreBracketHandler.getOre("plateObsidian"), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 9),
-                ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
-                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 60), 200, 30)
+
+        //TODO Replace ("StevesCarts:ModuleComponents", 60)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 9),
+        //        ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
+        //        ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 60), 200, 30)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 10),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17299).amount(4), 200, 30)

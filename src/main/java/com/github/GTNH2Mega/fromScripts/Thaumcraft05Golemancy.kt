@@ -109,9 +109,12 @@ class Thaumcraft05Golemancy : Runnable {
         Research.addCruciblePage("GOLEMFLESH", ItemBracketHandler.getItem("Thaumcraft:ItemGolemPlacer", 4))
         Research.setAspects("GOLEMFLESH", "corpus 12, permutatio 12, spiritus 12, motus 9, praecantatio 6, mortuus 3")
         Research.setComplexity("GOLEMFLESH", 3)
-        Crucible.addRecipe("GOLEMSTONE", ItemBracketHandler.getItem("Thaumcraft:ItemGolemPlacer", 5),
-                ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 0),
-                "humanus 26, mortuus 26, spiritus 26")
+
+        //TODO Replace ("ExtraUtilities:cobblestone_compressed", 0)
+        //Crucible.addRecipe("GOLEMSTONE", ItemBracketHandler.getItem("Thaumcraft:ItemGolemPlacer", 5),
+        //        ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 0),
+        //        "humanus 26, mortuus 26, spiritus 26")
+
         Research.setAspects("GOLEMSTONE", "spiritus 12, permutatio 12, motus 12, terra 9, praecantatio 6, perditio 3")
         Research.setComplexity("GOLEMSTONE", 3)
         Crucible.addRecipe("GOLEMIRON", ItemBracketHandler.getItem("Thaumcraft:ItemGolemPlacer", 6),
@@ -196,14 +199,17 @@ class Thaumcraft05Golemancy : Runnable {
         Research.setComplexity("CORESORTING", 3)
         Research.clearPages("CORELIQUID")
         Research.addPage("CORELIQUID", "tc.research_page.CORELIQUID.1")
-        Infusion.addRecipe("CORELIQUID", ItemBracketHandler.getItem("Thaumcraft:ItemGolemCore", 0),
-                arrayOf(ItemBracketHandler.getItem("minecraft:nether_star", 0),
-                        ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
-                        ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketFired", 0),
-                        ItemBracketHandler.getItem("minecraft:bucket", 0),
-                        ItemBracketHandler.getItem("Forestry:canEmpty", 0),
-                        ItemBracketHandler.getItem("IC2:itemFluidCell", 0)), "aqua 20, vacuos 20, metallum 20, iter 20",
-                ItemBracketHandler.getItem("Thaumcraft:ItemGolemCore", 5), 4)
+
+        //TODO Replace ("IguanaTweaksTConstruct:clayBucketFired", 0)
+        //Infusion.addRecipe("CORELIQUID", ItemBracketHandler.getItem("Thaumcraft:ItemGolemCore", 0),
+        //        arrayOf(ItemBracketHandler.getItem("minecraft:nether_star", 0),
+        //                ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
+        //                ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketFired", 0),
+        //                ItemBracketHandler.getItem("minecraft:bucket", 0),
+        //                ItemBracketHandler.getItem("Forestry:canEmpty", 0),
+        //                ItemBracketHandler.getItem("IC2:itemFluidCell", 0)), "aqua 20, vacuos 20, metallum 20, iter 20",
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemGolemCore", 5), 4)
+
         Research.addInfusionPage("CORELIQUID", ItemBracketHandler.getItem("Thaumcraft:ItemGolemCore", 5))
         Research.addPage("CORELIQUID", "tc.research_page.CORELIQUID.2")
         Research.setAspects("CORELIQUID", "iter 12, aqua 12, metallum 9, permutatio 9, motus 6, praecantatio 3")

@@ -152,22 +152,25 @@ class BiblioCraft : Runnable {
                         arrayOf<IIngredient?>(OreBracketHandler.getOre("ringIron"), null, null),
                         arrayOf<IIngredient?>(OreBracketHandler.getOre("blockIron"),
                                 OreBracketHandler.getOre("blockIron"), OreBracketHandler.getOre("blockIron"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("BiblioCraft:BiblioLantern", 0),
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateGold"),
-                        OreBracketHandler.getOre("dustGlowstone"), OreBracketHandler.getOre("plateGold")),
-                        arrayOf(OreBracketHandler.getOre("paneGlassColorless"),
-                                ItemBracketHandler.getItem("harvestcraft:pamcandleDeco1", 0),
-                                OreBracketHandler.getOre("paneGlassColorless")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateGold"),
-                                OreBracketHandler.getOre("plateGold"), OreBracketHandler.getOre("plateGold"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("BiblioCraft:BiblioIronLantern", 0),
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateIron"),
-                        OreBracketHandler.getOre("dustGlowstone"), OreBracketHandler.getOre("plateIron")),
-                        arrayOf(OreBracketHandler.getOre("paneGlassColorless"),
-                                ItemBracketHandler.getItem("harvestcraft:pamcandleDeco1", 0),
-                                OreBracketHandler.getOre("paneGlassColorless")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateIron"),
-                                OreBracketHandler.getOre("plateIron"), OreBracketHandler.getOre("plateIron"))), null)
+
+        //TODO Replace ("harvestcraft:pamcandleDeco1", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("BiblioCraft:BiblioLantern", 0),
+        //        arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateGold"),
+        //                OreBracketHandler.getOre("dustGlowstone"), OreBracketHandler.getOre("plateGold")),
+        //                arrayOf(OreBracketHandler.getOre("paneGlassColorless"),
+        //                        ItemBracketHandler.getItem("harvestcraft:pamcandleDeco1", 0),
+        //                        OreBracketHandler.getOre("paneGlassColorless")),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("plateGold"),
+        //                        OreBracketHandler.getOre("plateGold"), OreBracketHandler.getOre("plateGold"))), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("BiblioCraft:BiblioIronLantern", 0),
+        //        arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateIron"),
+        //                OreBracketHandler.getOre("dustGlowstone"), OreBracketHandler.getOre("plateIron")),
+        //                arrayOf(OreBracketHandler.getOre("paneGlassColorless"),
+        //                        ItemBracketHandler.getItem("harvestcraft:pamcandleDeco1", 0),
+        //                        OreBracketHandler.getOre("paneGlassColorless")),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("plateIron"),
+        //                        OreBracketHandler.getOre("plateIron"), OreBracketHandler.getOre("plateIron"))), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("BiblioCraft:BiblioLamp", 0),
                 arrayOf(arrayOf(OreBracketHandler.getOre("plateGold"),
                         ItemBracketHandler.getItem("FloodLights:electricIncandescentLightBulb", 0),

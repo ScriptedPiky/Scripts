@@ -95,9 +95,6 @@ class Natura : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:redwoodDoorItem", 32767))
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("Natura:NetherGlass", 0), null)
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("Natura:NetherGlass", 1), null)
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("harvestcraft:blackberryItem", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("harvestcraft:blueberryItem", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("harvestcraft:raspberryItem", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:Blazerail", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:BrailPowered", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:BrailDetector", 0))
@@ -114,9 +111,6 @@ class Natura : Runnable {
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("minecraft:coal", 1), IngredientAny.INSTANCE)
         MineTweakerAPI.recipes.removeShapeless(ItemBracketHandler.getItem("Natura:barleyFood", 8),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Natura:Bluebells", 0)), false)
-        MineTweakerAPI.recipes.addShapeless(item,
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:cottonItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:cottonItem", 0)), null)
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Natura:barley.seed", 1),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Natura:barleyFood", 3)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:leather", 0),
@@ -1606,15 +1600,6 @@ class Natura : Runnable {
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Natura:natura.emptybowl", 12),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("Natura:planks", 12),
                         OreBracketHandler.getOre("craftingToolKnife"))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("harvestcraft:raspberryjuiceItem", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:juicerItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:raspberryItem", 0)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("harvestcraft:blueberryjuiceItem", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:juicerItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:blueberryItem", 0)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("harvestcraft:blackberryjuiceItem", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:juicerItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:blackberryItem", 0)), null)
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Natura:barley.seed", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Natura:barleyFood", 0)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Natura:NetherFurnace", 0),

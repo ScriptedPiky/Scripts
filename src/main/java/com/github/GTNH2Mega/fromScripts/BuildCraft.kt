@@ -61,7 +61,10 @@ class BuildCraft : Runnable {
         val item25 = ItemBracketHandler.getItem("dreamcraft:item.SandStoneRod", 0)
         val item26 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23299)
         OreBracketHandler.getOre("screwRedAlloy")
-        val item27 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //val item27 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
         OreBracketHandler.getOre("wireGt01Steel")
         val ore9 = OreBracketHandler.getOre("wireGt01Tin")
         val ore10 = OreBracketHandler.getOre("wireGt01Nickel")
@@ -96,8 +99,11 @@ class BuildCraft : Runnable {
         val item43 = ItemBracketHandler.getItem("BuildCraft|Robotics:robot", 0)
         val item44 = ItemBracketHandler.getItem("BuildCraft|Transport:filteredBufferBlock", 0)
         val item45 = ItemBracketHandler.getItem("Railcraft:glass", 0)
-        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5)
-        ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)
+
+        //TODO investigate getters with no target field for ("ExtraUtilities:decorativeBlock2", 5) and ("TConstruct:GlassBlock", 0)
+        //ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5)
+        //ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)
+
         val ore18 = OreBracketHandler.getOre("craftingToolWrench")
         val ore19 = OreBracketHandler.getOre("craftingToolScrewdriver")
         MineTweakerAPI.recipes.remove(item6)
@@ -239,56 +245,64 @@ class BuildCraft : Runnable {
                                 OreBracketHandler.getOre("springInvar")), arrayOf(OreBracketHandler.getOre("gearInvar"),
                         ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
                         OreBracketHandler.getOre("gearInvar"))), null)
-        MineTweakerAPI.recipes.addShaped(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone", 0),
-                arrayOf(arrayOf<IIngredient>(item26, item27, item26),
-                        arrayOf<IIngredient>(item27, ItemBracketHandler.getItem("minecraft:gravel", 0), item27),
-                        arrayOf<IIngredient>(item26, item27, item26)), null)
-        MineTweakerAPI.recipes.addShaped(item10,
-                arrayOf(arrayOf<IIngredient>(item26, item27, item26), arrayOf(item27, ore9, item27),
-                        arrayOf<IIngredient>(item26, item27, item26)), null)
-        MineTweakerAPI.recipes.addShaped(item12,
-                arrayOf(arrayOf<IIngredient>(item24, item27, item24), arrayOf(item27, ore10, item27),
-                        arrayOf<IIngredient>(item24, item27, item24)), null)
-        MineTweakerAPI.recipes.addShaped(item8,
-                arrayOf(arrayOf(ore, item27, ore), arrayOf(item27, ore11, item27), arrayOf(ore, item27, ore)), null)
-        MineTweakerAPI.recipes.addShaped(item14,
-                arrayOf(arrayOf<IIngredient>(item25, item27, item25), arrayOf(item27, ore12, item27),
-                        arrayOf<IIngredient>(item25, item27, item25)), null)
-        MineTweakerAPI.recipes.addShaped(item18,
-                arrayOf(arrayOf(ore3, item27, ore3), arrayOf(item27, ore13, item27), arrayOf(ore3, item27, ore3)), null)
-        MineTweakerAPI.recipes.addShaped(item16,
-                arrayOf(arrayOf(ore4, item27, ore4), arrayOf(item27, ore15, item27), arrayOf(ore4, item27, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(item19,
-                arrayOf(arrayOf(ore6, item27, ore6), arrayOf(item27, ore14, item27), arrayOf(ore6, item27, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(item21,
-                arrayOf(arrayOf(ore7, item27, ore7), arrayOf(item27, ore17, item27), arrayOf(ore7, item27, ore7)), null)
-        MineTweakerAPI.recipes.addShaped(item20,
-                arrayOf(arrayOf(ore8, item27, ore8), arrayOf(item27, ore16, item27), arrayOf(ore8, item27, ore8)), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0) in item27
+        //MineTweakerAPI.recipes.addShaped(
+        //        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone", 0),
+        //        arrayOf(arrayOf<IIngredient>(item26, item27, item26),
+        //                arrayOf<IIngredient>(item27, ItemBracketHandler.getItem("minecraft:gravel", 0), item27),
+        //                arrayOf<IIngredient>(item26, item27, item26)), null)
+        //MineTweakerAPI.recipes.addShaped(item10,
+        //        arrayOf(arrayOf<IIngredient>(item26, item27, item26), arrayOf(item27, ore9, item27),
+        //                arrayOf<IIngredient>(item26, item27, item26)), null)
+        //MineTweakerAPI.recipes.addShaped(item12,
+        //        arrayOf(arrayOf<IIngredient>(item24, item27, item24), arrayOf(item27, ore10, item27),
+        //                arrayOf<IIngredient>(item24, item27, item24)), null)
+        //MineTweakerAPI.recipes.addShaped(item8,
+        //        arrayOf(arrayOf(ore, item27, ore), arrayOf(item27, ore11, item27), arrayOf(ore, item27, ore)), null)
+        //MineTweakerAPI.recipes.addShaped(item14,
+        //        arrayOf(arrayOf<IIngredient>(item25, item27, item25), arrayOf(item27, ore12, item27),
+        //                arrayOf<IIngredient>(item25, item27, item25)), null)
+        //MineTweakerAPI.recipes.addShaped(item18,
+        //        arrayOf(arrayOf(ore3, item27, ore3), arrayOf(item27, ore13, item27), arrayOf(ore3, item27, ore3)), null)
+        //MineTweakerAPI.recipes.addShaped(item16,
+        //        arrayOf(arrayOf(ore4, item27, ore4), arrayOf(item27, ore15, item27), arrayOf(ore4, item27, ore4)), null)
+        //MineTweakerAPI.recipes.addShaped(item19,
+        //        arrayOf(arrayOf(ore6, item27, ore6), arrayOf(item27, ore14, item27), arrayOf(ore6, item27, ore6)), null)
+        //MineTweakerAPI.recipes.addShaped(item21,
+        //        arrayOf(arrayOf(ore7, item27, ore7), arrayOf(item27, ore17, item27), arrayOf(ore7, item27, ore7)), null)
+        //MineTweakerAPI.recipes.addShaped(item20,
+        //        arrayOf(arrayOf(ore8, item27, ore8), arrayOf(item27, ore16, item27), arrayOf(ore8, item27, ore8)), null)
+
         MineTweakerAPI.recipes.addShaped(item23,
                 arrayOf(arrayOf<IIngredient>(ore5, ore2, ore5), arrayOf(ore18, item45, ore19),
                         arrayOf<IIngredient>(ore5, ore2, ore5)), null)
-        MineTweakerAPI.recipes.addShaped(item23, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwIron"),
-                OreBracketHandler.getOre("ringIron"), OreBracketHandler.getOre("screwIron")),
-                arrayOf(OreBracketHandler.getOre("craftingToolWrench"),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5),
-                        OreBracketHandler.getOre("craftingToolScrewdriver")),
-                arrayOf<IIngredient>(OreBracketHandler.getOre("screwIron"), OreBracketHandler.getOre("ringIron"),
-                        OreBracketHandler.getOre("screwIron"))), null)
-        MineTweakerAPI.recipes.addShaped(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("RandomThings:ingredient", 1), item27,
-                        ItemBracketHandler.getItem("RandomThings:ingredient", 1)),
-                        arrayOf(item27, OreBracketHandler.getOre("gemEnderPearl"), item27),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("RandomThings:ingredient", 1), item27,
-                                ItemBracketHandler.getItem("RandomThings:ingredient", 1))), null)
-        MineTweakerAPI.recipes.addShaped(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid", 0),
-                arrayOf(arrayOf(OreBracketHandler.getOre("stickAnyRubber"), item27,
-                        OreBracketHandler.getOre("stickAnyRubber")),
-                        arrayOf(item27, OreBracketHandler.getOre("gemEnderPearl"), item27),
-                        arrayOf(OreBracketHandler.getOre("stickAnyRubber"), item27,
-                                OreBracketHandler.getOre("stickAnyRubber"))), null)
+
+        //TODO Replace ("ExtraUtilities:decorativeBlock2", 5)
+        //MineTweakerAPI.recipes.addShaped(item23, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwIron"),
+        //        OreBracketHandler.getOre("ringIron"), OreBracketHandler.getOre("screwIron")),
+        //        arrayOf(OreBracketHandler.getOre("craftingToolWrench"),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5),
+        //                OreBracketHandler.getOre("craftingToolScrewdriver")),
+        //        arrayOf<IIngredient>(OreBracketHandler.getOre("screwIron"), OreBracketHandler.getOre("ringIron"),
+        //                OreBracketHandler.getOre("screwIron"))), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0) in item27
+        //MineTweakerAPI.recipes.addShaped(
+        //        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("RandomThings:ingredient", 1), item27,
+        //                ItemBracketHandler.getItem("RandomThings:ingredient", 1)),
+        //                arrayOf(item27, OreBracketHandler.getOre("gemEnderPearl"), item27),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("RandomThings:ingredient", 1), item27,
+        //                        ItemBracketHandler.getItem("RandomThings:ingredient", 1))), null)
+        //MineTweakerAPI.recipes.addShaped(
+        //        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid", 0),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("stickAnyRubber"), item27,
+        //                OreBracketHandler.getOre("stickAnyRubber")),
+        //                arrayOf(item27, OreBracketHandler.getOre("gemEnderPearl"), item27),
+        //                arrayOf(OreBracketHandler.getOre("stickAnyRubber"), item27,
+        //                        OreBracketHandler.getOre("stickAnyRubber"))), null)
+
         MineTweakerAPI.recipes.addShaped(item39,
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingAnyIron"),
                         OreBracketHandler.getOre("gearGtSmallAnyIron"), OreBracketHandler.getOre("itemCasingAnyIron")),
@@ -456,9 +470,12 @@ class BuildCraft : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
                 ItemBracketHandler.getItem("Railcraft:glass", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, 8)
-        Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
-                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, 8)
+
+        //TODO Replace ("ExtraUtilities:decorativeBlock2", 5)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
+        //        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, 8)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Robotics:redstone_board", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0),

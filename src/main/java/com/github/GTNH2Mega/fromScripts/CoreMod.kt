@@ -14,15 +14,17 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
 import minetweaker.mods.ic2.machines.Extractor
 import modtweaker2.mods.forestry.handlers.Carpenter
-import modtweaker2.mods.tconstruct.handlers.Casting
-import modtweaker2.mods.tconstruct.handlers.Smeltery
 import modtweaker2.mods.thaumcraft.handlers.*
 import java.util.*
 
 class CoreMod : Runnable {
     override fun run() {
-        val item = ItemBracketHandler.getItem("TConstruct:blankPattern", 0)
-        val item2 = ItemBracketHandler.getItem("TConstruct:blankPattern", 1)
+        //TODO Replace ("TConstruct:blankPattern", 0)
+        //val item = ItemBracketHandler.getItem("TConstruct:blankPattern", 0)
+
+        //TODO Replace ("TConstruct:blankPattern", 1)
+        //val item2 = ItemBracketHandler.getItem("TConstruct:blankPattern", 1)
+
         val item3 = ItemBracketHandler.getItem("dreamcraft:item.SandStoneRod", 0)
         val item4 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23299)
         val ore = OreBracketHandler.getOre("stone")
@@ -37,14 +39,14 @@ class CoreMod : Runnable {
         val ore10 = OreBracketHandler.getOre("craftingToolWireCutter")
         IngredientTransform.transformReplace(ItemBracketHandler.getItem("dreamcraft:item.WoodenBrickForm", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.WoodenBrickForm", 0))
-        val item5 = ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8)
+
+        //TODO Replace ("ExtraUtilities:decorativeBlock1", 8)
+        //val item5 = ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8)
+
         val item6 = ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 1)
         val item7 = ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 0)
         val item8 = ItemBracketHandler.getItem("minecraft:string", 0)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:dissEnchanter", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 6))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 7))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8))
         MineTweakerAPI.recipes.addShaped(item3, arrayOf(arrayOf<IIngredient>(ore6, ore3, ore7)), null)
         MineTweakerAPI.recipes.addShaped(item4, arrayOf(arrayOf<IIngredient>(ore6, ore2, ore7)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.LongObsidianRod", 0).amount(2),
@@ -54,165 +56,167 @@ class CoreMod : Runnable {
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MushroomPowder", 0),
                 arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("listAllmushroom"), null, null),
                         arrayOf<IIngredient?>(ore9, null, null), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPlate", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore4, ore6), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCasing", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf(null, item2, ore6), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormGear", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBottle", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, ore6, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormIngot", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore6, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBall", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf(ore6, item2, null), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBlock", 0),
-                arrayOf(arrayOf<IIngredient?>(ore6, ore4, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormNuggets", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf(null, item2, ore6), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBuns", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBread", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, ore6, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBaguette", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore6, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCylinder", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf(ore6, item2, null), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormAnvil", 0),
-                arrayOf(arrayOf<IIngredient?>(ore6, null, ore4), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormName", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, ore4), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormArrowHead", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore4), arrayOf<IIngredient?>(null, null, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormSmallGear", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore4), arrayOf<IIngredient?>(null, ore6, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormStick", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore4), arrayOf<IIngredient?>(ore6, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBolt", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(ore6, item2, ore4), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRound", 0),
-                arrayOf(arrayOf<IIngredient?>(ore6, null, null), arrayOf(null, item2, ore4), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormScrew", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf(null, item2, ore4), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRing", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore6), arrayOf(null, item2, ore4), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormStickLong", 0),
-                arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, ore6, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRotor", 0),
-                arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore6, null, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormTurbineBlade", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(ore6, item2, null), arrayOf<IIngredient?>(null, null, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBoots", 0),
-                arrayOf(arrayOf<IIngredient?>(ore6, null, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormChestplate", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormHelmet", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore6), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormLeggings", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore6), arrayOf<IIngredient?>(null, null, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MarshmallowFormMold", 0),
-                arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore6, ore4, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeTiny", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, ore4, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeSmall", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore4, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeMedium", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf(ore4, item2, null), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeLarge", 0),
-                arrayOf(arrayOf<IIngredient?>(ore4, ore6, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeHuge", 0),
-                arrayOf(arrayOf<IIngredient?>(ore4, null, ore6), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapePlate", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore10, ore6), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeRod", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf(null, item2, ore6), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeBolt", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeCell", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, ore6, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeRing", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore6, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeIngot", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf(ore6, item2, null), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeWire", 0),
-                arrayOf(arrayOf<IIngredient?>(ore6, ore10, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeCasing", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf(null, item2, ore6), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeTinyPipe", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallPipe", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, ore6, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeNormalPipe", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore6, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeLargePipe", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf(ore6, item2, null), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeHugePipe", 0),
-                arrayOf(arrayOf<IIngredient?>(ore6, null, ore10), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeBlock", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, ore10), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeSwordBlade", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore10), arrayOf<IIngredient?>(null, null, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapePickaxeHead", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore10), arrayOf<IIngredient?>(null, ore6, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeShovelHead", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore10), arrayOf<IIngredient?>(ore6, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeAxeHead", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(ore6, item2, ore10), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeHoeHead", 0),
-                arrayOf(arrayOf<IIngredient?>(ore6, null, null), arrayOf(null, item2, ore10), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeHammerHead", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf(null, item2, ore10), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeFileHead", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore6), arrayOf(null, item2, ore10), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeSawBlade", 0),
-                arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, ore6, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeGear", 0),
-                arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore6, null, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeBottle", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(ore6, item2, null), arrayOf<IIngredient?>(null, null, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeBoat", 0),
-                arrayOf(arrayOf<IIngredient?>(ore6, null, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeRotor", 0),
-                arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeTurbineBlade", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore6), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(null, null, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallGear", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore6), arrayOf<IIngredient?>(null, null, ore10)), null)
+
+        //TODO Replace ("TConstruct:blankPattern", 1) in item2
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPlate", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore4, ore6), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCasing", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf(null, item2, ore6), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormGear", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore6)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBottle", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, ore6, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormIngot", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore6, null, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBall", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf(ore6, item2, null), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBlock", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore6, ore4, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormNuggets", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf(null, item2, ore6), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBuns", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore6)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBread", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, ore6, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBaguette", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore6, null, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCylinder", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf(ore6, item2, null), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormAnvil", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore6, null, ore4), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormName", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, ore4), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormArrowHead", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore4), arrayOf<IIngredient?>(null, null, ore6)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormSmallGear", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore4), arrayOf<IIngredient?>(null, ore6, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormStick", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore4), arrayOf<IIngredient?>(ore6, null, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBolt", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(ore6, item2, ore4), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRound", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore6, null, null), arrayOf(null, item2, ore4), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormScrew", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf(null, item2, ore4), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRing", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore6), arrayOf(null, item2, ore4), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormStickLong", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, ore6, ore4)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRotor", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore6, null, ore4)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormTurbineBlade", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(ore6, item2, null), arrayOf<IIngredient?>(null, null, ore4)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBoots", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore6, null, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore4)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormChestplate", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore4)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormHelmet", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore6), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore4)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormLeggings", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore6), arrayOf<IIngredient?>(null, null, ore4)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MarshmallowFormMold", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore6, ore4, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeTiny", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, ore4, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeSmall", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore4, null, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeMedium", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf(ore4, item2, null), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeLarge", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore4, ore6, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeHuge", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore4, null, ore6), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapePlate", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore10, ore6), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeRod", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf(null, item2, ore6), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeBolt", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore6)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeCell", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, ore6, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeRing", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore6, null, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeIngot", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore10, null), arrayOf(ore6, item2, null), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeWire", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore6, ore10, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeCasing", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf(null, item2, ore6), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeTinyPipe", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore6)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallPipe", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, ore6, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeNormalPipe", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore6, null, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeLargePipe", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore10), arrayOf(ore6, item2, null), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeHugePipe", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore6, null, ore10), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeBlock", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, ore10), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeSwordBlade", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore10), arrayOf<IIngredient?>(null, null, ore6)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapePickaxeHead", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore10), arrayOf<IIngredient?>(null, ore6, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeShovelHead", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore10), arrayOf<IIngredient?>(ore6, null, null)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeAxeHead", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(ore6, item2, ore10), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeHoeHead", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore6, null, null), arrayOf(null, item2, ore10), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeHammerHead", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf(null, item2, ore10), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeFileHead", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore6), arrayOf(null, item2, ore10), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeSawBlade", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, ore6, ore10)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeGear", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore6, null, ore10)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeBottle", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(ore6, item2, null), arrayOf<IIngredient?>(null, null, ore10)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeBoat", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ore6, null, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore10)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeRotor", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore10)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeTurbineBlade", 0),
+        //        arrayOf(arrayOf<IIngredient?>(null, null, ore6), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(null, null, ore10)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallGear", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore6), arrayOf<IIngredient?>(null, null, ore10)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.Display", 0),
                 arrayOf(arrayOf(OreBracketHandler.getOre("platePlastic"),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32740),
@@ -313,15 +317,6 @@ class CoreMod : Runnable {
                         arrayOf<IIngredient>(OreBracketHandler.getOre("plateAlloyAdvanced"),
                                 OreBracketHandler.getOre("plateTungstenSteel"),
                                 OreBracketHandler.getOre("plateAlloyAdvanced"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 7),
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateAlloyAdvanced"),
-                        OreBracketHandler.getOre("plateAlloyIridium"), OreBracketHandler.getOre("plateAlloyAdvanced")),
-                        arrayOf(OreBracketHandler.getOre("plateAlloyIridium"),
-                                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 6),
-                                OreBracketHandler.getOre("plateAlloyIridium")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateAlloyAdvanced"),
-                                OreBracketHandler.getOre("plateAlloyIridium"),
-                                OreBracketHandler.getOre("plateAlloyAdvanced"))), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedNaquadriaIronPlate", 0),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateAlloyAdvanced"),
                         OreBracketHandler.getOre("plateMysteriousCrystal"),
@@ -353,14 +348,9 @@ class CoreMod : Runnable {
                                 OreBracketHandler.getOre("plateDraconiumAwakened"),
                                 OreBracketHandler.getOre("plateAlloyAdvanced"))), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0),
-                arrayOf(arrayOf<IIngredient?>(null, null, ore4), arrayOf(null, item2, ore5),
-                        arrayOf<IIngredient?>(null, null, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0),
                 arrayOf(arrayOf<IIngredient?>(null, null, ore4),
                         arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateBrass"), ore5),
                         arrayOf<IIngredient?>(null, null, ore6)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.BowStringCast", 0),
-                arrayOf(arrayOfNulls(3), arrayOf(null, item2, ore4), arrayOf<IIngredient?>(null, ore6, ore5)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.BowStringCast", 0),
                 arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateBrass"), ore4),
                         arrayOf<IIngredient?>(null, ore6, ore5)), null)
@@ -458,15 +448,6 @@ class CoreMod : Runnable {
                                 ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0)),
                         arrayOf<IIngredient?>(ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0), null,
                                 ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("TConstruct:materials", 40),
-                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
-                        ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
-                        ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
-                                ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
-                                ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
-                                ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0), null)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1054),
                 arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
                         ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
@@ -513,239 +494,244 @@ class CoreMod : Runnable {
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
                                 ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0),
                                 ItemBracketHandler.getItem("OpenBlocks:filledbucket", 0))), null)
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeBolt", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeHoeHead", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeGear", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapePlate", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormAnvil", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPlate", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormLeggings", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBaguette", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormGear", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRotor", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeBottle", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeRotor", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeTurbineBlade", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallGear", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBoots", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeLargePipe", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormSmallGear", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCasing", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeWire", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormChestplate", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeShovelHead", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBread", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeIngot", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormIngot", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeFileHead", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeRod", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeHugePipe", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeSwordBlade", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeRing", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeCasing", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormNuggets", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallPipe", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormName", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeHammerHead", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeTinyPipe", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCylinder", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBottle", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeAxeHead", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeSawBlade", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBlock", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeCell", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormArrowHead", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeBoat", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCoinage", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBall", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeBlock", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormHelmet", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapePickaxeHead", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBuns", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeNormalPipe", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MarshmallowFormMold", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormStick", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormStickLong", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormScrew", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRing", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBolt", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRound", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormTurbineBlade", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeTiny", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeSmall", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeMedium", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeLarge", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeHuge", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
-                ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
-        val recipes = MineTweakerAPI.recipes
-        val item9 = ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 0)
-        val hashMap = HashMap<String, IData>()
-        hashMap["Durability"] = ExpandInt.toData(1000)
-        recipes.addShaped(item9.withTag(ExpandAnyDict.asData(hashMap)),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        OreBracketHandler.getOre("itemLeather"),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                OreBracketHandler.getOre("itemLeather")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:string", 0),
-                                ItemBracketHandler.getItem("minecraft:string", 0),
-                                ItemBracketHandler.getItem("minecraft:string", 0))), null)
-        val recipes2 = MineTweakerAPI.recipes
-        val item10 = ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 0)
-        val hashMap2 = HashMap<String, IData>()
-        hashMap2["Durability"] = ExpandInt.toData(1000)
-        recipes2.addShapeless(item10.withTag(ExpandAnyDict.asData(hashMap2)),
-                arrayOf(ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 0),
-                        OreBracketHandler.getOre("itemLeather"), OreBracketHandler.getOre("itemLeather"),
-                        OreBracketHandler.getOre("itemLeather")), null)
-        val recipes3 = MineTweakerAPI.recipes
-        val item11 = ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 1)
-        val hashMap3 = HashMap<String, IData>()
-        hashMap3["Durability"] = ExpandInt.toData(1000)
-        recipes3.addShaped(item11.withTag(ExpandAnyDict.asData(hashMap3)),
-                arrayOf(arrayOf(OreBracketHandler.getOre("itemLeather"),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:string", 0),
-                                ItemBracketHandler.getItem("minecraft:string", 0),
-                                ItemBracketHandler.getItem("minecraft:string", 0))), null)
-        val recipes4 = MineTweakerAPI.recipes
-        val item12 = ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 1)
-        val hashMap4 = HashMap<String, IData>()
-        hashMap4["Durability"] = ExpandInt.toData(1000)
-        recipes4.addShapeless(item12.withTag(ExpandAnyDict.asData(hashMap4)),
-                arrayOf(ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 1),
-                        OreBracketHandler.getOre("itemLeather"), OreBracketHandler.getOre("itemLeather"),
-                        OreBracketHandler.getOre("itemLeather")), null)
+
+        //TODO Replace Smeltery
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeBolt", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeHoeHead", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeGear", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapePlate", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormAnvil", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPlate", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormLeggings", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBaguette", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormGear", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRotor", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeBottle", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeRotor", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeTurbineBlade", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallGear", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBoots", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeLargePipe", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormSmallGear", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCasing", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeWire", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormChestplate", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeShovelHead", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBread", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeIngot", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormIngot", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeFileHead", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeRod", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeHugePipe", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeSwordBlade", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeRing", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeCasing", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormNuggets", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeSmallPipe", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormName", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeHammerHead", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeTinyPipe", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCylinder", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBottle", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeAxeHead", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeSawBlade", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBlock", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeCell", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormArrowHead", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeBoat", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCoinage", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBall", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeBlock", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormHelmet", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapePickaxeHead", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBuns", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.ShapeNormalPipe", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MarshmallowFormMold", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormStick", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormStickLong", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormScrew", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRing", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormBolt", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormRound", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormTurbineBlade", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeTiny", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeSmall", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeMedium", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeLarge", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+        //Smeltery.addMelting(ItemBracketHandler.getItem("dreamcraft:item.MoldFormPipeHuge", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(72), 500,
+        //        ItemBracketHandler.getItem("TConstruct:MetalBlock", 7))
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //val recipes = MineTweakerAPI.recipes
+        //val item9 = ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 0)
+        //val hashMap = HashMap<String, IData>()
+        //hashMap["Durability"] = ExpandInt.toData(1000)
+        //recipes.addShaped(item9.withTag(ExpandAnyDict.asData(hashMap)),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                OreBracketHandler.getOre("itemLeather"),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:string", 0),
+        //                        ItemBracketHandler.getItem("minecraft:string", 0),
+        //                        ItemBracketHandler.getItem("minecraft:string", 0))), null)
+        //val recipes2 = MineTweakerAPI.recipes
+        //val item10 = ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 0)
+        //val hashMap2 = HashMap<String, IData>()
+        //hashMap2["Durability"] = ExpandInt.toData(1000)
+        //recipes2.addShapeless(item10.withTag(ExpandAnyDict.asData(hashMap2)),
+        //        arrayOf(ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 0),
+        //                OreBracketHandler.getOre("itemLeather"), OreBracketHandler.getOre("itemLeather"),
+        //                OreBracketHandler.getOre("itemLeather")), null)
+        //val recipes3 = MineTweakerAPI.recipes
+        //val item11 = ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 1)
+        //val hashMap3 = HashMap<String, IData>()
+        //hashMap3["Durability"] = ExpandInt.toData(1000)
+        //recipes3.addShaped(item11.withTag(ExpandAnyDict.asData(hashMap3)),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:string", 0),
+        //                        ItemBracketHandler.getItem("minecraft:string", 0),
+        //                        ItemBracketHandler.getItem("minecraft:string", 0))), null)
+        //val recipes4 = MineTweakerAPI.recipes
+        //val item12 = ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 1)
+        //val hashMap4 = HashMap<String, IData>()
+        //hashMap4["Durability"] = ExpandInt.toData(1000)
+        //recipes4.addShapeless(item12.withTag(ExpandAnyDict.asData(hashMap4)),
+        //        arrayOf(ItemBracketHandler.getItem("dreamcraft:item.OvenGlove", 1),
+        //                OreBracketHandler.getOre("itemLeather"), OreBracketHandler.getOre("itemLeather"),
+        //                OreBracketHandler.getOre("itemLeather")), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.NeutronReflectorParts", 0),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:reactorReflectorThick", 0),
                         ItemBracketHandler.getItem("IC2:reactorReflectorThick", 0),
@@ -756,8 +742,11 @@ class CoreMod : Runnable {
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:reactorReflectorThick", 0),
                                 ItemBracketHandler.getItem("IC2:reactorReflectorThick", 0),
                                 ItemBracketHandler.getItem("IC2:reactorReflectorThick", 0))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.WoodenBrickForm", 0),
-                arrayOf(arrayOf(ore5, item, null)), null)
+
+        //TODO Replace ("TConstruct:blankPattern", 0) in item
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.WoodenBrickForm", 0),
+        //        arrayOf(arrayOf(ore5, item, null)), null)
+
         MineTweakerAPI.furnace.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.CokeOvenBrick", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.UnfiredCokeOvenBrick", 0), 0.0)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:tile.DiamondFrameBox", 0),
@@ -769,9 +758,12 @@ class CoreMod : Runnable {
                         arrayOf<IIngredient>(OreBracketHandler.getOre("stickDiamond"),
                                 OreBracketHandler.getOre("stickDiamond"), OreBracketHandler.getOre("stickDiamond"))),
                 null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCoinage", 0),
-                arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
-                        arrayOf<IIngredient?>(ore6, ore10, null)), null)
+
+        //TODO Replace ("TConstruct:blankPattern", 1) in item2
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("dreamcraft:item.MoldFormCoinage", 0),
+        //        arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(null, item2, null),
+        //                arrayOf<IIngredient?>(ore6, ore10, null)), null)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:tile.PistonBlock", 0),
                 ItemBracketHandler.getItem("minecraft:cobblestone", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 20032),
@@ -795,9 +787,12 @@ class CoreMod : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.PistonPlate", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470).amount(6),
                 ItemBracketHandler.getItem("Natura:Natura.fence", 32767), 100, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.EnrichedNaquadriaSunnariumAlloy", 0),
-                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22327), 2000, 500000)
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 4)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.EnrichedNaquadriaSunnariumAlloy", 0),
+        //        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22327), 2000, 500000)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.EnrichedNaquadriaNeutroniumSunnariumAlloy", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.EnrichedNaquadriaSunnariumAlloy", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22129), 2400, 2000000)
@@ -887,38 +882,49 @@ class CoreMod : Runnable {
                         OreBracketHandler.getOre("plateRedAlloy").amount(2),
                         OreBracketHandler.getOre("screwRedAlloy").amount(4)),
                 LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 600, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedTitaniumPlate", 0),
-                arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedTitaniumIronPlate", 0),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 0),
-                        OreBracketHandler.getOre("plateMeteoricSteel"),
-                        OreBracketHandler.getOre("plateLapis").amount(2),
-                        OreBracketHandler.getOre("screwRedAlloy").amount(4)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(288), 600, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedTungstenPlate", 0),
-                arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedTungstenIronPlate", 0),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 3),
-                        OreBracketHandler.getOre("plateUranium"), OreBracketHandler.getOre("plateSteeleaf").amount(2),
-                        OreBracketHandler.getOre("screwRedAlloy").amount(4)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(576), 600, 1920)
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedTitaniumPlate", 0),
+        //        arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedTitaniumIronPlate", 0),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 0),
+        //                OreBracketHandler.getOre("plateMeteoricSteel"),
+        //                OreBracketHandler.getOre("plateLapis").amount(2),
+        //                OreBracketHandler.getOre("screwRedAlloy").amount(4)),
+        //        LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(288), 600, 480)
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 3)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedTungstenPlate", 0),
+        //        arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedTungstenIronPlate", 0),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 3),
+        //                OreBracketHandler.getOre("plateUranium"), OreBracketHandler.getOre("plateSteeleaf").amount(2),
+        //                OreBracketHandler.getOre("screwRedAlloy").amount(4)),
+        //        LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(576), 600, 1920)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedTungstenSteelPlate", 0),
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedTungstenSteelIronPlate", 0),
                         OreBracketHandler.getOre("plateQuadrupleSunnarium"), OreBracketHandler.getOre("platePlutonium"),
                         OreBracketHandler.getOre("plateKnightmetal").amount(2),
                         OreBracketHandler.getOre("screwRedAlloy").amount(4)),
                 LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(1152), 600, 7680)
-        Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedChromePlate", 0),
-                arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedChromeIronPlate", 0),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1),
-                        OreBracketHandler.getOre("plateYttriumBariumCuprate"),
-                        OreBracketHandler.getOre("plateFierySteel").amount(2),
-                        OreBracketHandler.getOre("screwRedAlloy").amount(4)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(2304), 600, 30720)
-        Assembler.addRecipe(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
-                arrayOf(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 7),
-                        ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4),
-                        OreBracketHandler.getOre("plateOsmium"), OreBracketHandler.getOre("plateIridium").amount(2),
-                        OreBracketHandler.getOre("screwRedAlloy").amount(4)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(4608), 600, 122880)
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 1)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedChromePlate", 0),
+        //        arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedChromeIronPlate", 0),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 1),
+        //                OreBracketHandler.getOre("plateYttriumBariumCuprate"),
+        //                OreBracketHandler.getOre("plateFierySteel").amount(2),
+        //                OreBracketHandler.getOre("screwRedAlloy").amount(4)),
+        //        LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(2304), 600, 30720)
+
+        //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 8), ("AdvancedSolarPanel:asp_crafting_items", 7) and
+        // ("AdvancedSolarPanel:asp_crafting_items", 4)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 8),
+        //        arrayOf(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 7),
+        //                ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 4),
+        //                OreBracketHandler.getOre("plateOsmium"), OreBracketHandler.getOre("plateIridium").amount(2),
+        //                OreBracketHandler.getOre("screwRedAlloy").amount(4)),
+        //        LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(4608), 600, 122880)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedNaquadriaPlate", 0),
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedNaquadriaIronPlate", 0),
                         ItemBracketHandler.getItem("dreamcraft:item.EnrichedNaquadriaSunnariumAlloy", 0),
@@ -1106,39 +1112,6 @@ class CoreMod : Runnable {
         Extruder.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IridiumAlloyItemCasing", 0).amount(2),
                 ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32357).amount(0), 400, 384)
-        Extruder.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.SawBladeArdite", 0),
-                ItemBracketHandler.getItem("TConstruct:materials", 4).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32371).amount(0), 400, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.SawBladeManyullyn", 0),
-                ItemBracketHandler.getItem("TConstruct:materials", 5).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32371).amount(0), 600, 120)
-        Extruder.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ManyullynPlate", 0),
-                ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 100, 480)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fletching", 0),
-                ItemBracketHandler.getItem("minecraft:feather", 0),
-                ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0).amount(0), 200, 30)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fletching", 2),
-                ItemBracketHandler.getItem("TConstruct:materials", 1),
-                ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0).amount(0), 200, 30)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fletching", 3),
-                ItemBracketHandler.getItem("TConstruct:materials", 17),
-                ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0).amount(0), 200, 30)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fletching", 1),
-                ItemBracketHandler.getItem("minecraft:leaves", 0),
-                ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0).amount(0), 200, 30)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fletching", 4),
-                ItemBracketHandler.getItem("TConstruct:slime.leaves", 0),
-                ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0).amount(0), 200, 30)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:bowstring", 0),
-                ItemBracketHandler.getItem("minecraft:string", 0).amount(3),
-                ItemBracketHandler.getItem("dreamcraft:item.BowStringCast", 0).amount(0), 400, 30)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:bowstring", 2),
-                ItemBracketHandler.getItem("Natura:barleyFood", 7).amount(3),
-                ItemBracketHandler.getItem("dreamcraft:item.BowStringCast", 0).amount(0), 400, 30)
-        Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:bowstring", 1),
-                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7).amount(3),
-                ItemBracketHandler.getItem("dreamcraft:item.BowStringCast", 0).amount(0), 400, 30)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 1), 10, 16)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.PulsatingSpatialCoreChip", 0),
@@ -1183,9 +1156,6 @@ class CoreMod : Runnable {
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ChromeIronPlate", 0),
                 OreBracketHandler.getOre("plateChrome").amount(2), OreBracketHandler.getOre("plateIron").amount(4), 600,
                 30720)
-        FormingPress.addRecipe(ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 6),
-                OreBracketHandler.getOre("plateIridium").amount(2), OreBracketHandler.getOre("plateIron").amount(4),
-                600, 122880)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.NaquadriaIronPlate", 0),
                 OreBracketHandler.getOre("plateNaquadria").amount(2), OreBracketHandler.getOre("plateIron").amount(4),
                 600, 500000)
@@ -1211,8 +1181,6 @@ class CoreMod : Runnable {
                 ItemBracketHandler.getItem("minecraft:brown_mushroom", 0), intArrayOf(10000), 300, 2)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.MushroomPowder", 0).amount(2)),
                 ItemBracketHandler.getItem("BiomesOPlenty:mushrooms", 32767), intArrayOf(10000), 300, 2)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.MushroomPowder", 0).amount(2)),
-                ItemBracketHandler.getItem("harvestcraft:whitemushroomItem", 0), intArrayOf(10000), 300, 2)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2305).amount(4)),
                 ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0), intArrayOf(10000), 300, 2)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2305).amount(4)),
@@ -1300,12 +1268,15 @@ class CoreMod : Runnable {
         Mixer.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.BioBall", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:itemFuelPlantBall", 0).amount(16),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2802).amount(2)), 200, 16)
-        Mixer.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.WetTofu", 0), null,
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:soybeanItem", 0)),
-                LiquidBracketHandler.getLiquid("water").withAmount(100), 600, 2)
-        Mixer.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.WetTofu", 0), null,
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:soybeanItem", 0)),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(50), 300, 4)
+
+        //TODO Replace ("harvestcraft:soybeanItem", 0)
+        //Mixer.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.WetTofu", 0), null,
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:soybeanItem", 0)),
+        //        LiquidBracketHandler.getLiquid("water").withAmount(100), 600, 2)
+        //Mixer.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.WetTofu", 0), null,
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:soybeanItem", 0)),
+        //        LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(50), 300, 4)
+
         PlateBender.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.QuantinumDensePlate", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.QuantinumPlate", 0).amount(9), 600, 120)
         PlateBender.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.MytrylDensePlate", 0),
@@ -1316,30 +1287,33 @@ class CoreMod : Runnable {
                 ItemBracketHandler.getItem("dreamcraft:item.BlackPlutoniumPlate", 0).amount(9), 1200, 480)
         PlateBender.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11804), 400, 24)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.ShapeBoat", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormBoots", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormChestplate", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormHelmet", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldFormLeggings", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MarshmallowForm", 0),
-                LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
-                ItemBracketHandler.getItem("dreamcraft:item.MarshmallowFormMold", 0), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(144),
-                ItemBracketHandler.getItem("TConstruct:fletching", 32767), true, 100)
-        Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.BowStringCast", 0),
-                LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(144),
-                ItemBracketHandler.getItem("TConstruct:bowstring", 32767), true, 100)
+
+        //TODO Replace Smeltery
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ShapeBoat", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormBoots", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormChestplate", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormHelmet", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MoldFormLeggings", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.MarshmallowForm", 0),
+        //        LiquidBracketHandler.getLiquid("steel.molten").withAmount(576),
+        //        ItemBracketHandler.getItem("dreamcraft:item.MarshmallowFormMold", 0), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.BowFletchingCast", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(144),
+        //        ItemBracketHandler.getItem("TConstruct:fletching", 32767), true, 100)
+        //Casting.addTableRecipe(ItemBracketHandler.getItem("dreamcraft:item.BowStringCast", 0),
+        //        LiquidBracketHandler.getLiquid("aluminumbrass.molten").withAmount(144),
+        //        ItemBracketHandler.getItem("TConstruct:bowstring", 32767), true, 100)
+
         Wiremill.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ElectrotineWire", 0).amount(2),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 55), 100, 4)
         Research.addTab("NEWHORIZONS", "dreamcraft", "textures/thaumcraft/icon/icon_GTNH.png", "dreamcraft",
@@ -1366,144 +1340,159 @@ class CoreMod : Runnable {
                 ItemBracketHandler.getItem("dreamcraft:item.WitherProtectionRing", 0), 3)
         Research.addInfusionPage("WITHERRING", ItemBracketHandler.getItem("dreamcraft:item.WitherProtectionRing", 0))
         Warp.addToResearch("WITHERRING", 2)
-        Research.addResearch("EMINENCESTONE", "NEWHORIZONS", "alienis 15, sensus 12, terra 9, aer 6", 0, 4, 12,
-                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14))
-        MineTweakerAPI.game.setLocalization("tc.research_name.EMINENCESTONE", "Carved 'Eminence' Stone")
-        MineTweakerAPI.game.setLocalization("tc.research_text.EMINENCESTONE", "[EU] Portal Stones")
-        Research.addPrereq("EMINENCESTONE", "INFUSION", false)
-        Research.setConcealed("EMINENCESTONE", false)
-        Research.addPage("EMINENCESTONE", "ExtraUtilities.research_page.EMINENCESTONE")
-        MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.EMINENCESTONE",
-                "A stone with trans-dimensional capacities. Can be used to craft a portal to The Last Millenium, or as expensive decoration block.")
-        Arcane.addShaped("EMINENCESTONE", ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14).amount(2),
-                "aer 50, ignis 50, terra 50, aqua 50, ordo 50, perditio 50",
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 18),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17532),
-                                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17532)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                                ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 26),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330))))
-        Research.addArcanePage("EMINENCESTONE", ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14))
-        Research.addResearch("PORTALMILLENIUM", "NEWHORIZONS", "alienis 15, sensus 12, terra 9, ignis 6 vacuos 200", 2,
-                6, 4, ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 2))
-        MineTweakerAPI.game.setLocalization("tc.research_name.PORTALMILLENIUM", "Portal to The Last Millennium")
-        MineTweakerAPI.game.setLocalization("tc.research_text.PORTALMILLENIUM", "[EU] Night and Void")
-        Research.addPrereq("PORTALMILLENIUM", "EMINENCESTONE", false)
-        Research.addPrereq("PORTALMILLENIUM", "OCULUS", false)
-        Research.setConcealed("PORTALMILLENIUM", true)
-        Research.addPage("PORTALMILLENIUM", "ExtraUtilities.research_page.PORTALMILLENIUM")
-        MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.PORTALMILLENIUM",
-                "This place is known as The Last Millenium. All life, energy, knowledge, passion, struggle, philosophy and meaning is just a few short centuries from being rendered fully pointless. On the plus side, rent is very cheap now.")
-        Infusion.addRecipe("PORTALMILLENIUM", ItemBracketHandler.getItem("minecraft:clock", 0),
-                arrayOf(ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 2),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 2),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 2),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 2)),
-                "alienis 75, sensus 25, praecantatio 75, terra 25, vacuos 75",
-                ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 2), 4)
-        Research.addInfusionPage("PORTALMILLENIUM", ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 2))
-        Warp.addToResearch("PORTALMILLENIUM", 2)
-        Research.addResearch("PORTALDEEPDARK", "NEWHORIZONS",
-                "alienis 15, spiritus 15, metallum 12, fabrico 9 lucrum 6, potentia 3", 2, 8, 4,
-                ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 0))
-        MineTweakerAPI.game.setLocalization("tc.research_name.PORTALDEEPDARK", "Portal to The Deep Dark")
-        MineTweakerAPI.game.setLocalization("tc.research_text.PORTALDEEPDARK", "[EU] Deep, Deeper, Deep Dark")
-        Research.addPrereq("PORTALDEEPDARK", "PORTALMILLENIUM", false)
-        Research.addPrereq("PORTALDEEPDARK", "ICHOR", false)
-        Research.setConcealed("PORTALDEEPDARK", true)
-        Research.addPage("PORTALDEEPDARK", "ExtraUtilities.research_page.PORTALDEEPDARK")
-        MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.PORTALDEEPDARK",
-                "As an experienced miner you naturally wish to mine deeper and further than ever before into areas of natural wealth. The deep dark is a realm far below the void, filled with natural resources and deadly enemies. Some say that the darkness within this realm is alive and will consume any unlucky adventurer who wanders too far into it. Remember to bring torches. Torches will not protect you completely, however since mobs will spawn at all light levels in the Deep Dark. Magnum torches and Chandeliers will still prevent mob spawning.")
-        Infusion.addRecipe("PORTALDEEPDARK", ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 2),
-                arrayOf(ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 4),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 5),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22388),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 315),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17397),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22388),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 5),
-                        ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 4),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 5),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22388),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 315),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17397),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22388),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
-                        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 5)),
-                "alienis 300, spiritus 150, metallum 200, fabrico 150 lucrum 100, potentia 200",
-                ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 0), 12)
-        Research.addInfusionPage("PORTALDEEPDARK", ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 0))
-        Warp.addToResearch("PORTALDEEPDARK", 8)
-        Research.addResearch("MAGICALWOOD", "NEWHORIZONS", "praecantatio 15, lucrum 12, arbor 9, cognitio 6, pannus 3",
-                -2, 6, 4, item5)
-        MineTweakerAPI.game.setLocalization("tc.research_name.MAGICALWOOD", "Magical Wood")
-        MineTweakerAPI.game.setLocalization("tc.research_text.MAGICALWOOD", "[EU] Twilight Thaumcraft Magic")
-        Research.addPrereq("MAGICALWOOD", "EMINENCESTONE", false)
-        Research.setConcealed("MAGICALWOOD", true)
-        Research.addPage("MAGICALWOOD", "ExtraUtilities.research_page.MAGICALWOOD")
-        MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.MAGICALWOOD",
-                "Magical Wood is an ingredient in the crafting of the Ender Core. It can be placed near an Enchantment Table to boost the level the table can enchant at by five levels. The amount of magical wood made from the crafting recipe depends on the strength of the enchantments on the Enchanted Books. For example, 4x Protection I gives a single piece of Magical Wood, whereas 4x Protection IV gives 14 pieces of wood.")
-        Arcane.addShaped("MAGICALWOOD", item5.amount(4), "aer 10, ignis 10, terra 10, aqua 10, ordo 10, perditio 10",
-                arrayOf(arrayOf<IIngredient>(item6, ItemBracketHandler.getItem("TwilightForest:item.carminite", 0),
-                        item7), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("minecraft:bookshelf", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330)),
-                        arrayOf<IIngredient>(item7, ItemBracketHandler.getItem("TwilightForest:item.carminite", 0),
-                                item6)))
-        Research.addArcanePage("MAGICALWOOD", item5)
-        Research.addResearch("ANGELBLOCK", "NEWHORIZONS", "aer 15, lucrum 12, ignis 9, terra 6", -2, 8, 4,
-                ItemBracketHandler.getItem("ExtraUtilities:angelBlock", 0))
-        MineTweakerAPI.game.setLocalization("tc.research_name.ANGELBLOCK", "Angel Block")
-        MineTweakerAPI.game.setLocalization("tc.research_text.ANGELBLOCK", "[EU] A Block in the Air")
-        Research.addPrereq("ANGELBLOCK", "MAGICALWOOD", false)
-        Research.setConcealed("ANGELBLOCK", true)
-        Research.addPage("ANGELBLOCK", "ExtraUtilities.research_page.ANGELBLOCK")
-        MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.ANGELBLOCK",
-                "The Angel Block is a block added by the Extra Utilities mod. This block is unique in that it does not need another block for it to be built against, so it can be placed in mid-air. When right-clicking the block will be placed in the direction youre looking. The block cant be placed diagonally in mid-air. No tool is required to break the block and it is broken instantly, even without any tools. After breaking the block does not drop, but rather instantly returns to the players inventory.")
-        Arcane.addShaped("ANGELBLOCK", ItemBracketHandler.getItem("ExtraUtilities:angelBlock", 0), "aer 50",
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17540),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29351),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17540)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:itemDensePlates", 7),
-                                ItemBracketHandler.getItem("Automagy:blockRunedObsidian", 0),
-                                ItemBracketHandler.getItem("IC2:itemDensePlates", 7)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17540),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29351),
-                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17540))))
-        Research.addArcanePage("ANGELBLOCK", ItemBracketHandler.getItem("ExtraUtilities:angelBlock", 0))
-        Research.addResearch("DEZILSMARSHMALLOW", "NEWHORIZONS",
-                "alienis 15, praecantatio 12, superbia 9, sano 6, potentia 3", -2, 2, 4,
-                ItemBracketHandler.getItem("DraconicEvolution:dezilsMarshmallow", 0))
-        MineTweakerAPI.game.setLocalization("tc.research_name.DEZILSMARSHMALLOW", "Dezil's Marshmallow")
-        MineTweakerAPI.game.setLocalization("tc.research_text.DEZILSMARSHMALLOW", "[DE] OP food please")
-        Research.addPrereq("DEZILSMARSHMALLOW", "INFUSION", false)
-        Research.setConcealed("DEZILSMARSHMALLOW", false)
-        Research.setSpikey("DEZILSMARSHMALLOW", true)
-        Research.addPage("DEZILSMARSHMALLOW", "de.research_page.DEZILSMARSHMALLOW")
-        MineTweakerAPI.game.setLocalization("de.research_page.DEZILSMARSHMALLOW",
-                "The ultimate power of food. You can swim in lava, dive like a fish, mine like crazy and jump like a rabbit. Eat one of these marshmallows and you will never get hungry again. You feel like you can take on the Dragon with just bare hands")
-        Infusion.addRecipe("DEZILSMARSHMALLOW", ItemBracketHandler.getItem("dreamcraft:item.Marshmallow", 0),
-                arrayOf(ItemBracketHandler.getItem("harvestcraft:epicbaconItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:deluxechickencurryItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:meatfeastpizzaItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:beefwellingtonItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:sausageinbreadItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:heartybreakfastItem", 0)),
-                "alienis 32, praecantatio 16, superbia 24, sano 28, iter 20, potentia 12",
-                ItemBracketHandler.getItem("DraconicEvolution:dezilsMarshmallow", 0), 5)
-        Research.addInfusionPage("DEZILSMARSHMALLOW",
-                ItemBracketHandler.getItem("DraconicEvolution:dezilsMarshmallow", 0))
-        Warp.addToResearch("DEZILSMARSHMALLOW", 8)
+
+        //TODO Replace ("ExtraUtilities:decorativeBlock1", 14)
+        //Research.addResearch("EMINENCESTONE", "NEWHORIZONS", "alienis 15, sensus 12, terra 9, aer 6", 0, 4, 12,
+        //        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.EMINENCESTONE", "Carved 'Eminence' Stone")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.EMINENCESTONE", "[EU] Portal Stones")
+        //Research.addPrereq("EMINENCESTONE", "INFUSION", false)
+        //Research.setConcealed("EMINENCESTONE", false)
+        //Research.addPage("EMINENCESTONE", "ExtraUtilities.research_page.EMINENCESTONE")
+        //MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.EMINENCESTONE",
+        //        "A stone with trans-dimensional capacities. Can be used to craft a portal to The Last Millenium, or as expensive decoration block.")
+        //Arcane.addShaped("EMINENCESTONE", ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14).amount(2),
+        //        "aer 50, ignis 50, terra 50, aqua 50, ordo 50, perditio 50",
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 18),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17532),
+        //                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17532)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                        ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 26),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330))))
+        //Research.addArcanePage("EMINENCESTONE", ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14))
+
+        //TODO Replace ("ExtraUtilities:decorativeBlock1", 14), ("ExtraUtilities:decorativeBlock1", 2),
+        // ("ExtraUtilities:dark_portal", 2), ("ExtraUtilities:cobblestone_compressed", 4), ("ExtraUtilities:decorativeBlock1", 5),
+        // ("TConstruct:heavyPlate", 314), ("TConstruct:heavyPlate", 315), ("ExtraUtilities:dark_portal", 0)
+        // Note, would need to reimplement the whole deep dark portal here it seems.
+        //Research.addResearch("PORTALMILLENIUM", "NEWHORIZONS", "alienis 15, sensus 12, terra 9, ignis 6 vacuos 200", 2,
+        //        6, 4, ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 2))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.PORTALMILLENIUM", "Portal to The Last Millennium")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.PORTALMILLENIUM", "[EU] Night and Void")
+        //Research.addPrereq("PORTALMILLENIUM", "EMINENCESTONE", false)
+        //Research.addPrereq("PORTALMILLENIUM", "OCULUS", false)
+        //Research.setConcealed("PORTALMILLENIUM", true)
+        //Research.addPage("PORTALMILLENIUM", "ExtraUtilities.research_page.PORTALMILLENIUM")
+        //MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.PORTALMILLENIUM",
+        //        "This place is known as The Last Millenium. All life, energy, knowledge, passion, struggle, philosophy and meaning is just a few short centuries from being rendered fully pointless. On the plus side, rent is very cheap now.")
+        //Infusion.addRecipe("PORTALMILLENIUM", ItemBracketHandler.getItem("minecraft:clock", 0),
+        //        arrayOf(ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 2),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 2),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 2),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 14),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 2)),
+        //        "alienis 75, sensus 25, praecantatio 75, terra 25, vacuos 75",
+        //        ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 2), 4)
+        //Research.addInfusionPage("PORTALMILLENIUM", ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 2))
+        //Warp.addToResearch("PORTALMILLENIUM", 2)
+        //Research.addResearch("PORTALDEEPDARK", "NEWHORIZONS",
+        //        "alienis 15, spiritus 15, metallum 12, fabrico 9 lucrum 6, potentia 3", 2, 8, 4,
+        //        ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 0))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.PORTALDEEPDARK", "Portal to The Deep Dark")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.PORTALDEEPDARK", "[EU] Deep, Deeper, Deep Dark")
+        //Research.addPrereq("PORTALDEEPDARK", "PORTALMILLENIUM", false)
+        //Research.addPrereq("PORTALDEEPDARK", "ICHOR", false)
+        //Research.setConcealed("PORTALDEEPDARK", true)
+        //Research.addPage("PORTALDEEPDARK", "ExtraUtilities.research_page.PORTALDEEPDARK")
+        //MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.PORTALDEEPDARK",
+        //        "As an experienced miner you naturally wish to mine deeper and further than ever before into areas of natural wealth. The deep dark is a realm far below the void, filled with natural resources and deadly enemies. Some say that the darkness within this realm is alive and will consume any unlucky adventurer who wanders too far into it. Remember to bring torches. Torches will not protect you completely, however since mobs will spawn at all light levels in the Deep Dark. Magnum torches and Chandeliers will still prevent mob spawning.")
+        //Infusion.addRecipe("PORTALDEEPDARK", ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 2),
+        //        arrayOf(ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 4),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 5),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22388),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 315),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17397),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22388),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 5),
+        //                ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 4),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 5),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22388),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 315),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17397),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22388),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
+        //                ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 5)),
+        //        "alienis 300, spiritus 150, metallum 200, fabrico 150 lucrum 100, potentia 200",
+        //        ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 0), 12)
+        //Research.addInfusionPage("PORTALDEEPDARK", ItemBracketHandler.getItem("ExtraUtilities:dark_portal", 0))
+        //Warp.addToResearch("PORTALDEEPDARK", 8)
+
+        //TODO Replace ("ExtraUtilities:decorativeBlock1", 8) in item5
+        //Research.addResearch("MAGICALWOOD", "NEWHORIZONS", "praecantatio 15, lucrum 12, arbor 9, cognitio 6, pannus 3",
+        //        -2, 6, 4, item5)
+        //MineTweakerAPI.game.setLocalization("tc.research_name.MAGICALWOOD", "Magical Wood")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.MAGICALWOOD", "[EU] Twilight Thaumcraft Magic")
+        //Research.addPrereq("MAGICALWOOD", "EMINENCESTONE", false)
+        //Research.setConcealed("MAGICALWOOD", true)
+        //Research.addPage("MAGICALWOOD", "ExtraUtilities.research_page.MAGICALWOOD")
+        //MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.MAGICALWOOD",
+        //        "Magical Wood is an ingredient in the crafting of the Ender Core. It can be placed near an Enchantment Table to boost the level the table can enchant at by five levels. The amount of magical wood made from the crafting recipe depends on the strength of the enchantments on the Enchanted Books. For example, 4x Protection I gives a single piece of Magical Wood, whereas 4x Protection IV gives 14 pieces of wood.")
+        //Arcane.addShaped("MAGICALWOOD", item5.amount(4), "aer 10, ignis 10, terra 10, aqua 10, ordo 10, perditio 10",
+        //        arrayOf(arrayOf<IIngredient>(item6, ItemBracketHandler.getItem("TwilightForest:item.carminite", 0),
+        //                item7), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("minecraft:bookshelf", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330)),
+        //                arrayOf<IIngredient>(item7, ItemBracketHandler.getItem("TwilightForest:item.carminite", 0),
+        //                        item6)))
+        //Research.addArcanePage("MAGICALWOOD", item5)
+
+        //TODO Replace ("ExtraUtilities:angelBlock", 0)
+        //Research.addResearch("ANGELBLOCK", "NEWHORIZONS", "aer 15, lucrum 12, ignis 9, terra 6", -2, 8, 4,
+        //        ItemBracketHandler.getItem("ExtraUtilities:angelBlock", 0))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.ANGELBLOCK", "Angel Block")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.ANGELBLOCK", "[EU] A Block in the Air")
+        //Research.addPrereq("ANGELBLOCK", "MAGICALWOOD", false)
+        //Research.setConcealed("ANGELBLOCK", true)
+        //Research.addPage("ANGELBLOCK", "ExtraUtilities.research_page.ANGELBLOCK")
+        //MineTweakerAPI.game.setLocalization("ExtraUtilities.research_page.ANGELBLOCK",
+        //        "The Angel Block is a block added by the Extra Utilities mod. This block is unique in that it does not need another block for it to be built against, so it can be placed in mid-air. When right-clicking the block will be placed in the direction youre looking. The block cant be placed diagonally in mid-air. No tool is required to break the block and it is broken instantly, even without any tools. After breaking the block does not drop, but rather instantly returns to the players inventory.")
+        //Arcane.addShaped("ANGELBLOCK", ItemBracketHandler.getItem("ExtraUtilities:angelBlock", 0), "aer 50",
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17540),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29351),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17540)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:itemDensePlates", 7),
+        //                        ItemBracketHandler.getItem("Automagy:blockRunedObsidian", 0),
+        //                        ItemBracketHandler.getItem("IC2:itemDensePlates", 7)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17540),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29351),
+        //                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17540))))
+        //Research.addArcanePage("ANGELBLOCK", ItemBracketHandler.getItem("ExtraUtilities:angelBlock", 0))
+
+        //TODO Replace ("harvestcraft:epicbaconItem", 0), ("harvestcraft:deluxechickencurryItem", 0), ("harvestcraft:meatfeastpizzaItem", 0)
+        // ("harvestcraft:beefwellingtonItem", 0), ("harvestcraft:sausageinbreadItem", 0) and ("harvestcraft:heartybreakfastItem", 0)
+        //Research.addResearch("DEZILSMARSHMALLOW", "NEWHORIZONS",
+        //        "alienis 15, praecantatio 12, superbia 9, sano 6, potentia 3", -2, 2, 4,
+        //        ItemBracketHandler.getItem("DraconicEvolution:dezilsMarshmallow", 0))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.DEZILSMARSHMALLOW", "Dezil's Marshmallow")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.DEZILSMARSHMALLOW", "[DE] OP food please")
+        //Research.addPrereq("DEZILSMARSHMALLOW", "INFUSION", false)
+        //Research.setConcealed("DEZILSMARSHMALLOW", false)
+        //Research.setSpikey("DEZILSMARSHMALLOW", true)
+        //Research.addPage("DEZILSMARSHMALLOW", "de.research_page.DEZILSMARSHMALLOW")
+        //MineTweakerAPI.game.setLocalization("de.research_page.DEZILSMARSHMALLOW",
+        //        "The ultimate power of food. You can swim in lava, dive like a fish, mine like crazy and jump like a rabbit. Eat one of these marshmallows and you will never get hungry again. You feel like you can take on the Dragon with just bare hands")
+        //Infusion.addRecipe("DEZILSMARSHMALLOW", ItemBracketHandler.getItem("dreamcraft:item.Marshmallow", 0),
+        //        arrayOf(ItemBracketHandler.getItem("harvestcraft:epicbaconItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:deluxechickencurryItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:meatfeastpizzaItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:beefwellingtonItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:sausageinbreadItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:heartybreakfastItem", 0)),
+        //        "alienis 32, praecantatio 16, superbia 24, sano 28, iter 20, potentia 12",
+        //        ItemBracketHandler.getItem("DraconicEvolution:dezilsMarshmallow", 0), 5)
+        //Research.addInfusionPage("DEZILSMARSHMALLOW",
+        //        ItemBracketHandler.getItem("DraconicEvolution:dezilsMarshmallow", 0))
+        //Warp.addToResearch("DEZILSMARSHMALLOW", 8)
+
         Research.addResearch("ENCHANTINGTABLE", "NEWHORIZONS", "praecantatio 15, fabrico 12, cognitio 9, potentia 6", 0,
                 0, 4, ItemBracketHandler.getItem("minecraft:enchanting_table", 0))
         MineTweakerAPI.game.setLocalization("tc.research_name.ENCHANTINGTABLE", "Enchanting Table")
@@ -1651,237 +1640,242 @@ class CoreMod : Runnable {
                 ItemBracketHandler.getItem("minecraft:dragon_egg", 0), 6)
         Research.addInfusionPage("DRAGONEGG", ItemBracketHandler.getItem("minecraft:dragon_egg", 0))
         Warp.addToResearch("DRAGONEGG", 5)
-        Research.addResearch("SILKYCRYSTAL", "NEWHORIZONS",
-                "pannus 15, lucrum 2, instrumentum 9, aer 6, praecantatio 3", -2, -2, 4,
-                ItemBracketHandler.getItem("TConstruct:materials", 26))
-        MineTweakerAPI.game.setLocalization("tc.research_name.SILKYCRYSTAL", "Silky Jewel")
-        MineTweakerAPI.game.setLocalization("tc.research_text.SILKYCRYSTAL", "[TC] Silky magical.")
-        Research.addPrereq("SILKYCRYSTAL", "ENCHANTINGTABLE", false)
-        Research.setConcealed("SILKYCRYSTAL", true)
-        Research.setRound("SILKYCRYSTAL", true)
-        Research.addPage("SILKYCRYSTAL", "TConstruct.research_page.SILKYCRYSTAL")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.SILKYCRYSTAL",
-                "Silky Cloth is a manufactured item and is a component of the Silky Jewel.<BR><BR>The Silky Jewel is a manufactured item, used to simulate the Silk Touch enchantment in TC tools.")
-        Arcane.addShaped("SILKYCRYSTAL", ItemBracketHandler.getItem("TConstruct:materials", 25),
-                "aer 30, aqua 25, ignis 15, terra 15, ordo 10, perditio 10",
-                arrayOf(arrayOf(item8, OreBracketHandler.getOre("foilGold"), item8),
-                        arrayOf(OreBracketHandler.getOre("foilGold"),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                                OreBracketHandler.getOre("foilGold")),
-                        arrayOf(item8, OreBracketHandler.getOre("foilGold"), item8)))
-        Research.addArcanePage("SILKYCRYSTAL", ItemBracketHandler.getItem("TConstruct:materials", 25))
-        Infusion.addRecipe("SILKYCRYSTAL", ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500),
-                arrayOf(ItemBracketHandler.getItem("TConstruct:materials", 25),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", 0),
-                        ItemBracketHandler.getItem("TConstruct:materials", 25),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", 3),
-                        ItemBracketHandler.getItem("TConstruct:materials", 25),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", 4)),
-                "ignis 20, terra 20, ordo 35, praecantatio 35, vitreus 20",
-                ItemBracketHandler.getItem("TConstruct:materials", 26), 4)
-        Research.addInfusionPage("SILKYCRYSTAL", ItemBracketHandler.getItem("TConstruct:materials", 26))
-        Research.addResearch("LAVACRYSTAL", "NEWHORIZONS", "ignis 15, praecantatio 12, vacuos 9, perditio 6", 2, -2, 4,
-                ItemBracketHandler.getItem("TConstruct:materials", 7))
-        MineTweakerAPI.game.setLocalization("tc.research_name.LAVACRYSTAL", "Lava Crystal")
-        MineTweakerAPI.game.setLocalization("tc.research_text.LAVACRYSTAL", "[TC] Fiery magical.")
-        Research.addPrereq("LAVACRYSTAL", "ENCHANTINGTABLE", false)
-        Research.setConcealed("LAVACRYSTAL", true)
-        Research.setRound("LAVACRYSTAL", true)
-        Research.addPage("LAVACRYSTAL", "TConstruct.research_page.LAVACRYSTAL")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.LAVACRYSTAL",
-                "A Lava Crystal is a modifier both for tools and weapons. If added, the tool(s) is/are granted with the power of a furnace, meaning it will auto-smelt blocks when harvested. However, adding this to a weapon will not give it the same effect. Instead, it will set mobs on fire for 3 seconds.<BR>This modifier can be stacked with Luck (Fortune) and is not compatible with Silky (Silk Touch).")
-        Infusion.addRecipe("LAVACRYSTAL", ItemBracketHandler.getItem("minecraft:fire_charge", 0),
-                arrayOf(ItemBracketHandler.getItem("minecraft:blaze_rod", 0),
-                        ItemBracketHandler.getItem("minecraft:lava_bucket", 0),
-                        ItemBracketHandler.getItem("minecraft:fire_charge", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", 1),
-                        ItemBracketHandler.getItem("minecraft:blaze_rod", 0),
-                        ItemBracketHandler.getItem("minecraft:lava_bucket", 0),
-                        ItemBracketHandler.getItem("minecraft:fire_charge", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", 1)),
-                "ignis 25, perditio 25, vacuos 20, praecantatio 35",
-                ItemBracketHandler.getItem("TConstruct:materials", 7), 3)
-        Research.addInfusionPage("LAVACRYSTAL", ItemBracketHandler.getItem("TConstruct:materials", 7))
-        Research.addResearch("BALLOFMOSS", "NEWHORIZONS", "sano 15, terra 12, instrumentum 9", 0, -4, 4,
-                ItemBracketHandler.getItem("TConstruct:materials", 6))
-        MineTweakerAPI.game.setLocalization("tc.research_name.BALLOFMOSS", "Ball of Moss")
-        MineTweakerAPI.game.setLocalization("tc.research_text.BALLOFMOSS", "[TC] Your Tools repair itselfs.")
-        Research.addPrereq("BALLOFMOSS", "SILKYCRYSTAL", false)
-        Research.addPrereq("BALLOFMOSS", "LAVACRYSTAL", false)
-        Research.setConcealed("BALLOFMOSS", true)
-        Research.setRound("BALLOFMOSS", true)
-        Research.addPage("BALLOFMOSS", "TConstruct.research_page.BALLOFMOSS")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.BALLOFMOSS",
-                "The Ball of Moss for Tinkers Construct Tools.<BR> Attaching moss to a tool infuses it with life. The tool appers to be capable of regenerating wear and tear.<BR>Effects:<BR> The tool slowly repair itself.<BR>Sunlight speeds up the process.")
-        Infusion.addRecipe("BALLOFMOSS", ItemBracketHandler.getItem("Thaumcraft:ItemResource", 15),
-                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2542),
-                        ItemBracketHandler.getItem("TwilightForest:tile.TFPlant", 3),
-                        ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2542),
-                        ItemBracketHandler.getItem("TwilightForest:tile.TFPlant", 3),
-                        ItemBracketHandler.getItem("BiomesOPlenty:moss", 0)), "sano 30, terra 25, instrumentum 35",
-                ItemBracketHandler.getItem("TConstruct:materials", 6), 5)
-        Research.addInfusionPage("BALLOFMOSS", ItemBracketHandler.getItem("TConstruct:materials", 6))
-        Research.addResearch("NECROTICBONE", "NEWHORIZONS", "exanimis 15, mortuus 12, spiritus 9, venenum 6", 0, -2, 4,
-                ItemBracketHandler.getItem("TConstruct:materials", 8))
-        MineTweakerAPI.game.setLocalization("tc.research_name.NECROTICBONE", "Necrotic Bone")
-        MineTweakerAPI.game.setLocalization("tc.research_text.NECROTICBONE",
-                "[TC] Evil way to make Wither Skeleton Bones.")
-        Research.addPrereq("NECROTICBONE", "ENTROPICPROCESSING", false)
-        Research.addPrereq("NECROTICBONE", "BALLOFMOSS", false)
-        Research.addPrereq("NECROTICBONE", "SILKYCRYSTAL", false)
-        Research.addPrereq("NECROTICBONE", "LAVACRYSTAL", false)
-        Research.setConcealed("NECROTICBONE", true)
-        Research.setRound("NECROTICBONE", true)
-        Research.addPage("NECROTICBONE", "TConstruct.research_page.NECROTICBONE")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.NECROTICBONE",
-                "The Necrotic Bone is a special drop gained by killing Wither Skeletons, and can be rarely found in dungeon chests. Now you find a evil way to make it out of Skeleton Bones. Currently, the only use for the Necrotic bone is used to craft a Heart Canister and add a modifier to weapons. The sheer volume of essentia required is too much for the Crucible. You will need a more advanced method of production to create these bones.")
-        Crucible.addRecipe("NECROTICBONE", ItemBracketHandler.getItem("TConstruct:materials", 8),
-                ItemBracketHandler.getItem("minecraft:bone", 0),
-                "exanimis 20, mortuus 30, infernus 20, spiritus 20, venenum 20, corpus 5")
-        Research.addCruciblePage("NECROTICBONE", ItemBracketHandler.getItem("TConstruct:materials", 8))
-        Warp.addToResearch("NECROTICBONE", 2)
-        Research.addResearch("REDHEART", "NEWHORIZONS", "ignis 15, praecantatio 12, sano 9, mortuus 6, exanimis 3", 0,
-                -6, 4, ItemBracketHandler.getItem("TConstruct:heartCanister", 1))
-        MineTweakerAPI.game.setLocalization("tc.research_name.REDHEART", "Red Heart")
-        MineTweakerAPI.game.setLocalization("tc.research_text.REDHEART", "[TC] 10 Hearts are not enough.")
-        Research.addPrereq("REDHEART", "RUNICAUGMENTATION", false)
-        Research.addPrereq("REDHEART", "BALLOFMOSS", false)
-        Research.setConcealed("REDHEART", true)
-        Research.setRound("REDHEART", true)
-        Research.addPage("REDHEART", "TConstruct.research_page.REDHEART.1")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.REDHEART.1",
-                "The Miniature Red Heart is an item from Tinkers Construct. It is extremely rare and has very little uses, as it is only used to craft the Heart Canister.It is dropped randomly by hostile mobs or crafting via Infusion. The drop rate is 0.2% from regular hostile mobs. The heart may drop anytime a mob dies, the kill does not have to be caused by a player.Its primary use is in crafting the Red Heart Canister, but it can also be eaten to restore 10 life.")
-        Infusion.addRecipe("REDHEART", ItemBracketHandler.getItem("minecraft:golden_apple", 0),
-                arrayOf(ItemBracketHandler.getItem("TConstruct:jerky", 6),
-                        ItemBracketHandler.getItem("minecraft:apple", 0),
-                        ItemBracketHandler.getItem("TConstruct:jerky", 7),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:jerky", 0),
-                        ItemBracketHandler.getItem("TConstruct:jerky", 1),
-                        ItemBracketHandler.getItem("TConstruct:jerky", 2),
-                        ItemBracketHandler.getItem("TConstruct:jerky", 3),
-                        ItemBracketHandler.getItem("TConstruct:jerky", 4),
-                        ItemBracketHandler.getItem("TConstruct:jerky", 5)),
-                "exanimis 25, ignis 35, lucrum 35, sano 50, praecantatio 50",
-                ItemBracketHandler.getItem("TConstruct:heartCanister", 1), 3)
-        Research.addInfusionPage("REDHEART", ItemBracketHandler.getItem("TConstruct:heartCanister", 1))
-        Warp.addToResearch("REDHEARTCANISTER", 1)
-        Research.addResearch("REDHEARTCANISTER", "NEWHORIZONS",
-                "metallum 15, lucrum 15, sano 12, ignis 9, mortuus 6, exanimis 3", 0, -8, 4,
-                ItemBracketHandler.getItem("TConstruct:heartCanister", 2))
-        MineTweakerAPI.game.setLocalization("tc.research_name.REDHEARTCANISTER", "Red Heart Canister")
-        MineTweakerAPI.game.setLocalization("tc.research_text.REDHEARTCANISTER", "[TC] Bound in a small box.")
-        Research.addPrereq("REDHEARTCANISTER", "REDHEART", false)
-        Research.setConcealed("REDHEARTCANISTER", true)
-        Research.addPage("REDHEARTCANISTER", "TConstruct.research_page.REDHEARTCANISTER.1")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.REDHEARTCANISTER.1",
-                "The Red Heart Canister which increases the amount of hearts that the player has. To have an effect the canisters must be equipped in the Armor Tab, in the slot on the right with the symbol that looks like the red heart canister. Up to 10 can be stacked in this slot to allow for a total of 10 extra hearts (or 20 extra health points). These will not appear above the regular health bar like from the Absorption effect, instead once the health bar is full the red hearts will gradually be replaced by orange hearts.")
-        Arcane.addShaped("REDHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 2),
-                "aer 50, aqua 50, ignis 50, terra 50, ordo 50, perditio 50",
-                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 0), null),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("minecraft:golden_apple", 0),
-                                ItemBracketHandler.getItem("TConstruct:heartCanister", 1), null), arrayOfNulls(3)))
-        Research.addArcanePage("REDHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 2))
-        Warp.addToResearch("REDHEARTCANISTER", 2)
-        Research.addResearch("YELLOWHEART", "NEWHORIZONS", "mortuus 15, praecantatio 12, exanimis 9, sano 6, ignis 3",
-                -2, -7, 4, ItemBracketHandler.getItem("TConstruct:heartCanister", 3))
-        MineTweakerAPI.game.setLocalization("tc.research_name.YELLOWHEART", "Yellow Heart")
-        MineTweakerAPI.game.setLocalization("tc.research_text.YELLOWHEART", "[TC] 20 Hearts are not enough.")
-        Research.addPrereq("YELLOWHEART", "REDHEART", false)
-        Research.setConcealed("YELLOWHEART", true)
-        Research.setRound("YELLOWHEART", true)
-        Research.addPage("YELLOWHEART", "TConstruct.research_page.YELLOWHEART.1")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.YELLOWHEART.1",
-                "The Miniature Yellow Heart is an item from Tinkers Construct. It can be obtained by killing Boss mobs such as the Wither or King Slime, as well as from killing any Boss Monsters in the Twilight like the Naga, the Lich or the Hydra. Its primary use is in crafting the Yellow Heart Canister, but it can also be eaten to restore 20 life.")
-        Infusion.addRecipe("YELLOWHEART", ItemBracketHandler.getItem("minecraft:golden_apple", 1),
-                arrayOf(ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8)),
-                "exanimis 50, ignis 75, lucrum 75, sano 100, praecantatio 100",
-                ItemBracketHandler.getItem("TConstruct:heartCanister", 3), 3)
-        Research.addInfusionPage("YELLOWHEART", ItemBracketHandler.getItem("TConstruct:heartCanister", 3))
-        Warp.addToResearch("YELLOWHEARTCANISTER", 2)
-        Research.addResearch("YELLOWHEARTCANISTER", "NEWHORIZONS",
-                "metallum 15, lucrum 15, sano 12, praecantatio 9, mortuus 6, exanimis 3", -2, -9, 4,
-                ItemBracketHandler.getItem("TConstruct:heartCanister", 4))
-        MineTweakerAPI.game.setLocalization("tc.research_name.YELLOWHEARTCANISTER", "Yellow Heart Canister")
-        MineTweakerAPI.game.setLocalization("tc.research_text.YELLOWHEARTCANISTER", "[TC] Bound in a box.")
-        Research.addPrereq("YELLOWHEARTCANISTER", "YELLOWHEART", false)
-        Research.setConcealed("YELLOWHEARTCANISTER", true)
-        Research.addPage("YELLOWHEARTCANISTER", "TConstruct.research_page.YELLOWHEARTCANISTER.1")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.YELLOWHEARTCANISTER.1",
-                "The Yellow Heart Canister which increases the amount of hearts that the player has. To have an effect the canisters must be equipped in the Armor Tab, in the slot on the right with the symbol that looks like the yellow heart canister Up to 10 can be stacked in this slot to allow for a total of 10 extra hearts (or 20 extra health points). These will not appear above the regular health bar like from the Absorption effect, instead once the health bar is full with orange hearts it will gradually be replaced by yellow hearts.")
-        Arcane.addShaped("YELLOWHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 4),
-                "aer 100, aqua 100, ignis 100, terra 100, ordo 100, perditio 100",
-                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 0),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("minecraft:golden_apple", 1),
-                                ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
-                                ItemBracketHandler.getItem("minecraft:golden_apple", 1)), arrayOfNulls(3)))
-        Research.addArcanePage("YELLOWHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 4))
-        Warp.addToResearch("YELLOWHEARTCANISTER", 3)
-        Research.addResearch("GREENHEART", "NEWHORIZONS",
-                "infernus 15, lucrum 12, praecantatio 12, spiritus 9, fames 6, corpus 3", -4, -7, 4,
-                ItemBracketHandler.getItem("TConstruct:heartCanister", 5))
-        MineTweakerAPI.game.setLocalization("tc.research_name.GREENHEART", "Green Heart")
-        MineTweakerAPI.game.setLocalization("tc.research_text.GREENHEART", "[TC] 30 Hearts are not enough.")
-        Research.addPrereq("GREENHEART", "YELLOWHEART", false)
-        Research.setConcealed("GREENHEART", true)
-        Research.setRound("GREENHEART", true)
-        Research.addPage("GREENHEART", "TConstruct.research_page.GREENHEART.1")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.GREENHEART.1",
-                "The Miniature Green Heart is an item from Tinkers Construct. It can be made via Infusion. Its primary use is in crafting the Geen Heart Canister, but it can also be eaten to restore 30 life.")
-        Infusion.addRecipe("GREENHEART", ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
-                arrayOf(ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8)),
-                "exanimis 100, ignis 150, lucrum 150, sano 200, praecantatio 200",
-                ItemBracketHandler.getItem("TConstruct:heartCanister", 5), 3)
-        Research.addInfusionPage("GREENHEART", ItemBracketHandler.getItem("TConstruct:heartCanister", 5))
-        Warp.addToResearch("GREENHEART", 3)
-        Research.addResearch("GREENHEARTCANISTER", "NEWHORIZONS",
-                "infernus 15, metallum 15, lucrum 12, sano 12, praecantatio 12, spiritus 9, fames 6, corpus 3", -4, -9,
-                4, ItemBracketHandler.getItem("TConstruct:heartCanister", 6))
-        MineTweakerAPI.game.setLocalization("tc.research_name.GREENHEARTCANISTER", "Green Heart Canister")
-        MineTweakerAPI.game.setLocalization("tc.research_text.GREENHEARTCANISTER", "[TC] Bound in a big box.")
-        Research.addPrereq("GREENHEARTCANISTER", "GREENHEART", false)
-        Research.setConcealed("GREENHEARTCANISTER", true)
-        Research.addPage("GREENHEARTCANISTER", "TConstruct.research_page.GREENHEARTCANISTER.1")
-        Research.addPage("GREENHEARTCANISTER", "TConstruct.research_page.GREENHEARTCANISTER.2")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.GREENHEARTCANISTER.1",
-                "The Green Heart Canister which increases the amount of hearts that the player has. To have an effect the canisters must be equipped in the Armor Tab, in the slot on the right with the symbol that looks like the green heart canister. Up to 10 can be stacked in this slot to allow for a total of 10 extra hearts (or 20 extra health points). These will not appear above the regular health bar like from the Absorption effect, instead once the health bar is full with yellow hearts and will gradually be replaced by green hearts.")
-        MineTweakerAPI.game.setLocalization("TConstruct.research_page.GREENHEARTCANISTER.2",
-                "On top of the Yellow Heart Canisters, a maximum of 10 Red Heart Canisters and 10 Yellow Heart Canisters and 10 green Heart Canisters can be equipped for an additional 10 and 20 health points. This brings maximum health up to 40 hearts (or 80 health points)")
-        Arcane.addShaped("GREENHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 6),
-                "aer 200, aqua 200, ignis 200, terra 200, ordo 200, perditio 200",
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:materials", 8),
-                        ItemBracketHandler.getItem("TConstruct:heartCanister", 0),
-                        ItemBracketHandler.getItem("TConstruct:materials", 8)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
-                                ItemBracketHandler.getItem("TConstruct:heartCanister", 5),
-                                ItemBracketHandler.getItem("TConstruct:diamondApple", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:materials", 8),
-                                ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
-                                ItemBracketHandler.getItem("TConstruct:materials", 8))))
-        Research.addArcanePage("GREENHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 6))
-        Warp.addToResearch("GREENHEARTCANISTER", 4)
+
+        //TODO Replace ("TConstruct:materials", 26)
+        //Research.addResearch("SILKYCRYSTAL", "NEWHORIZONS",
+        //        "pannus 15, lucrum 2, instrumentum 9, aer 6, praecantatio 3", -2, -2, 4,
+        //        ItemBracketHandler.getItem("TConstruct:materials", 26))
+
+        //TODO Implement similar modifiers or abilities to Tinkers tools into GT? Don't let the TC research be wasted.
+        //MineTweakerAPI.game.setLocalization("tc.research_name.SILKYCRYSTAL", "Silky Jewel")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.SILKYCRYSTAL", "[TC] Silky magical.")
+        //Research.addPrereq("SILKYCRYSTAL", "ENCHANTINGTABLE", false)
+        //Research.setConcealed("SILKYCRYSTAL", true)
+        //Research.setRound("SILKYCRYSTAL", true)
+        //Research.addPage("SILKYCRYSTAL", "TConstruct.research_page.SILKYCRYSTAL")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.SILKYCRYSTAL",
+        //        "Silky Cloth is a manufactured item and is a component of the Silky Jewel.<BR><BR>The Silky Jewel is a manufactured item, used to simulate the Silk Touch enchantment in TC tools.")
+        //Arcane.addShaped("SILKYCRYSTAL", ItemBracketHandler.getItem("TConstruct:materials", 25),
+        //        "aer 30, aqua 25, ignis 15, terra 15, ordo 10, perditio 10",
+        //        arrayOf(arrayOf(item8, OreBracketHandler.getOre("foilGold"), item8),
+        //                arrayOf(OreBracketHandler.getOre("foilGold"),
+        //                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //                        OreBracketHandler.getOre("foilGold")),
+        //                arrayOf(item8, OreBracketHandler.getOre("foilGold"), item8)))
+        //Research.addArcanePage("SILKYCRYSTAL", ItemBracketHandler.getItem("TConstruct:materials", 25))
+        //Infusion.addRecipe("SILKYCRYSTAL", ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500),
+        //        arrayOf(ItemBracketHandler.getItem("TConstruct:materials", 25),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 0),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 25),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 3),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 25),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 4)),
+        //        "ignis 20, terra 20, ordo 35, praecantatio 35, vitreus 20",
+        //        ItemBracketHandler.getItem("TConstruct:materials", 26), 4)
+        //Research.addInfusionPage("SILKYCRYSTAL", ItemBracketHandler.getItem("TConstruct:materials", 26))
+        //Research.addResearch("LAVACRYSTAL", "NEWHORIZONS", "ignis 15, praecantatio 12, vacuos 9, perditio 6", 2, -2, 4,
+        //        ItemBracketHandler.getItem("TConstruct:materials", 7))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.LAVACRYSTAL", "Lava Crystal")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.LAVACRYSTAL", "[TC] Fiery magical.")
+        //Research.addPrereq("LAVACRYSTAL", "ENCHANTINGTABLE", false)
+        //Research.setConcealed("LAVACRYSTAL", true)
+        //Research.setRound("LAVACRYSTAL", true)
+        //Research.addPage("LAVACRYSTAL", "TConstruct.research_page.LAVACRYSTAL")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.LAVACRYSTAL",
+        //        "A Lava Crystal is a modifier both for tools and weapons. If added, the tool(s) is/are granted with the power of a furnace, meaning it will auto-smelt blocks when harvested. However, adding this to a weapon will not give it the same effect. Instead, it will set mobs on fire for 3 seconds.<BR>This modifier can be stacked with Luck (Fortune) and is not compatible with Silky (Silk Touch).")
+        //Infusion.addRecipe("LAVACRYSTAL", ItemBracketHandler.getItem("minecraft:fire_charge", 0),
+        //        arrayOf(ItemBracketHandler.getItem("minecraft:blaze_rod", 0),
+        //                ItemBracketHandler.getItem("minecraft:lava_bucket", 0),
+        //                ItemBracketHandler.getItem("minecraft:fire_charge", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 1),
+        //                ItemBracketHandler.getItem("minecraft:blaze_rod", 0),
+        //                ItemBracketHandler.getItem("minecraft:lava_bucket", 0),
+        //                ItemBracketHandler.getItem("minecraft:fire_charge", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 1)),
+        //        "ignis 25, perditio 25, vacuos 20, praecantatio 35",
+        //        ItemBracketHandler.getItem("TConstruct:materials", 7), 3)
+        //Research.addInfusionPage("LAVACRYSTAL", ItemBracketHandler.getItem("TConstruct:materials", 7))
+        //Research.addResearch("BALLOFMOSS", "NEWHORIZONS", "sano 15, terra 12, instrumentum 9", 0, -4, 4,
+        //        ItemBracketHandler.getItem("TConstruct:materials", 6))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.BALLOFMOSS", "Ball of Moss")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.BALLOFMOSS", "[TC] Your Tools repair itselfs.")
+        //Research.addPrereq("BALLOFMOSS", "SILKYCRYSTAL", false)
+        //Research.addPrereq("BALLOFMOSS", "LAVACRYSTAL", false)
+        //Research.setConcealed("BALLOFMOSS", true)
+        //Research.setRound("BALLOFMOSS", true)
+        //Research.addPage("BALLOFMOSS", "TConstruct.research_page.BALLOFMOSS")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.BALLOFMOSS",
+        //        "The Ball of Moss for Tinkers Construct Tools.<BR> Attaching moss to a tool infuses it with life. The tool appers to be capable of regenerating wear and tear.<BR>Effects:<BR> The tool slowly repair itself.<BR>Sunlight speeds up the process.")
+        //Infusion.addRecipe("BALLOFMOSS", ItemBracketHandler.getItem("Thaumcraft:ItemResource", 15),
+        //        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2542),
+        //                ItemBracketHandler.getItem("TwilightForest:tile.TFPlant", 3),
+        //                ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2542),
+        //                ItemBracketHandler.getItem("TwilightForest:tile.TFPlant", 3),
+        //                ItemBracketHandler.getItem("BiomesOPlenty:moss", 0)), "sano 30, terra 25, instrumentum 35",
+        //        ItemBracketHandler.getItem("TConstruct:materials", 6), 5)
+        //Research.addInfusionPage("BALLOFMOSS", ItemBracketHandler.getItem("TConstruct:materials", 6))
+        //Research.addResearch("NECROTICBONE", "NEWHORIZONS", "exanimis 15, mortuus 12, spiritus 9, venenum 6", 0, -2, 4,
+        //        ItemBracketHandler.getItem("TConstruct:materials", 8))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.NECROTICBONE", "Necrotic Bone")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.NECROTICBONE",
+        //        "[TC] Evil way to make Wither Skeleton Bones.")
+        //Research.addPrereq("NECROTICBONE", "ENTROPICPROCESSING", false)
+        //Research.addPrereq("NECROTICBONE", "BALLOFMOSS", false)
+        //Research.addPrereq("NECROTICBONE", "SILKYCRYSTAL", false)
+        //Research.addPrereq("NECROTICBONE", "LAVACRYSTAL", false)
+        //Research.setConcealed("NECROTICBONE", true)
+        //Research.setRound("NECROTICBONE", true)
+        //Research.addPage("NECROTICBONE", "TConstruct.research_page.NECROTICBONE")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.NECROTICBONE",
+        //        "The Necrotic Bone is a special drop gained by killing Wither Skeletons, and can be rarely found in dungeon chests. Now you find a evil way to make it out of Skeleton Bones. Currently, the only use for the Necrotic bone is used to craft a Heart Canister and add a modifier to weapons. The sheer volume of essentia required is too much for the Crucible. You will need a more advanced method of production to create these bones.")
+        //Crucible.addRecipe("NECROTICBONE", ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //        ItemBracketHandler.getItem("minecraft:bone", 0),
+        //        "exanimis 20, mortuus 30, infernus 20, spiritus 20, venenum 20, corpus 5")
+        //Research.addCruciblePage("NECROTICBONE", ItemBracketHandler.getItem("TConstruct:materials", 8))
+        //Warp.addToResearch("NECROTICBONE", 2)
+        //Research.addResearch("REDHEART", "NEWHORIZONS", "ignis 15, praecantatio 12, sano 9, mortuus 6, exanimis 3", 0,
+        //        -6, 4, ItemBracketHandler.getItem("TConstruct:heartCanister", 1))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.REDHEART", "Red Heart")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.REDHEART", "[TC] 10 Hearts are not enough.")
+        //Research.addPrereq("REDHEART", "RUNICAUGMENTATION", false)
+        //Research.addPrereq("REDHEART", "BALLOFMOSS", false)
+        //Research.setConcealed("REDHEART", true)
+        //Research.setRound("REDHEART", true)
+        //Research.addPage("REDHEART", "TConstruct.research_page.REDHEART.1")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.REDHEART.1",
+        //        "The Miniature Red Heart is an item from Tinkers Construct. It is extremely rare and has very little uses, as it is only used to craft the Heart Canister.It is dropped randomly by hostile mobs or crafting via Infusion. The drop rate is 0.2% from regular hostile mobs. The heart may drop anytime a mob dies, the kill does not have to be caused by a player.Its primary use is in crafting the Red Heart Canister, but it can also be eaten to restore 10 life.")
+        //Infusion.addRecipe("REDHEART", ItemBracketHandler.getItem("minecraft:golden_apple", 0),
+        //        arrayOf(ItemBracketHandler.getItem("TConstruct:jerky", 6),
+        //                ItemBracketHandler.getItem("minecraft:apple", 0),
+        //                ItemBracketHandler.getItem("TConstruct:jerky", 7),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:jerky", 0),
+        //                ItemBracketHandler.getItem("TConstruct:jerky", 1),
+        //                ItemBracketHandler.getItem("TConstruct:jerky", 2),
+        //                ItemBracketHandler.getItem("TConstruct:jerky", 3),
+        //                ItemBracketHandler.getItem("TConstruct:jerky", 4),
+        //                ItemBracketHandler.getItem("TConstruct:jerky", 5)),
+        //        "exanimis 25, ignis 35, lucrum 35, sano 50, praecantatio 50",
+        //        ItemBracketHandler.getItem("TConstruct:heartCanister", 1), 3)
+        //Research.addInfusionPage("REDHEART", ItemBracketHandler.getItem("TConstruct:heartCanister", 1))
+        //Warp.addToResearch("REDHEARTCANISTER", 1)
+        //Research.addResearch("REDHEARTCANISTER", "NEWHORIZONS",
+        //        "metallum 15, lucrum 15, sano 12, ignis 9, mortuus 6, exanimis 3", 0, -8, 4,
+        //        ItemBracketHandler.getItem("TConstruct:heartCanister", 2))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.REDHEARTCANISTER", "Red Heart Canister")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.REDHEARTCANISTER", "[TC] Bound in a small box.")
+        //Research.addPrereq("REDHEARTCANISTER", "REDHEART", false)
+        //Research.setConcealed("REDHEARTCANISTER", true)
+        //Research.addPage("REDHEARTCANISTER", "TConstruct.research_page.REDHEARTCANISTER.1")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.REDHEARTCANISTER.1",
+        //        "The Red Heart Canister which increases the amount of hearts that the player has. To have an effect the canisters must be equipped in the Armor Tab, in the slot on the right with the symbol that looks like the red heart canister. Up to 10 can be stacked in this slot to allow for a total of 10 extra hearts (or 20 extra health points). These will not appear above the regular health bar like from the Absorption effect, instead once the health bar is full the red hearts will gradually be replaced by orange hearts.")
+        //Arcane.addShaped("REDHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 2),
+        //        "aer 50, aqua 50, ignis 50, terra 50, ordo 50, perditio 50",
+        //        arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 0), null),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("minecraft:golden_apple", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:heartCanister", 1), null), arrayOfNulls(3)))
+        //Research.addArcanePage("REDHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 2))
+        //Warp.addToResearch("REDHEARTCANISTER", 2)
+        //Research.addResearch("YELLOWHEART", "NEWHORIZONS", "mortuus 15, praecantatio 12, exanimis 9, sano 6, ignis 3",
+        //        -2, -7, 4, ItemBracketHandler.getItem("TConstruct:heartCanister", 3))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.YELLOWHEART", "Yellow Heart")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.YELLOWHEART", "[TC] 20 Hearts are not enough.")
+        //Research.addPrereq("YELLOWHEART", "REDHEART", false)
+        //Research.setConcealed("YELLOWHEART", true)
+        //Research.setRound("YELLOWHEART", true)
+        //Research.addPage("YELLOWHEART", "TConstruct.research_page.YELLOWHEART.1")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.YELLOWHEART.1",
+        //        "The Miniature Yellow Heart is an item from Tinkers Construct. It can be obtained by killing Boss mobs such as the Wither or King Slime, as well as from killing any Boss Monsters in the Twilight like the Naga, the Lich or the Hydra. Its primary use is in crafting the Yellow Heart Canister, but it can also be eaten to restore 20 life.")
+        //Infusion.addRecipe("YELLOWHEART", ItemBracketHandler.getItem("minecraft:golden_apple", 1),
+        //        arrayOf(ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 1),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8)),
+        //        "exanimis 50, ignis 75, lucrum 75, sano 100, praecantatio 100",
+        //        ItemBracketHandler.getItem("TConstruct:heartCanister", 3), 3)
+        //Research.addInfusionPage("YELLOWHEART", ItemBracketHandler.getItem("TConstruct:heartCanister", 3))
+        //Warp.addToResearch("YELLOWHEARTCANISTER", 2)
+        //Research.addResearch("YELLOWHEARTCANISTER", "NEWHORIZONS",
+        //        "metallum 15, lucrum 15, sano 12, praecantatio 9, mortuus 6, exanimis 3", -2, -9, 4,
+        //        ItemBracketHandler.getItem("TConstruct:heartCanister", 4))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.YELLOWHEARTCANISTER", "Yellow Heart Canister")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.YELLOWHEARTCANISTER", "[TC] Bound in a box.")
+        //Research.addPrereq("YELLOWHEARTCANISTER", "YELLOWHEART", false)
+        //Research.setConcealed("YELLOWHEARTCANISTER", true)
+        //Research.addPage("YELLOWHEARTCANISTER", "TConstruct.research_page.YELLOWHEARTCANISTER.1")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.YELLOWHEARTCANISTER.1",
+        //        "The Yellow Heart Canister which increases the amount of hearts that the player has. To have an effect the canisters must be equipped in the Armor Tab, in the slot on the right with the symbol that looks like the yellow heart canister Up to 10 can be stacked in this slot to allow for a total of 10 extra hearts (or 20 extra health points). These will not appear above the regular health bar like from the Absorption effect, instead once the health bar is full with orange hearts it will gradually be replaced by yellow hearts.")
+        //Arcane.addShaped("YELLOWHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 4),
+        //        "aer 100, aqua 100, ignis 100, terra 100, ordo 100, perditio 100",
+        //        arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 0),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("minecraft:golden_apple", 1),
+        //                        ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
+        //                        ItemBracketHandler.getItem("minecraft:golden_apple", 1)), arrayOfNulls(3)))
+        //Research.addArcanePage("YELLOWHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 4))
+        //Warp.addToResearch("YELLOWHEARTCANISTER", 3)
+        //Research.addResearch("GREENHEART", "NEWHORIZONS",
+        //        "infernus 15, lucrum 12, praecantatio 12, spiritus 9, fames 6, corpus 3", -4, -7, 4,
+        //        ItemBracketHandler.getItem("TConstruct:heartCanister", 5))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.GREENHEART", "Green Heart")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.GREENHEART", "[TC] 30 Hearts are not enough.")
+        //Research.addPrereq("GREENHEART", "YELLOWHEART", false)
+        //Research.setConcealed("GREENHEART", true)
+        //Research.setRound("GREENHEART", true)
+        //Research.addPage("GREENHEART", "TConstruct.research_page.GREENHEART.1")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.GREENHEART.1",
+        //        "The Miniature Green Heart is an item from Tinkers Construct. It can be made via Infusion. Its primary use is in crafting the Geen Heart Canister, but it can also be eaten to restore 30 life.")
+        //Infusion.addRecipe("GREENHEART", ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
+        //        arrayOf(ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 3),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8)),
+        //        "exanimis 100, ignis 150, lucrum 150, sano 200, praecantatio 200",
+        //        ItemBracketHandler.getItem("TConstruct:heartCanister", 5), 3)
+        //Research.addInfusionPage("GREENHEART", ItemBracketHandler.getItem("TConstruct:heartCanister", 5))
+        //Warp.addToResearch("GREENHEART", 3)
+        //Research.addResearch("GREENHEARTCANISTER", "NEWHORIZONS",
+        //        "infernus 15, metallum 15, lucrum 12, sano 12, praecantatio 12, spiritus 9, fames 6, corpus 3", -4, -9,
+        //        4, ItemBracketHandler.getItem("TConstruct:heartCanister", 6))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.GREENHEARTCANISTER", "Green Heart Canister")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.GREENHEARTCANISTER", "[TC] Bound in a big box.")
+        //Research.addPrereq("GREENHEARTCANISTER", "GREENHEART", false)
+        //Research.setConcealed("GREENHEARTCANISTER", true)
+        //Research.addPage("GREENHEARTCANISTER", "TConstruct.research_page.GREENHEARTCANISTER.1")
+        //Research.addPage("GREENHEARTCANISTER", "TConstruct.research_page.GREENHEARTCANISTER.2")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.GREENHEARTCANISTER.1",
+        //        "The Green Heart Canister which increases the amount of hearts that the player has. To have an effect the canisters must be equipped in the Armor Tab, in the slot on the right with the symbol that looks like the green heart canister. Up to 10 can be stacked in this slot to allow for a total of 10 extra hearts (or 20 extra health points). These will not appear above the regular health bar like from the Absorption effect, instead once the health bar is full with yellow hearts and will gradually be replaced by green hearts.")
+        //MineTweakerAPI.game.setLocalization("TConstruct.research_page.GREENHEARTCANISTER.2",
+        //        "On top of the Yellow Heart Canisters, a maximum of 10 Red Heart Canisters and 10 Yellow Heart Canisters and 10 green Heart Canisters can be equipped for an additional 10 and 20 health points. This brings maximum health up to 40 hearts (or 80 health points)")
+        //Arcane.addShaped("GREENHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 6),
+        //        "aer 200, aqua 200, ignis 200, terra 200, ordo 200, perditio 200",
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                ItemBracketHandler.getItem("TConstruct:heartCanister", 0),
+        //                ItemBracketHandler.getItem("TConstruct:materials", 8)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:heartCanister", 5),
+        //                        ItemBracketHandler.getItem("TConstruct:diamondApple", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:materials", 8),
+        //                        ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:materials", 8))))
+        //Research.addArcanePage("GREENHEARTCANISTER", ItemBracketHandler.getItem("TConstruct:heartCanister", 6))
+        //Warp.addToResearch("GREENHEARTCANISTER", 4)
+
         Research.addResearch("ENDERCHEST", "NEWHORIZONS",
                 "metallum 15, electrum 15, machina 12, alienis 9, lucrum 6, fabrico 3, ", -4, 0, 4,
                 ItemBracketHandler.getItem("EnderStorage:enderChest", 0))

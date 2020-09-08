@@ -33,17 +33,20 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("BLOODALTAR", "bloodmagic.research_page.BLOODALTAR.2")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.BLOODALTAR.2",
                 " The maximum storage per tier for an altar crafted with only Runes of Augmented Capacity is listed below for each tier.\r\nMuch like a Beacon, the Blood Altar increases in tier in a pyramid-like fashion. That is, each successive new tier is added by building downward and out from the previous layer. Unlike the Beacon, the inside of the layers and any gaps in the structure can be left empty. The only required blocks are the Blood Altar, the various types of Blood Runes, and any other block specifically designated in the construction of each tier.")
-        Arcane.addShaped("BLOODALTAR", ItemBracketHandler.getItem("AWWayofTime:Altar", 0),
-                "aer 20, ignis 20, terra 20, aqua 20, ordo 20, perditio 20",
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7),
-                        ItemBracketHandler.getItem("witchery:ingredient", 10),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 1),
-                                ItemBracketHandler.getItem("Thaumcraft:blockMetalDevice", 0),
-                                ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 1)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemMaterial", 5),
-                                ItemBracketHandler.getItem("Thaumcraft:blockStoneDevice", 0),
-                                ItemBracketHandler.getItem("EnderIO:itemMaterial", 5))))
+
+        //TODO Replace ("ExtraUtilities:cobblestone_compressed", 1)
+        //Arcane.addShaped("BLOODALTAR", ItemBracketHandler.getItem("AWWayofTime:Altar", 0),
+        //        "aer 20, ignis 20, terra 20, aqua 20, ordo 20, perditio 20",
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7),
+        //                ItemBracketHandler.getItem("witchery:ingredient", 10),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 1),
+        //                        ItemBracketHandler.getItem("Thaumcraft:blockMetalDevice", 0),
+        //                        ItemBracketHandler.getItem("ExtraUtilities:cobblestone_compressed", 1)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemMaterial", 5),
+        //                        ItemBracketHandler.getItem("Thaumcraft:blockStoneDevice", 0),
+        //                        ItemBracketHandler.getItem("EnderIO:itemMaterial", 5))))
+
         Research.addArcanePage("BLOODALTAR", ItemBracketHandler.getItem("AWWayofTime:Altar", 0))
         Warp.addToResearch("BLOODALTAR", 2)
         Research.addResearch("LIFEINFUSER", "BLOODMAGIC",
@@ -57,32 +60,38 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("LIFEINFUSER", "bloodmagic.research_page.LIFEINFUSER")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.LIFEINFUSER",
                 "The Life Infuser is a Block Added by Blood Arsenal. It takes in life essence and gradually repairs a tool using 500 LE each damage point repaired. Once an orb is inserted into the Life Essence Materializer, it will suck out LP from the orb's owner converting it to Life Essence which can then be pumped out. (converts 150 - 100)")
-        Infusion.addRecipe("LIFEINFUSER", ItemBracketHandler.getItem("AWWayofTime:Altar", 0),
-                arrayOf(ItemBracketHandler.getItem("minecraft:nether_star", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22977),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22977),
-                        ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 501),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22977),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22977)),
-                "victus 32, alienis 32, praecantatio 24, auram 16, fames 8, terra 8",
-                ItemBracketHandler.getItem("BloodArsenal:life_infuser", 0), 5)
+
+        //TODO Replace ("TConstruct:heavyPlate", 251) and
+        //Infusion.addRecipe("LIFEINFUSER", ItemBracketHandler.getItem("AWWayofTime:Altar", 0),
+        //        arrayOf(ItemBracketHandler.getItem("minecraft:nether_star", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22977),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22977),
+        //                ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 501),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22977),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22977)),
+        //        "victus 32, alienis 32, praecantatio 24, auram 16, fames 8, terra 8",
+        //        ItemBracketHandler.getItem("BloodArsenal:life_infuser", 0), 5)
+
         Research.addInfusionPage("LIFEINFUSER", ItemBracketHandler.getItem("BloodArsenal:life_infuser", 0))
         Warp.addToResearch("LIFEINFUSER", 3)
-        Arcane.addShaped("LIFEINFUSER", ItemBracketHandler.getItem("BloodArsenal:lp_materializer", 0),
-                "ignis 50, terra 50, aqua 50, ordo 50",
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
-                                ItemBracketHandler.getItem("minecraft:nether_star", 0),
-                                ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
+
+        //TODO Replace ("TConstruct:heavyPlate", 251)
+        //Arcane.addShaped("LIFEINFUSER", ItemBracketHandler.getItem("BloodArsenal:lp_materializer", 0),
+        //        "ignis 50, terra 50, aqua 50, ordo 50",
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
+        //                        ItemBracketHandler.getItem("minecraft:nether_star", 0),
+        //                        ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
+
         Research.addArcanePage("LIFEINFUSER", ItemBracketHandler.getItem("BloodArsenal:lp_materializer", 0))
         Research.addResearch("SOULCOMPACTER", "BLOODMAGIC",
                 "spiritus 18, praecantatio 15, alienis 12, lucrum 9, vacuos 6, cognitio 3", 0, -6, 4,
@@ -117,15 +126,18 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("SACRIFICIALKNIFE", "bloodmagic.research_page.SACRIFICIALKNIFE")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.SACRIFICIALKNIFE",
                 "The Sacrificial Knife, or the Sacrificial Orb, is one of two ways to generate LP in the Blood Altar. The Sacrificial Knife is used as a self-sacrifice method, allowing the user to convert their health points into usable Life Essence. To take health from other creatures in return for LP, sacrifice methods such as the Dagger of Sacrifice must be used. If the user of the knife is a Vampire, their blood will be drained rather than their health.")
-        Arcane.addShaped("SACRIFICIALKNIFE", ItemBracketHandler.getItem("AWWayofTime:sacrificialKnife", 0),
-                "aer 10, terra 20, ordo 10, perditio 20", arrayOf(arrayOf(OreBracketHandler.getOre("screwSteel"),
-                ItemBracketHandler.getItem("TConstruct:strangeFood", 1),
-                OreBracketHandler.getOre("craftingToolScrewdriver")),
-                arrayOf(OreBracketHandler.getOre("plateAluminium"),
-                        ItemBracketHandler.getItem("battlegear2:dagger.diamond", 0),
-                        ItemBracketHandler.getItem("TConstruct:strangeFood", 1)),
-                arrayOf<IIngredient>(OreBracketHandler.getOre("stickSteel"), OreBracketHandler.getOre("plateAluminium"),
-                        OreBracketHandler.getOre("screwSteel"))))
+
+        //TODO Replace
+        //Arcane.addShaped("SACRIFICIALKNIFE", ItemBracketHandler.getItem("AWWayofTime:sacrificialKnife", 0),
+        //        "aer 10, terra 20, ordo 10, perditio 20", arrayOf(arrayOf(OreBracketHandler.getOre("screwSteel"),
+        //        ItemBracketHandler.getItem("TConstruct:strangeFood", 1),
+        //        OreBracketHandler.getOre("craftingToolScrewdriver")),
+        //        arrayOf(OreBracketHandler.getOre("plateAluminium"),
+        //                ItemBracketHandler.getItem("battlegear2:dagger.diamond", 0),
+        //                ItemBracketHandler.getItem("TConstruct:strangeFood", 1)),
+        //        arrayOf<IIngredient>(OreBracketHandler.getOre("stickSteel"), OreBracketHandler.getOre("plateAluminium"),
+        //                OreBracketHandler.getOre("screwSteel"))))
+
         Research.addArcanePage("SACRIFICIALKNIFE", ItemBracketHandler.getItem("AWWayofTime:sacrificialKnife", 0))
         Research.addResearch("ALCHEMICCHEMSTRYSET", "BLOODMAGIC",
                 "fabrico 15, ignis 12, instrumentum 9, praecantatio 6, victus 3", 4, -4, 3,
@@ -267,17 +279,20 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("DIVINATIONSIGIL", "bloodmagic.research_page.DIVINATIONSIGIL")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.DIVINATIONSIGIL",
                 "The Divination Sigil is a tool added by Blood Magic that is used to check important details of both the Blood Altar and the player's network, including the altar tier and total Life Essence storage levels. While holding the Divination Sigil, there are two possible uses for the player. When aiming at a Blood Altar and right clicking, a chat printout will display the total essence stored within the altar, the current tier, and its maximum capacity. When right clicking anywhere else, a chat printout will display the total essence stored within the player's personal network.")
-        Infusion.addRecipe("DIVINATIONSIGIL", ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0)),
-                "vitreus 24, terra 18, praecantatio 12, instrumentum 6, metallum 4",
-                ItemBracketHandler.getItem("AWWayofTime:divinationSigil", 0), 3)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //Infusion.addRecipe("DIVINATIONSIGIL", ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0)),
+        //        "vitreus 24, terra 18, praecantatio 12, instrumentum 6, metallum 4",
+        //        ItemBracketHandler.getItem("AWWayofTime:divinationSigil", 0), 3)
+
         Research.addInfusionPage("DIVINATIONSIGIL", ItemBracketHandler.getItem("AWWayofTime:divinationSigil", 0))
         Research.addResearch("SPEEDRUNE", "BLOODMAGIC", "motus 15, volatus 12, potentia 9, aer 6, fames 3", -2, 0, 3,
                 ItemBracketHandler.getItem("AWWayofTime:speedRune", 0))
@@ -484,13 +499,16 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("BMLAVACRYSTAL", "bloodmagic.research_page.BMLAVACRYSTAL")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.BMLAVACRYSTAL",
                 "The Lava Crystal is used as a replacement fuel source in furnaces and engines. Rather than losing durability, the crystal drains 25 Life Essence from the player's network per operation. In order to use the Lava Crystal, it must first be bound to a player. To do this, right click while holding the crystal. Once bound to a player, it will begin to function as a fuel source. The Lava Crystal is also used in the creation of the Lava Sigil.")
-        Infusion.addRecipe("BMLAVACRYSTAL", ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 1),
-                arrayOf(ItemBracketHandler.getItem("TConstruct:materials", 7),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2)),
-                "ignis 24, terra 18, praecantatio 18, infernus 6, aer 6",
-                ItemBracketHandler.getItem("AWWayofTime:lavaCrystal", 0), 4)
+
+        //TODO Replace ("TConstruct:materials", 7)
+        //Infusion.addRecipe("BMLAVACRYSTAL", ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 1),
+        //        arrayOf(ItemBracketHandler.getItem("TConstruct:materials", 7),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticOpaque", 2)),
+        //        "ignis 24, terra 18, praecantatio 18, infernus 6, aer 6",
+        //        ItemBracketHandler.getItem("AWWayofTime:lavaCrystal", 0), 4)
+
         Research.addInfusionPage("BMLAVACRYSTAL", ItemBracketHandler.getItem("AWWayofTime:lavaCrystal", 0))
         Research.addResearch("RUNESACRIFICE", "BLOODMAGIC",
                 "fames 15, infernus 12, potentia 9, praecantatio 6, terra 3", -4, 0, 3,
@@ -601,19 +619,22 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("GREENGROW", "bloodmagic.research_page.GREENGROW")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.GREENGROW",
                 "The Sigil of the Green Grove is a sigil added by Blood Magic. When activated, the sigil will speed the growth of all nearby plants in a manner similar to the Ritual of the Green Grove. Upon activating the Sigil of the Green Grove, additional growth ticks will be applied to all plants within a six block radius of the player. This effect will consume 150 LP per five seconds. Right clicking on a plant will cause a bonemeal effect to be activated on that plant, consuming 150 LP per click. This effect can only be applied to plants that can have their growth sped up by Bonemeal.")
-        Infusion.addRecipe("GREENGROW", ItemBracketHandler.getItem("AWWayofTime:reinforcedSlate", 0),
-                arrayOf(ItemBracketHandler.getItem("witchery:witchsapling", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
-                        ItemBracketHandler.getItem("witchery:witchsapling", 1),
-                        ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 1),
-                        ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
-                        ItemBracketHandler.getItem("TConstruct:slime.sapling", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:terrae", 0)),
-                "instrumentum 36, terra 24, herba 18, arbor 12, victus 8",
-                ItemBracketHandler.getItem("AWWayofTime:growthSigil", 0), 5)
+
+        //TODO Replace ("TConstruct:slime.sapling", 0)
+        //Infusion.addRecipe("GREENGROW", ItemBracketHandler.getItem("AWWayofTime:reinforcedSlate", 0),
+        //        arrayOf(ItemBracketHandler.getItem("witchery:witchsapling", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
+        //                ItemBracketHandler.getItem("witchery:witchsapling", 1),
+        //                ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 1),
+        //                ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
+        //                ItemBracketHandler.getItem("TConstruct:slime.sapling", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:terrae", 0)),
+        //        "instrumentum 36, terra 24, herba 18, arbor 12, victus 8",
+        //        ItemBracketHandler.getItem("AWWayofTime:growthSigil", 0), 5)
+
         Research.addInfusionPage("GREENGROW", ItemBracketHandler.getItem("AWWayofTime:growthSigil", 0))
         Warp.addToResearch("GREENGROW", 2)
         Research.addResearch("VOIDSIGIL", "BLOODMAGIC", "vacuos 15, terra 12, auram 9, praecantatio 6, metallum 3", -2,
@@ -725,99 +746,102 @@ class BloodMagicThaumcraft : Runnable {
                                 ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
                                 ItemBracketHandler.getItem("AWWayofTime:reinforcedSlate", 0))))
         Research.addArcanePage("BLOODLETTERSPACK", ItemBracketHandler.getItem("AWWayofTime:itemBloodPack", 0))
-        val s13 = "IMBUEARMOR"
-        val s14 = "BLOODMAGIC"
-        val s15 = "sano 15 , tutamen 12, praecantatio 9, metallum 6, potentia 3"
-        val n11 = 4
-        val n12 = -6
-        val n13 = 3
-        val item13 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_chestplate", 0)
-        val hashMap21 = HashMap<String, IData>()
-        hashMap21["LPStored"] = ExpandInt.toData(0)
-        Research.addResearch(s13, s14, s15, n11, n12, n13, item13.withTag(ExpandAnyDict.asData(hashMap21)))
-        MineTweakerAPI.game.setLocalization("tc.research_name.IMBUEARMOR", "Life Imbue Armor")
-        MineTweakerAPI.game.setLocalization("tc.research_text.IMBUEARMOR", "[BM] Life for blood")
-        Research.addPrereq("IMBUEARMOR", "BLOODLETTERSPACK", false)
-        Research.setConcealed("IMBUEARMOR", true)
-        Research.addPage("IMBUEARMOR", "bloodmagic.research_page.IMBUEARMOR")
-        MineTweakerAPI.game.setLocalization("bloodmagic.research_page.IMBUEARMOR",
-                "The Life Imbued Armor is a powerful armor able to store Life Essence and utilize it to protect the wearer. Wearing this full set of armor will randomly heal you completely for the cost of LE inside the armor. Can be refilled in the Life Infuser.")
-        val s16 = "IMBUEARMOR"
-        val item14 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_helmet", 0)
-        val hashMap22 = HashMap<String, IData>()
-        hashMap22["LPStored"] = ExpandInt.toData(0)
-        Arcane.addShaped(s16, item14.withTag(ExpandAnyDict.asData(hashMap22)),
-                "terra 30, ignis 30, ordo 30, perditio 30",
-                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemHelmetThaumium", 0),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
-                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolHardHammer"), null)))
-        val s17 = "IMBUEARMOR"
-        val item15 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_helmet", 0)
-        val hashMap23 = HashMap<String, IData>()
-        hashMap23["LPStored"] = ExpandInt.toData(0)
-        Research.addArcanePage(s17, item15.withTag(ExpandAnyDict.asData(hashMap23)))
-        Warp.addToResearch("IMBUEARMOR", 2)
-        val s18 = "IMBUEARMOR"
-        val item16 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_chestplate", 0)
-        val hashMap24 = HashMap<String, IData>()
-        hashMap24["LPStored"] = ExpandInt.toData(0)
-        Arcane.addShaped(s18, item16.withTag(ExpandAnyDict.asData(hashMap24)),
-                "terra 60, ignis 60, ordo 60, perditio 60",
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemChestplateThaumium", 0),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
-                        arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                OreBracketHandler.getOre("craftingToolHardHammer"),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
-        val s19 = "IMBUEARMOR"
-        val item17 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_chestplate", 0)
-        val hashMap25 = HashMap<String, IData>()
-        hashMap25["LPStored"] = ExpandInt.toData(0)
-        Research.addArcanePage(s19, item17.withTag(ExpandAnyDict.asData(hashMap25)))
-        val s20 = "IMBUEARMOR"
-        val item18 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_leggings", 0)
-        val hashMap26 = HashMap<String, IData>()
-        hashMap26["LPStored"] = ExpandInt.toData(0)
-        Arcane.addShaped(s20, item18.withTag(ExpandAnyDict.asData(hashMap26)),
-                "terra 45, ignis 45, ordo 45, perditio 45",
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsThaumium", 0),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
-                        arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                                OreBracketHandler.getOre("craftingToolHardHammer"),
-                                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
-        val s21 = "IMBUEARMOR"
-        val item19 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_leggings", 0)
-        val hashMap27 = HashMap<String, IData>()
-        hashMap27["LPStored"] = ExpandInt.toData(0)
-        Research.addArcanePage(s21, item19.withTag(ExpandAnyDict.asData(hashMap27)))
-        val s22 = "IMBUEARMOR"
-        val item20 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_boots", 0)
-        val hashMap28 = HashMap<String, IData>()
-        hashMap28["LPStored"] = ExpandInt.toData(0)
-        Arcane.addShaped(s22, item20.withTag(ExpandAnyDict.asData(hashMap28)),
-                "terra 30, ignis 30, ordo 30, perditio 30", arrayOf(arrayOfNulls(3),
-                arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemBootsThaumium", 0),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
-                arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
-                        OreBracketHandler.getOre("craftingToolHardHammer"),
-                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
-        val s23 = "IMBUEARMOR"
-        val item21 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_boots", 0)
-        val hashMap29 = HashMap<String, IData>()
-        hashMap29["LPStored"] = ExpandInt.toData(0)
-        Research.addArcanePage(s23, item21.withTag(ExpandAnyDict.asData(hashMap29)))
+
+        //TODO Replace ("TConstruct:heavyPlate", 251)
+        //val s13 = "IMBUEARMOR"
+        //val s14 = "BLOODMAGIC"
+        //val s15 = "sano 15 , tutamen 12, praecantatio 9, metallum 6, potentia 3"
+        //val n11 = 4
+        //val n12 = -6
+        //val n13 = 3
+        //val item13 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_chestplate", 0)
+        //val hashMap21 = HashMap<String, IData>()
+        //hashMap21["LPStored"] = ExpandInt.toData(0)
+        //Research.addResearch(s13, s14, s15, n11, n12, n13, item13.withTag(ExpandAnyDict.asData(hashMap21)))
+        //MineTweakerAPI.game.setLocalization("tc.research_name.IMBUEARMOR", "Life Imbue Armor")
+        //MineTweakerAPI.game.setLocalization("tc.research_text.IMBUEARMOR", "[BM] Life for blood")
+        //Research.addPrereq("IMBUEARMOR", "BLOODLETTERSPACK", false)
+        //Research.setConcealed("IMBUEARMOR", true)
+        //Research.addPage("IMBUEARMOR", "bloodmagic.research_page.IMBUEARMOR")
+        //MineTweakerAPI.game.setLocalization("bloodmagic.research_page.IMBUEARMOR",
+        //        "The Life Imbued Armor is a powerful armor able to store Life Essence and utilize it to protect the wearer. Wearing this full set of armor will randomly heal you completely for the cost of LE inside the armor. Can be refilled in the Life Infuser.")
+        //val s16 = "IMBUEARMOR"
+        //val item14 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_helmet", 0)
+        //val hashMap22 = HashMap<String, IData>()
+        //hashMap22["LPStored"] = ExpandInt.toData(0)
+        //Arcane.addShaped(s16, item14.withTag(ExpandAnyDict.asData(hashMap22)),
+        //        "terra 30, ignis 30, ordo 30, perditio 30",
+        //        arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("Thaumcraft:ItemHelmetThaumium", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
+        //                arrayOf<IIngredient?>(null, OreBracketHandler.getOre("craftingToolHardHammer"), null)))
+        //val s17 = "IMBUEARMOR"
+        //val item15 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_helmet", 0)
+        //val hashMap23 = HashMap<String, IData>()
+        //hashMap23["LPStored"] = ExpandInt.toData(0)
+        //Research.addArcanePage(s17, item15.withTag(ExpandAnyDict.asData(hashMap23)))
+        //Warp.addToResearch("IMBUEARMOR", 2)
+        //val s18 = "IMBUEARMOR"
+        //val item16 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_chestplate", 0)
+        //val hashMap24 = HashMap<String, IData>()
+        //hashMap24["LPStored"] = ExpandInt.toData(0)
+        //Arcane.addShaped(s18, item16.withTag(ExpandAnyDict.asData(hashMap24)),
+        //        "terra 60, ignis 60, ordo 60, perditio 60",
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemChestplateThaumium", 0),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
+        //                arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        OreBracketHandler.getOre("craftingToolHardHammer"),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
+        //val s19 = "IMBUEARMOR"
+        //val item17 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_chestplate", 0)
+        //val hashMap25 = HashMap<String, IData>()
+        //hashMap25["LPStored"] = ExpandInt.toData(0)
+        //Research.addArcanePage(s19, item17.withTag(ExpandAnyDict.asData(hashMap25)))
+        //val s20 = "IMBUEARMOR"
+        //val item18 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_leggings", 0)
+        //val hashMap26 = HashMap<String, IData>()
+        //hashMap26["LPStored"] = ExpandInt.toData(0)
+        //Arcane.addShaped(s20, item18.withTag(ExpandAnyDict.asData(hashMap26)),
+        //        "terra 45, ignis 45, ordo 45, perditio 45",
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsThaumium", 0),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
+        //                arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                        OreBracketHandler.getOre("craftingToolHardHammer"),
+        //                        ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
+        //val s21 = "IMBUEARMOR"
+        //val item19 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_leggings", 0)
+        //val hashMap27 = HashMap<String, IData>()
+        //hashMap27["LPStored"] = ExpandInt.toData(0)
+        //Research.addArcanePage(s21, item19.withTag(ExpandAnyDict.asData(hashMap27)))
+        //val s22 = "IMBUEARMOR"
+        //val item20 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_boots", 0)
+        //val hashMap28 = HashMap<String, IData>()
+        //hashMap28["LPStored"] = ExpandInt.toData(0)
+        //Arcane.addShaped(s22, item20.withTag(ExpandAnyDict.asData(hashMap28)),
+        //        "terra 30, ignis 30, ordo 30, perditio 30", arrayOf(arrayOfNulls(3),
+        //        arrayOf<IIngredient?>(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemBootsThaumium", 0),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251)),
+        //        arrayOf(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
+        //                OreBracketHandler.getOre("craftingToolHardHammer"),
+        //                ItemBracketHandler.getItem("TConstruct:heavyPlate", 251))))
+        //val s23 = "IMBUEARMOR"
+        //val item21 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_boots", 0)
+        //val hashMap29 = HashMap<String, IData>()
+        //hashMap29["LPStored"] = ExpandInt.toData(0)
+        //Research.addArcanePage(s23, item21.withTag(ExpandAnyDict.asData(hashMap29)))
+
         Research.addResearch("WEAKORB", "BLOODMAGIC", "vitreus 9, potentia 6, praecantatio 3", 2, 0, 2,
                 ItemBracketHandler.getItem("dreamcraft:item.WeakOrb", 0))
         MineTweakerAPI.game.setLocalization("tc.research_name.WEAKORB", "Weak Orb")
@@ -990,21 +1014,24 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("SOULARMORFORGE", "bloodmagic.research_page.SOULARMORFORGE.2")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.SOULARMORFORGE.2",
                 " Once the sockets have been placed, right clicking on them with a sigil, blood orb, or blood shard will place them into the sockets, binding them to that piece of armor.")
-        Infusion.addRecipe("SOULARMORFORGE", ItemBracketHandler.getItem("TConstruct:ToolForgeBlock", 6),
-                arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodSocket", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
-                        ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodSocket", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
-                        ItemBracketHandler.getItem("AWWayofTime:magicales", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodSocket", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:magicales", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodSocket", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)),
-                "tutamen 64, metallum 40, praecantatio 32, auram 24, tenebrae 16, exanimis 8",
-                ItemBracketHandler.getItem("AWWayofTime:armourForge", 0), 7)
+
+        //TODO Replace ("TConstruct:ToolForgeBlock", 6)
+        //Infusion.addRecipe("SOULARMORFORGE", ItemBracketHandler.getItem("TConstruct:ToolForgeBlock", 6),
+        //        arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodSocket", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
+        //                ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
+        //                ItemBracketHandler.getItem("AWWayofTime:bloodSocket", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
+        //                ItemBracketHandler.getItem("AWWayofTime:magicales", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:bloodSocket", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:magicales", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
+        //                ItemBracketHandler.getItem("AWWayofTime:bloodSocket", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
+        //                ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)),
+        //        "tutamen 64, metallum 40, praecantatio 32, auram 24, tenebrae 16, exanimis 8",
+        //        ItemBracketHandler.getItem("AWWayofTime:armourForge", 0), 7)
+
         Research.addInfusionPage("SOULARMORFORGE", ItemBracketHandler.getItem("AWWayofTime:armourForge", 0))
         Warp.addToResearch("SOULARMORFORGE", 4)
         Research.addResearch("RUNEOFARGUMENTEDCAPACITY", "BLOODMAGIC",
@@ -1259,17 +1286,20 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("SIGILOFSIGHT", "bloodmagic.research_page.SIGILOFSIGHT")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.SIGILOFSIGHT",
                 "The Sigil of Sight is an item from Blood Magic. When used on a Blood Altar it shows the item progress, consumption rate, current essence, and input and output tanks. Using this Sigil costs 0 LP per use.When socketed into Bound Armor, the Sigil of Sight has no effect.")
-        Infusion.addRecipe("SIGILOFSIGHT", ItemBracketHandler.getItem("AWWayofTime:divinationSigil", 0),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemZombieBrain", 0),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:crystallos", 0),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemZombieBrain", 0),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:crystallos", 0),
-                        ItemBracketHandler.getItem("TConstruct:GlassPane", 0)),
-                "ordo 24, sensus 18, cognitio 12, vitreus 6, praecantatio 4",
-                ItemBracketHandler.getItem("AWWayofTime:seerSigil", 0), 3)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //Infusion.addRecipe("SIGILOFSIGHT", ItemBracketHandler.getItem("AWWayofTime:divinationSigil", 0),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemZombieBrain", 0),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:crystallos", 0),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemZombieBrain", 0),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:crystallos", 0),
+        //                ItemBracketHandler.getItem("TConstruct:GlassPane", 0)),
+        //        "ordo 24, sensus 18, cognitio 12, vitreus 6, praecantatio 4",
+        //        ItemBracketHandler.getItem("AWWayofTime:seerSigil", 0), 3)
+
         Research.addInfusionPage("SIGILOFSIGHT", ItemBracketHandler.getItem("AWWayofTime:seerSigil", 0))
         Research.addResearch("RITUALDIVINER", "BLOODMAGIC", "aer 18, ignis 15, terra 12, aqua 9, perditio 6, ordo 3",
                 -2, -8, 3, ItemBracketHandler.getItem("AWWayofTime:itemRitualDiviner", 0))
@@ -1811,19 +1841,22 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("SIGILOFENDERSEVERANCE", "bloodmagic.research_page.SIGILOFENDERSEVERANCE")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.SIGILOFENDERSEVERANCE",
                 "The Sigil of Ender Severance is an item added by the Blood Magic mod. This Sigil prevents teleporting. It has an effect range over an area of 11 x 11 x 11 meter, centered on the Player. This allows a Player to easily attack the Enderman, with a range weapon, without him jumping all over and sneaking up from behind. This sigil costs 300 LP per 10 seconds while active.")
-        Infusion.addRecipe("SIGILOFENDERSEVERANCE", ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 27),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemEldritchObject", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:demonicSlate", 0),
-                        ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 45),
-                        ItemBracketHandler.getItem("TConstruct:slime.gel", 2),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 7),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32724),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 7),
-                        ItemBracketHandler.getItem("TConstruct:slime.gel", 2),
-                        ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 45),
-                        ItemBracketHandler.getItem("AWWayofTime:demonicSlate", 0)),
-                "alienis 16, cognitio 72, humanus 16, potentia 64, vinculum 48, limus 32, nebrisum 8",
-                ItemBracketHandler.getItem("AWWayofTime:sigilOfEnderSeverance", 0), 17)
+
+        //TODO Replace ("StevesCarts:ModuleComponents", 45)
+        //Infusion.addRecipe("SIGILOFENDERSEVERANCE", ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 27),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemEldritchObject", 0),
+        //                ItemBracketHandler.getItem("AWWayofTime:demonicSlate", 0),
+        //                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 45),
+        //                ItemBracketHandler.getItem("TConstruct:slime.gel", 2),
+        //                ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 7),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32724),
+        //                ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 7),
+        //                ItemBracketHandler.getItem("TConstruct:slime.gel", 2),
+        //                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 45),
+        //                ItemBracketHandler.getItem("AWWayofTime:demonicSlate", 0)),
+        //        "alienis 16, cognitio 72, humanus 16, potentia 64, vinculum 48, limus 32, nebrisum 8",
+        //        ItemBracketHandler.getItem("AWWayofTime:sigilOfEnderSeverance", 0), 17)
+
         Research.addInfusionPage("SIGILOFENDERSEVERANCE",
                 ItemBracketHandler.getItem("AWWayofTime:sigilOfEnderSeverance", 0))
         Warp.addToResearch("SIGILOFENDERSEVERANCE", 6)
@@ -1863,21 +1896,24 @@ class BloodMagicThaumcraft : Runnable {
         Research.addPage("SIGILOFDIVINITY", "bloodmagic.research_page.SIGILOFDIVINITY")
         MineTweakerAPI.game.setLocalization("bloodmagic.research_page.SIGILOFDIVINITY",
                 "The Sigil of Divinity is the ultimate form of protection, when activated, it puts up an absorption shield over the player. Even though this may protect against demons, it uses lots (don't say I didn't warn you) of LP!")
-        Infusion.addRecipe("SIGILOFDIVINITY", ItemBracketHandler.getItem("AWWayofTime:sigilOfElementalAffinity", 0),
-                arrayOf(ItemBracketHandler.getItem("BloodArsenal:blood_stone", 4),
-                        ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:blood_infused_diamond_block", 0),
-                        ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:blood_infused_glowstone", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32726),
-                        ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:blood_infused_glowstone", 0),
-                        ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:blood_infused_diamond_block", 0),
-                        ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0)),
-                "tutamen 64, aer 72, ignis 64, aqua 48, terra 32, ordo 32, perditio 16, sano 8",
-                ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0), 25)
+
+        //TODO Replace ("TConstruct:diamondApple", 0)
+        //Infusion.addRecipe("SIGILOFDIVINITY", ItemBracketHandler.getItem("AWWayofTime:sigilOfElementalAffinity", 0),
+        //        arrayOf(ItemBracketHandler.getItem("BloodArsenal:blood_stone", 4),
+        //                ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:blood_infused_diamond_block", 0),
+        //                ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:blood_infused_glowstone", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32726),
+        //                ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:blood_infused_glowstone", 0),
+        //                ItemBracketHandler.getItem("TConstruct:diamondApple", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:blood_infused_diamond_block", 0),
+        //                ItemBracketHandler.getItem("BloodArsenal:amorphic_catalyst", 0)),
+        //        "tutamen 64, aer 72, ignis 64, aqua 48, terra 32, ordo 32, perditio 16, sano 8",
+        //        ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0), 25)
+
         Research.addInfusionPage("SIGILOFDIVINITY", ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0))
         Warp.addToResearch("SIGILOFDIVINITY", 10)
         Research.addResearch("HARVESTGODDESSSIGIL", "BLOODMAGIC",

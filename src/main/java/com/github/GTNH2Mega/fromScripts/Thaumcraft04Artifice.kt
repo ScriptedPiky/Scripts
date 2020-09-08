@@ -103,19 +103,22 @@ class Thaumcraft04Artifice : Runnable {
         Research.addPage("RESEARCH", "tc.research_page.RESEARCH.10")
         Research.addPage("RESEARCH", "tc.research_page.RESEARCH.11")
         Research.addPage("RESEARCH", "tc.research_page.RESEARCH.12")
-        Arcane.addShaped("GOGGLES", ItemBracketHandler.getItem("Thaumcraft:ItemGoggles", 0),
-                "aer 30, terra 30, ignis 30, aqua 30, ordo 30, perditio 30",
-                arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        OreBracketHandler.getOre("screwGold"),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("ringGold"),
-                                OreBracketHandler.getOre("craftingToolScrewdriver"),
-                                OreBracketHandler.getOre("ringGold")),
-                        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemThaumometer", 0),
-                                OreBracketHandler.getOre("stickGold"),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemThaumometer", 0))))
-        Research.setAspects("GOGGLES", "auram 3, praecantatio 9, sensus 9, instrumentum 6")
-        Research.setComplexity("GOGGLES", 2)
+
+        //TODO Replace ("harvestcraft:hardenedleatherItem", 0)
+        //Arcane.addShaped("GOGGLES", ItemBracketHandler.getItem("Thaumcraft:ItemGoggles", 0),
+        //        "aer 30, terra 30, ignis 30, aqua 30, ordo 30, perditio 30",
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                OreBracketHandler.getOre("screwGold"),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("ringGold"),
+        //                        OreBracketHandler.getOre("craftingToolScrewdriver"),
+        //                        OreBracketHandler.getOre("ringGold")),
+        //                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemThaumometer", 0),
+        //                        OreBracketHandler.getOre("stickGold"),
+        //                        ItemBracketHandler.getItem("Thaumcraft:ItemThaumometer", 0))))
+        //Research.setAspects("GOGGLES", "auram 3, praecantatio 9, sensus 9, instrumentum 6")
+        //Research.setComplexity("GOGGLES", 2)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Thaumcraft:blockTable", 0),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("slabWood"), OreBracketHandler.getOre("slabWood"),
                         OreBracketHandler.getOre("slabWood")),
@@ -253,17 +256,20 @@ class Thaumcraft04Artifice : Runnable {
         Research.addArcanePage("GRATE", ItemBracketHandler.getItem("Thaumcraft:blockMetalDevice", 5))
         Research.clearPages("ENCHFABRIC")
         Research.addPage("ENCHFABRIC", "tc.research_page.ENCHFABRIC.1")
-        Arcane.addShaped("ENCHFABRIC", ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                "aer 5, terra 5, ignis 5, aqua 5, ordo 5, perditio 5",
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:string", 0),
-                        ItemBracketHandler.getItem("minecraft:string", 0),
-                        ItemBracketHandler.getItem("minecraft:string", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:string", 0),
-                                ItemBracketHandler.getItem("minecraft:string", 0),
-                                ItemBracketHandler.getItem("minecraft:string", 0))))
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //Arcane.addShaped("ENCHFABRIC", ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
+        //        "aer 5, terra 5, ignis 5, aqua 5, ordo 5, perditio 5",
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:string", 0),
+        //                ItemBracketHandler.getItem("minecraft:string", 0),
+        //                ItemBracketHandler.getItem("minecraft:string", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:string", 0),
+        //                        ItemBracketHandler.getItem("minecraft:string", 0),
+        //                        ItemBracketHandler.getItem("minecraft:string", 0))))
+
         Research.setAspects("ENCHFABRIC", "pannus 6, praecantatio 6, tutamen 3")
         Research.setComplexity("ENCHFABRIC", 1)
         Research.addArcanePage("ENCHFABRIC", ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7))
@@ -715,43 +721,46 @@ class Thaumcraft04Artifice : Runnable {
         Research.setAspects("INFUSIONENCHANTMENT",
                 "instrumentum 15, praecantatio 15, tutamen 12, cognitio 12, telum 9, potentia 9, alienis 6, potentia 3")
         Research.setComplexity("INFUSIONENCHANTMENT", 4)
-        Infusion.addRecipe("ARMORFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemHelmetThaumium", 0),
-                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29501),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086)),
-                "metallum 32, praecantatio 32, tutamen 32, victus 16",
-                ItemBracketHandler.getItem("Thaumcraft:ItemHelmetFortress", 0), 4)
-        Research.setAspects("ARMORFORTRESS", "fabrico 15, metallum 12, tutamen 9, alienis 9, cognitio 6, potentia 3")
-        Research.setComplexity("ARMORFORTRESS", 3)
-        Infusion.addRecipe("ARMORFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemChestplateThaumium", 0),
-                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330)),
-                "metallum 32, praecantatio 32, tutamen 40, cognitio 16",
-                ItemBracketHandler.getItem("Thaumcraft:ItemChestplateFortress", 0), 4)
-        Infusion.addRecipe("ARMORFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsThaumium", 0),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemBaubleBlanks", 2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086)),
-                "metallum 32, praecantatio 32, tutamen 24, terra 16",
-                ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsFortress", 0), 4)
+
+        //TODO Relace ("harvestcraft:hardenedleatherItem", 0)
+        //Infusion.addRecipe("ARMORFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemHelmetThaumium", 0),
+        //        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29501),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086)),
+        //        "metallum 32, praecantatio 32, tutamen 32, victus 16",
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemHelmetFortress", 0), 4)
+        //Research.setAspects("ARMORFORTRESS", "fabrico 15, metallum 12, tutamen 9, alienis 9, cognitio 6, potentia 3")
+        //Research.setComplexity("ARMORFORTRESS", 3)
+        //Infusion.addRecipe("ARMORFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemChestplateThaumium", 0),
+        //        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330)),
+        //        "metallum 32, praecantatio 32, tutamen 40, cognitio 16",
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemChestplateFortress", 0), 4)
+        //Infusion.addRecipe("ARMORFORTRESS", ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsThaumium", 0),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemBaubleBlanks", 2),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086)),
+        //        "metallum 32, praecantatio 32, tutamen 24, terra 16",
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemLeggingsFortress", 0), 4)
+
         Research.setAspects("HELMGOGGLES", "tutamen 15, sensus 12, auram 9, alienis 9, praecantatio 6, fabrico 3")
         Research.setComplexity("HELMGOGGLES", 3)
         Research.setAspects("MASKGRINNINGDEVIL",

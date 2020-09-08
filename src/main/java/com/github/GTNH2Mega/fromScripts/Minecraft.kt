@@ -174,7 +174,10 @@ class Minecraft : Runnable {
         val ore28 = OreBracketHandler.getOre("dyeGreen")
         val ore29 = OreBracketHandler.getOre("dyeRed")
         val ore30 = OreBracketHandler.getOre("dyeBlack")
-        ItemBracketHandler.getItem("TConstruct:bowstring", 0)
+
+        //TODO investigate getters with no target field for ("TConstruct:bowstring", 0)
+        //ItemBracketHandler.getItem("TConstruct:bowstring", 0)
+
         val item126 = ItemBracketHandler.getItem("minecraft:iron_bars", 0)
         val item127 = ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0)
         val ore31 = OreBracketHandler.getOre("plateAnyIron")
@@ -190,7 +193,10 @@ class Minecraft : Runnable {
         val ore38 = OreBracketHandler.getOre("stickRedAlloy")
         OreBracketHandler.getOre("stickRedAlloy")
         OreBracketHandler.getOre("plateGlowstone")
-        val item128 = ItemBracketHandler.getItem("ExtraUtilities:paintbrush", 0)
+
+        //TODO Replace ("ExtraUtilities:paintbrush", 0)
+        //val item128 = ItemBracketHandler.getItem("ExtraUtilities:paintbrush", 0)
+
         val item129 = ItemBracketHandler.getItem("BiomesOPlenty:plants", 7)
         val item130 = ItemBracketHandler.getItem("Railcraft:part.rail", 0)
         ItemBracketHandler.getItem("Railcraft:part.rail", 1)
@@ -199,12 +205,18 @@ class Minecraft : Runnable {
         val ore39 = OreBracketHandler.getOre("slabWood")
         OreBracketHandler.getOre("slabStone")
         val ore40 = OreBracketHandler.getOre("paneGlass")
-        val item133 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
+        //TODO Replace ("TConstruct:GlassPane", 0)
+        //val item133 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
+
         val ore41 = OreBracketHandler.getOre("gemCoal")
         val ore42 = OreBracketHandler.getOre("gemCharcoal")
         val ore43 = OreBracketHandler.getOre("fuelCoke")
         val ore44 = OreBracketHandler.getOre("itemBeeswax")
-        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)
+
+        //TODO investigate getters with no target field for ("harvestcraft:wovencottonItem", 0)
+        //ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)
+
         OreBracketHandler.getOre("dustSulfur")
         val item134 = ItemBracketHandler.getItem("TwilightForest:item.torchberries", 0)
         val item135 = ItemBracketHandler.getItem("IC2:itemHarz", 0)
@@ -217,7 +229,10 @@ class Minecraft : Runnable {
         ItemBracketHandler.getItem("IronChest:BlockIronChest", 6)
         OreBracketHandler.getOre("dustTinyNetherStar")
         OreBracketHandler.getOre("stickEnderEye")
-        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
+
+        //TODO investigate getters with no target field for ("ExtraUtilities:decorativeBlock2", 7)
+        //ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
+
         OreBracketHandler.getOre("craftingQuartz")
         val ore46 = OreBracketHandler.getOre("plateCertusQuartz")
         val ore47 = OreBracketHandler.getOre("plateNetherQuartz")
@@ -472,34 +487,37 @@ class Minecraft : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("minecraft:melon_block", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("minecraft:soul_sand", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("minecraft:nether_brick_fence", 0))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather_helmet", 0),
-                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0))))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather_chestplate", 0),
-                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0))))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather_leggings", 0),
-                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0))))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather_boots", 0),
-                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0))))
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather_helmet", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0))))
+        //MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather_chestplate", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0))))
+        //MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather_leggings", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0))))
+        //MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather_boots", 0),
+        //        arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient?>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0), null,
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0))))
+
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("minecraft:name_tag", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("minecraft:lead", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("minecraft:pumpkin_pie", 0))
@@ -557,16 +575,6 @@ class Minecraft : Runnable {
         MineTweakerAPI.recipes.removeShapeless(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0), null, false)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("minecraft:nether_star", 0))
         MineTweakerAPI.recipes.removeShapeless(ItemBracketHandler.getItem("minecraft:glass", 0), null, false)
-        MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("TConstruct:materials", 19),
-                ItemBracketHandler.getItem("TConstruct:oreBerries", 0))
-        MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("minecraft:gold_nugget", 0),
-                ItemBracketHandler.getItem("TConstruct:oreBerries", 1))
-        MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("TConstruct:materials", 20),
-                ItemBracketHandler.getItem("TConstruct:oreBerries", 2))
-        MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("TConstruct:materials", 21),
-                ItemBracketHandler.getItem("TConstruct:oreBerries", 3))
-        MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("TConstruct:materials", 22),
-                ItemBracketHandler.getItem("TConstruct:oreBerries", 4))
         MineTweakerAPI.recipes.remove(OreBracketHandler.getOre("nuggetIron"))
         MineTweakerAPI.recipes.addShapeless(item20, arrayOf(item31, item31, ore5, ore5), null)
         MineTweakerAPI.recipes.addShaped(item,
@@ -741,384 +749,388 @@ class Minecraft : Runnable {
         MineTweakerAPI.recipes.addShaped(item38,
                 arrayOf(arrayOf<IIngredient>(ore4, ore4, ore4), arrayOf<IIngredient>(ore33, ore4, ore33),
                         arrayOf<IIngredient>(ore31, ore4, ore31)), null)
-        MineTweakerAPI.recipes.addShaped(item39,
-                arrayOf(arrayOf<IIngredient>(item133, item133, item133), arrayOf<IIngredient>(ore47, ore46, ore47),
-                        arrayOf<IIngredient>(ore39, ore38, ore39)), null)
+
+        //TODO Replace ("TConstruct:GlassPane", 0) in item133
+        //MineTweakerAPI.recipes.addShaped(item39,
+        //        arrayOf(arrayOf<IIngredient>(item133, item133, item133), arrayOf<IIngredient>(ore47, ore46, ore47),
+        //                arrayOf<IIngredient>(ore39, ore38, ore39)), null)
+
         MineTweakerAPI.recipes.addShaped(item40,
                 arrayOf(arrayOf(ore31, item, ore31), arrayOf<IIngredient>(ore31, ore37, ore31),
                         arrayOf<IIngredient>(ore49, ore31, OreBracketHandler.getOre("craftingToolFile"))), null)
-        MineTweakerAPI.recipes.addShaped(item46.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore15, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item46, arrayOf<IIngredient>(ore14, ore15), null)
-        MineTweakerAPI.recipes.addShaped(item46,
-                arrayOf(arrayOf<IIngredient?>(item8, null, item8), arrayOf<IIngredient?>(null, item8, null),
-                        arrayOf<IIngredient?>(item8, null, item8)), null)
-        MineTweakerAPI.recipes.addShaped(item46, arrayOf(arrayOf<IIngredient>(item129, item129, item129),
-                arrayOf<IIngredient>(item129, item129, item129), arrayOf<IIngredient>(item129, item129, item129)), null)
-        MineTweakerAPI.recipes.addShaped(item47.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore16, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item47, arrayOf<IIngredient>(ore14, ore16), null)
-        MineTweakerAPI.recipes.addShaped(item48.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore17, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item48, arrayOf<IIngredient>(ore14, ore17), null)
-        MineTweakerAPI.recipes.addShaped(item49.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore18, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item49, arrayOf<IIngredient>(ore14, ore18), null)
-        MineTweakerAPI.recipes.addShaped(item50.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore19, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item50, arrayOf<IIngredient>(ore14, ore19), null)
-        MineTweakerAPI.recipes.addShaped(item51.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore20, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item51, arrayOf<IIngredient>(ore14, ore20), null)
-        MineTweakerAPI.recipes.addShaped(item52.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore21, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item52, arrayOf<IIngredient>(ore14, ore21), null)
-        MineTweakerAPI.recipes.addShaped(item53.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore22, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item53, arrayOf<IIngredient>(ore14, ore22), null)
-        MineTweakerAPI.recipes.addShaped(item54.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore23, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item54, arrayOf<IIngredient>(ore14, ore23), null)
-        MineTweakerAPI.recipes.addShaped(item55.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore24, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item55, arrayOf<IIngredient>(ore14, ore24), null)
-        MineTweakerAPI.recipes.addShaped(item56.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore25, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item56, arrayOf<IIngredient>(ore14, ore25), null)
-        MineTweakerAPI.recipes.addShaped(item57.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore26, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item57, arrayOf<IIngredient>(ore14, ore26), null)
-        MineTweakerAPI.recipes.addShaped(item58.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore27, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item58, arrayOf<IIngredient>(ore14, ore27), null)
-        MineTweakerAPI.recipes.addShaped(item59.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore28, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item59, arrayOf<IIngredient>(ore14, ore28), null)
-        MineTweakerAPI.recipes.addShaped(item60.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore29, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item60, arrayOf<IIngredient>(ore14, ore29), null)
-        MineTweakerAPI.recipes.addShaped(item61.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore30, ore14),
-                        arrayOf(ore14, item128, ore14)), null)
-        MineTweakerAPI.recipes.addShapeless(item61, arrayOf<IIngredient>(ore14, ore30), null)
-        MineTweakerAPI.recipes.addShaped(item62.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore15, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item62, arrayOf<IIngredient>(ore3, ore15), null)
-        MineTweakerAPI.recipes.addShaped(item63.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore16, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item63, arrayOf<IIngredient>(ore3, ore16), null)
-        MineTweakerAPI.recipes.addShaped(item64.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore17, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item64, arrayOf<IIngredient>(ore3, ore17), null)
-        MineTweakerAPI.recipes.addShaped(item65.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore18, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item65, arrayOf<IIngredient>(ore3, ore18), null)
-        MineTweakerAPI.recipes.addShaped(item66.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore19, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item66, arrayOf<IIngredient>(ore3, ore19), null)
-        MineTweakerAPI.recipes.addShaped(item67.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore20, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item67, arrayOf<IIngredient>(ore3, ore20), null)
-        MineTweakerAPI.recipes.addShaped(item68.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore21, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item68, arrayOf<IIngredient>(ore3, ore21), null)
-        MineTweakerAPI.recipes.addShaped(item69.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore22, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item69, arrayOf<IIngredient>(ore3, ore22), null)
-        MineTweakerAPI.recipes.addShaped(item70.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore23, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item70, arrayOf<IIngredient>(ore3, ore23), null)
-        MineTweakerAPI.recipes.addShaped(item71.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore24, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item71, arrayOf<IIngredient>(ore3, ore24), null)
-        MineTweakerAPI.recipes.addShaped(item72.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore25, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item72, arrayOf<IIngredient>(ore3, ore25), null)
-        MineTweakerAPI.recipes.addShaped(item73.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore26, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item73, arrayOf<IIngredient>(ore3, ore26), null)
-        MineTweakerAPI.recipes.addShaped(item74.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore27, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item74, arrayOf<IIngredient>(ore3, ore27), null)
-        MineTweakerAPI.recipes.addShaped(item75.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore28, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item75, arrayOf<IIngredient>(ore3, ore28), null)
-        MineTweakerAPI.recipes.addShaped(item76.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore29, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item76, arrayOf<IIngredient>(ore3, ore29), null)
-        MineTweakerAPI.recipes.addShaped(item77.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore30, ore3),
-                        arrayOf(ore3, item128, ore3)), null)
-        MineTweakerAPI.recipes.addShapeless(item77, arrayOf<IIngredient>(ore3, ore30), null)
-        MineTweakerAPI.recipes.addShaped(item78.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore15, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item78, arrayOf<IIngredient>(ore40, ore15), null)
-        MineTweakerAPI.recipes.addShaped(item79.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore16, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item79, arrayOf<IIngredient>(ore40, ore16), null)
-        MineTweakerAPI.recipes.addShaped(item80.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore17, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item80, arrayOf<IIngredient>(ore40, ore17), null)
-        MineTweakerAPI.recipes.addShaped(item81.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore18, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item81, arrayOf<IIngredient>(ore40, ore18), null)
-        MineTweakerAPI.recipes.addShaped(item82.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore19, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item82, arrayOf<IIngredient>(ore40, ore19), null)
-        MineTweakerAPI.recipes.addShaped(item83.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore20, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item83, arrayOf<IIngredient>(ore40, ore20), null)
-        MineTweakerAPI.recipes.addShaped(item84.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore21, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item84, arrayOf<IIngredient>(ore40, ore21), null)
-        MineTweakerAPI.recipes.addShaped(item85.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore22, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item85, arrayOf<IIngredient>(ore40, ore22), null)
-        MineTweakerAPI.recipes.addShaped(item86.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore23, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item86, arrayOf<IIngredient>(ore40, ore23), null)
-        MineTweakerAPI.recipes.addShaped(item87.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore24, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item87, arrayOf<IIngredient>(ore40, ore24), null)
-        MineTweakerAPI.recipes.addShaped(item88.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore25, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item88, arrayOf<IIngredient>(ore40, ore25), null)
-        MineTweakerAPI.recipes.addShaped(item89.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore26, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item89, arrayOf<IIngredient>(ore40, ore26), null)
-        MineTweakerAPI.recipes.addShaped(item90.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore27, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item90, arrayOf<IIngredient>(ore40, ore27), null)
-        MineTweakerAPI.recipes.addShaped(item91.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore28, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item91, arrayOf<IIngredient>(ore40, ore28), null)
-        MineTweakerAPI.recipes.addShaped(item92.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore29, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item92, arrayOf<IIngredient>(ore40, ore29), null)
-        MineTweakerAPI.recipes.addShaped(item93.amount(7),
-                arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore30, ore40),
-                        arrayOf(ore40, item128, ore40)), null)
-        MineTweakerAPI.recipes.addShapeless(item93, arrayOf<IIngredient>(ore40, ore30), null)
-        MineTweakerAPI.recipes.addShaped(item94, arrayOf(arrayOf<IIngredient?>(item46, item46), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item94.amount(3),
-                arrayOf(arrayOf(item46, item46, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item95.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore16, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item95, arrayOf(item94, ore16), null)
-        MineTweakerAPI.recipes.addShaped(item95, arrayOf(arrayOf<IIngredient?>(item47, item47), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item95.amount(3),
-                arrayOf(arrayOf(item47, item47, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item96.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore17, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item96, arrayOf(item94, ore17), null)
-        MineTweakerAPI.recipes.addShaped(item96, arrayOf(arrayOf<IIngredient?>(item48, item48), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item96.amount(3),
-                arrayOf(arrayOf(item48, item48, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item97.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore18, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item97, arrayOf(item94, ore18), null)
-        MineTweakerAPI.recipes.addShaped(item97, arrayOf(arrayOf<IIngredient?>(item49, item49), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item97.amount(3),
-                arrayOf(arrayOf(item49, item49, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item98.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore19, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item98, arrayOf(item94, ore19), null)
-        MineTweakerAPI.recipes.addShaped(item98, arrayOf(arrayOf<IIngredient?>(item50, item50), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item98.amount(3),
-                arrayOf(arrayOf(item50, item50, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item99.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore20, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item99, arrayOf(item94, ore20), null)
-        MineTweakerAPI.recipes.addShaped(item99, arrayOf(arrayOf<IIngredient?>(item51, item51), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item99.amount(3),
-                arrayOf(arrayOf(item51, item51, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item100.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore21, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item100, arrayOf(item94, ore21), null)
-        MineTweakerAPI.recipes.addShaped(item100, arrayOf(arrayOf<IIngredient?>(item52, item52), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item100.amount(3),
-                arrayOf(arrayOf(item52, item52, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item101.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore22, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item101, arrayOf(item94, ore22), null)
-        MineTweakerAPI.recipes.addShaped(item101, arrayOf(arrayOf<IIngredient?>(item53, item53), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item101.amount(3),
-                arrayOf(arrayOf(item53, item53, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item102.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore23, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item102, arrayOf(item94, ore23), null)
-        MineTweakerAPI.recipes.addShaped(item102, arrayOf(arrayOf<IIngredient?>(item54, item54), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item102.amount(3),
-                arrayOf(arrayOf(item54, item54, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item103.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore24, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item103, arrayOf(item94, ore24), null)
-        MineTweakerAPI.recipes.addShaped(item103, arrayOf(arrayOf<IIngredient?>(item55, item55), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item103.amount(3),
-                arrayOf(arrayOf(item55, item55, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item104.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore25, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item104, arrayOf(item94, ore25), null)
-        MineTweakerAPI.recipes.addShaped(item104, arrayOf(arrayOf<IIngredient?>(item56, item56), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item104.amount(3),
-                arrayOf(arrayOf(item56, item56, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item105.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore26, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item105, arrayOf(item94, ore26), null)
-        MineTweakerAPI.recipes.addShaped(item105, arrayOf(arrayOf<IIngredient?>(item57, item57), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item105.amount(3),
-                arrayOf(arrayOf(item57, item57, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item106.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore27, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item106, arrayOf(item94, ore27), null)
-        MineTweakerAPI.recipes.addShaped(item106, arrayOf(arrayOf<IIngredient?>(item58, item58), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item106.amount(3),
-                arrayOf(arrayOf(item58, item58, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item107.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore28, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item107, arrayOf(item94, ore28), null)
-        MineTweakerAPI.recipes.addShaped(item107, arrayOf(arrayOf<IIngredient?>(item59, item59), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item107.amount(3),
-                arrayOf(arrayOf(item59, item59, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item108.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore29, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item108, arrayOf(item94, ore29), null)
-        MineTweakerAPI.recipes.addShaped(item108, arrayOf(arrayOf<IIngredient?>(item60, item60), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item108.amount(3),
-                arrayOf(arrayOf(item60, item60, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item109.amount(7),
-                arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore30, item94),
-                        arrayOf<IIngredient>(item94, item128, item94)), null)
-        MineTweakerAPI.recipes.addShapeless(item109, arrayOf(item94, ore30), null)
-        MineTweakerAPI.recipes.addShaped(item109, arrayOf(arrayOf<IIngredient?>(item61, item61), arrayOfNulls(2)), null)
-        MineTweakerAPI.recipes.addShaped(item109.amount(3),
-                arrayOf(arrayOf(item61, item61, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(item110.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore15, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item110, arrayOf(item27, ore15), null)
-        MineTweakerAPI.recipes.addShaped(item111.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore16, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item111, arrayOf(item27, ore16), null)
-        MineTweakerAPI.recipes.addShaped(item112.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore17, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item112, arrayOf(item27, ore17), null)
-        MineTweakerAPI.recipes.addShaped(item113.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore18, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item113, arrayOf(item27, ore18), null)
-        MineTweakerAPI.recipes.addShaped(item114.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore19, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item114, arrayOf(item27, ore19), null)
-        MineTweakerAPI.recipes.addShaped(item115.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore20, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item115, arrayOf(item27, ore20), null)
-        MineTweakerAPI.recipes.addShaped(item116.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore21, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item116, arrayOf(item27, ore21), null)
-        MineTweakerAPI.recipes.addShaped(item117.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore22, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item117, arrayOf(item27, ore22), null)
-        MineTweakerAPI.recipes.addShaped(item118.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore23, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item118, arrayOf(item27, ore23), null)
-        MineTweakerAPI.recipes.addShaped(item119.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore24, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item119, arrayOf(item27, ore24), null)
-        MineTweakerAPI.recipes.addShaped(item120.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore25, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item120, arrayOf(item27, ore25), null)
-        MineTweakerAPI.recipes.addShaped(item121.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore26, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item121, arrayOf(item27, ore26), null)
-        MineTweakerAPI.recipes.addShaped(item122.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore27, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item122, arrayOf(item27, ore27), null)
-        MineTweakerAPI.recipes.addShaped(item123.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore28, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item123, arrayOf(item27, ore28), null)
-        MineTweakerAPI.recipes.addShaped(item124.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore29, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
-        MineTweakerAPI.recipes.addShapeless(item124, arrayOf(item27, ore29), null)
-        MineTweakerAPI.recipes.addShaped(item125.amount(7),
-                arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore30, item27),
-                        arrayOf<IIngredient>(item27, item128, item27)), null)
+
+        //TODO Replace ("ExtraUtilities:paintbrush", 0) in item128
+        //MineTweakerAPI.recipes.addShaped(item46.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore15, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item46, arrayOf<IIngredient>(ore14, ore15), null)
+        //MineTweakerAPI.recipes.addShaped(item46,
+        //        arrayOf(arrayOf<IIngredient?>(item8, null, item8), arrayOf<IIngredient?>(null, item8, null),
+        //                arrayOf<IIngredient?>(item8, null, item8)), null)
+        //MineTweakerAPI.recipes.addShaped(item46, arrayOf(arrayOf<IIngredient>(item129, item129, item129),
+        //        arrayOf<IIngredient>(item129, item129, item129), arrayOf<IIngredient>(item129, item129, item129)), null)
+        //MineTweakerAPI.recipes.addShaped(item47.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore16, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item47, arrayOf<IIngredient>(ore14, ore16), null)
+        //MineTweakerAPI.recipes.addShaped(item48.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore17, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item48, arrayOf<IIngredient>(ore14, ore17), null)
+        //MineTweakerAPI.recipes.addShaped(item49.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore18, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item49, arrayOf<IIngredient>(ore14, ore18), null)
+        //MineTweakerAPI.recipes.addShaped(item50.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore19, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item50, arrayOf<IIngredient>(ore14, ore19), null)
+        //MineTweakerAPI.recipes.addShaped(item51.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore20, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item51, arrayOf<IIngredient>(ore14, ore20), null)
+        //MineTweakerAPI.recipes.addShaped(item52.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore21, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item52, arrayOf<IIngredient>(ore14, ore21), null)
+        //MineTweakerAPI.recipes.addShaped(item53.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore22, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item53, arrayOf<IIngredient>(ore14, ore22), null)
+        //MineTweakerAPI.recipes.addShaped(item54.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore23, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item54, arrayOf<IIngredient>(ore14, ore23), null)
+        //MineTweakerAPI.recipes.addShaped(item55.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore24, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item55, arrayOf<IIngredient>(ore14, ore24), null)
+        //MineTweakerAPI.recipes.addShaped(item56.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore25, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item56, arrayOf<IIngredient>(ore14, ore25), null)
+        //MineTweakerAPI.recipes.addShaped(item57.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore26, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item57, arrayOf<IIngredient>(ore14, ore26), null)
+        //MineTweakerAPI.recipes.addShaped(item58.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore27, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item58, arrayOf<IIngredient>(ore14, ore27), null)
+        //MineTweakerAPI.recipes.addShaped(item59.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore28, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item59, arrayOf<IIngredient>(ore14, ore28), null)
+        //MineTweakerAPI.recipes.addShaped(item60.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore29, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item60, arrayOf<IIngredient>(ore14, ore29), null)
+        //MineTweakerAPI.recipes.addShaped(item61.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore14, ore14, ore14), arrayOf<IIngredient>(ore14, ore30, ore14),
+        //                arrayOf(ore14, item128, ore14)), null)
+        //MineTweakerAPI.recipes.addShapeless(item61, arrayOf<IIngredient>(ore14, ore30), null)
+        //MineTweakerAPI.recipes.addShaped(item62.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore15, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item62, arrayOf<IIngredient>(ore3, ore15), null)
+        //MineTweakerAPI.recipes.addShaped(item63.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore16, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item63, arrayOf<IIngredient>(ore3, ore16), null)
+        //MineTweakerAPI.recipes.addShaped(item64.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore17, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item64, arrayOf<IIngredient>(ore3, ore17), null)
+        //MineTweakerAPI.recipes.addShaped(item65.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore18, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item65, arrayOf<IIngredient>(ore3, ore18), null)
+        //MineTweakerAPI.recipes.addShaped(item66.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore19, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item66, arrayOf<IIngredient>(ore3, ore19), null)
+        //MineTweakerAPI.recipes.addShaped(item67.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore20, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item67, arrayOf<IIngredient>(ore3, ore20), null)
+        //MineTweakerAPI.recipes.addShaped(item68.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore21, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item68, arrayOf<IIngredient>(ore3, ore21), null)
+        //MineTweakerAPI.recipes.addShaped(item69.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore22, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item69, arrayOf<IIngredient>(ore3, ore22), null)
+        //MineTweakerAPI.recipes.addShaped(item70.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore23, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item70, arrayOf<IIngredient>(ore3, ore23), null)
+        //MineTweakerAPI.recipes.addShaped(item71.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore24, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item71, arrayOf<IIngredient>(ore3, ore24), null)
+        //MineTweakerAPI.recipes.addShaped(item72.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore25, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item72, arrayOf<IIngredient>(ore3, ore25), null)
+        //MineTweakerAPI.recipes.addShaped(item73.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore26, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item73, arrayOf<IIngredient>(ore3, ore26), null)
+        //MineTweakerAPI.recipes.addShaped(item74.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore27, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item74, arrayOf<IIngredient>(ore3, ore27), null)
+        //MineTweakerAPI.recipes.addShaped(item75.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore28, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item75, arrayOf<IIngredient>(ore3, ore28), null)
+        //MineTweakerAPI.recipes.addShaped(item76.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore29, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item76, arrayOf<IIngredient>(ore3, ore29), null)
+        //MineTweakerAPI.recipes.addShaped(item77.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore3, ore3, ore3), arrayOf<IIngredient>(ore3, ore30, ore3),
+        //                arrayOf(ore3, item128, ore3)), null)
+        //MineTweakerAPI.recipes.addShapeless(item77, arrayOf<IIngredient>(ore3, ore30), null)
+        //MineTweakerAPI.recipes.addShaped(item78.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore15, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item78, arrayOf<IIngredient>(ore40, ore15), null)
+        //MineTweakerAPI.recipes.addShaped(item79.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore16, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item79, arrayOf<IIngredient>(ore40, ore16), null)
+        //MineTweakerAPI.recipes.addShaped(item80.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore17, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item80, arrayOf<IIngredient>(ore40, ore17), null)
+        //MineTweakerAPI.recipes.addShaped(item81.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore18, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item81, arrayOf<IIngredient>(ore40, ore18), null)
+        //MineTweakerAPI.recipes.addShaped(item82.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore19, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item82, arrayOf<IIngredient>(ore40, ore19), null)
+        //MineTweakerAPI.recipes.addShaped(item83.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore20, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item83, arrayOf<IIngredient>(ore40, ore20), null)
+        //MineTweakerAPI.recipes.addShaped(item84.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore21, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item84, arrayOf<IIngredient>(ore40, ore21), null)
+        //MineTweakerAPI.recipes.addShaped(item85.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore22, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item85, arrayOf<IIngredient>(ore40, ore22), null)
+        //MineTweakerAPI.recipes.addShaped(item86.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore23, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item86, arrayOf<IIngredient>(ore40, ore23), null)
+        //MineTweakerAPI.recipes.addShaped(item87.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore24, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item87, arrayOf<IIngredient>(ore40, ore24), null)
+        //MineTweakerAPI.recipes.addShaped(item88.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore25, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item88, arrayOf<IIngredient>(ore40, ore25), null)
+        //MineTweakerAPI.recipes.addShaped(item89.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore26, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item89, arrayOf<IIngredient>(ore40, ore26), null)
+        //MineTweakerAPI.recipes.addShaped(item90.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore27, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item90, arrayOf<IIngredient>(ore40, ore27), null)
+        //MineTweakerAPI.recipes.addShaped(item91.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore28, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item91, arrayOf<IIngredient>(ore40, ore28), null)
+        //MineTweakerAPI.recipes.addShaped(item92.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore29, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item92, arrayOf<IIngredient>(ore40, ore29), null)
+        //MineTweakerAPI.recipes.addShaped(item93.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(ore40, ore40, ore40), arrayOf<IIngredient>(ore40, ore30, ore40),
+        //                arrayOf(ore40, item128, ore40)), null)
+        //MineTweakerAPI.recipes.addShapeless(item93, arrayOf<IIngredient>(ore40, ore30), null)
+        //MineTweakerAPI.recipes.addShaped(item94, arrayOf(arrayOf<IIngredient?>(item46, item46), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item94.amount(3),
+        //        arrayOf(arrayOf(item46, item46, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item95.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore16, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item95, arrayOf(item94, ore16), null)
+        //MineTweakerAPI.recipes.addShaped(item95, arrayOf(arrayOf<IIngredient?>(item47, item47), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item95.amount(3),
+        //        arrayOf(arrayOf(item47, item47, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item96.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore17, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item96, arrayOf(item94, ore17), null)
+        //MineTweakerAPI.recipes.addShaped(item96, arrayOf(arrayOf<IIngredient?>(item48, item48), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item96.amount(3),
+        //        arrayOf(arrayOf(item48, item48, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item97.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore18, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item97, arrayOf(item94, ore18), null)
+        //MineTweakerAPI.recipes.addShaped(item97, arrayOf(arrayOf<IIngredient?>(item49, item49), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item97.amount(3),
+        //        arrayOf(arrayOf(item49, item49, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item98.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore19, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item98, arrayOf(item94, ore19), null)
+        //MineTweakerAPI.recipes.addShaped(item98, arrayOf(arrayOf<IIngredient?>(item50, item50), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item98.amount(3),
+        //        arrayOf(arrayOf(item50, item50, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item99.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore20, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item99, arrayOf(item94, ore20), null)
+        //MineTweakerAPI.recipes.addShaped(item99, arrayOf(arrayOf<IIngredient?>(item51, item51), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item99.amount(3),
+        //        arrayOf(arrayOf(item51, item51, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item100.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore21, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item100, arrayOf(item94, ore21), null)
+        //MineTweakerAPI.recipes.addShaped(item100, arrayOf(arrayOf<IIngredient?>(item52, item52), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item100.amount(3),
+        //        arrayOf(arrayOf(item52, item52, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item101.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore22, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item101, arrayOf(item94, ore22), null)
+        //MineTweakerAPI.recipes.addShaped(item101, arrayOf(arrayOf<IIngredient?>(item53, item53), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item101.amount(3),
+        //        arrayOf(arrayOf(item53, item53, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item102.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore23, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item102, arrayOf(item94, ore23), null)
+        //MineTweakerAPI.recipes.addShaped(item102, arrayOf(arrayOf<IIngredient?>(item54, item54), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item102.amount(3),
+        //        arrayOf(arrayOf(item54, item54, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item103.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore24, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item103, arrayOf(item94, ore24), null)
+        //MineTweakerAPI.recipes.addShaped(item103, arrayOf(arrayOf<IIngredient?>(item55, item55), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item103.amount(3),
+        //        arrayOf(arrayOf(item55, item55, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item104.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore25, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item104, arrayOf(item94, ore25), null)
+        //MineTweakerAPI.recipes.addShaped(item104, arrayOf(arrayOf<IIngredient?>(item56, item56), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item104.amount(3),
+        //        arrayOf(arrayOf(item56, item56, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item105.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore26, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item105, arrayOf(item94, ore26), null)
+        //MineTweakerAPI.recipes.addShaped(item105, arrayOf(arrayOf<IIngredient?>(item57, item57), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item105.amount(3),
+        //        arrayOf(arrayOf(item57, item57, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item106.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore27, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item106, arrayOf(item94, ore27), null)
+        //MineTweakerAPI.recipes.addShaped(item106, arrayOf(arrayOf<IIngredient?>(item58, item58), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item106.amount(3),
+        //        arrayOf(arrayOf(item58, item58, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item107.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore28, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item107, arrayOf(item94, ore28), null)
+        //MineTweakerAPI.recipes.addShaped(item107, arrayOf(arrayOf<IIngredient?>(item59, item59), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item107.amount(3),
+        //        arrayOf(arrayOf(item59, item59, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item108.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore29, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item108, arrayOf(item94, ore29), null)
+        //MineTweakerAPI.recipes.addShaped(item108, arrayOf(arrayOf<IIngredient?>(item60, item60), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item108.amount(3),
+        //        arrayOf(arrayOf(item60, item60, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item109.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item94, item94, item94), arrayOf(item94, ore30, item94),
+        //                arrayOf<IIngredient>(item94, item128, item94)), null)
+        //MineTweakerAPI.recipes.addShapeless(item109, arrayOf(item94, ore30), null)
+        //MineTweakerAPI.recipes.addShaped(item109, arrayOf(arrayOf<IIngredient?>(item61, item61), arrayOfNulls(2)), null)
+        //MineTweakerAPI.recipes.addShaped(item109.amount(3),
+        //        arrayOf(arrayOf(item61, item61, ore52), arrayOfNulls(3), arrayOfNulls(3)), null)
+        //MineTweakerAPI.recipes.addShaped(item110.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore15, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item110, arrayOf(item27, ore15), null)
+        //MineTweakerAPI.recipes.addShaped(item111.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore16, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item111, arrayOf(item27, ore16), null)
+        //MineTweakerAPI.recipes.addShaped(item112.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore17, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item112, arrayOf(item27, ore17), null)
+        //MineTweakerAPI.recipes.addShaped(item113.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore18, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item113, arrayOf(item27, ore18), null)
+        //MineTweakerAPI.recipes.addShaped(item114.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore19, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item114, arrayOf(item27, ore19), null)
+        //MineTweakerAPI.recipes.addShaped(item115.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore20, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item115, arrayOf(item27, ore20), null)
+        //MineTweakerAPI.recipes.addShaped(item116.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore21, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item116, arrayOf(item27, ore21), null)
+        //MineTweakerAPI.recipes.addShaped(item117.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore22, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item117, arrayOf(item27, ore22), null)
+        //MineTweakerAPI.recipes.addShaped(item118.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore23, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item118, arrayOf(item27, ore23), null)
+        //MineTweakerAPI.recipes.addShaped(item119.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore24, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item119, arrayOf(item27, ore24), null)
+        //MineTweakerAPI.recipes.addShaped(item120.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore25, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item120, arrayOf(item27, ore25), null)
+        //MineTweakerAPI.recipes.addShaped(item121.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore26, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item121, arrayOf(item27, ore26), null)
+        //MineTweakerAPI.recipes.addShaped(item122.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore27, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item122, arrayOf(item27, ore27), null)
+        //MineTweakerAPI.recipes.addShaped(item123.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore28, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item123, arrayOf(item27, ore28), null)
+        //MineTweakerAPI.recipes.addShaped(item124.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore29, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+        //MineTweakerAPI.recipes.addShapeless(item124, arrayOf(item27, ore29), null)
+        //MineTweakerAPI.recipes.addShaped(item125.amount(7),
+        //        arrayOf(arrayOf<IIngredient>(item27, item27, item27), arrayOf(item27, ore30, item27),
+        //                arrayOf<IIngredient>(item27, item128, item27)), null)
+
         MineTweakerAPI.recipes.addShapeless(item125, arrayOf(item27, ore30), null)
         MineTweakerAPI.recipes.addShapeless(item43, arrayOf(ore12, item44), null)
-        MineTweakerAPI.recipes.addShapeless(item43,
-                arrayOf(ore12, ItemBracketHandler.getItem("harvestcraft:beetItem", 0)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:diamond_sword", 0),
                 arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500), null),
                         arrayOf(OreBracketHandler.getOre("craftingToolFile"),
@@ -1242,13 +1254,16 @@ class Minecraft : Runnable {
                         ItemBracketHandler.getItem("minecraft:water_bucket", 0), OreBracketHandler.getOre("itemClay")),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("itemClay"), OreBracketHandler.getOre("itemClay"),
                                 OreBracketHandler.getOre("itemClay"))), null)
-        MineTweakerAPI.recipes.addShaped(item27.amount(2),
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemClay"), OreBracketHandler.getOre("itemClay"),
-                        OreBracketHandler.getOre("itemClay")), arrayOf(OreBracketHandler.getOre("itemClay"),
-                        ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
-                        OreBracketHandler.getOre("itemClay")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemClay"), OreBracketHandler.getOre("itemClay"),
-                                OreBracketHandler.getOre("itemClay"))), null)
+
+        //TODO Replace ("IguanaTweaksTConstruct:clayBucketWater", 0)
+        //MineTweakerAPI.recipes.addShaped(item27.amount(2),
+        //        arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemClay"), OreBracketHandler.getOre("itemClay"),
+        //                OreBracketHandler.getOre("itemClay")), arrayOf(OreBracketHandler.getOre("itemClay"),
+        //                ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
+        //                OreBracketHandler.getOre("itemClay")),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("itemClay"), OreBracketHandler.getOre("itemClay"),
+        //                        OreBracketHandler.getOre("itemClay"))), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:pumpkin_seeds", 0).amount(2),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("minecraft:pumpkin", 0),
                         OreBracketHandler.getOre("craftingToolHardHammer"))), null)
@@ -1271,13 +1286,18 @@ class Minecraft : Runnable {
                         OreBracketHandler.getOre("dustSmallGunpowder"), OreBracketHandler.getOre("dustSmallGunpowder"),
                         OreBracketHandler.getOre("dustSmallGunpowder")), null)
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("minecraft:glass", 0), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32559),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32559),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:freshwaterItem", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881),
-                        ItemBracketHandler.getItem("harvestcraft:freshwaterItem", 0)), null)
+
+        //TODO Replace ("IguanaTweaksTConstruct:clayBucketWater", 0)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32559),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)), null)
+
+        //TODO Replace ("harvestcraft:freshwaterItem", 0)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32559),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:freshwaterItem", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881),
+        //                ItemBracketHandler.getItem("harvestcraft:freshwaterItem", 0)), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:chest_minecart", 0),
                 arrayOf(arrayOf(ore49, ItemBracketHandler.getItem("minecraft:chest", 0), ore53),
                         arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("minecraft:minecart", 0), null),
@@ -1384,22 +1404,28 @@ class Minecraft : Runnable {
                         ItemBracketHandler.getItem("minecraft:water_bucket", 0), OreBracketHandler.getOre("dustWood")),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("dustWood"), OreBracketHandler.getOre("dustWood"),
                                 OreBracketHandler.getOre("dustWood"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:paper", 0).amount(2),
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("dustWood"), OreBracketHandler.getOre("dustWood"),
-                        OreBracketHandler.getOre("dustWood")), arrayOf(OreBracketHandler.getOre("dustWood"),
-                        ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
-                        OreBracketHandler.getOre("dustWood")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("dustWood"), OreBracketHandler.getOre("dustWood"),
-                                OreBracketHandler.getOre("dustWood"))), null)
+
+        //TODO Replace ("IguanaTweaksTConstruct:clayBucketWater", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:paper", 0).amount(2),
+        //        arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("dustWood"), OreBracketHandler.getOre("dustWood"),
+        //                OreBracketHandler.getOre("dustWood")), arrayOf(OreBracketHandler.getOre("dustWood"),
+        //                ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
+        //                OreBracketHandler.getOre("dustWood")),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("dustWood"), OreBracketHandler.getOre("dustWood"),
+        //                        OreBracketHandler.getOre("dustWood"))), null)
+
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:string", 0),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("Natura:barleyFood", 3),
                         ItemBracketHandler.getItem("Natura:barleyFood", 3),
                         ItemBracketHandler.getItem("Natura:barleyFood", 3))), null)
         MineTweakerAPI.recipes.remove(item138)
         MineTweakerAPI.recipes.remove(item139)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("minecraft:flower_pot", 0),
-                arrayOf(OreBracketHandler.getOre("craftingToolFile"),
-                        ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketFired", 0)), null)
+
+        //TODO Replace ("IguanaTweaksTConstruct:clayBucketFired", 0)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("minecraft:flower_pot", 0),
+        //        arrayOf(OreBracketHandler.getOre("craftingToolFile"),
+        //                ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketFired", 0)), null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("minecraft:stone_slab", 0),
                 arrayOf<IIngredient>(ore52, ore7), null)
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("minecraft:stone_slab", 1),
@@ -1422,14 +1448,17 @@ class Minecraft : Runnable {
                                 OreBracketHandler.getOre("ingotBrick")),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrick"),
                                 OreBracketHandler.getOre("ingotBrick"), OreBracketHandler.getOre("ingotBrick"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:brick_block", 0).amount(2),
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrick"),
-                        OreBracketHandler.getOre("ingotBrick"), OreBracketHandler.getOre("ingotBrick")),
-                        arrayOf(OreBracketHandler.getOre("ingotBrick"),
-                                ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
-                                OreBracketHandler.getOre("ingotBrick")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrick"),
-                                OreBracketHandler.getOre("ingotBrick"), OreBracketHandler.getOre("ingotBrick"))), null)
+
+        //TODO Replace ("IguanaTweaksTConstruct:clayBucketWater", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:brick_block", 0).amount(2),
+        //        arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrick"),
+        //                OreBracketHandler.getOre("ingotBrick"), OreBracketHandler.getOre("ingotBrick")),
+        //                arrayOf(OreBracketHandler.getOre("ingotBrick"),
+        //                        ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketWater", 0),
+        //                        OreBracketHandler.getOre("ingotBrick")),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrick"),
+        //                        OreBracketHandler.getOre("ingotBrick"), OreBracketHandler.getOre("ingotBrick"))), null)
+
         MineTweakerAPI.furnace.addRecipe(ItemBracketHandler.getItem("minecraft:brick", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.UnfiredClayBrick", 0), 0.0)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:nether_brick", 0).amount(2),
@@ -1441,15 +1470,18 @@ class Minecraft : Runnable {
                         arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrickNether"),
                                 OreBracketHandler.getOre("ingotBrickNether"),
                                 OreBracketHandler.getOre("ingotBrickNether"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:nether_brick", 0).amount(2),
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrickNether"),
-                        OreBracketHandler.getOre("ingotBrickNether"), OreBracketHandler.getOre("ingotBrickNether")),
-                        arrayOf(OreBracketHandler.getOre("ingotBrickNether"),
-                                ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketLava", 0),
-                                OreBracketHandler.getOre("ingotBrickNether")),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrickNether"),
-                                OreBracketHandler.getOre("ingotBrickNether"),
-                                OreBracketHandler.getOre("ingotBrickNether"))), null)
+
+        //TODO Replace ("IguanaTweaksTConstruct:clayBucketLava", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:nether_brick", 0).amount(2),
+        //        arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrickNether"),
+        //                OreBracketHandler.getOre("ingotBrickNether"), OreBracketHandler.getOre("ingotBrickNether")),
+        //                arrayOf(OreBracketHandler.getOre("ingotBrickNether"),
+        //                        ItemBracketHandler.getItem("IguanaTweaksTConstruct:clayBucketLava", 0),
+        //                        OreBracketHandler.getOre("ingotBrickNether")),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("ingotBrickNether"),
+        //                        OreBracketHandler.getOre("ingotBrickNether"),
+        //                        OreBracketHandler.getOre("ingotBrickNether"))), null)
+
         MineTweakerAPI.recipes.addShaped(item138, arrayOf(arrayOf(ItemBracketHandler.getItem("minecraft:planks", 0),
                 ItemBracketHandler.getItem("minecraft:trapdoor", 0), ore48),
                 arrayOf(ItemBracketHandler.getItem("minecraft:planks", 0), OreBracketHandler.getOre("ringAnyIron"),
@@ -1758,9 +1790,12 @@ class Minecraft : Runnable {
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
                                 ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
                                 ItemBracketHandler.getItem("BiomesOPlenty:moss", 0))), null)
-        MineTweakerAPI.recipes.addShaped(item16, arrayOf(arrayOf(item8, ore54, OreBracketHandler.getOre("itemLeather")),
-                arrayOf(item8, ore54, ItemBracketHandler.getItem("TConstruct:buckets", 25)),
-                arrayOf(item8, ore54, OreBracketHandler.getOre("itemLeather"))), null)
+
+        //TODO Replace ("TConstruct:buckets", 25)
+        //MineTweakerAPI.recipes.addShaped(item16, arrayOf(arrayOf(item8, ore54, OreBracketHandler.getOre("itemLeather")),
+        //        arrayOf(item8, ore54, ItemBracketHandler.getItem("TConstruct:buckets", 25)),
+        //        arrayOf(item8, ore54, OreBracketHandler.getOre("itemLeather"))), null)
+
         MineTweakerAPI.recipes.addShaped(item15, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateWood"),
                 OreBracketHandler.getOre("plateWood"), OreBracketHandler.getOre("plateWood")),
                 arrayOf<IIngredient>(item16, item16, item16),
@@ -1808,21 +1843,11 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("minecraft:coal", 1))
         BlastFurnace.addRecipe(ItemBracketHandler.getItem("witchery:witchlog", 32767), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("harvestthenether:netherLog", 32767), false, false, 20,
-                ItemBracketHandler.getItem("minecraft:coal", 1))
         BlastFurnace.addRecipe(ItemBracketHandler.getItem("TaintedMagic:BlockWarpwoodLog", 0), false, false, 20,
-                ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("harvestcraft:pamCinnamon", 0), false, false, 20,
-                ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("harvestcraft:pamMaple", 0), false, false, 20,
-                ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("harvestcraft:pamPaperbark", 0), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
         BlastFurnace.addRecipe(ItemBracketHandler.getItem("thaumicbases:genLogs", 0), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
         BlastFurnace.addRecipe(ItemBracketHandler.getItem("thaumicbases:genLogs", 1), false, false, 20,
-                ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("miscutils:blockRainforestOakLog", 0), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:brick", 0),
                 ItemBracketHandler.getItem("minecraft:clay_ball", 0),
@@ -1945,8 +1970,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
@@ -1959,8 +1982,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
@@ -1968,8 +1989,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
                 ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
@@ -1981,8 +2000,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
@@ -1990,8 +2007,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
                 ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
@@ -2003,8 +2018,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
@@ -2012,8 +2025,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
                 ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
@@ -2025,8 +2036,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
@@ -2034,8 +2043,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
                 ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
@@ -2047,8 +2054,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
@@ -2056,8 +2061,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
                 ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
@@ -2069,8 +2072,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
@@ -2078,8 +2079,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
                 ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
@@ -2091,8 +2090,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
@@ -2100,8 +2097,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
                 ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
@@ -2113,8 +2108,6 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
@@ -2122,8 +2115,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
                 ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
                 ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
@@ -2134,8 +2125,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("harvestthenether:netherPlanks", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("minecraft:stick", 0),
@@ -2215,14 +2204,17 @@ class Minecraft : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:stone_slab", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, 8)
-        gttweaker.mods.gregtech.machines.BlastFurnace.addRecipe(
-                arrayOf(ItemBracketHandler.getItem("minecraft:glass", 0)),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:GlassBlock", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)), 100, 120, 1000)
-        gttweaker.mods.gregtech.machines.BlastFurnace.addRecipe(
-                arrayOf(ItemBracketHandler.getItem("minecraft:glass_pane", 0)),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)), 100, 120, 1000)
+
+        //TODO Replace ("TConstruct:GlassBlock", 0)
+        //gttweaker.mods.gregtech.machines.BlastFurnace.addRecipe(
+        //        arrayOf(ItemBracketHandler.getItem("minecraft:glass", 0)),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:GlassBlock", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)), 100, 120, 1000)
+        //gttweaker.mods.gregtech.machines.BlastFurnace.addRecipe(
+        //        arrayOf(ItemBracketHandler.getItem("minecraft:glass_pane", 0)),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+        //                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)), 100, 120, 1000)
+
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:bone", 0).amount(8),
                 ItemBracketHandler.getItem("minecraft:bone", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:bone", 0).amount(4)),
@@ -2275,8 +2267,6 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 2))
         Extractor.addRecipe(ItemBracketHandler.getItem("minecraft:wheat", 0).amount(9),
                 ItemBracketHandler.getItem("minecraft:hay_block", 0))
-        Extractor.addRecipe(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0),
-                ItemBracketHandler.getItem("harvestthenether:glowFlower", 0).amount(2))
         FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:sand", 32767),
                 LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 10000, 200, 48)
         FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:obsidian", 0),

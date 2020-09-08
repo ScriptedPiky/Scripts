@@ -219,12 +219,15 @@ class Thaumcraft02Thaumaturgy1 : Runnable {
         hashMap9["rod"] = ExpandString.asData("greatwood")
         hashMap9["sceptre"] = ExpandByte.asData(1.toByte())
         Research.addArcanePage(s8, item9.withTag(ExpandAnyDict.asData(hashMap9)))
-        Infusion.addRecipe("ROD_reed", ItemBracketHandler.getItem("TConstruct:trap.punji", 0),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 0)),
-                "aer 24, motus 12, praecantatio 12, vitreus 6", ItemBracketHandler.getItem("Thaumcraft:WandRod", 5), 2)
+
+        //TODO Replace ("TConstruct:trap.punji", 0)
+        //Infusion.addRecipe("ROD_reed", ItemBracketHandler.getItem("TConstruct:trap.punji", 0),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 0),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 0)),
+        //        "aer 24, motus 12, praecantatio 12, vitreus 6", ItemBracketHandler.getItem("Thaumcraft:WandRod", 5), 2)
+
         Research.setAspects("ROD_reed", "instrumentum 9, praecantatio 9, aer 6, herba 6, arbor 3")
         Research.setComplexity("ROD_reed", 2)
         val s9 = "ROD_reed"
@@ -300,13 +303,16 @@ class Thaumcraft02Thaumaturgy1 : Runnable {
         hashMap15["cap"] = ExpandString.asData("thaumium")
         hashMap15["rod"] = ExpandString.asData("quartz")
         Research.addArcanePage(s14, item15.withTag(ExpandAnyDict.asData(hashMap15)))
-        Infusion.addRecipe("ROD_bone", ItemBracketHandler.getItem("TConstruct:toolRod", 5),
-                arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5)),
-                " exanimis 12, perditio 24, praecantatio 12, vitreus 6",
-                ItemBracketHandler.getItem("Thaumcraft:WandRod", 7), 3)
+
+        //TODO Replace ("TConstruct:toolRod", 5)
+        //Infusion.addRecipe("ROD_bone", ItemBracketHandler.getItem("TConstruct:toolRod", 5),
+        //        arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5),
+        //                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6),
+        //                ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 5)),
+        //        " exanimis 12, perditio 24, praecantatio 12, vitreus 6",
+        //        ItemBracketHandler.getItem("Thaumcraft:WandRod", 7), 3)
+
         Research.setAspects("ROD_bone", "instrumentum 9, praecantatio 9, exanimis 6, perditio 6, arbor 3")
         Research.setComplexity("ROD_bone", 2)
         Warp.addToResearch("ROD_bone", 1)
@@ -582,18 +588,21 @@ class Thaumcraft02Thaumaturgy1 : Runnable {
         Research.setComplexity("FOCUSHELLBAT", 3)
         Warp.addToResearch("NODESTABILIZERADV", 2)
         Warp.addToItem(ItemBracketHandler.getItem("Thaumcraft:FocusHellbat", 0), 2)
-        Arcane.addShaped("FOCUSPOUCH", ItemBracketHandler.getItem("Thaumcraft:FocusPouch", 0),
-                "terra 20, perditio 20, ordo 20",
-                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("boltGold"), OreBracketHandler.getOre("ringGold"),
-                        OreBracketHandler.getOre("boltGold")),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemBaubleBlanks", 2),
-                                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
-                                ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0))))
-        Research.setAspects("FOCUSPOUCH", "instrumentum 9, vacuos 9, praecantatio 6, pannus 3")
-        Research.setComplexity("FOCUSPOUCH", 2)
+
+        //TODO Replace ("harvestcraft:hardenedleatherItem", 0)
+        //Arcane.addShaped("FOCUSPOUCH", ItemBracketHandler.getItem("Thaumcraft:FocusPouch", 0),
+        //        "terra 20, perditio 20, ordo 20",
+        //        arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("boltGold"), OreBracketHandler.getOre("ringGold"),
+        //                OreBracketHandler.getOre("boltGold")),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                        ItemBracketHandler.getItem("Thaumcraft:ItemBaubleBlanks", 2),
+        //                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0)),
+        //                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0),
+        //                        ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0))))
+        //Research.setAspects("FOCUSPOUCH", "instrumentum 9, vacuos 9, praecantatio 6, pannus 3")
+        //Research.setComplexity("FOCUSPOUCH", 2)
+
         Arcane.addShaped("NODESTABILIZER", ItemBracketHandler.getItem("Thaumcraft:blockStoneDevice", 9),
                 "aqua 35, terra 35, ordo 25", arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateThaumium"),
                 OreBracketHandler.getOre("springGold"), OreBracketHandler.getOre("plateThaumium")),

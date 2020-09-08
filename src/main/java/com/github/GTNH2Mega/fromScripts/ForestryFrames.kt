@@ -128,108 +128,112 @@ class ForestryFrames : Runnable {
                 ExpandString.add("Production:", MineTweakerAPI.format.yellow(ExpandString.asFormattedText(" x1"))))
         IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("ExtraBees:hiveFrame.debug", 0),
                 ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
-                ExpandString.asFormattedText("<Hold Shift>"))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
-                ExpandString.add("Durability:", MineTweakerAPI.format.red(ExpandString.asFormattedText(" 175"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
-                ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
-                ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.yellow(ExpandString.asFormattedText(" x1.2"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
-                ExpandString.add("Lifespan:", MineTweakerAPI.format.yellow(ExpandString.asFormattedText(" x0.9"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
-                ExpandString.add("Production:", MineTweakerAPI.format.green(ExpandString.asFormattedText(" x1.8"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
-                ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameUseless", 0),
-                ExpandString.asFormattedText("Broken."))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
-                ExpandString.asFormattedText("<Hold Shift>"))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
-                ExpandString.add("Durability:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" 240"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
-                ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
-                ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
-                ExpandString.add("Lifespan:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
-                ExpandString.add("Production:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
-                ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x10"))))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
-                ExpandString.asFormattedText("<Hold Shift>"))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
-                ExpandString.add("Durability:", MineTweakerAPI.format.red(ExpandString.asFormattedText(" 175"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
-                ExpandString.add("Territory:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
-                ExpandString.add("Mutation-Rate:",
-                        MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.5"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
-                ExpandString.add("Lifespan:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" x2"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
-                ExpandString.add("Production:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.5"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
-                ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
-                ExpandString.asFormattedText("<Hold Shift>"))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
-                ExpandString.add("Durability:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" 60"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
-                ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
-                ExpandString.add("Mutation-Rate:",
-                        MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
-                ExpandString.add("Lifespan:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
-                ExpandString.add("Production:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
-                ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" x0.5"))))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
-                ExpandString.asFormattedText("<Hold Shift>"))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
-                ExpandString.add("Durability:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" 240"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
-                ExpandString.add("Territory:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" x3"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
-                ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
-                ExpandString.add("Lifespan:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" x3"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
-                ExpandString.add("Production:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
-                ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
-                ExpandString.asFormattedText("<Hold Shift>"))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
-                ExpandString.add("Durability:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" 3"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
-                ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
-                ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x5"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
-                ExpandString.add("Lifespan:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.0001"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
-                ExpandString.add("Production:", MineTweakerAPI.format.bold(ExpandString.asFormattedText(" x10"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
-                ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
-                ExpandString.asFormattedText("<Hold Shift>"))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
-                ExpandString.add("Durability:", MineTweakerAPI.format.bold(ExpandString.asFormattedText(" 2000"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
-                ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
-                ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
-                ExpandString.add("Lifespan:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x3"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
-                ExpandString.add("Production:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x4"))))
-        IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
-                ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //TODO Replace ("miscutils:frameAccelerated", 0), ("miscutils:frameUseless", 0), ("miscutils:frameDecaying", 32767)
+        // ("miscutils:frameSlowing", 32767), ("miscutils:frameStabilizing", 32767), ("miscutils:frameArborists", 32767),
+        // ("miscutils:frameMutagenic", 32767) and ("miscutils:frameBusy", 32767)
+        // NOTE: These are GT++ Bee frames, if they are to be reimplemented just build the tooltip into the replacement mod.
+        //IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
+        //        ExpandString.asFormattedText("<Hold Shift>"))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
+        //        ExpandString.add("Durability:", MineTweakerAPI.format.red(ExpandString.asFormattedText(" 175"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
+        //        ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
+        //        ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.yellow(ExpandString.asFormattedText(" x1.2"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
+        //        ExpandString.add("Lifespan:", MineTweakerAPI.format.yellow(ExpandString.asFormattedText(" x0.9"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
+        //        ExpandString.add("Production:", MineTweakerAPI.format.green(ExpandString.asFormattedText(" x1.8"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameAccelerated", 0),
+        //        ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameUseless", 0),
+        //        ExpandString.asFormattedText("Broken."))
+        //IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
+        //        ExpandString.asFormattedText("<Hold Shift>"))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
+        //        ExpandString.add("Durability:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" 240"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
+        //        ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
+        //        ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
+        //        ExpandString.add("Lifespan:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
+        //        ExpandString.add("Production:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameDecaying", 32767),
+        //        ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x10"))))
+        //IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
+        //        ExpandString.asFormattedText("<Hold Shift>"))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
+        //        ExpandString.add("Durability:", MineTweakerAPI.format.red(ExpandString.asFormattedText(" 175"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
+        //        ExpandString.add("Territory:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
+        //        ExpandString.add("Mutation-Rate:",
+        //                MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.5"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
+        //        ExpandString.add("Lifespan:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" x2"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
+        //        ExpandString.add("Production:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.5"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameSlowing", 32767),
+        //        ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
+        //        ExpandString.asFormattedText("<Hold Shift>"))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
+        //        ExpandString.add("Durability:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" 60"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
+        //        ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
+        //        ExpandString.add("Mutation-Rate:",
+        //                MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
+        //        ExpandString.add("Lifespan:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
+        //        ExpandString.add("Production:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameStabilizing", 32767),
+        //        ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" x0.5"))))
+        //IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
+        //        ExpandString.asFormattedText("<Hold Shift>"))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
+        //        ExpandString.add("Durability:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" 240"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
+        //        ExpandString.add("Territory:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" x3"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
+        //        ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
+        //        ExpandString.add("Lifespan:", MineTweakerAPI.format.gold(ExpandString.asFormattedText(" x3"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
+        //        ExpandString.add("Production:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameArborists", 32767),
+        //        ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
+        //        ExpandString.asFormattedText("<Hold Shift>"))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
+        //        ExpandString.add("Durability:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" 3"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
+        //        ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
+        //        ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x5"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
+        //        ExpandString.add("Lifespan:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0.0001"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
+        //        ExpandString.add("Production:", MineTweakerAPI.format.bold(ExpandString.asFormattedText(" x10"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameMutagenic", 32767),
+        //        ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
+        //        ExpandString.asFormattedText("<Hold Shift>"))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
+        //        ExpandString.add("Durability:", MineTweakerAPI.format.bold(ExpandString.asFormattedText(" 2000"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
+        //        ExpandString.add("Territory:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
+        //        ExpandString.add("Mutation-Rate:", MineTweakerAPI.format.darkRed(ExpandString.asFormattedText(" x0"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
+        //        ExpandString.add("Lifespan:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x3"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
+        //        ExpandString.add("Production:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x4"))))
+        //IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("miscutils:frameBusy", 32767),
+        //        ExpandString.add("Genetic-Decay:", MineTweakerAPI.format.aqua(ExpandString.asFormattedText(" x1"))))
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("MagicBees:frameMagic", 32767),
                 ExpandString.asFormattedText("<Hold Shift>"))
         IngredientTooltips.addShiftTooltip(ItemBracketHandler.getItem("MagicBees:frameMagic", 32767),

@@ -289,14 +289,17 @@ class Forestry : Runnable {
                                 OreBracketHandler.getOre("craftingToolScrewdriver")),
                         arrayOf(OreBracketHandler.getOre("screwIron"), ItemBracketHandler.getItem("minecraft:chest", 0),
                                 OreBracketHandler.getOre("screwIron"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:factory2", 2),
-                arrayOf(arrayOf(OreBracketHandler.getOre("screwIron"),
-                        ItemBracketHandler.getItem("minecraft:bookshelf", 0), OreBracketHandler.getOre("screwIron")),
-                        arrayOf(OreBracketHandler.getOre("craftingToolSaw"),
-                                ItemBracketHandler.getItem("TConstruct:CraftingStation", 0),
-                                OreBracketHandler.getOre("craftingToolScrewdriver")),
-                        arrayOf(OreBracketHandler.getOre("screwIron"), ItemBracketHandler.getItem("minecraft:chest", 0),
-                                OreBracketHandler.getOre("screwIron"))), null)
+
+        //TODO Replace ("TConstruct:CraftingStation", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:factory2", 2),
+        //        arrayOf(arrayOf(OreBracketHandler.getOre("screwIron"),
+        //                ItemBracketHandler.getItem("minecraft:bookshelf", 0), OreBracketHandler.getOre("screwIron")),
+        //                arrayOf(OreBracketHandler.getOre("craftingToolSaw"),
+        //                        ItemBracketHandler.getItem("TConstruct:CraftingStation", 0),
+        //                        OreBracketHandler.getOre("craftingToolScrewdriver")),
+        //                arrayOf(OreBracketHandler.getOre("screwIron"), ItemBracketHandler.getItem("minecraft:chest", 0),
+        //                        OreBracketHandler.getOre("screwIron"))), null)
+
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(1000),
                 arrayOf(ItemBracketHandler.getItem("minecraft:planks", 32767),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
@@ -410,8 +413,6 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("minecraft:fence", 0)),
                 ItemBracketHandler.getItem("Forestry:apiculture", 2),
                 ItemBracketHandler.getItem("Forestry:apiculture", 0))
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:apiculture", 2),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:apiary", 0)), null)
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("for.honey").withAmount(1000),
                 arrayOf(ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
                         ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
@@ -1702,32 +1703,11 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("Natura:barleyFood", 0), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
-                arrayOf(null, ItemBracketHandler.getItem("harvestcraft:barleyItem", 0), null,
-                        ItemBracketHandler.getItem("harvestcraft:barleyItem", 0),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
-                        ItemBracketHandler.getItem("harvestcraft:barleyItem", 0), null,
-                        ItemBracketHandler.getItem("harvestcraft:barleyItem", 0), null), null,
-                ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
-        Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
                 arrayOf(null, ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), null,
                         ItemBracketHandler.getItem("BiomesOPlenty:plants", 6),
                         ItemBracketHandler.getItem("minecraft:dirt", 32767),
                         ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), null,
                         ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), null), null,
-                ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
-        Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
-                arrayOf(null, ItemBracketHandler.getItem("harvestcraft:ryeItem", 0), null,
-                        ItemBracketHandler.getItem("harvestcraft:ryeItem", 0),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
-                        ItemBracketHandler.getItem("harvestcraft:ryeItem", 0), null,
-                        ItemBracketHandler.getItem("harvestcraft:ryeItem", 0), null), null,
-                ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
-        Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
-                arrayOf(null, ItemBracketHandler.getItem("harvestcraft:oatsItem", 0), null,
-                        ItemBracketHandler.getItem("harvestcraft:oatsItem", 0),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
-                        ItemBracketHandler.getItem("harvestcraft:oatsItem", 0), null,
-                        ItemBracketHandler.getItem("harvestcraft:oatsItem", 0), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
                 arrayOf(null, ItemBracketHandler.getItem("minecraft:sand", 32767), null, null,
@@ -2068,17 +2048,20 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("minecraft:string", 0), OreBracketHandler.getOre("stickWood")),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("stickWood"),
                                 OreBracketHandler.getOre("stickWood"), OreBracketHandler.getOre("stickWood"))), null)
-        Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("seedoil").withAmount(250),
-                arrayOf(ItemBracketHandler.getItem("Railcraft:slab", 38),
-                        ItemBracketHandler.getItem("Railcraft:slab", 38),
-                        ItemBracketHandler.getItem("Railcraft:slab", 38),
-                        ItemBracketHandler.getItem("Forestry:oakStick", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("Forestry:oakStick", 0),
-                        ItemBracketHandler.getItem("Forestry:oakStick", 0),
-                        ItemBracketHandler.getItem("Forestry:oakStick", 0),
-                        ItemBracketHandler.getItem("Forestry:oakStick", 0)), null,
-                ItemBracketHandler.getItem("Forestry:frameImpregnated", 0))
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("seedoil").withAmount(250),
+        //        arrayOf(ItemBracketHandler.getItem("Railcraft:slab", 38),
+        //                ItemBracketHandler.getItem("Railcraft:slab", 38),
+        //                ItemBracketHandler.getItem("Railcraft:slab", 38),
+        //                ItemBracketHandler.getItem("Forestry:oakStick", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("Forestry:oakStick", 0),
+        //                ItemBracketHandler.getItem("Forestry:oakStick", 0),
+        //                ItemBracketHandler.getItem("Forestry:oakStick", 0),
+        //                ItemBracketHandler.getItem("Forestry:oakStick", 0)), null,
+        //        ItemBracketHandler.getItem("Forestry:frameImpregnated", 0))
+
         Research.addResearch("PROVENFRAME", "MAGICBEES", "praecantatio 15, fabrico 12, cognitio 9, potentia 6", 7, 0, 4,
                 ItemBracketHandler.getItem("Forestry:frameProven", 0))
         MineTweakerAPI.game.setLocalization("tc.research_name.PROVENFRAME", "Proven Frame")
@@ -2247,41 +2230,43 @@ class Forestry : Runnable {
     }
 
     fun run2() {
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:apiaristBag", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("Forestry:apicultureChest", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:apiaristBag", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:apiaristBag", 0)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:lepidopteristBag", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("Forestry:lepidopterology", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                                OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:lepidopteristBag", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:lepidopteristBag", 0)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:minerBag", 0),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        OreBracketHandler.getOre("ingotIron"),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"),
-                                OreBracketHandler.getOre("ingotIron"), OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:minerBag", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:minerBag", 0)), null)
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:apiaristBag", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("Forestry:apicultureChest", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:apiaristBag", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:apiaristBag", 0)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:lepidopteristBag", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("Forestry:lepidopterology", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                        OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:lepidopteristBag", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:lepidopteristBag", 0)), null)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:minerBag", 0),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                OreBracketHandler.getOre("ingotIron"),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"),
+        //                        OreBracketHandler.getOre("ingotIron"), OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:minerBag", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:minerBag", 0)), null)
+
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
                 arrayOf(ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
@@ -2294,87 +2279,90 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
                 ItemBracketHandler.getItem("Forestry:minerBag", 0),
                 ItemBracketHandler.getItem("Forestry:minerBagT2", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:diggerBag", 0),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        OreBracketHandler.getOre("stone"),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"), OreBracketHandler.getOre("stone"),
-                                OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:diggerBag", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:diggerBag", 0)), null)
-        Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
-                arrayOf(ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
-                ItemBracketHandler.getItem("Forestry:diggerBag", 0),
-                ItemBracketHandler.getItem("Forestry:diggerBagT2", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:foresterBag", 0),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        OreBracketHandler.getOre("logWood"),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"),
-                                OreBracketHandler.getOre("logWood"), OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:foresterBag", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:foresterBag", 0)), null)
-        Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
-                arrayOf(ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
-                ItemBracketHandler.getItem("Forestry:foresterBag", 0),
-                ItemBracketHandler.getItem("Forestry:foresterBagT2", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:hunterBag", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        ItemBracketHandler.getItem("minecraft:feather", 0),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("minecraft:feather", 0),
-                                OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:hunterBag", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:hunterBag", 0)), null)
-        Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
-                arrayOf(ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
-                ItemBracketHandler.getItem("Forestry:hunterBag", 0),
-                ItemBracketHandler.getItem("Forestry:hunterBagT2", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:builderBag", 0),
-                arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
-                        OreBracketHandler.getOre("fenceWood"),
-                        ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
-                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"),
-                                OreBracketHandler.getOre("fenceWood"), OreBracketHandler.getOre("itemLeather")),
-                        arrayOf(OreBracketHandler.getOre("itemLeather"),
-                                ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
-                                OreBracketHandler.getOre("itemLeather"))), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:builderBag", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:builderBag", 0)), null)
+
+        //TODO Replace ("harvestcraft:wovencottonItem", 0)
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:diggerBag", 0),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                OreBracketHandler.getOre("stone"),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"), OreBracketHandler.getOre("stone"),
+        //                        OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+        //
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:diggerBag", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:diggerBag", 0)), null)
+        //Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
+        //        arrayOf(ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
+        //        ItemBracketHandler.getItem("Forestry:diggerBag", 0),
+        //        ItemBracketHandler.getItem("Forestry:diggerBagT2", 0))
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:foresterBag", 0),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                OreBracketHandler.getOre("logWood"),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"),
+        //                        OreBracketHandler.getOre("logWood"), OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:foresterBag", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:foresterBag", 0)), null)
+        //Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
+        //        arrayOf(ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
+        //        ItemBracketHandler.getItem("Forestry:foresterBag", 0),
+        //        ItemBracketHandler.getItem("Forestry:foresterBagT2", 0))
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:hunterBag", 0),
+        //        arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                ItemBracketHandler.getItem("minecraft:feather", 0),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("minecraft:feather", 0),
+        //                        OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:hunterBag", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:hunterBag", 0)), null)
+        //Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
+        //        arrayOf(ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
+        //                ItemBracketHandler.getItem("Forestry:craftingMaterial", 3)),
+        //        ItemBracketHandler.getItem("Forestry:hunterBag", 0),
+        //        ItemBracketHandler.getItem("Forestry:hunterBagT2", 0))
+        //MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:builderBag", 0),
+        //        arrayOf(arrayOf(ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0),
+        //                OreBracketHandler.getOre("fenceWood"),
+        //                ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)),
+        //                arrayOf<IIngredient>(OreBracketHandler.getOre("itemLeather"),
+        //                        OreBracketHandler.getOre("fenceWood"), OreBracketHandler.getOre("itemLeather")),
+        //                arrayOf(OreBracketHandler.getOre("itemLeather"),
+        //                        ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
+        //                        OreBracketHandler.getOre("itemLeather"))), null)
+        //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:builderBag", 0),
+        //        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:builderBag", 0)), null)
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(5000),
                 arrayOf(ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
@@ -3772,18 +3760,6 @@ class Forestry : Runnable {
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:cart.beehouse", 0)), null)
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("minecraft:minecart", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:cart.beehouse", 1)), null)
-        Fermenter.addRecipe(LiquidBracketHandler.getLiquid("biomass"),
-                ItemBracketHandler.getItem("miscutils:blockRainforestOakSapling", 0),
-                LiquidBracketHandler.getLiquid("juice"), 75, 1.0f)
-        Fermenter.addRecipe(LiquidBracketHandler.getLiquid("biomass"),
-                ItemBracketHandler.getItem("miscutils:blockRainforestOakSapling", 0),
-                LiquidBracketHandler.getLiquid("for.honey"), 75, 1.0f)
-        Fermenter.addRecipe(LiquidBracketHandler.getLiquid("biomass"),
-                ItemBracketHandler.getItem("miscutils:blockRainforestOakSapling", 0),
-                LiquidBracketHandler.getLiquid("honey"), 75, 1.0f)
-        Fermenter.addRecipe(LiquidBracketHandler.getLiquid("biomass"),
-                ItemBracketHandler.getItem("miscutils:blockRainforestOakSapling", 0),
-                LiquidBracketHandler.getLiquid("water"), 50, 1.0f)
         SemiFluidGenerator.addFluid(LiquidBracketHandler.getLiquid("short.mead").withAmount(20), 4)
         Fuels.addDieselFuel(ItemBracketHandler.getItem("minecraft:bucket", 0),
                 ItemBracketHandler.getItem("Forestry:bucketShortMead", 0), 4)
