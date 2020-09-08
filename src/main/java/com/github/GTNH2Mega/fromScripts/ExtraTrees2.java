@@ -18,18 +18,31 @@ public class ExtraTrees2 implements Runnable {
     final IOreDictEntry ore2 = OreBracketHandler.getOre("itemFlint");
     final IOreDictEntry ore3 = OreBracketHandler.getOre("screwIron");
     final IOreDictEntry ore4 = OreBracketHandler.getOre("screwSteel");
+
     public void run() {
         OreBracketHandler.getOre("craftingToolSaw");
         final IRecipeManager recipes = MineTweakerAPI.recipes;
         final IItemStack item = ItemBracketHandler.getItem("ExtraTrees:door", 152);
         final HashMap<String, IData> hashMap = new HashMap<String, IData>();
         hashMap.put("meta", ExpandInt.toData(152));
-        recipes.addShaped(item.withTag(ExpandAnyDict.asData(hashMap)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 24), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 24), ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes.addShaped(item.withTag(ExpandAnyDict.asData(hashMap)),
+                new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 24), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 24),
+                 ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("craftingToolSaw")}},
+                null);
         final IRecipeManager recipes2 = MineTweakerAPI.recipes;
         final IItemStack item2 = ItemBracketHandler.getItem("ExtraTrees:door", 152);
         final HashMap<String, IData> hashMap2 = new HashMap<String, IData>();
         hashMap2.put("meta", ExpandInt.toData(152));
-        recipes2.addShaped(item2.withTag(ExpandAnyDict.asData(hashMap2)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 24), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 24), ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes2.addShaped(item2.withTag(ExpandAnyDict.asData(hashMap2)),
+                new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 24), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("ringCopper"),
+                          OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 24),
+                        ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes3 = MineTweakerAPI.recipes;
         final IItemStack item3 = ItemBracketHandler.getItem("ExtraTrees:door", 408);
         final HashMap<String, IData> hashMap3 = new HashMap<String, IData>();
@@ -86,12 +99,24 @@ public class ExtraTrees2 implements Runnable {
         final IItemStack item9 = ItemBracketHandler.getItem("ExtraTrees:door", 153);
         final HashMap<String, IData> hashMap9 = new HashMap<String, IData>();
         hashMap9.put("meta", ExpandInt.toData(153));
-        recipes6.addShaped(item9.withTag(ExpandAnyDict.asData(hashMap9)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 25), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 25), ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes6.addShaped(item9.withTag(ExpandAnyDict.asData(hashMap9)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 25), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("ringAnyIron"),
+OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 25),
+                    ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes7 = MineTweakerAPI.recipes;
         final IItemStack item10 = ItemBracketHandler.getItem("ExtraTrees:door", 153);
         final HashMap<String, IData> hashMap10 = new HashMap<String, IData>();
         hashMap10.put("meta", ExpandInt.toData(153));
-        recipes7.addShaped(item10.withTag(ExpandAnyDict.asData(hashMap10)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 25), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 25), ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes7.addShaped(item10.withTag(ExpandAnyDict.asData(hashMap10)),
+                new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 25), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("ringCopper"),
+                          OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 25),
+                    ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("craftingToolSaw")}},
+null);
         final IRecipeManager recipes8 = MineTweakerAPI.recipes;
         final IItemStack item11 = ItemBracketHandler.getItem("ExtraTrees:door", 409);
         final HashMap<String, IData> hashMap11 = new HashMap<String, IData>();
@@ -148,12 +173,24 @@ public class ExtraTrees2 implements Runnable {
         final IItemStack item17 = ItemBracketHandler.getItem("ExtraTrees:door", 154);
         final HashMap<String, IData> hashMap17 = new HashMap<String, IData>();
         hashMap17.put("meta", ExpandInt.toData(154));
-        recipes11.addShaped(item17.withTag(ExpandAnyDict.asData(hashMap17)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 26), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 26), ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes11.addShaped(item17.withTag(ExpandAnyDict.asData(hashMap17)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 26), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+{ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("ringAnyIron"),
+                          OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 26),
+                    ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("craftingToolSaw")}},
+                null);
         final IRecipeManager recipes12 = MineTweakerAPI.recipes;
         final IItemStack item18 = ItemBracketHandler.getItem("ExtraTrees:door", 154);
         final HashMap<String, IData> hashMap18 = new HashMap<String, IData>();
         hashMap18.put("meta", ExpandInt.toData(154));
-        recipes12.addShaped(item18.withTag(ExpandAnyDict.asData(hashMap18)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 26), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 26), ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes12.addShaped(item18.withTag(ExpandAnyDict.asData(hashMap18)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 26), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 26),
+                 ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes13 = MineTweakerAPI.recipes;
         final IItemStack item19 = ItemBracketHandler.getItem("ExtraTrees:door", 410);
         final HashMap<String, IData> hashMap19 = new HashMap<String, IData>();
@@ -210,12 +247,24 @@ public class ExtraTrees2 implements Runnable {
         final IItemStack item25 = ItemBracketHandler.getItem("ExtraTrees:door", 155);
         final HashMap<String, IData> hashMap25 = new HashMap<String, IData>();
         hashMap25.put("meta", ExpandInt.toData(155));
-        recipes16.addShaped(item25.withTag(ExpandAnyDict.asData(hashMap25)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 27), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 27), ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes16.addShaped(item25.withTag(ExpandAnyDict.asData(hashMap25)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 27), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                 {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 27),
+                 ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("craftingToolSaw")}},
+                null);
         final IRecipeManager recipes17 = MineTweakerAPI.recipes;
         final IItemStack item26 = ItemBracketHandler.getItem("ExtraTrees:door", 155);
         final HashMap<String, IData> hashMap26 = new HashMap<String, IData>();
         hashMap26.put("meta", ExpandInt.toData(155));
-        recipes17.addShaped(item26.withTag(ExpandAnyDict.asData(hashMap26)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 27), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 27), ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes17.addShaped(item26.withTag(ExpandAnyDict.asData(hashMap26)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 27), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("ringCopper"),
+OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 27),
+                 ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("craftingToolSaw")}},
+        null);
         final IRecipeManager recipes18 = MineTweakerAPI.recipes;
         final IItemStack item27 = ItemBracketHandler.getItem("ExtraTrees:door", 411);
         final HashMap<String, IData> hashMap27 = new HashMap<String, IData>();
@@ -272,12 +321,24 @@ public class ExtraTrees2 implements Runnable {
         final IItemStack item33 = ItemBracketHandler.getItem("ExtraTrees:door", 156);
         final HashMap<String, IData> hashMap33 = new HashMap<String, IData>();
         hashMap33.put("meta", ExpandInt.toData(156));
-        recipes21.addShaped(item33.withTag(ExpandAnyDict.asData(hashMap33)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 28), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 28), ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes21.addShaped(item33.withTag(ExpandAnyDict.asData(hashMap33)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 28), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 28),
+                 ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("craftingToolSaw")}},
+                null);
         final IRecipeManager recipes22 = MineTweakerAPI.recipes;
         final IItemStack item34 = ItemBracketHandler.getItem("ExtraTrees:door", 156);
         final HashMap<String, IData> hashMap34 = new HashMap<String, IData>();
         hashMap34.put("meta", ExpandInt.toData(156));
-        recipes22.addShaped(item34.withTag(ExpandAnyDict.asData(hashMap34)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 28), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 28), ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes22.addShaped(item34.withTag(ExpandAnyDict.asData(hashMap34)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 28), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 28),
+                 ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes23 = MineTweakerAPI.recipes;
         final IItemStack item35 = ItemBracketHandler.getItem("ExtraTrees:door", 412);
         final HashMap<String, IData> hashMap35 = new HashMap<String, IData>();
@@ -334,27 +395,37 @@ public class ExtraTrees2 implements Runnable {
         final IItemStack item41 = ItemBracketHandler.getItem("ExtraTrees:gate", 1);
         final HashMap<String, IData> hashMap41 = new HashMap<String, IData>();
         hashMap41.put("meta", ExpandInt.toData(1));
-        recipes26.addShaped(item41.withTag(ExpandAnyDict.asData(hashMap41)), new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:spruceFenceGate", 0), null, null}, {null, null, null}, {null, null, null}}, null);
+        recipes26.addShaped(item41.withTag(ExpandAnyDict.asData(hashMap41)),
+new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:spruceFenceGate", 0), null, null}, {null, null
+         , null}, {null, null, null}}, null);
         final IRecipeManager recipes27 = MineTweakerAPI.recipes;
         final IItemStack item42 = ItemBracketHandler.getItem("ExtraTrees:gate", 2);
         final HashMap<String, IData> hashMap42 = new HashMap<String, IData>();
         hashMap42.put("meta", ExpandInt.toData(2));
-        recipes27.addShaped(item42.withTag(ExpandAnyDict.asData(hashMap42)), new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:birchFenceGate", 0), null, null}, {null, null, null}, {null, null, null}}, null);
+        recipes27.addShaped(item42.withTag(ExpandAnyDict.asData(hashMap42)),
+ new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:birchFenceGate", 0), null, null}, {null, null,
+null}, {null, null, null}}, null);
         final IRecipeManager recipes28 = MineTweakerAPI.recipes;
         final IItemStack item43 = ItemBracketHandler.getItem("ExtraTrees:gate", 3);
         final HashMap<String, IData> hashMap43 = new HashMap<String, IData>();
         hashMap43.put("meta", ExpandInt.toData(3));
-        recipes28.addShaped(item43.withTag(ExpandAnyDict.asData(hashMap43)), new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:jungleFenceGate", 0), null, null}, {null, null, null}, {null, null, null}}, null);
+        recipes28.addShaped(item43.withTag(ExpandAnyDict.asData(hashMap43)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:jungleFenceGate", 0), null, null}, {null, null
+         , null}, {null, null, null}}, null);
         final IRecipeManager recipes29 = MineTweakerAPI.recipes;
         final IItemStack item44 = ItemBracketHandler.getItem("ExtraTrees:gate", 4);
         final HashMap<String, IData> hashMap44 = new HashMap<String, IData>();
         hashMap44.put("meta", ExpandInt.toData(4));
-        recipes29.addShaped(item44.withTag(ExpandAnyDict.asData(hashMap44)), new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:acaciaFenceGate", 0), null, null}, {null, null, null}, {null, null, null}}, null);
+        recipes29.addShaped(item44.withTag(ExpandAnyDict.asData(hashMap44)),
+                new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:acaciaFenceGate", 0), null, null}, {null, null
+        , null}, {null, null, null}}, null);
         final IRecipeManager recipes30 = MineTweakerAPI.recipes;
         final IItemStack item45 = ItemBracketHandler.getItem("ExtraTrees:gate", 5);
         final HashMap<String, IData> hashMap45 = new HashMap<String, IData>();
         hashMap45.put("meta", ExpandInt.toData(5));
-        recipes30.addShaped(item45.withTag(ExpandAnyDict.asData(hashMap45)), new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:darkOakFenceGate", 0), null, null}, {null, null, null}, {null, null, null}}, null);
+        recipes30.addShaped(item45.withTag(ExpandAnyDict.asData(hashMap45)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("malisisdoors:darkOakFenceGate", 0), null, null}, {null,
+          null, null}, {null, null, null}}, null);
         final IRecipeManager recipes31 = MineTweakerAPI.recipes;
         final IItemStack item46 = ItemBracketHandler.getItem("ExtraTrees:gate", 32);
         final HashMap<String, IData> hashMap46 = new HashMap<String, IData>();
@@ -3543,7 +3614,7 @@ public class ExtraTrees2 implements Runnable {
         run2();
     }
 
-    private void run2(){
+    private void run2() {
         final IRecipeManager recipes122 = MineTweakerAPI.recipes;
         final IItemStack item501 = ItemBracketHandler.getItem("ExtraTrees:gate", 62);
         final HashMap<String, IData> hashMap501 = new HashMap<String, IData>();
@@ -4038,437 +4109,698 @@ public class ExtraTrees2 implements Runnable {
         final IItemStack item571 = ItemBracketHandler.getItem("ExtraTrees:gate", 128);
         final HashMap<String, IData> hashMap571 = new HashMap<String, IData>();
         hashMap571.put("meta", ExpandInt.toData(128));
-        recipes136.addShaped(item571.withTag(ExpandAnyDict.asData(hashMap571)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}}, null);
+        recipes136.addShaped(item571.withTag(ExpandAnyDict.asData(hashMap571)), new IIngredient[][]{{ore2, null,
+                ore2}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 0)}, {ItemBracketHandler.getItem("Forestry:planks", 0),
+                OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}}, null);
         final IRecipeManager recipes137 = MineTweakerAPI.recipes;
         final IItemStack item572 = ItemBracketHandler.getItem("ExtraTrees:gate", 128);
         final HashMap<String, IData> hashMap572 = new HashMap<String, IData>();
         hashMap572.put("meta", ExpandInt.toData(128));
-        recipes137.addShaped(item572.withTag(ExpandAnyDict.asData(hashMap572)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}}, null);
+        recipes137.addShaped(item572.withTag(ExpandAnyDict.asData(hashMap572)).amount(2), new IIngredient[][]{{ore3,
+ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"),
+ ItemBracketHandler.getItem("Forestry:planks", 0)}, {ItemBracketHandler.getItem("Forestry:planks", 0),
+                OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}}, null);
         final IRecipeManager recipes138 = MineTweakerAPI.recipes;
         final IItemStack item573 = ItemBracketHandler.getItem("ExtraTrees:gate", 128);
         final HashMap<String, IData> hashMap573 = new HashMap<String, IData>();
         hashMap573.put("meta", ExpandInt.toData(128));
-        recipes138.addShaped(item573.withTag(ExpandAnyDict.asData(hashMap573)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}}, null);
+        recipes138.addShaped(item573.withTag(ExpandAnyDict.asData(hashMap573)).amount(4), new IIngredient[][]{{ore4,
+                ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 0)}, {ItemBracketHandler.getItem("Forestry:planks", 0),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 0)}}, null);
         final IRecipeManager recipes139 = MineTweakerAPI.recipes;
         final IItemStack item574 = ItemBracketHandler.getItem("ExtraTrees:gate", 129);
         final HashMap<String, IData> hashMap574 = new HashMap<String, IData>();
         hashMap574.put("meta", ExpandInt.toData(129));
-        recipes139.addShaped(item574.withTag(ExpandAnyDict.asData(hashMap574)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}}, null);
+        recipes139.addShaped(item574.withTag(ExpandAnyDict.asData(hashMap574)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"),
+                ItemBracketHandler.getItem("Forestry:planks", 1)}, {ItemBracketHandler.getItem("Forestry:planks", 1),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}}, null);
         final IRecipeManager recipes140 = MineTweakerAPI.recipes;
         final IItemStack item575 = ItemBracketHandler.getItem("ExtraTrees:gate", 129);
         final HashMap<String, IData> hashMap575 = new HashMap<String, IData>();
         hashMap575.put("meta", ExpandInt.toData(129));
-        recipes140.addShaped(item575.withTag(ExpandAnyDict.asData(hashMap575)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}}, null);
+        recipes140.addShaped(item575.withTag(ExpandAnyDict.asData(hashMap575)).amount(2), new IIngredient[][]{{ore3,
+ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 1)}, {ItemBracketHandler.getItem("Forestry:planks", 1),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}}, null);
         final IRecipeManager recipes141 = MineTweakerAPI.recipes;
         final IItemStack item576 = ItemBracketHandler.getItem("ExtraTrees:gate", 129);
         final HashMap<String, IData> hashMap576 = new HashMap<String, IData>();
         hashMap576.put("meta", ExpandInt.toData(129));
-        recipes141.addShaped(item576.withTag(ExpandAnyDict.asData(hashMap576)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}}, null);
+        recipes141.addShaped(item576.withTag(ExpandAnyDict.asData(hashMap576)).amount(4), new IIngredient[][]{{ore4,
+                ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 1)}, {ItemBracketHandler.getItem("Forestry:planks", 1),
+                OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 1)}}, null);
         final IRecipeManager recipes142 = MineTweakerAPI.recipes;
         final IItemStack item577 = ItemBracketHandler.getItem("ExtraTrees:gate", 130);
         final HashMap<String, IData> hashMap577 = new HashMap<String, IData>();
         hashMap577.put("meta", ExpandInt.toData(130));
-        recipes142.addShaped(item577.withTag(ExpandAnyDict.asData(hashMap577)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}}, null);
+        recipes142.addShaped(item577.withTag(ExpandAnyDict.asData(hashMap577)), new IIngredient[][]{{ore2, null,
+                ore2}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"),
+                ItemBracketHandler.getItem("Forestry:planks", 2)}, {ItemBracketHandler.getItem("Forestry:planks", 2),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}}, null);
         final IRecipeManager recipes143 = MineTweakerAPI.recipes;
         final IItemStack item578 = ItemBracketHandler.getItem("ExtraTrees:gate", 130);
         final HashMap<String, IData> hashMap578 = new HashMap<String, IData>();
         hashMap578.put("meta", ExpandInt.toData(130));
-        recipes143.addShaped(item578.withTag(ExpandAnyDict.asData(hashMap578)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}}, null);
+        recipes143.addShaped(item578.withTag(ExpandAnyDict.asData(hashMap578)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 2)}, {ItemBracketHandler.getItem("Forestry:planks", 2),
+                OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}}, null);
         final IRecipeManager recipes144 = MineTweakerAPI.recipes;
         final IItemStack item579 = ItemBracketHandler.getItem("ExtraTrees:gate", 130);
         final HashMap<String, IData> hashMap579 = new HashMap<String, IData>();
         hashMap579.put("meta", ExpandInt.toData(130));
-        recipes144.addShaped(item579.withTag(ExpandAnyDict.asData(hashMap579)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}}, null);
+        recipes144.addShaped(item579.withTag(ExpandAnyDict.asData(hashMap579)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("stickWood"),
+                ItemBracketHandler.getItem("Forestry:planks", 2)}, {ItemBracketHandler.getItem("Forestry:planks", 2),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 2)}}, null);
         final IRecipeManager recipes145 = MineTweakerAPI.recipes;
         final IItemStack item580 = ItemBracketHandler.getItem("ExtraTrees:gate", 131);
         final HashMap<String, IData> hashMap580 = new HashMap<String, IData>();
         hashMap580.put("meta", ExpandInt.toData(131));
-        recipes145.addShaped(item580.withTag(ExpandAnyDict.asData(hashMap580)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}}, null);
+        recipes145.addShaped(item580.withTag(ExpandAnyDict.asData(hashMap580)), new IIngredient[][]{{ore2, null,
+ore2}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 3)}, {ItemBracketHandler.getItem("Forestry:planks", 3),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}}, null);
         final IRecipeManager recipes146 = MineTweakerAPI.recipes;
         final IItemStack item581 = ItemBracketHandler.getItem("ExtraTrees:gate", 131);
         final HashMap<String, IData> hashMap581 = new HashMap<String, IData>();
         hashMap581.put("meta", ExpandInt.toData(131));
-        recipes146.addShaped(item581.withTag(ExpandAnyDict.asData(hashMap581)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}}, null);
+        recipes146.addShaped(item581.withTag(ExpandAnyDict.asData(hashMap581)).amount(2), new IIngredient[][]{{ore3,
+ ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 3)}, {ItemBracketHandler.getItem("Forestry:planks", 3),
+ OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}}, null);
         final IRecipeManager recipes147 = MineTweakerAPI.recipes;
         final IItemStack item582 = ItemBracketHandler.getItem("ExtraTrees:gate", 131);
         final HashMap<String, IData> hashMap582 = new HashMap<String, IData>();
         hashMap582.put("meta", ExpandInt.toData(131));
-        recipes147.addShaped(item582.withTag(ExpandAnyDict.asData(hashMap582)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}}, null);
+        recipes147.addShaped(item582.withTag(ExpandAnyDict.asData(hashMap582)).amount(4), new IIngredient[][]{{ore4,
+ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 3)}, {ItemBracketHandler.getItem("Forestry:planks", 3),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 3)}}, null);
         final IRecipeManager recipes148 = MineTweakerAPI.recipes;
         final IItemStack item583 = ItemBracketHandler.getItem("ExtraTrees:gate", 132);
         final HashMap<String, IData> hashMap583 = new HashMap<String, IData>();
         hashMap583.put("meta", ExpandInt.toData(132));
-        recipes148.addShaped(item583.withTag(ExpandAnyDict.asData(hashMap583)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}}, null);
+        recipes148.addShaped(item583.withTag(ExpandAnyDict.asData(hashMap583)), new IIngredient[][]{{ore2, null,
+ore2}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 4)}, {ItemBracketHandler.getItem("Forestry:planks", 4),
+                OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}}, null);
         final IRecipeManager recipes149 = MineTweakerAPI.recipes;
         final IItemStack item584 = ItemBracketHandler.getItem("ExtraTrees:gate", 132);
         final HashMap<String, IData> hashMap584 = new HashMap<String, IData>();
         hashMap584.put("meta", ExpandInt.toData(132));
-        recipes149.addShaped(item584.withTag(ExpandAnyDict.asData(hashMap584)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}}, null);
+        recipes149.addShaped(item584.withTag(ExpandAnyDict.asData(hashMap584)).amount(2), new IIngredient[][]{{ore3,
+ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 4)}, {ItemBracketHandler.getItem("Forestry:planks", 4),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}}, null);
         final IRecipeManager recipes150 = MineTweakerAPI.recipes;
         final IItemStack item585 = ItemBracketHandler.getItem("ExtraTrees:gate", 132);
         final HashMap<String, IData> hashMap585 = new HashMap<String, IData>();
         hashMap585.put("meta", ExpandInt.toData(132));
-        recipes150.addShaped(item585.withTag(ExpandAnyDict.asData(hashMap585)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}}, null);
+        recipes150.addShaped(item585.withTag(ExpandAnyDict.asData(hashMap585)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 4)}, {ItemBracketHandler.getItem("Forestry:planks", 4),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 4)}}, null);
         final IRecipeManager recipes151 = MineTweakerAPI.recipes;
         final IItemStack item586 = ItemBracketHandler.getItem("ExtraTrees:gate", 133);
         final HashMap<String, IData> hashMap586 = new HashMap<String, IData>();
         hashMap586.put("meta", ExpandInt.toData(133));
-        recipes151.addShaped(item586.withTag(ExpandAnyDict.asData(hashMap586)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}}, null);
+        recipes151.addShaped(item586.withTag(ExpandAnyDict.asData(hashMap586)), new IIngredient[][]{{ore2, null,
+                ore2}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 5)}, {ItemBracketHandler.getItem("Forestry:planks", 5),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}}, null);
         final IRecipeManager recipes152 = MineTweakerAPI.recipes;
         final IItemStack item587 = ItemBracketHandler.getItem("ExtraTrees:gate", 133);
         final HashMap<String, IData> hashMap587 = new HashMap<String, IData>();
         hashMap587.put("meta", ExpandInt.toData(133));
-        recipes152.addShaped(item587.withTag(ExpandAnyDict.asData(hashMap587)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}}, null);
+        recipes152.addShaped(item587.withTag(ExpandAnyDict.asData(hashMap587)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 5)}, {ItemBracketHandler.getItem("Forestry:planks", 5),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}}, null);
         final IRecipeManager recipes153 = MineTweakerAPI.recipes;
         final IItemStack item588 = ItemBracketHandler.getItem("ExtraTrees:gate", 133);
         final HashMap<String, IData> hashMap588 = new HashMap<String, IData>();
         hashMap588.put("meta", ExpandInt.toData(133));
-        recipes153.addShaped(item588.withTag(ExpandAnyDict.asData(hashMap588)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}}, null);
+        recipes153.addShaped(item588.withTag(ExpandAnyDict.asData(hashMap588)).amount(4), new IIngredient[][]{{ore4,
+ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 5)}, {ItemBracketHandler.getItem("Forestry:planks", 5),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 5)}}, null);
         final IRecipeManager recipes154 = MineTweakerAPI.recipes;
         final IItemStack item589 = ItemBracketHandler.getItem("ExtraTrees:gate", 134);
         final HashMap<String, IData> hashMap589 = new HashMap<String, IData>();
         hashMap589.put("meta", ExpandInt.toData(134));
-        recipes154.addShaped(item589.withTag(ExpandAnyDict.asData(hashMap589)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}}, null);
+        recipes154.addShaped(item589.withTag(ExpandAnyDict.asData(hashMap589)), new IIngredient[][]{{ore2, null,
+                ore2}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"),
+                ItemBracketHandler.getItem("Forestry:planks", 6)}, {ItemBracketHandler.getItem("Forestry:planks", 6),
+        OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}}, null);
         final IRecipeManager recipes155 = MineTweakerAPI.recipes;
         final IItemStack item590 = ItemBracketHandler.getItem("ExtraTrees:gate", 134);
         final HashMap<String, IData> hashMap590 = new HashMap<String, IData>();
         hashMap590.put("meta", ExpandInt.toData(134));
-        recipes155.addShaped(item590.withTag(ExpandAnyDict.asData(hashMap590)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}}, null);
+        recipes155.addShaped(item590.withTag(ExpandAnyDict.asData(hashMap590)).amount(2), new IIngredient[][]{{ore3,
+                ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 6)}, {ItemBracketHandler.getItem("Forestry:planks", 6),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}}, null);
         final IRecipeManager recipes156 = MineTweakerAPI.recipes;
         final IItemStack item591 = ItemBracketHandler.getItem("ExtraTrees:gate", 134);
         final HashMap<String, IData> hashMap591 = new HashMap<String, IData>();
         hashMap591.put("meta", ExpandInt.toData(134));
-        recipes156.addShaped(item591.withTag(ExpandAnyDict.asData(hashMap591)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}}, null);
+        recipes156.addShaped(item591.withTag(ExpandAnyDict.asData(hashMap591)).amount(4), new IIngredient[][]{{ore4,
+                ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("stickWood"),
+ ItemBracketHandler.getItem("Forestry:planks", 6)}, {ItemBracketHandler.getItem("Forestry:planks", 6),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 6)}}, null);
         final IRecipeManager recipes157 = MineTweakerAPI.recipes;
         final IItemStack item592 = ItemBracketHandler.getItem("ExtraTrees:gate", 135);
         final HashMap<String, IData> hashMap592 = new HashMap<String, IData>();
         hashMap592.put("meta", ExpandInt.toData(135));
-        recipes157.addShaped(item592.withTag(ExpandAnyDict.asData(hashMap592)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}}, null);
+        recipes157.addShaped(item592.withTag(ExpandAnyDict.asData(hashMap592)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 7)}, {ItemBracketHandler.getItem("Forestry:planks", 7),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}}, null);
         final IRecipeManager recipes158 = MineTweakerAPI.recipes;
         final IItemStack item593 = ItemBracketHandler.getItem("ExtraTrees:gate", 135);
         final HashMap<String, IData> hashMap593 = new HashMap<String, IData>();
         hashMap593.put("meta", ExpandInt.toData(135));
-        recipes158.addShaped(item593.withTag(ExpandAnyDict.asData(hashMap593)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}}, null);
+        recipes158.addShaped(item593.withTag(ExpandAnyDict.asData(hashMap593)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 7)}, {ItemBracketHandler.getItem("Forestry:planks", 7),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}}, null);
         final IRecipeManager recipes159 = MineTweakerAPI.recipes;
         final IItemStack item594 = ItemBracketHandler.getItem("ExtraTrees:gate", 135);
         final HashMap<String, IData> hashMap594 = new HashMap<String, IData>();
         hashMap594.put("meta", ExpandInt.toData(135));
-        recipes159.addShaped(item594.withTag(ExpandAnyDict.asData(hashMap594)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}}, null);
+        recipes159.addShaped(item594.withTag(ExpandAnyDict.asData(hashMap594)).amount(4), new IIngredient[][]{{ore4,
+ ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 7)}, {ItemBracketHandler.getItem("Forestry:planks", 7),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 7)}}, null);
         final IRecipeManager recipes160 = MineTweakerAPI.recipes;
         final IItemStack item595 = ItemBracketHandler.getItem("ExtraTrees:gate", 136);
         final HashMap<String, IData> hashMap595 = new HashMap<String, IData>();
         hashMap595.put("meta", ExpandInt.toData(136));
-        recipes160.addShaped(item595.withTag(ExpandAnyDict.asData(hashMap595)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}}, null);
+        recipes160.addShaped(item595.withTag(ExpandAnyDict.asData(hashMap595)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 8)}, {ItemBracketHandler.getItem("Forestry:planks", 8),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}}, null);
         final IRecipeManager recipes161 = MineTweakerAPI.recipes;
         final IItemStack item596 = ItemBracketHandler.getItem("ExtraTrees:gate", 136);
         final HashMap<String, IData> hashMap596 = new HashMap<String, IData>();
         hashMap596.put("meta", ExpandInt.toData(136));
-        recipes161.addShaped(item596.withTag(ExpandAnyDict.asData(hashMap596)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}}, null);
+        recipes161.addShaped(item596.withTag(ExpandAnyDict.asData(hashMap596)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 8)}, {ItemBracketHandler.getItem("Forestry:planks", 8),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}}, null);
         final IRecipeManager recipes162 = MineTweakerAPI.recipes;
         final IItemStack item597 = ItemBracketHandler.getItem("ExtraTrees:gate", 136);
         final HashMap<String, IData> hashMap597 = new HashMap<String, IData>();
         hashMap597.put("meta", ExpandInt.toData(136));
-        recipes162.addShaped(item597.withTag(ExpandAnyDict.asData(hashMap597)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}}, null);
+        recipes162.addShaped(item597.withTag(ExpandAnyDict.asData(hashMap597)).amount(4), new IIngredient[][]{{ore4,
+                ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 8)}, {ItemBracketHandler.getItem("Forestry:planks", 8),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 8)}}, null);
         final IRecipeManager recipes163 = MineTweakerAPI.recipes;
         final IItemStack item598 = ItemBracketHandler.getItem("ExtraTrees:gate", 137);
         final HashMap<String, IData> hashMap598 = new HashMap<String, IData>();
         hashMap598.put("meta", ExpandInt.toData(137));
-        recipes163.addShaped(item598.withTag(ExpandAnyDict.asData(hashMap598)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}}, null);
+        recipes163.addShaped(item598.withTag(ExpandAnyDict.asData(hashMap598)), new IIngredient[][]{{ore2, null,
+ore2}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 9)}, {ItemBracketHandler.getItem("Forestry:planks", 9),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}}, null);
         final IRecipeManager recipes164 = MineTweakerAPI.recipes;
         final IItemStack item599 = ItemBracketHandler.getItem("ExtraTrees:gate", 137);
         final HashMap<String, IData> hashMap599 = new HashMap<String, IData>();
         hashMap599.put("meta", ExpandInt.toData(137));
-        recipes164.addShaped(item599.withTag(ExpandAnyDict.asData(hashMap599)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}}, null);
+        recipes164.addShaped(item599.withTag(ExpandAnyDict.asData(hashMap599)).amount(2), new IIngredient[][]{{ore3,
+ ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 9)}, {ItemBracketHandler.getItem("Forestry:planks", 9),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}}, null);
         final IRecipeManager recipes165 = MineTweakerAPI.recipes;
         final IItemStack item600 = ItemBracketHandler.getItem("ExtraTrees:gate", 137);
         final HashMap<String, IData> hashMap600 = new HashMap<String, IData>();
         hashMap600.put("meta", ExpandInt.toData(137));
-        recipes165.addShaped(item600.withTag(ExpandAnyDict.asData(hashMap600)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}}, null);
+        recipes165.addShaped(item600.withTag(ExpandAnyDict.asData(hashMap600)).amount(4), new IIngredient[][]{{ore4,
+                ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("stickWood"),
+ ItemBracketHandler.getItem("Forestry:planks", 9)}, {ItemBracketHandler.getItem("Forestry:planks", 9),
+        OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 9)}}, null);
         final IRecipeManager recipes166 = MineTweakerAPI.recipes;
         final IItemStack item601 = ItemBracketHandler.getItem("ExtraTrees:gate", 138);
         final HashMap<String, IData> hashMap601 = new HashMap<String, IData>();
         hashMap601.put("meta", ExpandInt.toData(138));
-        recipes166.addShaped(item601.withTag(ExpandAnyDict.asData(hashMap601)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}}, null);
+        recipes166.addShaped(item601.withTag(ExpandAnyDict.asData(hashMap601)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 10)}, {ItemBracketHandler.getItem("Forestry:planks", 10),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}}, null);
         final IRecipeManager recipes167 = MineTweakerAPI.recipes;
         final IItemStack item602 = ItemBracketHandler.getItem("ExtraTrees:gate", 138);
         final HashMap<String, IData> hashMap602 = new HashMap<String, IData>();
         hashMap602.put("meta", ExpandInt.toData(138));
-        recipes167.addShaped(item602.withTag(ExpandAnyDict.asData(hashMap602)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}}, null);
+        recipes167.addShaped(item602.withTag(ExpandAnyDict.asData(hashMap602)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 10)}, {ItemBracketHandler.getItem("Forestry:planks", 10),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}}, null);
         final IRecipeManager recipes168 = MineTweakerAPI.recipes;
         final IItemStack item603 = ItemBracketHandler.getItem("ExtraTrees:gate", 138);
         final HashMap<String, IData> hashMap603 = new HashMap<String, IData>();
         hashMap603.put("meta", ExpandInt.toData(138));
-        recipes168.addShaped(item603.withTag(ExpandAnyDict.asData(hashMap603)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}}, null);
+        recipes168.addShaped(item603.withTag(ExpandAnyDict.asData(hashMap603)).amount(4), new IIngredient[][]{{ore4,
+ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 10)}, {ItemBracketHandler.getItem("Forestry:planks", 10),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 10)}}, null);
         final IRecipeManager recipes169 = MineTweakerAPI.recipes;
         final IItemStack item604 = ItemBracketHandler.getItem("ExtraTrees:gate", 139);
         final HashMap<String, IData> hashMap604 = new HashMap<String, IData>();
         hashMap604.put("meta", ExpandInt.toData(139));
-        recipes169.addShaped(item604.withTag(ExpandAnyDict.asData(hashMap604)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}}, null);
+        recipes169.addShaped(item604.withTag(ExpandAnyDict.asData(hashMap604)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 11)}, {ItemBracketHandler.getItem("Forestry:planks", 11),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}}, null);
         final IRecipeManager recipes170 = MineTweakerAPI.recipes;
         final IItemStack item605 = ItemBracketHandler.getItem("ExtraTrees:gate", 139);
         final HashMap<String, IData> hashMap605 = new HashMap<String, IData>();
         hashMap605.put("meta", ExpandInt.toData(139));
-        recipes170.addShaped(item605.withTag(ExpandAnyDict.asData(hashMap605)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}}, null);
+        recipes170.addShaped(item605.withTag(ExpandAnyDict.asData(hashMap605)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 11)}, {ItemBracketHandler.getItem("Forestry:planks", 11),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}}, null);
         final IRecipeManager recipes171 = MineTweakerAPI.recipes;
         final IItemStack item606 = ItemBracketHandler.getItem("ExtraTrees:gate", 139);
         final HashMap<String, IData> hashMap606 = new HashMap<String, IData>();
         hashMap606.put("meta", ExpandInt.toData(139));
-        recipes171.addShaped(item606.withTag(ExpandAnyDict.asData(hashMap606)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}}, null);
+        recipes171.addShaped(item606.withTag(ExpandAnyDict.asData(hashMap606)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 11)}, {ItemBracketHandler.getItem("Forestry:planks", 11),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 11)}}, null);
         final IRecipeManager recipes172 = MineTweakerAPI.recipes;
         final IItemStack item607 = ItemBracketHandler.getItem("ExtraTrees:gate", 140);
         final HashMap<String, IData> hashMap607 = new HashMap<String, IData>();
         hashMap607.put("meta", ExpandInt.toData(140));
-        recipes172.addShaped(item607.withTag(ExpandAnyDict.asData(hashMap607)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}}, null);
+        recipes172.addShaped(item607.withTag(ExpandAnyDict.asData(hashMap607)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 12)}, {ItemBracketHandler.getItem("Forestry:planks", 12),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}}, null);
         final IRecipeManager recipes173 = MineTweakerAPI.recipes;
         final IItemStack item608 = ItemBracketHandler.getItem("ExtraTrees:gate", 140);
         final HashMap<String, IData> hashMap608 = new HashMap<String, IData>();
         hashMap608.put("meta", ExpandInt.toData(140));
-        recipes173.addShaped(item608.withTag(ExpandAnyDict.asData(hashMap608)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}}, null);
+        recipes173.addShaped(item608.withTag(ExpandAnyDict.asData(hashMap608)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 12)}, {ItemBracketHandler.getItem("Forestry:planks", 12),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}}, null);
         final IRecipeManager recipes174 = MineTweakerAPI.recipes;
         final IItemStack item609 = ItemBracketHandler.getItem("ExtraTrees:gate", 140);
         final HashMap<String, IData> hashMap609 = new HashMap<String, IData>();
         hashMap609.put("meta", ExpandInt.toData(140));
-        recipes174.addShaped(item609.withTag(ExpandAnyDict.asData(hashMap609)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}}, null);
+        recipes174.addShaped(item609.withTag(ExpandAnyDict.asData(hashMap609)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("stickWood"),
+                ItemBracketHandler.getItem("Forestry:planks", 12)}, {ItemBracketHandler.getItem("Forestry:planks", 12),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 12)}}, null);
         final IRecipeManager recipes175 = MineTweakerAPI.recipes;
         final IItemStack item610 = ItemBracketHandler.getItem("ExtraTrees:gate", 141);
         final HashMap<String, IData> hashMap610 = new HashMap<String, IData>();
         hashMap610.put("meta", ExpandInt.toData(141));
-        recipes175.addShaped(item610.withTag(ExpandAnyDict.asData(hashMap610)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}}, null);
+        recipes175.addShaped(item610.withTag(ExpandAnyDict.asData(hashMap610)), new IIngredient[][]{{ore2, null,
+                ore2}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 13)}, {ItemBracketHandler.getItem("Forestry:planks", 13),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}}, null);
         final IRecipeManager recipes176 = MineTweakerAPI.recipes;
         final IItemStack item611 = ItemBracketHandler.getItem("ExtraTrees:gate", 141);
         final HashMap<String, IData> hashMap611 = new HashMap<String, IData>();
         hashMap611.put("meta", ExpandInt.toData(141));
-        recipes176.addShaped(item611.withTag(ExpandAnyDict.asData(hashMap611)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}}, null);
+        recipes176.addShaped(item611.withTag(ExpandAnyDict.asData(hashMap611)).amount(2), new IIngredient[][]{{ore3,
+ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 13)}, {ItemBracketHandler.getItem("Forestry:planks", 13),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}}, null);
         final IRecipeManager recipes177 = MineTweakerAPI.recipes;
         final IItemStack item612 = ItemBracketHandler.getItem("ExtraTrees:gate", 141);
         final HashMap<String, IData> hashMap612 = new HashMap<String, IData>();
         hashMap612.put("meta", ExpandInt.toData(141));
-        recipes177.addShaped(item612.withTag(ExpandAnyDict.asData(hashMap612)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}}, null);
+        recipes177.addShaped(item612.withTag(ExpandAnyDict.asData(hashMap612)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 13)}, {ItemBracketHandler.getItem("Forestry:planks", 13),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 13)}}, null);
         final IRecipeManager recipes178 = MineTweakerAPI.recipes;
         final IItemStack item613 = ItemBracketHandler.getItem("ExtraTrees:gate", 142);
         final HashMap<String, IData> hashMap613 = new HashMap<String, IData>();
         hashMap613.put("meta", ExpandInt.toData(142));
-        recipes178.addShaped(item613.withTag(ExpandAnyDict.asData(hashMap613)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}}, null);
+        recipes178.addShaped(item613.withTag(ExpandAnyDict.asData(hashMap613)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 14)}, {ItemBracketHandler.getItem("Forestry:planks", 14),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}}, null);
         final IRecipeManager recipes179 = MineTweakerAPI.recipes;
         final IItemStack item614 = ItemBracketHandler.getItem("ExtraTrees:gate", 142);
         final HashMap<String, IData> hashMap614 = new HashMap<String, IData>();
         hashMap614.put("meta", ExpandInt.toData(142));
-        recipes179.addShaped(item614.withTag(ExpandAnyDict.asData(hashMap614)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}}, null);
+        recipes179.addShaped(item614.withTag(ExpandAnyDict.asData(hashMap614)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 14)}, {ItemBracketHandler.getItem("Forestry:planks", 14),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}}, null);
         final IRecipeManager recipes180 = MineTweakerAPI.recipes;
         final IItemStack item615 = ItemBracketHandler.getItem("ExtraTrees:gate", 142);
         final HashMap<String, IData> hashMap615 = new HashMap<String, IData>();
         hashMap615.put("meta", ExpandInt.toData(142));
-        recipes180.addShaped(item615.withTag(ExpandAnyDict.asData(hashMap615)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}}, null);
+        recipes180.addShaped(item615.withTag(ExpandAnyDict.asData(hashMap615)).amount(4), new IIngredient[][]{{ore4,
+                ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("stickWood"),
+ ItemBracketHandler.getItem("Forestry:planks", 14)}, {ItemBracketHandler.getItem("Forestry:planks", 14),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 14)}}, null);
         final IRecipeManager recipes181 = MineTweakerAPI.recipes;
         final IItemStack item616 = ItemBracketHandler.getItem("ExtraTrees:gate", 143);
         final HashMap<String, IData> hashMap616 = new HashMap<String, IData>();
         hashMap616.put("meta", ExpandInt.toData(143));
-        recipes181.addShaped(item616.withTag(ExpandAnyDict.asData(hashMap616)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}}, null);
+        recipes181.addShaped(item616.withTag(ExpandAnyDict.asData(hashMap616)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"),
+        ItemBracketHandler.getItem("Forestry:planks", 15)}, {ItemBracketHandler.getItem("Forestry:planks", 15),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}}, null);
         final IRecipeManager recipes182 = MineTweakerAPI.recipes;
         final IItemStack item617 = ItemBracketHandler.getItem("ExtraTrees:gate", 143);
         final HashMap<String, IData> hashMap617 = new HashMap<String, IData>();
         hashMap617.put("meta", ExpandInt.toData(143));
-        recipes182.addShaped(item617.withTag(ExpandAnyDict.asData(hashMap617)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}}, null);
+        recipes182.addShaped(item617.withTag(ExpandAnyDict.asData(hashMap617)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 15)}, {ItemBracketHandler.getItem("Forestry:planks", 15),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}}, null);
         final IRecipeManager recipes183 = MineTweakerAPI.recipes;
         final IItemStack item618 = ItemBracketHandler.getItem("ExtraTrees:gate", 143);
         final HashMap<String, IData> hashMap618 = new HashMap<String, IData>();
         hashMap618.put("meta", ExpandInt.toData(143));
-        recipes183.addShaped(item618.withTag(ExpandAnyDict.asData(hashMap618)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}}, null);
+        recipes183.addShaped(item618.withTag(ExpandAnyDict.asData(hashMap618)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("stickWood"),
+        ItemBracketHandler.getItem("Forestry:planks", 15)}, {ItemBracketHandler.getItem("Forestry:planks", 15),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 15)}}, null);
         final IRecipeManager recipes184 = MineTweakerAPI.recipes;
         final IItemStack item619 = ItemBracketHandler.getItem("ExtraTrees:gate", 144);
         final HashMap<String, IData> hashMap619 = new HashMap<String, IData>();
         hashMap619.put("meta", ExpandInt.toData(144));
-        recipes184.addShaped(item619.withTag(ExpandAnyDict.asData(hashMap619)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}}, null);
+        recipes184.addShaped(item619.withTag(ExpandAnyDict.asData(hashMap619)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 16)}, {ItemBracketHandler.getItem("Forestry:planks", 16),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}}, null);
         final IRecipeManager recipes185 = MineTweakerAPI.recipes;
         final IItemStack item620 = ItemBracketHandler.getItem("ExtraTrees:gate", 144);
         final HashMap<String, IData> hashMap620 = new HashMap<String, IData>();
         hashMap620.put("meta", ExpandInt.toData(144));
-        recipes185.addShaped(item620.withTag(ExpandAnyDict.asData(hashMap620)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}}, null);
+        recipes185.addShaped(item620.withTag(ExpandAnyDict.asData(hashMap620)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"),
+ ItemBracketHandler.getItem("Forestry:planks", 16)}, {ItemBracketHandler.getItem("Forestry:planks", 16),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}}, null);
         final IRecipeManager recipes186 = MineTweakerAPI.recipes;
         final IItemStack item621 = ItemBracketHandler.getItem("ExtraTrees:gate", 144);
         final HashMap<String, IData> hashMap621 = new HashMap<String, IData>();
         hashMap621.put("meta", ExpandInt.toData(144));
-        recipes186.addShaped(item621.withTag(ExpandAnyDict.asData(hashMap621)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}}, null);
+        recipes186.addShaped(item621.withTag(ExpandAnyDict.asData(hashMap621)).amount(4), new IIngredient[][]{{ore4,
+ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("stickWood"),
+ ItemBracketHandler.getItem("Forestry:planks", 16)}, {ItemBracketHandler.getItem("Forestry:planks", 16),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 16)}}, null);
         final IRecipeManager recipes187 = MineTweakerAPI.recipes;
         final IItemStack item622 = ItemBracketHandler.getItem("ExtraTrees:gate", 145);
         final HashMap<String, IData> hashMap622 = new HashMap<String, IData>();
         hashMap622.put("meta", ExpandInt.toData(145));
-        recipes187.addShaped(item622.withTag(ExpandAnyDict.asData(hashMap622)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}}, null);
+        recipes187.addShaped(item622.withTag(ExpandAnyDict.asData(hashMap622)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"),
+                ItemBracketHandler.getItem("Forestry:planks", 17)}, {ItemBracketHandler.getItem("Forestry:planks", 17),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}}, null);
         final IRecipeManager recipes188 = MineTweakerAPI.recipes;
         final IItemStack item623 = ItemBracketHandler.getItem("ExtraTrees:gate", 145);
         final HashMap<String, IData> hashMap623 = new HashMap<String, IData>();
         hashMap623.put("meta", ExpandInt.toData(145));
-        recipes188.addShaped(item623.withTag(ExpandAnyDict.asData(hashMap623)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}}, null);
+        recipes188.addShaped(item623.withTag(ExpandAnyDict.asData(hashMap623)).amount(2), new IIngredient[][]{{ore3,
+                ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 17)}, {ItemBracketHandler.getItem("Forestry:planks", 17),
+ OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}}, null);
         final IRecipeManager recipes189 = MineTweakerAPI.recipes;
         final IItemStack item624 = ItemBracketHandler.getItem("ExtraTrees:gate", 145);
         final HashMap<String, IData> hashMap624 = new HashMap<String, IData>();
         hashMap624.put("meta", ExpandInt.toData(145));
-        recipes189.addShaped(item624.withTag(ExpandAnyDict.asData(hashMap624)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}}, null);
+        recipes189.addShaped(item624.withTag(ExpandAnyDict.asData(hashMap624)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("stickWood"),
+        ItemBracketHandler.getItem("Forestry:planks", 17)}, {ItemBracketHandler.getItem("Forestry:planks", 17),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 17)}}, null);
         final IRecipeManager recipes190 = MineTweakerAPI.recipes;
         final IItemStack item625 = ItemBracketHandler.getItem("ExtraTrees:gate", 146);
         final HashMap<String, IData> hashMap625 = new HashMap<String, IData>();
         hashMap625.put("meta", ExpandInt.toData(146));
-        recipes190.addShaped(item625.withTag(ExpandAnyDict.asData(hashMap625)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}}, null);
+        recipes190.addShaped(item625.withTag(ExpandAnyDict.asData(hashMap625)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 18)}, {ItemBracketHandler.getItem("Forestry:planks", 18),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}}, null);
         final IRecipeManager recipes191 = MineTweakerAPI.recipes;
         final IItemStack item626 = ItemBracketHandler.getItem("ExtraTrees:gate", 146);
         final HashMap<String, IData> hashMap626 = new HashMap<String, IData>();
         hashMap626.put("meta", ExpandInt.toData(146));
-        recipes191.addShaped(item626.withTag(ExpandAnyDict.asData(hashMap626)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}}, null);
+        recipes191.addShaped(item626.withTag(ExpandAnyDict.asData(hashMap626)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 18)}, {ItemBracketHandler.getItem("Forestry:planks", 18),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}}, null);
         final IRecipeManager recipes192 = MineTweakerAPI.recipes;
         final IItemStack item627 = ItemBracketHandler.getItem("ExtraTrees:gate", 146);
         final HashMap<String, IData> hashMap627 = new HashMap<String, IData>();
         hashMap627.put("meta", ExpandInt.toData(146));
-        recipes192.addShaped(item627.withTag(ExpandAnyDict.asData(hashMap627)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}}, null);
+        recipes192.addShaped(item627.withTag(ExpandAnyDict.asData(hashMap627)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 18)}, {ItemBracketHandler.getItem("Forestry:planks", 18),
+                OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 18)}}, null);
         final IRecipeManager recipes193 = MineTweakerAPI.recipes;
         final IItemStack item628 = ItemBracketHandler.getItem("ExtraTrees:gate", 147);
         final HashMap<String, IData> hashMap628 = new HashMap<String, IData>();
         hashMap628.put("meta", ExpandInt.toData(147));
-        recipes193.addShaped(item628.withTag(ExpandAnyDict.asData(hashMap628)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}}, null);
+        recipes193.addShaped(item628.withTag(ExpandAnyDict.asData(hashMap628)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 19)}, {ItemBracketHandler.getItem("Forestry:planks", 19),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}}, null);
         final IRecipeManager recipes194 = MineTweakerAPI.recipes;
         final IItemStack item629 = ItemBracketHandler.getItem("ExtraTrees:gate", 147);
         final HashMap<String, IData> hashMap629 = new HashMap<String, IData>();
         hashMap629.put("meta", ExpandInt.toData(147));
-        recipes194.addShaped(item629.withTag(ExpandAnyDict.asData(hashMap629)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}}, null);
+        recipes194.addShaped(item629.withTag(ExpandAnyDict.asData(hashMap629)).amount(2), new IIngredient[][]{{ore3,
+ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 19)}, {ItemBracketHandler.getItem("Forestry:planks", 19),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}}, null);
         final IRecipeManager recipes195 = MineTweakerAPI.recipes;
         final IItemStack item630 = ItemBracketHandler.getItem("ExtraTrees:gate", 147);
         final HashMap<String, IData> hashMap630 = new HashMap<String, IData>();
         hashMap630.put("meta", ExpandInt.toData(147));
-        recipes195.addShaped(item630.withTag(ExpandAnyDict.asData(hashMap630)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}}, null);
+        recipes195.addShaped(item630.withTag(ExpandAnyDict.asData(hashMap630)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("stickWood"),
+        ItemBracketHandler.getItem("Forestry:planks", 19)}, {ItemBracketHandler.getItem("Forestry:planks", 19),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 19)}}, null);
         final IRecipeManager recipes196 = MineTweakerAPI.recipes;
         final IItemStack item631 = ItemBracketHandler.getItem("ExtraTrees:gate", 148);
         final HashMap<String, IData> hashMap631 = new HashMap<String, IData>();
         hashMap631.put("meta", ExpandInt.toData(148));
-        recipes196.addShaped(item631.withTag(ExpandAnyDict.asData(hashMap631)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}}, null);
+        recipes196.addShaped(item631.withTag(ExpandAnyDict.asData(hashMap631)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 20)}, {ItemBracketHandler.getItem("Forestry:planks", 20),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}}, null);
         final IRecipeManager recipes197 = MineTweakerAPI.recipes;
         final IItemStack item632 = ItemBracketHandler.getItem("ExtraTrees:gate", 148);
         final HashMap<String, IData> hashMap632 = new HashMap<String, IData>();
         hashMap632.put("meta", ExpandInt.toData(148));
-        recipes197.addShaped(item632.withTag(ExpandAnyDict.asData(hashMap632)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}}, null);
+        recipes197.addShaped(item632.withTag(ExpandAnyDict.asData(hashMap632)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 20)}, {ItemBracketHandler.getItem("Forestry:planks", 20),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}}, null);
         final IRecipeManager recipes198 = MineTweakerAPI.recipes;
         final IItemStack item633 = ItemBracketHandler.getItem("ExtraTrees:gate", 148);
         final HashMap<String, IData> hashMap633 = new HashMap<String, IData>();
         hashMap633.put("meta", ExpandInt.toData(148));
-        recipes198.addShaped(item633.withTag(ExpandAnyDict.asData(hashMap633)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}}, null);
+        recipes198.addShaped(item633.withTag(ExpandAnyDict.asData(hashMap633)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 20)}, {ItemBracketHandler.getItem("Forestry:planks", 20),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 20)}}, null);
         final IRecipeManager recipes199 = MineTweakerAPI.recipes;
         final IItemStack item634 = ItemBracketHandler.getItem("ExtraTrees:gate", 149);
         final HashMap<String, IData> hashMap634 = new HashMap<String, IData>();
         hashMap634.put("meta", ExpandInt.toData(149));
-        recipes199.addShaped(item634.withTag(ExpandAnyDict.asData(hashMap634)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}}, null);
+        recipes199.addShaped(item634.withTag(ExpandAnyDict.asData(hashMap634)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 21)}, {ItemBracketHandler.getItem("Forestry:planks", 21),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}}, null);
         final IRecipeManager recipes200 = MineTweakerAPI.recipes;
         final IItemStack item635 = ItemBracketHandler.getItem("ExtraTrees:gate", 149);
         final HashMap<String, IData> hashMap635 = new HashMap<String, IData>();
         hashMap635.put("meta", ExpandInt.toData(149));
-        recipes200.addShaped(item635.withTag(ExpandAnyDict.asData(hashMap635)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}}, null);
+        recipes200.addShaped(item635.withTag(ExpandAnyDict.asData(hashMap635)).amount(2), new IIngredient[][]{{ore3,
+ ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 21)}, {ItemBracketHandler.getItem("Forestry:planks", 21),
+ OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}}, null);
         final IRecipeManager recipes201 = MineTweakerAPI.recipes;
         final IItemStack item636 = ItemBracketHandler.getItem("ExtraTrees:gate", 149);
         final HashMap<String, IData> hashMap636 = new HashMap<String, IData>();
         hashMap636.put("meta", ExpandInt.toData(149));
-        recipes201.addShaped(item636.withTag(ExpandAnyDict.asData(hashMap636)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}}, null);
+        recipes201.addShaped(item636.withTag(ExpandAnyDict.asData(hashMap636)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 21)}, {ItemBracketHandler.getItem("Forestry:planks", 21),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 21)}}, null);
         final IRecipeManager recipes202 = MineTweakerAPI.recipes;
         final IItemStack item637 = ItemBracketHandler.getItem("ExtraTrees:gate", 150);
         final HashMap<String, IData> hashMap637 = new HashMap<String, IData>();
         hashMap637.put("meta", ExpandInt.toData(150));
-        recipes202.addShaped(item637.withTag(ExpandAnyDict.asData(hashMap637)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}}, null);
+        recipes202.addShaped(item637.withTag(ExpandAnyDict.asData(hashMap637)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"),
+        ItemBracketHandler.getItem("Forestry:planks", 22)}, {ItemBracketHandler.getItem("Forestry:planks", 22),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}}, null);
         final IRecipeManager recipes203 = MineTweakerAPI.recipes;
         final IItemStack item638 = ItemBracketHandler.getItem("ExtraTrees:gate", 150);
         final HashMap<String, IData> hashMap638 = new HashMap<String, IData>();
         hashMap638.put("meta", ExpandInt.toData(150));
-        recipes203.addShaped(item638.withTag(ExpandAnyDict.asData(hashMap638)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}}, null);
+        recipes203.addShaped(item638.withTag(ExpandAnyDict.asData(hashMap638)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 22)}, {ItemBracketHandler.getItem("Forestry:planks", 22),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}}, null);
         final IRecipeManager recipes204 = MineTweakerAPI.recipes;
         final IItemStack item639 = ItemBracketHandler.getItem("ExtraTrees:gate", 150);
         final HashMap<String, IData> hashMap639 = new HashMap<String, IData>();
         hashMap639.put("meta", ExpandInt.toData(150));
-        recipes204.addShaped(item639.withTag(ExpandAnyDict.asData(hashMap639)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}}, null);
+        recipes204.addShaped(item639.withTag(ExpandAnyDict.asData(hashMap639)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 22)}, {ItemBracketHandler.getItem("Forestry:planks", 22),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 22)}}, null);
         final IRecipeManager recipes205 = MineTweakerAPI.recipes;
         final IItemStack item640 = ItemBracketHandler.getItem("ExtraTrees:gate", 151);
         final HashMap<String, IData> hashMap640 = new HashMap<String, IData>();
         hashMap640.put("meta", ExpandInt.toData(151));
-        recipes205.addShaped(item640.withTag(ExpandAnyDict.asData(hashMap640)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}}, null);
+        recipes205.addShaped(item640.withTag(ExpandAnyDict.asData(hashMap640)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 23)}, {ItemBracketHandler.getItem("Forestry:planks", 23),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}}, null);
         final IRecipeManager recipes206 = MineTweakerAPI.recipes;
         final IItemStack item641 = ItemBracketHandler.getItem("ExtraTrees:gate", 151);
         final HashMap<String, IData> hashMap641 = new HashMap<String, IData>();
         hashMap641.put("meta", ExpandInt.toData(151));
-        recipes206.addShaped(item641.withTag(ExpandAnyDict.asData(hashMap641)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}}, null);
+        recipes206.addShaped(item641.withTag(ExpandAnyDict.asData(hashMap641)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 23)}, {ItemBracketHandler.getItem("Forestry:planks", 23),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}}, null);
         final IRecipeManager recipes207 = MineTweakerAPI.recipes;
         final IItemStack item642 = ItemBracketHandler.getItem("ExtraTrees:gate", 151);
         final HashMap<String, IData> hashMap642 = new HashMap<String, IData>();
         hashMap642.put("meta", ExpandInt.toData(151));
-        recipes207.addShaped(item642.withTag(ExpandAnyDict.asData(hashMap642)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}}, null);
+        recipes207.addShaped(item642.withTag(ExpandAnyDict.asData(hashMap642)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 23)}, {ItemBracketHandler.getItem("Forestry:planks", 23),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 23)}}, null);
         final IRecipeManager recipes208 = MineTweakerAPI.recipes;
         final IItemStack item643 = ItemBracketHandler.getItem("ExtraTrees:gate", 152);
         final HashMap<String, IData> hashMap643 = new HashMap<String, IData>();
         hashMap643.put("meta", ExpandInt.toData(152));
-        recipes208.addShaped(item643.withTag(ExpandAnyDict.asData(hashMap643)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}}, null);
+        recipes208.addShaped(item643.withTag(ExpandAnyDict.asData(hashMap643)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 24)}, {ItemBracketHandler.getItem("Forestry:planks", 24),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}}, null);
         final IRecipeManager recipes209 = MineTweakerAPI.recipes;
         final IItemStack item644 = ItemBracketHandler.getItem("ExtraTrees:gate", 152);
         final HashMap<String, IData> hashMap644 = new HashMap<String, IData>();
         hashMap644.put("meta", ExpandInt.toData(152));
-        recipes209.addShaped(item644.withTag(ExpandAnyDict.asData(hashMap644)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}}, null);
+        recipes209.addShaped(item644.withTag(ExpandAnyDict.asData(hashMap644)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 24)}, {ItemBracketHandler.getItem("Forestry:planks", 24),
+ OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}}, null);
         final IRecipeManager recipes210 = MineTweakerAPI.recipes;
         final IItemStack item645 = ItemBracketHandler.getItem("ExtraTrees:gate", 152);
         final HashMap<String, IData> hashMap645 = new HashMap<String, IData>();
         hashMap645.put("meta", ExpandInt.toData(152));
-        recipes210.addShaped(item645.withTag(ExpandAnyDict.asData(hashMap645)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}}, null);
+        recipes210.addShaped(item645.withTag(ExpandAnyDict.asData(hashMap645)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 24), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 24)}, {ItemBracketHandler.getItem("Forestry:planks", 24),
+                OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 24)}}, null);
         final IRecipeManager recipes211 = MineTweakerAPI.recipes;
         final IItemStack item646 = ItemBracketHandler.getItem("ExtraTrees:gate", 153);
         final HashMap<String, IData> hashMap646 = new HashMap<String, IData>();
         hashMap646.put("meta", ExpandInt.toData(153));
-        recipes211.addShaped(item646.withTag(ExpandAnyDict.asData(hashMap646)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}}, null);
+        recipes211.addShaped(item646.withTag(ExpandAnyDict.asData(hashMap646)), new IIngredient[][]{{ore2, null,
+                ore2}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"),
+ ItemBracketHandler.getItem("Forestry:planks", 25)}, {ItemBracketHandler.getItem("Forestry:planks", 25),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}}, null);
         final IRecipeManager recipes212 = MineTweakerAPI.recipes;
         final IItemStack item647 = ItemBracketHandler.getItem("ExtraTrees:gate", 153);
         final HashMap<String, IData> hashMap647 = new HashMap<String, IData>();
         hashMap647.put("meta", ExpandInt.toData(153));
-        recipes212.addShaped(item647.withTag(ExpandAnyDict.asData(hashMap647)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}}, null);
+        recipes212.addShaped(item647.withTag(ExpandAnyDict.asData(hashMap647)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 25)}, {ItemBracketHandler.getItem("Forestry:planks", 25),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}}, null);
         final IRecipeManager recipes213 = MineTweakerAPI.recipes;
         final IItemStack item648 = ItemBracketHandler.getItem("ExtraTrees:gate", 153);
         final HashMap<String, IData> hashMap648 = new HashMap<String, IData>();
         hashMap648.put("meta", ExpandInt.toData(153));
-        recipes213.addShaped(item648.withTag(ExpandAnyDict.asData(hashMap648)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}}, null);
+        recipes213.addShaped(item648.withTag(ExpandAnyDict.asData(hashMap648)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 25), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 25)}, {ItemBracketHandler.getItem("Forestry:planks", 25),
+ OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 25)}}, null);
         final IRecipeManager recipes214 = MineTweakerAPI.recipes;
         final IItemStack item649 = ItemBracketHandler.getItem("ExtraTrees:gate", 154);
         final HashMap<String, IData> hashMap649 = new HashMap<String, IData>();
         hashMap649.put("meta", ExpandInt.toData(154));
-        recipes214.addShaped(item649.withTag(ExpandAnyDict.asData(hashMap649)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}}, null);
+        recipes214.addShaped(item649.withTag(ExpandAnyDict.asData(hashMap649)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 26)}, {ItemBracketHandler.getItem("Forestry:planks", 26),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}}, null);
         final IRecipeManager recipes215 = MineTweakerAPI.recipes;
         final IItemStack item650 = ItemBracketHandler.getItem("ExtraTrees:gate", 154);
         final HashMap<String, IData> hashMap650 = new HashMap<String, IData>();
         hashMap650.put("meta", ExpandInt.toData(154));
-        recipes215.addShaped(item650.withTag(ExpandAnyDict.asData(hashMap650)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}}, null);
+        recipes215.addShaped(item650.withTag(ExpandAnyDict.asData(hashMap650)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 26)}, {ItemBracketHandler.getItem("Forestry:planks", 26),
+OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}}, null);
         final IRecipeManager recipes216 = MineTweakerAPI.recipes;
         final IItemStack item651 = ItemBracketHandler.getItem("ExtraTrees:gate", 154);
         final HashMap<String, IData> hashMap651 = new HashMap<String, IData>();
         hashMap651.put("meta", ExpandInt.toData(154));
-        recipes216.addShaped(item651.withTag(ExpandAnyDict.asData(hashMap651)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}}, null);
+        recipes216.addShaped(item651.withTag(ExpandAnyDict.asData(hashMap651)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 26), OreBracketHandler.getOre("stickWood"),
+ItemBracketHandler.getItem("Forestry:planks", 26)}, {ItemBracketHandler.getItem("Forestry:planks", 26),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 26)}}, null);
         final IRecipeManager recipes217 = MineTweakerAPI.recipes;
         final IItemStack item652 = ItemBracketHandler.getItem("ExtraTrees:gate", 155);
         final HashMap<String, IData> hashMap652 = new HashMap<String, IData>();
         hashMap652.put("meta", ExpandInt.toData(155));
-        recipes217.addShaped(item652.withTag(ExpandAnyDict.asData(hashMap652)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}}, null);
+        recipes217.addShaped(item652.withTag(ExpandAnyDict.asData(hashMap652)), new IIngredient[][]{{ore2, null,
+ore2}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 27)}, {ItemBracketHandler.getItem("Forestry:planks", 27),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}}, null);
         final IRecipeManager recipes218 = MineTweakerAPI.recipes;
         final IItemStack item653 = ItemBracketHandler.getItem("ExtraTrees:gate", 155);
         final HashMap<String, IData> hashMap653 = new HashMap<String, IData>();
         hashMap653.put("meta", ExpandInt.toData(155));
-        recipes218.addShaped(item653.withTag(ExpandAnyDict.asData(hashMap653)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}}, null);
+        recipes218.addShaped(item653.withTag(ExpandAnyDict.asData(hashMap653)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"),
+ ItemBracketHandler.getItem("Forestry:planks", 27)}, {ItemBracketHandler.getItem("Forestry:planks", 27),
+ OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}}, null);
         final IRecipeManager recipes219 = MineTweakerAPI.recipes;
         final IItemStack item654 = ItemBracketHandler.getItem("ExtraTrees:gate", 155);
         final HashMap<String, IData> hashMap654 = new HashMap<String, IData>();
         hashMap654.put("meta", ExpandInt.toData(155));
-        recipes219.addShaped(item654.withTag(ExpandAnyDict.asData(hashMap654)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}}, null);
+        recipes219.addShaped(item654.withTag(ExpandAnyDict.asData(hashMap654)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 27), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 27)}, {ItemBracketHandler.getItem("Forestry:planks", 27),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 27)}}, null);
         final IRecipeManager recipes220 = MineTweakerAPI.recipes;
         final IItemStack item655 = ItemBracketHandler.getItem("ExtraTrees:gate", 156);
         final HashMap<String, IData> hashMap655 = new HashMap<String, IData>();
         hashMap655.put("meta", ExpandInt.toData(156));
-        recipes220.addShaped(item655.withTag(ExpandAnyDict.asData(hashMap655)), new IIngredient[][]{{ore2, null, ore2}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}}, null);
+        recipes220.addShaped(item655.withTag(ExpandAnyDict.asData(hashMap655)), new IIngredient[][]{{ore2, null,
+         ore2}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 28)}, {ItemBracketHandler.getItem("Forestry:planks", 28),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}}, null);
         final IRecipeManager recipes221 = MineTweakerAPI.recipes;
         final IItemStack item656 = ItemBracketHandler.getItem("ExtraTrees:gate", 156);
         final HashMap<String, IData> hashMap656 = new HashMap<String, IData>();
         hashMap656.put("meta", ExpandInt.toData(156));
-        recipes221.addShaped(item656.withTag(ExpandAnyDict.asData(hashMap656)).amount(2), new IIngredient[][]{{ore3, ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}}, null);
+        recipes221.addShaped(item656.withTag(ExpandAnyDict.asData(hashMap656)).amount(2), new IIngredient[][]{{ore3,
+         ore, ore3}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 28)}, {ItemBracketHandler.getItem("Forestry:planks", 28),
+ OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}}, null);
         final IRecipeManager recipes222 = MineTweakerAPI.recipes;
         final IItemStack item657 = ItemBracketHandler.getItem("ExtraTrees:gate", 156);
         final HashMap<String, IData> hashMap657 = new HashMap<String, IData>();
         hashMap657.put("meta", ExpandInt.toData(156));
-        recipes222.addShaped(item657.withTag(ExpandAnyDict.asData(hashMap657)).amount(4), new IIngredient[][]{{ore4, ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}}, null);
+        recipes222.addShaped(item657.withTag(ExpandAnyDict.asData(hashMap657)).amount(4), new IIngredient[][]{{ore4,
+         ore, ore4}, {ItemBracketHandler.getItem("Forestry:planks", 28), OreBracketHandler.getOre("stickWood"),
+          ItemBracketHandler.getItem("Forestry:planks", 28)}, {ItemBracketHandler.getItem("Forestry:planks", 28),
+           OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("Forestry:planks", 28)}}, null);
         final IRecipeManager recipes223 = MineTweakerAPI.recipes;
         final IItemStack item658 = ItemBracketHandler.getItem("ExtraTrees:fence", 32);
         final HashMap<String, IData> hashMap658 = new HashMap<String, IData>();

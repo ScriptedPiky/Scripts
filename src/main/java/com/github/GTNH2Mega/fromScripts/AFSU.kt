@@ -10,9 +10,23 @@ class AFSU : Runnable {
     override fun run() {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("AFSU:ALC", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("AFSU:AFSU", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("AFSU:AFSU", 0), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("cableGt01Platinum"), OreBracketHandler.getOre("itemCasingTungstenSteel"), OreBracketHandler.getOre("cableGt01Platinum")), arrayOf(OreBracketHandler.getOre("itemCasingTungstenSteel"), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 15), OreBracketHandler.getOre("itemCasingTungstenSteel")), arrayOf(OreBracketHandler.getOre("circuitMaster"), ItemBracketHandler.getItem("AFSU:ALC", 0), OreBracketHandler.getOre("circuitMaster"))), null)
-        Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
-        Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
-        Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("AFSU:AFSU", 0),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("cableGt01Platinum"),
+                        OreBracketHandler.getOre("itemCasingTungstenSteel"),
+                        OreBracketHandler.getOre("cableGt01Platinum")),
+                        arrayOf(OreBracketHandler.getOre("itemCasingTungstenSteel"),
+                                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 15),
+                                OreBracketHandler.getOre("itemCasingTungstenSteel")),
+                        arrayOf(OreBracketHandler.getOre("circuitMaster"), ItemBracketHandler.getItem("AFSU:ALC", 0),
+                                OreBracketHandler.getOre("circuitMaster"))), null)
+        Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
+        Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
+        Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
     }
 }

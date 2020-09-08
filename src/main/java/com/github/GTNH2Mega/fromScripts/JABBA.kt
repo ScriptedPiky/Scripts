@@ -138,30 +138,91 @@ class JABBA : Runnable {
         MineTweakerAPI.recipes.remove(item28)
         MineTweakerAPI.recipes.remove(item29)
         MineTweakerAPI.recipes.remove(item30)
-        MineTweakerAPI.recipes.addShaped(item2, arrayOf(arrayOf<IIngredient>(ore, OreBracketHandler.getOre("slabWood"), ore), arrayOf(ore, item, ore), arrayOf<IIngredient>(ore, ore, ore)), null)
-        MineTweakerAPI.recipes.addShaped(item31, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("stickAnyIron"), OreBracketHandler.getOre("stickAnyIron"), OreBracketHandler.getOre("roundAnyRubber")), arrayOf<IIngredient>(OreBracketHandler.getOre("stickAnyIron"), OreBracketHandler.getOre("craftingToolWrench"), OreBracketHandler.getOre("roundAnyRubber")), arrayOf(item25, OreBracketHandler.getOre("plateSteel"), item25)), null)
-        MineTweakerAPI.recipes.addShaped(item32, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("stickDiamond"), OreBracketHandler.getOre("stickDiamond"), OreBracketHandler.getOre("roundPlastic")), arrayOf<IIngredient>(OreBracketHandler.getOre("stickDiamond"), OreBracketHandler.getOre("craftingToolWrench"), OreBracketHandler.getOre("roundPlastic")), arrayOf(item26, OreBracketHandler.getOre("plateNetherStar"), item26)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("JABBA:hammer", 0), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("ingotIron"), OreBracketHandler.getOre("plateAnyIron"), OreBracketHandler.getOre("ingotIron")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwAnyIron"), OreBracketHandler.getOre("stickAnyIron"), OreBracketHandler.getOre("screwAnyIron")), arrayOf<IIngredient>(ore27, OreBracketHandler.getOre("stickAnyIron"), ore28)), null)
-        MineTweakerAPI.recipes.addShaped(item33, arrayOf(arrayOf<IIngredient?>(ore28, OreBracketHandler.getOre("stickAnyIron"), null), arrayOf<IIngredient?>(OreBracketHandler.getOre("screwAnyIron"), OreBracketHandler.getOre("plateAnyIron"), OreBracketHandler.getOre("stickAnyIron")), arrayOf<IIngredient?>(OreBracketHandler.getOre("stickAnyIron"), OreBracketHandler.getOre("screwAnyIron"), ore27)), null)
-        MineTweakerAPI.recipes.addShaped(item10, arrayOf(arrayOf(OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), OreBracketHandler.getOre("stickWood")), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), item2, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809)), arrayOf(OreBracketHandler.getOre("stickWood"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), OreBracketHandler.getOre("stickWood"))), null)
-        MineTweakerAPI.recipes.addShaped(item11, arrayOf(arrayOf<IIngredient>(ore14, ore2, ore14), arrayOf(ore2, item2, ore2), arrayOf<IIngredient>(ore14, ore2, ore14)), null)
-        MineTweakerAPI.recipes.addShaped(item12, arrayOf(arrayOf<IIngredient>(ore15, ore3, ore15), arrayOf(ore3, item2, ore3), arrayOf<IIngredient>(ore15, ore3, ore15)), null)
-        MineTweakerAPI.recipes.addShaped(item13, arrayOf(arrayOf<IIngredient>(ore16, ore4, ore16), arrayOf(ore4, item2, ore4), arrayOf<IIngredient>(ore16, ore4, ore16)), null)
-        MineTweakerAPI.recipes.addShaped(item14, arrayOf(arrayOf<IIngredient>(ore17, ore5, ore17), arrayOf(ore5, item2, ore5), arrayOf<IIngredient>(ore17, ore5, ore17)), null)
-        MineTweakerAPI.recipes.addShaped(item15, arrayOf(arrayOf<IIngredient>(ore18, ore6, ore18), arrayOf(ore6, item2, ore6), arrayOf<IIngredient>(ore18, ore6, ore18)), null)
-        MineTweakerAPI.recipes.addShaped(item16, arrayOf(arrayOf<IIngredient>(ore19, ore7, ore19), arrayOf(ore7, item2, ore7), arrayOf<IIngredient>(ore19, ore7, ore19)), null)
-        MineTweakerAPI.recipes.addShaped(item17, arrayOf(arrayOf<IIngredient>(ore21, ore9, ore21), arrayOf(ore9, item2, ore9), arrayOf<IIngredient>(ore21, ore9, ore21)), null)
-        MineTweakerAPI.recipes.addShaped(item18, arrayOf(arrayOf<IIngredient>(ore20, ore8, ore20), arrayOf(ore8, item2, ore8), arrayOf<IIngredient>(ore20, ore8, ore20)), null)
-        MineTweakerAPI.recipes.addShaped(item19, arrayOf(arrayOf<IIngredient>(ore22, ore10, ore22), arrayOf(ore10, item2, ore10), arrayOf<IIngredient>(ore22, ore10, ore22)), null)
-        MineTweakerAPI.recipes.addShaped(item20, arrayOf(arrayOf<IIngredient>(ore23, ore11, ore23), arrayOf(ore11, item2, ore11), arrayOf<IIngredient>(ore23, ore11, ore23)), null)
-        MineTweakerAPI.recipes.addShaped(item21, arrayOf(arrayOf<IIngredient>(ore24, ore12, ore24), arrayOf(ore12, item2, ore12), arrayOf<IIngredient>(ore24, ore12, ore24)), null)
-        MineTweakerAPI.recipes.addShaped(item22, arrayOf(arrayOf<IIngredient>(ore25, ore13, ore25), arrayOf(ore13, item2, ore13), arrayOf<IIngredient>(ore25, ore13, ore25)), null)
-        MineTweakerAPI.recipes.addShaped(item23, arrayOf(arrayOf<IIngredient>(ore32, ore31, ore32), arrayOf(ore31, item2, ore31), arrayOf<IIngredient>(ore32, ore31, ore32)), null)
-        MineTweakerAPI.recipes.addShaped(item27.amount(2), arrayOf(arrayOf(ore26, item24, ore26), arrayOf<IIngredient>(item24, ItemBracketHandler.getItem("EnderStorage:enderChest", 0), item24), arrayOf(ore26, item24, ore26)), null)
-        MineTweakerAPI.recipes.addShaped(item28, arrayOf(arrayOf(ore29, item24, ore29), arrayOf<IIngredient>(item24, ItemBracketHandler.getItem("minecraft:redstone_block", 0), item24), arrayOf(ore29, item24, ore29)), null)
-        MineTweakerAPI.recipes.addShaped(item29, arrayOf(arrayOf(ore3, item24, ore3), arrayOf<IIngredient>(item24, ItemBracketHandler.getItem("minecraft:hopper", 0), item24), arrayOf(ore3, item24, ore3)), null)
-        MineTweakerAPI.recipes.addShaped(item30, arrayOf(arrayOf(ore3, item24, ore3), arrayOf<IIngredient>(item24, ItemBracketHandler.getItem("Railcraft:machine.beta", 11), item24), arrayOf(ore3, item24, ore3)), null)
-        MineTweakerAPI.recipes.addShaped(item34, arrayOf(arrayOf(ore30, item24, ore30), arrayOf(ore30, item2, ore30), arrayOf<IIngredient?>(null, ore33, null)), null)
+        MineTweakerAPI.recipes.addShaped(item2,
+                arrayOf(arrayOf<IIngredient>(ore, OreBracketHandler.getOre("slabWood"), ore), arrayOf(ore, item, ore),
+                        arrayOf<IIngredient>(ore, ore, ore)), null)
+        MineTweakerAPI.recipes.addShaped(item31, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("stickAnyIron"),
+                OreBracketHandler.getOre("stickAnyIron"), OreBracketHandler.getOre("roundAnyRubber")),
+                arrayOf<IIngredient>(OreBracketHandler.getOre("stickAnyIron"),
+                        OreBracketHandler.getOre("craftingToolWrench"), OreBracketHandler.getOre("roundAnyRubber")),
+                arrayOf(item25, OreBracketHandler.getOre("plateSteel"), item25)), null)
+        MineTweakerAPI.recipes.addShaped(item32, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("stickDiamond"),
+                OreBracketHandler.getOre("stickDiamond"), OreBracketHandler.getOre("roundPlastic")),
+                arrayOf<IIngredient>(OreBracketHandler.getOre("stickDiamond"),
+                        OreBracketHandler.getOre("craftingToolWrench"), OreBracketHandler.getOre("roundPlastic")),
+                arrayOf(item26, OreBracketHandler.getOre("plateNetherStar"), item26)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("JABBA:hammer", 0),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("ingotIron"),
+                        OreBracketHandler.getOre("plateAnyIron"), OreBracketHandler.getOre("ingotIron")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwAnyIron"),
+                                OreBracketHandler.getOre("stickAnyIron"), OreBracketHandler.getOre("screwAnyIron")),
+                        arrayOf<IIngredient>(ore27, OreBracketHandler.getOre("stickAnyIron"), ore28)), null)
+        MineTweakerAPI.recipes.addShaped(item33,
+                arrayOf(arrayOf<IIngredient?>(ore28, OreBracketHandler.getOre("stickAnyIron"), null),
+                        arrayOf<IIngredient?>(OreBracketHandler.getOre("screwAnyIron"),
+                                OreBracketHandler.getOre("plateAnyIron"), OreBracketHandler.getOre("stickAnyIron")),
+                        arrayOf<IIngredient?>(OreBracketHandler.getOre("stickAnyIron"),
+                                OreBracketHandler.getOre("screwAnyIron"), ore27)), null)
+        MineTweakerAPI.recipes.addShaped(item10, arrayOf(arrayOf(OreBracketHandler.getOre("stickWood"),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), OreBracketHandler.getOre("stickWood")),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), item2,
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809)),
+                arrayOf(OreBracketHandler.getOre("stickWood"),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809),
+                        OreBracketHandler.getOre("stickWood"))), null)
+        MineTweakerAPI.recipes.addShaped(item11,
+                arrayOf(arrayOf<IIngredient>(ore14, ore2, ore14), arrayOf(ore2, item2, ore2),
+                        arrayOf<IIngredient>(ore14, ore2, ore14)), null)
+        MineTweakerAPI.recipes.addShaped(item12,
+                arrayOf(arrayOf<IIngredient>(ore15, ore3, ore15), arrayOf(ore3, item2, ore3),
+                        arrayOf<IIngredient>(ore15, ore3, ore15)), null)
+        MineTweakerAPI.recipes.addShaped(item13,
+                arrayOf(arrayOf<IIngredient>(ore16, ore4, ore16), arrayOf(ore4, item2, ore4),
+                        arrayOf<IIngredient>(ore16, ore4, ore16)), null)
+        MineTweakerAPI.recipes.addShaped(item14,
+                arrayOf(arrayOf<IIngredient>(ore17, ore5, ore17), arrayOf(ore5, item2, ore5),
+                        arrayOf<IIngredient>(ore17, ore5, ore17)), null)
+        MineTweakerAPI.recipes.addShaped(item15,
+                arrayOf(arrayOf<IIngredient>(ore18, ore6, ore18), arrayOf(ore6, item2, ore6),
+                        arrayOf<IIngredient>(ore18, ore6, ore18)), null)
+        MineTweakerAPI.recipes.addShaped(item16,
+                arrayOf(arrayOf<IIngredient>(ore19, ore7, ore19), arrayOf(ore7, item2, ore7),
+                        arrayOf<IIngredient>(ore19, ore7, ore19)), null)
+        MineTweakerAPI.recipes.addShaped(item17,
+                arrayOf(arrayOf<IIngredient>(ore21, ore9, ore21), arrayOf(ore9, item2, ore9),
+                        arrayOf<IIngredient>(ore21, ore9, ore21)), null)
+        MineTweakerAPI.recipes.addShaped(item18,
+                arrayOf(arrayOf<IIngredient>(ore20, ore8, ore20), arrayOf(ore8, item2, ore8),
+                        arrayOf<IIngredient>(ore20, ore8, ore20)), null)
+        MineTweakerAPI.recipes.addShaped(item19,
+                arrayOf(arrayOf<IIngredient>(ore22, ore10, ore22), arrayOf(ore10, item2, ore10),
+                        arrayOf<IIngredient>(ore22, ore10, ore22)), null)
+        MineTweakerAPI.recipes.addShaped(item20,
+                arrayOf(arrayOf<IIngredient>(ore23, ore11, ore23), arrayOf(ore11, item2, ore11),
+                        arrayOf<IIngredient>(ore23, ore11, ore23)), null)
+        MineTweakerAPI.recipes.addShaped(item21,
+                arrayOf(arrayOf<IIngredient>(ore24, ore12, ore24), arrayOf(ore12, item2, ore12),
+                        arrayOf<IIngredient>(ore24, ore12, ore24)), null)
+        MineTweakerAPI.recipes.addShaped(item22,
+                arrayOf(arrayOf<IIngredient>(ore25, ore13, ore25), arrayOf(ore13, item2, ore13),
+                        arrayOf<IIngredient>(ore25, ore13, ore25)), null)
+        MineTweakerAPI.recipes.addShaped(item23,
+                arrayOf(arrayOf<IIngredient>(ore32, ore31, ore32), arrayOf(ore31, item2, ore31),
+                        arrayOf<IIngredient>(ore32, ore31, ore32)), null)
+        MineTweakerAPI.recipes.addShaped(item27.amount(2), arrayOf(arrayOf(ore26, item24, ore26),
+                arrayOf<IIngredient>(item24, ItemBracketHandler.getItem("EnderStorage:enderChest", 0), item24),
+                arrayOf(ore26, item24, ore26)), null)
+        MineTweakerAPI.recipes.addShaped(item28, arrayOf(arrayOf(ore29, item24, ore29),
+                arrayOf<IIngredient>(item24, ItemBracketHandler.getItem("minecraft:redstone_block", 0), item24),
+                arrayOf(ore29, item24, ore29)), null)
+        MineTweakerAPI.recipes.addShaped(item29, arrayOf(arrayOf(ore3, item24, ore3),
+                arrayOf<IIngredient>(item24, ItemBracketHandler.getItem("minecraft:hopper", 0), item24),
+                arrayOf(ore3, item24, ore3)), null)
+        MineTweakerAPI.recipes.addShaped(item30, arrayOf(arrayOf(ore3, item24, ore3),
+                arrayOf<IIngredient>(item24, ItemBracketHandler.getItem("Railcraft:machine.beta", 11), item24),
+                arrayOf(ore3, item24, ore3)), null)
+        MineTweakerAPI.recipes.addShaped(item34, arrayOf(arrayOf(ore30, item24, ore30), arrayOf(ore30, item2, ore30),
+                arrayOf<IIngredient?>(null, ore33, null)), null)
         Assembler.addRecipe(item2, item3.amount(8), item, 200, 16)
         Assembler.addRecipe(item2, item4.amount(8), item, 200, 16)
         Assembler.addRecipe(item2, item5.amount(8), item, 200, 16)
@@ -170,10 +231,15 @@ class JABBA : Runnable {
         Assembler.addRecipe(item2, item8.amount(8), item, 200, 16)
         Assembler.addRecipe(item2, item9.amount(8), item, 200, 16)
         Assembler.addRecipe(item34, item2, item24, 1200, 16)
-        Assembler.addRecipe(item35, item34.amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 900, 30)
-        Assembler.addRecipe(item36, item35.amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
-        Assembler.addRecipe(item37, item36.amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 400, 120)
-        Assembler.addRecipe(item38, item37.amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 200, 256)
-        Assembler.addRecipe(item39, item38.amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 150, 480)
+        Assembler.addRecipe(item35, item34.amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 900, 30)
+        Assembler.addRecipe(item36, item35.amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
+        Assembler.addRecipe(item37, item36.amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 400, 120)
+        Assembler.addRecipe(item38, item37.amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 200, 256)
+        Assembler.addRecipe(item39, item38.amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 150, 480)
     }
 }

@@ -11,13 +11,12 @@ import minetweaker.expand.ExpandInt;
 import minetweaker.mc1710.brackets.ItemBracketHandler;
 import minetweaker.mc1710.brackets.LiquidBracketHandler;
 import minetweaker.mc1710.brackets.OreBracketHandler;
-import modtweaker2.mods.forestry.handlers.Carpenter;
 
 import java.util.HashMap;
 
 public class ExtraTrees implements Runnable {
 
-    public void run2(){
+    public void run2() {
 
         final IRecipeManager recipes57 = MineTweakerAPI.recipes;
         final IItemStack item131 = ItemBracketHandler.getItem("ExtraTrees:door", 294);
@@ -2889,12 +2888,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item585 = ItemBracketHandler.getItem("ExtraTrees:door", 128);
         final HashMap<String, IData> hashMap585 = new HashMap<>();
         hashMap585.put("meta", ExpandInt.toData(128));
-        recipes200.addShaped(item585.withTag(ExpandAnyDict.asData(hashMap585)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 0), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 0), ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes200.addShaped(item585.withTag(ExpandAnyDict.asData(hashMap585)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 0), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 0), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 0),
+ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes201 = MineTweakerAPI.recipes;
         final IItemStack item586 = ItemBracketHandler.getItem("ExtraTrees:door", 128);
         final HashMap<String, IData> hashMap586 = new HashMap<>();
         hashMap586.put("meta", ExpandInt.toData(128));
-        recipes201.addShaped(item586.withTag(ExpandAnyDict.asData(hashMap586)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 0), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 0), ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes201.addShaped(item586.withTag(ExpandAnyDict.asData(hashMap586)),
+ new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 0), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 0), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 0),
+                           ItemBracketHandler.getItem("Forestry:planks", 0), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes202 = MineTweakerAPI.recipes;
         final IItemStack item587 = ItemBracketHandler.getItem("ExtraTrees:door", 384);
         final HashMap<String, IData> hashMap587 = new HashMap<>();
@@ -2951,12 +2962,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item593 = ItemBracketHandler.getItem("ExtraTrees:door", 129);
         final HashMap<String, IData> hashMap593 = new HashMap<>();
         hashMap593.put("meta", ExpandInt.toData(129));
-        recipes205.addShaped(item593.withTag(ExpandAnyDict.asData(hashMap593)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 1), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 1), ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes205.addShaped(item593.withTag(ExpandAnyDict.asData(hashMap593)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 1), ItemBracketHandler.getItem("minecraft" +
+ ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 1), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 1),
+                           ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes206 = MineTweakerAPI.recipes;
         final IItemStack item594 = ItemBracketHandler.getItem("ExtraTrees:door", 129);
         final HashMap<String, IData> hashMap594 = new HashMap<>();
         hashMap594.put("meta", ExpandInt.toData(129));
-        recipes206.addShaped(item594.withTag(ExpandAnyDict.asData(hashMap594)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 1), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 1), ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes206.addShaped(item594.withTag(ExpandAnyDict.asData(hashMap594)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 1), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 1), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 1),
+                           ItemBracketHandler.getItem("Forestry:planks", 1), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes207 = MineTweakerAPI.recipes;
         final IItemStack item595 = ItemBracketHandler.getItem("ExtraTrees:door", 385);
         final HashMap<String, IData> hashMap595 = new HashMap<>();
@@ -3013,12 +3036,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item601 = ItemBracketHandler.getItem("ExtraTrees:door", 130);
         final HashMap<String, IData> hashMap601 = new HashMap<>();
         hashMap601.put("meta", ExpandInt.toData(130));
-        recipes210.addShaped(item601.withTag(ExpandAnyDict.asData(hashMap601)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 2), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 2), ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes210.addShaped(item601.withTag(ExpandAnyDict.asData(hashMap601)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 2), ItemBracketHandler.getItem("minecraft" +
+ ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 2), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 2),
+                           ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes211 = MineTweakerAPI.recipes;
         final IItemStack item602 = ItemBracketHandler.getItem("ExtraTrees:door", 130);
         final HashMap<String, IData> hashMap602 = new HashMap<>();
         hashMap602.put("meta", ExpandInt.toData(130));
-        recipes211.addShaped(item602.withTag(ExpandAnyDict.asData(hashMap602)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 2), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 2), ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes211.addShaped(item602.withTag(ExpandAnyDict.asData(hashMap602)),
+new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 2), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 2), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 2),
+                           ItemBracketHandler.getItem("Forestry:planks", 2), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes212 = MineTweakerAPI.recipes;
         final IItemStack item603 = ItemBracketHandler.getItem("ExtraTrees:door", 386);
         final HashMap<String, IData> hashMap603 = new HashMap<>();
@@ -3075,12 +3110,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item609 = ItemBracketHandler.getItem("ExtraTrees:door", 131);
         final HashMap<String, IData> hashMap609 = new HashMap<>();
         hashMap609.put("meta", ExpandInt.toData(131));
-        recipes215.addShaped(item609.withTag(ExpandAnyDict.asData(hashMap609)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 3), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 3), ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes215.addShaped(item609.withTag(ExpandAnyDict.asData(hashMap609)),
+new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 3), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 3), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 3),
+                 ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes216 = MineTweakerAPI.recipes;
         final IItemStack item610 = ItemBracketHandler.getItem("ExtraTrees:door", 131);
         final HashMap<String, IData> hashMap610 = new HashMap<>();
         hashMap610.put("meta", ExpandInt.toData(131));
-        recipes216.addShaped(item610.withTag(ExpandAnyDict.asData(hashMap610)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 3), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 3), ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes216.addShaped(item610.withTag(ExpandAnyDict.asData(hashMap610)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 3), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 3), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 3),
+                           ItemBracketHandler.getItem("Forestry:planks", 3), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes217 = MineTweakerAPI.recipes;
         final IItemStack item611 = ItemBracketHandler.getItem("ExtraTrees:door", 387);
         final HashMap<String, IData> hashMap611 = new HashMap<>();
@@ -3137,12 +3184,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item617 = ItemBracketHandler.getItem("ExtraTrees:door", 132);
         final HashMap<String, IData> hashMap617 = new HashMap<>();
         hashMap617.put("meta", ExpandInt.toData(132));
-        recipes220.addShaped(item617.withTag(ExpandAnyDict.asData(hashMap617)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 4), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 4), ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes220.addShaped(item617.withTag(ExpandAnyDict.asData(hashMap617)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 4), ItemBracketHandler.getItem("minecraft" +
+                 ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 4), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 4),
+                 ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes221 = MineTweakerAPI.recipes;
         final IItemStack item618 = ItemBracketHandler.getItem("ExtraTrees:door", 132);
         final HashMap<String, IData> hashMap618 = new HashMap<>();
         hashMap618.put("meta", ExpandInt.toData(132));
-        recipes221.addShaped(item618.withTag(ExpandAnyDict.asData(hashMap618)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 4), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 4), ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes221.addShaped(item618.withTag(ExpandAnyDict.asData(hashMap618)),
+                 new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 4), ItemBracketHandler.getItem("minecraft" +
+                         ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 4), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 4),
+                         ItemBracketHandler.getItem("Forestry:planks", 4), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes222 = MineTweakerAPI.recipes;
         final IItemStack item619 = ItemBracketHandler.getItem("ExtraTrees:door", 388);
         final HashMap<String, IData> hashMap619 = new HashMap<>();
@@ -3199,12 +3258,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item625 = ItemBracketHandler.getItem("ExtraTrees:door", 133);
         final HashMap<String, IData> hashMap625 = new HashMap<>();
         hashMap625.put("meta", ExpandInt.toData(133));
-        recipes225.addShaped(item625.withTag(ExpandAnyDict.asData(hashMap625)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 5), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 5), ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes225.addShaped(item625.withTag(ExpandAnyDict.asData(hashMap625)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 5), ItemBracketHandler.getItem("minecraft" +
+                 ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 5), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 5),
+                           ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes226 = MineTweakerAPI.recipes;
         final IItemStack item626 = ItemBracketHandler.getItem("ExtraTrees:door", 133);
         final HashMap<String, IData> hashMap626 = new HashMap<>();
         hashMap626.put("meta", ExpandInt.toData(133));
-        recipes226.addShaped(item626.withTag(ExpandAnyDict.asData(hashMap626)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 5), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 5), ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes226.addShaped(item626.withTag(ExpandAnyDict.asData(hashMap626)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 5), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 5), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 5),
+                 ItemBracketHandler.getItem("Forestry:planks", 5), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes227 = MineTweakerAPI.recipes;
         final IItemStack item627 = ItemBracketHandler.getItem("ExtraTrees:door", 389);
         final HashMap<String, IData> hashMap627 = new HashMap<>();
@@ -3261,12 +3332,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item633 = ItemBracketHandler.getItem("ExtraTrees:door", 134);
         final HashMap<String, IData> hashMap633 = new HashMap<>();
         hashMap633.put("meta", ExpandInt.toData(134));
-        recipes230.addShaped(item633.withTag(ExpandAnyDict.asData(hashMap633)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 6), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 6), ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes230.addShaped(item633.withTag(ExpandAnyDict.asData(hashMap633)),
+ new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 6), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 6), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 6),
+                           ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes231 = MineTweakerAPI.recipes;
         final IItemStack item634 = ItemBracketHandler.getItem("ExtraTrees:door", 134);
         final HashMap<String, IData> hashMap634 = new HashMap<>();
         hashMap634.put("meta", ExpandInt.toData(134));
-        recipes231.addShaped(item634.withTag(ExpandAnyDict.asData(hashMap634)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 6), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 6), ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes231.addShaped(item634.withTag(ExpandAnyDict.asData(hashMap634)),
+                 new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 6), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 6), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 6),
+                         ItemBracketHandler.getItem("Forestry:planks", 6), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes232 = MineTweakerAPI.recipes;
         final IItemStack item635 = ItemBracketHandler.getItem("ExtraTrees:door", 390);
         final HashMap<String, IData> hashMap635 = new HashMap<>();
@@ -3323,7 +3406,13 @@ public class ExtraTrees implements Runnable {
         final IItemStack item641 = ItemBracketHandler.getItem("ExtraTrees:door", 135);
         final HashMap<String, IData> hashMap641 = new HashMap<>();
         hashMap641.put("meta", ExpandInt.toData(135));
-        recipes235.addShaped(item641.withTag(ExpandAnyDict.asData(hashMap641)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 7), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 7), ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes235.addShaped(item641.withTag(ExpandAnyDict.asData(hashMap641)),
+                 new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 7), ItemBracketHandler.getItem("minecraft" +
+                 ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 7), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 7),
+                 ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         this.run3();
     }
 
@@ -4273,7 +4362,13 @@ public class ExtraTrees implements Runnable {
         final IItemStack item642 = ItemBracketHandler.getItem("ExtraTrees:door", 135);
         final HashMap<String, IData> hashMap642 = new HashMap<>();
         hashMap642.put("meta", ExpandInt.toData(135));
-        recipes236.addShaped(item642.withTag(ExpandAnyDict.asData(hashMap642)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 7), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 7), ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes236.addShaped(item642.withTag(ExpandAnyDict.asData(hashMap642)),
+new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 7), ItemBracketHandler.getItem("minecraft" +
+        ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 7), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 7),
+                 ItemBracketHandler.getItem("Forestry:planks", 7), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes237 = MineTweakerAPI.recipes;
         final IItemStack item643 = ItemBracketHandler.getItem("ExtraTrees:door", 391);
         final HashMap<String, IData> hashMap643 = new HashMap<>();
@@ -4330,12 +4425,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item649 = ItemBracketHandler.getItem("ExtraTrees:door", 136);
         final HashMap<String, IData> hashMap649 = new HashMap<>();
         hashMap649.put("meta", ExpandInt.toData(136));
-        recipes240.addShaped(item649.withTag(ExpandAnyDict.asData(hashMap649)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 8), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 8), ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes240.addShaped(item649.withTag(ExpandAnyDict.asData(hashMap649)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 8), ItemBracketHandler.getItem("minecraft" +
+                 ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 8), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 8),
+                 ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes241 = MineTweakerAPI.recipes;
         final IItemStack item650 = ItemBracketHandler.getItem("ExtraTrees:door", 136);
         final HashMap<String, IData> hashMap650 = new HashMap<>();
         hashMap650.put("meta", ExpandInt.toData(136));
-        recipes241.addShaped(item650.withTag(ExpandAnyDict.asData(hashMap650)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 8), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 8), ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes241.addShaped(item650.withTag(ExpandAnyDict.asData(hashMap650)),
+                 new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 8), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 8), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 8),
+                 ItemBracketHandler.getItem("Forestry:planks", 8), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes242 = MineTweakerAPI.recipes;
         final IItemStack item651 = ItemBracketHandler.getItem("ExtraTrees:door", 392);
         final HashMap<String, IData> hashMap651 = new HashMap<>();
@@ -4392,12 +4499,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item657 = ItemBracketHandler.getItem("ExtraTrees:door", 137);
         final HashMap<String, IData> hashMap657 = new HashMap<>();
         hashMap657.put("meta", ExpandInt.toData(137));
-        recipes245.addShaped(item657.withTag(ExpandAnyDict.asData(hashMap657)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 9), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 9), ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes245.addShaped(item657.withTag(ExpandAnyDict.asData(hashMap657)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 9), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 9), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre(
+                          "screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 9),
+                           ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes246 = MineTweakerAPI.recipes;
         final IItemStack item658 = ItemBracketHandler.getItem("ExtraTrees:door", 137);
         final HashMap<String, IData> hashMap658 = new HashMap<>();
         hashMap658.put("meta", ExpandInt.toData(137));
-        recipes246.addShaped(item658.withTag(ExpandAnyDict.asData(hashMap658)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 9), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 9), ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes246.addShaped(item658.withTag(ExpandAnyDict.asData(hashMap658)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 9), ItemBracketHandler.getItem("minecraft" +
+          ":trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem(
+                  "Forestry:planks", 9), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre(
+                          "screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 9),
+                           ItemBracketHandler.getItem("Forestry:planks", 9), OreBracketHandler.getOre(
+                                   "craftingToolSaw")}}, null);
         final IRecipeManager recipes247 = MineTweakerAPI.recipes;
         final IItemStack item659 = ItemBracketHandler.getItem("ExtraTrees:door", 393);
         final HashMap<String, IData> hashMap659 = new HashMap<>();
@@ -4454,12 +4573,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item665 = ItemBracketHandler.getItem("ExtraTrees:door", 138);
         final HashMap<String, IData> hashMap665 = new HashMap<>();
         hashMap665.put("meta", ExpandInt.toData(138));
-        recipes250.addShaped(item665.withTag(ExpandAnyDict.asData(hashMap665)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 10), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 10), ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes250.addShaped(item665.withTag(ExpandAnyDict.asData(hashMap665)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 10), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 10),
+        ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("craftingToolSaw")}},
+        null);
         final IRecipeManager recipes251 = MineTweakerAPI.recipes;
         final IItemStack item666 = ItemBracketHandler.getItem("ExtraTrees:door", 138);
         final HashMap<String, IData> hashMap666 = new HashMap<>();
         hashMap666.put("meta", ExpandInt.toData(138));
-        recipes251.addShaped(item666.withTag(ExpandAnyDict.asData(hashMap666)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 10), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 10), ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes251.addShaped(item666.withTag(ExpandAnyDict.asData(hashMap666)),
+ new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 10), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+{ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 10),
+                    ItemBracketHandler.getItem("Forestry:planks", 10), OreBracketHandler.getOre("craftingToolSaw")}},
+        null);
         final IRecipeManager recipes252 = MineTweakerAPI.recipes;
         final IItemStack item667 = ItemBracketHandler.getItem("ExtraTrees:door", 394);
         final HashMap<String, IData> hashMap667 = new HashMap<>();
@@ -4516,12 +4647,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item673 = ItemBracketHandler.getItem("ExtraTrees:door", 139);
         final HashMap<String, IData> hashMap673 = new HashMap<>();
         hashMap673.put("meta", ExpandInt.toData(139));
-        recipes255.addShaped(item673.withTag(ExpandAnyDict.asData(hashMap673)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 11), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 11), ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes255.addShaped(item673.withTag(ExpandAnyDict.asData(hashMap673)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 11), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 11),
+        ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes256 = MineTweakerAPI.recipes;
         final IItemStack item674 = ItemBracketHandler.getItem("ExtraTrees:door", 139);
         final HashMap<String, IData> hashMap674 = new HashMap<>();
         hashMap674.put("meta", ExpandInt.toData(139));
-        recipes256.addShaped(item674.withTag(ExpandAnyDict.asData(hashMap674)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 11), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 11), ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes256.addShaped(item674.withTag(ExpandAnyDict.asData(hashMap674)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 11), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 11),
+ ItemBracketHandler.getItem("Forestry:planks", 11), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes257 = MineTweakerAPI.recipes;
         final IItemStack item675 = ItemBracketHandler.getItem("ExtraTrees:door", 395);
         final HashMap<String, IData> hashMap675 = new HashMap<>();
@@ -4578,12 +4721,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item681 = ItemBracketHandler.getItem("ExtraTrees:door", 140);
         final HashMap<String, IData> hashMap681 = new HashMap<>();
         hashMap681.put("meta", ExpandInt.toData(140));
-        recipes260.addShaped(item681.withTag(ExpandAnyDict.asData(hashMap681)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 12), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 12), ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes260.addShaped(item681.withTag(ExpandAnyDict.asData(hashMap681)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 12), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 12),
+                    ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes261 = MineTweakerAPI.recipes;
         final IItemStack item682 = ItemBracketHandler.getItem("ExtraTrees:door", 140);
         final HashMap<String, IData> hashMap682 = new HashMap<>();
         hashMap682.put("meta", ExpandInt.toData(140));
-        recipes261.addShaped(item682.withTag(ExpandAnyDict.asData(hashMap682)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 12), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 12), ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes261.addShaped(item682.withTag(ExpandAnyDict.asData(hashMap682)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 12), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                          {ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 12),
+                    ItemBracketHandler.getItem("Forestry:planks", 12), OreBracketHandler.getOre("craftingToolSaw")}},
+null);
         final IRecipeManager recipes262 = MineTweakerAPI.recipes;
         final IItemStack item683 = ItemBracketHandler.getItem("ExtraTrees:door", 396);
         final HashMap<String, IData> hashMap683 = new HashMap<>();
@@ -4640,12 +4795,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item689 = ItemBracketHandler.getItem("ExtraTrees:door", 141);
         final HashMap<String, IData> hashMap689 = new HashMap<>();
         hashMap689.put("meta", ExpandInt.toData(141));
-        recipes265.addShaped(item689.withTag(ExpandAnyDict.asData(hashMap689)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 13), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 13), ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes265.addShaped(item689.withTag(ExpandAnyDict.asData(hashMap689)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 13), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 13),
+ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes266 = MineTweakerAPI.recipes;
         final IItemStack item690 = ItemBracketHandler.getItem("ExtraTrees:door", 141);
         final HashMap<String, IData> hashMap690 = new HashMap<>();
         hashMap690.put("meta", ExpandInt.toData(141));
-        recipes266.addShaped(item690.withTag(ExpandAnyDict.asData(hashMap690)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 13), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 13), ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes266.addShaped(item690.withTag(ExpandAnyDict.asData(hashMap690)),
+ new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 13), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("ringCopper"),
+        OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 13),
+                    ItemBracketHandler.getItem("Forestry:planks", 13), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes267 = MineTweakerAPI.recipes;
         final IItemStack item691 = ItemBracketHandler.getItem("ExtraTrees:door", 397);
         final HashMap<String, IData> hashMap691 = new HashMap<>();
@@ -4702,12 +4869,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item697 = ItemBracketHandler.getItem("ExtraTrees:door", 142);
         final HashMap<String, IData> hashMap697 = new HashMap<>();
         hashMap697.put("meta", ExpandInt.toData(142));
-        recipes270.addShaped(item697.withTag(ExpandAnyDict.asData(hashMap697)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 14), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 14), ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes270.addShaped(item697.withTag(ExpandAnyDict.asData(hashMap697)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 14), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 14),
+                    ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes271 = MineTweakerAPI.recipes;
         final IItemStack item698 = ItemBracketHandler.getItem("ExtraTrees:door", 142);
         final HashMap<String, IData> hashMap698 = new HashMap<>();
         hashMap698.put("meta", ExpandInt.toData(142));
-        recipes271.addShaped(item698.withTag(ExpandAnyDict.asData(hashMap698)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 14), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 14), ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes271.addShaped(item698.withTag(ExpandAnyDict.asData(hashMap698)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 14), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 14),
+                    ItemBracketHandler.getItem("Forestry:planks", 14), OreBracketHandler.getOre("craftingToolSaw")}},
+        null);
         final IRecipeManager recipes272 = MineTweakerAPI.recipes;
         final IItemStack item699 = ItemBracketHandler.getItem("ExtraTrees:door", 398);
         final HashMap<String, IData> hashMap699 = new HashMap<>();
@@ -4764,12 +4943,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item705 = ItemBracketHandler.getItem("ExtraTrees:door", 143);
         final HashMap<String, IData> hashMap705 = new HashMap<>();
         hashMap705.put("meta", ExpandInt.toData(143));
-        recipes275.addShaped(item705.withTag(ExpandAnyDict.asData(hashMap705)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 15), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 15), ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes275.addShaped(item705.withTag(ExpandAnyDict.asData(hashMap705)),
+                 new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 15), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                 {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("ringAnyIron"),
+ OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 15),
+ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("craftingToolSaw")}},
+        null);
         final IRecipeManager recipes276 = MineTweakerAPI.recipes;
         final IItemStack item706 = ItemBracketHandler.getItem("ExtraTrees:door", 143);
         final HashMap<String, IData> hashMap706 = new HashMap<>();
         hashMap706.put("meta", ExpandInt.toData(143));
-        recipes276.addShaped(item706.withTag(ExpandAnyDict.asData(hashMap706)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 15), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 15), ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes276.addShaped(item706.withTag(ExpandAnyDict.asData(hashMap706)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 15), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                 {ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 15),
+                    ItemBracketHandler.getItem("Forestry:planks", 15), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes277 = MineTweakerAPI.recipes;
         final IItemStack item707 = ItemBracketHandler.getItem("ExtraTrees:door", 399);
         final HashMap<String, IData> hashMap707 = new HashMap<>();
@@ -4826,12 +5017,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item713 = ItemBracketHandler.getItem("ExtraTrees:door", 144);
         final HashMap<String, IData> hashMap713 = new HashMap<>();
         hashMap713.put("meta", ExpandInt.toData(144));
-        recipes280.addShaped(item713.withTag(ExpandAnyDict.asData(hashMap713)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 16), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 16), ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes280.addShaped(item713.withTag(ExpandAnyDict.asData(hashMap713)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 16), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 16),
+        ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes281 = MineTweakerAPI.recipes;
         final IItemStack item714 = ItemBracketHandler.getItem("ExtraTrees:door", 144);
         final HashMap<String, IData> hashMap714 = new HashMap<>();
         hashMap714.put("meta", ExpandInt.toData(144));
-        recipes281.addShaped(item714.withTag(ExpandAnyDict.asData(hashMap714)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 16), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 16), ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes281.addShaped(item714.withTag(ExpandAnyDict.asData(hashMap714)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 16), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+ {ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("ringCopper"),
+        OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 16),
+                    ItemBracketHandler.getItem("Forestry:planks", 16), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes282 = MineTweakerAPI.recipes;
         final IItemStack item715 = ItemBracketHandler.getItem("ExtraTrees:door", 400);
         final HashMap<String, IData> hashMap715 = new HashMap<>();
@@ -4888,12 +5091,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item721 = ItemBracketHandler.getItem("ExtraTrees:door", 145);
         final HashMap<String, IData> hashMap721 = new HashMap<>();
         hashMap721.put("meta", ExpandInt.toData(145));
-        recipes285.addShaped(item721.withTag(ExpandAnyDict.asData(hashMap721)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 17), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 17), ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes285.addShaped(item721.withTag(ExpandAnyDict.asData(hashMap721)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 17), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+{ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 17),
+                    ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes286 = MineTweakerAPI.recipes;
         final IItemStack item722 = ItemBracketHandler.getItem("ExtraTrees:door", 145);
         final HashMap<String, IData> hashMap722 = new HashMap<>();
         hashMap722.put("meta", ExpandInt.toData(145));
-        recipes286.addShaped(item722.withTag(ExpandAnyDict.asData(hashMap722)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 17), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 17), ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes286.addShaped(item722.withTag(ExpandAnyDict.asData(hashMap722)),
+new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 17), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 17),
+ItemBracketHandler.getItem("Forestry:planks", 17), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes287 = MineTweakerAPI.recipes;
         final IItemStack item723 = ItemBracketHandler.getItem("ExtraTrees:door", 401);
         final HashMap<String, IData> hashMap723 = new HashMap<>();
@@ -4950,12 +5165,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item729 = ItemBracketHandler.getItem("ExtraTrees:door", 146);
         final HashMap<String, IData> hashMap729 = new HashMap<>();
         hashMap729.put("meta", ExpandInt.toData(146));
-        recipes290.addShaped(item729.withTag(ExpandAnyDict.asData(hashMap729)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 18), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 18), ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes290.addShaped(item729.withTag(ExpandAnyDict.asData(hashMap729)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 18), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 18),
+                    ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes291 = MineTweakerAPI.recipes;
         final IItemStack item730 = ItemBracketHandler.getItem("ExtraTrees:door", 146);
         final HashMap<String, IData> hashMap730 = new HashMap<>();
         hashMap730.put("meta", ExpandInt.toData(146));
-        recipes291.addShaped(item730.withTag(ExpandAnyDict.asData(hashMap730)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 18), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 18), ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes291.addShaped(item730.withTag(ExpandAnyDict.asData(hashMap730)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 18), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 18),
+                    ItemBracketHandler.getItem("Forestry:planks", 18), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes292 = MineTweakerAPI.recipes;
         final IItemStack item731 = ItemBracketHandler.getItem("ExtraTrees:door", 402);
         final HashMap<String, IData> hashMap731 = new HashMap<>();
@@ -5012,12 +5239,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item737 = ItemBracketHandler.getItem("ExtraTrees:door", 147);
         final HashMap<String, IData> hashMap737 = new HashMap<>();
         hashMap737.put("meta", ExpandInt.toData(147));
-        recipes295.addShaped(item737.withTag(ExpandAnyDict.asData(hashMap737)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 19), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 19), ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes295.addShaped(item737.withTag(ExpandAnyDict.asData(hashMap737)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 19), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 19),
+                    ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes296 = MineTweakerAPI.recipes;
         final IItemStack item738 = ItemBracketHandler.getItem("ExtraTrees:door", 147);
         final HashMap<String, IData> hashMap738 = new HashMap<>();
         hashMap738.put("meta", ExpandInt.toData(147));
-        recipes296.addShaped(item738.withTag(ExpandAnyDict.asData(hashMap738)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 19), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 19), ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes296.addShaped(item738.withTag(ExpandAnyDict.asData(hashMap738)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 19), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+        {ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 19),
+                    ItemBracketHandler.getItem("Forestry:planks", 19), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes297 = MineTweakerAPI.recipes;
         final IItemStack item739 = ItemBracketHandler.getItem("ExtraTrees:door", 403);
         final HashMap<String, IData> hashMap739 = new HashMap<>();
@@ -5074,12 +5313,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item745 = ItemBracketHandler.getItem("ExtraTrees:door", 148);
         final HashMap<String, IData> hashMap745 = new HashMap<>();
         hashMap745.put("meta", ExpandInt.toData(148));
-        recipes300.addShaped(item745.withTag(ExpandAnyDict.asData(hashMap745)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 20), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 20), ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes300.addShaped(item745.withTag(ExpandAnyDict.asData(hashMap745)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 20), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 20),
+ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes301 = MineTweakerAPI.recipes;
         final IItemStack item746 = ItemBracketHandler.getItem("ExtraTrees:door", 148);
         final HashMap<String, IData> hashMap746 = new HashMap<>();
         hashMap746.put("meta", ExpandInt.toData(148));
-        recipes301.addShaped(item746.withTag(ExpandAnyDict.asData(hashMap746)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 20), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 20), ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes301.addShaped(item746.withTag(ExpandAnyDict.asData(hashMap746)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 20), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 20),
+ ItemBracketHandler.getItem("Forestry:planks", 20), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes302 = MineTweakerAPI.recipes;
         final IItemStack item747 = ItemBracketHandler.getItem("ExtraTrees:door", 404);
         final HashMap<String, IData> hashMap747 = new HashMap<>();
@@ -5136,12 +5387,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item753 = ItemBracketHandler.getItem("ExtraTrees:door", 149);
         final HashMap<String, IData> hashMap753 = new HashMap<>();
         hashMap753.put("meta", ExpandInt.toData(149));
-        recipes305.addShaped(item753.withTag(ExpandAnyDict.asData(hashMap753)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 21), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 21), ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes305.addShaped(item753.withTag(ExpandAnyDict.asData(hashMap753)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 21), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+ {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("ringAnyIron"),
+OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 21),
+                ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("craftingToolSaw")}},
+null);
         final IRecipeManager recipes306 = MineTweakerAPI.recipes;
         final IItemStack item754 = ItemBracketHandler.getItem("ExtraTrees:door", 149);
         final HashMap<String, IData> hashMap754 = new HashMap<>();
         hashMap754.put("meta", ExpandInt.toData(149));
-        recipes306.addShaped(item754.withTag(ExpandAnyDict.asData(hashMap754)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 21), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 21), ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes306.addShaped(item754.withTag(ExpandAnyDict.asData(hashMap754)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 21), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+{ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 21),
+ItemBracketHandler.getItem("Forestry:planks", 21), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes307 = MineTweakerAPI.recipes;
         final IItemStack item755 = ItemBracketHandler.getItem("ExtraTrees:door", 405);
         final HashMap<String, IData> hashMap755 = new HashMap<>();
@@ -5198,12 +5461,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item761 = ItemBracketHandler.getItem("ExtraTrees:door", 150);
         final HashMap<String, IData> hashMap761 = new HashMap<>();
         hashMap761.put("meta", ExpandInt.toData(150));
-        recipes310.addShaped(item761.withTag(ExpandAnyDict.asData(hashMap761)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 22), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 22), ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes310.addShaped(item761.withTag(ExpandAnyDict.asData(hashMap761)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 22), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                 {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("ringAnyIron"),
+                   OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 22),
+                    ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes311 = MineTweakerAPI.recipes;
         final IItemStack item762 = ItemBracketHandler.getItem("ExtraTrees:door", 150);
         final HashMap<String, IData> hashMap762 = new HashMap<>();
         hashMap762.put("meta", ExpandInt.toData(150));
-        recipes311.addShaped(item762.withTag(ExpandAnyDict.asData(hashMap762)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 22), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 22), ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes311.addShaped(item762.withTag(ExpandAnyDict.asData(hashMap762)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 22), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 22),
+                    ItemBracketHandler.getItem("Forestry:planks", 22), OreBracketHandler.getOre("craftingToolSaw")}},
+        null);
         final IRecipeManager recipes312 = MineTweakerAPI.recipes;
         final IItemStack item763 = ItemBracketHandler.getItem("ExtraTrees:door", 406);
         final HashMap<String, IData> hashMap763 = new HashMap<>();
@@ -5260,12 +5535,24 @@ public class ExtraTrees implements Runnable {
         final IItemStack item769 = ItemBracketHandler.getItem("ExtraTrees:door", 151);
         final HashMap<String, IData> hashMap769 = new HashMap<>();
         hashMap769.put("meta", ExpandInt.toData(151));
-        recipes315.addShaped(item769.withTag(ExpandAnyDict.asData(hashMap769)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 23), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("ringAnyIron"), OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 23), ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes315.addShaped(item769.withTag(ExpandAnyDict.asData(hashMap769)),
+ new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 23), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+                  {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("ringAnyIron"),
+ OreBracketHandler.getOre("screwAnyIron")}, {ItemBracketHandler.getItem("Forestry:planks", 23),
+                    ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes316 = MineTweakerAPI.recipes;
         final IItemStack item770 = ItemBracketHandler.getItem("ExtraTrees:door", 151);
         final HashMap<String, IData> hashMap770 = new HashMap<>();
         hashMap770.put("meta", ExpandInt.toData(151));
-        recipes316.addShaped(item770.withTag(ExpandAnyDict.asData(hashMap770)), new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 23), ItemBracketHandler.getItem("minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")}, {ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("ringCopper"), OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 23), ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("craftingToolSaw")}}, null);
+        recipes316.addShaped(item770.withTag(ExpandAnyDict.asData(hashMap770)),
+         new IIngredient[][]{{ItemBracketHandler.getItem("Forestry:planks", 23), ItemBracketHandler.getItem(
+                 "minecraft:trapdoor", 0), OreBracketHandler.getOre("craftingToolScrewdriver")},
+{ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("ringCopper"),
+                   OreBracketHandler.getOre("screwCopper")}, {ItemBracketHandler.getItem("Forestry:planks", 23),
+                    ItemBracketHandler.getItem("Forestry:planks", 23), OreBracketHandler.getOre("craftingToolSaw")}},
+                     null);
         final IRecipeManager recipes317 = MineTweakerAPI.recipes;
         final IItemStack item771 = ItemBracketHandler.getItem("ExtraTrees:door", 407);
         final HashMap<String, IData> hashMap771 = new HashMap<>();
@@ -5318,8 +5605,12 @@ public class ExtraTrees implements Runnable {
         array633[n843] = array634;
         array633[2] = new IIngredient[]{null, null, null};
         recipes319.addShaped(withTag247, array633, null);
-        Mixer.addRecipe(ItemBracketHandler.getItem("ExtraTrees:misc", 6), null, new IIngredient[]{ItemBracketHandler.getItem("dreamcraft:item.MushroomPowder", 0).amount(5)}, LiquidBracketHandler.getLiquid("potion.wheatyjuice").withAmount(1000), 400, 16);
-        Mixer.addRecipe(ItemBracketHandler.getItem("ExtraTrees:misc", 7), null, new IIngredient[]{ItemBracketHandler.getItem("ExtraTrees:misc", 6), ItemBracketHandler.getItem("ExtraTrees:misc", 12).amount(4)}, LiquidBracketHandler.getLiquid("water").withAmount(1000), 600, 16);
+        Mixer.addRecipe(ItemBracketHandler.getItem("ExtraTrees:misc", 6), null,
+         new IIngredient[]{ItemBracketHandler.getItem("dreamcraft:item.MushroomPowder", 0).amount(5)},
+          LiquidBracketHandler.getLiquid("potion.wheatyjuice").withAmount(1000), 400, 16);
+        Mixer.addRecipe(ItemBracketHandler.getItem("ExtraTrees:misc", 7), null,
+         new IIngredient[]{ItemBracketHandler.getItem("ExtraTrees:misc", 6), ItemBracketHandler.getItem("ExtraTrees" +
+          ":misc", 12).amount(4)}, LiquidBracketHandler.getLiquid("water").withAmount(1000), 600, 16);
         this.run2();
     }
 }

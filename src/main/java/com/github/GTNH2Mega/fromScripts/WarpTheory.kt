@@ -24,7 +24,13 @@ class WarpTheory : Runnable {
         Research.addPrereq("warptheory.paper", "RESEARCHER2", false)
         Research.clearPages("warptheory.paper")
         Research.addPage("warptheory.paper", "research.warptheory.paper")
-        Arcane.addShaped("warptheory.paper", ItemBracketHandler.getItem("WarpTheory:item.warptheory.paper", 0).amount(2), "aqua 8, terra 8", arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14), null), arrayOf<IIngredient?>(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14), ItemBracketHandler.getItem("minecraft:paper", 0), ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14)), arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14), null)))
+        Arcane.addShaped("warptheory.paper",
+                ItemBracketHandler.getItem("WarpTheory:item.warptheory.paper", 0).amount(2), "aqua 8, terra 8",
+                arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14), null),
+                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14),
+                                ItemBracketHandler.getItem("minecraft:paper", 0),
+                                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14)),
+                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14), null)))
         Research.addArcanePage("warptheory.paper", ItemBracketHandler.getItem("WarpTheory:item.warptheory.paper", 0))
         Research.setAspects("warptheory.paper", "alienis 6, praecantatio 6, ordo 9, aqua 3, terra 3")
         Research.setComplexity("warptheory.paper", 2)
@@ -39,7 +45,8 @@ class WarpTheory : Runnable {
         Warp.addToResearch("warptheory.something", 3)
         Research.orphanResearch("warptheory.cleanserminor")
         Research.removeResearch("warptheory.cleanserminor")
-        Research.addResearch("PURETEARMINOR", "WT_Category", "alienis 6, praecantatio 6, permutatio 4, sano 3, terra 2", -1, -2, 2, ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanserminor", 0))
+        Research.addResearch("PURETEARMINOR", "WT_Category", "alienis 6, praecantatio 6, permutatio 4, sano 3, terra 2",
+                -1, -2, 2, ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanserminor", 0))
         MineTweakerAPI.game.setLocalization("tc.research_name.PURETEARMINOR", "Impure Tear")
         MineTweakerAPI.game.setLocalization("tc.research_text.PURETEARMINOR", "Magical-ish Medicine")
         Research.addPrereq("PURETEARMINOR", "ELDRITCHMINOR", false)
@@ -76,24 +83,57 @@ class WarpTheory : Runnable {
         array[n2] = item3.withTag(ExpandAnyDict.asData(hashMap3))
         array[10] = ItemBracketHandler.getItem("AWWayofTime:magicales", 0)
         array[11] = ItemBracketHandler.getItem("witchery:ingredient", 36)
-        Infusion.addRecipe(s, item, array, "auram 64, desidia 16, fames 16, gelum 16, permutatio 32, praecantatio 32, venenum 32", ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanserminor", 0), 10)
-        Research.addInfusionPage("PURETEARMINOR", ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanserminor", 0))
+        Infusion.addRecipe(s, item, array,
+                "auram 64, desidia 16, fames 16, gelum 16, permutatio 32, praecantatio 32, venenum 32",
+                ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanserminor", 0), 10)
+        Research.addInfusionPage("PURETEARMINOR",
+                ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanserminor", 0))
         Research.orphanResearch("warptheory.cleanser")
         Research.removeResearch("warptheory.cleanser")
-        Research.addResearch("PURETEAR", "WT_Category", "alienis 12, praecantatio 12, permutatio 9, sano 6, terra 3", -4, -1, 3, ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0))
+        Research.addResearch("PURETEAR", "WT_Category", "alienis 12, praecantatio 12, permutatio 9, sano 6, terra 3",
+                -4, -1, 3, ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0))
         MineTweakerAPI.game.setLocalization("tc.research_name.PURETEAR", "Pure Tear")
         MineTweakerAPI.game.setLocalization("tc.research_text.PURETEAR", "Magical Medicine")
         Research.addPrereq("PURETEAR", "ELDRITCHMAJOR", false)
         Research.addPrereq("PURETEAR", "warptheory.paper", false)
         Research.addPrereq("PURETEAR", "ICHORIUM", false)
         Research.addPage("PURETEAR", "research.warptheory.warpcleanser")
-        Infusion.addRecipe("PURETEAR", ItemBracketHandler.getItem("minecraft:nether_star", 0), arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978), ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 10), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24500), ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 11), ItemBracketHandler.getItem("minecraft:ghast_tear", 0), ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14), ItemBracketHandler.getItem("minecraft:ghast_tear", 0), ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 11), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24500), ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 10)), "alienis 32, permutatio 32, praecantatio 16, sano 16", ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0), 10)
+        Infusion.addRecipe("PURETEAR", ItemBracketHandler.getItem("minecraft:nether_star", 0),
+                arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
+                        ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 10),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24500),
+                        ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 11),
+                        ItemBracketHandler.getItem("minecraft:ghast_tear", 0),
+                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14),
+                        ItemBracketHandler.getItem("minecraft:ghast_tear", 0),
+                        ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 11),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24500),
+                        ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 10)),
+                "alienis 32, permutatio 32, praecantatio 16, sano 16",
+                ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0), 10)
         Research.addInfusionPage("PURETEAR", ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0))
         Research.orphanResearch("warptheory.amulet")
         Research.clearPrereqs("warptheory.amulet")
         Research.addPrereq("warptheory.amulet", "PURETEAR", false)
-        Infusion.addRecipe("warptheory.amulet", ItemBracketHandler.getItem("Thaumcraft:ItemBaubleBlanks", 0), arrayOf(ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978), ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330), ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500), ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330)), "alienis 64, auram 32, potentia 32, praecantatio 64, permutatio 32", ItemBracketHandler.getItem("WarpTheory:item.warptheory.amulet", 0), 16)
-        Research.setAspects("warptheory.amulet", "alienis 15, auram 15, potentia 12, praecantatio 9, permutatio 6, terra 3")
+        Infusion.addRecipe("warptheory.amulet", ItemBracketHandler.getItem("Thaumcraft:ItemBaubleBlanks", 0),
+                arrayOf(ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
+                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330),
+                        ItemBracketHandler.getItem("WarpTheory:item.warptheory.cleanser", 0),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 29500),
+                        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27330)),
+                "alienis 64, auram 32, potentia 32, praecantatio 64, permutatio 32",
+                ItemBracketHandler.getItem("WarpTheory:item.warptheory.amulet", 0), 16)
+        Research.setAspects("warptheory.amulet",
+                "alienis 15, auram 15, potentia 12, praecantatio 9, permutatio 6, terra 3")
         Research.setComplexity("warptheory.amulet", 4)
         Research.refreshResearchRecipe("warptheory.paper")
         Research.refreshResearchRecipe("warptheory.something")

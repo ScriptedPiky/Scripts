@@ -74,18 +74,57 @@ class RemoteIO : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.pda", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.remoteAccessor", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.linker", 0))
-        MineTweakerAPI.recipes.addShaped(item3.amount(2), arrayOf(arrayOf<IIngredient>(item10, item11, item10), arrayOf(OreBracketHandler.getOre("circuitElite"), item16, OreBracketHandler.getOre("circuitElite")), arrayOf<IIngredient>(item10, item12, item10)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("RIO:tile.remote_interface", 0), arrayOf<IIngredient>(ItemBracketHandler.getItem("RandomThings:playerinterface", 0)), null)
-        MineTweakerAPI.recipes.addShaped(item, arrayOf(arrayOf(item14, ore2, item14), arrayOf(ore2, item13, ore2), arrayOf(item14, ore2, item14)), null)
-        MineTweakerAPI.recipes.addShaped(item2, arrayOf(arrayOf<IIngredient>(item9, item9, item9), arrayOf<IIngredient>(item14, item13, item14), arrayOf<IIngredient>(ore3, ore3, ore3)), null)
-        MineTweakerAPI.recipes.addShaped(item6, arrayOf(arrayOf(ore, item8, ore), arrayOf<IIngredient>(item8, ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 21), item8), arrayOf(ore, item8, ore)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("RIO:intelligentWorkbench", 0), arrayOf(arrayOf<IIngredient?>(null, item7, null), arrayOf(ore5, ItemBracketHandler.getItem("gregtech:gt.blockcasings4", 0), ore5), arrayOf<IIngredient?>(null, ore4, null)), null)
-        MineTweakerAPI.recipes.addShaped(item5, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateTungstenSteel"), OreBracketHandler.getOre("craftingToolSaw"), OreBracketHandler.getOre("plateTungstenSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwTungstenSteel"), OreBracketHandler.getOre("stickTungstenSteel"), OreBracketHandler.getOre("screwTungstenSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolScrewdriver"), OreBracketHandler.getOre("stickTungstenSteel"), OreBracketHandler.getOre("craftingToolFile"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("RIO:item.linker", 0), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolScrewdriver"), OreBracketHandler.getOre("boltElectrum"), OreBracketHandler.getOre("screwIron")), arrayOf<IIngredient>(OreBracketHandler.getOre("boltElectrum"), OreBracketHandler.getOre("lensEnderEye"), OreBracketHandler.getOre("ringSteel")), arrayOf(OreBracketHandler.getOre("screwIron"), OreBracketHandler.getOre("ringSteel"), item5)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("RIO:item.remoteAccessor", 0), arrayOf(arrayOf(OreBracketHandler.getOre("itemCasingTungstenSteel"), ItemBracketHandler.getItem("RIO:tile.remote_interface", 0), OreBracketHandler.getOre("itemCasingTungstenSteel")), arrayOf<IIngredient>(ItemBracketHandler.getItem("RIO:item.linker", 0), ItemBracketHandler.getItem("RIO:item.chip.location", 0), ItemBracketHandler.getItem("RIO:item.linker", 0)), arrayOf(OreBracketHandler.getOre("screwTungstenSteel"), ItemBracketHandler.getItem("RIO:item.wireless_transmitter", 0), OreBracketHandler.getOre("screwTungstenSteel"))), null)
+        MineTweakerAPI.recipes.addShaped(item3.amount(2), arrayOf(arrayOf<IIngredient>(item10, item11, item10),
+                arrayOf(OreBracketHandler.getOre("circuitElite"), item16, OreBracketHandler.getOre("circuitElite")),
+                arrayOf<IIngredient>(item10, item12, item10)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("RIO:tile.remote_interface", 0),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("RandomThings:playerinterface", 0)), null)
+        MineTweakerAPI.recipes.addShaped(item,
+                arrayOf(arrayOf(item14, ore2, item14), arrayOf(ore2, item13, ore2), arrayOf(item14, ore2, item14)),
+                null)
+        MineTweakerAPI.recipes.addShaped(item2,
+                arrayOf(arrayOf<IIngredient>(item9, item9, item9), arrayOf<IIngredient>(item14, item13, item14),
+                        arrayOf<IIngredient>(ore3, ore3, ore3)), null)
+        MineTweakerAPI.recipes.addShaped(item6, arrayOf(arrayOf(ore, item8, ore), arrayOf<IIngredient>(item8,
+                ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 21), item8),
+                arrayOf(ore, item8, ore)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("RIO:intelligentWorkbench", 0),
+                arrayOf(arrayOf<IIngredient?>(null, item7, null),
+                        arrayOf(ore5, ItemBracketHandler.getItem("gregtech:gt.blockcasings4", 0), ore5),
+                        arrayOf<IIngredient?>(null, ore4, null)), null)
+        MineTweakerAPI.recipes.addShaped(item5,
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("plateTungstenSteel"),
+                        OreBracketHandler.getOre("craftingToolSaw"), OreBracketHandler.getOre("plateTungstenSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwTungstenSteel"),
+                                OreBracketHandler.getOre("stickTungstenSteel"),
+                                OreBracketHandler.getOre("screwTungstenSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolScrewdriver"),
+                                OreBracketHandler.getOre("stickTungstenSteel"),
+                                OreBracketHandler.getOre("craftingToolFile"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("RIO:item.linker", 0),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolScrewdriver"),
+                        OreBracketHandler.getOre("boltElectrum"), OreBracketHandler.getOre("screwIron")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("boltElectrum"),
+                                OreBracketHandler.getOre("lensEnderEye"), OreBracketHandler.getOre("ringSteel")),
+                        arrayOf(OreBracketHandler.getOre("screwIron"), OreBracketHandler.getOre("ringSteel"), item5)),
+                null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("RIO:item.remoteAccessor", 0),
+                arrayOf(arrayOf(OreBracketHandler.getOre("itemCasingTungstenSteel"),
+                        ItemBracketHandler.getItem("RIO:tile.remote_interface", 0),
+                        OreBracketHandler.getOre("itemCasingTungstenSteel")),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("RIO:item.linker", 0),
+                                ItemBracketHandler.getItem("RIO:item.chip.location", 0),
+                                ItemBracketHandler.getItem("RIO:item.linker", 0)),
+                        arrayOf(OreBracketHandler.getOre("screwTungstenSteel"),
+                                ItemBracketHandler.getItem("RIO:item.wireless_transmitter", 0),
+                                OreBracketHandler.getOre("screwTungstenSteel"))), null)
         val recipes = MineTweakerAPI.recipes
         val item17 = ItemBracketHandler.getItem("RIO:item.pda", 0)
-        val array = arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("screwIron"), OreBracketHandler.getOre("itemCasingAluminium"), OreBracketHandler.getOre("screwIron")), arrayOf(OreBracketHandler.getOre("circuitBasic"), ItemBracketHandler.getItem("dreamcraft:item.Display", 0), OreBracketHandler.getOre("circuitBasic")), null)
+        val array = arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("screwIron"),
+                OreBracketHandler.getOre("itemCasingAluminium"), OreBracketHandler.getOre("screwIron")),
+                arrayOf(OreBracketHandler.getOre("circuitBasic"),
+                        ItemBracketHandler.getItem("dreamcraft:item.Display", 0),
+                        OreBracketHandler.getOre("circuitBasic")), null)
         val n = 2
         val array2 = arrayOf<IIngredient?>(OreBracketHandler.getOre("itemCasingAluminium"), null, null)
         val n2 = 1
@@ -96,28 +135,74 @@ class RemoteIO : Runnable {
         array2[2] = OreBracketHandler.getOre("itemCasingAluminium")
         array[n] = array2
         recipes.addShaped(item17, array, null)
-        Assembler.addRecipe(item4, ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 0), ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 1), LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item15, ItemBracketHandler.getItem("TConstruct:blankPattern", 1), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17316), LiquidBracketHandler.getLiquid("molten.redstone").withAmount(100), 200, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 0), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("EnderStorage:enderChest", 0), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 1), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("EnderStorage:enderChest", 4096), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 2), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("Thaumcraft:blockJar", 0).amount(2), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 10), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1546).amount(2), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 12), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("ExtraUtilities:extractor_base", 12).amount(2), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 20), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("appliedenergistics2:tile.BlockController", 0), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 21), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2001).amount(2), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.upgrade", 0), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17321).amount(4), 200, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.upgrade", 1), ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0), ItemBracketHandler.getItem("RIO:item.wireless_transmitter", 0), 200, 480)
+        Assembler.addRecipe(item4, ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 0),
+                ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 1),
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item15, ItemBracketHandler.getItem("TConstruct:blankPattern", 1),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17316),
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(100), 200, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 0),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("EnderStorage:enderChest", 0), 200, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 1),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("EnderStorage:enderChest", 4096), 200, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 2),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("Thaumcraft:blockJar", 0).amount(2), 200, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 10),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1546).amount(2), 200, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 12),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("ExtraUtilities:extractor_base", 12).amount(2), 200, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 20),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("appliedenergistics2:tile.BlockController", 0), 200, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 21),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2001).amount(2), 200, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.upgrade", 0),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17321).amount(4), 200, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.upgrade", 1),
+                ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
+                ItemBracketHandler.getItem("RIO:item.wireless_transmitter", 0), 200, 480)
     }
 }

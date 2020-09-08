@@ -366,65 +366,190 @@ class StevesCarts : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("StevesCarts:CartModule", 99))
         MineTweakerAPI.recipes.remove(item42)
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockCartAssembler", 0), arrayOf(arrayOf<IIngredient>(item2, item, item2), arrayOf<IIngredient>(item4, item5, item4), arrayOf<IIngredient>(item8, item, item8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockCargoManager", 0), arrayOf(arrayOf<IIngredient>(item6, item, item6), arrayOf<IIngredient>(item4, item5, item2), arrayOf<IIngredient>(item8, item7, item8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDistributor", 0), arrayOf(arrayOf<IIngredient>(item6, item, item6), arrayOf<IIngredient>(item4, item5, item4), arrayOf<IIngredient>(item8, item, item8)), null)
-        MineTweakerAPI.recipes.addShaped(item12, arrayOf(arrayOf(ore2, item, ore2), arrayOf<IIngredient>(item7, item9, item7), arrayOf(ore3, item, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDetector", 0), arrayOf(arrayOf<IIngredient>(item6, item, item6), arrayOf<IIngredient>(item, item12, item), arrayOf(item8, ore7, item8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDetector", 2), arrayOf(arrayOf(item6, ore8, item6), arrayOf<IIngredient>(item, item12, item), arrayOf(item8, ore7, item8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDetector", 3), arrayOf(arrayOf<IIngredient>(item6, item13, item6), arrayOf<IIngredient>(item, item12, item), arrayOf(item8, ore7, item8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDetector", 4), arrayOf(arrayOf(item6, ore9, item6), arrayOf<IIngredient>(item, item12, item), arrayOf(item8, ore7, item8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockActivator", 0), arrayOf(arrayOf<IIngredient>(item6, item11, item6), arrayOf(ore7, item12, ore7), arrayOf<IIngredient>(item8, item10, item8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 0), arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(ore11, ore10, ore11), arrayOf<IIngredient?>(null, ore3, null)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 1), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32100)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32100), arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 1)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 23), arrayOf(arrayOf<IIngredient?>(null, ore5, null), arrayOf<IIngredient?>(ore13, ore12, ore13), arrayOf<IIngredient?>(null, ore3, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 82), arrayOf(arrayOf<IIngredient?>(null, ore5, null), arrayOf<IIngredient?>(ore15, ore14, ore15), arrayOf<IIngredient?>(null, ore3, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 37), arrayOf(arrayOf(item14, ore6, item14), arrayOf<IIngredient>(item14, item14, item14), arrayOf(item15, ore3, item15)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 38), arrayOf(arrayOf<IIngredient>(ore8, ore5, ore8), arrayOf<IIngredient>(ore8, ore8, ore8), arrayOf(item16, ore3, item16)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 39), arrayOf(arrayOf<IIngredient>(ore16, ore5, ore16), arrayOf<IIngredient>(ore16, ore16, ore16), arrayOf(item17, ore3, item17)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 81), arrayOf(arrayOf<IIngredient>(ore17, ore5, ore17), arrayOf<IIngredient>(ore17, ore17, ore17), arrayOf(item18, ore3, item18)), null)
-        MineTweakerAPI.recipes.addShaped(item20, arrayOf(arrayOf(item19, ore19, ore4), arrayOf<IIngredient>(ore18, ore20, ore21), arrayOf(item19, ore19, ore5)), null)
-        MineTweakerAPI.recipes.addShaped(item22, arrayOf(arrayOf(item21, ore2, ore4), arrayOf(ore22, item20, item23), arrayOf(item21, ore2, ore5)), null)
-        MineTweakerAPI.recipes.addShaped(item25, arrayOf(arrayOf(item24, ore24, ore4), arrayOf(ore23, item22, ore25), arrayOf(item24, ore24, ore5)), null)
-        MineTweakerAPI.recipes.addShaped(item26, arrayOf(arrayOf(item24, ore28, ore4), arrayOf(ore26, item25, ore29), arrayOf(item24, ore28, ore5)), null)
-        MineTweakerAPI.recipes.addShapeless(item39, arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32721)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32721), arrayOf<IIngredient>(item39), null)
-        MineTweakerAPI.recipes.addShaped(item40, arrayOf(arrayOf<IIngredient?>(null, ore31, null), arrayOf<IIngredient?>(ore31, ore30, ore31), arrayOf<IIngredient?>(null, ore31, null)), null)
-        MineTweakerAPI.recipes.addShaped(item41, arrayOf(arrayOf<IIngredient?>(null, ore32, null), arrayOf<IIngredient?>(ore32, ore30, ore32), arrayOf<IIngredient?>(null, ore32, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 44), arrayOf(arrayOf<IIngredient>(ore33, ore34, ore33), arrayOf(ore19, item27, ore19), arrayOf<IIngredient>(ore3, ore35, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 0), arrayOf(arrayOf<IIngredient>(ore, ore36, ore), arrayOf(item27, ore2, item27), arrayOf(item30, ore4, item30)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 45), arrayOf(arrayOf<IIngredient>(item36, item, item36), arrayOf(ore2, item27, ore2), arrayOf(ore3, item30, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 1), arrayOf(arrayOf<IIngredient>(item36, item36, item36), arrayOf<IIngredient>(item27, item10, item27), arrayOf(item30, ore37, item30)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 56), arrayOf(arrayOf<IIngredient>(item37, ItemBracketHandler.getItem("StevesCarts:CartModule", 1), item37), arrayOf<IIngredient>(item28, item10, item28), arrayOf(item31, ore24, item31)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 69), arrayOf(arrayOf<IIngredient>(ore, ore36, ore), arrayOf<IIngredient>(item27, item35, item27), arrayOf<IIngredient>(item30, item32, item30)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 70), arrayOf(arrayOf(ore16, ItemBracketHandler.getItem("StevesCarts:CartModule", 69), ore16), arrayOf<IIngredient>(item28, item34, item28), arrayOf<IIngredient>(item31, item33, item31)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(2), arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), null, null), arrayOf<IIngredient?>(ore38, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), arrayOf(arrayOf(ore4, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30), ore3), arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30), ore19, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30)), arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32), arrayOf(arrayOf(ore4, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), ore3), arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), ore19, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31)), arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(2), arrayOf(arrayOf<IIngredient?>(ore8, null, null), arrayOf<IIngredient?>(ore38, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), arrayOf(arrayOf(ore4, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34), ore3), arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34), ore2, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34)), arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36), arrayOf(arrayOf(ore4, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), ore3), arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), ore2, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35)), arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 14), arrayOf(arrayOf(ore39, item27, ore39), arrayOf<IIngredient>(item, item38, item), arrayOf(ore39, item2, ore39)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 84), arrayOf(arrayOf(ore14, item28, ore14), arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("StevesCarts:CartModule", 14), item10), arrayOf(ore14, item3, ore14)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 15), arrayOf(arrayOf<IIngredient>(item39, item39, item39), arrayOf<IIngredient>(item39, item42, item39), arrayOf<IIngredient>(item, item27, item)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 79), arrayOf(arrayOf<IIngredient>(item40, item40, item40), arrayOf<IIngredient>(item40, ItemBracketHandler.getItem("StevesCarts:CartModule", 15), item40), arrayOf<IIngredient>(item10, item28, item10)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 80), arrayOf(arrayOf<IIngredient>(item41, item41, item41), arrayOf<IIngredient>(item41, ItemBracketHandler.getItem("StevesCarts:CartModule", 79), item41), arrayOf(ore54, item29, ore54)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(2), arrayOf(arrayOf<IIngredient?>(ore42, null, null), arrayOf<IIngredient?>(ore38, null, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), arrayOf(arrayOf<IIngredient>(ore44, ore43, ore44), arrayOf(ore43, item, ore43), arrayOf<IIngredient>(ore43, ore43, ore43)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockLiquidManager", 0), arrayOf(arrayOf<IIngredient>(item6, item, item6), arrayOf<IIngredient>(item4, item5, item2), arrayOf<IIngredient>(item52, item7, item52)), null)
-        MineTweakerAPI.recipes.addShapeless(item70, arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5131)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5131), arrayOf<IIngredient>(item70), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 7), arrayOf(arrayOf<IIngredient?>(item53, null, item53), arrayOf<IIngredient?>(item4, item, item2), arrayOf<IIngredient?>(ore33, ore33, ore33)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 26), arrayOf(arrayOf(ore2, ore45, item54), arrayOf(ore8, item54, ore45), arrayOf<IIngredient>(ore44, ore8, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 13), arrayOf(arrayOf(ore2, ore46, item54), arrayOf(ore47, item54, ore46), arrayOf<IIngredient>(ore44, ore47, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 33), arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf<IIngredient?>(ore19, ore48, ore19), arrayOf<IIngredient?>(null, ore49, null)), null)
-        MineTweakerAPI.recipes.addShaped(item62, arrayOf(arrayOf(item21, ore58, item21), arrayOf<IIngredient>(ore59, ore57, ore59), arrayOf(item21, ore58, item21)), null)
-        MineTweakerAPI.recipes.addShaped(item61, arrayOf(arrayOf<IIngredient>(ore, ore44, ore), arrayOf(ore16, item10, ore16), arrayOf<IIngredient>(ore, ore, ore)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 0), arrayOf(arrayOf<IIngredient>(ore44, ore51, ore44), arrayOf(ore53, withTag, ore53), arrayOf(ore44, item61, ore44)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 1), arrayOf(arrayOf<IIngredient>(ore55, ore52, ore55), arrayOf(ore54, item56, ore54), arrayOf(ore50, ItemBracketHandler.getItem("StevesCarts:upgrade", 0), ore50)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 2), arrayOf(arrayOf(ore56, item57, ore56), arrayOf<IIngredient>(item57, item60, item57), arrayOf(ore16, item61, ore16)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 3), arrayOf(arrayOf<IIngredient>(item59, item58, item59), arrayOf(item58, ore16, item58), arrayOf(ore16, ItemBracketHandler.getItem("StevesCarts:upgrade", 2), ore16)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockCartAssembler", 0),
+                arrayOf(arrayOf<IIngredient>(item2, item, item2), arrayOf<IIngredient>(item4, item5, item4),
+                        arrayOf<IIngredient>(item8, item, item8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockCargoManager", 0),
+                arrayOf(arrayOf<IIngredient>(item6, item, item6), arrayOf<IIngredient>(item4, item5, item2),
+                        arrayOf<IIngredient>(item8, item7, item8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDistributor", 0),
+                arrayOf(arrayOf<IIngredient>(item6, item, item6), arrayOf<IIngredient>(item4, item5, item4),
+                        arrayOf<IIngredient>(item8, item, item8)), null)
+        MineTweakerAPI.recipes.addShaped(item12,
+                arrayOf(arrayOf(ore2, item, ore2), arrayOf<IIngredient>(item7, item9, item7),
+                        arrayOf(ore3, item, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDetector", 0),
+                arrayOf(arrayOf<IIngredient>(item6, item, item6), arrayOf<IIngredient>(item, item12, item),
+                        arrayOf(item8, ore7, item8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDetector", 2),
+                arrayOf(arrayOf(item6, ore8, item6), arrayOf<IIngredient>(item, item12, item),
+                        arrayOf(item8, ore7, item8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDetector", 3),
+                arrayOf(arrayOf<IIngredient>(item6, item13, item6), arrayOf<IIngredient>(item, item12, item),
+                        arrayOf(item8, ore7, item8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockDetector", 4),
+                arrayOf(arrayOf(item6, ore9, item6), arrayOf<IIngredient>(item, item12, item),
+                        arrayOf(item8, ore7, item8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockActivator", 0),
+                arrayOf(arrayOf<IIngredient>(item6, item11, item6), arrayOf(ore7, item12, ore7),
+                        arrayOf<IIngredient>(item8, item10, item8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 0),
+                arrayOf(arrayOf<IIngredient?>(null, ore6, null), arrayOf<IIngredient?>(ore11, ore10, ore11),
+                        arrayOf<IIngredient?>(null, ore3, null)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 1),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32100)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32100),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 1)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 23),
+                arrayOf(arrayOf<IIngredient?>(null, ore5, null), arrayOf<IIngredient?>(ore13, ore12, ore13),
+                        arrayOf<IIngredient?>(null, ore3, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 82),
+                arrayOf(arrayOf<IIngredient?>(null, ore5, null), arrayOf<IIngredient?>(ore15, ore14, ore15),
+                        arrayOf<IIngredient?>(null, ore3, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 37),
+                arrayOf(arrayOf(item14, ore6, item14), arrayOf<IIngredient>(item14, item14, item14),
+                        arrayOf(item15, ore3, item15)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 38),
+                arrayOf(arrayOf<IIngredient>(ore8, ore5, ore8), arrayOf<IIngredient>(ore8, ore8, ore8),
+                        arrayOf(item16, ore3, item16)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 39),
+                arrayOf(arrayOf<IIngredient>(ore16, ore5, ore16), arrayOf<IIngredient>(ore16, ore16, ore16),
+                        arrayOf(item17, ore3, item17)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 81),
+                arrayOf(arrayOf<IIngredient>(ore17, ore5, ore17), arrayOf<IIngredient>(ore17, ore17, ore17),
+                        arrayOf(item18, ore3, item18)), null)
+        MineTweakerAPI.recipes.addShaped(item20,
+                arrayOf(arrayOf(item19, ore19, ore4), arrayOf<IIngredient>(ore18, ore20, ore21),
+                        arrayOf(item19, ore19, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item22,
+                arrayOf(arrayOf(item21, ore2, ore4), arrayOf(ore22, item20, item23), arrayOf(item21, ore2, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item25,
+                arrayOf(arrayOf(item24, ore24, ore4), arrayOf(ore23, item22, ore25), arrayOf(item24, ore24, ore5)),
+                null)
+        MineTweakerAPI.recipes.addShaped(item26,
+                arrayOf(arrayOf(item24, ore28, ore4), arrayOf(ore26, item25, ore29), arrayOf(item24, ore28, ore5)),
+                null)
+        MineTweakerAPI.recipes.addShapeless(item39,
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32721)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32721),
+                arrayOf<IIngredient>(item39), null)
+        MineTweakerAPI.recipes.addShaped(item40,
+                arrayOf(arrayOf<IIngredient?>(null, ore31, null), arrayOf<IIngredient?>(ore31, ore30, ore31),
+                        arrayOf<IIngredient?>(null, ore31, null)), null)
+        MineTweakerAPI.recipes.addShaped(item41,
+                arrayOf(arrayOf<IIngredient?>(null, ore32, null), arrayOf<IIngredient?>(ore32, ore30, ore32),
+                        arrayOf<IIngredient?>(null, ore32, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 44),
+                arrayOf(arrayOf<IIngredient>(ore33, ore34, ore33), arrayOf(ore19, item27, ore19),
+                        arrayOf<IIngredient>(ore3, ore35, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 0),
+                arrayOf(arrayOf<IIngredient>(ore, ore36, ore), arrayOf(item27, ore2, item27),
+                        arrayOf(item30, ore4, item30)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 45),
+                arrayOf(arrayOf<IIngredient>(item36, item, item36), arrayOf(ore2, item27, ore2),
+                        arrayOf(ore3, item30, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 1),
+                arrayOf(arrayOf<IIngredient>(item36, item36, item36), arrayOf<IIngredient>(item27, item10, item27),
+                        arrayOf(item30, ore37, item30)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 56),
+                arrayOf(arrayOf<IIngredient>(item37, ItemBracketHandler.getItem("StevesCarts:CartModule", 1), item37),
+                        arrayOf<IIngredient>(item28, item10, item28), arrayOf(item31, ore24, item31)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 69),
+                arrayOf(arrayOf<IIngredient>(ore, ore36, ore), arrayOf<IIngredient>(item27, item35, item27),
+                        arrayOf<IIngredient>(item30, item32, item30)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 70),
+                arrayOf(arrayOf(ore16, ItemBracketHandler.getItem("StevesCarts:CartModule", 69), ore16),
+                        arrayOf<IIngredient>(item28, item34, item28), arrayOf<IIngredient>(item31, item33, item31)),
+                null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(2),
+                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), null, null),
+                        arrayOf<IIngredient?>(ore38, null, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
+                arrayOf(arrayOf(ore4, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30), ore3),
+                        arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30), ore19,
+                                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30)),
+                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30),
+                                null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32),
+                arrayOf(arrayOf(ore4, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), ore3),
+                        arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), ore19,
+                                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31)),
+                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
+                                null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(2),
+                arrayOf(arrayOf<IIngredient?>(ore8, null, null), arrayOf<IIngredient?>(ore38, null, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
+                arrayOf(arrayOf(ore4, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34), ore3),
+                        arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34), ore2,
+                                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34)),
+                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34),
+                                null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36),
+                arrayOf(arrayOf(ore4, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), ore3),
+                        arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), ore2,
+                                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35)),
+                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
+                                null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 14),
+                arrayOf(arrayOf(ore39, item27, ore39), arrayOf<IIngredient>(item, item38, item),
+                        arrayOf(ore39, item2, ore39)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 84),
+                arrayOf(arrayOf(ore14, item28, ore14),
+                        arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("StevesCarts:CartModule", 14), item10),
+                        arrayOf(ore14, item3, ore14)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 15),
+                arrayOf(arrayOf<IIngredient>(item39, item39, item39), arrayOf<IIngredient>(item39, item42, item39),
+                        arrayOf<IIngredient>(item, item27, item)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 79),
+                arrayOf(arrayOf<IIngredient>(item40, item40, item40),
+                        arrayOf<IIngredient>(item40, ItemBracketHandler.getItem("StevesCarts:CartModule", 15), item40),
+                        arrayOf<IIngredient>(item10, item28, item10)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 80),
+                arrayOf(arrayOf<IIngredient>(item41, item41, item41),
+                        arrayOf<IIngredient>(item41, ItemBracketHandler.getItem("StevesCarts:CartModule", 79), item41),
+                        arrayOf(ore54, item29, ore54)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(2),
+                arrayOf(arrayOf<IIngredient?>(ore42, null, null), arrayOf<IIngredient?>(ore38, null, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                arrayOf(arrayOf<IIngredient>(ore44, ore43, ore44), arrayOf(ore43, item, ore43),
+                        arrayOf<IIngredient>(ore43, ore43, ore43)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:BlockLiquidManager", 0),
+                arrayOf(arrayOf<IIngredient>(item6, item, item6), arrayOf<IIngredient>(item4, item5, item2),
+                        arrayOf<IIngredient>(item52, item7, item52)), null)
+        MineTweakerAPI.recipes.addShapeless(item70,
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5131)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5131),
+                arrayOf<IIngredient>(item70), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 7),
+                arrayOf(arrayOf<IIngredient?>(item53, null, item53), arrayOf<IIngredient?>(item4, item, item2),
+                        arrayOf<IIngredient?>(ore33, ore33, ore33)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 26),
+                arrayOf(arrayOf(ore2, ore45, item54), arrayOf(ore8, item54, ore45),
+                        arrayOf<IIngredient>(ore44, ore8, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 13),
+                arrayOf(arrayOf(ore2, ore46, item54), arrayOf(ore47, item54, ore46),
+                        arrayOf<IIngredient>(ore44, ore47, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 33),
+                arrayOf(arrayOf<IIngredient?>(null, ore4, null), arrayOf<IIngredient?>(ore19, ore48, ore19),
+                        arrayOf<IIngredient?>(null, ore49, null)), null)
+        MineTweakerAPI.recipes.addShaped(item62,
+                arrayOf(arrayOf(item21, ore58, item21), arrayOf<IIngredient>(ore59, ore57, ore59),
+                        arrayOf(item21, ore58, item21)), null)
+        MineTweakerAPI.recipes.addShaped(item61,
+                arrayOf(arrayOf<IIngredient>(ore, ore44, ore), arrayOf(ore16, item10, ore16),
+                        arrayOf<IIngredient>(ore, ore, ore)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 0),
+                arrayOf(arrayOf<IIngredient>(ore44, ore51, ore44), arrayOf(ore53, withTag, ore53),
+                        arrayOf(ore44, item61, ore44)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 1),
+                arrayOf(arrayOf<IIngredient>(ore55, ore52, ore55), arrayOf(ore54, item56, ore54),
+                        arrayOf(ore50, ItemBracketHandler.getItem("StevesCarts:upgrade", 0), ore50)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 2),
+                arrayOf(arrayOf(ore56, item57, ore56), arrayOf<IIngredient>(item57, item60, item57),
+                        arrayOf(ore16, item61, ore16)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 3),
+                arrayOf(arrayOf<IIngredient>(item59, item58, item59), arrayOf(item58, ore16, item58),
+                        arrayOf(ore16, ItemBracketHandler.getItem("StevesCarts:upgrade", 2), ore16)), null)
         val recipes = MineTweakerAPI.recipes
         val item109 = ItemBracketHandler.getItem("StevesCarts:upgrade", 4)
         val array: Array<Array<IIngredient?>?> = arrayOfNulls(3)
@@ -469,93 +594,254 @@ class StevesCarts : Runnable {
         array4[1] = arrayOf(ore17, ore40, ore17)
         array4[2] = arrayOf(ore17, ItemBracketHandler.getItem("StevesCarts:upgrade", 4), ore17)
         recipes2.addShaped(item111, array4, null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 6), arrayOf(arrayOf<IIngredient>(item, item21, item), arrayOf(item27, ore57, item27), arrayOf<IIngredient>(item62, item61, item62)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 7), arrayOf(arrayOf(item, ore8, item), arrayOf(item30, ore36, item30), arrayOf(ore8, item61, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 8), arrayOf(arrayOf(ore8, item10, ore8), arrayOf(item30, ore61, item30), arrayOf(ore8, item61, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 9), arrayOf(arrayOf(ore8, item, ore8), arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 6), item10), arrayOf(ore16, item61, ore16)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 10), arrayOf(arrayOf(ore8, item64, ore8), arrayOf<IIngredient>(item, item30, item), arrayOf(ore8, item61, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 11), arrayOf(arrayOf(ore8, item2, ore8), arrayOf<IIngredient>(item, item63, item), arrayOf(ore8, item61, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 12), arrayOf(arrayOf<IIngredient>(item30, item2, item30), arrayOf(item4, ore60, item4), arrayOf(ore8, item61, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 13), arrayOf(arrayOf<IIngredient>(item, ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 10), item), arrayOf<IIngredient>(ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 17), item10, ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 21)), arrayOf(ore8, item61, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 15), arrayOf(arrayOf<IIngredient>(ore62, ore16, ore62), arrayOf<IIngredient>(ore16, ore22, ore16), arrayOf(ore62, item61, ore62)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 16), arrayOf(arrayOf<IIngredient>(ore55, ore16, ore55), arrayOf<IIngredient>(ore17, ore63, ore17), arrayOf(ore8, ItemBracketHandler.getItem("StevesCarts:upgrade", 15), ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 17), arrayOf(arrayOf<IIngredient>(ore8, ore64, ore8), arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("StevesCarts:BlockDistributor", 0), item10), arrayOf(ore8, item61, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 18), arrayOf(arrayOf<IIngredient>(item34, item10, item34), arrayOf<IIngredient>(item30, ItemBracketHandler.getItem("StevesCarts:CartModule", 69), item30), arrayOf(ore62, item61, ore62)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 19), arrayOf(arrayOf<IIngredient>(item36, item36, item36), arrayOf<IIngredient>(item30, item10, item30), arrayOf<IIngredient>(item27, item61, item27)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 41), arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4)), arrayOf<IIngredient>(ore8, ore44, ore8), arrayOf<IIngredient>(ore19, ore8, ore19)), null)
-        MineTweakerAPI.recipes.addShaped(item67, arrayOf(arrayOf<IIngredient>(item62, item, item62), arrayOf<IIngredient>(item65, item65, item65), arrayOf(ore8, item65, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(item68, arrayOf(arrayOf<IIngredient>(item62, item, item62), arrayOf<IIngredient>(item66, item66, item66), arrayOf(ore8, item66, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 30), arrayOf(arrayOf<IIngredient>(item65, item67, item65), arrayOf<IIngredient>(item65, item10, item65), arrayOf(item65, ore3, item65)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 71), arrayOf(arrayOf<IIngredient>(item66, item68, item66), arrayOf<IIngredient>(item66, item10, item66), arrayOf(item66, ore3, item66)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 25), arrayOf(arrayOf<IIngredient>(ore65, ore5, ore65), arrayOf<IIngredient>(ore44, ore47, ore44), arrayOf<IIngredient>(item71, item, item71)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 29), arrayOf(arrayOf(ore2, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26), ore2), arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 25), item70), arrayOf(ore65, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), ore65)), null)
-        MineTweakerAPI.recipes.addShaped(item74, arrayOf(arrayOf(item75, ore66, item75), arrayOf(item34, ore36, item34), arrayOf<IIngredient>(ore67, ore66, ore67)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 34), arrayOf(arrayOf(item75, ore62, item75), arrayOf<IIngredient>(item74, item76, item74), arrayOf<IIngredient>(ore67, ore62, ore67)), null)
-        MineTweakerAPI.recipes.addShaped(item77, arrayOf(arrayOf<IIngredient>(ore8, ore8, ore8), arrayOf<IIngredient>(item4, item64, item2), arrayOf<IIngredient>(ore8, ore8, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 11), arrayOf(arrayOf<IIngredient>(ore65, ore65, ore65), arrayOf<IIngredient>(item77, item64, item77), arrayOf<IIngredient>(ore65, ore65, ore65)), null)
-        MineTweakerAPI.recipes.addShapeless(item78, arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:itemDynamite", 0)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("IC2:itemDynamite", 0), arrayOf<IIngredient>(item78), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 31), arrayOf(arrayOf<IIngredient>(item14, item78, item14), arrayOf<IIngredient>(item78, item79, item78), arrayOf<IIngredient>(item14, item78, item14)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 59), arrayOf(arrayOf(ore68, item71, ore68), arrayOf(ore61, item80, ore61), arrayOf<IIngredient>(item, item79, item)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 14), arrayOf(arrayOf<IIngredient>(ore20, ore48, ore20), arrayOf<IIngredient>(ore48, ore5, ore48), arrayOf<IIngredient>(ore20, ore48, ore20)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 10), arrayOf(arrayOf<IIngredient>(ore69, ore42, ore69), arrayOf<IIngredient>(item, item81, item), arrayOf<IIngredient>(ore69, ore42, ore69)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 27), arrayOf(arrayOf(ore5, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 10), ore3), arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 14), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 13)), arrayOf<IIngredient>(ore65, ore65, ore65)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 60).amount(2), arrayOf(arrayOf(ore19, item82, ore19), arrayOf(item19, ore4, item19), arrayOf(ore19, item82, ore19)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 57), arrayOf(arrayOf<IIngredient>(item21, item21, item21), arrayOf(item21, ore5, item21), arrayOf<IIngredient>(item21, item, item21)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 12), arrayOf(arrayOf(item, ore44, item), arrayOf<IIngredient>(item83, item30, item83), arrayOf<IIngredient>(ore8, ore70, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 13), arrayOf(arrayOf<IIngredient>(item2, item, item2), arrayOf<IIngredient>(item4, item64, item4), arrayOf<IIngredient>(ore8, ore8, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 25), arrayOf(arrayOf<IIngredient?>(ore4, null, ore72), arrayOf<IIngredient?>(null, ore19, ore72), arrayOf<IIngredient?>(ore71, ore71, ore19)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 49), arrayOf(arrayOf<IIngredient>(ore27, ore41, ore27), arrayOf<IIngredient>(item10, item84, item10), arrayOf<IIngredient>(ore16, ore41, ore16)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 85), arrayOf(arrayOf<IIngredient>(item38, item27, item38), arrayOf<IIngredient>(item2, item, item2), arrayOf<IIngredient>(item38, item27, item38)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 68), arrayOf(arrayOf(ore8, item85, ore8), arrayOf<IIngredient>(item, item86, item), arrayOf(ore8, item85, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 32), arrayOf(arrayOf(ore73, item87, ore73), arrayOf<IIngredient>(item87, item88, item87), arrayOf(ore73, item87, ore73)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 16), arrayOf(arrayOf<IIngredient>(item93, item19, item93), arrayOf<IIngredient>(item89, item, item89), arrayOf(item90, ore5, item90)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 95), arrayOf(arrayOf(ore74, item91, ore74), arrayOf<IIngredient>(item, item92, item), arrayOf<IIngredient>(item93, item89, item93)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 18), arrayOf(arrayOf<IIngredient>(item94, item, item94), arrayOf<IIngredient>(item93, item95, item93), arrayOf<IIngredient>(item95, item, item95)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 19), arrayOf(arrayOf(ore8, item96, ore8), arrayOf<IIngredient>(item, item81, item), arrayOf(ore8, item, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 20), arrayOf(arrayOf<IIngredient>(ore8, ore51, ore8), arrayOf(ore44, item97, ore44), arrayOf(ore8, item10, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 40), arrayOf(arrayOf(item98, ore44, item98), arrayOf<IIngredient>(item98, item, item98), arrayOf(ore8, item99, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 75), arrayOf(arrayOf<IIngredient>(ore8, ore47, ore8), arrayOf(ore47, item10, ore47), arrayOf(item10, ore44, item10)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 77), arrayOf(arrayOf(ore8, item30, ore8), arrayOf<IIngredient>(item10, item100, item10), arrayOf(ore8, item10, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 78), arrayOf(arrayOf<IIngredient>(ore8, ore44, ore8), arrayOf<IIngredient>(item, item81, item), arrayOf<IIngredient>(item101, item10, item101)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 82), arrayOf(arrayOf<IIngredient>(ore8, ore75, ore8), arrayOf<IIngredient>(item102, item103, item102), arrayOf(ore44, item10, ore44)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 83), arrayOf(arrayOf(item73, ore44, item73), arrayOf(item58, ore17, item58), arrayOf<IIngredient>(item104, item10, item104)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 86), arrayOf(arrayOf<IIngredient>(item105, item106, item105), arrayOf<IIngredient>(item10, item90, item10), arrayOf<IIngredient>(item93, item90, item93)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 89), arrayOf(arrayOf(item72, ore44, item72), arrayOf<IIngredient>(item10, item42, item10), arrayOf<IIngredient>(ore8, ore44, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(item42, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("treeSapling"), OreBracketHandler.getOre("treeSapling"), OreBracketHandler.getOre("treeSapling")), arrayOf(OreBracketHandler.getOre("treeSapling"), item, OreBracketHandler.getOre("treeSapling")), arrayOf<IIngredient>(OreBracketHandler.getOre("treeSapling"), OreBracketHandler.getOre("treeSapling"), OreBracketHandler.getOre("treeSapling"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 94), arrayOf(arrayOf(ore8, item107, ore8), arrayOf<IIngredient>(item, item81, item), arrayOf<IIngredient>(ore8, ore44, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 99), arrayOf(arrayOf<IIngredient?>(null, item108, null), arrayOf(item, ore71, item), arrayOf<IIngredient?>(ore8, ore8, ore8)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11383)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11383), arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 47), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11384)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11384), arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 47)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 49), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11385)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11385), arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 49)), null)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:BlockAdvDetector", 0), ItemBracketHandler.getItem("minecraft:detector_rail", 0), ItemBracketHandler.getItem("Railcraft:detector", 9), 200, 30)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 6),
+                arrayOf(arrayOf<IIngredient>(item, item21, item), arrayOf(item27, ore57, item27),
+                        arrayOf<IIngredient>(item62, item61, item62)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 7),
+                arrayOf(arrayOf(item, ore8, item), arrayOf(item30, ore36, item30), arrayOf(ore8, item61, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 8),
+                arrayOf(arrayOf(ore8, item10, ore8), arrayOf(item30, ore61, item30), arrayOf(ore8, item61, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 9),
+                arrayOf(arrayOf(ore8, item, ore8), arrayOf<IIngredient>(item10,
+                        ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 6), item10),
+                        arrayOf(ore16, item61, ore16)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 10),
+                arrayOf(arrayOf(ore8, item64, ore8), arrayOf<IIngredient>(item, item30, item),
+                        arrayOf(ore8, item61, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 11),
+                arrayOf(arrayOf(ore8, item2, ore8), arrayOf<IIngredient>(item, item63, item),
+                        arrayOf(ore8, item61, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 12),
+                arrayOf(arrayOf<IIngredient>(item30, item2, item30), arrayOf(item4, ore60, item4),
+                        arrayOf(ore8, item61, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 13),
+                arrayOf(arrayOf<IIngredient>(item,
+                        ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 10), item),
+                        arrayOf<IIngredient>(
+                                ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 17),
+                                item10,
+                                ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 21)),
+                        arrayOf(ore8, item61, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 15),
+                arrayOf(arrayOf<IIngredient>(ore62, ore16, ore62), arrayOf<IIngredient>(ore16, ore22, ore16),
+                        arrayOf(ore62, item61, ore62)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 16),
+                arrayOf(arrayOf<IIngredient>(ore55, ore16, ore55), arrayOf<IIngredient>(ore17, ore63, ore17),
+                        arrayOf(ore8, ItemBracketHandler.getItem("StevesCarts:upgrade", 15), ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 17),
+                arrayOf(arrayOf<IIngredient>(ore8, ore64, ore8),
+                        arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("StevesCarts:BlockDistributor", 0),
+                                item10), arrayOf(ore8, item61, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 18),
+                arrayOf(arrayOf<IIngredient>(item34, item10, item34),
+                        arrayOf<IIngredient>(item30, ItemBracketHandler.getItem("StevesCarts:CartModule", 69), item30),
+                        arrayOf(ore62, item61, ore62)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 19),
+                arrayOf(arrayOf<IIngredient>(item36, item36, item36), arrayOf<IIngredient>(item30, item10, item30),
+                        arrayOf<IIngredient>(item27, item61, item27)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 41),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2),
+                        ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3),
+                        ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4)),
+                        arrayOf<IIngredient>(ore8, ore44, ore8), arrayOf<IIngredient>(ore19, ore8, ore19)), null)
+        MineTweakerAPI.recipes.addShaped(item67,
+                arrayOf(arrayOf<IIngredient>(item62, item, item62), arrayOf<IIngredient>(item65, item65, item65),
+                        arrayOf(ore8, item65, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(item68,
+                arrayOf(arrayOf<IIngredient>(item62, item, item62), arrayOf<IIngredient>(item66, item66, item66),
+                        arrayOf(ore8, item66, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 30),
+                arrayOf(arrayOf<IIngredient>(item65, item67, item65), arrayOf<IIngredient>(item65, item10, item65),
+                        arrayOf(item65, ore3, item65)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 71),
+                arrayOf(arrayOf<IIngredient>(item66, item68, item66), arrayOf<IIngredient>(item66, item10, item66),
+                        arrayOf(item66, ore3, item66)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 25),
+                arrayOf(arrayOf<IIngredient>(ore65, ore5, ore65), arrayOf<IIngredient>(ore44, ore47, ore44),
+                        arrayOf<IIngredient>(item71, item, item71)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 29),
+                arrayOf(arrayOf(ore2, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26), ore2),
+                        arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 25),
+                                item70),
+                        arrayOf(ore65, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), ore65)), null)
+        MineTweakerAPI.recipes.addShaped(item74, arrayOf(arrayOf(item75, ore66, item75), arrayOf(item34, ore36, item34),
+                arrayOf<IIngredient>(ore67, ore66, ore67)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 34),
+                arrayOf(arrayOf(item75, ore62, item75), arrayOf<IIngredient>(item74, item76, item74),
+                        arrayOf<IIngredient>(ore67, ore62, ore67)), null)
+        MineTweakerAPI.recipes.addShaped(item77,
+                arrayOf(arrayOf<IIngredient>(ore8, ore8, ore8), arrayOf<IIngredient>(item4, item64, item2),
+                        arrayOf<IIngredient>(ore8, ore8, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 11),
+                arrayOf(arrayOf<IIngredient>(ore65, ore65, ore65), arrayOf<IIngredient>(item77, item64, item77),
+                        arrayOf<IIngredient>(ore65, ore65, ore65)), null)
+        MineTweakerAPI.recipes.addShapeless(item78,
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:itemDynamite", 0)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("IC2:itemDynamite", 0),
+                arrayOf<IIngredient>(item78), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 31),
+                arrayOf(arrayOf<IIngredient>(item14, item78, item14), arrayOf<IIngredient>(item78, item79, item78),
+                        arrayOf<IIngredient>(item14, item78, item14)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 59),
+                arrayOf(arrayOf(ore68, item71, ore68), arrayOf(ore61, item80, ore61),
+                        arrayOf<IIngredient>(item, item79, item)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 14),
+                arrayOf(arrayOf<IIngredient>(ore20, ore48, ore20), arrayOf<IIngredient>(ore48, ore5, ore48),
+                        arrayOf<IIngredient>(ore20, ore48, ore20)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 10),
+                arrayOf(arrayOf<IIngredient>(ore69, ore42, ore69), arrayOf<IIngredient>(item, item81, item),
+                        arrayOf<IIngredient>(ore69, ore42, ore69)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 27),
+                arrayOf(arrayOf(ore5, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 10), ore3),
+                        arrayOf<IIngredient>(item10, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 14),
+                                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 13)),
+                        arrayOf<IIngredient>(ore65, ore65, ore65)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 60).amount(2),
+                arrayOf(arrayOf(ore19, item82, ore19), arrayOf(item19, ore4, item19), arrayOf(ore19, item82, ore19)),
+                null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 57),
+                arrayOf(arrayOf<IIngredient>(item21, item21, item21), arrayOf(item21, ore5, item21),
+                        arrayOf<IIngredient>(item21, item, item21)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 12),
+                arrayOf(arrayOf(item, ore44, item), arrayOf<IIngredient>(item83, item30, item83),
+                        arrayOf<IIngredient>(ore8, ore70, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 13),
+                arrayOf(arrayOf<IIngredient>(item2, item, item2), arrayOf<IIngredient>(item4, item64, item4),
+                        arrayOf<IIngredient>(ore8, ore8, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 25),
+                arrayOf(arrayOf<IIngredient?>(ore4, null, ore72), arrayOf<IIngredient?>(null, ore19, ore72),
+                        arrayOf<IIngredient?>(ore71, ore71, ore19)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 49),
+                arrayOf(arrayOf<IIngredient>(ore27, ore41, ore27), arrayOf<IIngredient>(item10, item84, item10),
+                        arrayOf<IIngredient>(ore16, ore41, ore16)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 85),
+                arrayOf(arrayOf<IIngredient>(item38, item27, item38), arrayOf<IIngredient>(item2, item, item2),
+                        arrayOf<IIngredient>(item38, item27, item38)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 68),
+                arrayOf(arrayOf(ore8, item85, ore8), arrayOf<IIngredient>(item, item86, item),
+                        arrayOf(ore8, item85, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 32),
+                arrayOf(arrayOf(ore73, item87, ore73), arrayOf<IIngredient>(item87, item88, item87),
+                        arrayOf(ore73, item87, ore73)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 16),
+                arrayOf(arrayOf<IIngredient>(item93, item19, item93), arrayOf<IIngredient>(item89, item, item89),
+                        arrayOf(item90, ore5, item90)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 95),
+                arrayOf(arrayOf(ore74, item91, ore74), arrayOf<IIngredient>(item, item92, item),
+                        arrayOf<IIngredient>(item93, item89, item93)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 18),
+                arrayOf(arrayOf<IIngredient>(item94, item, item94), arrayOf<IIngredient>(item93, item95, item93),
+                        arrayOf<IIngredient>(item95, item, item95)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 19),
+                arrayOf(arrayOf(ore8, item96, ore8), arrayOf<IIngredient>(item, item81, item),
+                        arrayOf(ore8, item, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 20),
+                arrayOf(arrayOf<IIngredient>(ore8, ore51, ore8), arrayOf(ore44, item97, ore44),
+                        arrayOf(ore8, item10, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 40),
+                arrayOf(arrayOf(item98, ore44, item98), arrayOf<IIngredient>(item98, item, item98),
+                        arrayOf(ore8, item99, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 75),
+                arrayOf(arrayOf<IIngredient>(ore8, ore47, ore8), arrayOf(ore47, item10, ore47),
+                        arrayOf(item10, ore44, item10)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 77),
+                arrayOf(arrayOf(ore8, item30, ore8), arrayOf<IIngredient>(item10, item100, item10),
+                        arrayOf(ore8, item10, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 78),
+                arrayOf(arrayOf<IIngredient>(ore8, ore44, ore8), arrayOf<IIngredient>(item, item81, item),
+                        arrayOf<IIngredient>(item101, item10, item101)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 82),
+                arrayOf(arrayOf<IIngredient>(ore8, ore75, ore8), arrayOf<IIngredient>(item102, item103, item102),
+                        arrayOf(ore44, item10, ore44)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 83),
+                arrayOf(arrayOf(item73, ore44, item73), arrayOf(item58, ore17, item58),
+                        arrayOf<IIngredient>(item104, item10, item104)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 86),
+                arrayOf(arrayOf<IIngredient>(item105, item106, item105), arrayOf<IIngredient>(item10, item90, item10),
+                        arrayOf<IIngredient>(item93, item90, item93)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 89),
+                arrayOf(arrayOf(item72, ore44, item72), arrayOf<IIngredient>(item10, item42, item10),
+                        arrayOf<IIngredient>(ore8, ore44, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(item42, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("treeSapling"),
+                OreBracketHandler.getOre("treeSapling"), OreBracketHandler.getOre("treeSapling")),
+                arrayOf(OreBracketHandler.getOre("treeSapling"), item, OreBracketHandler.getOre("treeSapling")),
+                arrayOf<IIngredient>(OreBracketHandler.getOre("treeSapling"), OreBracketHandler.getOre("treeSapling"),
+                        OreBracketHandler.getOre("treeSapling"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 94),
+                arrayOf(arrayOf(ore8, item107, ore8), arrayOf<IIngredient>(item, item81, item),
+                        arrayOf<IIngredient>(ore8, ore44, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 99),
+                arrayOf(arrayOf<IIngredient?>(null, item108, null), arrayOf(item, ore71, item),
+                        arrayOf<IIngredient?>(ore8, ore8, ore8)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11383)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11383),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 47),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11384)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11384),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 47)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 49),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11385)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11385),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 49)), null)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:BlockAdvDetector", 0),
+                ItemBracketHandler.getItem("minecraft:detector_rail", 0),
+                ItemBracketHandler.getItem("Railcraft:detector", 9), 200, 30)
         val item113 = ItemBracketHandler.getItem("StevesCarts:BlockJunction", 0)
         val item114 = ItemBracketHandler.getItem("Railcraft:track", 0)
         val hashMap6 = HashMap<String, IData>()
         hashMap6["track"] = ExpandString.asData("railcraft:track.junction")
-        Assembler.addRecipe(item113, item114.withTag(ExpandAnyDict.asData(hashMap6)), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000).amount(4), 200, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 0), ItemBracketHandler.getItem("minecraft:stick", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28809).amount(2), 200, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 23), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23383), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28383).amount(2), 400, 4)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 82), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23384), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28384).amount(2), 400, 8)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 37), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809).amount(4), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 0).amount(2), 400, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 38), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(4), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 1).amount(2), 400, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 39), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17383).amount(4), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 23).amount(2), 400, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 81), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17384).amount(4), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 82).amount(2), 400, 2)
-        Assembler.addRecipe(item24, ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0).amount(5), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 19).amount(4), 200, 64)
-        Assembler.addRecipe(item40, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 31343), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2383), 1600, 2)
-        Assembler.addRecipe(item41, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 31343), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2384), 1600, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 83), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 7032).amount(2), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 300, 16)
-        Assembler.addRecipe(item38, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 31032), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 83).amount(4), 600, 16)
+        Assembler.addRecipe(item113, item114.withTag(ExpandAnyDict.asData(hashMap6)),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000).amount(4), 200, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 0),
+                ItemBracketHandler.getItem("minecraft:stick", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28809).amount(2), 200, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 23),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23383),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28383).amount(2), 400, 4)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 82),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23384),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28384).amount(2), 400, 8)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 37),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809).amount(4),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 0).amount(2), 400, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 38),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(4),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 1).amount(2), 400, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 39),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17383).amount(4),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 23).amount(2), 400, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 81),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17384).amount(4),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 82).amount(2), 400, 2)
+        Assembler.addRecipe(item24, ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0).amount(5),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 19).amount(4), 200, 64)
+        Assembler.addRecipe(item40, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 31343),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2383), 1600, 2)
+        Assembler.addRecipe(item41, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 31343),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2384), 1600, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 83),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 7032).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 300, 16)
+        Assembler.addRecipe(item38, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 31032),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 83).amount(4), 600, 16)
         Assembler.addRecipe(item36, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32750), item, 600, 30)
         Assembler.addRecipe(item37, item36.amount(4), item10.amount(2), 1200, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 80, 8)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 160, 16)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 160, 8)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 320, 16)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), item, 640, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 80, 8)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 160, 16)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 160, 8)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 320, 16)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), item, 640, 30)
         Assembler.addRecipe(item42, item, item43.amount(8), 300, 30)
         Assembler.addRecipe(item42, item, item44.amount(8), 300, 30)
         Assembler.addRecipe(item42, item, item45.amount(8), 300, 30)
@@ -565,111 +851,353 @@ class StevesCarts : Runnable {
         Assembler.addRecipe(item42, item, item49.amount(8), 300, 30)
         Assembler.addRecipe(item42, item, item50.amount(8), 300, 30)
         Assembler.addRecipe(item42, item, item51.amount(8), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), LiquidBracketHandler.getLiquid("molten.rubber").withAmount(36), 160, 8)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), LiquidBracketHandler.getLiquid("molten.rubber").withAmount(72), 320, 16)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 21), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:porkchop", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 22), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:diamond", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 23), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:emerald", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 24), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:slime_ball", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 51), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:glass_bottle", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 52), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:fire_charge", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 53), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:egg", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 90), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:cake", 0), 600, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 58), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), ItemBracketHandler.getItem("minecraft:nether_wart", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 88), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), item10, 600, 64)
-        Assembler.addRecipe(item53, ItemBracketHandler.getItem("minecraft:torch", 0).amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 100, 8)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 11), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22305), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032), 100, 16)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 33), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26032), 100, 8)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("minecraft:dye", 1).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32415).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("gendustry:HoneyDrop", 11).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 14).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("ExtraBees:misc", 19).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("Botany:pigment", 59).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("minecraft:dye", 2).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("ExtraBees:misc", 22).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 13).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("gendustry:HoneyDrop", 12).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32416).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("BiomesOPlenty:misc", 7).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("Botany:pigment", 28).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("minecraft:dye", 4).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("Botany:pigment", 24).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("ExtraBees:misc", 21).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("Natura:barleyFood", 8).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 11).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("gendustry:HoneyDrop", 14).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32418).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2), ItemBracketHandler.getItem("BiomesOPlenty:misc", 5).amount(4), 100, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 101), ItemBracketHandler.getItem("StevesCarts:CartModule", 41), item10, 200, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(36), 160, 8)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(72), 320, 16)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 21),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:porkchop", 0), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 22),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:diamond", 0), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 23),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:emerald", 0), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 24),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:slime_ball", 0), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 51),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:glass_bottle", 0), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 52),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:fire_charge", 0), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 53),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:egg", 0), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 90),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:cake", 0), 600, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 58),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
+                ItemBracketHandler.getItem("minecraft:nether_wart", 0), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 88),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), item10, 600, 64)
+        Assembler.addRecipe(item53, ItemBracketHandler.getItem("minecraft:torch", 0).amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 100, 8)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 11),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22305),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032), 100, 16)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 33),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26032), 100, 8)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("minecraft:dye", 1).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32415).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("gendustry:HoneyDrop", 11).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 14).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("ExtraBees:misc", 19).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("Botany:pigment", 59).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("minecraft:dye", 2).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("ExtraBees:misc", 22).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 13).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("gendustry:HoneyDrop", 12).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32416).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:misc", 7).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("Botany:pigment", 28).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("minecraft:dye", 4).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("Botany:pigment", 24).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("ExtraBees:misc", 21).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("Natura:barleyFood", 8).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 11).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("gendustry:HoneyDrop", 14).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32418).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:misc", 5).amount(4), 100, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 101),
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 41), item10, 200, 30)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 87), item69, item.amount(2), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 92), ItemBracketHandler.getItem("StevesCarts:CartModule", 87), item10.amount(2), 300, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 91), ItemBracketHandler.getItem("IC2:blockMachine", 1), item.amount(2), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 93), ItemBracketHandler.getItem("StevesCarts:CartModule", 91), item10.amount(2), 300, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 28), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 25), item70.amount(8), 400, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762), ItemBracketHandler.getItem("StevesCarts:CartModule", 21), 400, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762), ItemBracketHandler.getItem("StevesCarts:CartModule", 22), 400, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762), ItemBracketHandler.getItem("StevesCarts:CartModule", 23), 400, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762), ItemBracketHandler.getItem("StevesCarts:CartModule", 24), 400, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72, ItemBracketHandler.getItem("StevesCarts:CartModule", 21), 400, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72, ItemBracketHandler.getItem("StevesCarts:CartModule", 22), 400, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72, ItemBracketHandler.getItem("StevesCarts:CartModule", 23), 400, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72, ItemBracketHandler.getItem("StevesCarts:CartModule", 24), 400, 120)
-        Assembler.addRecipe(item80.amount(4), ItemBracketHandler.getItem("minecraft:string", 0), ItemBracketHandler.getItem("minecraft:gunpowder", 0), 50, 2)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 5), ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(7), ItemBracketHandler.getItem("minecraft:fermented_spider_eye", 0), LiquidBracketHandler.getLiquid("molten.thaumium").withAmount(288), 200, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 36), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 5).amount(4), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 45), LiquidBracketHandler.getLiquid("ender").withAmount(1000), 400, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 60).amount(2), item82, item19, 400, 16)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 92),
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 87), item10.amount(2), 300, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 91),
+                ItemBracketHandler.getItem("IC2:blockMachine", 1), item.amount(2), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 93),
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 91), item10.amount(2), 300, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 28),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 25), item70.amount(8), 400, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762),
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 21), 400, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762),
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 22), 400, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762),
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 23), 400, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762),
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 24), 400, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72,
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 21), 400, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72,
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 22), 400, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72,
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 23), 400, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72,
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 24), 400, 120)
+        Assembler.addRecipe(item80.amount(4), ItemBracketHandler.getItem("minecraft:string", 0),
+                ItemBracketHandler.getItem("minecraft:gunpowder", 0), 50, 2)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 5),
+                ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(7),
+                ItemBracketHandler.getItem("minecraft:fermented_spider_eye", 0),
+                LiquidBracketHandler.getLiquid("molten.thaumium").withAmount(288), 200, 256)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 36),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 5).amount(4),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 45),
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 400, 480)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 60).amount(2), item82, item19,
+                400, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 57), item21.amount(5), item, 600, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 76), ItemBracketHandler.getItem("StevesCarts:CartModule", 81), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 129), LiquidBracketHandler.getLiquid("molten.americium").withAmount(1440), 600, 30720)
-        BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22)), arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 21)), 1000, 120, 1700)
-        BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 12384)), LiquidBracketHandler.getLiquid("oxygen").withAmount(1000), arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 46)), 2000, 120, 2200)
-        BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 12385)), LiquidBracketHandler.getLiquid("oxygen").withAmount(1000), arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 48)), 3000, 120, 3500)
-        BlastFurnace.addRecipe(arrayOf(item54), arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 11)), 200, 120, 1000)
-        ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37)), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34), LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), intArrayOf(10000), 200, 2)
-        ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38)), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), LiquidBracketHandler.getLiquid("molten.redstone").withAmount(576), intArrayOf(10000), 300, 2)
-        ChemicalBath.addRecipe(arrayOf(item65), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 24), LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(864), intArrayOf(10000), 200, 2)
-        ChemicalBath.addRecipe(arrayOf(item66), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 24), LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(864), intArrayOf(10000), 200, 2)
-        ChemicalReactor.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 18).amount(2), null, ItemBracketHandler.getItem("minecraft:diamond", 0), null, LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(1152), 600, 30)
-        Compressor.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 48), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 46).amount(9))
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809), LiquidBracketHandler.getLiquid("water").withAmount(4), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809), LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), LiquidBracketHandler.getLiquid("water").withAmount(6), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(4), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31), LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32), LiquidBracketHandler.getLiquid("water").withAmount(8), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32), LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 50, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032), LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032), LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), LiquidBracketHandler.getLiquid("water").withAmount(12), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(8), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35), LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36), LiquidBracketHandler.getLiquid("water").withAmount(16), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(12), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36), LiquidBracketHandler.getLiquid("lubricant").withAmount(4), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38), LiquidBracketHandler.getLiquid("water").withAmount(32), 300, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(24), 300, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38), LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 150, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39), LiquidBracketHandler.getLiquid("water").withAmount(64), 300, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(48), 300, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39), LiquidBracketHandler.getLiquid("lubricant").withAmount(16), 150, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63), LiquidBracketHandler.getLiquid("water").withAmount(16), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(12), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63), LiquidBracketHandler.getLiquid("lubricant").withAmount(4), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("TConstruct:GlassPane", 0), LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("TConstruct:GlassPane", 0), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("TConstruct:GlassPane", 0), LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("minecraft:glass_pane", 0), LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("minecraft:glass_pane", 0), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("minecraft:glass_pane", 0), LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62), LiquidBracketHandler.getLiquid("water").withAmount(12), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62), LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(8), 200, 30)
-        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62), LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 76),
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 81),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 129),
+                LiquidBracketHandler.getLiquid("molten.americium").withAmount(1440), 600, 30720)
+        BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22)),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 21)), 1000, 120, 1700)
+        BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 12384)),
+                LiquidBracketHandler.getLiquid("oxygen").withAmount(1000),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 46)), 2000, 120, 2200)
+        BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 12385)),
+                LiquidBracketHandler.getLiquid("oxygen").withAmount(1000),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 48)), 3000, 120, 3500)
+        BlastFurnace.addRecipe(arrayOf(item54),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 11)), 200, 120, 1000)
+        ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37)),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34),
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), intArrayOf(10000), 200, 2)
+        ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38)),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(576), intArrayOf(10000), 300, 2)
+        ChemicalBath.addRecipe(arrayOf(item65), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 24),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(864), intArrayOf(10000), 200, 2)
+        ChemicalBath.addRecipe(arrayOf(item66), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 24),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(864), intArrayOf(10000), 200, 2)
+        ChemicalReactor.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 18).amount(2), null,
+                ItemBracketHandler.getItem("minecraft:diamond", 0), null,
+                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(1152), 600, 30)
+        Compressor.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 48),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 46).amount(9))
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809),
+                LiquidBracketHandler.getLiquid("water").withAmount(4), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
+                LiquidBracketHandler.getLiquid("water").withAmount(6), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(4), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32),
+                LiquidBracketHandler.getLiquid("water").withAmount(8), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 50, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032),
+                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
+                LiquidBracketHandler.getLiquid("water").withAmount(12), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(8), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36),
+                LiquidBracketHandler.getLiquid("water").withAmount(16), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(12), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(4), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38),
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 300, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(24), 300, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 150, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39),
+                LiquidBracketHandler.getLiquid("water").withAmount(64), 300, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(48), 300, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(16), 150, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63),
+                LiquidBracketHandler.getLiquid("water").withAmount(16), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(12), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(4), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("minecraft:glass_pane", 0),
+                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("minecraft:glass_pane", 0),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("minecraft:glass_pane", 0),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62),
+                LiquidBracketHandler.getLiquid("water").withAmount(12), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62),
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(8), 200, 30)
+        CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62),
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
         ImplosionCompressor.addRecipe(item87, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 18), 1)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2383)), ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22), intArrayOf(10000), 300, 2)
-        ExtremeCrafting.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 14), arrayOf(arrayOfNulls(9), arrayOfNulls(9), arrayOf(null, null, OreBracketHandler.getOre("plateDenseNaquadria"), OreBracketHandler.getOre("ingotInfinity"), ItemBracketHandler.getItem("StevesCarts:upgrade", 5), OreBracketHandler.getOre("ingotInfinity"), OreBracketHandler.getOre("plateDenseNaquadria"), null, null), arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), null, null), arrayOf(null, null, ItemBracketHandler.getItem("StevesCarts:upgrade", 5), OreBracketHandler.getOre("plateEnhancedGalgadorian"), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1192), OreBracketHandler.getOre("plateEnhancedGalgadorian"), ItemBracketHandler.getItem("StevesCarts:upgrade", 5), null, null), arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), null, null), arrayOf(null, null, OreBracketHandler.getOre("plateDenseNaquadria"), OreBracketHandler.getOre("ingotInfinity"), ItemBracketHandler.getItem("StevesCarts:upgrade", 5), OreBracketHandler.getOre("ingotInfinity"), OreBracketHandler.getOre("plateDenseNaquadria"), null, null), arrayOfNulls(9), arrayOfNulls(9)))
-        ExtremeCrafting.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 61), arrayOf(arrayOfNulls(9), arrayOfNulls(9), arrayOf(null, null, ItemBracketHandler.getItem("Railcraft:firestone.refined", 0), OreBracketHandler.getOre("ingotInfinity"), ItemBracketHandler.getItem("StevesCarts:upgrade", 19), OreBracketHandler.getOre("ingotInfinity"), ItemBracketHandler.getItem("Railcraft:firestone.refined", 0), null, null), arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), null, null), arrayOf(null, null, ItemBracketHandler.getItem("StevesCarts:upgrade", 18), OreBracketHandler.getOre("plateEnhancedGalgadorian"), ItemBracketHandler.getItem("IC2:blockReactorChamber", 0), OreBracketHandler.getOre("plateEnhancedGalgadorian"), ItemBracketHandler.getItem("StevesCarts:upgrade", 18), null, null), arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), OreBracketHandler.getOre("plateEnhancedGalgadorian"), null, null), arrayOf(null, null, ItemBracketHandler.getItem("Railcraft:firestone.refined", 0), OreBracketHandler.getOre("ingotInfinity"), ItemBracketHandler.getItem("StevesCarts:upgrade", 19), OreBracketHandler.getOre("ingotInfinity"), ItemBracketHandler.getItem("Railcraft:firestone.refined", 0), null, null), arrayOfNulls(9), arrayOfNulls(9)))
+        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2383)),
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22), intArrayOf(10000), 300, 2)
+        ExtremeCrafting.addShaped(ItemBracketHandler.getItem("StevesCarts:upgrade", 14),
+                arrayOf(arrayOfNulls(9), arrayOfNulls(9),
+                        arrayOf(null, null, OreBracketHandler.getOre("plateDenseNaquadria"),
+                                OreBracketHandler.getOre("ingotInfinity"),
+                                ItemBracketHandler.getItem("StevesCarts:upgrade", 5),
+                                OreBracketHandler.getOre("ingotInfinity"),
+                                OreBracketHandler.getOre("plateDenseNaquadria"), null, null),
+                        arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"), null, null),
+                        arrayOf(null, null, ItemBracketHandler.getItem("StevesCarts:upgrade", 5),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1192),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                ItemBracketHandler.getItem("StevesCarts:upgrade", 5), null, null),
+                        arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"), null, null),
+                        arrayOf(null, null, OreBracketHandler.getOre("plateDenseNaquadria"),
+                                OreBracketHandler.getOre("ingotInfinity"),
+                                ItemBracketHandler.getItem("StevesCarts:upgrade", 5),
+                                OreBracketHandler.getOre("ingotInfinity"),
+                                OreBracketHandler.getOre("plateDenseNaquadria"), null, null), arrayOfNulls(9),
+                        arrayOfNulls(9)))
+        ExtremeCrafting.addShaped(ItemBracketHandler.getItem("StevesCarts:CartModule", 61),
+                arrayOf(arrayOfNulls(9), arrayOfNulls(9),
+                        arrayOf(null, null, ItemBracketHandler.getItem("Railcraft:firestone.refined", 0),
+                                OreBracketHandler.getOre("ingotInfinity"),
+                                ItemBracketHandler.getItem("StevesCarts:upgrade", 19),
+                                OreBracketHandler.getOre("ingotInfinity"),
+                                ItemBracketHandler.getItem("Railcraft:firestone.refined", 0), null, null),
+                        arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"), null, null),
+                        arrayOf(null, null, ItemBracketHandler.getItem("StevesCarts:upgrade", 18),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                ItemBracketHandler.getItem("IC2:blockReactorChamber", 0),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                ItemBracketHandler.getItem("StevesCarts:upgrade", 18), null, null),
+                        arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"),
+                                OreBracketHandler.getOre("plateEnhancedGalgadorian"), null, null),
+                        arrayOf(null, null, ItemBracketHandler.getItem("Railcraft:firestone.refined", 0),
+                                OreBracketHandler.getOre("ingotInfinity"),
+                                ItemBracketHandler.getItem("StevesCarts:upgrade", 19),
+                                OreBracketHandler.getOre("ingotInfinity"),
+                                ItemBracketHandler.getItem("Railcraft:firestone.refined", 0), null, null),
+                        arrayOfNulls(9), arrayOfNulls(9)))
     }
 }

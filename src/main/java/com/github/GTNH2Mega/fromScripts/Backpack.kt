@@ -77,8 +77,12 @@ class Backpack : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:workbenchbackpack", 32767))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:boundLeather", 0))
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("Backpack:tannedLeather", 0), null)
-        MineTweakerAPI.recipes.addShaped(item55, arrayOf(arrayOf(item56, ore2, item56), arrayOf<IIngredient>(ore2, ore, ore2), arrayOf(item56, ore2, item56)), null)
-        MineTweakerAPI.recipes.addShaped(item, arrayOf(arrayOf<IIngredient>(ore, ore3, ore), arrayOf(item54, ore, item54), arrayOf<IIngredient>(item54, item54, item54)), null)
+        MineTweakerAPI.recipes.addShaped(item55,
+                arrayOf(arrayOf(item56, ore2, item56), arrayOf<IIngredient>(ore2, ore, ore2),
+                        arrayOf(item56, ore2, item56)), null)
+        MineTweakerAPI.recipes.addShaped(item,
+                arrayOf(arrayOf<IIngredient>(ore, ore3, ore), arrayOf(item54, ore, item54),
+                        arrayOf<IIngredient>(item54, item54, item54)), null)
         MineTweakerAPI.recipes.addShapeless(item2, arrayOf(item, OreBracketHandler.getOre("dyeBlack"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item3, arrayOf(item, OreBracketHandler.getOre("dyeRed"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item4, arrayOf(item, OreBracketHandler.getOre("dyeGreen"), item58), null)
@@ -86,83 +90,170 @@ class Backpack : Runnable {
         MineTweakerAPI.recipes.addShapeless(item6, arrayOf(item, OreBracketHandler.getOre("dyeBlue"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item7, arrayOf(item, OreBracketHandler.getOre("dyePurple"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item8, arrayOf(item, OreBracketHandler.getOre("dyeCyan"), item58), null)
-        MineTweakerAPI.recipes.addShapeless(item9, arrayOf(item, OreBracketHandler.getOre("dyeLightGray"), item58), null)
+        MineTweakerAPI.recipes.addShapeless(item9, arrayOf(item, OreBracketHandler.getOre("dyeLightGray"), item58),
+                null)
         MineTweakerAPI.recipes.addShapeless(item10, arrayOf(item, OreBracketHandler.getOre("dyeGray"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item11, arrayOf(item, OreBracketHandler.getOre("dyePink"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item12, arrayOf(item, OreBracketHandler.getOre("dyeLime"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item13, arrayOf(item, OreBracketHandler.getOre("dyeYellow"), item58), null)
-        MineTweakerAPI.recipes.addShapeless(item14, arrayOf(item, OreBracketHandler.getOre("dyeLightBlue"), item58), null)
+        MineTweakerAPI.recipes.addShapeless(item14, arrayOf(item, OreBracketHandler.getOre("dyeLightBlue"), item58),
+                null)
         MineTweakerAPI.recipes.addShapeless(item15, arrayOf(item, OreBracketHandler.getOre("dyeMagenta"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item16, arrayOf(item, OreBracketHandler.getOre("dyeOrange"), item58), null)
         MineTweakerAPI.recipes.addShapeless(item17, arrayOf(item, OreBracketHandler.getOre("dyeWhite"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item18, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item18,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item19, arrayOf(item18, OreBracketHandler.getOre("dyeBlack"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item19, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item2, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item19,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item2, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item20, arrayOf(item18, OreBracketHandler.getOre("dyeRed"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item20, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item3, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item20,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item3, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item21, arrayOf(item18, OreBracketHandler.getOre("dyeGreen"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item21, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item4, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item21,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item4, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item22, arrayOf(item18, OreBracketHandler.getOre("dyeBrown"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item22, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item5, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item22,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item5, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item23, arrayOf(item18, OreBracketHandler.getOre("dyeBlue"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item23, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item6, item54), arrayOf(ore4, item54, ore4)), null)
-        MineTweakerAPI.recipes.addShapeless(item24, arrayOf(item18, OreBracketHandler.getOre("dyePurple"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item24, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item7, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item23,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item6, item54),
+                        arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShapeless(item24, arrayOf(item18, OreBracketHandler.getOre("dyePurple"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item24,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item7, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item25, arrayOf(item18, OreBracketHandler.getOre("dyeCyan"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item25, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item8, item54), arrayOf(ore4, item54, ore4)), null)
-        MineTweakerAPI.recipes.addShapeless(item26, arrayOf(item18, OreBracketHandler.getOre("dyeLightBlue"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item26, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item9, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item25,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item8, item54),
+                        arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShapeless(item26, arrayOf(item18, OreBracketHandler.getOre("dyeLightBlue"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item26,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item9, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item27, arrayOf(item18, OreBracketHandler.getOre("dyeGray"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item27, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item10, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item27,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item10, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item28, arrayOf(item18, OreBracketHandler.getOre("dyePink"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item28, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item11, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item28,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item11, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item29, arrayOf(item18, OreBracketHandler.getOre("dyeLime"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item29, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item12, item54), arrayOf(ore4, item54, ore4)), null)
-        MineTweakerAPI.recipes.addShapeless(item30, arrayOf(item18, OreBracketHandler.getOre("dyeYellow"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item30, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item13, item54), arrayOf(ore4, item54, ore4)), null)
-        MineTweakerAPI.recipes.addShapeless(item31, arrayOf(item18, OreBracketHandler.getOre("dyeLightBlue"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item31, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item14, item54), arrayOf(ore4, item54, ore4)), null)
-        MineTweakerAPI.recipes.addShapeless(item32, arrayOf(item18, OreBracketHandler.getOre("dyeMagenta"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item32, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item15, item54), arrayOf(ore4, item54, ore4)), null)
-        MineTweakerAPI.recipes.addShapeless(item33, arrayOf(item18, OreBracketHandler.getOre("dyeOrange"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item33, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item16, item54), arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item29,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item12, item54),
+                        arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShapeless(item30, arrayOf(item18, OreBracketHandler.getOre("dyeYellow"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item30,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item13, item54),
+                        arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShapeless(item31, arrayOf(item18, OreBracketHandler.getOre("dyeLightBlue"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item31,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item14, item54),
+                        arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShapeless(item32, arrayOf(item18, OreBracketHandler.getOre("dyeMagenta"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item32,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item15, item54),
+                        arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShapeless(item33, arrayOf(item18, OreBracketHandler.getOre("dyeOrange"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item33,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item16, item54),
+                        arrayOf(ore4, item54, ore4)), null)
         MineTweakerAPI.recipes.addShapeless(item34, arrayOf(item18, OreBracketHandler.getOre("dyeWhite"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item34, arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item17, item54), arrayOf(ore4, item54, ore4)), null)
-        MineTweakerAPI.recipes.addShaped(item35, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item18, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item34,
+                arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item17, item54),
+                        arrayOf(ore4, item54, ore4)), null)
+        MineTweakerAPI.recipes.addShaped(item35,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item18, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item36, arrayOf(item35, OreBracketHandler.getOre("dyeBlack"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item36, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item19, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item36,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item19, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item37, arrayOf(item35, OreBracketHandler.getOre("dyeRed"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item37, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item20, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item37,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item20, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item38, arrayOf(item35, OreBracketHandler.getOre("dyeGreen"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item38, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item21, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item38,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item21, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item39, arrayOf(item35, OreBracketHandler.getOre("dyeBrown"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item39, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item22, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item39,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item22, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item40, arrayOf(item35, OreBracketHandler.getOre("dyeBlue"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item40, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item23, item57), arrayOf(ore5, item57, ore5)), null)
-        MineTweakerAPI.recipes.addShapeless(item41, arrayOf(item35, OreBracketHandler.getOre("dyePurple"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item41, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item24, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item40,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item23, item57),
+                        arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShapeless(item41, arrayOf(item35, OreBracketHandler.getOre("dyePurple"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item41,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item24, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item42, arrayOf(item35, OreBracketHandler.getOre("dyeCyan"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item42, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item25, item57), arrayOf(ore5, item57, ore5)), null)
-        MineTweakerAPI.recipes.addShapeless(item43, arrayOf(item35, OreBracketHandler.getOre("dyeLightGray"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item43, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item26, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item42,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item25, item57),
+                        arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShapeless(item43, arrayOf(item35, OreBracketHandler.getOre("dyeLightGray"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item43,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item26, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item44, arrayOf(item35, OreBracketHandler.getOre("dyeGray"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item44, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item27, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item44,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item27, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item45, arrayOf(item35, OreBracketHandler.getOre("dyePink"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item45, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item28, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item45,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item28, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item46, arrayOf(item35, OreBracketHandler.getOre("dyeLime"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item46, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item29, item57), arrayOf(ore5, item57, ore5)), null)
-        MineTweakerAPI.recipes.addShapeless(item47, arrayOf(item35, OreBracketHandler.getOre("dyeYellow"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item47, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item30, item57), arrayOf(ore5, item57, ore5)), null)
-        MineTweakerAPI.recipes.addShapeless(item48, arrayOf(item35, OreBracketHandler.getOre("dyeLightBlue"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item48, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item31, item57), arrayOf(ore5, item57, ore5)), null)
-        MineTweakerAPI.recipes.addShapeless(item49, arrayOf(item35, OreBracketHandler.getOre("dyeMagenta"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item49, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item32, item57), arrayOf(ore5, item57, ore5)), null)
-        MineTweakerAPI.recipes.addShapeless(item50, arrayOf(item35, OreBracketHandler.getOre("dyeOrange"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item50, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item33, item57), arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item46,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item29, item57),
+                        arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShapeless(item47, arrayOf(item35, OreBracketHandler.getOre("dyeYellow"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item47,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item30, item57),
+                        arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShapeless(item48, arrayOf(item35, OreBracketHandler.getOre("dyeLightBlue"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item48,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item31, item57),
+                        arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShapeless(item49, arrayOf(item35, OreBracketHandler.getOre("dyeMagenta"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item49,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item32, item57),
+                        arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShapeless(item50, arrayOf(item35, OreBracketHandler.getOre("dyeOrange"), item58),
+                null)
+        MineTweakerAPI.recipes.addShaped(item50,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item33, item57),
+                        arrayOf(ore5, item57, ore5)), null)
         MineTweakerAPI.recipes.addShapeless(item51, arrayOf(item35, OreBracketHandler.getOre("dyeWhite"), item58), null)
-        MineTweakerAPI.recipes.addShaped(item51, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item34, item57), arrayOf(ore5, item57, ore5)), null)
-        MineTweakerAPI.recipes.addShaped(item52, arrayOf(arrayOf<IIngredient>(ore, ore3, ore), arrayOf(item54, ore, item54), arrayOf<IIngredient>(item54, item59, item54)), null)
-        MineTweakerAPI.recipes.addShaped(item53, arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item18, item57), arrayOf(ore5, item59, ore5)), null)
-        Drying.addRecipe(ItemBracketHandler.getItem("Backpack:boundLeather", 0), ItemBracketHandler.getItem("Backpack:tannedLeather", 0), 12000)
+        MineTweakerAPI.recipes.addShaped(item51,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item34, item57),
+                        arrayOf(ore5, item57, ore5)), null)
+        MineTweakerAPI.recipes.addShaped(item52,
+                arrayOf(arrayOf<IIngredient>(ore, ore3, ore), arrayOf(item54, ore, item54),
+                        arrayOf<IIngredient>(item54, item59, item54)), null)
+        MineTweakerAPI.recipes.addShaped(item53,
+                arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item18, item57),
+                        arrayOf(ore5, item59, ore5)), null)
+        Drying.addRecipe(ItemBracketHandler.getItem("Backpack:boundLeather", 0),
+                ItemBracketHandler.getItem("Backpack:tannedLeather", 0), 12000)
     }
 }
