@@ -12,7 +12,9 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Canner
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class Gregtech : Runnable {
     override fun run() {
@@ -799,71 +801,71 @@ class Gregtech : Runnable {
                                 ItemBracketHandler.getItem("BiomesOPlenty:moss", 0))), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 21),
                 ItemBracketHandler.getItem("IC2:blockElectric", 3),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1246).amount(2), 300, 30)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1246).amount(2), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 22),
                 ItemBracketHandler.getItem("IC2:blockElectric", 4),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1366).amount(2), 250, 120)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1366).amount(2), 250, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 23),
                 ItemBracketHandler.getItem("IC2:blockElectric", 5),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1426).amount(2), 200, 480)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1426).amount(2), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 24),
                 ItemBracketHandler.getItem("IC2:blockElectric", 6),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1587).amount(2), 100, 1920)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1587).amount(2), 100, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.neutronreflector", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.NeutronReflectorParts", 0),
-                ItemBracketHandler.getItem("IC2:itemPartIridium", 0), 1200, 256)
+                ItemBracketHandler.getItem("IC2:itemPartIridium", 0), 1200, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.Double_Thoriumcell", 0),
                 ItemBracketHandler.getItem("gregtech:gt.Thoriumcell", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(4), 200, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(4), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.Quad_Thoriumcell", 0),
                 ItemBracketHandler.getItem("gregtech:gt.Double_Thoriumcell", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(4), 200, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(4), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.Quad_Thoriumcell", 0),
                 ItemBracketHandler.getItem("gregtech:gt.Thoriumcell", 0).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22305).amount(6), 300, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22305).amount(6), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemRTGPellet", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 22032).amount(6),
                 ItemBracketHandler.getItem("IC2:itemPlutonium", 0).amount(3),
-                LiquidBracketHandler.getLiquid("ic2coolant").withAmount(1000), 1200, 120)
+                LiquidBracketHandler.getLiquid("ic2coolant").withAmount(1000), 1200, VoltageLevels.MV)
         Assembler.addRecipe(item4.amount(2), item.amount(2),
-                ItemBracketHandler.getItem("minecraft:iron_door", 0).amount(1), 1000, 16)
+                ItemBracketHandler.getItem("minecraft:iron_door", 0).amount(1), 1000, VoltageLevels.LLV)
         Assembler.addRecipe(item4.amount(2), item3.amount(2),
-                ItemBracketHandler.getItem("minecraft:iron_door", 0).amount(1), 1000, 16)
+                ItemBracketHandler.getItem("minecraft:iron_door", 0).amount(1), 1000, VoltageLevels.LLV)
         Assembler.addRecipe(item4.amount(2), item2.amount(2),
-                ItemBracketHandler.getItem("minecraft:iron_door", 0).amount(1), 1000, 16)
+                ItemBracketHandler.getItem("minecraft:iron_door", 0).amount(1), 1000, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9057).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9035).amount(27), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9035).amount(27), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9057).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2035).amount(3), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2035).amount(3), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9057).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(3), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(3), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9035).amount(27),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2057), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2057), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9035).amount(27),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11057), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11057), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9035).amount(27),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9057).amount(9), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9057).amount(9), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("thaumicbases:resource", 1),
                 ItemBracketHandler.getItem("thaumicbases:resource", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("thaumicbases:resource", 0).amount(9),
                 ItemBracketHandler.getItem("thaumicbases:resource", 1),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32309).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32309).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:glass", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2890),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:glass", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1890).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:glass", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 890).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         Autoclave.addRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemShard", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2540),
                 LiquidBracketHandler.getLiquid("water").withAmount(200), 8000, 2000, 30)
@@ -910,7 +912,7 @@ class Gregtech : Runnable {
                 ItemBracketHandler.getItem("IC2:itemFuelRod", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2096).amount(3))
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2802).amount(8)), null,
-                ItemBracketHandler.getItem("minecraft:gravel", 0).amount(16), null, null, intArrayOf(10000), 50, 1920)
+                ItemBracketHandler.getItem("minecraft:gravel", 0).amount(16), null, null, intArrayOf(10000), 50, VoltageLevels.EV)
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1067),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1045),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1064),
@@ -918,12 +920,12 @@ class Gregtech : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1055),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1062)), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2891), null, null,
-                intArrayOf(2500, 2500, 2500, 2500, 2500, 2500), 64, 20)
+                intArrayOf(2500, 2500, 2500, 2500, 2500, 2500), 64, VoltageLevels.LLV)
         ChemicalReactor.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2836).amount(5),
                 LiquidBracketHandler.getLiquid("steam").withAmount(16000),
                 ItemBracketHandler.getItem("dreamcraft:item.PotassiumHydroxideDust", 0).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("nitricacid").withAmount(5000), 10, 30)
+                LiquidBracketHandler.getLiquid("nitricacid").withAmount(5000), 10, VoltageLevels.LV)
         FluidCanner.addRecipe(ItemBracketHandler.getItem("gregtech:gt.60k_Helium_Coolantcell", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.TenKCell", 0), null,
                 LiquidBracketHandler.getLiquid("helium").withAmount(1000))
@@ -943,53 +945,53 @@ class Gregtech : Runnable {
                 ItemBracketHandler.getItem("dreamcraft:item.SixtyKCell", 0), null,
                 LiquidBracketHandler.getLiquid("sodiumpotassium").withAmount(6000))
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22874),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23874).amount(2), 20, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23874).amount(2), 20, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22880),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23880).amount(2), 20, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23880).amount(2), 20, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22530),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23530).amount(2), 20, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23530).amount(2), 20, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22526),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23526).amount(2), 20, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23526).amount(2), 20, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22524),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23524).amount(2), 20, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23524).amount(2), 20, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22525),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23525).amount(2), 20, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23525).amount(2), 20, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22532),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23532).amount(2), 20, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23532).amount(2), 20, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22533),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23533).amount(2), 20, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23533).amount(2), 20, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 802).amount(2),
-                ItemBracketHandler.getItem("minecraft:flint", 0), 32, 16)
+                ItemBracketHandler.getItem("minecraft:flint", 0), 32, VoltageLevels.LLV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1890),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 27890), 10, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 27890), 10, VoltageLevels.LLV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32300),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0).amount(0), 200, 256)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0).amount(0), 200, VoltageLevels.LHV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32300),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0).amount(0), 200, 256)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0).amount(0), 200, VoltageLevels.LHV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32300),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0).amount(0), 200, 256)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0).amount(0), 200, VoltageLevels.LHV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32300),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0).amount(0), 200, 256)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0).amount(0), 200, VoltageLevels.LHV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32300),
-                ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0).amount(0), 200, 256)
+                ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0).amount(0), 200, VoltageLevels.LHV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.CoinBlank", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32304).amount(0), 200, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32304).amount(0), 200, VoltageLevels.LV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)),
-                ItemBracketHandler.getItem("Natura:barleyFood", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("Natura:barleyFood", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2881)),
-                ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2892).amount(9)),
-                ItemBracketHandler.getItem("Thaumcraft:blockTaint", 2), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("Thaumcraft:blockTaint", 2), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2890)),
-                ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0).amount(2), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0).amount(2), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 5937).amount(4)),
-                ItemBracketHandler.getItem("gregtech:gt.blockores", 937), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("gregtech:gt.blockores", 937), intArrayOf(10000), 300, VoltageLevels.LULV)
         MineTweakerAPI.furnace.addRecipe(ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockores", 870), 0.0)
         MineTweakerAPI.furnace.addRecipe(ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
@@ -1001,9 +1003,9 @@ class Gregtech : Runnable {
         MineTweakerAPI.furnace.addRecipe(ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockores", 4870), 0.0)
         PlateBender.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24874),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22874), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22874), 200, VoltageLevels.LLV)
         PlateBender.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 23028),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23028), 200, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23028), 200, VoltageLevels.ULV)
 
         //TODO Replace Smeltery Recipes
         //Casting.addTableRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32300),
@@ -1293,11 +1295,11 @@ class Gregtech : Runnable {
                 MineTweakerAPI.format.darkRed(ExpandString.asFormattedText("HV-tier")))
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32539),
                 MineTweakerAPI.format.green(ExpandString.asFormattedText("HV-tier")))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                 MineTweakerAPI.format.darkBlue(ExpandString.asFormattedText("HV-tier")))
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32540),
                 MineTweakerAPI.format.green(ExpandString.asFormattedText("EV-tier")))
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                 MineTweakerAPI.format.darkBlue(ExpandString.asFormattedText("EV-tier")))
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32545),
                 MineTweakerAPI.format.green(ExpandString.asFormattedText("IV-tier")))

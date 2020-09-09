@@ -10,11 +10,13 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.thaumcraft.handlers.*
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class Emt : Runnable {
     override fun run() {
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EMT:DiamondChainsaw", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EMT:DiamondChainsaw", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EMT:EMTItems", 5))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EMT:FeatherWing", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EMT:EMTItems", 12))
@@ -26,32 +28,32 @@ class Emt : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EMT:EMTItems", 13))
         Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 14))
         Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:ThaumiumWing", 0))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:NanosuitWing", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:QuantumWing", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EMT:Omnitool", 32767))
-        Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:DiamondOmnitool", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ThaumiumOmnitool", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ElectricBootsTraveller", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:NanoBootsTraveller", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:QuantumBootsTraveller", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ThaumiumDrill", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:DrillRockbreaker", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ThaumiumChainsaw", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ChainsawStream", 32767))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:NanosuitWing", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:QuantumWing", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EMT:Omnitool", OreDictionary.WILDCARD_VALUE))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:DiamondOmnitool", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ThaumiumOmnitool", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ElectricBootsTraveller", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:NanoBootsTraveller", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:QuantumBootsTraveller", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ThaumiumDrill", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:DrillRockbreaker", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ThaumiumChainsaw", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ChainsawStream", OreDictionary.WILDCARD_VALUE))
         Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EMTBaubles", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EMTBaubles", 1))
-        Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:ElectricGogglesRevealing", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:NanosuitGogglesRevealing", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:QuantumGogglesRevealing", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:SolarHelmetRevealing", 32767))
-        Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:EMTSolars", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EMTSolars", 32767))
-        Crucible.removeRecipe(ItemBracketHandler.getItem("EMT:EMTSolars", 32767))
-        Crucible.removeRecipe(ItemBracketHandler.getItem("EMT:EMTSolars2", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ElectricHoeGrowth", 32767))
-        Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:ElectricScribingTools", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:Mjolnir", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:SuperchargedMjolnir", 32767))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:ElectricGogglesRevealing", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:NanosuitGogglesRevealing", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:QuantumGogglesRevealing", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:SolarHelmetRevealing", OreDictionary.WILDCARD_VALUE))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:EMTSolars", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EMTSolars", OreDictionary.WILDCARD_VALUE))
+        Crucible.removeRecipe(ItemBracketHandler.getItem("EMT:EMTSolars", OreDictionary.WILDCARD_VALUE))
+        Crucible.removeRecipe(ItemBracketHandler.getItem("EMT:EMTSolars2", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ElectricHoeGrowth", OreDictionary.WILDCARD_VALUE))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("EMT:ElectricScribingTools", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:Mjolnir", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:SuperchargedMjolnir", OreDictionary.WILDCARD_VALUE))
         Arcane.removeRecipe(ItemBracketHandler.getItem("IC2:itemUran235small", 0))
         Crucible.removeRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 15))
         Infusion.removeRecipe(ItemBracketHandler.getItem("minecraft:coal", 0))
@@ -67,9 +69,9 @@ class Emt : Runnable {
         Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ExplosionFocus", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:ChargingFocus", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:WandChargingFocus", 0))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EssentiaGenerators", 32767))
-        Crucible.removeRecipe(ItemBracketHandler.getItem("EMT:EssentiaGenerators", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EMTMachines", 32767))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EssentiaGenerators", OreDictionary.WILDCARD_VALUE))
+        Crucible.removeRecipe(ItemBracketHandler.getItem("EMT:EssentiaGenerators", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("EMT:EMTMachines", OreDictionary.WILDCARD_VALUE))
 
         //TODO Replace ("TConstruct:materials", 36)
         //MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("EMT:EMTItems", 8),
@@ -331,7 +333,7 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.NanosuitWings",
                 "Combining the magic harnessed by Thaumium with the nanotechnologies in your wings.. seemed like the logical way to go. You can thrust yourself way higher than before, and fall even slower when holding spacebar. Included: fall damage reduction, 75%.")
         Infusion.addRecipe("NanosuitWings", ItemBracketHandler.getItem("EMT:ThaumiumWing", 0),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorNanoChestplate", 32767),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorNanoChestplate", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19028),
                         ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19028),
@@ -358,8 +360,8 @@ class Emt : Runnable {
         Research.addPage("QuantumWings", "tc.research_page.QuantumWings")
         MineTweakerAPI.game.setLocalization("tc.research_page.QuantumWings",
                 "After exploring all the possibilities of nanotechnologies, you decided to do the last jump. Quantum. You can thrust yourself many blocks high, have a very good protection, and your fall is slowed down a lot. However, the quantum unpredictability happened once again. Your fall will be completely stopped when spacebar and sneak are maintained. You don't know why, but it works. Included: fall damage reduction, 100%.")
-        Infusion.addRecipe("QuantumWings", ItemBracketHandler.getItem("EMT:NanosuitWing", 32767),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorQuantumChestplate", 32767),
+        Infusion.addRecipe("QuantumWings", ItemBracketHandler.getItem("EMT:NanosuitWing", OreDictionary.WILDCARD_VALUE),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorQuantumChestplate", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19083),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19083),
@@ -386,7 +388,7 @@ class Emt : Runnable {
         Research.addPage("InfusedQuantumArmor", "tc.research_page.InfusedQuantumArmor")
         MineTweakerAPI.game.setLocalization("tc.research_page.InfusedQuantumArmor",
                 "You had been nothing to do and you decided to do something useful. You had an idea in your head of making armor which you can fasten the wings or backpack for being protected in flight. Take the wings or backpack in your hands and sit down to put their on armor. To remove them, hold Shift + Unequip (see in options).")
-        Infusion.addRecipe("InfusedQuantumArmor", ItemBracketHandler.getItem("IC2:itemArmorQuantumChestplate", 32767),
+        Infusion.addRecipe("InfusedQuantumArmor", ItemBracketHandler.getItem("IC2:itemArmorQuantumChestplate", OreDictionary.WILDCARD_VALUE),
                 arrayOf(ItemBracketHandler.getItem("EMT:ShieldBlock", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19324),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
@@ -600,7 +602,7 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.DiamondOmnitool",
                 "Your discovery of an Iron Omnitool has driven you to try to accomplish the same with some more powerful devices. You have discovered a way to combine the Diamond Drill and the Diamond Chainsaw, resulting in a tool capable of both mining, cutting down trees and attacking enemies, while maintaining the speed and capacity bonuses of the diamond tools. As diamonds are incredibly tough and nearly impossible to reshape once the raw diamonds have been fashioned into tools such as drills and chainsaws, you will require a little bit of magic to coax them to merge.")
         val s42 = "DiamondOmnitool"
-        val item8 = ItemBracketHandler.getItem("EMT:DiamondChainsaw", 32767)
+        val item8 = ItemBracketHandler.getItem("EMT:DiamondChainsaw", OreDictionary.WILDCARD_VALUE)
         val array9 = arrayOfNulls<IItemStack>(10)
         val n15 = 0
         val item9 = ItemBracketHandler.getItem("gregtech:gt.metatool.01", 102)
@@ -704,8 +706,8 @@ class Emt : Runnable {
         Research.addPage("ThaumiumOmnitool", "tc.research_page.ThaumiumOmnitool")
         MineTweakerAPI.game.setLocalization("tc.research_page.ThaumiumOmnitool",
                 "After creating the Diamond and Iron Omnitools, the next logical step was to do the same with Thaumium. Unfortunately, this isn't as easy. You have discovered a way to combine the Thaumium Drill and the Thaumium Chainsaw, resulting in a tool capable of mining and chopping trees at great speed with a high energy capacity. These tools have already once been infused with magic. You are not sure what will happen if they were to be infused again.")
-        Infusion.addRecipe("ThaumiumOmnitool", ItemBracketHandler.getItem("EMT:ThaumiumChainsaw", 32767),
-                arrayOf(ItemBracketHandler.getItem("EMT:ThaumiumDrill", 32767),
+        Infusion.addRecipe("ThaumiumOmnitool", ItemBracketHandler.getItem("EMT:ThaumiumChainsaw", OreDictionary.WILDCARD_VALUE),
+                arrayOf(ItemBracketHandler.getItem("EMT:ThaumiumDrill", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17316),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
@@ -739,7 +741,7 @@ class Emt : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32601),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1361),
-                        ItemBracketHandler.getItem("IC2:itemAdvBat", 32767),
+                        ItemBracketHandler.getItem("IC2:itemAdvBat", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1361),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32601),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500)),
@@ -760,12 +762,12 @@ class Emt : Runnable {
         Research.addPage("NanoBootsoftheTraveller", "tc.research_page.NanoBootsoftheTraveller")
         MineTweakerAPI.game.setLocalization("tc.research_page.NanoBootsoftheTraveller",
                 "Your Electric Boots of the Traveller are nice, but you think you can do better. You have found a way to upgrade these boots to the Nano tier, improving the mechanical components and improving the spell cast on the footwear. These boots allow for higher jumps and faster running than before.")
-        Infusion.addRecipe("NanoBootsoftheTraveller", ItemBracketHandler.getItem("EMT:ElectricBootsTraveller", 32767),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorNanoBoots", 32767),
+        Infusion.addRecipe("NanoBootsoftheTraveller", ItemBracketHandler.getItem("EMT:ElectricBootsTraveller", OreDictionary.WILDCARD_VALUE),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorNanoBoots", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32602),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1442),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1442),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32602),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330)),
@@ -788,12 +790,12 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.QuantumBootsoftheTraveller",
                 "You have meddled with Quantum Physics, making these Quantum Boots of the Traveller so fast, that you appear to be in multiple places at once. But do not forget what happened to Schrodinger's cat...")
         Infusion.addRecipe("QuantumBootsoftheTraveller", ItemBracketHandler.getItem("EMT:NanoBootsTraveller", 0),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorQuantumBoots", 32767),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorQuantumBoots", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32603),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1563),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
-                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1563),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32603),
@@ -916,7 +918,7 @@ class Emt : Runnable {
         Research.addPage("DrilloftheRockbreaker", "tc.research_page.DrilloftheRockbreaker")
         MineTweakerAPI.game.setLocalization("tc.research_page.DrilloftheRockbreaker",
                 "After studying the Pickaxe of the Core, the Shovel of the Earthmover and the Thaumium Drill, you have managed to combine most of their abilities, resulting in an electric tool that can mine a whole 3x3x1 area of pickaxe and dirt materials very quickly.<BR><BR>This marvelous device is able to find the closest ore clusters on a shift-right click, though at the cost of some EU.")
-        Infusion.addRecipe("DrilloftheRockbreaker", ItemBracketHandler.getItem("EMT:ThaumiumDrill", 32767),
+        Infusion.addRecipe("DrilloftheRockbreaker", ItemBracketHandler.getItem("EMT:ThaumiumDrill", OreDictionary.WILDCARD_VALUE),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemShovelElemental", 0),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32706),
@@ -945,7 +947,7 @@ class Emt : Runnable {
         Research.addPage("ThaumiumChainsaw", "tc.research_page.ThaumiumChainsaw")
         MineTweakerAPI.game.setLocalization("tc.research_page.ThaumiumChainsaw",
                 "You have found a way to fuse Thaumium to a Diamond Chainsaw, allowing it to fell trees quicker and hold more power. Nevertheless, these ameliorations do not come without drawbacks: during the process of fusing these materials, the chainsaw loses its ability to shear foliage, tall grass, and animals.<BR><BR>You have an intuition you will be able to upgrade this tool in the near future.")
-        Infusion.addRecipe("ThaumiumChainsaw", ItemBracketHandler.getItem("EMT:DiamondChainsaw", 32767),
+        Infusion.addRecipe("ThaumiumChainsaw", ItemBracketHandler.getItem("EMT:DiamondChainsaw", OreDictionary.WILDCARD_VALUE),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27028),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705),
@@ -971,7 +973,7 @@ class Emt : Runnable {
         Research.addPage("ChainsawoftheStream", "tc.research_page.ChainsawoftheStream")
         MineTweakerAPI.game.setLocalization("tc.research_page.ChainsawoftheStream",
                 "After studying both the Axe of the Stream and the Thaumium Chainsaw, you managed to combine most of their abilities, resulting in an electric tool that can chop down whole trees without much effort.")
-        Infusion.addRecipe("ChainsawoftheStream", ItemBracketHandler.getItem("EMT:ThaumiumChainsaw", 32767),
+        Infusion.addRecipe("ChainsawoftheStream", ItemBracketHandler.getItem("EMT:ThaumiumChainsaw", OreDictionary.WILDCARD_VALUE),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemAxeElemental", 0),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32706),
@@ -1000,7 +1002,7 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.InventoryChargingRing",
                 "While other thaumaturgists use rings to charge their runic shields, you feel that there are better applications for them.  By fusing power sources into a mundane ring, you have learned how to funnel its charging effects into electric items in your inventory instead. It doesn't generate much at only 32 EU per tick, but that just means there's room for improvement.")
         Infusion.addRecipe("InventoryChargingRing", ItemBracketHandler.getItem("Thaumcraft:ItemBaubleBlanks", 1),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("IC2:blockGenerator", 5),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1462),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1120),
@@ -1027,7 +1029,7 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.ArmorChargingRing",
                 "You have found the low but constant recharge rate of your new ring to be more useful than anticipated, but it would be nice if it charged your armor when there wasn't a tool in need of power.  By infusing a few more power sources and a piece of armor, you have found a way to have it do just that.  Sadly, the new power sources do not increase the recharge rate, but progress is progress.")
         Infusion.addRecipe("ArmorChargingRing", ItemBracketHandler.getItem("Thaumcraft:ItemBaubleBlanks", 1),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("IC2:blockGenerator", 5),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1482),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1120),
@@ -1069,7 +1071,7 @@ class Emt : Runnable {
                                 ItemBracketHandler.getItem("Thaumcraft:ItemGoggles", 0),
                                 OreBracketHandler.getOre("circuitBasic")), arrayOf<IIngredient>(
                         ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 10),
-                        ItemBracketHandler.getItem("IC2:itemAdvBat", 32767),
+                        ItemBracketHandler.getItem("IC2:itemAdvBat", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 10))))
         Research.addArcanePage("ElectricGogglesofRevealing",
                 ItemBracketHandler.getItem("EMT:ElectricGogglesRevealing", 165))
@@ -1086,13 +1088,13 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.NanosuitGogglesofRevealing",
                 "You have discovered a way to incorporate your previous vis sensors to a Nanosuit Helmet without moving too much around. By infusing the nano helmet with magic, you will be able to use it to see Aura Nodes. During the magical process, the control circuits for the night vision feature are replaced with capacitors to absorb the excess magical energy and vis-sensing microchips. This will prevent you from turning off the night vision effect of the helmet.")
         Infusion.addRecipe("NanosuitGogglesofRevealing",
-                ItemBracketHandler.getItem("EMT:ElectricGogglesRevealing", 32767),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorNanoHelmet", 32767),
+                ItemBracketHandler.getItem("EMT:ElectricGogglesRevealing", OreDictionary.WILDCARD_VALUE),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorNanoHelmet", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1442),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
                         ItemBracketHandler.getItem("IC2:itemPartCircuitAdv", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32692),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32692),
                         ItemBracketHandler.getItem("IC2:itemPartCircuitAdv", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17330),
@@ -1116,14 +1118,14 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.QuantumGogglesofRevealing",
                 "It took a lot of trial and error, but you have found a way to slip in vis detection sensors to a Quantum Helmet. By infusing the quantum helmet with magic, you will be able to use it to see Aura Nodes. During the design process, you had to replace several control circuits that involve night vision and automatic feeding with vis detecting circuitry and capacitors to absorb the excess magical energy. You find that using a Mining Laser to contain it can safely focus and direct the explosive pulse where the vision effect and the feeding unit of the helmet lie. Have fun getting force-fed energy. This will prevent you from turning off the night vision and feeding features.")
         Infusion.addRecipe("QuantumGogglesofRevealing",
-                ItemBracketHandler.getItem("EMT:NanosuitGogglesRevealing", 32767),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorQuantumHelmet", 32767),
+                ItemBracketHandler.getItem("EMT:NanosuitGogglesRevealing", OreDictionary.WILDCARD_VALUE),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemArmorQuantumHelmet", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1563),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32693),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
-                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32693),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705),
@@ -1148,13 +1150,13 @@ class Emt : Runnable {
         Research.addPage("SolarHelmetofRevealing", "tc.research_page.SolarHelmetofRevealing")
         MineTweakerAPI.game.setLocalization("tc.research_page.SolarHelmetofRevealing",
                 "You now have a helmet that acts exactly like your quantum goggles of revealing, but can also recharge your chest armor! It generates 128 EU/t during the day, and nothing at night.")
-        Infusion.addRecipe("SolarHelmetofRevealing", ItemBracketHandler.getItem("EMT:QuantumGogglesRevealing", 32767),
+        Infusion.addRecipe("SolarHelmetofRevealing", ItemBracketHandler.getItem("EMT:QuantumGogglesRevealing", OreDictionary.WILDCARD_VALUE),
                 arrayOf(ItemBracketHandler.getItem("EMT:EMTSolars", 1),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1624),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17324),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32694),
                         ItemBracketHandler.getItem("dreamcraft:item.MysteriousCrystal", 0),
-                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("dreamcraft:item.MysteriousCrystal", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32694),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17324),
@@ -1533,12 +1535,12 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.ElectricHoeofGrowth",
                 "You have managed to upgrade your Hoe of Growth. It now delivers little shocks to the land and plants around it, much like your regular Hoe of Growth would do. <BR><BR>However, the magic contained within this tool is too powerful for you to convert it fully to using mundane electricity, for the tool still has a limited number of uses before it breaks, but is rechargeable.")
         Infusion.addRecipe("ElectricHoeofGrowth", ItemBracketHandler.getItem("Thaumcraft:ItemHoeElemental", 0),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemToolHoe", 32767),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemToolHoe", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32706),
                         ItemBracketHandler.getItem("IC2:upgradeModule", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
-                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
                         ItemBracketHandler.getItem("IC2:upgradeModule", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32706),
@@ -1564,7 +1566,7 @@ class Emt : Runnable {
                 "aer 20, ignis 20, aqua 20, ordo 20", arrayOf(arrayOf(OreBracketHandler.getOre("circuitAdvanced"),
                 ItemBracketHandler.getItem("Thaumcraft:ItemInkwell", 0), OreBracketHandler.getOre("circuitAdvanced")),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:ItemInkwell", 0),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Thaumcraft:ItemInkwell", 0)),
                 arrayOf(OreBracketHandler.getOre("circuitAdvanced"),
                         ItemBracketHandler.getItem("Thaumcraft:ItemInkwell", 0),
@@ -1592,9 +1594,9 @@ class Emt : Runnable {
                         ItemBracketHandler.getItem("EMT:EMTItems", 6),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Thaumcraft:FocusShock", 0),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
                         ItemBracketHandler.getItem("EMT:EMTItems", 6),
@@ -1618,14 +1620,14 @@ class Emt : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_page.SuperchargedMjolnir",
                 "After some more exploring of the dungeons existing all around the worlds and dimensions, you have managed to find a method that makes you able to overpower Thor's power, making his Hammer yours. Furthermore, you have managed to make your Hammer summon defenders, some strange Snow-Golems like creature that shall protect you. However, the hammer lost its power to summon lightning where you desire it to, and creates a ring of lightning around you.")
         Infusion.addRecipe("SuperchargedMjolnir", ItemBracketHandler.getItem("EMT:Mjolnir", 0),
-                arrayOf(ItemBracketHandler.getItem("IC2:itemNanoSaber", 32767),
+                arrayOf(ItemBracketHandler.getItem("IC2:itemNanoSaber", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 0),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
-                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Thaumcraft:FocusHellbat", 0),
-                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 0),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
@@ -1882,11 +1884,11 @@ class Emt : Runnable {
         Infusion.addRecipe("EnergyBallFocus", ItemBracketHandler.getItem("Thaumcraft:FocusShock", 0),
                 arrayOf(ItemBracketHandler.getItem("IC2:blockMachine2", 1),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1461),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1461),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1461),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1461)),
                 "potentia 24, praecantatio 18, victus 12, praecantatio 12, cognitio 6",
                 ItemBracketHandler.getItem("EMT:EnergyBallFocus", 0), 6)
@@ -1907,7 +1909,7 @@ class Emt : Runnable {
         val s66 = "ExplosionFocus"
         val item11 = ItemBracketHandler.getItem("Thaumcraft:FocusHellbat", 0)
         val array12 = arrayOfNulls<IItemStack>(10)
-        array12[0] = ItemBracketHandler.getItem("IC2:itemToolMiningLaser", 32767)
+        array12[0] = ItemBracketHandler.getItem("IC2:itemToolMiningLaser", OreDictionary.WILDCARD_VALUE)
         array12[1] = ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassLense", 0)
         array12[2] = ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1)
         array12[3] = ItemBracketHandler.getItem("minecraft:firework_charge", 0)
@@ -1958,7 +1960,7 @@ class Emt : Runnable {
         Research.addPage("WandFocusCharging", "tc.research_page.WandFocusCharging")
         MineTweakerAPI.game.setLocalization("tc.research_page.WandFocusCharging",
                 "You realized you always carry a wand with you, along with your electric stuff. But sometimes, you have ran out of juice in your electric tools. That's why you created this wand focus. It is very simple, yet very useful, for it drains vis from your wand storage, and charges the items using mundane electricity.")
-        Infusion.addRecipe("WandFocusCharging", ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+        Infusion.addRecipe("WandFocusCharging", ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.blockmachines", 22),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 21330),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32601),
@@ -1992,7 +1994,7 @@ class Emt : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 20970),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1660),
-                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1660),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17970),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 20970),
@@ -2301,32 +2303,32 @@ class Emt : Runnable {
         Research.addInfusionPage("EtheralProcessor", ItemBracketHandler.getItem("EMT:EMTMachines", 1))
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2880).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 9),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(12),
                 ItemBracketHandler.getItem("EMT:EMTItems", 10).amount(4),
-                LiquidBracketHandler.getLiquid("glue").withAmount(6912), 600, 30)
+                LiquidBracketHandler.getLiquid("glue").withAmount(6912), 600, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 9),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(12),
                 ItemBracketHandler.getItem("EMT:EMTItems", 10).amount(4),
-                LiquidBracketHandler.getLiquid("refinedglue").withAmount(6912), 600, 30)
+                LiquidBracketHandler.getLiquid("refinedglue").withAmount(6912), 600, VoltageLevels.LV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
-                LiquidBracketHandler.getLiquid("refinedglue").withAmount(288), 100, 16)
+                LiquidBracketHandler.getLiquid("refinedglue").withAmount(288), 100, VoltageLevels.LLV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
-                LiquidBracketHandler.getLiquid("glue").withAmount(288), 100, 16)
+                LiquidBracketHandler.getLiquid("glue").withAmount(288), 100, VoltageLevels.LLV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
-                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(576), 100, 30)
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(576), 100, VoltageLevels.LV)
         FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("EMT:EMTItems", 8),
                 LiquidBracketHandler.getLiquid("refinedglue").withAmount(288), 10000, 100, 16)
         FormingPress.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2880).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 100, VoltageLevels.LV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 826).amount(22)),
-                ItemBracketHandler.getItem("Thaumcraft:ItemNugget", 21), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("Thaumcraft:ItemNugget", 21), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2880).amount(4)),
-                ItemBracketHandler.getItem("EMT:EMTItems", 10), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("EMT:EMTItems", 10), intArrayOf(10000), 300, VoltageLevels.LULV)
     }
 }

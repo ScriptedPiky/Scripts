@@ -19,6 +19,8 @@ import modtweaker2.mods.thaumcraft.handlers.Infusion
 import modtweaker2.mods.thaumcraft.handlers.Research
 import modtweaker2.mods.thaumcraft.handlers.Warp
 import java.util.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class OpenBlocks : Runnable {
     override fun run() {
@@ -61,7 +63,7 @@ class OpenBlocks : Runnable {
         val item13 = ItemBracketHandler.getItem("OpenBlocks:itemDropper", 0)
         OreBracketHandler.getOre("blockWool")
         val item14 = ItemBracketHandler.getItem("Backpack:tannedLeather", 0)
-        ItemBracketHandler.getItem("minecraft:carpet", 32767)
+        ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE)
         MineTweakerAPI.recipes.remove(item)
         MineTweakerAPI.recipes.remove(item2)
         MineTweakerAPI.recipes.remove(item3)
@@ -117,7 +119,7 @@ class OpenBlocks : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("OpenBlocks:devnull", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("OpenBlocks:pedometer", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("OpenBlocks:tastyClay", 0))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("OpenBlocks:goldenEye", 32767), null)
+        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("OpenBlocks:goldenEye", OreDictionary.WILDCARD_VALUE), null)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("OpenBlocks:cursor", 0))
         MineTweakerAPI.recipes.addShaped(item, arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwSteel"),
                 OreBracketHandler.getOre("screwSteel"), OreBracketHandler.getOre("screwSteel")),
@@ -319,50 +321,50 @@ class OpenBlocks : Runnable {
                                 OreBracketHandler.getOre("screwAluminium"))), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:ropeladder", 0).amount(64),
                 ItemBracketHandler.getItem("minecraft:string", 0).amount(64),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22809).amount(64), 600, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22809).amount(64), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:ladder", 0),
                 ItemBracketHandler.getItem("minecraft:trapdoor", 0), ItemBracketHandler.getItem("minecraft:ladder", 0),
-                200, 30)
+                200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:sky", 1),
                 ItemBracketHandler.getItem("OpenBlocks:sky", 0),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, 16)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:paintmixer", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 581),
-                OreBracketHandler.getOre("itemCasingAnyIron").amount(4), 600, 30)
+                OreBracketHandler.getOre("itemCasingAnyIron").amount(4), 600, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:xpbottler", 0),
                 ItemBracketHandler.getItem("Forestry:factory", 0),
-                OreBracketHandler.getOre("itemCasingAnyIron").amount(4), 600, 30)
+                OreBracketHandler.getOre("itemCasingAnyIron").amount(4), 600, VoltageLevels.LV)
 
         //TODO Replace ("TConstruct:blankPattern", 0)
         //Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:generic", 10),
         //        ItemBracketHandler.getItem("TConstruct:blankPattern", 0),
-        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), 200, 16)
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), 200, VoltageLevels.LLV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:generic", 11),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1865),
-                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 100, 8)
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 100, VoltageLevels.ULV)
         val item15 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 0)
         val hashMap = HashMap<String, IData>()
         hashMap["Uses"] = ExpandFloat.asData(10.0.toFloat())
         Assembler.addRecipe(item15.withTag(ExpandAnyDict.asData(hashMap)),
                 ItemBracketHandler.getItem("OpenBlocks:generic", 11),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17533), 100, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17533), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:generic", 6),
                 ItemBracketHandler.getItem("OpenComputers:item", 32),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 300, 30)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:generic", 7),
                 ItemBracketHandler.getItem("OpenBlocks:generic", 6),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 400, 30)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 400, VoltageLevels.LV)
         val item16 = ItemBracketHandler.getItem("OpenBlocks:emptyMap", 0)
         val hashMap2 = HashMap<String, IData>()
         hashMap2["Scale"] = ExpandByte.asData(0.toByte())
         Assembler.addRecipe(item16.withTag(ExpandAnyDict.asData(hashMap2)),
                 ItemBracketHandler.getItem("OpenBlocks:generic", 6),
-                ItemBracketHandler.getItem("OpenBlocks:generic", 7).amount(4), 600, 30)
+                ItemBracketHandler.getItem("OpenBlocks:generic", 7).amount(4), 600, VoltageLevels.LV)
         val item17 = ItemBracketHandler.getItem("OpenBlocks:emptyMap", 0)
         val hashMap3 = HashMap<String, IData>()
         hashMap3["Scale"] = ExpandByte.asData(1.toByte())
@@ -372,7 +374,7 @@ class OpenBlocks : Runnable {
         hashMap4["Scale"] = ExpandByte.asData(0.toByte())
         Assembler.addRecipe(withTag, item18.withTag(ExpandAnyDict.asData(hashMap4)),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 600, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 600, VoltageLevels.LV)
         val item19 = ItemBracketHandler.getItem("OpenBlocks:emptyMap", 0)
         val hashMap5 = HashMap<String, IData>()
         hashMap5["Scale"] = ExpandByte.asData(2.toByte())
@@ -382,7 +384,7 @@ class OpenBlocks : Runnable {
         hashMap6["Scale"] = ExpandByte.asData(1.toByte())
         Assembler.addRecipe(withTag2, item20.withTag(ExpandAnyDict.asData(hashMap6)),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 800, 30)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 800, VoltageLevels.LV)
         val item21 = ItemBracketHandler.getItem("OpenBlocks:emptyMap", 0)
         val hashMap7 = HashMap<String, IData>()
         hashMap7["Scale"] = ExpandByte.asData(3.toByte())
@@ -392,7 +394,7 @@ class OpenBlocks : Runnable {
         hashMap8["Scale"] = ExpandByte.asData(2.toByte())
         Assembler.addRecipe(withTag3, item22.withTag(ExpandAnyDict.asData(hashMap8)),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32702).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redalloy").withAmount(144), 1000, 30)
+                LiquidBracketHandler.getLiquid("molten.redalloy").withAmount(144), 1000, VoltageLevels.LV)
         val item23 = ItemBracketHandler.getItem("OpenBlocks:emptyMap", 0)
         val hashMap9 = HashMap<String, IData>()
         hashMap9["Scale"] = ExpandByte.asData(4.toByte())
@@ -402,119 +404,119 @@ class OpenBlocks : Runnable {
         hashMap10["Scale"] = ExpandByte.asData(3.toByte())
         Assembler.addRecipe(withTag4, item24.withTag(ExpandAnyDict.asData(hashMap10)),
                 ItemBracketHandler.getItem("IC2:itemPartCircuitAdv", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(144), 1200, 30)
+                LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(144), 1200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:cartographer", 0),
                 ItemBracketHandler.getItem("OpenBlocks:generic", 9),
                 ItemBracketHandler.getItem("minecraft:ender_eye", 0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 120)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:pedometer", 0),
                 ItemBracketHandler.getItem("minecraft:clock", 0),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, 30)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:builder_guide", 0),
                 ItemBracketHandler.getItem("OpenBlocks:guide", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24533),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(288), 300, 64)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(288), 300, VoltageLevels.LMV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 15)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 14)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 13)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 12)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 11)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 10)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 9)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 8)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
                 LiquidBracketHandler.getLiquid("dye.watermixed.dyelightgray").withAmount(144), intArrayOf(10000), 200,
                 20)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 7)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 6)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 5)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 4)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 3)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
                 LiquidBracketHandler.getLiquid("dye.watermixed.dyelightblue").withAmount(144), intArrayOf(10000), 200,
                 20)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 2)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 1)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator", 0)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 15)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 14)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 13)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 12)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 11)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 10)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 9)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 8)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
                 LiquidBracketHandler.getLiquid("dye.watermixed.dyelightgray").withAmount(144), intArrayOf(10000), 200,
                 20)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 7)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 6)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 5)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 4)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 3)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
                 LiquidBracketHandler.getLiquid("dye.watermixed.dyelightblue").withAmount(144), intArrayOf(10000), 200,
                 20)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 2)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 1)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 0)),
-                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", 32767),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, 20)
+                ItemBracketHandler.getItem("OpenBlocks:elevator_rotating", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array = arrayOf<IItemStack?>(null)
         val n = 0
         val item25 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -523,7 +525,7 @@ class OpenBlocks : Runnable {
         hashMap11["Color"] = ExpandInt.toData(1973019)
         array[n] = item25.withTag(ExpandAnyDict.asData(hashMap11))
         ChemicalBath.addRecipe(array, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array2 = arrayOf<IItemStack?>(null)
         val n2 = 0
         val item26 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -532,7 +534,7 @@ class OpenBlocks : Runnable {
         hashMap12["Color"] = ExpandInt.toData(11743532)
         array2[n2] = item26.withTag(ExpandAnyDict.asData(hashMap12))
         ChemicalBath.addRecipe(array2, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array3 = arrayOf<IItemStack?>(null)
         val n3 = 0
         val item27 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -541,7 +543,7 @@ class OpenBlocks : Runnable {
         hashMap13["Color"] = ExpandInt.toData(3887386)
         array3[n3] = item27.withTag(ExpandAnyDict.asData(hashMap13))
         ChemicalBath.addRecipe(array3, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array4 = arrayOf<IItemStack?>(null)
         val n4 = 0
         val item28 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -550,7 +552,7 @@ class OpenBlocks : Runnable {
         hashMap14["Color"] = ExpandInt.toData(5320730)
         array4[n4] = item28.withTag(ExpandAnyDict.asData(hashMap14))
         ChemicalBath.addRecipe(array4, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array5 = arrayOf<IItemStack?>(null)
         val n5 = 0
         val item29 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -559,7 +561,7 @@ class OpenBlocks : Runnable {
         hashMap15["Color"] = ExpandInt.toData(2437522)
         array5[n5] = item29.withTag(ExpandAnyDict.asData(hashMap15))
         ChemicalBath.addRecipe(array5, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array6 = arrayOf<IItemStack?>(null)
         val n6 = 0
         val item30 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -568,7 +570,7 @@ class OpenBlocks : Runnable {
         hashMap16["Color"] = ExpandInt.toData(8073150)
         array6[n6] = item30.withTag(ExpandAnyDict.asData(hashMap16))
         ChemicalBath.addRecipe(array6, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array7 = arrayOf<IItemStack?>(null)
         val n7 = 0
         val item31 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -577,7 +579,7 @@ class OpenBlocks : Runnable {
         hashMap17["Color"] = ExpandInt.toData(2651799)
         array7[n7] = item31.withTag(ExpandAnyDict.asData(hashMap17))
         ChemicalBath.addRecipe(array7, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array8 = arrayOf<IItemStack?>(null)
         val n8 = 0
         val item32 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -596,7 +598,7 @@ class OpenBlocks : Runnable {
         hashMap19["Color"] = ExpandInt.toData(4408131)
         array9[n9] = item33.withTag(ExpandAnyDict.asData(hashMap19))
         ChemicalBath.addRecipe(array9, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array10 = arrayOf<IItemStack?>(null)
         val n10 = 0
         val item34 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -605,7 +607,7 @@ class OpenBlocks : Runnable {
         hashMap20["Color"] = ExpandInt.toData(14188952)
         array10[n10] = item34.withTag(ExpandAnyDict.asData(hashMap20))
         ChemicalBath.addRecipe(array10, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array11 = arrayOf<IItemStack?>(null)
         val n11 = 0
         val item35 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -614,7 +616,7 @@ class OpenBlocks : Runnable {
         hashMap21["Color"] = ExpandInt.toData(4312372)
         array11[n11] = item35.withTag(ExpandAnyDict.asData(hashMap21))
         ChemicalBath.addRecipe(array11, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array12 = arrayOf<IItemStack?>(null)
         val n12 = 0
         val item36 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -623,7 +625,7 @@ class OpenBlocks : Runnable {
         hashMap22["Color"] = ExpandInt.toData(14602026)
         array12[n12] = item36.withTag(ExpandAnyDict.asData(hashMap22))
         ChemicalBath.addRecipe(array12, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array13 = arrayOf<IItemStack?>(null)
         val n13 = 0
         val item37 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -642,7 +644,7 @@ class OpenBlocks : Runnable {
         hashMap24["Color"] = ExpandInt.toData(12801229)
         array14[n14] = item38.withTag(ExpandAnyDict.asData(hashMap24))
         ChemicalBath.addRecipe(array14, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array15 = arrayOf<IItemStack?>(null)
         val n15 = 0
         val item39 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -651,7 +653,7 @@ class OpenBlocks : Runnable {
         hashMap25["Color"] = ExpandInt.toData(15435844)
         array15[n15] = item39.withTag(ExpandAnyDict.asData(hashMap25))
         ChemicalBath.addRecipe(array15, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         val array16 = arrayOf<IItemStack?>(null)
         val n16 = 0
         val item40 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 1)
@@ -660,17 +662,17 @@ class OpenBlocks : Runnable {
         hashMap26["Color"] = ExpandInt.toData(15790320)
         array16[n16] = item40.withTag(ExpandAnyDict.asData(hashMap26))
         ChemicalBath.addRecipe(array16, ItemBracketHandler.getItem("OpenBlocks:imaginary", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("OpenBlocks:goldenEye", 100)),
                 ItemBracketHandler.getItem("minecraft:ender_eye", 0),
-                LiquidBracketHandler.getLiquid("molten.gold").withAmount(144), intArrayOf(10000), 200, 20)
+                LiquidBracketHandler.getLiquid("molten.gold").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalReactor.addRecipe(ItemBracketHandler.getItem("OpenBlocks:sponge", 0), null,
                 ItemBracketHandler.getItem("minecraft:wool", 0), ItemBracketHandler.getItem("minecraft:slime_ball", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 200, VoltageLevels.LV)
         Mixer.addRecipe(ItemBracketHandler.getItem("OpenBlocks:tastyClay", 0), null,
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:clay_ball", 0),
                         ItemBracketHandler.getItem("minecraft:dye", 3)),
-                LiquidBracketHandler.getLiquid("milk").withAmount(500), 100, 8)
+                LiquidBracketHandler.getLiquid("milk").withAmount(500), 100, VoltageLevels.ULV)
         Research.addResearch("GOLDENEGG", "MAGICBEES", "alienis 15, bestia 12, victus 9, humanus 6", -4, 5, 4,
                 ItemBracketHandler.getItem("OpenBlocks:goldenegg", 0))
         MineTweakerAPI.game.setLocalization("tc.research_name.GOLDENEGG", "Golden Egg")

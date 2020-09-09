@@ -9,6 +9,8 @@ import modtweaker2.mods.thaumcraft.handlers.Arcane
 import modtweaker2.mods.thaumcraft.handlers.Crucible
 import modtweaker2.mods.thaumcraft.handlers.Infusion
 import modtweaker2.mods.thaumcraft.handlers.Research
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class ThaumicEnergistics : Runnable {
     override fun run() {
@@ -56,8 +58,8 @@ class ThaumicEnergistics : Runnable {
                 ItemBracketHandler.getItem("thaumicenergistics:thaumicenergistics.block.infusion.provider", 0))
 
         Assembler.addRecipe(ItemBracketHandler.getItem("thaumicenergistics:wireless.essentia.terminal", 0),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ToolWirelessTerminal", 32767),
-                ItemBracketHandler.getItem("thaumicenergistics:part.base", 4), 600, 120)
+                ItemBracketHandler.getItem("appliedenergistics2:item.ToolWirelessTerminal", OreDictionary.WILDCARD_VALUE),
+                ItemBracketHandler.getItem("thaumicenergistics:part.base", 4), 600, VoltageLevels.MV)
         Infusion.addRecipe("thaumicenergistics.TEESSPROV",
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockInterface", 0),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:blockTube", 3),
@@ -465,7 +467,7 @@ class ThaumicEnergistics : Runnable {
         //val item = ItemBracketHandler.getItem("extracells:fluidcrafter", 0)
         //val array = arrayOfNulls<IItemStack>(8)
         //val n = 0
-        //val item2 = ItemBracketHandler.getItem("Thaumcraft:WandCasting", 32767)
+        //val item2 = ItemBracketHandler.getItem("Thaumcraft:WandCasting", OreDictionary.WILDCARD_VALUE)
         //val hashMap = HashMap<String, IData>()
         //hashMap["aqua"] = ExpandInt.toData(15000)
         //hashMap["ignis"] = ExpandInt.toData(15000)

@@ -10,6 +10,8 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.nei.NEI
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class BuildCraft : Runnable {
     override fun run() {
@@ -83,8 +85,8 @@ class BuildCraft : Runnable {
         val item29 = ItemBracketHandler.getItem("BuildCraft|Core:pathMarkerBlock", 0)
         val item30 = ItemBracketHandler.getItem("BuildCraft|Core:markerBlock", 0)
         ItemBracketHandler.getItem("BuildCraft|Builders:constructionMarkerBlock", 0)
-        val item31 = ItemBracketHandler.getItem("BuildCraft|Transport:pipeGate", 32767)
-        ItemBracketHandler.getItem("BuildCraft|Transport:pipeWire", 32767)
+        val item31 = ItemBracketHandler.getItem("BuildCraft|Transport:pipeGate", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("BuildCraft|Transport:pipeWire", OreDictionary.WILDCARD_VALUE)
         val item32 = ItemBracketHandler.getItem("BuildCraft|Transport:pipePlug", 0)
         val item33 = ItemBracketHandler.getItem("BuildCraft|Transport:gateCopier", 0)
         val item34 = ItemBracketHandler.getItem("BuildCraft|Robotics:robotStation", 0)
@@ -141,77 +143,77 @@ class BuildCraft : Runnable {
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsclay", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BuildCraft|Transport:pipePowerAdapter", 0))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemswood", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemswood", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidswood", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidswood", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerwood", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerwood", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidscobblestone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidscobblestone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowercobblestone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowercobblestone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsstone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsstone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerstone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerstone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemssandstone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemssandstone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidssandstone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidssandstone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsiron", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsiron", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepoweriron", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepoweriron", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsquartz", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsquartz", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsquartz", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsquartz", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerquartz", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerquartz", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsgold", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsgold", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowergold", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowergold", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemslapis", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemslapis", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsdiamond", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsdiamond", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsemerald", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsemerald", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepoweremerald", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepoweremerald", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsdaizuli", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsdaizuli", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemzuli", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemzuli", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipefluidsvoid", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone", 32767))
+                ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(item43)
         MineTweakerAPI.recipes.remove(item31)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BuildCraft|Builders:constructionMarkerBlock", 0))
@@ -229,7 +231,7 @@ class BuildCraft : Runnable {
         MineTweakerAPI.recipes.remove(
                 ItemBracketHandler.getItem("BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis", 0))
         AssemblyTable.removeRecipe(ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneCrystal", 0), null, false)
-        AssemblyTable.removeRecipe(ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 32767), null, false)
+        AssemblyTable.removeRecipe(ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", OreDictionary.WILDCARD_VALUE), null, false)
         AssemblyTable.removeRecipe(ItemBracketHandler.getItem("gendustry:GeneticsProcessor", 0), null, false)
         AssemblyTable.removeRecipe(ItemBracketHandler.getItem("gendustry:EnvProcessor", 0), null, false)
         MineTweakerAPI.recipes.addShapeless(item, arrayOf<IIngredient>(OreBracketHandler.getOre("gearGtDiamond")), null)
@@ -448,92 +450,92 @@ class BuildCraft : Runnable {
                                 OreBracketHandler.getOre("ingotStainlessSteel"))), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Core:engineBlock", 2),
                 ItemBracketHandler.getItem("dreamcraft:item.EngineCore", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17302).amount(10), 800, 256)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17302).amount(10), 800, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis", 0),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1),
                 ItemBracketHandler.getItem("Forestry:propolis", 0).amount(2),
-                LiquidBracketHandler.getLiquid("for.honey").withAmount(400), 300, 48)
+                LiquidBracketHandler.getLiquid("for.honey").withAmount(400), 300, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis", 0),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1),
                 ItemBracketHandler.getItem("Forestry:propolis", 0).amount(2),
-                LiquidBracketHandler.getLiquid("honey").withAmount(400), 300, 48)
+                LiquidBracketHandler.getLiquid("honey").withAmount(400), 300, VoltageLevels.LMV)
         Assembler.addRecipe(item30, ItemBracketHandler.getItem("minecraft:redstone_torch", 0),
-                ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30), 100, 120)
+                ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30), 100, VoltageLevels.MV)
         Assembler.addRecipe(item29, ItemBracketHandler.getItem("minecraft:redstone_torch", 0),
-                ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24), 100, 120)
+                ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24), 100, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Builders:templateItem", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0), ItemBracketHandler.getItem("minecraft:redstone", 0),
-                LiquidBracketHandler.getLiquid("squidink").withAmount(144), 100, 30)
+                LiquidBracketHandler.getLiquid("squidink").withAmount(144), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Builders:blueprintItem", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0), ItemBracketHandler.getItem("minecraft:redstone", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), 100, 30)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
                 ItemBracketHandler.getItem("Railcraft:glass", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, VoltageLevels.ULV)
 
         //TODO Replace ("ExtraUtilities:decorativeBlock2", 5)
         //Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
         //        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5),
-        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, 8)
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, VoltageLevels.ULV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Robotics:redstone_board", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, 480)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200,  VoltageLevels.HV)
         Assembler.addRecipe(item34, ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17306).amount(4), 300, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17306).amount(4), 300,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Core:mapLocation", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32425), 200, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32425), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Core:mapLocation", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
-                ItemBracketHandler.getItem("minecraft:dye", 11), 200, 480)
+                ItemBracketHandler.getItem("minecraft:dye", 11), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Core:mapLocation", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
-                ItemBracketHandler.getItem("Botany:pigment", 78), 200, 480)
+                ItemBracketHandler.getItem("Botany:pigment", 78), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Core:mapLocation", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
-                ItemBracketHandler.getItem("ExtraBees:misc", 20), 200, 480)
+                ItemBracketHandler.getItem("ExtraBees:misc", 20), 200,  VoltageLevels.HV)
         Assembler.addRecipe(item33, ItemBracketHandler.getItem("BuildCraft|Core:wrenchItem", 0),
-                ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 0), 100, 480)
+                ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 0), 100,  VoltageLevels.HV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemswood", 0).amount(16),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(16),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32632), 400, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32632), 400,  VoltageLevels.HV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsiron", 0).amount(16),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(16),
-                ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1), 400, 480)
+                ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1), 400,  VoltageLevels.HV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold", 0).amount(16),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(16),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32602), 400, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32602), 400,  VoltageLevels.HV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond", 0).amount(8),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(8),
-                ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 4), 400, 480)
+                ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 4), 400,  VoltageLevels.HV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian", 0).amount(16),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(16),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32652), 400, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32652), 400,  VoltageLevels.HV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald", 0).amount(8),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(8),
-                ItemBracketHandler.getItem("IC2:itemPartCircuitAdv", 0), 400, 480)
+                ItemBracketHandler.getItem("IC2:itemPartCircuitAdv", 0), 400,  VoltageLevels.HV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald", 0).amount(8),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32703), 400, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32703), 400,  VoltageLevels.HV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald", 0).amount(8),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32082), 400, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32082), 400,  VoltageLevels.HV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 7),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17501),
-                ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 0), 200, 480)
+                ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneChipset", 0), 200,  VoltageLevels.HV)
         PrecisionLaser.addRecipe(ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneCrystal", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24347).amount(0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17347).amount(4), 600, 120)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17347).amount(4), 600, VoltageLevels.MV)
         NEI.overrideName(item8, "Wood-Covered Kinesis Pipe")
         NEI.overrideName(item9, "Cobblestone-Covered Pipe")
         NEI.overrideName(item10, "Cobblestone-Covered Kinesis Pipe")

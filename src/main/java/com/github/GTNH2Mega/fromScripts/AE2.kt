@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting
 import gttweaker.mods.gregtech.machines.*
 import minetweaker.MineTweakerAPI
@@ -931,85 +932,85 @@ class AE2 : Runnable {
                                 OreBracketHandler.getOre("ingotInfinity"), OreBracketHandler.getOre("ingotInfinity"),
                                 OreBracketHandler.getOre("ingotInfinity"), OreBracketHandler.getOre("ingotInfinity"))))
         AlloySmelter.addRecipe(item42.amount(4), ItemBracketHandler.getItem("minecraft:glass", 0).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2516).amount(4), 400, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2516).amount(4), 400, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockQuartzLamp", 0), item42,
-                ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(8), 200, 30)
+                ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(8), 200, VoltageLevels.LV)
 
         //TODO replace ("ExtraUtilities:decorativeBlock2", 7)
         //Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockQuartzLamp", 0),
         //        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7),
-        //        ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 8).amount(2), 200, 30)
+        //        ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 8).amount(2), 200, VoltageLevels.LV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockSkyChest", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockSkyStone", 0).amount(8),
-                ItemBracketHandler.getItem("minecraft:chest", 0), 200, 30)
+                ItemBracketHandler.getItem("minecraft:chest", 0), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockSkyChest", 1),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockSkyStone", 1).amount(8),
-                ItemBracketHandler.getItem("minecraft:chest", 0), 200, 30)
-        Assembler.addRecipe(item12, item11, item58.amount(2), 400, 120)
+                ItemBracketHandler.getItem("minecraft:chest", 0), 200, VoltageLevels.LV)
+        Assembler.addRecipe(item12, item11, item58.amount(2), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingStorage", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingUnit", 0),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 35), 400, 480)
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 35), 400,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingStorage", 1),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingUnit", 0),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 36), 400, 480)
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 36), 400,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingStorage", 2),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingUnit", 0),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 37), 400, 480)
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 37), 400,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingStorage", 3),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingUnit", 0),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 38), 400, 480)
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 38), 400,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingMonitor", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockCraftingUnit", 0),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 400), 400, 120)
-        Assembler.addRecipe(item27, item20, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23019), 200, 30)
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 400), 400, VoltageLevels.MV)
+        Assembler.addRecipe(item27, item20, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23019), 200, VoltageLevels.LV)
         Assembler.addRecipe(item28, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 8516),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23019), 200, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23019), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 200),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 180),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 160),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 180),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 180),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 200),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 180),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 160),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 280),
                 ItemBracketHandler.getItem("minecraft:redstone_torch", 0),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 23), 200, 30)
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 23), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 80),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 280),
-                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16).amount(2), 200, 30)
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16).amount(2), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 80),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 100),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 100),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 80),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 100, 4)
-        Assembler.addRecipe(item21.amount(3), item40.amount(3), item18.amount(2), 100, 120)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 100, VoltageLevels.ULV)
+        Assembler.addRecipe(item21.amount(3), item40.amount(3), item18.amount(2), 100, VoltageLevels.MV)
         Assembler.addRecipe(item22, item21, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1633),
-                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(36), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(36), 150, VoltageLevels.MV)
         Assembler.addRecipe(item22, item21, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1633),
-                LiquidBracketHandler.getLiquid("molten.styrenebutadienerubber").withAmount(36), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.styrenebutadienerubber").withAmount(36), 150, VoltageLevels.MV)
         Assembler.addRecipe(item22, item21, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1649),
-                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(36), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(36), 150, VoltageLevels.MV)
         Assembler.addRecipe(item22, item21, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1649),
-                LiquidBracketHandler.getLiquid("molten.styrenebutadienerubber").withAmount(36), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.styrenebutadienerubber").withAmount(36), 150, VoltageLevels.MV)
         Assembler.addRecipe(item22, item21, ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 24).amount(0),
-                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(72), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(72), 150, VoltageLevels.MV)
         Assembler.addRecipe(item22, item21, ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 24).amount(0),
-                LiquidBracketHandler.getLiquid("molten.styrenebutadienerubber").withAmount(108), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.styrenebutadienerubber").withAmount(108), 150, VoltageLevels.MV)
         Assembler.addRecipe(item22, item21, ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 24).amount(0),
-                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 150, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 76), item22.amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17811),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, 120)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 56), item22,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17526),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 150, VoltageLevels.MV)
         Autoclave.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 1),
                 ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0),
                 LiquidBracketHandler.getLiquid("water").withAmount(200), 7000, 2000, 24)
@@ -1018,7 +1019,7 @@ class AE2 : Runnable {
                 LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(200), 9000, 1500, 24)
         BlastFurnace.addRecipe(arrayOf(item42.amount(4)),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glass", 0).amount(4),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2516).amount(4)), 200, 120, 1000)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2516).amount(4)), 200, VoltageLevels.MV, 1000)
         Centrifuge.addRecipe(arrayOf(item29, item29), item30, 0, 600)
         ChemicalReactor.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2516),
@@ -1026,21 +1027,21 @@ class AE2 : Runnable {
         ChemicalReactor.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 1).amount(3),
                 null, ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2017),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 900, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 900, VoltageLevels.LV)
         ChemicalReactor.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 1).amount(3),
                 null, ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2017),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(1000), 700, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(1000), 700, VoltageLevels.LV)
         Pulverizer.addRecipe(arrayOf(item18.amount(4)),
-                ItemBracketHandler.getItem("appliedenergistics2:tile.BlockFluix", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("appliedenergistics2:tile.BlockFluix", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 140),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23516).amount(2), 80, 120)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23516).amount(2), 80, VoltageLevels.MV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 140),
-                ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzRod", 0), 80, 120)
+                ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzRod", 0), 80, VoltageLevels.MV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 140),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23522).amount(8), 80, 120)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23522).amount(8), 80, VoltageLevels.MV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 140),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23523).amount(4), 80, 120)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23523).amount(4), 80, VoltageLevels.MV)
         NEI.overrideName(item51, "Universal Storage Housing")
     }
 }

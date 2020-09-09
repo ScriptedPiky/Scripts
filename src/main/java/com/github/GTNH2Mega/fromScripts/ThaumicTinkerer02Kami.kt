@@ -12,6 +12,8 @@ import modtweaker2.mods.thaumcraft.handlers.Infusion
 import modtweaker2.mods.thaumcraft.handlers.Research
 import modtweaker2.mods.thaumcraft.handlers.Warp
 import java.util.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class ThaumicTinkerer02Kami : Runnable {
     override fun run() {
@@ -307,7 +309,7 @@ class ThaumicTinkerer02Kami : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 30500),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978),
                         ItemBracketHandler.getItem("minecraft:ghast_tear", 0),
-                        ItemBracketHandler.getItem("minecraft:fish", 32767),
+                        ItemBracketHandler.getItem("minecraft:fish", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:cake", 0),
                         ItemBracketHandler.getItem("Thaumcraft:FocusPrimal", 0),
                         ItemBracketHandler.getItem("Thaumcraft:ItemGoggles", 0)),
@@ -574,9 +576,9 @@ class ThaumicTinkerer02Kami : Runnable {
                 arrayOf(ItemBracketHandler.getItem("minecraft:stone", 0),
                         ItemBracketHandler.getItem("minecraft:dirt", 0),
                         ItemBracketHandler.getItem("ThaumicTinkerer:kamiResource", 7),
-                        ItemBracketHandler.getItem("minecraft:sand", 32767),
+                        ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:cobblestone", 0),
-                        ItemBracketHandler.getItem("minecraft:log", 32767),
+                        ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("ThaumicTinkerer:kamiResource", 6),
                         ItemBracketHandler.getItem("minecraft:grass", 0)),
                 "instrumentum 32, perfodio 32, terra 16, aer 16",

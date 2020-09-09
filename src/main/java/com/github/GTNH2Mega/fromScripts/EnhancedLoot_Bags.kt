@@ -6,7 +6,9 @@ import minetweaker.api.item.IIngredient
 import minetweaker.api.item.IngredientCondition
 import minetweaker.expand.*
 import minetweaker.mc1710.brackets.ItemBracketHandler
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class EnhancedLoot_Bags : Runnable {
     override fun run() {
@@ -176,7 +178,7 @@ class EnhancedLoot_Bags : Runnable {
         array18[n18] = ExpandAnyDict.asData(hashMap24)
         hashMap23[s12] = ExpandAnyArray.asData(array18)
         array17[n17] = IngredientCondition.onlyWithTag(item12, ExpandAnyDict.asData(hashMap23))
-        array17[2] = ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767)
+        array17[2] = ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE)
         recipes6.addShapeless(withTag6, array17, null)
         val recipes7 = MineTweakerAPI.recipes
         val item13 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 8)

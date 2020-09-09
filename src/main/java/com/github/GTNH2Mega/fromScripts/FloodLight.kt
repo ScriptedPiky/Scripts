@@ -6,6 +6,7 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import com.github.GTNH2Mega.VoltageLevels
 
 class FloodLight : Runnable {
     override fun run() {
@@ -62,18 +63,18 @@ class FloodLight : Runnable {
                                 OreBracketHandler.getOre("circuitAdvanced")),
                         arrayOf<IIngredient>(ore7, OreBracketHandler.getOre("wireGt01Cobalt"), ore7)), null)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:redstone", 0),
-                ItemBracketHandler.getItem("minecraft:string", 0).amount(8), 100, 30)
+                ItemBracketHandler.getItem("minecraft:string", 0).amount(8), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("FloodLights:electricIncandescentLightBulb", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19081),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(2),
-                LiquidBracketHandler.getLiquid("argon").withAmount(1), 200, 120)
+                LiquidBracketHandler.getLiquid("argon").withAmount(1), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("FloodLights:carbonDissolver", 0),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17305).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, 64)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("FloodLights:smallElectricFloodlightMetaBlock", 1),
                 ItemBracketHandler.getItem("FloodLights:electricIncandescentLightBulb", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(288), 200, 120)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(288), 200, VoltageLevels.MV)
     }
 }

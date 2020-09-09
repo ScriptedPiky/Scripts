@@ -22,7 +22,9 @@ import modtweaker2.mods.forestry.handlers.ThermionicFabricator
 import modtweaker2.mods.thaumcraft.handlers.Arcane
 import modtweaker2.mods.thaumcraft.handlers.Infusion
 import modtweaker2.mods.thaumcraft.handlers.Research
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class Forestry : Runnable {
     override fun run() {
@@ -127,7 +129,7 @@ class Forestry : Runnable {
         Carpenter.removeRecipe(ItemBracketHandler.getItem("Forestry:stamps", 2), null)
         Carpenter.removeRecipe(ItemBracketHandler.getItem("Forestry:stamps", 3), null)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Forestry:letters", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Forestry:fencesFireproof", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Forestry:fencesFireproof", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Forestry:catalogue", 0))
         Carpenter.removeRecipe(ItemBracketHandler.getItem("Forestry:crate", 0), null)
         Carpenter.removeRecipe(ItemBracketHandler.getItem("minecraft:torch", 0), null)
@@ -161,8 +163,8 @@ class Forestry : Runnable {
         Carpenter.removeRecipe(ItemBracketHandler.getItem("Forestry:beealyzer", 0), null)
         Carpenter.removeRecipe(ItemBracketHandler.getItem("Forestry:treealyzer", 0), null)
         Carpenter.removeRecipe(ItemBracketHandler.getItem("Forestry:flutterlyzer", 0), null)
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Forestry:fences", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Forestry:cart.beehouse", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Forestry:fences", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Forestry:cart.beehouse", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingBronze"),
                         OreBracketHandler.getOre("screwSteel"), OreBracketHandler.getOre("itemCasingBronze")),
@@ -301,12 +303,12 @@ class Forestry : Runnable {
         //                        OreBracketHandler.getOre("screwIron"))), null)
 
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(1000),
-                arrayOf(ItemBracketHandler.getItem("minecraft:planks", 32767),
+                arrayOf(ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
-                        ItemBracketHandler.getItem("minecraft:wooden_slab", 32767),
-                        ItemBracketHandler.getItem("minecraft:wooden_slab", 32767),
-                        ItemBracketHandler.getItem("minecraft:wooden_slab", 32767),
+                        ItemBracketHandler.getItem("minecraft:wooden_slab", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:wooden_slab", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:wooden_slab", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:fence", 0), null,
                         ItemBracketHandler.getItem("minecraft:fence", 0)), null,
                 ItemBracketHandler.getItem("Forestry:core", 1))
@@ -403,20 +405,20 @@ class Forestry : Runnable {
                                 ItemBracketHandler.getItem("computronics:computronics.partsForestry", 0))), null)
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(1000),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
-                        ItemBracketHandler.getItem("minecraft:wooden_slab", 32767),
+                        ItemBracketHandler.getItem("minecraft:wooden_slab", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
                         ItemBracketHandler.getItem("Forestry:frameImpregnated", 0),
-                        ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
+                        ItemBracketHandler.getItem("Forestry:beeCombs", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:frameImpregnated", 0),
                         ItemBracketHandler.getItem("minecraft:fence", 0),
-                        ItemBracketHandler.getItem("minecraft:wooden_slab", 32767),
+                        ItemBracketHandler.getItem("minecraft:wooden_slab", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:fence", 0)),
                 ItemBracketHandler.getItem("Forestry:apiculture", 2),
                 ItemBracketHandler.getItem("Forestry:apiculture", 0))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("for.honey").withAmount(1000),
-                arrayOf(ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
-                        ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
-                        ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
+                arrayOf(ItemBracketHandler.getItem("Forestry:beeCombs", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:beeCombs", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:beeCombs", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
@@ -426,9 +428,9 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("minecraft:chest", 0),
                 ItemBracketHandler.getItem("Forestry:apicultureChest", 0))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("for.honey").withAmount(1000),
-                arrayOf(ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
-                        ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
-                        ItemBracketHandler.getItem("Forestry:beeCombs", 32767),
+                arrayOf(ItemBracketHandler.getItem("Forestry:beeCombs", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:beeCombs", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:beeCombs", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
@@ -438,9 +440,9 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("minecraft:chest", 0),
                 ItemBracketHandler.getItem("Forestry:apicultureChest", 0))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(1000),
-                arrayOf(ItemBracketHandler.getItem("Forestry:sapling", 32767),
-                        ItemBracketHandler.getItem("Forestry:sapling", 32767),
-                        ItemBracketHandler.getItem("Forestry:sapling", 32767),
+                arrayOf(ItemBracketHandler.getItem("Forestry:sapling", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:sapling", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:sapling", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
@@ -450,9 +452,9 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("minecraft:chest", 0),
                 ItemBracketHandler.getItem("Forestry:arboriculture", 0))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(1000),
-                arrayOf(ItemBracketHandler.getItem("minecraft:sapling", 32767),
-                        ItemBracketHandler.getItem("minecraft:sapling", 32767),
-                        ItemBracketHandler.getItem("minecraft:sapling", 32767),
+                arrayOf(ItemBracketHandler.getItem("minecraft:sapling", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:sapling", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:sapling", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
@@ -462,9 +464,9 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("minecraft:chest", 0),
                 ItemBracketHandler.getItem("Forestry:arboriculture", 0))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(1000),
-                arrayOf(ItemBracketHandler.getItem("Forestry:sapling", 32767),
-                        ItemBracketHandler.getItem("Forestry:sapling", 32767),
-                        ItemBracketHandler.getItem("Forestry:sapling", 32767),
+                arrayOf(ItemBracketHandler.getItem("Forestry:sapling", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:sapling", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:sapling", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
@@ -474,9 +476,9 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("minecraft:chest", 0),
                 ItemBracketHandler.getItem("Forestry:arboriculture", 0))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(1000),
-                arrayOf(ItemBracketHandler.getItem("minecraft:sapling", 32767),
-                        ItemBracketHandler.getItem("minecraft:sapling", 32767),
-                        ItemBracketHandler.getItem("minecraft:sapling", 32767),
+                arrayOf(ItemBracketHandler.getItem("minecraft:sapling", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:sapling", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:sapling", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
                         ItemBracketHandler.getItem("Forestry:crate", 0),
@@ -486,9 +488,9 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("minecraft:chest", 0),
                 ItemBracketHandler.getItem("Forestry:arboriculture", 0))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("seedoil").withAmount(1000),
-                arrayOf(ItemBracketHandler.getItem("Forestry:butterflyGE", 32767),
-                        ItemBracketHandler.getItem("Forestry:butterflyGE", 32767),
-                        ItemBracketHandler.getItem("Forestry:butterflyGE", 32767),
+                arrayOf(ItemBracketHandler.getItem("Forestry:butterflyGE", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:butterflyGE", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:butterflyGE", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32403),
@@ -558,7 +560,7 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
                         ItemBracketHandler.getItem("Forestry:thermionicTubes", 9),
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
-                        ItemBracketHandler.getItem("Forestry:pollenFertile", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollenFertile", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
                         ItemBracketHandler.getItem("Forestry:thermionicTubes", 9),
                         ItemBracketHandler.getItem("Forestry:craftingMaterial", 3),
@@ -1684,40 +1686,40 @@ class Forestry : Runnable {
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
                 arrayOf(null, ItemBracketHandler.getItem("minecraft:wheat", 0), null,
                         ItemBracketHandler.getItem("minecraft:wheat", 0),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
+                        ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:wheat", 0), null,
                         ItemBracketHandler.getItem("minecraft:wheat", 0), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
                 arrayOf(null, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2815), null,
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2815),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
+                        ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2815), null,
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2815), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
                 arrayOf(null, ItemBracketHandler.getItem("Natura:barleyFood", 0), null,
                         ItemBracketHandler.getItem("Natura:barleyFood", 0),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
+                        ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Natura:barleyFood", 0), null,
                         ItemBracketHandler.getItem("Natura:barleyFood", 0), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
                 arrayOf(null, ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), null,
                         ItemBracketHandler.getItem("BiomesOPlenty:plants", 6),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
+                        ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), null,
                         ItemBracketHandler.getItem("BiomesOPlenty:plants", 6), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerBio", 0))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
-                arrayOf(null, ItemBracketHandler.getItem("minecraft:sand", 32767), null, null,
+                arrayOf(null, ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE), null, null,
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2530), null, null,
-                        ItemBracketHandler.getItem("minecraft:sand", 32767), null), null,
+                        ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerCompound", 0).amount(5))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
-                arrayOf(null, ItemBracketHandler.getItem("minecraft:sand", 32767), null, null,
+                arrayOf(null, ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE), null, null,
                         ItemBracketHandler.getItem("MagicBees:miscResources", 2), null, null,
-                        ItemBracketHandler.getItem("minecraft:sand", 32767), null), null,
+                        ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerCompound", 0).amount(6))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2815),
@@ -1742,45 +1744,45 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2815)), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerCompound", 0).amount(12))
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("water").withAmount(100),
-                arrayOf(null, ItemBracketHandler.getItem("minecraft:sand", 32767), null,
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
+                arrayOf(null, ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE), null,
+                        ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2836),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767), null,
-                        ItemBracketHandler.getItem("minecraft:sand", 32767), null), null,
+                        ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE), null,
+                        ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE), null), null,
                 ItemBracketHandler.getItem("Forestry:fertilizerCompound", 0).amount(2))
         Carpenter.addRecipe(40, LiquidBracketHandler.getLiquid("for.honey").withAmount(1000),
                 arrayOf(ItemBracketHandler.getItem("Forestry:honeydew", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:honeydew", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
-                        ItemBracketHandler.getItem("Forestry:propolis", 32767),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:propolis", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0)),
                 ItemBracketHandler.getItem("Forestry:canEmpty", 0),
                 ItemBracketHandler.getItem("Forestry:iodineCapsule", 0))
         Carpenter.addRecipe(40, LiquidBracketHandler.getLiquid("for.honey").withAmount(1000),
                 arrayOf(ItemBracketHandler.getItem("Forestry:honeydew", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:honeydew", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
-                        ItemBracketHandler.getItem("ExtraBees:propolis", 32767),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("ExtraBees:propolis", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0)),
                 ItemBracketHandler.getItem("Forestry:canEmpty", 0),
                 ItemBracketHandler.getItem("Forestry:iodineCapsule", 0))
         Carpenter.addRecipe(40, LiquidBracketHandler.getLiquid("for.honey").withAmount(1000),
                 arrayOf(ItemBracketHandler.getItem("Forestry:honeydew", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:honeydew", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
-                        ItemBracketHandler.getItem("MagicBees:propolis", 32767),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("MagicBees:propolis", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
-                        ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                        ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0)),
                 ItemBracketHandler.getItem("Forestry:canEmpty", 0),
                 ItemBracketHandler.getItem("Forestry:iodineCapsule", 0))
@@ -1789,7 +1791,7 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
                         ItemBracketHandler.getItem("Forestry:honeydew", 0),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
-                        ItemBracketHandler.getItem("Forestry:propolis", 32767),
+                        ItemBracketHandler.getItem("Forestry:propolis", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
@@ -1801,7 +1803,7 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
                         ItemBracketHandler.getItem("Forestry:honeydew", 0),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
-                        ItemBracketHandler.getItem("ExtraBees:propolis", 32767),
+                        ItemBracketHandler.getItem("ExtraBees:propolis", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
@@ -1813,7 +1815,7 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
                         ItemBracketHandler.getItem("Forestry:honeydew", 0),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
-                        ItemBracketHandler.getItem("MagicBees:propolis", 32767),
+                        ItemBracketHandler.getItem("MagicBees:propolis", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
                         ItemBracketHandler.getItem("Forestry:royalJelly", 0),
@@ -1828,13 +1830,13 @@ class Forestry : Runnable {
                                 ItemBracketHandler.getItem("Forestry:oakStick", 0),
                                 ItemBracketHandler.getItem("Forestry:oakStick", 0)),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:beeswax", 0),
-                                ItemBracketHandler.getItem("Forestry:pollen", 32767),
+                                ItemBracketHandler.getItem("Forestry:pollen", OreDictionary.WILDCARD_VALUE),
                                 ItemBracketHandler.getItem("Forestry:beeswax", 0))),
                 LiquidBracketHandler.getLiquid("for.honey").withAmount(1000), 10, null)
         Carpenter.addRecipe(10, LiquidBracketHandler.getLiquid("creosote").withAmount(200),
                 arrayOf(null, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2815), null,
                         ItemBracketHandler.getItem("Forestry:peat", 0),
-                        ItemBracketHandler.getItem("Forestry:propolis", 32767),
+                        ItemBracketHandler.getItem("Forestry:propolis", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:peat", 0), null,
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2815), null), null,
                 ItemBracketHandler.getItem("Forestry:bituminousPeat", 0))
@@ -2040,7 +2042,7 @@ class Forestry : Runnable {
                 arrayOf(ItemBracketHandler.getItem("minecraft:stick", 0), null, null, null, null, null, null, null,
                         null), null, ItemBracketHandler.getItem("Forestry:oakStick", 0))
         Carpenter.addRecipe(10, LiquidBracketHandler.getLiquid("seedoil").withAmount(100),
-                arrayOf(ItemBracketHandler.getItem("Natura:natura.stick", 32767), null, null, null, null, null, null,
+                arrayOf(ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE), null, null, null, null, null, null,
                         null, null), null, ItemBracketHandler.getItem("Forestry:oakStick", 0))
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("Forestry:frameUntreated", 0),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("slabWood"), OreBracketHandler.getOre("slabWood"),
@@ -2170,7 +2172,7 @@ class Forestry : Runnable {
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("seedoil").withAmount(200),
                 arrayOf(null, ItemBracketHandler.getItem("minecraft:paper", 0), null,
                         ItemBracketHandler.getItem("minecraft:paper", 0),
-                        ItemBracketHandler.getItem("Forestry:propolis", 32767),
+                        ItemBracketHandler.getItem("Forestry:propolis", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:paper", 0), null,
                         ItemBracketHandler.getItem("minecraft:paper", 0), null),
                 ItemBracketHandler.getItem("minecraft:paper", 0),
@@ -2178,7 +2180,7 @@ class Forestry : Runnable {
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("seedoil").withAmount(200),
                 arrayOf(null, ItemBracketHandler.getItem("minecraft:paper", 0), null,
                         ItemBracketHandler.getItem("minecraft:paper", 0),
-                        ItemBracketHandler.getItem("ExtraBees:propolis", 32767),
+                        ItemBracketHandler.getItem("ExtraBees:propolis", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:paper", 0), null,
                         ItemBracketHandler.getItem("minecraft:paper", 0), null),
                 ItemBracketHandler.getItem("minecraft:paper", 0),
@@ -2186,7 +2188,7 @@ class Forestry : Runnable {
         Carpenter.addRecipe(20, LiquidBracketHandler.getLiquid("seedoil").withAmount(200),
                 arrayOf(null, ItemBracketHandler.getItem("minecraft:paper", 0), null,
                         ItemBracketHandler.getItem("minecraft:paper", 0),
-                        ItemBracketHandler.getItem("MagicBees:propolis", 32767),
+                        ItemBracketHandler.getItem("MagicBees:propolis", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:paper", 0), null,
                         ItemBracketHandler.getItem("minecraft:paper", 0), null),
                 ItemBracketHandler.getItem("minecraft:paper", 0),
@@ -3736,7 +3738,7 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("Forestry:planksFireproof", 28),
                         OreBracketHandler.getOre("stickWood"))), null)
         Carpenter.addRecipe(10, LiquidBracketHandler.getLiquid("creosote").withAmount(500),
-                arrayOf(null, null, null, null, ItemBracketHandler.getItem("minecraft:wool", 32767), null, null,
+                arrayOf(null, null, null, null, ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE), null, null,
                         ItemBracketHandler.getItem("minecraft:stick", 0), null), null,
                 ItemBracketHandler.getItem("minecraft:torch", 0).amount(5))
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:factory2", 2),
@@ -3770,82 +3772,82 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("Forestry:canBiomass", 0), 8)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("Forestry:beeswax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("Forestry:refractoryWax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 1).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 2).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:letters", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2896).amount(6), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2896).amount(6), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:alveary", 0),
                 ItemBracketHandler.getItem("Forestry:impregnatedCasing", 0),
-                ItemBracketHandler.getItem("Forestry:craftingMaterial", 6).amount(8), 1200, 64)
+                ItemBracketHandler.getItem("Forestry:craftingMaterial", 6).amount(8), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockcasings", 1),
-                OreBracketHandler.getOre("itemCasingBronze").amount(4), 800, 30)
+                OreBracketHandler.getOre("itemCasingBronze").amount(4), 800, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:hardenedMachine", 0),
                 ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(8), 1200, 120)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(8), 1200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:engine", 1),
                 ItemBracketHandler.getItem("dreamcraft:item.EngineCore", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(10), 800, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(10), 800, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:engine", 2),
                 ItemBracketHandler.getItem("dreamcraft:item.EngineCore", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17300).amount(10), 800, 120)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17300).amount(10), 800, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:engine", 4),
                 ItemBracketHandler.getItem("dreamcraft:item.EngineCore", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17304).amount(10), 800, 48)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17304).amount(10), 800, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:canEmpty", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17057).amount(2),
-                ItemBracketHandler.getItem("minecraft:glass_pane", 0), 120, 8)
+                ItemBracketHandler.getItem("minecraft:glass_pane", 0), 120, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:apiaristHelmet", 0),
                 ItemBracketHandler.getItem("Forestry:craftingMaterial", 3).amount(5),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 5).amount(0), 1200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 5).amount(0), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:apiaristChest", 0),
                 ItemBracketHandler.getItem("Forestry:craftingMaterial", 3).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 1200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:apiaristLegs", 0),
                 ItemBracketHandler.getItem("Forestry:craftingMaterial", 3).amount(7),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 7).amount(0), 1200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 7).amount(0), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:apiaristBoots", 0),
                 ItemBracketHandler.getItem("Forestry:craftingMaterial", 3).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 1200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:cart.beehouse", 0),
                 ItemBracketHandler.getItem("Forestry:apiculture", 2),
-                ItemBracketHandler.getItem("minecraft:minecart", 0), 200, 16)
+                ItemBracketHandler.getItem("minecraft:minecart", 0), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:cart.beehouse", 1),
                 ItemBracketHandler.getItem("Forestry:apiculture", 0),
-                ItemBracketHandler.getItem("minecraft:minecart", 0), 200, 16)
+                ItemBracketHandler.getItem("minecraft:minecart", 0), 200, VoltageLevels.LLV)
         gttweaker.mods.gregtech.machines.Centrifuge.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("Forestry:propolis", 0)), null,
-                ItemBracketHandler.getItem("BiomesOPlenty:hive", 1), null, null, intArrayOf(500), 400, 40)
+                ItemBracketHandler.getItem("BiomesOPlenty:hive", 1), null, null, intArrayOf(500), 400, VoltageLevels.LMV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("Forestry:honeyDrop", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32309).amount(0),
-                LiquidBracketHandler.getLiquid("for.honey").withAmount(200), 400, 8)
+                LiquidBracketHandler.getLiquid("for.honey").withAmount(200), 400, VoltageLevels.ULV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("Forestry:beeswax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("Forestry:refractoryWax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 1).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 2).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, VoltageLevels.LV)
         MineTweakerAPI.oreDict["foodHoneydrop"].add(ItemBracketHandler.getItem("Forestry:honeyDrop", 0))
         MineTweakerAPI.oreDict["listAllsugar"].add(ItemBracketHandler.getItem("Forestry:honeyDrop", 0))
         NEI.overrideName(ItemBracketHandler.getItem("Forestry:alveary", 2), "Swarmer")

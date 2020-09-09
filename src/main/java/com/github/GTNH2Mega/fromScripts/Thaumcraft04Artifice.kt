@@ -11,6 +11,8 @@ import modtweaker2.mods.thaumcraft.handlers.Arcane
 import modtweaker2.mods.thaumcraft.handlers.Infusion
 import modtweaker2.mods.thaumcraft.handlers.Research
 import modtweaker2.mods.thaumcraft.handlers.Warp
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Thaumcraft04Artifice : Runnable {
     override fun run() {
@@ -178,7 +180,7 @@ class Thaumcraft04Artifice : Runnable {
                 "aer 8, terra 8, ignis 8, aqua 8, ordo 8, perditio 8",
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("stone"), OreBracketHandler.getOre("stone"),
                         OreBracketHandler.getOre("stone")), arrayOf(OreBracketHandler.getOre("stone"),
-                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 32767),
+                        ItemBracketHandler.getItem("Thaumcraft:blockCrystal", OreDictionary.WILDCARD_VALUE),
                         OreBracketHandler.getOre("stone")),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("stone"), OreBracketHandler.getOre("stone"),
                                 OreBracketHandler.getOre("stone"))))
@@ -454,7 +456,7 @@ class Thaumcraft04Artifice : Runnable {
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
                         ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 0),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7),
-                        ItemBracketHandler.getItem("minecraft:fish", 32767),
+                        ItemBracketHandler.getItem("minecraft:fish", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 7)),
                 "volatus 25, aer 25, iter 25, aqua 5", ItemBracketHandler.getItem("Thaumcraft:BootsTraveller", 0), 2)
         Research.setAspects("BOOTSTRAVELLER", "aqua 9, iter 15, terra 6, volatus 12, aer 3")
@@ -786,16 +788,16 @@ class Thaumcraft04Artifice : Runnable {
         Research.setComplexity("BONEBOW", 2)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSlabStone", 0).amount(4), null,
                 ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 400, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 400, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSlabStone", 0).amount(4), null,
                 ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 400, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 400, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSlabStone", 0).amount(4), null,
                 ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         PrecisionLaser.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 7),
                 ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 6),
-                OreBracketHandler.getOre("craftingLensRed").amount(0), 600, 120)
+                OreBracketHandler.getOre("craftingLensRed").amount(0), 600, VoltageLevels.MV)
         Research.refreshResearchRecipe("THAUMOMETER")
         Research.refreshResearchRecipe("GOGGLES")
         Research.refreshResearchRecipe("TABLE")

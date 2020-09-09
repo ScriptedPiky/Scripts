@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
 import minetweaker.api.data.IData
@@ -10,6 +11,7 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import java.util.*
+import net.minecraftforge.oredict.OreDictionary
 
 class RemoteIO : Runnable {
     override fun run() {
@@ -77,8 +79,8 @@ class RemoteIO : Runnable {
         MineTweakerAPI.recipes.remove(item7)
         MineTweakerAPI.recipes.remove(item5)
         MineTweakerAPI.recipes.remove(item15)
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.chip.transfer", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.chip.upgrade", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.chip.transfer", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.chip.upgrade", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.pda", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.remoteAccessor", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("RIO:item.linker", 0))
@@ -148,78 +150,78 @@ class RemoteIO : Runnable {
         recipes.addShaped(item17, array, null)
         Assembler.addRecipe(item4, ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 0),
                 ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 1),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1000), 600,  VoltageLevels.HV)
 
         //TODO Replace ("TConstruct:blankPattern", 1)
         //Assembler.addRecipe(item15, ItemBracketHandler.getItem("TConstruct:blankPattern", 1),
         //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17316),
-        //        LiquidBracketHandler.getLiquid("molten.redstone").withAmount(100), 200, 480)
+        //        LiquidBracketHandler.getLiquid("molten.redstone").withAmount(100), 200,  VoltageLevels.HV)
 
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("EnderStorage:enderChest", 0), 200, 480)
+                ItemBracketHandler.getItem("EnderStorage:enderChest", 0), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 1),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("EnderStorage:enderChest", 4096), 200, 480)
+                ItemBracketHandler.getItem("EnderStorage:enderChest", 4096), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 2),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("Thaumcraft:blockJar", 0).amount(2), 200, 480)
+                ItemBracketHandler.getItem("Thaumcraft:blockJar", 0).amount(2), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 10),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1546).amount(2), 200, 480)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1546).amount(2), 200,  VoltageLevels.HV)
 
         //TODO Replace ("ExtraUtilities:extractor_base", 12)
         //Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 12),
         //        ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-        //        ItemBracketHandler.getItem("ExtraUtilities:extractor_base", 12).amount(2), 200, 480)
+        //        ItemBracketHandler.getItem("ExtraUtilities:extractor_base", 12).amount(2), 200,  VoltageLevels.HV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 20),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("appliedenergistics2:tile.BlockController", 0), 200, 480)
+                ItemBracketHandler.getItem("appliedenergistics2:tile.BlockController", 0), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 21),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2001).amount(2), 200, 480)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2001).amount(2), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.upgrade", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17321).amount(4), 200, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17321).amount(4), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.upgrade", 1),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
-                ItemBracketHandler.getItem("RIO:item.wireless_transmitter", 0), 200, 480)
+                ItemBracketHandler.getItem("RIO:item.wireless_transmitter", 0), 200,  VoltageLevels.HV)
     }
 }

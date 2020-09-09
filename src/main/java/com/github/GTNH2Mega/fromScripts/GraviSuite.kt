@@ -4,6 +4,8 @@ import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class GraviSuite : Runnable {
     override fun run() {
@@ -12,14 +14,14 @@ class GraviSuite : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:itemSimpleItem", 2))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:itemSimpleItem", 4))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:itemSimpleItem", 5))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:vajra", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:vajra", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:itemSimpleItem", 6))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:advChainsaw", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:advDDrill", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:graviTool", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:ultimateLappack", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:relocator", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:epicLappack", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:relocator", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GraviSuite:epicLappack", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GraviSuite:itemSimpleItem", 0),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:itemPartAlloy", 0),
                         ItemBracketHandler.getItem("IC2:itemPartIridium", 0),
@@ -103,7 +105,7 @@ class GraviSuite : Runnable {
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingChrome"),
                         OreBracketHandler.getOre("batteryMaster"), OreBracketHandler.getOre("itemCasingChrome")),
                         arrayOf(OreBracketHandler.getOre("batteryMaster"),
-                                ItemBracketHandler.getItem("GraviSuite:advLappack", 32767),
+                                ItemBracketHandler.getItem("GraviSuite:advLappack", OreDictionary.WILDCARD_VALUE),
                                 OreBracketHandler.getOre("batteryMaster")),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("circuitMaster"),
                                 OreBracketHandler.getOre("wireGt16NiobiumTitanium"),
@@ -113,7 +115,7 @@ class GraviSuite : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32599),
                         ItemBracketHandler.getItem("dreamcraft:item.IridiumAlloyItemCasing", 0)),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32599),
-                                ItemBracketHandler.getItem("GraviSuite:ultimateLappack", 32767),
+                                ItemBracketHandler.getItem("GraviSuite:ultimateLappack", OreDictionary.WILDCARD_VALUE),
                                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32599)),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("circuitUltimate"),
                                 OreBracketHandler.getOre("wireGt16Superconductor"),

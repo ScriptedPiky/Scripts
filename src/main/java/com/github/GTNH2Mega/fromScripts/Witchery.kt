@@ -14,6 +14,7 @@ import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.thaumcraft.handlers.*
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class Witchery : Runnable {
     override fun run() {
@@ -190,19 +191,19 @@ class Witchery : Runnable {
                 100, 24)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("witchery:ingredient", 7).amount(8), null,
                 ItemBracketHandler.getItem("minecraft:bone", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(16), 100, 24)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(16), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("witchery:ingredient", 7).amount(8), null,
                 ItemBracketHandler.getItem("minecraft:bone", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 50, 24)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 50, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("witchery:ingredient", 26).amount(4),
                 ItemBracketHandler.getItem("minecraft:clay_ball", 0).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32305).amount(0), 400, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32305).amount(0), 400, VoltageLevels.LV)
         Mixer.addRecipe(ItemBracketHandler.getItem("witchery:ingredient", 153), null,
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("witchery:seedsbelladonna", 0),
                         ItemBracketHandler.getItem("witchery:seedsmandrake", 0),
                         ItemBracketHandler.getItem("witchery:seedsartichoke", 0),
                         ItemBracketHandler.getItem("witchery:seedssnowbell", 0)),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 400, 120)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 400, VoltageLevels.MV)
         Research.addResearch("ANOINTINGPASTE", "WITCHERY", "fabrico 12, aqua 9, praecantatio 6", 0, -4, 2,
                 ItemBracketHandler.getItem("witchery:ingredient", 153))
         MineTweakerAPI.game.setLocalization("tc.research_name.ANOINTINGPASTE", "Anointing Paste")

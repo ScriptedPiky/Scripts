@@ -11,6 +11,8 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Extractor
 import minetweaker.mods.nei.NEI
 import modtweaker2.mods.railcraft.handlers.BlastFurnace
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Minecraft : Runnable {
     override fun run() {
@@ -201,7 +203,7 @@ class Minecraft : Runnable {
         val item130 = ItemBracketHandler.getItem("Railcraft:part.rail", 0)
         ItemBracketHandler.getItem("Railcraft:part.rail", 1)
         val item131 = ItemBracketHandler.getItem("Railcraft:part.railbed", 0)
-        val item132 = ItemBracketHandler.getItem("minecraft:planks", 32767)
+        val item132 = ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE)
         val ore39 = OreBracketHandler.getOre("slabWood")
         OreBracketHandler.getOre("slabStone")
         val ore40 = OreBracketHandler.getOre("paneGlass")
@@ -249,7 +251,7 @@ class Minecraft : Runnable {
         val item139 = ItemBracketHandler.getItem("minecraft:iron_door", 0)
         val item140 = ItemBracketHandler.getItem("minecraft:sign", 0)
         val item141 = ItemBracketHandler.getItem("minecraft:stick", 0)
-        val item142 = ItemBracketHandler.getItem("Natura:natura.stick", 32767)
+        val item142 = ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE)
         val item143 = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470)
         val item144 = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32471)
         val item145 = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32472)
@@ -1226,7 +1228,7 @@ class Minecraft : Runnable {
                 arrayOf(arrayOf(OreBracketHandler.getOre("itemLeather"),
                         ItemBracketHandler.getItem("Backpack:tannedLeather", 0),
                         OreBracketHandler.getOre("itemLeather")), arrayOf(OreBracketHandler.getOre("itemLeather"),
-                        ItemBracketHandler.getItem("minecraft:carpet", 32767), OreBracketHandler.getOre("itemLeather")),
+                        ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE), OreBracketHandler.getOre("itemLeather")),
                         arrayOf(OreBracketHandler.getOre("ringAnyIron"),
                                 ItemBracketHandler.getItem("minecraft:string", 0),
                                 OreBracketHandler.getOre("ringAnyIron"))), null)
@@ -1383,9 +1385,9 @@ class Minecraft : Runnable {
                         arrayOf<IIngredient>(OreBracketHandler.getOre("stickWood"),
                                 OreBracketHandler.getOre("stickWood"), OreBracketHandler.getOre("stickWood"))), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:bed", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:carpet", 32767),
-                        ItemBracketHandler.getItem("minecraft:carpet", 32767),
-                        ItemBracketHandler.getItem("minecraft:carpet", 32767)),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE)),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("plankWood"),
                                 OreBracketHandler.getOre("plankWood"), OreBracketHandler.getOre("plankWood")),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("fenceWood"),
@@ -1760,7 +1762,7 @@ class Minecraft : Runnable {
                         arrayOf<IIngredient?>(ore39, ore39, ore39)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:painting", 0),
                 arrayOf(arrayOf(item8, ore36, item8), arrayOf(OreBracketHandler.getOre("stickWood"),
-                        ItemBracketHandler.getItem("minecraft:carpet", 32767), OreBracketHandler.getOre("stickWood")),
+                        ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE), OreBracketHandler.getOre("stickWood")),
                         arrayOf<IIngredient>(OreBracketHandler.getOre("stickWood"),
                                 OreBracketHandler.getOre("stickWood"), OreBracketHandler.getOre("stickWood"))), null)
         MineTweakerAPI.furnace.addRecipe(ItemBracketHandler.getItem("minecraft:bread", 0),
@@ -1807,41 +1809,41 @@ class Minecraft : Runnable {
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:gold_nugget", 0).amount(9),
                 arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("craftingToolSaw"),
                         OreBracketHandler.getOre("ingotGold"), null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("minecraft:log", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("minecraft:log2", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("ExtraTrees:log", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Forestry:logsFireproof", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Forestry:logs", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:tree", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:tree", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:redwood", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:redwood", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:willow", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:willow", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:DarkTree", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:DarkTree", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:RareTree", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Natura:RareTree", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("TwilightForest:tile.TFLog", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("TwilightForest:tile.TFLog", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLog", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLog", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
-        BlastFurnace.addRecipe(ItemBracketHandler.getItem("witchery:witchlog", 32767), false, false, 20,
+        BlastFurnace.addRecipe(ItemBracketHandler.getItem("witchery:witchlog", OreDictionary.WILDCARD_VALUE), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
         BlastFurnace.addRecipe(ItemBracketHandler.getItem("TaintedMagic:BlockWarpwoodLog", 0), false, false, 20,
                 ItemBracketHandler.getItem("minecraft:coal", 1))
@@ -1851,305 +1853,305 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("minecraft:coal", 1))
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:brick", 0),
                 ItemBracketHandler.getItem("minecraft:clay_ball", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, 2)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, VoltageLevels.LULV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:netherbrick", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2807),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, 2)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, VoltageLevels.LULV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:glass", 0),
                 ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 5, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 5, VoltageLevels.LMV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:iron_helmet", 0),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(5),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0).amount(0), 200, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0).amount(0), 200, VoltageLevels.LV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:iron_chestplate", 0),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(8),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0).amount(0), 200, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0).amount(0), 200, VoltageLevels.LV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:iron_leggings", 0),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(7),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0).amount(0), 200, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0).amount(0), 200, VoltageLevels.LV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:iron_boots", 0),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(4),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0).amount(0), 200, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0).amount(0), 200, VoltageLevels.LV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:golden_helmet", 0),
                 ItemBracketHandler.getItem("minecraft:gold_ingot", 0).amount(5),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0).amount(0), 200, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0).amount(0), 200, VoltageLevels.LV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:golden_chestplate", 0),
                 ItemBracketHandler.getItem("minecraft:gold_ingot", 0).amount(8),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0).amount(0), 200, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldChestplate", 0).amount(0), 200, VoltageLevels.LV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:golden_leggings", 0),
                 ItemBracketHandler.getItem("minecraft:gold_ingot", 0).amount(7),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0).amount(0), 200, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldLeggings", 0).amount(0), 200, VoltageLevels.LV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:golden_boots", 0),
                 ItemBracketHandler.getItem("minecraft:gold_ingot", 0).amount(4),
-                ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0).amount(0), 200, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0).amount(0), 200, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:glass", 0).amount(2)),
                 ItemBracketHandler.getItem("minecraft:sand", 1), LiquidBracketHandler.getLiquid("oxygen").withAmount(2),
-                intArrayOf(10000), 20, 256)
+                intArrayOf(10000), 20, VoltageLevels.LHV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:glass", 0).amount(2)),
                 ItemBracketHandler.getItem("minecraft:sand", 0), LiquidBracketHandler.getLiquid("oxygen").withAmount(2),
-                intArrayOf(10000), 20, 256)
+                intArrayOf(10000), 20, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:string", 0),
                 ItemBracketHandler.getItem("Natura:barleyFood", 3).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 200, 24)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:hay_block", 0),
                 ItemBracketHandler.getItem("minecraft:wheat", 0).amount(9),
-                ItemBracketHandler.getItem("minecraft:string", 0).amount(2), 200, 30)
+                ItemBracketHandler.getItem("minecraft:string", 0).amount(2), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:soul_sand", 0),
                 ItemBracketHandler.getItem("Natura:heatsand", 0),
                 ItemBracketHandler.getItem("Natura:soil.tainted", 0).amount(4),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 100, 16)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:skull", 1),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 4).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 6).amount(0),
-                LiquidBracketHandler.getLiquid("molten.thaumium").withAmount(216), 200, 96)
+                LiquidBracketHandler.getLiquid("molten.thaumium").withAmount(216), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(5),
-                ItemBracketHandler.getItem("minecraft:stick", 0), ItemBracketHandler.getItem("minecraft:wool", 32767),
-                LiquidBracketHandler.getLiquid("creosote").withAmount(500), 100, 4)
+                ItemBracketHandler.getItem("minecraft:stick", 0), ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("creosote").withAmount(500), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2536), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2536), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_door", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809).amount(4),
                 ItemBracketHandler.getItem("minecraft:trapdoor", 0),
-                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 400, 4)
+                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 400, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_door", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809).amount(4),
                 ItemBracketHandler.getItem("minecraft:trapdoor", 0),
-                LiquidBracketHandler.getLiquid("molten.copper").withAmount(16), 400, 4)
+                LiquidBracketHandler.getLiquid("molten.copper").withAmount(16), 400, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:iron_door", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(4),
                 ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 400, 8)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 400, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
-                ItemBracketHandler.getItem("Natura:natura.stick", 32767).amount(4),
-                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, 4)
+                ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE).amount(4),
+                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
-                ItemBracketHandler.getItem("Natura:natura.stick", 32767).amount(4),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, 4)
+                ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE).amount(4),
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("BiomesOPlenty:bamboo", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("BiomesOPlenty:bamboo", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:piston", 0),
                 ItemBracketHandler.getItem("dreamcraft:tile.PistonBlock", 0),
-                ItemBracketHandler.getItem("dreamcraft:item.PistonPlate", 0), 100, 30)
+                ItemBracketHandler.getItem("dreamcraft:item.PistonPlate", 0), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:bookshelf", 0),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(6),
-                ItemBracketHandler.getItem("minecraft:book", 0).amount(3), 300, 16)
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(6),
+                ItemBracketHandler.getItem("minecraft:book", 0).amount(3), 300, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:crafting_table", 0), ore5,
-                ItemBracketHandler.getItem("minecraft:flint", 0).amount(2), 200, 4)
+                ItemBracketHandler.getItem("minecraft:flint", 0).amount(2), 200, VoltageLevels.ULV)
         Assembler.addRecipe(item30, ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 0).amount(2), 300, 8)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("ExtraTrees:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("Forestry:planksFireproof", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("Natura:planks", 32767).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, 30)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", 32767).amount(2),
-                ItemBracketHandler.getItem("witchery:witchwood", 32767).amount(2), 100, 30)
+                ItemBracketHandler.getItem("minecraft:planks", 0).amount(2), 300, VoltageLevels.ULV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("ExtraTrees:log", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 6).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
+                ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, 16)
-        Assembler.addRecipe(item24, ItemBracketHandler.getItem("Natura:natura.stick", 32767),
-                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, 16)
+                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
+        Assembler.addRecipe(item24, ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE),
+                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("BiomesOPlenty:bamboo", 0),
-                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, 16)
+                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("BiomesOPlenty:plants", 8),
-                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, 16)
+                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032),
-                LiquidBracketHandler.getLiquid("glue").withAmount(16), 100, 16)
+                LiquidBracketHandler.getLiquid("glue").withAmount(16), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
-                LiquidBracketHandler.getLiquid("glue").withAmount(32), 100, 30)
+                LiquidBracketHandler.getLiquid("glue").withAmount(32), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:brick_block", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:brick", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("water").withAmount(500), 300, 16)
+                LiquidBracketHandler.getLiquid("water").withAmount(500), 300, VoltageLevels.LLV)
         Assembler.addRecipe(item140.amount(3), item141, item143, 100, 4)
         Assembler.addRecipe(item140.amount(3), item141, item144, 100, 4)
         Assembler.addRecipe(item140.amount(3), item141, item145, 100, 4)
@@ -2194,16 +2196,16 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item140.amount(3), item142, item163, 100, 4)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:stone_slab", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:stone_slab", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, VoltageLevels.ULV)
 
         //TODO Replace ("TConstruct:GlassBlock", 0)
         //gttweaker.mods.gregtech.machines.BlastFurnace.addRecipe(
@@ -2219,70 +2221,70 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("minecraft:bone", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:bone", 0).amount(4)),
                 ItemBracketHandler.getItem("minecraft:skull", 0),
-                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 7500, 5000), 200, 30)
+                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 7500, 5000), 200, VoltageLevels.LV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:coal_block", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:coal_block", 0),
                 ItemBracketHandler.getItem("minecraft:coal_block", 0)),
                 ItemBracketHandler.getItem("minecraft:skull", 1),
-                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 7500, 5000), 200, 30)
+                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 7500, 5000), 200, VoltageLevels.LV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:gunpowder", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:gunpowder", 0).amount(3),
                 ItemBracketHandler.getItem("minecraft:gunpowder", 0).amount(2)),
                 ItemBracketHandler.getItem("minecraft:skull", 4),
-                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 7500, 5000), 200, 30)
+                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 7500, 5000), 200, VoltageLevels.LV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:ender_pearl", 0),
                 ItemBracketHandler.getItem("minecraft:ender_pearl", 0),
                 ItemBracketHandler.getItem("minecraft:ender_pearl", 0)),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:enderman_head", 0),
-                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 5000, 2500), 200, 30)
+                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 5000, 2500), 200, VoltageLevels.LV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemZombieBrain", 0)),
                 ItemBracketHandler.getItem("minecraft:skull", 3),
-                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(1000), 200, 30)
+                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(1000), 200, VoltageLevels.LV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:rotten_flesh", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:leather", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2892).amount(4)),
                 ItemBracketHandler.getItem("minecraft:skull", 2),
-                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 3000, 5000), 200, 30)
+                LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 3000, 5000), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(4), 50, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(4), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 50, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:stone_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(4), 50, 8)
+                LiquidBracketHandler.getLiquid("water").withAmount(4), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:stone_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 50, 8)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:stone_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 8)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, VoltageLevels.ULV)
         Extractor.addRecipe(ItemBracketHandler.getItem("minecraft:blaze_powder", 0),
                 ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 3))
         Extractor.addRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 3),
                 ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 2))
         Extractor.addRecipe(ItemBracketHandler.getItem("minecraft:wheat", 0).amount(9),
                 ItemBracketHandler.getItem("minecraft:hay_block", 0))
-        FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:sand", 32767),
+        FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE),
                 LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 10000, 200, 48)
         FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:obsidian", 0),
                 LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(288), 10000, 600, 30)
         Mixer.addRecipe(ItemBracketHandler.getItem("minecraft:soul_sand", 0).amount(4), null,
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:sand", 32767).amount(4),
-                        ItemBracketHandler.getItem("minecraft:dirt", 32767),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE).amount(4),
+                        ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("MagicBees:wax", 1).amount(4)),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 100, 16)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 100, VoltageLevels.LLV)
         Mixer.addRecipe(ItemBracketHandler.getItem("minecraft:fire_charge", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:blaze_powder", 0).amount(3),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0).amount(3),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535).amount(3)), 400, 30)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535).amount(3)), 400, VoltageLevels.LV)
         Slicer.addRecipe(ItemBracketHandler.getItem("minecraft:melon", 0).amount(8),
                 ItemBracketHandler.getItem("minecraft:melon_block", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32398).amount(0), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32398).amount(0), 100, VoltageLevels.ULV)
         MineTweakerAPI.furnace.setFuel(ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0), 75)
         NEI.overrideName(ItemBracketHandler.getItem("GalacticraftCore:item.meteoricIronIngot", 1),
                 "Compressed Meteoric Steel Plate")

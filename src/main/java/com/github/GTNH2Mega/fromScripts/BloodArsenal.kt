@@ -13,6 +13,7 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
+import com.github.GTNH2Mega.VoltageLevels
 
 class BloodArsenal : Runnable {
     override fun run() {
@@ -320,19 +321,19 @@ class BloodArsenal : Runnable {
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 0),
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 0)), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 1), null, null,
-                intArrayOf(10000, 10000, 10000, 10000), 400, 30)
+                intArrayOf(10000, 10000, 10000, 10000), 400, VoltageLevels.LV)
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("BloodArsenal:blood_money", 1),
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 1),
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 1),
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 1)), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 2), null, null,
-                intArrayOf(10000, 10000, 10000, 10000), 400, 30)
+                intArrayOf(10000, 10000, 10000, 10000), 400, VoltageLevels.LV)
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("BloodArsenal:blood_money", 2),
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 2),
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 2),
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 2)), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 3), null, null,
-                intArrayOf(10000, 10000, 10000, 10000), 400, 30)
+                intArrayOf(10000, 10000, 10000, 10000), 400, VoltageLevels.LV)
         Compressor.addRecipe(ItemBracketHandler.getItem("BloodArsenal:blood_money", 1),
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 0).amount(4))
         Compressor.addRecipe(ItemBracketHandler.getItem("BloodArsenal:blood_money", 2),
@@ -341,18 +342,18 @@ class BloodArsenal : Runnable {
                 ItemBracketHandler.getItem("BloodArsenal:blood_money", 2).amount(4))
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BloodArsenal:blood_infused_planks", 0).amount(4), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_wood", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(10), 200, 120)
+                LiquidBracketHandler.getLiquid("water").withAmount(10), 200, VoltageLevels.MV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BloodArsenal:blood_infused_planks", 0).amount(4), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_wood", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 120)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, VoltageLevels.MV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BloodArsenal:blood_infused_planks", 0).amount(6), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_wood", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 120)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, VoltageLevels.MV)
         Lathe.addRecipe(arrayOf(ItemBracketHandler.getItem("BloodArsenal:blood_infused_stick", 0).amount(2)),
-                ItemBracketHandler.getItem("BloodArsenal:blood_infused_planks", 0), 20, 8)
+                ItemBracketHandler.getItem("BloodArsenal:blood_infused_planks", 0), 20, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2977)),
-                ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2977).amount(9)),
-                ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron_block", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron_block", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
     }
 }

@@ -5,13 +5,15 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.thaumcraft.handlers.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class ThaumicExploration01 : Runnable {
     override fun run() {
-        Arcane.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:discountRing", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ThaumicExploration:blankSeal", 32767))
-        Crucible.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:jarSeal", 32767))
-        Arcane.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:floatCandle", 32767))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:discountRing", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ThaumicExploration:blankSeal", OreDictionary.WILDCARD_VALUE))
+        Crucible.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:jarSeal", OreDictionary.WILDCARD_VALUE))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:floatCandle", OreDictionary.WILDCARD_VALUE))
         Infusion.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:replicator", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:trashJar", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("ThaumicExploration:bootsMeteor", 0))
@@ -560,7 +562,7 @@ class ThaumicExploration01 : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_name.MeteorbootsGTNH", "Boots of the Meteor")
         MineTweakerAPI.game.setLocalization("tc.research_text.MeteorbootsGTNH", "Come on and slam")
         Research.addPage("MeteorbootsGTNH", "te.text.METEORBOOTS.1")
-        Infusion.addRecipe("MeteorbootsGTNH", ItemBracketHandler.getItem("Thaumcraft:BootsTraveller", 32767),
+        Infusion.addRecipe("MeteorbootsGTNH", ItemBracketHandler.getItem("Thaumcraft:BootsTraveller", OreDictionary.WILDCARD_VALUE),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:FocusFire", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17347),
                         ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 1),
@@ -583,7 +585,7 @@ class ThaumicExploration01 : Runnable {
         MineTweakerAPI.game.setLocalization("tc.research_name.CometsbootsGTNH", "Boots of the Comet")
         MineTweakerAPI.game.setLocalization("tc.research_text.CometsbootsGTNH", "Ice ice baby")
         Research.addPage("CometsbootsGTNH", "te.text.COMETBOOTS.1")
-        Infusion.addRecipe("CometsbootsGTNH", ItemBracketHandler.getItem("Thaumcraft:BootsTraveller", 32767),
+        Infusion.addRecipe("CometsbootsGTNH", ItemBracketHandler.getItem("Thaumcraft:BootsTraveller", OreDictionary.WILDCARD_VALUE),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:FocusFrost", 0),
                         ItemBracketHandler.getItem("BiomesOPlenty:hardIce", 0),
                         ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 2),

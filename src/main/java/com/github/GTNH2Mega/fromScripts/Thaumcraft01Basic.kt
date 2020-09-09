@@ -10,10 +10,12 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.chisel.handlers.Groups
 import modtweaker2.mods.thaumcraft.handlers.Arcane
 import modtweaker2.mods.thaumcraft.handlers.Research
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Thaumcraft01Basic : Runnable {
     override fun run() {
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Thaumcraft:blockCrystal", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.removeShapeless(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 6), null, false)
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 6), null)
         MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 6),
@@ -145,10 +147,10 @@ class Thaumcraft01Basic : Runnable {
         //TODO Replace ("harvestthenether:glowflowerseedItem", 0)
         //Assembler.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 3),
         //        ItemBracketHandler.getItem("harvestthenether:glowflowerseedItem", 0),
-        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 801).amount(8), 600, 30)
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 801).amount(8), 600, VoltageLevels.LV)
         //Assembler.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 2),
         //        ItemBracketHandler.getItem("harvestthenether:glowflowerseedItem", 0),
-        //        ItemBracketHandler.getItem("Thaumcraft:ItemNugget", 5).amount(8), 600, 30)
+        //        ItemBracketHandler.getItem("Thaumcraft:ItemNugget", 5).amount(8), 600, VoltageLevels.LV)
 
         Research.refreshResearchRecipe("DECONSTRUCTOR")
         Research.addResearch("WARPWARNING", "BASICS", "null", 1, 1, 1, ItemBracketHandler.getItem("minecraft:skull", 1))

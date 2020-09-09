@@ -2320,22 +2320,22 @@ class TinkersConstruct : Runnable {
                 LiquidBracketHandler.getLiquid("refinedglue").withAmount(200), intArrayOf(10000), 300, 5)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ArditePlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("TConstruct:MetalBlock", 1),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 4800, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 4800, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ArditePlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("TConstruct:MetalBlock", 1),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(750), 4800, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(750), 4800, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ArditePlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("TConstruct:MetalBlock", 1),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(250), 2400, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(250), 2400, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ManyullynPlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("TConstruct:MetalBlock", 2),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 9600, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 9600, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ManyullynPlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("TConstruct:MetalBlock", 2),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(750), 9600, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(750), 9600, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ManyullynPlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("TConstruct:MetalBlock", 2),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(250), 4800, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(250), 4800, VoltageLevels.LV)
         Extractor.addRecipe(ItemBracketHandler.getItem("TConstruct:strangeFood", 0),
                 ItemBracketHandler.getItem("TConstruct:slime.sapling", 0))
         Extractor.addRecipe(ItemBracketHandler.getItem("TConstruct:strangeFood", 0).amount(4),
@@ -2346,1300 +2346,1300 @@ class TinkersConstruct : Runnable {
                 ItemBracketHandler.getItem("TConstruct:slime.leaves", 0).amount(16))
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 250, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 250, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 122, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 122, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 606, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 606, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 1200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 1200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 180, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 180, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 380, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 380, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 550, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 550, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 666, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 666, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 7500, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 7500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 97, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 97, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toolRod", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 1).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 501, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 501, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 179, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 179, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 245, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 245, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1600, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1213, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1213, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 2400, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 2400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 360, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 360, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 760, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 760, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1101, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1101, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1333, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 1333, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 15000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 15000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 195, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 195, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:pickaxeHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 3600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 2).amount(0), 3600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 501, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 501, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 179, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 179, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 245, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 245, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1600, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1213, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1213, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 2400, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 2400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 360, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 360, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 760, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 760, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1101, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1101, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1333, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 1333, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 15000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 15000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 195, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 195, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:shovelHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 3600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 3).amount(0), 3600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 501, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 501, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 179, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 179, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 245, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 245, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1600, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1213, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1213, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 2400, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 2400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 360, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 360, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 760, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 760, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1101, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1101, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1333, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 1333, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 15000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 15000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 195, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 195, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hatchetHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 3600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 4).amount(0), 3600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 501, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 501, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 179, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 179, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 245, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 245, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1600, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1213, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1213, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 2400, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 2400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 360, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 360, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 760, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 760, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1101, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1101, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1333, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 1333, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 15000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 15000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 195, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 195, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:swordBlade", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 3600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 5).amount(0), 3600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 250, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 250, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 90, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 90, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 122, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 122, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 606, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 606, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 1200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 1200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 180, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 180, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 380, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 380, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 550, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 550, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 666, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 666, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 7500, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 7500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 97, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 97, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:wideGuard", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 6).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 250, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 250, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 90, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 90, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 122, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 122, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 606, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 606, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 1200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 1200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 180, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 180, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 380, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 380, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 550, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 550, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 666, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 666, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 7500, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 7500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 97, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 97, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:handGuard", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 7).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 250, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 250, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 90, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 90, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 122, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 122, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 606, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 606, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 1200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 1200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 180, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 180, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 380, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 380, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 550, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 550, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 666, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 666, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 7500, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 7500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 97, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 97, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:crossbar", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 8).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 250, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 250, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 90, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 90, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 122, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 122, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 606, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 606, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 1200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 1200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 180, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 180, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 380, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 380, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 550, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 550, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 666, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 666, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 7500, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 7500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 97, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 97, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:binding", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 9).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 501, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 501, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 179, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 179, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 245, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 245, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1600, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1213, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1213, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 2400, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 2400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 360, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 360, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 760, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 760, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1101, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1101, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1333, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 1333, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 15000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 15000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 195, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 195, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:frypanHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 3600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 10).amount(0), 3600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 501, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 501, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 179, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 179, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 245, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 245, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1600, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1213, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1213, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 2400, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 2400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 360, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 360, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 760, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 760, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1101, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1101, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1333, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 1333, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 15000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 15000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 195, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 195, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:signHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 3600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 11).amount(0), 3600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 250, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 250, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 90, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 90, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 122, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 122, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 606, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 606, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 1200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 1200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 180, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 180, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 380, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 380, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 550, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 550, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 666, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 666, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 7500, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 7500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 97, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 97, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:knifeBlade", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 12).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 250, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 250, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 90, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 90, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 122, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 122, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 606, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 606, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 1200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 1200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 180, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 180, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 380, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 380, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 550, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 550, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 666, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 666, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 7500, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 7500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 97, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 97, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:chiselHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 13).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 1503, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 1503, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 537, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 537, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 735, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 735, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 4800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 4800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 3639, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 3639, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 7200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 7200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 1080, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 1080, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 2280, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 2280, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 3303, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 3303, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 2400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 2400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 3999, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 3999, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 45000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 45000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 585, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 585, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughRod", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 10800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 14).amount(0), 10800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 1503, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 1503, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 537, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 537, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 735, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 735, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 4800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 4800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 3639, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 3639, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 7200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 7200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 1080, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 1080, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 2280, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 2280, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 3303, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 3303, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 2400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 2400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 3999, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 3999, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 45000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 45000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 585, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 585, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:toughBinding", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 10800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 15).amount(0), 10800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 4008, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 4008, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1432, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1432, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11804).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1432, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1432, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1960, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1960, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 12800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 12800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 9704, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 9704, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 19200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 19200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 2880, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 2880, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 7680, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 7680, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 8808, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 8808, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 6400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 6400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 10664, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 10664, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 120000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 120000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1560, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 1560, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:heavyPlate", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 28800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 16).amount(0), 28800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 4008, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 4008, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1432, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1432, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1960, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1960, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 12800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 12800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 9704, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 9704, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 19200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 19200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 2880, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 2880, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 7680, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 7680, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 8808, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 8808, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 6400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 6400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 10664, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 10664, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 120000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 120000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1560, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 1560, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:broadAxeHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 28800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 17).amount(0), 28800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 4008, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 4008, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1432, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1432, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1960, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1960, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 12800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 12800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 9704, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 9704, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 19200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 19200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 2880, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 2880, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 7680, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 7680, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 8808, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 8808, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 6400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 6400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 10664, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 10664, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 120000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 120000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1560, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 1560, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:scytheBlade", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 28800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 18).amount(0), 28800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 4008, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 4008, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1432, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1432, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1960, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1960, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 12800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 12800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 9704, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 9704, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 19200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 19200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 2880, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 2880, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 7680, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 7680, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 8808, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 8808, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 6400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 6400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 10664, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 10664, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 120000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 120000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1560, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 1560, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:excavatorHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 28800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 19).amount(0), 28800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 4008, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 4008, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1432, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1432, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1960, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1960, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 12800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 12800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 9704, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 9704, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 19200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 19200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 2880, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 2880, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 7680, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 7680, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 8808, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 8808, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 6400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 6400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 10664, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 10664, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 120000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 120000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1560, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 1560, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:largeSwordBlade", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 28800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 20).amount(0), 28800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 4008, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 4008, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1432, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1432, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1960, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1960, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 12800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 12800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 9704, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 9704, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 19200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 19200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 2880, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 2880, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 7680, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 7680, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 8808, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 8808, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 6400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 6400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 10664, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 10664, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 120000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 120000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1560, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 1560, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:hammerHead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 28800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 21).amount(0), 28800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 1503, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 1503, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 537, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 537, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 735, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 735, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 4800, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 4800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 3639, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 3639, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 7200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 7200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 1080, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 1080, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 2280, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 2280, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 3303, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 3303, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 2400, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 2400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 3999, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 3999, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 45000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 45000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 585, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 585, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:fullGuard", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(3),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 10800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 22).amount(0), 10800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 501, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 501, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 179, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 179, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 245, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 245, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1600, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1213, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1213, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 2400, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 2400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 360, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 360, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 760, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 760, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1101, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1101, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1333, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1333, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 200, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 15000, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 15000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 195, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 195, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 3600, 30)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 3600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 250, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 250, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 90, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 90, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 122, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 122, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 800, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 800, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 606, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 606, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 1200, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 1200, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 180, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 180, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 380, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 380, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 550, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 550, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 400, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 666, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 666, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 100, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 7500, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 7500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 97, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 97, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:ShurikenPart", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0),
-                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 0).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 2004, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 2004, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 716, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 716, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 980, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 980, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 6400, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 6400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 4852, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 4852, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 9600, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 9600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 1440, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 1440, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 3040, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 3040, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 4404, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 4404, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 3200, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 3200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 5332, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 5332, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 800, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 60000, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 60000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 780, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 780, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowLimbPart", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(4),
-                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 14400, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 1).amount(0), 14400, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 2505, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 2505, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 895, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 895, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 1225, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 1225, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 8000, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 8000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 6065, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 6065, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 12000, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 12000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 1800, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 1800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 3800, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 3800, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 5505, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 5505, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 4000, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 4000, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 6665, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 6665, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 1000, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 1000, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 1000, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 1000, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 75000, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 75000, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 975, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 975, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:CrossbowBodyPart", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(5),
-                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 18000, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 2).amount(0), 18000, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 2),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 752, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 752, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 6),
                 ItemBracketHandler.getItem("TConstruct:materials", 18).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 269, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 269, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 7),
                 ItemBracketHandler.getItem("minecraft:netherbrick", 0).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 368, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 368, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11033).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 2400, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 2400, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 11),
                 ItemBracketHandler.getItem("TConstruct:materials", 4).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1820, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1820, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 12),
                 ItemBracketHandler.getItem("TConstruct:materials", 5).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 3600, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 3600, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 13),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11035).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 540, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 540, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11300).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1140, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1140, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 15),
                 ItemBracketHandler.getItem("TConstruct:materials", 15).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1652, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1652, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1200, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 1200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 18),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11307).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 2000, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 2000, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 0).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 300, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 300, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 314),
                 ItemBracketHandler.getItem("ExtraUtilities:unstableingot", 2).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 300, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 300, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 315),
                 ItemBracketHandler.getItem("ExtraUtilities:bedrockiumIngot", 0).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 22500, 120)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 22500, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 316),
                 ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock1", 8).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 293, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 293, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:BowLimbPart", 251),
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0).amount(2),
-                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 5400, 30)
+                ItemBracketHandler.getItem("TConstruct:Cast", 3).amount(0), 5400, VoltageLevels.LV)
         FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("TConstruct:MetalBlock", 10),
                 LiquidBracketHandler.getLiquid("ender").withAmount(2250), 10000, 200, 48)
         FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:ender_pearl", 0),

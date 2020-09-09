@@ -16,14 +16,16 @@ import modtweaker2.mods.thaumcraft.handlers.Research
 import modtweaker2.mods.thaumcraft.handlers.Warp
 import stanhebben.zenscript.value.IAny
 import java.util.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Thaumcraft02Thaumaturgy1 : Runnable {
     override fun run() {
         remove_TC_Arcane(ItemBracketHandler.getItem("thaumicbases:resource", 2))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Thaumcraft:WandCap", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Thaumcraft:WandCasting", 0))
-        Arcane.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:WandCap", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:WandCap", 32767))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:WandCap", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:WandCap", OreDictionary.WILDCARD_VALUE))
         Arcane.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:WandRod", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:WandRod", 1))
         Infusion.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:WandRod", 3))

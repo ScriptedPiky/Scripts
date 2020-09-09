@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting
 import gttweaker.mods.gregtech.machines.*
 import minetweaker.MineTweakerAPI
@@ -11,6 +12,7 @@ import minetweaker.expand.ExpandString
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
 
 class DraconicEvolution : Runnable {
@@ -74,7 +76,7 @@ class DraconicEvolution : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:draconiumChest", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:teleporterStand", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:dislocatorReceptacle", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:safetyMatch", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:safetyMatch", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:safetyMatch", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:chaosShard", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 2))
@@ -1564,33 +1566,33 @@ class DraconicEvolution : Runnable {
                                 null, null), arrayOfNulls(9), arrayOfNulls(9)))
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:infoTablet", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17299).amount(4),
-                ItemBracketHandler.getItem("DraconicEvolution:draconiumDust", 0), 400, 480)
+                ItemBracketHandler.getItem("DraconicEvolution:draconiumDust", 0), 400,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:energyCrystal", 4),
                 ItemBracketHandler.getItem("DraconicEvolution:energyCrystal", 0),
                 ItemBracketHandler.getItem("DraconicEvolution:particleGenerator", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.enderium").withAmount(864), 1200, 1024)
+                LiquidBracketHandler.getLiquid("molten.enderium").withAmount(864), 1200, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:energyCrystal", 5),
                 ItemBracketHandler.getItem("DraconicEvolution:energyCrystal", 1),
                 ItemBracketHandler.getItem("DraconicEvolution:particleGenerator", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.enderium").withAmount(864), 2400, 4096)
+                LiquidBracketHandler.getLiquid("molten.enderium").withAmount(864), 2400, VoltageLevels.LIV)
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:enderArrow", 0),
                 ItemBracketHandler.getItem("minecraft:arrow", 0),
-                ItemBracketHandler.getItem("minecraft:ender_pearl", 0), 200, 480)
+                ItemBracketHandler.getItem("minecraft:ender_pearl", 0), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:playerDetector", 0),
                 ItemBracketHandler.getItem("Railcraft:detector", 5), item, 200, 480)
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:rainSensor", 0),
                 ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 16),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17975), 200, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17975), 200,  VoltageLevels.HV)
         BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("DraconicEvolution:infusedObsidian", 0)),
                 LiquidBracketHandler.getLiquid("molten.draconium").withAmount(144),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:obsidian", 0),
                         ItemBracketHandler.getItem("minecraft:blaze_powder", 0)), 1200, 1920, 7500)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 2).amount(9),
-                ItemBracketHandler.getItem("DraconicEvolution:chaosShard", 0), 100, 480)
+                ItemBracketHandler.getItem("DraconicEvolution:chaosShard", 0), 100,  VoltageLevels.HV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 1).amount(9),
-                ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 2), 50, 480)
+                ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 2), 50,  VoltageLevels.HV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 0).amount(9),
-                ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 1), 25, 480)
+                ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 1), 25,  VoltageLevels.HV)
         ImplosionCompressor.addRecipe(arrayOf(ItemBracketHandler.getItem("DraconicEvolution:chaosShard", 0)),
                 ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 2).amount(9), 8)
         ImplosionCompressor.addRecipe(arrayOf(ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 2)),
@@ -1599,6 +1601,6 @@ class DraconicEvolution : Runnable {
                 ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 0).amount(9), 2)
         Packer.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:safetyMatch", 0),
                 ItemBracketHandler.getItem("DraconicEvolution:safetyMatch", 1000).amount(16),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 18879), 64, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 18879), 64, VoltageLevels.LLV)
     }
 }

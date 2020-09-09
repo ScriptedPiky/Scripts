@@ -25,12 +25,12 @@ class TinkersDefence : Runnable {
                 ItemBracketHandler.getItem("tinkersdefense:DogbeariumIngot", 0).amount(9))
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 201),
                 ItemBracketHandler.getItem("tinkersdefense:AeonSteelIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1760, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1760, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 203),
                 ItemBracketHandler.getItem("tinkersdefense:DogbeariumIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1280, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 1280, VoltageLevels.MV)
         Extruder.addRecipe(ItemBracketHandler.getItem("TConstruct:arrowhead", 202),
                 ItemBracketHandler.getItem("tinkersdefense:QueensGoldIngot", 0),
-                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 200, 120)
+                ItemBracketHandler.getItem("TConstruct:metalPattern", 25).amount(0), 200, VoltageLevels.MV)
     }
 }

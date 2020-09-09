@@ -13,6 +13,8 @@ import modtweaker2.mods.forestry.handlers.Squeezer
 import modtweaker2.mods.thaumcraft.handlers.Arcane
 import modtweaker2.mods.thaumcraft.handlers.Research
 import modtweaker2.mods.thaumcraft.handlers.Warp
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class ExtraBees : Runnable {
     override fun run() {
@@ -57,7 +59,7 @@ class ExtraBees : Runnable {
                                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500))),
                 LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1440), 60,
-                ItemBracketHandler.getItem("Forestry:beealyzer", 32767))
+                ItemBracketHandler.getItem("Forestry:beealyzer", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("ExtraBees:dictionary", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraBees:dictionary", 0)), null)
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("for.honey").withAmount(7500),
@@ -95,13 +97,13 @@ class ExtraBees : Runnable {
                 ItemBracketHandler.getItem("Forestry:alveary", 0), ItemBracketHandler.getItem("ExtraBees:alveary", 2))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("for.honey").withAmount(7500),
                 arrayOf(ItemBracketHandler.getItem("Forestry:thermionicTubes", 2),
-                        ItemBracketHandler.getItem("minecraft:stained_glass", 32767),
+                        ItemBracketHandler.getItem("minecraft:stained_glass", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:thermionicTubes", 2),
-                        ItemBracketHandler.getItem("minecraft:stained_glass", 32767),
+                        ItemBracketHandler.getItem("minecraft:stained_glass", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:redstone_lamp", 0),
-                        ItemBracketHandler.getItem("minecraft:stained_glass", 32767),
+                        ItemBracketHandler.getItem("minecraft:stained_glass", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:thermionicTubes", 2),
-                        ItemBracketHandler.getItem("minecraft:stained_glass", 32767),
+                        ItemBracketHandler.getItem("minecraft:stained_glass", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("Forestry:thermionicTubes", 2)),
                 ItemBracketHandler.getItem("Forestry:alveary", 0), ItemBracketHandler.getItem("ExtraBees:alveary", 3))
         Carpenter.addRecipe(60, LiquidBracketHandler.getLiquid("for.honey").withAmount(7500),
@@ -244,15 +246,15 @@ class ExtraBees : Runnable {
         Research.addArcanePage("SOULFRAME", ItemBracketHandler.getItem("ExtraBees:hiveFrame.soul", 0))
         Warp.addToResearch("SOULFRAME", 1)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 500)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 1), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("ExtraBees:misc", 1), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 501)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 2), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("ExtraBees:misc", 2), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 502)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 3), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("ExtraBees:misc", 3), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 503)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 4), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("ExtraBees:misc", 4), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 526)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 5), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("ExtraBees:misc", 5), intArrayOf(10000), 300, VoltageLevels.LULV)
         Squeezer.addRecipe(LiquidBracketHandler.getLiquid("for.honey").withAmount(200),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32415).percent(100.0f),
                 arrayOf(ItemBracketHandler.getItem("ExtraBees:honeyDrop", 8)), 20)

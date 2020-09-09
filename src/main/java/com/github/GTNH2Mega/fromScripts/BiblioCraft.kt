@@ -6,6 +6,8 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class BiblioCraft : Runnable {
 
@@ -14,7 +16,7 @@ class BiblioCraft : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:item.BiblioChase", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:TypesettingMachine", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:tile.BiblioFramedChest", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioPaneler", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioPaneler", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioPaintPress", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioLantern", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioIronLantern", 0))
@@ -288,22 +290,22 @@ class BiblioCraft : Runnable {
                                 ItemBracketHandler.getItem("minecraft:paper", 0))), null)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470),
-                LiquidBracketHandler.getLiquid("water").withAmount(3), 50, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(3), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(2), 50, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(2), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingBoard", 0).amount(4), null,
                 ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(2), 50, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(2), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingBoard", 0).amount(4), null,
                 ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(1), 50, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(1), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingBoard", 0).amount(4), null,
                 ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, VoltageLevels.ULV)
 
     }
 

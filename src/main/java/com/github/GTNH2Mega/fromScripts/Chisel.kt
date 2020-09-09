@@ -6,6 +6,7 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.chisel.handlers.Groups
+import com.github.GTNH2Mega.VoltageLevels
 
 class Chisel : Runnable {
     override fun run() {
@@ -125,11 +126,11 @@ class Chisel : Runnable {
                                 ItemBracketHandler.getItem("chisel:voidstone", 0),
                                 ItemBracketHandler.getItem("chisel:voidstone", 0))), null)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(2),
-                ItemBracketHandler.getItem("minecraft:stick", 0).amount(2), 300, 30)
+                ItemBracketHandler.getItem("minecraft:stick", 0).amount(2), 300, VoltageLevels.LV)
         Assembler.addRecipe(item2, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23304).amount(2), 400, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23304).amount(2), 400, VoltageLevels.LV)
         Assembler.addRecipe(item3, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(2), 600, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(2), 600, VoltageLevels.LV)
         Groups.addGroup("CobblestoneBricks")
         Groups.addVariation("CobblestoneBricks", ItemBracketHandler.getItem("minecraft:cobblestone", 0))
         Groups.addVariation("CobblestoneBricks", ItemBracketHandler.getItem("chisel:cobblestone", 1))

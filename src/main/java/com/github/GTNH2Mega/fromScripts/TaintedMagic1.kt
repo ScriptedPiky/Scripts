@@ -9,6 +9,8 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.thaumcraft.handlers.*
 import java.util.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class TaintedMagic1 : Runnable {
     override fun run() {
@@ -51,13 +53,13 @@ class TaintedMagic1 : Runnable {
         Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemShadowFortressHelmet", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemShadowFortressChestplate", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemShadowFortressLeggings", 0))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemKatana", 32767))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemKatana", OreDictionary.WILDCARD_VALUE))
         Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemWandRod", 0))
         Arcane.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemWandRod", 1))
         Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemFocusTime", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemFocusMeteorology", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemPrimordialEdge", 0))
-        Arcane.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemWandCap", 32767))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemWandCap", OreDictionary.WILDCARD_VALUE))
         Infusion.removeRecipe(ItemBracketHandler.getItem("TaintedMagic:ItemWandCap", 0))
         Research.orphanResearch("SHADOWMETAL")
         Research.removeResearch("SHADOWMETAL")
@@ -104,13 +106,13 @@ class TaintedMagic1 : Runnable {
         Arcane.addShaped("MagicFunguarGTNH", ItemBracketHandler.getItem("TaintedMagic:ItemMagicFunguar", 0).amount(4),
                 "aqua 10, terra 10, ordo 10, ignis 10, aer 10, perditio 10",
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:brown_mushroom", 0),
-                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", 32767),
+                        ItemBracketHandler.getItem("Thaumcraft:ItemShard", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:red_mushroom", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:ItemShard", 32767),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:ItemShard", OreDictionary.WILDCARD_VALUE),
                                 ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 5),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 32767)),
+                                ItemBracketHandler.getItem("Thaumcraft:ItemShard", OreDictionary.WILDCARD_VALUE)),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:blaze_powder", 0),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 32767),
+                                ItemBracketHandler.getItem("Thaumcraft:ItemShard", OreDictionary.WILDCARD_VALUE),
                                 ItemBracketHandler.getItem("minecraft:blaze_powder", 0))))
         Research.addArcanePage("MagicFunguarGTNH", ItemBracketHandler.getItem("TaintedMagic:ItemMagicFunguar", 0))
         Warp.addToResearch("MagicFunguarGTNH", 1)
@@ -180,9 +182,9 @@ class TaintedMagic1 : Runnable {
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("TaintedMagic:ItemMaterial", 3),
                         ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 6),
                         ItemBracketHandler.getItem("TaintedMagic:ItemMaterial", 3)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:ItemWispEssence", 32767),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:ItemWispEssence", OreDictionary.WILDCARD_VALUE),
                                 ItemBracketHandler.getItem("Thaumcraft:ItemResource", 3),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemWispEssence", 32767)),
+                                ItemBracketHandler.getItem("Thaumcraft:ItemWispEssence", OreDictionary.WILDCARD_VALUE)),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("TaintedMagic:ItemMaterial", 4),
                                 ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 6),
                                 ItemBracketHandler.getItem("TaintedMagic:ItemMaterial", 4))))
