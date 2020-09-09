@@ -2,6 +2,8 @@ package com.github.GTNH2Mega.fromScripts
 
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import modtweaker2.mods.thaumcraft.handlers.Aspects
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Thaumcraft07AspectAdds : Runnable {
     override fun run() {
@@ -419,11 +421,11 @@ class Thaumcraft07AspectAdds : Runnable {
                 "alienis 40, victus 15, gula 20, praecantatio 25, mortuus 20, corpus 10")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.scepterZombie", 0),
                 "alienis 40, exanimis 35, praecantatio 25, mortuus 20, corpus 10")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.scepterTwilight", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.scepterTwilight", OreDictionary.WILDCARD_VALUE),
                 "alienis 40, iter 35, praecantatio 25, mortuus 20, corpus 10")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.scepterLifeDrain", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.scepterLifeDrain", OreDictionary.WILDCARD_VALUE),
                 "alienis 40, victus 15, gula 20, praecantatio 25, mortuus 20, corpus 10")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.scepterZombie", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.scepterZombie", OreDictionary.WILDCARD_VALUE),
                 "alienis 40, exanimis 35, praecantatio 25, mortuus 20, corpus 10")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.tfFeather", 0), "volatus 2, aer 1, tenebrae 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.magicMapFocus", 0),
@@ -453,18 +455,18 @@ class Thaumcraft07AspectAdds : Runnable {
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.mazeWafer", 0),
                 "messis 4, fames 3, fabrico 1, sano 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.oreMagnet", 0), "metallum 6, magneto 4, perfodio 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.oreMagnet", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.oreMagnet", OreDictionary.WILDCARD_VALUE),
                 "metallum 6, magneto 4, perfodio 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.crumbleHorn", 0),
                 "arbor 18, praecantatio 14, ordo 12, auram 8")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.crumbleHorn", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.crumbleHorn", OreDictionary.WILDCARD_VALUE),
                 "arbor 18, praecantatio 14, ordo 12, auram 8")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.peacockFan", 0),
                 "aer 18, volatus 10, motus 10, praecantatio 6, arbor 4")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.peacockFan", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.peacockFan", OreDictionary.WILDCARD_VALUE),
                 "aer 18, volatus 10, motus 10, praecantatio 6, arbor 4")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.moonwormQueen", 0), "victus 10, lux 10, motus 4")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.moonwormQueen", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.moonwormQueen", OreDictionary.WILDCARD_VALUE),
                 "victus 10, lux 10, motus 4")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.charmOfLife1", 0),
                 "sano 16, ordo 16, praecantatio 8, victus 8, lucrum 1")
@@ -525,27 +527,27 @@ class Thaumcraft07AspectAdds : Runnable {
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.iceSword", 0),
                 "tellum 4, lucrum 2, praecantatio 2, gelum 6")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.glassSword", 0), "tellum 14, vitreus 20, lucrum 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.giantPick", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.giantPick", OreDictionary.WILDCARD_VALUE),
                 "perfodio 32, terra 16, perditio 16, arbor 8")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.giantSword", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.giantSword", OreDictionary.WILDCARD_VALUE),
                 "tellum 32, terra 16, perditio 16, arbor 8")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.enderBow", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.enderBow", OreDictionary.WILDCARD_VALUE),
                 "tellum 3, volatus 1, pannus 2, bestia 2, alienis 2")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.iceBow", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.iceBow", OreDictionary.WILDCARD_VALUE),
                 "tellum 3, volatus 1, pannus 2, bestia 2, gelum 2")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.tripleBow", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.tripleBow", OreDictionary.WILDCARD_VALUE),
                 "tellum 6, volatus 1, pannus 2, bestia 2, arbor 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.seekerBow", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.seekerBow", OreDictionary.WILDCARD_VALUE),
                 "tellum 3, volatus 1, pannus 2, bestia 2, iter 2")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.iceSword", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.iceSword", OreDictionary.WILDCARD_VALUE),
                 "tellum 4, lucrum 2, praecantatio 2, gelum 6")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.glassSword", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.glassSword", OreDictionary.WILDCARD_VALUE),
                 "tellum 14, vitreus 20, lucrum 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.knightmetalRing", 0),
                 "instrumentum 3, ordo 3, fabrico 3")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.chainBlock", 0),
                 "tellum 10, metallum 20, motus 4, lucrum 8, instrumentum 10")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.chainBlock", 32767),
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.chainBlock", OreDictionary.WILDCARD_VALUE),
                 "tellum 10, metallum 20, motus 4, lucrum 8, instrumentum 10")
     }
 }

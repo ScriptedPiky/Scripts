@@ -13,7 +13,9 @@ import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
 import minetweaker.mods.nei.NEI
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class GalaxySpace : Runnable {
     override fun run() {
@@ -25,21 +27,21 @@ class GalaxySpace : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.cobaltum_plate", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.cobaltum_helmet", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.cobaltum_leg", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.LeadBattery", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.LeadBattery", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.SolarFlares", 1))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.SolarFlares", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:solarwindpanel", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.QuantBow", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.JetPack", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.JetPack", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:geothermalgenerator", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:fuelgenerator", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:assemblymachine", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:convertersurface", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmasword", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmapickaxe", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmaaxe", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmahoe", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmashovel", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmasword", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmapickaxe", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmaaxe", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmahoe", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.plasmashovel", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 1))
@@ -363,7 +365,7 @@ class GalaxySpace : Runnable {
                                 ItemBracketHandler.getItem("GalacticraftCore:tile.machine2", 8))), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalaxySpace:item.ModuleLander2", 0),
                 arrayOf(arrayOf(OreBracketHandler.getOre("foilGold"),
-                        ItemBracketHandler.getItem("GalacticraftCore:item.parachute", 32767),
+                        ItemBracketHandler.getItem("GalacticraftCore:item.parachute", OreDictionary.WILDCARD_VALUE),
                         OreBracketHandler.getOre("foilGold")),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("GalacticraftCore:item.canvas", 0),
                                 ItemBracketHandler.getItem("GalaxySpace:item.ModuleLander", 0),
@@ -423,7 +425,7 @@ class GalaxySpace : Runnable {
                                 ItemBracketHandler.getItem("GalacticraftCore:item.engine", 1),
                                 ItemBracketHandler.getItem("GalacticraftCore:item.engine", 1), null)))
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 32767)), null)
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", OreDictionary.WILDCARD_VALUE)), null)
         ExtremeCrafting.addShaped(ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 0),
                 arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("dreamcraft:item.SchematicsTier5", 0), null,
                         null, null, ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyNoseConeTier3", 0), null, null,
@@ -467,7 +469,7 @@ class GalaxySpace : Runnable {
                                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyRocketEngineTier3", 0),
                                 ItemBracketHandler.getItem("dreamcraft:item.Tier2Booster", 0), null)))
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 32767)), null)
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", OreDictionary.WILDCARD_VALUE)), null)
         ExtremeCrafting.addShaped(ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 0),
                 arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("dreamcraft:item.SchematicsTier6", 0), null,
                         null, null, ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyNoseConeTier3", 0), null, null,
@@ -514,7 +516,7 @@ class GalaxySpace : Runnable {
                                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyRocketEngineTier3", 0),
                                 ItemBracketHandler.getItem("dreamcraft:item.Tier2Booster", 0), null)))
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 32767)), null)
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", OreDictionary.WILDCARD_VALUE)), null)
         ExtremeCrafting.addShaped(ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 0),
                 arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("dreamcraft:item.SchematicsTier7", 0), null,
                         null, null, ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyNoseConeTier4", 0), null, null,
@@ -564,7 +566,7 @@ class GalaxySpace : Runnable {
                                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyRocketEngineTier4", 0),
                                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyRocketEngineTier4", 0), null)))
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 32767)), null)
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", OreDictionary.WILDCARD_VALUE)), null)
         ExtremeCrafting.addShaped(ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 0),
                 arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("dreamcraft:item.SchematicsTier8", 0), null,
                         null, null, ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyNoseConeTier4", 0), null, null,
@@ -623,7 +625,7 @@ class GalaxySpace : Runnable {
                                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyRocketEngineTier4", 0),
                                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyRocketEngineTier4", 0), null)))
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 0),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 32767)), null)
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", OreDictionary.WILDCARD_VALUE)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_helmet", 0),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.CompressedSDHD120", 0),
                         ItemBracketHandler.getItem("GalaxySpace:item.lead_helmet", 0),
@@ -668,9 +670,9 @@ class GalaxySpace : Runnable {
         val hashMap11 = HashMap<String, IData>()
         hashMap11["electricity"] = ExpandFloat.asData(0.0.toFloat())
         Assembler.addRecipe(item11.withTag(ExpandAnyDict.asData(hashMap11)),
-                ItemBracketHandler.getItem("GalacticraftCore:item.battery", 32767),
+                ItemBracketHandler.getItem("GalacticraftCore:item.battery", OreDictionary.WILDCARD_VALUE),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(6000), 100, 120)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(6000), 100, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29028).amount(8),
@@ -681,7 +683,7 @@ class GalaxySpace : Runnable {
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(5),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(5),
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 5).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(1440), 1500, 1920)
+                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(1440), 1500, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(5),
                 ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 0),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 360, 1024)
@@ -689,7 +691,7 @@ class GalaxySpace : Runnable {
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(8),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(8),
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(2304), 2400, 1920)
+                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(2304), 2400, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(8),
                 ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 1),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 600, 1024)
@@ -697,7 +699,7 @@ class GalaxySpace : Runnable {
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(7),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(7),
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 7).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(2016), 2100, 1920)
+                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(2016), 2100, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(7),
                 ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 2),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 520, 1024)
@@ -705,28 +707,28 @@ class GalaxySpace : Runnable {
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(4),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(4),
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(1152), 1200, 1920)
+                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(1152), 1200, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(4),
                 ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 300, 1024)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:futureglass", 0),
                 ItemBracketHandler.getItem("minecraft:glass", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23884).amount(8), 200, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23884).amount(8), 200,  VoltageLevels.HV)
         val item12 = ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_jetplate", 0)
         val hashMap12 = HashMap<String, IData>()
         hashMap12["electricity"] = ExpandFloat.asData(0.0.toFloat())
         Assembler.addRecipe(item12.withTag(ExpandAnyDict.asData(hashMap12)),
                 ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_plate", 0),
                 ItemBracketHandler.getItem("IC2:itemArmorJetpackElectric", 1),
-                LiquidBracketHandler.getLiquid("molten.duralumin").withAmount(1440), 600, 1920)
+                LiquidBracketHandler.getLiquid("molten.duralumin").withAmount(1440), 600, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_gravityboots", 0),
                 ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_boots", 0),
                 ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 4).amount(2),
-                LiquidBracketHandler.getLiquid("molten.duralumin").withAmount(1440), 600, 1920)
+                LiquidBracketHandler.getLiquid("molten.duralumin").withAmount(1440), 600, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_helmetglasses", 0),
                 ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_helmet", 0),
                 ItemBracketHandler.getItem("GalacticraftCore:item.sensorGlasses", 0),
-                LiquidBracketHandler.getLiquid("molten.duralumin").withAmount(1440), 600, 1920)
+                LiquidBracketHandler.getLiquid("molten.duralumin").withAmount(1440), 600, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 1),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 0), OreBracketHandler.getOre("chestCopper"),
                 100, 4096)
@@ -783,15 +785,15 @@ class GalaxySpace : Runnable {
         Compressor.addRecipe(ItemBracketHandler.getItem("GalaxySpace:plutoglowstone", 0),
                 ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 4).amount(4))
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 0).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:ceresglowstone", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("GalaxySpace:ceresglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 1).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:ioglowstone", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("GalaxySpace:ioglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 2).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:enceladusglowstone", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("GalaxySpace:enceladusglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 3).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:proteusglowstone", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("GalaxySpace:proteusglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 4).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:plutoglowstone", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("GalaxySpace:plutoglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
         NEI.overrideName(ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 3), "Compressed Lead Plate")
         NEI.overrideName(ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 6), "Compressed Nickel Plate")
     }

@@ -15,7 +15,7 @@ object Util {
 
     fun getItemStack(Identifier: String, meta : Int) : ItemStack = getItemStack(Identifier,1, meta)
 
-    fun compareStacks(aStack1:ItemStack?, aStack2:ItemStack?) = aStack1 != null && aStack2 != null && aStack1.item == aStack2.item && (aStack2.itemDamage == 0 || aStack1.itemDamage == aStack2.itemDamage || aStack2.itemDamage == 32767)
+    fun compareStacks(aStack1:ItemStack?, aStack2:ItemStack?) = aStack1 != null && aStack2 != null && aStack1.item == aStack2.item && (aStack2.itemDamage == 0 || aStack1.itemDamage == aStack2.itemDamage || aStack2.itemDamage == OreDictionary.WILDCARD_VALUE)
 
     @Suppress("UNCHECKED_CAST")
     fun removeRecipe(stack:ItemStack?) = (CraftingManager.getInstance().recipeList as MutableList<IRecipe>).removeIf { compareStacks(it.recipeOutput, stack) }

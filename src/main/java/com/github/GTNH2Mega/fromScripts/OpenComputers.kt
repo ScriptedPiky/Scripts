@@ -5,11 +5,13 @@ import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class OpenComputers : Runnable {
     override fun run() {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("openglasses:openglassesterminal", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("openglasses:openglasses", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("openglasses:openglasses", OreDictionary.WILDCARD_VALUE))
         ExtremeCrafting.addShaped(ItemBracketHandler.getItem("OpenComputers:item", 69),
                 arrayOf(arrayOfNulls(9), arrayOfNulls(9),
                         arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("circuitMaster"),

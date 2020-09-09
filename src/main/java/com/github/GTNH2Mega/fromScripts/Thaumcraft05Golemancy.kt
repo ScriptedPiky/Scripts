@@ -11,13 +11,15 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
 import modtweaker2.mods.thaumcraft.handlers.*
 import java.util.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Thaumcraft05Golemancy : Runnable {
     override fun run() {
         Arcane.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:blockChestHungry", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:TrunkSpawner", 0))
         Arcane.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 9))
-        Crucible.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemGolemPlacer", 32767))
+        Crucible.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemGolemPlacer", OreDictionary.WILDCARD_VALUE))
         Arcane.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemGolemCore", 100))
         Crucible.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemGolemCore", 2))
         Crucible.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemGolemCore", 1))
@@ -179,7 +181,7 @@ class Thaumcraft05Golemancy : Runnable {
                 arrayOf(ItemBracketHandler.getItem("minecraft:nether_star", 0),
                         ItemBracketHandler.getItem("ProjRed|Integration:projectred.integration.gate", 26),
                         ItemBracketHandler.getItem("minecraft:lever", 0),
-                        ItemBracketHandler.getItem("minecraft:flint_and_steel", 32767),
+                        ItemBracketHandler.getItem("minecraft:flint_and_steel", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0),
                         ItemBracketHandler.getItem("minecraft:shears", 0)),
                 "humanus 20, instrumentum 20, machina 20, lucrum 20",

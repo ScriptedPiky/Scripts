@@ -6,6 +6,8 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.forestry.handlers.Carpenter
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class BinniesCore : Runnable {
     override fun run() {
@@ -15,7 +17,7 @@ class BinniesCore : Runnable {
         MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("BinnieCore:storage", 3), null)
         MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("BinnieCore:storage", 4), null)
         MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("BinnieCore:storage", 5), null)
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BinnieCore:fieldKit", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BinnieCore:fieldKit", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("BinnieCore:fieldKit", 63),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("lensGlass"),
                         OreBracketHandler.getOre("ringSteel"), OreBracketHandler.getOre("screwSteel")),

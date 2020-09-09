@@ -7,6 +7,8 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Gendustry : Runnable {
     override fun run() {
@@ -106,7 +108,7 @@ class Gendustry : Runnable {
         //val item33 = ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
 
         ItemBracketHandler.getItem("Natura:heatsand", 0)
-        val item34 = ItemBracketHandler.getItem("minecraft:sand", 32767)
+        val item34 = ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE)
         val item35 = ItemBracketHandler.getItem("minecraft:cactus", 0)
         val item36 = ItemBracketHandler.getItem("minecraft:water_bucket", 0)
         val item37 = ItemBracketHandler.getItem("minecraft:lava_bucket", 0)
@@ -148,9 +150,9 @@ class Gendustry : Runnable {
         MineTweakerAPI.recipes.remove(item15)
         MineTweakerAPI.recipes.remove(item17)
         MineTweakerAPI.recipes.remove(item18)
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:IndustrialGrafter", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:IndustrialScoop", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:IndustrialGrafter", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:IndustrialScoop", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:MutagenTank", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:BeeReceptacle", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("gendustry:PowerModule", 0))
@@ -266,8 +268,8 @@ class Gendustry : Runnable {
 
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 2),
                 arrayOf(arrayOf(ore3, ItemBracketHandler.getItem("minecraft:red_flower", 0), ore3),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Botany:pollen", 32767), item19,
-                                ItemBracketHandler.getItem("Botany:pollen", 32767)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Botany:pollen", OreDictionary.WILDCARD_VALUE), item19,
+                                ItemBracketHandler.getItem("Botany:pollen", OreDictionary.WILDCARD_VALUE)),
                         arrayOf(ore5, ItemBracketHandler.getItem("minecraft:yellow_flower", 0), ore5)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("gendustry:ApiaryUpgrade", 20),
                 arrayOf(arrayOf(ore3, item20, ore3), arrayOf<IIngredient>(item41, item19, item41),
@@ -346,60 +348,60 @@ class Gendustry : Runnable {
                 ItemBracketHandler.getItem("gendustry:GeneTemplate", 0), 0.0)
         Assembler.addRecipe(item13.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28305),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(576), 200, 7680)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(576), 200, VoltageLevels.IV)
         Assembler.addRecipe(item11, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17057).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2308),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 100, 7680)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 100, VoltageLevels.IV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gendustry:GeneTemplate", 0),
                 ItemBracketHandler.getItem("gendustry:GeneSampleBlank", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(576), 400, 7680)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(576), 400, VoltageLevels.IV)
         Assembler.addRecipe(item16, item48, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 18052),
-                LiquidBracketHandler.getLiquid("molten.plutonium").withAmount(576), 300, 7680)
+                LiquidBracketHandler.getLiquid("molten.plutonium").withAmount(576), 300, VoltageLevels.IV)
         Assembler.addRecipe(item17, ItemBracketHandler.getItem("dreamcraft:item.GeneticCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705),
-                LiquidBracketHandler.getLiquid("mutagen").withAmount(500), 400, 7680)
+                LiquidBracketHandler.getLiquid("mutagen").withAmount(500), 400, VoltageLevels.IV)
         Assembler.addRecipe(item17, ItemBracketHandler.getItem("dreamcraft:item.GeneticCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084),
-                LiquidBracketHandler.getLiquid("mutagen").withAmount(500), 400, 7680)
+                LiquidBracketHandler.getLiquid("mutagen").withAmount(500), 400, VoltageLevels.IV)
         Assembler.addRecipe(item17, ItemBracketHandler.getItem("dreamcraft:item.GeneticCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086),
-                LiquidBracketHandler.getLiquid("mutagen").withAmount(500), 400, 7680)
+                LiquidBracketHandler.getLiquid("mutagen").withAmount(500), 400, VoltageLevels.IV)
         Assembler.addRecipe(item17, ItemBracketHandler.getItem("dreamcraft:item.GeneticCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089),
-                LiquidBracketHandler.getLiquid("mutagen").withAmount(500), 400, 7680)
+                LiquidBracketHandler.getLiquid("mutagen").withAmount(500), 400, VoltageLevels.IV)
         Assembler.addRecipe(item18, ItemBracketHandler.getItem("dreamcraft:item.EnvironmentalCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705),
-                LiquidBracketHandler.getLiquid("liquiddna").withAmount(500), 400, 7680)
+                LiquidBracketHandler.getLiquid("liquiddna").withAmount(500), 400, VoltageLevels.IV)
         Assembler.addRecipe(item18, ItemBracketHandler.getItem("dreamcraft:item.EnvironmentalCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084),
-                LiquidBracketHandler.getLiquid("liquiddna").withAmount(500), 400, 7680)
+                LiquidBracketHandler.getLiquid("liquiddna").withAmount(500), 400, VoltageLevels.IV)
         Assembler.addRecipe(item18, ItemBracketHandler.getItem("dreamcraft:item.EnvironmentalCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086),
-                LiquidBracketHandler.getLiquid("liquiddna").withAmount(500), 400, 7680)
+                LiquidBracketHandler.getLiquid("liquiddna").withAmount(500), 400, VoltageLevels.IV)
         Assembler.addRecipe(item18, ItemBracketHandler.getItem("dreamcraft:item.EnvironmentalCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089),
-                LiquidBracketHandler.getLiquid("liquiddna").withAmount(500), 400, 7680)
+                LiquidBracketHandler.getLiquid("liquiddna").withAmount(500), 400, VoltageLevels.IV)
         Assembler.addRecipe(item19, ItemBracketHandler.getItem("dreamcraft:item.IndustryFrame", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32087),
-                LiquidBracketHandler.getLiquid("mutagen").withAmount(100), 400, 7680)
+                LiquidBracketHandler.getLiquid("mutagen").withAmount(100), 400, VoltageLevels.IV)
         Assembler.addRecipe(item19, ItemBracketHandler.getItem("dreamcraft:item.IndustryFrame", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32092),
-                LiquidBracketHandler.getLiquid("mutagen").withAmount(100), 400, 7680)
+                LiquidBracketHandler.getLiquid("mutagen").withAmount(100), 400, VoltageLevels.IV)
         Assembler.addRecipe(item19, ItemBracketHandler.getItem("dreamcraft:item.IndustryFrame", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32096),
-                LiquidBracketHandler.getLiquid("mutagen").withAmount(100), 400, 7680)
+                LiquidBracketHandler.getLiquid("mutagen").withAmount(100), 400, VoltageLevels.IV)
         Assembler.addRecipe(item19, ItemBracketHandler.getItem("dreamcraft:item.IndustryFrame", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32706),
-                LiquidBracketHandler.getLiquid("mutagen").withAmount(100), 400, 7680)
+                LiquidBracketHandler.getLiquid("mutagen").withAmount(100), 400, VoltageLevels.IV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gendustry:EjectCover", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17052),
-                ItemBracketHandler.getItem("IC2:upgradeModule", 3), 200, 7680)
+                ItemBracketHandler.getItem("IC2:upgradeModule", 3), 200, VoltageLevels.IV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gendustry:ImportCover", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17052),
-                ItemBracketHandler.getItem("IC2:upgradeModule", 6), 200, 7680)
+                ItemBracketHandler.getItem("IC2:upgradeModule", 6), 200, VoltageLevels.IV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gendustry:ErrorSensorCover", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17052),
-                ItemBracketHandler.getItem("IC2:upgradeModule", 5), 200, 7680)
+                ItemBracketHandler.getItem("IC2:upgradeModule", 5), 200, VoltageLevels.IV)
     }
 }

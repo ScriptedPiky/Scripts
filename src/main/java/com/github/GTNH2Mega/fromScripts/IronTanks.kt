@@ -6,6 +6,7 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import com.github.GTNH2Mega.VoltageLevels
 
 class IronTanks : Runnable {
     override fun run() {
@@ -115,60 +116,60 @@ class IronTanks : Runnable {
 
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:copperTank", 0), arrayOf<IIngredient>(item14, item2,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 300, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:glassCopperUpgrade", 0),
                 arrayOf<IIngredient>(item11, item2,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 300, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:ironTank", 0), arrayOf<IIngredient>(item14, item4,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 400, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:glassIronUpgrade", 0),
                 arrayOf<IIngredient>(item11, item4,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 400, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:copperIronUpgrade", 0),
                 arrayOf<IIngredient>(item, item3,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 500, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 500, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:silverTank", 0), arrayOf<IIngredient>(item14, item7,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 500, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 500, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:copperSilverUpgrade", 0),
                 arrayOf<IIngredient>(item, item5,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 600, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 600, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:goldTank", 0), arrayOf<IIngredient>(item14, item9,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 600, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 600, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:ironGoldUpgrade", 0),
                 arrayOf<IIngredient>(item3, item8,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 700, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 700, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:silverGoldUpgrade", 0),
                 arrayOf<IIngredient>(item5, item8,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 700, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 700, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:diamondTank", 0), arrayOf<IIngredient>(item14, item10,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 800, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 800, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:silverDiamondUpgrade", 0),
                 arrayOf<IIngredient>(item5, item10,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 800, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 800, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:obsidianTank", 0), arrayOf<IIngredient>(item14, item12,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 900, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:diamondObsidianUpgrade", 0),
                 arrayOf<IIngredient>(item11, item12,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 900, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:emeraldTank", 0), arrayOf<IIngredient>(item14, item6,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 1000, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 1000, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("irontank:diamondEmeraldUpgrade", 0),
                 arrayOf<IIngredient>(item10, item6,
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 1000, 30)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(72), 1000, VoltageLevels.LV)
     }
 }

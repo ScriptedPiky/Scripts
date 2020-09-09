@@ -6,6 +6,8 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class BiblioCraft : Runnable {
 
@@ -14,7 +16,7 @@ class BiblioCraft : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:item.BiblioChase", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:TypesettingMachine", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:tile.BiblioFramedChest", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioPaneler", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioPaneler", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioPaintPress", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioLantern", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("BiblioCraft:BiblioIronLantern", 0))

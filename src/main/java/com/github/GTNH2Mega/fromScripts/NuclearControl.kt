@@ -5,6 +5,8 @@ import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class NuclearControl : Runnable {
     override fun run() {
@@ -202,32 +204,32 @@ class NuclearControl : Runnable {
                                 ItemBracketHandler.getItem("IC2NuclearControl:ItemUpgrade", 0),
                                 OreBracketHandler.getOre("plateAlloyCarbon"))), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemRemoteSensorKit", 0),
-                ItemBracketHandler.getItem("IC2NuclearControl:ItemToolDigitalThermometer", 32767),
-                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, 2)
+                ItemBracketHandler.getItem("IC2NuclearControl:ItemToolDigitalThermometer", OreDictionary.WILDCARD_VALUE),
+                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemEnergySensorKit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32734),
-                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, 2)
+                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemMultipleSensorKit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32731),
-                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, 2)
+                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemMultipleSensorKit", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32732),
-                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, 2)
+                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemMultipleSensorKit", 2),
                 ItemBracketHandler.getItem("IC2:upgradeModule", 2), ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600,
                 2)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:KitAppeng", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 400),
-                ItemBracketHandler.getItem("IC2:itemFreq", 0), 2800, 2)
+                ItemBracketHandler.getItem("IC2:itemFreq", 0), 2800, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemTimeCard", 0),
                 ItemBracketHandler.getItem("minecraft:clock", 0), ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600,
                 2)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemUpgrade", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32690),
-                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, 2)
+                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemTextCard", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32740),
-                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, 2)
+                ItemBracketHandler.getItem("IC2:itemFreq", 0), 1600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2NuclearControl:ItemVanilliaKit", 0),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0), ItemBracketHandler.getItem("IC2:itemFreq", 0),
                 1600, 2)

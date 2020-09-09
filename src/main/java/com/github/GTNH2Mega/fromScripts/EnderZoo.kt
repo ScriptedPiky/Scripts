@@ -3,6 +3,7 @@ package com.github.GTNH2Mega.fromScripts
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
 import minetweaker.mc1710.brackets.ItemBracketHandler
+import com.github.GTNH2Mega.VoltageLevels
 
 class EnderZoo : Runnable {
     override fun run() {
@@ -17,6 +18,6 @@ class EnderZoo : Runnable {
                 ItemBracketHandler.getItem("EnderZoo:enderFragment", 0).amount(4), 400, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderZoo:blockConcussionCharge", 0).amount(2),
                 ItemBracketHandler.getItem("EnderZoo:blockConfusingCharge", 0),
-                ItemBracketHandler.getItem("EnderZoo:blockEnderCharge", 0), 400, 30)
+                ItemBracketHandler.getItem("EnderZoo:blockEnderCharge", 0), 400, VoltageLevels.LV)
     }
 }

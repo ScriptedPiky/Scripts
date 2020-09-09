@@ -16,7 +16,9 @@ import minetweaker.expand.ExpandString
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class EnderIO : Runnable {
     override fun run() {
@@ -151,7 +153,7 @@ class EnderIO : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 2))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockSagMill", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockAlloySmelter", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockCapBank", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockCapBank", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockPainter", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockCrafter", 0))
         MineTweakerAPI.recipes.remove(item14)
@@ -274,12 +276,12 @@ class EnderIO : Runnable {
         MineTweakerAPI.recipes.remove(item47)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemYetaWrench", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemConduitProbe", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemTravelStaff", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemTravelStaff", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemXpTransfer", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemSoulVessel", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 1))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMagnet", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMagnet", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemOCConduit", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMachinePart", 2))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMachinePart", 3))
@@ -1124,28 +1126,28 @@ class EnderIO : Runnable {
         ExtremeCrafting.addShaped(withTag, array)
         Assembler.addRecipe(item14, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26080).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29031).amount(4),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(288), 200, 30)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(288), 200, VoltageLevels.LV)
         Assembler.addRecipe(item21, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26054).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29054).amount(4),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(288), 200, 30)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(288), 200, VoltageLevels.LV)
         Assembler.addRecipe(item15, item14.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535),
-                LiquidBracketHandler.getLiquid("molten.energeticalloy").withAmount(864), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.energeticalloy").withAmount(864), 150, VoltageLevels.MV)
         Assembler.addRecipe(item22, item21.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535),
-                LiquidBracketHandler.getLiquid("molten.energeticsilver").withAmount(864), 150, 120)
+                LiquidBracketHandler.getLiquid("molten.energeticsilver").withAmount(864), 150, VoltageLevels.MV)
         Assembler.addRecipe(item16, item15.amount(2),
                 ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.vibrantalloy").withAmount(864), 200, 480)
+                LiquidBracketHandler.getLiquid("molten.vibrantalloy").withAmount(864), 200,  VoltageLevels.HV)
         Assembler.addRecipe(item23, item22.amount(2),
                 ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.vividalloy").withAmount(864), 200, 480)
+                LiquidBracketHandler.getLiquid("molten.vividalloy").withAmount(864), 200,  VoltageLevels.HV)
         Assembler.addRecipe(item17, item16.amount(2), ItemBracketHandler.getItem("minecraft:ender_eye", 0),
-                LiquidBracketHandler.getLiquid("molten.crystallinealloy").withAmount(864), 200, 1920)
+                LiquidBracketHandler.getLiquid("molten.crystallinealloy").withAmount(864), 200, VoltageLevels.EV)
         Assembler.addRecipe(item17, item23.amount(2), ItemBracketHandler.getItem("minecraft:ender_eye", 0),
-                LiquidBracketHandler.getLiquid("molten.crystallinealloy").withAmount(864), 200, 1920)
+                LiquidBracketHandler.getLiquid("molten.crystallinealloy").withAmount(864), 200, VoltageLevels.EV)
         Assembler.addRecipe(item18,
                 arrayOf<IIngredient>(item17.amount(2), ItemBracketHandler.getItem("minecraft:nether_star", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401)),
-                LiquidBracketHandler.getLiquid("molten.melodicalloy").withAmount(864), 200, 7680)
+                LiquidBracketHandler.getLiquid("molten.melodicalloy").withAmount(864), 200, VoltageLevels.IV)
         Assembler.addRecipe(item19,
                 arrayOf<IIngredient>(item18.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32726),
                         ItemBracketHandler.getItem("EnderIO:itemMaterial", 13)),
@@ -1158,13 +1160,13 @@ class EnderIO : Runnable {
 
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockBuffer", 2),
                 ItemBracketHandler.getItem("EnderIO:blockBuffer", 0),
-                ItemBracketHandler.getItem("EnderIO:blockBuffer", 1), 400, 120)
+                ItemBracketHandler.getItem("EnderIO:blockBuffer", 1), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMaterial", 5),
                 ItemBracketHandler.getItem("minecraft:diamond", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9378).amount(8), 600, 120)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9378).amount(8), 600, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMaterial", 6),
                 ItemBracketHandler.getItem("minecraft:emerald", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9367).amount(8), 600, 120)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9367).amount(8), 600, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
@@ -1241,7 +1243,7 @@ class EnderIO : Runnable {
                 ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, 64)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 3),
                 ItemBracketHandler.getItem("EnderIO:blockElectricLight", 2),
-                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 100, 30)
+                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 4),
                 ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0), item40, 200, 256)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 5),
@@ -1252,7 +1254,7 @@ class EnderIO : Runnable {
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(4), 100, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2),
                 ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 0),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2), 100, 64)
@@ -1269,7 +1271,7 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1420),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17369),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 120)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 1),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1580),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17366),
@@ -1277,7 +1279,7 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 2),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1620),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367),
-                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, 480)
+                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17402),
@@ -1289,7 +1291,7 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 2),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1280),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17019),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 3),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1320),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
@@ -1317,11 +1319,11 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 9),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1720),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17406),
-                LiquidBracketHandler.getLiquid("molten.polytetrafluoroethylene").withAmount(144), 100, 1920)
+                LiquidBracketHandler.getLiquid("molten.polytetrafluoroethylene").withAmount(144), 100, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 10),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1780),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17404),
-                LiquidBracketHandler.getLiquid("molten.polytetrafluoroethylene").withAmount(144), 100, 7680)
+                LiquidBracketHandler.getLiquid("molten.polytetrafluoroethylene").withAmount(144), 100, VoltageLevels.IV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 11),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 11390),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17405),
@@ -1329,7 +1331,7 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5112),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 120)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 1),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5132),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364),
@@ -1337,11 +1339,11 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 2),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5680),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 480)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemItemConduit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5611),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17378),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 120)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMEConduit", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17020),
@@ -1349,19 +1351,19 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMEConduit", 1),
                 ItemBracketHandler.getItem("EnderIO:itemMEConduit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17028),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 480)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemOCConduit", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 480)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32729),
-                ItemBracketHandler.getItem("minecraft:iron_bars", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:iron_bars", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1),
                 ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0), item37, 300, 64)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 0),
                 ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1).amount(2),
-                ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(2), 300, 120)
+                ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(2), 300, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 1),
                 ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 0),
                 ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 2), 300, 256)
@@ -1385,37 +1387,37 @@ class EnderIO : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 25379), 200, 48)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 1)),
                 ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0),
-                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(576), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(576), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1)),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 2),
-                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), intArrayOf(10000, 9000, 5000), 200, 2)
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), intArrayOf(10000, 9000, 5000), 200, VoltageLevels.ULV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelAnvil", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32314).amount(0),
-                LiquidBracketHandler.getLiquid("molten.darksteel").withAmount(4464), 900, 120)
+                LiquidBracketHandler.getLiquid("molten.darksteel").withAmount(4464), 900, VoltageLevels.MV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 2).amount(9)),
-                ItemBracketHandler.getItem("IC2:itemPartCFPowder", 0), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("IC2:itemPartCFPowder", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 14)),
-                ItemBracketHandler.getItem("EnderIO:itemMaterial", 5), intArrayOf(10000, 1000, 100, 10), 100, 480)
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 5), intArrayOf(10000, 1000, 100, 10), 100,  VoltageLevels.HV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 15),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 15),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 15),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 15)),
-                ItemBracketHandler.getItem("EnderIO:itemMaterial", 6), intArrayOf(10000, 1000, 100, 10), 300, 480)
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 6), intArrayOf(10000, 1000, 100, 10), 300,  VoltageLevels.HV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 16),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 16),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 16),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 16)),
-                ItemBracketHandler.getItem("EnderIO:itemMaterial", 8), intArrayOf(10000, 1000, 100, 10), 300, 480)
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 8), intArrayOf(10000, 1000, 100, 10), 300,  VoltageLevels.HV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 17),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 17),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 17),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 17)),
-                ItemBracketHandler.getItem("EnderIO:itemMaterial", 13), intArrayOf(10000, 1000, 100, 10), 300, 480)
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 13), intArrayOf(10000, 1000, 100, 10), 300,  VoltageLevels.HV)
         IngredientTooltips.addTooltip(ItemBracketHandler.getItem("EnderIO:blockTravelAnchor", 0),
                 ExpandString.asFormattedText("Cooldown 5 seconds"))
     }

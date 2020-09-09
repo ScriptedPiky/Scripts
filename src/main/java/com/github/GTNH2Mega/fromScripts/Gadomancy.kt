@@ -7,6 +7,7 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.thaumcraft.handlers.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class Gadomancy : Runnable {
     override fun run() {
@@ -327,13 +328,13 @@ class Gadomancy : Runnable {
         Research.setComplexity("GADOMANCY.AURA_EFFECTS", 4)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSlabStone", 1).amount(4), null,
                 ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 11),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 400, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 400, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSlabStone", 1).amount(4), null,
                 ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 11),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 400, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 400, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSlabStone", 1).amount(4), null,
                 ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 11),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         Research.refreshResearchRecipe("GADOMANCY.GOLEMSILVERWOOD")
         Research.refreshResearchRecipe("GADOMANCY.GOLEMCOREBREAK")
         Research.refreshResearchRecipe("GADOMANCY.GOLEMCOREBODYGUARD")

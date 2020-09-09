@@ -7,6 +7,8 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class CarpentersBlocks : Runnable {
     override fun run() {
@@ -95,9 +97,9 @@ class CarpentersBlocks : Runnable {
                 arrayOf(arrayOf(item6, ore2, item6), arrayOf<IIngredient>(item, item14, item),
                         arrayOf(item, ore5, item)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("CarpentersBlocks:itemCarpentersBed", 0),
-                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:carpet", 32767),
-                        ItemBracketHandler.getItem("minecraft:carpet", 32767),
-                        ItemBracketHandler.getItem("minecraft:carpet", 32767)), arrayOf<IIngredient>(item, item, item),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE),
+                        ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE)), arrayOf<IIngredient>(item, item, item),
                         arrayOf(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersBarrier", 0),
                                 OreBracketHandler.getOre("craftingToolSoftHammer"),
                                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersBarrier", 0))), null)
@@ -178,9 +180,9 @@ class CarpentersBlocks : Runnable {
                 ItemBracketHandler.getItem("minecraft:torch", 0).amount(10), 100, 16)
 
         //TODO Replace ("TConstruct:chiselHead", 2)
-        //Assembler.addRecipe(item11, item, ItemBracketHandler.getItem("TConstruct:chiselHead", 2), 200, 30)
+        //Assembler.addRecipe(item11, item, ItemBracketHandler.getItem("TConstruct:chiselHead", 2), 200, VoltageLevels.LV)
 
-        Assembler.addRecipe(item12, item, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 5032), 200, 30)
+        Assembler.addRecipe(item12, item, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 5032), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:itemCarpentersTile", 0).amount(2),
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersPressurePlate", 0),
                 ItemBracketHandler.getItem("minecraft:clay_ball", 0), 50, 16)
@@ -192,22 +194,22 @@ class CarpentersBlocks : Runnable {
                 item.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, 8)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersButton", 0).amount(4), null,
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersPressurePlate", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(20), 100, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(20), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersButton", 0).amount(4), null,
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersPressurePlate", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(10), 100, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(10), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersButton", 0).amount(4), null,
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersPressurePlate", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 50, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 50, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersStairs", 0).amount(4), null,
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersSlope", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(20), 100, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(20), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersStairs", 0).amount(4), null,
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersSlope", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(10), 100, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(10), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersStairs", 0).amount(4), null,
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersSlope", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 50, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 50, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersSlope", 0).amount(4), null,
                 ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersBlock", 0),
                 LiquidBracketHandler.getLiquid("water").withAmount(20), 100, 16)

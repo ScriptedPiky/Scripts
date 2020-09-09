@@ -9,7 +9,9 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.forestry.handlers.Carpenter
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class ExtraTrees5 : Runnable {
     override fun run() {
@@ -32,10 +34,10 @@ class ExtraTrees5 : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 11))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 5))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 13))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:door", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:gate", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:fence", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:multifence", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:door", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:gate", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:fence", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:multifence", OreDictionary.WILDCARD_VALUE))
         Carpenter.addRecipe(ItemBracketHandler.getItem("ExtraTrees:database", 0),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500),
                         OreBracketHandler.getOre("itemCasingGold"),

@@ -5,48 +5,50 @@ import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class JABBA : Runnable {
     override fun run() {
         val item = ItemBracketHandler.getItem("minecraft:chest", 0)
         val item2 = ItemBracketHandler.getItem("JABBA:barrel", 0)
         val ore = OreBracketHandler.getOre("logWood")
-        ItemBracketHandler.getItem("minecraft:log", 32767)
-        ItemBracketHandler.getItem("minecraft:log2", 32767)
-        ItemBracketHandler.getItem("BiomesOPlenty:logs1", 32767)
-        ItemBracketHandler.getItem("BiomesOPlenty:logs2", 32767)
-        ItemBracketHandler.getItem("BiomesOPlenty:logs3", 32767)
-        ItemBracketHandler.getItem("BiomesOPlenty:logs4", 32767)
+        ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE)
         ItemBracketHandler.getItem("ExtraTrees:log", 0)
-        ItemBracketHandler.getItem("Forestry:logs", 32767)
-        ItemBracketHandler.getItem("Forestry:logsFireproof", 32767)
+        ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE)
         ItemBracketHandler.getItem("IC2:blockRubWood", 0)
-        ItemBracketHandler.getItem("Natura:tree", 32767)
-        ItemBracketHandler.getItem("Natura:redwood", 32767)
-        ItemBracketHandler.getItem("Natura:willow", 32767)
-        ItemBracketHandler.getItem("Natura:bloodwood", 32767)
-        ItemBracketHandler.getItem("Natura:DarkTree", 32767)
-        ItemBracketHandler.getItem("Natura:RareTree", 32767)
-        ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", 32767)
-        ItemBracketHandler.getItem("TwilightForest:tile.TFLog", 32767)
-        ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLog", 32767)
-        ItemBracketHandler.getItem("minecraft:wooden_slab", 32767)
-        ItemBracketHandler.getItem("BiomesOPlenty:woodenSingleSlab1", 32767)
-        ItemBracketHandler.getItem("BiomesOPlenty:woodenSingleSlab2", 32767)
-        ItemBracketHandler.getItem("ExtraTrees:slab", 32767)
-        ItemBracketHandler.getItem("Forestry:slabs", 32767)
-        ItemBracketHandler.getItem("Natura:plankSlab1", 32767)
-        ItemBracketHandler.getItem("Natura:plankSlab2", 32767)
-        val item3 = ItemBracketHandler.getItem("minecraft:planks", 32767)
-        val item4 = ItemBracketHandler.getItem("BiomesOPlenty:planks", 32767)
-        val item5 = ItemBracketHandler.getItem("ExtraTrees:planks", 32767)
+        ItemBracketHandler.getItem("Natura:tree", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Natura:redwood", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Natura:willow", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Natura:bloodwood", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Natura:DarkTree", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Natura:RareTree", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("TwilightForest:tile.TFLog", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLog", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("minecraft:wooden_slab", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("BiomesOPlenty:woodenSingleSlab1", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("BiomesOPlenty:woodenSingleSlab2", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("ExtraTrees:slab", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Forestry:slabs", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Natura:plankSlab1", OreDictionary.WILDCARD_VALUE)
+        ItemBracketHandler.getItem("Natura:plankSlab2", OreDictionary.WILDCARD_VALUE)
+        val item3 = ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE)
+        val item4 = ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE)
+        val item5 = ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE)
 
-        //TODO Replace ("ExtraUtilities:colorWoodPlanks", 32767)
-        //val item6 = ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", 32767)
+        //TODO Replace ("ExtraUtilities:colorWoodPlanks", OreDictionary.WILDCARD_VALUE)
+        //val item6 = ItemBracketHandler.getItem("ExtraUtilities:colorWoodPlanks", OreDictionary.WILDCARD_VALUE)
 
-        val item7 = ItemBracketHandler.getItem("Forestry:planks", 32767)
-        val item8 = ItemBracketHandler.getItem("Forestry:planksFireproof", 32767)
-        val item9 = ItemBracketHandler.getItem("Natura:planks", 32767)
+        val item7 = ItemBracketHandler.getItem("Forestry:planks", OreDictionary.WILDCARD_VALUE)
+        val item8 = ItemBracketHandler.getItem("Forestry:planksFireproof", OreDictionary.WILDCARD_VALUE)
+        val item9 = ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE)
         val item10 = ItemBracketHandler.getItem("JABBA:upgradeStructural", 0)
         val item11 = ItemBracketHandler.getItem("JABBA:upgradeStructural", 1)
         val item12 = ItemBracketHandler.getItem("JABBA:upgradeStructural", 2)
@@ -230,7 +232,7 @@ class JABBA : Runnable {
         Assembler.addRecipe(item2, item4.amount(8), item, 200, 16)
         Assembler.addRecipe(item2, item5.amount(8), item, 200, 16)
 
-        //TODO Replace ("ExtraUtilities:colorWoodPlanks", 32767) in item6
+        //TODO Replace ("ExtraUtilities:colorWoodPlanks", OreDictionary.WILDCARD_VALUE) in item6
         //Assembler.addRecipe(item2, item6.amount(8), item, 200, 16)
 
         Assembler.addRecipe(item2, item7.amount(8), item, 200, 16)
@@ -238,14 +240,14 @@ class JABBA : Runnable {
         Assembler.addRecipe(item2, item9.amount(8), item, 200, 16)
         Assembler.addRecipe(item34, item2, item24, 1200, 16)
         Assembler.addRecipe(item35, item34.amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 900, 30)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 900, VoltageLevels.LV)
         Assembler.addRecipe(item36, item35.amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
         Assembler.addRecipe(item37, item36.amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 400, 120)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 400, VoltageLevels.MV)
         Assembler.addRecipe(item38, item37.amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 200, 256)
         Assembler.addRecipe(item39, item38.amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 150, 480)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 150,  VoltageLevels.HV)
     }
 }

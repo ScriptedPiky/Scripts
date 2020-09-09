@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.*
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
@@ -8,6 +9,7 @@ import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
 import minetweaker.mods.ic2.machines.Extractor
+import net.minecraftforge.oredict.OreDictionary
 
 class HardcoreEnderExpansion : Runnable {
     override fun run() {
@@ -101,7 +103,7 @@ class HardcoreEnderExpansion : Runnable {
                                 ItemBracketHandler.getItem("HardcoreEnderExpansion:obsidian_fragment", 0))), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick_slab", 0),
                 arrayOf(arrayOf(OreBracketHandler.getOre("craftingToolSaw"),
-                        ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick", 32767), null)), null)
+                        ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick", OreDictionary.WILDCARD_VALUE), null)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("HardcoreEnderExpansion:experience_table", 0),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0),
                         OreBracketHandler.getOre("lensEnderEye"),
@@ -171,13 +173,13 @@ class HardcoreEnderExpansion : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2530)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("HardcoreEnderExpansion:charm_pouch", 0),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0),
-                        ItemBracketHandler.getItem("HardcoreEnderExpansion:rune", 32767),
+                        ItemBracketHandler.getItem("HardcoreEnderExpansion:rune", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0)),
-                        arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:rune", 32767),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:rune", OreDictionary.WILDCARD_VALUE),
                                 ItemBracketHandler.getItem("Thaumcraft:FocusPouch", 0),
-                                ItemBracketHandler.getItem("HardcoreEnderExpansion:rune", 32767)),
+                                ItemBracketHandler.getItem("HardcoreEnderExpansion:rune", OreDictionary.WILDCARD_VALUE)),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0),
-                                ItemBracketHandler.getItem("HardcoreEnderExpansion:rune", 32767),
+                                ItemBracketHandler.getItem("HardcoreEnderExpansion:rune", OreDictionary.WILDCARD_VALUE),
                                 ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0))), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("HardcoreEnderExpansion:curse", 0).amount(4),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0),
@@ -362,7 +364,7 @@ class HardcoreEnderExpansion : Runnable {
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:sphalerite", 0), 0.0)
         Assembler.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:energy_wand_core", 0),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:auricion", 0).amount(8), 600, 480)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:auricion", 0).amount(8), 600,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:blank_gem", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0),
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:arcane_shard", 0).amount(8),
@@ -370,7 +372,7 @@ class HardcoreEnderExpansion : Runnable {
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0).amount(16),
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:essence", 0).amount(16),
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("endergoo").withAmount(1440), 600, 480)
+                LiquidBracketHandler.getLiquid("endergoo").withAmount(1440), 600,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:spatial_dash_gem", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:blank_gem", 0),
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:arcane_shard", 0).amount(16),
@@ -378,7 +380,7 @@ class HardcoreEnderExpansion : Runnable {
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0).amount(32),
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:essence", 0).amount(32),
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("endergoo").withAmount(2880), 1200, 1920)
+                LiquidBracketHandler.getLiquid("endergoo").withAmount(2880), 1200, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:transference_gem", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("HardcoreEnderExpansion:spatial_dash_gem", 0),
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:arcane_shard", 0).amount(32),
@@ -389,13 +391,13 @@ class HardcoreEnderExpansion : Runnable {
                 LiquidBracketHandler.getLiquid("endergoo").withAmount(5760), 1800, 7068)
         Assembler.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:schorching_pickaxe", 0),
                 ItemBracketHandler.getItem("minecraft:golden_pickaxe", 0),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:fire_shard", 0).amount(8), 300, 480)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:fire_shard", 0).amount(8), 300,  VoltageLevels.HV)
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1770),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 533),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1770),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 533)), null,
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0).amount(4), null,
-                LiquidBracketHandler.getLiquid("ender").withAmount(100), intArrayOf(9000, 8000, 7500, 5000), 200, 480)
+                LiquidBracketHandler.getLiquid("ender").withAmount(100), intArrayOf(9000, 8000, 7500, 5000), 200,  VoltageLevels.HV)
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2770),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2533),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1841),
@@ -409,23 +411,23 @@ class HardcoreEnderExpansion : Runnable {
         Compressor.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:spooky_log", 0),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:dry_splinter", 0).amount(9))
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick_slab", 0).amount(2), null,
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick", 32767),
-                LiquidBracketHandler.getLiquid("lava").withAmount(144), 300, 120)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("lava").withAmount(144), 300, VoltageLevels.MV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick_slab", 0).amount(2), null,
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick", 32767),
-                LiquidBracketHandler.getLiquid("ic2hotcoolant").withAmount(72), 300, 120)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("ic2hotcoolant").withAmount(72), 300, VoltageLevels.MV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick_slab", 0).amount(2), null,
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick", 32767),
-                LiquidBracketHandler.getLiquid("molten.blaze").withAmount(36), 150, 120)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:ravaged_brick", OreDictionary.WILDCARD_VALUE),
+                LiquidBracketHandler.getLiquid("molten.blaze").withAmount(36), 150, VoltageLevels.MV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17770).amount(9), null,
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(500), 3600, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(500), 3600, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17770).amount(9), null,
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(350), 3600, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(350), 3600, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17770).amount(9), null,
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(150), 1800, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(150), 1800, VoltageLevels.LV)
         Extractor.addRecipe(ItemBracketHandler.getItem("minecraft:dye", 13).amount(4),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:death_flower", 0))
         Extractor.addRecipe(ItemBracketHandler.getItem("minecraft:dye", 8).amount(4),
@@ -435,14 +437,14 @@ class HardcoreEnderExpansion : Runnable {
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 5839).amount(2),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:sphalerite", 0), 4, 10)
         Lathe.addRecipe(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:obsidian_rod", 0)),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:obsidian_fragment", 0), 160, 120)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:obsidian_fragment", 0), 160, VoltageLevels.MV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0).amount(4)),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder_ore", 0), intArrayOf(10000), 50, 480)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder_ore", 0), intArrayOf(10000), 50,  VoltageLevels.HV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:igneous_rock", 0).amount(2)),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:igneous_rock_ore", 0), intArrayOf(10000), 50, 480)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:igneous_rock_ore", 0), intArrayOf(10000), 50,  VoltageLevels.HV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2770).amount(9)),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0), intArrayOf(10000), 50, 480)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0), intArrayOf(10000), 50,  VoltageLevels.HV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 5839).amount(4)),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:sphalerite", 0), intArrayOf(10000), 400, 2)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:sphalerite", 0), intArrayOf(10000), 400, VoltageLevels.ULV)
     }
 }

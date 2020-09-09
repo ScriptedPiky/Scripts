@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import gttweaker.mods.gregtech.machines.Extruder
 import gttweaker.mods.gregtech.machines.Mixer
@@ -10,6 +11,7 @@ import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.forestry.handlers.Carpenter
 import modtweaker2.mods.thaumcraft.handlers.*
+import net.minecraftforge.oredict.OreDictionary
 
 class MagicBees : Runnable {
     override fun run() {
@@ -56,7 +58,7 @@ class MagicBees : Runnable {
         Arcane.removeRecipe(ItemBracketHandler.getItem("MagicBees:item.thaumiumGrafter", 0))
         Arcane.removeRecipe(ItemBracketHandler.getItem("MagicBees:item.voidGrafter", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("MagicBees:moonDial", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("MagicBees:magnet", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("MagicBees:magnet", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("MagicBees:magicbees.enchantedEarth", 0))
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1540),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("MagicBees:miscResources", 18)), null)
@@ -384,7 +386,7 @@ class MagicBees : Runnable {
         Arcane.addShaped("MB_Scoop", ItemBracketHandler.getItem("MagicBees:item.thaumiumScoop", 0),
                 "ordo 10, terra 10, aer 10",
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23330),
-                        ItemBracketHandler.getItem("minecraft:wool", 32767),
+                        ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23330)),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23330),
                                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23330),
@@ -400,7 +402,7 @@ class MagicBees : Runnable {
         Arcane.addShaped("MB_ScoopVoid", ItemBracketHandler.getItem("MagicBees:item.voidScoop", 0),
                 "ordo 20, terra 20, aer 20",
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23970),
-                        ItemBracketHandler.getItem("minecraft:wool", 32767),
+                        ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23970)),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23970),
                                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23970),
@@ -463,7 +465,7 @@ class MagicBees : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:effectJar", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:tile.BlockQuartzGlass", 0).amount(5),
                 ItemBracketHandler.getItem("MagicBees:pollen", 0),
-                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 600, 120)
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 600, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:miscResources", 4),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 3).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
@@ -475,7 +477,7 @@ class MagicBees : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:moonDial", 0),
                 ItemBracketHandler.getItem("minecraft:clock", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 8537).amount(4),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(576), 200, 30)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(576), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 2),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 0).amount(2),
@@ -487,11 +489,11 @@ class MagicBees : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 4),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 2).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 400, 120)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 4),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 3).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 400, 120)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 6),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 4).amount(2),
@@ -503,11 +505,11 @@ class MagicBees : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 8),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 6).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 800, 480)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 800,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 8),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 7).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 800, 480)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 800,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 10),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 8).amount(2),
@@ -519,11 +521,11 @@ class MagicBees : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 12),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 10).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 1200, 1920)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 1200, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 12),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 11).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 1200, 1920)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 1200, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 14),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 12).amount(2),
@@ -535,20 +537,20 @@ class MagicBees : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 16),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 14).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 1600, 7680)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 1600, VoltageLevels.IV)
         Assembler.addRecipe(ItemBracketHandler.getItem("MagicBees:magnet", 16),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 17),
                 ItemBracketHandler.getItem("MagicBees:magnet", 15).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 1600, 7680)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1296), 1600, VoltageLevels.IV)
         Extruder.addRecipe(ItemBracketHandler.getItem("MagicBees:capsule.magic", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 0).amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32354).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32354).amount(0), 100, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("MagicBees:capsule.magic", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 2).amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32354).amount(0), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32354).amount(0), 100, VoltageLevels.LV)
         Research.refreshResearchRecipe("MB_VisAuraProvider")
         Mixer.addRecipe(ItemBracketHandler.getItem("Forestry:fertilizerCompound", 0).amount(6), null,
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:sand", 32767).amount(2),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE).amount(2),
                         ItemBracketHandler.getItem("MagicBees:miscResources", 2)),
                 LiquidBracketHandler.getLiquid("water").withAmount(100), 100, 16)
         Mixer.addRecipe(ItemBracketHandler.getItem("Forestry:fertilizerCompound", 0).amount(12), null,
@@ -556,7 +558,7 @@ class MagicBees : Runnable {
                         ItemBracketHandler.getItem("MagicBees:miscResources", 2)),
                 LiquidBracketHandler.getLiquid("water").withAmount(100), 100, 16)
         Mixer.addRecipe(ItemBracketHandler.getItem("Forestry:fertilizerCompound", 0).amount(5), null,
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:sand", 32767).amount(2),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE).amount(2),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2530)),
                 LiquidBracketHandler.getLiquid("water").withAmount(100), 100, 16)
         Mixer.addRecipe(ItemBracketHandler.getItem("Forestry:fertilizerCompound", 0).amount(10), null,

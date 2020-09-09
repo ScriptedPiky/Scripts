@@ -787,13 +787,13 @@ class StevesCarts : Runnable {
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 49)), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:BlockAdvDetector", 0),
                 ItemBracketHandler.getItem("minecraft:detector_rail", 0),
-                ItemBracketHandler.getItem("Railcraft:detector", 9), 200, 30)
+                ItemBracketHandler.getItem("Railcraft:detector", 9), 200, VoltageLevels.LV)
         val item113 = ItemBracketHandler.getItem("StevesCarts:BlockJunction", 0)
         val item114 = ItemBracketHandler.getItem("Railcraft:track", 0)
         val hashMap6 = HashMap<String, IData>()
         hashMap6["track"] = ExpandString.asData("railcraft:track.junction")
         Assembler.addRecipe(item113, item114.withTag(ExpandAnyDict.asData(hashMap6)),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000).amount(4), 200, 30)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000).amount(4), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 0),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28809).amount(2), 200, 2)
@@ -827,7 +827,7 @@ class StevesCarts : Runnable {
         Assembler.addRecipe(item38, ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 31032),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 83).amount(4), 600, 16)
         Assembler.addRecipe(item36, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32750), item, 600, 30)
-        Assembler.addRecipe(item37, item36.amount(4), item10.amount(2), 1200, 120)
+        Assembler.addRecipe(item37, item36.amount(4), item10.amount(2), 1200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 80, 8)
@@ -842,15 +842,15 @@ class StevesCarts : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 320, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), item, 640, 30)
-        Assembler.addRecipe(item42, item, item43.amount(8), 300, 30)
-        Assembler.addRecipe(item42, item, item44.amount(8), 300, 30)
-        Assembler.addRecipe(item42, item, item45.amount(8), 300, 30)
-        Assembler.addRecipe(item42, item, item46.amount(8), 300, 30)
-        Assembler.addRecipe(item42, item, item47.amount(8), 300, 30)
-        Assembler.addRecipe(item42, item, item48.amount(8), 300, 30)
-        Assembler.addRecipe(item42, item, item49.amount(8), 300, 30)
-        Assembler.addRecipe(item42, item, item50.amount(8), 300, 30)
-        Assembler.addRecipe(item42, item, item51.amount(8), 300, 30)
+        Assembler.addRecipe(item42, item, item43.amount(8), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item42, item, item44.amount(8), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item42, item, item45.amount(8), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item42, item, item46.amount(8), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item42, item, item47.amount(8), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item42, item, item48.amount(8), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item42, item, item49.amount(8), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item42, item, item50.amount(8), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item42, item, item51.amount(8), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
@@ -861,31 +861,31 @@ class StevesCarts : Runnable {
                 LiquidBracketHandler.getLiquid("molten.rubber").withAmount(72), 320, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 21),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:porkchop", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:porkchop", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 22),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:diamond", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:diamond", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 23),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:emerald", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:emerald", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 24),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:slime_ball", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:slime_ball", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 51),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:glass_bottle", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:glass_bottle", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 52),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:fire_charge", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:fire_charge", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 53),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:egg", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:egg", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 90),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:cake", 0), 600, 120)
+                ItemBracketHandler.getItem("minecraft:cake", 0), 600, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 58),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28),
-                ItemBracketHandler.getItem("minecraft:nether_wart", 0), 300, 30)
+                ItemBracketHandler.getItem("minecraft:nether_wart", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 88),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 28), item10, 600, 64)
         Assembler.addRecipe(item53, ItemBracketHandler.getItem("minecraft:torch", 0).amount(3),
@@ -961,35 +961,35 @@ class StevesCarts : Runnable {
                 ItemBracketHandler.getItem("BiomesOPlenty:misc", 5).amount(4), 100, 2)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 101),
                 ItemBracketHandler.getItem("StevesCarts:CartModule", 41), item10, 200, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 87), item69, item.amount(2), 300, 30)
+        Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 87), item69, item.amount(2), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 92),
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 87), item10.amount(2), 300, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 87), item10.amount(2), 300, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 91),
-                ItemBracketHandler.getItem("IC2:blockMachine", 1), item.amount(2), 300, 30)
+                ItemBracketHandler.getItem("IC2:blockMachine", 1), item.amount(2), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 93),
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 91), item10.amount(2), 300, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 91), item10.amount(2), 300, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:CartModule", 28),
-                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 25), item70.amount(8), 400, 30)
+                ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 25), item70.amount(8), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762),
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 21), 400, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 21), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762),
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 22), 400, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 22), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762),
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 23), 400, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 23), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 26),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32762),
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 24), 400, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 24), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72,
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 21), 400, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 21), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72,
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 22), 400, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 22), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72,
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 23), 400, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 23), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 27), item72,
-                ItemBracketHandler.getItem("StevesCarts:CartModule", 24), 400, 120)
+                ItemBracketHandler.getItem("StevesCarts:CartModule", 24), 400, VoltageLevels.MV)
         Assembler.addRecipe(item80.amount(4), ItemBracketHandler.getItem("minecraft:string", 0),
                 ItemBracketHandler.getItem("minecraft:gunpowder", 0), 50, 2)
         Assembler.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 5),
@@ -1029,117 +1029,117 @@ class StevesCarts : Runnable {
                 LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(864), intArrayOf(10000), 200, 2)
         ChemicalReactor.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 18).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:diamond", 0), null,
-                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(1152), 600, 30)
+                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(1152), 600, VoltageLevels.LV)
         Compressor.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 48),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 46).amount(9))
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809),
-                LiquidBracketHandler.getLiquid("water").withAmount(4), 100, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(4), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 100, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18809),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
-                LiquidBracketHandler.getLiquid("water").withAmount(6), 100, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(6), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(4), 100, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(4), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 30).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32),
-                LiquidBracketHandler.getLiquid("water").withAmount(8), 100, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(8), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 100, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 31).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 32),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 50, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 50, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032),
-                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 18032),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
-                LiquidBracketHandler.getLiquid("water").withAmount(12), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(12), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 34).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36),
-                LiquidBracketHandler.getLiquid("water").withAmount(16), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(16), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(12), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(12), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 35).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 36),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(4), 100, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(4), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 300, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 300, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(24), 300, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(24), 300, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 37).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 150, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 150, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39),
-                LiquidBracketHandler.getLiquid("water").withAmount(64), 300, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(64), 300, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(48), 300, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(48), 300, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 38).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 39),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(16), 150, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(16), 150, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63),
-                LiquidBracketHandler.getLiquid("water").withAmount(16), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(16), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(12), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(12), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 63),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(4), 100, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(4), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(6), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62),
-                LiquidBracketHandler.getLiquid("water").withAmount(12), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(12), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 61).amount(4), null,
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 62),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, VoltageLevels.LV)
         ImplosionCompressor.addRecipe(item87, ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 18), 1)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2383)),
                 ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 22), intArrayOf(10000), 300, 2)

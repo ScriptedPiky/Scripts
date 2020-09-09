@@ -10,6 +10,8 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.nei.NEI
 import modtweaker2.mods.chisel.handlers.Groups
 import modtweaker2.mods.thaumcraft.handlers.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class ForbiddenMagic : Runnable {
     override fun run() {
@@ -67,7 +69,7 @@ class ForbiddenMagic : Runnable {
                         ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 6),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14)),
                         arrayOf(OreBracketHandler.getOre("dyeBlack"),
-                                ItemBracketHandler.getItem("Thaumcraft:ItemInkwell", 32767),
+                                ItemBracketHandler.getItem("Thaumcraft:ItemInkwell", OreDictionary.WILDCARD_VALUE),
                                 OreBracketHandler.getOre("dyeBlack")),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14),
                                 ItemBracketHandler.getItem("Thaumcraft:blockCrystal", 6),
@@ -79,7 +81,7 @@ class ForbiddenMagic : Runnable {
                         ItemBracketHandler.getItem("Thaumcraft:ItemShard", 1),
                         ItemBracketHandler.getItem("Thaumcraft:ItemShard", 2)),
                         arrayOf(OreBracketHandler.getOre("dyeBlack"),
-                                ItemBracketHandler.getItem("ForbiddenMagic:Crystalwell", 32767),
+                                ItemBracketHandler.getItem("ForbiddenMagic:Crystalwell", OreDictionary.WILDCARD_VALUE),
                                 OreBracketHandler.getOre("dyeBlack")),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("Thaumcraft:ItemShard", 3),
                                 ItemBracketHandler.getItem("Thaumcraft:ItemShard", 4),
@@ -216,7 +218,7 @@ class ForbiddenMagic : Runnable {
                 "ira 32, machina 32, bestia 64, metallum 48, alienis 16, exanimis 16, praecantatio 32",
                 ItemBracketHandler.getItem("ForbiddenMagic:WrathCage", 0), 15)
         Crucible.addRecipe("WRATHCAGE", ItemBracketHandler.getItem("ForbiddenMagic:MobCrystal", 0),
-                ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                 "cognitio 10, potentia 10, praecantatio 10, vitreus 10")
         Research.setAspects("WRATHCAGE",
                 "ira 21, machina 18, bestia 15, metallum 12, praecantatio 9, alienis 6, exanimis 3")
@@ -509,7 +511,7 @@ class ForbiddenMagic : Runnable {
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32414).amount(2),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("ForbiddenMagic:InkFlower", 0)), null)
         Extractor.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32414).amount(2),
-                ItemBracketHandler.getItem("ForbiddenMagic:InkFlower", 0), 300, 2)
+                ItemBracketHandler.getItem("ForbiddenMagic:InkFlower", 0), 300, VoltageLevels.ULV)
         NEI.hide(ItemBracketHandler.getItem("ForbiddenMagic:FMResource", 1))
     }
 }

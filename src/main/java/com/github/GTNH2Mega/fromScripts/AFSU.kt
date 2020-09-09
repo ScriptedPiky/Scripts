@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
@@ -21,12 +22,12 @@ class AFSU : Runnable {
                                 OreBracketHandler.getOre("circuitMaster"))), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AFSU:ALC", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, 1920)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32597), 2400, VoltageLevels.EV)
     }
 }

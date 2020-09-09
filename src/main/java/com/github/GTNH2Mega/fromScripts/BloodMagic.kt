@@ -14,7 +14,9 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class BloodMagic : Runnable {
     override fun run() {
@@ -480,7 +482,7 @@ class BloodMagic : Runnable {
                                 ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 2))))
         BloodOrb.addShaped(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 22),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 6),
-                        ItemBracketHandler.getItem("IC2:itemBatCrystal", 32767),
+                        ItemBracketHandler.getItem("IC2:itemBatCrystal", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 6)),
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0),
                                 ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 1),
@@ -1071,22 +1073,22 @@ class BloodMagic : Runnable {
                 LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:ritualDismantler", 0),
                 ItemBracketHandler.getItem("AWWayofTime:itemRitualDiviner", 0),
-                ItemBracketHandler.getItem("minecraft:redstone_torch", 0).amount(2), 600, 120)
+                ItemBracketHandler.getItem("minecraft:redstone_torch", 0).amount(2), 600, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:outputRoutingFocus", 0),
                 ItemBracketHandler.getItem("AWWayofTime:inputRoutingFocus", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 200, 120)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:outputRoutingFocus", 1),
                 ItemBracketHandler.getItem("AWWayofTime:inputRoutingFocus", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 200, 120)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:outputRoutingFocus", 2),
                 ItemBracketHandler.getItem("AWWayofTime:inputRoutingFocus", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 200, 120)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:outputRoutingFocus", 3),
                 ItemBracketHandler.getItem("AWWayofTime:inputRoutingFocus", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 120)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:outputRoutingFocus", 4),
                 ItemBracketHandler.getItem("AWWayofTime:inputRoutingFocus", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 5).amount(0), 200, 120)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 5).amount(0), 200, VoltageLevels.MV)
         Compressor.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 6),
                 ItemBracketHandler.getItem("dreamcraft:item.ArcaneSlate", 0).amount(9))
         Compressor.addRecipe(ItemBracketHandler.getItem("BloodArsenal:blood_stone", 0),
@@ -1107,15 +1109,15 @@ class BloodMagic : Runnable {
                 LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 1800, 64)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("AWWayofTime:reinforcedSlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_stone", 1),
-                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 2400, 120)
+                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 2400, VoltageLevels.MV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_stone", 2),
-                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 3000, 480)
+                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 3000,  VoltageLevels.HV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("AWWayofTime:demonicSlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_stone", 3),
-                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 3600, 1920)
+                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 3600, VoltageLevels.EV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 27).amount(9), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_stone", 4),
-                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 4800, 7680)
+                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 4800, VoltageLevels.IV)
     }
 }

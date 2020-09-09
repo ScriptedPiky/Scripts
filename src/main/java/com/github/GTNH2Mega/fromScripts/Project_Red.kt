@@ -13,6 +13,8 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
 import modtweaker2.mods.chisel.handlers.Groups
 import java.util.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Project_Red : Runnable {
     override fun run() {
@@ -34,11 +36,11 @@ class Project_Red : Runnable {
         MineTweakerAPI.recipes.remove(
                 ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.stone", 11))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.backpack", 32767))
+                ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.backpack", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
                 ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.barrel", 0))
         MineTweakerAPI.recipes.remove(
-                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 32767))
+                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(
                 ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.sawgold", 0))
         MineTweakerAPI.recipes.remove(
@@ -957,25 +959,25 @@ class Project_Red : Runnable {
                 LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 2),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 1),
-                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0), 300, 30)
+                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 2),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 1),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000), 300, 30)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 3),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 1),
-                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17), 400, 30)
+                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 4),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 1),
-                ItemBracketHandler.getItem("minecraft:redstone", 0).amount(3), 400, 30)
+                ItemBracketHandler.getItem("minecraft:redstone", 0).amount(3), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 5),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 1),
-                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 400, 30)
+                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 6),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 5),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24502), 500, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24502), 500, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 6),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 5),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24512), 500, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24512), 500, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 9),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 2).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23874).amount(4), 300, 64)
@@ -989,22 +991,22 @@ class Project_Red : Runnable {
                 ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.battery", 0), 100, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0).amount(5),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(5), 300, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(5), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0).amount(5),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17635).amount(5), 300, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17635).amount(5), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0).amount(5),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17471).amount(5), 300, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17471).amount(5), 300, VoltageLevels.LV)
 
         //TODO Replace ("TConstruct:GlassPane", 0)
         //Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
         //        ItemBracketHandler.getItem("TConstruct:GlassPane", 0),
-        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032).amount(2), 100, 30)
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032).amount(2), 100, VoltageLevels.LV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032).amount(2), 100, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22032).amount(2), 100, VoltageLevels.LV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1).amount(4),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0).amount(
@@ -1013,74 +1015,74 @@ class Project_Red : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 2),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086).amount(4),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(576), 400, 30)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(576), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 4),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(864), 400, 30)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(864), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 6),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1),
                 ItemBracketHandler.getItem("minecraft:magma_cream", 0).amount(4),
-                LiquidBracketHandler.getLiquid("lava").withAmount(4000), 400, 30)
+                LiquidBracketHandler.getLiquid("lava").withAmount(4000), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 7),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), 200, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 8),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 7),
-                OreBracketHandler.getOre("plateObsidian"), 300, 30)
+                OreBracketHandler.getOre("plateObsidian"), 300, VoltageLevels.LV)
 
         //TODO Replace ("StevesCarts:ModuleComponents", 60)
         //Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 9),
         //        ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
-        //        ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 60), 200, 30)
+        //        ItemBracketHandler.getItem("StevesCarts:ModuleComponents", 60), 200, VoltageLevels.LV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 10),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17299).amount(4), 200, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17299).amount(4), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Fabrication:projectred.fabrication.icchip", 0),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17526),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 300, 30)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Fabrication:projectred.fabrication.icblueprint", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32711),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17526).amount(4),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 600, 30)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 600, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.plan", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 18879),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, 8)
         CircuitAssembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44).amount(4),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0).amount(4),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("wireGt01Gold").amount(6)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 600, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 600, VoltageLevels.LV)
         CircuitAssembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44).amount(4),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0).amount(4),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("wireGt01Gold").amount(6)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 600, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 600, VoltageLevels.LV)
         CircuitAssembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44).amount(4),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0).amount(4),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("wireGt01Gold").amount(6)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 600, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 600, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 0),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateCopper"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 0),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateCopper"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 0),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateCopper"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 1),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
@@ -1088,7 +1090,7 @@ class Project_Red : Runnable {
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 1),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
@@ -1096,7 +1098,7 @@ class Project_Red : Runnable {
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 1),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
@@ -1104,28 +1106,28 @@ class Project_Red : Runnable {
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 2),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateIron"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 2),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateIron"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 2),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateIron"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 3),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
@@ -1133,7 +1135,7 @@ class Project_Red : Runnable {
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 29),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 26)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 3),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
@@ -1141,7 +1143,7 @@ class Project_Red : Runnable {
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 29),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 26)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 3),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
@@ -1149,139 +1151,139 @@ class Project_Red : Runnable {
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 29),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 26)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 4),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateSteel"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 4),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateSteel"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 4),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateSteel"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 5),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateGold"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 21).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 5),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateGold"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 21).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 5),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateGold"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 21).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 6),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateDiamond"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 6),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateDiamond"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 6),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateDiamond"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 7),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateGlowstone"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 7),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateGlowstone"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 7),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateGlowstone"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 8),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateRedAlloy"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 33).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 8),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateRedAlloy"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 33).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 900, VoltageLevels.LV)
         CircuitAssembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.routingchip", 8),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44),
                         OreBracketHandler.getOre("circuitGood"), OreBracketHandler.getOre("plateRedAlloy"),
                         OreBracketHandler.getOre("wireGt01RedAlloy").amount(2),
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 33).amount(2)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, 30)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         Canner.addRecipe(ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.emptybattery", 0),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 56).amount(6),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32500), 100, 2)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32500), 100, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 15).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 14).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 13).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 12).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 11).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 10).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 9).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
@@ -1290,19 +1292,19 @@ class Project_Red : Runnable {
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 8).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 7).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 6).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 5).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 4).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
@@ -1311,43 +1313,43 @@ class Project_Red : Runnable {
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 3).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 2).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 1).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 33).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 32).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 31).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 30).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 29).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 28).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 27).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 26).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
@@ -1356,19 +1358,19 @@ class Project_Red : Runnable {
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 25).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 24).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 23).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 22).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 21).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
@@ -1377,52 +1379,52 @@ class Project_Red : Runnable {
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 20).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 19).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 18).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(288), intArrayOf(10000), 200, 2)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
         Compressor.addRecipe(ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.stone", 11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2812).amount(9))
         Compressor.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 55),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 57))
         FormingPress.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 7),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0),
-                ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 13), 600, 30)
+                ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 13), 600, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 8),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0),
-                ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 14), 600, 30)
+                ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 14), 600, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 12),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2020),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 200, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 200, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 13),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 42),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 600, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 600, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 14),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 43),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 600, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 600, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 59),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 58),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 600, 30)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 600, VoltageLevels.LV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 56).amount(9)),
                 ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.stone", 11), intArrayOf(10000),
                 300, 2)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 42),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 12),
-                        ItemBracketHandler.getItem("minecraft:redstone", 0).amount(8)), 400, 30)
+                        ItemBracketHandler.getItem("minecraft:redstone", 0).amount(8)), 400, VoltageLevels.LV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 43),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2020),
-                        ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(8)), 400, 30)
+                        ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(8)), 400, VoltageLevels.LV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 58),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2020),
-                        ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 56).amount(8)), 400, 30)
+                        ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 56).amount(8)), 400, VoltageLevels.LV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 57),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:iron_ingot", 0),
-                        ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 56).amount(8)), 400, 30)
+                        ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 56).amount(8)), 400, VoltageLevels.LV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 19),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("minecraft:dye", 15).amount(2)), 50, 8)

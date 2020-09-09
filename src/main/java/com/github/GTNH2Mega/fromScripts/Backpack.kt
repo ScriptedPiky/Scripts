@@ -4,6 +4,8 @@ import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Backpack : Runnable {
     override fun run() {
@@ -79,8 +81,8 @@ class Backpack : Runnable {
         //TODO Replace ("TConstruct:CraftingSlab", 0)
         //val item59 = ItemBracketHandler.getItem("TConstruct:CraftingSlab", 0)
 
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:backpack", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:workbenchbackpack", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:backpack", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:workbenchbackpack", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:boundLeather", 0))
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("Backpack:tannedLeather", 0), null)
         MineTweakerAPI.recipes.addShaped(item55,

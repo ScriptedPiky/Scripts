@@ -14,6 +14,8 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.nei.NEI
 import modtweaker2.mods.chisel.handlers.Groups
 import java.util.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Natura : Runnable {
     override fun run() {
@@ -32,13 +34,13 @@ class Natura : Runnable {
         val ore9 = OreBracketHandler.getOre("screwCopper")
         MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:leather", 0),
                 arrayOf(arrayOf<IIngredient>(item2, item2), arrayOf<IIngredient>(item2, item2)))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:planks", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:natura.stick", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:Natura.workbench", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:Natura.bookshelf", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:Natura.fence", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:plankSlab1", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:plankSlab2", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:planks", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:Natura.workbench", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:Natura.bookshelf", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:Natura.fence", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:plankSlab1", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:plankSlab2", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:pressureplate.eucalyptus", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:pressureplate.sakura", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:pressureplate.ghostwood", 0))
@@ -91,8 +93,8 @@ class Natura : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:fenceGate.willow", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:fenceGate.darkwood", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:fenceGate.fusewood", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:natura.emptybowl", 32767))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:redwoodDoorItem", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:natura.emptybowl", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:redwoodDoorItem", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("Natura:NetherGlass", 0), null)
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("Natura:NetherGlass", 1), null)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Natura:Blazerail", 0))
@@ -2623,22 +2625,22 @@ class Natura : Runnable {
                 LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 4)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809)),
-                ItemBracketHandler.getItem("Natura:tree", 32767), intArrayOf(10000, 8000), 400, 2)
+                ItemBracketHandler.getItem("Natura:tree", OreDictionary.WILDCARD_VALUE), intArrayOf(10000, 8000), 400, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809)),
-                ItemBracketHandler.getItem("Natura:redwood", 32767), intArrayOf(10000, 8000), 400, 2)
+                ItemBracketHandler.getItem("Natura:redwood", OreDictionary.WILDCARD_VALUE), intArrayOf(10000, 8000), 400, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809)),
-                ItemBracketHandler.getItem("Natura:bloodwood", 32767), intArrayOf(10000, 8000), 400, 2)
+                ItemBracketHandler.getItem("Natura:bloodwood", OreDictionary.WILDCARD_VALUE), intArrayOf(10000, 8000), 400, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809)),
-                ItemBracketHandler.getItem("Natura:RareTree", 32767), intArrayOf(10000, 8000), 400, 2)
+                ItemBracketHandler.getItem("Natura:RareTree", OreDictionary.WILDCARD_VALUE), intArrayOf(10000, 8000), 400, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809)),
-                ItemBracketHandler.getItem("Natura:willow", 32767), intArrayOf(10000, 8000), 400, 2)
+                ItemBracketHandler.getItem("Natura:willow", OreDictionary.WILDCARD_VALUE), intArrayOf(10000, 8000), 400, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2809)),
-                ItemBracketHandler.getItem("Natura:DarkTree", 32767), intArrayOf(10000, 8000), 400, 2)
+                ItemBracketHandler.getItem("Natura:DarkTree", OreDictionary.WILDCARD_VALUE), intArrayOf(10000, 8000), 400, VoltageLevels.ULV)
         Groups.addVariation("bookshelf", ItemBracketHandler.getItem("Natura:Natura.bookshelf", 0))
         Groups.addVariation("bookshelf", ItemBracketHandler.getItem("Natura:Natura.bookshelf", 1))
         Groups.addVariation("bookshelf", ItemBracketHandler.getItem("Natura:Natura.bookshelf", 2))
@@ -2669,7 +2671,7 @@ class Natura : Runnable {
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32418),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("Natura:Bluebells", 0)), null)
         Extractor.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32418).amount(2),
-                ItemBracketHandler.getItem("Natura:Bluebells", 0), 300, 2)
+                ItemBracketHandler.getItem("Natura:Bluebells", 0), 300, VoltageLevels.ULV)
         NEI.hide(ItemBracketHandler.getItem("Natura:barleyFood", 8))
     }
 }

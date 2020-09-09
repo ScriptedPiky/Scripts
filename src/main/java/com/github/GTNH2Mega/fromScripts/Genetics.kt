@@ -8,6 +8,7 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.forestry.handlers.Carpenter
+import com.github.GTNH2Mega.VoltageLevels
 
 class Genetics : Runnable {
     override fun run() {
@@ -176,14 +177,14 @@ class Genetics : Runnable {
                                 OreBracketHandler.getOre("gearGtSmallDiamond"))), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 0),
                 ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
-                OreBracketHandler.getOre("itemCasingAluminium").amount(8), 1200, 120)
+                OreBracketHandler.getOre("itemCasingAluminium").amount(8), 1200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 8),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 6).amount(0), 200, 16)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 5),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0),
-                LiquidBracketHandler.getLiquid("molten.gold").withAmount(288), 200, 30)
+                LiquidBracketHandler.getLiquid("molten.gold").withAmount(288), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 6),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
@@ -211,18 +212,18 @@ class Genetics : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32104),
                 ItemBracketHandler.getItem("Genetics:misc", 9).amount(8),
-                LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(144), 600, 120)
+                LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(144), 600, VoltageLevels.MV)
         Mixer.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 1), null,
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1810).amount(4),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1811).amount(4),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32418),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32419)),
-                LiquidBracketHandler.getLiquid("molten.blaze").withAmount(144), 100, 30)
+                LiquidBracketHandler.getLiquid("molten.blaze").withAmount(144), 100, VoltageLevels.LV)
         Mixer.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 2), null,
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1811).amount(4),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1810).amount(4),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32428),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32425)),
-                LiquidBracketHandler.getLiquid("molten.blaze").withAmount(144), 100, 30)
+                LiquidBracketHandler.getLiquid("molten.blaze").withAmount(144), 100, VoltageLevels.LV)
     }
 }

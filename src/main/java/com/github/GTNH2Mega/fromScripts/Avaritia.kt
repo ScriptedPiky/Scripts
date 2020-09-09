@@ -12,7 +12,9 @@ import minetweaker.mods.ic2.machines.Compressor
 import minetweaker.mods.ic2.machines.Extractor
 import modtweaker2.mods.thaumcraft.handlers.Infusion
 import modtweaker2.mods.thaumcraft.handlers.Research
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class Avaritia : Runnable {
     override fun run() {
@@ -29,7 +31,7 @@ class Avaritia : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Avaritia:Resource", 4))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Avaritia:Resource", 6))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Avaritia:Resource", 7))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("eternalsingularity:combined_singularity", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("eternalsingularity:combined_singularity", OreDictionary.WILDCARD_VALUE))
         ExtremeCrafting.remove(ItemBracketHandler.getItem("Avaritia:Neutron_Collector", 0))
         ExtremeCrafting.remove(ItemBracketHandler.getItem("Avaritia:Neutronium_Compressor", 0))
         ExtremeCrafting.remove(ItemBracketHandler.getItem("eternalsingularity:eternal_singularity", 0))
@@ -375,15 +377,15 @@ class Avaritia : Runnable {
         //        ItemBracketHandler.getItem("TaintedMagic:ItemPrimordialEdge", 0),
         //        OreBracketHandler.getOre("plateInfinity"))
         //array[2] = arrayOf(null, null, null, null, null, OreBracketHandler.getOre("plateInfinity"),
-        //        ItemBracketHandler.getItem("IC2:itemNanoSaber", 32767), OreBracketHandler.getOre("plateInfinity"), null)
+        //        ItemBracketHandler.getItem("IC2:itemNanoSaber", OreDictionary.WILDCARD_VALUE), OreBracketHandler.getOre("plateInfinity"), null)
         //array[3] = arrayOf(null, null, null, null, OreBracketHandler.getOre("plateInfinity"),
-        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorSwordGem", 32767),
+        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorSwordGem", OreDictionary.WILDCARD_VALUE),
         //        OreBracketHandler.getOre("plateInfinity"), null, null)
         //array[4] = arrayOf(null, ItemBracketHandler.getItem("TaintedMagic:ItemMaterial", 5), null,
         //        OreBracketHandler.getOre("plateInfinity"), ItemBracketHandler.getItem("Avaritia:Skull_Sword", 0),
         //        OreBracketHandler.getOre("plateInfinity"), null, null, null)
         //array[5] = arrayOf(null, null, ItemBracketHandler.getItem("TaintedMagic:ItemMaterial", 5),
-        //        ItemBracketHandler.getItem("DraconicEvolution:draconicDistructionStaff", 32767),
+        //        ItemBracketHandler.getItem("DraconicEvolution:draconicDistructionStaff", OreDictionary.WILDCARD_VALUE),
         //        OreBracketHandler.getOre("plateInfinity"), null, null, null, null)
         //array[6] = arrayOf(null, null, OreBracketHandler.getOre("blockCosmicNeutronium"),
         //        ItemBracketHandler.getItem("TaintedMagic:ItemMaterial", 5), null, null, null, null, null)
@@ -424,7 +426,7 @@ class Avaritia : Runnable {
         //val hashMap6 = HashMap<String, IData>()
         //hashMap6["material"] = ExpandString.asData("Neutronium")
         //array5[n6] = item6.withTag(ExpandAnyDict.asData(hashMap6))
-        //array5[3] = ItemBracketHandler.getItem("BloodArsenal:blood_infused_pickaxe_diamond", 32767)
+        //array5[3] = ItemBracketHandler.getItem("BloodArsenal:blood_infused_pickaxe_diamond", OreDictionary.WILDCARD_VALUE)
         //array5[4] = ItemBracketHandler.getItem("DraconicEvolution:draconicPickaxe", 0)
         //array5[5] = ItemBracketHandler.getItem("GraviSuite:advDDrill", 1)
         //val n7 = 6
@@ -441,7 +443,7 @@ class Avaritia : Runnable {
         //array4[n4] = array5
         //array4[2] = arrayOf(OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"), null,
         //        ItemBracketHandler.getItem("TaintedMagic:ItemFocusEldritch", 0),
-        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorPickGem", 32767),
+        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorPickGem", OreDictionary.WILDCARD_VALUE),
         //        ItemBracketHandler.getItem("TaintedMagic:ItemFocusTime", 0), null,
         //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"))
         //array4[3] = arrayOf(null, null, null, null, OreBracketHandler.getOre("blockCosmicNeutronium"), null, null, null,
@@ -470,7 +472,7 @@ class Avaritia : Runnable {
                                 ItemBracketHandler.getItem("GraviSuite:advDDrill", 1),
                                 ItemBracketHandler.getItem("DraconicEvolution:draconicShovel", 0),
                                 OreBracketHandler.getOre("plateInfinity")), arrayOf(null, null, null, null, null, null,
-                        ItemBracketHandler.getItem("ThaumicTinkerer:ichorShovelGem", 32767),
+                        ItemBracketHandler.getItem("ThaumicTinkerer:ichorShovelGem", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("BloodArsenal:blood_infused_shovel_diamond", 0),
                         OreBracketHandler.getOre("plateInfinity")), arrayOf<IIngredient?>(null, null, null, null, null,
                         OreBracketHandler.getOre("blockCosmicNeutronium"), null,
@@ -560,7 +562,7 @@ class Avaritia : Runnable {
                         OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
                         OreBracketHandler.getOre("plateInfinity"), null, null, null, null),
                         arrayOf(OreBracketHandler.getOre("plateInfinity"),
-                                ItemBracketHandler.getItem("ThaumicTinkerer:ichorAxeGem", 32767),
+                                ItemBracketHandler.getItem("ThaumicTinkerer:ichorAxeGem", OreDictionary.WILDCARD_VALUE),
                                 ItemBracketHandler.getItem("DraconicEvolution:draconicAxe", 0),
                                 OreBracketHandler.getOre("plateInfinity"), null, null, null, null, null),
                         arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateInfinity"),
@@ -620,7 +622,7 @@ class Avaritia : Runnable {
                 ItemBracketHandler.getItem("Avaritia:Akashic_Record", 0), 24)
         Research.refreshResearchRecipe("AKASHIC")
 
-        //TODO Replace ("AdvancedSolarPanel:ultimate_solar_helmet", 32767)
+        //TODO Replace ("AdvancedSolarPanel:ultimate_solar_helmet", OreDictionary.WILDCARD_VALUE)
         //val item14 = ItemBracketHandler.getItem("Avaritia:Infinity_Helm", 0)
         //val array10: Array<Array<IIngredient?>?> = arrayOfNulls(9)
         //array10[0] = arrayOf(null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
@@ -629,12 +631,12 @@ class Avaritia : Runnable {
         //        null, null)
         //array10[1] = arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
         //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-        //        ItemBracketHandler.getItem("AdvancedSolarPanel:ultimate_solar_helmet", 32767),
+        //        ItemBracketHandler.getItem("AdvancedSolarPanel:ultimate_solar_helmet", OreDictionary.WILDCARD_VALUE),
         //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
         //        OreBracketHandler.getOre("plateCosmicNeutronium"), null)
         //array10[2] = arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"), null,
         //        ItemBracketHandler.getItem("Avaritia:Resource", 5),
-        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothHelmGem", 32767),
+        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothHelmGem", OreDictionary.WILDCARD_VALUE),
         //        ItemBracketHandler.getItem("Avaritia:Resource", 5), null,
         //        OreBracketHandler.getOre("plateCosmicNeutronium"), null)
         //val array11 = arrayOfNulls<IIngredient>(9)
@@ -695,7 +697,7 @@ class Avaritia : Runnable {
         val hashMap15 = HashMap<String, IData>()
         hashMap15["LPStored"] = ExpandInt.toData(100000)
         array13[n18] = item17.withTag(ExpandAnyDict.asData(hashMap15))
-        array13[4] = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothChestGem", 32767)
+        array13[4] = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothChestGem", OreDictionary.WILDCARD_VALUE)
         array13[5] = ItemBracketHandler.getItem("AWWayofTime:sanguineRobe", 0)
         array13[6] = OreBracketHandler.getOre("plateInfinity")
         array13[7] = OreBracketHandler.getOre("plateCosmicNeutronium")
@@ -739,7 +741,7 @@ class Avaritia : Runnable {
         hashMap16["LPStored"] = ExpandInt.toData(100000)
         array15[n20] = item19.withTag(ExpandAnyDict.asData(hashMap16))
         array15[4] = ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0)
-        array15[5] = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothLegsGem", 32767)
+        array15[5] = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothLegsGem", OreDictionary.WILDCARD_VALUE)
         array15[6] = ItemBracketHandler.getItem("IC2:itemArmorQuantumLegs", 26)
         array15[7] = ItemBracketHandler.getItem("EMT:ShieldFocus", 0)
         array15[8] = OreBracketHandler.getOre("plateCosmicNeutronium")
@@ -801,7 +803,7 @@ class Avaritia : Runnable {
                         OreBracketHandler.getOre("plateCosmicNeutronium")), null, null, null)
         val n21 = 6
         val array17 = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothBootsGem", 32767),
+                ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothBootsGem", OreDictionary.WILDCARD_VALUE),
                 ItemBracketHandler.getItem("DraconicEvolution:draconicBoots", 0),
                 OreBracketHandler.getOre("plateCosmicNeutronium"), null,
                 OreBracketHandler.getOre("plateCosmicNeutronium"),
@@ -1004,13 +1006,13 @@ class Avaritia : Runnable {
 
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Avaritia:Resource", 3).amount(9),
                 ItemBracketHandler.getItem("Avaritia:Resource", 4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32309).amount(0), 2400, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32309).amount(0), 2400,  VoltageLevels.HV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Avaritia:Resource", 4).amount(9),
                 ItemBracketHandler.getItem("Avaritia:Resource_Block", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 4800, 480)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 4800,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Avaritia:Resource", 1),
                 ItemBracketHandler.getItem("Avaritia:Resource", 0).amount(4),
-                ItemBracketHandler.getItem("minecraft:nether_star", 0).amount(2), 1200, 480)
+                ItemBracketHandler.getItem("minecraft:nether_star", 0).amount(2), 1200,  VoltageLevels.HV)
         Compressor.addRecipe(ItemBracketHandler.getItem("Avaritia:Double_Craft", 0),
                 ItemBracketHandler.getItem("minecraft:crafting_table", 0).amount(9))
         Compressor.addRecipe(ItemBracketHandler.getItem("Avaritia:Triple_Craft", 0),
@@ -1043,9 +1045,9 @@ class Avaritia : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 3000, 524000)
         FormingPress.addRecipe(ItemBracketHandler.getItem("Avaritia:Resource", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(4),
-                ItemBracketHandler.getItem("dreamcraft:item.StainlessSteelBars", 0), 200, 120)
+                ItemBracketHandler.getItem("dreamcraft:item.StainlessSteelBars", 0), 200, VoltageLevels.MV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("Avaritia:Resource", 2).amount(9)),
-                ItemBracketHandler.getItem("Avaritia:Resource", 3), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("Avaritia:Resource", 3), intArrayOf(10000), 300, VoltageLevels.ULV)
         fox.spiteful.avaritia.compat.minetweaker.Compressor.add(ItemBracketHandler.getItem("Avaritia:Resource", 5), 64,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2394))
     }

@@ -7,6 +7,8 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
 import modtweaker2.mods.thaumcraft.handlers.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Thaumcraft03Alchemy : Runnable {
     override fun run() {
@@ -16,7 +18,7 @@ class Thaumcraft03Alchemy : Runnable {
         Crucible.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 4))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 5))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Thaumcraft:blockCandle", 0))
-        Crucible.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 32767))
+        Crucible.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemResource", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.removeShaped(OreBracketHandler.getOre("ingotThaumium"),
                 arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("nuggetThaumium"),
                         OreBracketHandler.getOre("nuggetThaumium"), OreBracketHandler.getOre("nuggetThaumium")),
@@ -297,9 +299,9 @@ class Thaumcraft03Alchemy : Runnable {
         Compressor.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 5),
                 ItemBracketHandler.getItem("Thaumcraft:ItemResource", 4).amount(9))
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14)),
-                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6), intArrayOf(10000), 300, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 4).amount(9)),
-                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 5), intArrayOf(10000), 300, 2)
+                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 5), intArrayOf(10000), 300, VoltageLevels.ULV)
         Research.refreshResearchRecipe("CRUCIBLE")
         Research.refreshResearchRecipe("TALLOW")
         Research.refreshResearchRecipe("NITOR")

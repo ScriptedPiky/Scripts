@@ -7,6 +7,8 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.thaumcraft.handlers.*
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class ThaumicBases01Main : Runnable {
     override fun run() {
@@ -32,15 +34,15 @@ class ThaumicBases01Main : Runnable {
         Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:fociDrain", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:fociFlux", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:cryingObsidian", 0))
-        Arcane.removeRecipe(ItemBracketHandler.getItem("thaumicbases:castingBracelet", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:castingBracelet", 32767))
-        Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:nodeFoci", 32767))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("thaumicbases:castingBracelet", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:castingBracelet", OreDictionary.WILDCARD_VALUE))
+        Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:nodeFoci", OreDictionary.WILDCARD_VALUE))
         Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:nodeManipulator", 0))
         Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:resource", 4))
         Infusion.removeRecipe(ItemBracketHandler.getItem("thaumicbases:entityDeconstructor", 0))
         Arcane.removeRecipe(ItemBracketHandler.getItem("thaumicbases:nodeLinker", 0))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 32767), null)
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("thaumicbases:genericSlab", 32767), null)
+        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("thaumicbases:crystalSlab", OreDictionary.WILDCARD_VALUE), null)
+        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("thaumicbases:genericSlab", OreDictionary.WILDCARD_VALUE), null)
         Arcane.addShaped("TB.Relocator", ItemBracketHandler.getItem("thaumicbases:relocator", 0),
                 "aer 20, terra 10, aqua 5", arrayOf(arrayOf(item, OreBracketHandler.getOre("plateInfusedAir"), item),
                 arrayOf(item3, OreBracketHandler.getOre("rotorThaumium"), item3),
@@ -544,148 +546,148 @@ class ThaumicBases01Main : Runnable {
                 ItemBracketHandler.getItem("minecraft:sapling", 1), "vinculum 4")
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 0).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:eldritchArk", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 0).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:eldritchArk", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 0).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:eldritchArk", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 1).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldBrick", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 1).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldBrick", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 1).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldBrick", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 2).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldCobble", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 2).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldCobble", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 2).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldCobble", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 3).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldCobbleMossy", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 3).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldCobbleMossy", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 3).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldCobbleMossy", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 4).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldDiamond", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 4).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldDiamond", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 4).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldDiamond", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 5).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldGold", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 5).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldGold", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 5).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldGold", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 6).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldIron", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 6).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldIron", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 6).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldIron", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 7).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldLapis", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 7).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldLapis", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:genericSlab", 7).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:oldLapis", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 0).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 0).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 0).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 1).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 1),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 1).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 1),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 1).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 1),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 2).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 2),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 2).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 2),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 2).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 2),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 3).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 3),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 3).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 3),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 3).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 3),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 4).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 4),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 4).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 4),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 4).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 4),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 5).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 5).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 5).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 5),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 6).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 6),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 6).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 6),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 6).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 6),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 7).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 7),
-                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, 30)
+                LiquidBracketHandler.getLiquid("water").withAmount(32), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 7).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 7),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, 30)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(20), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("thaumicbases:crystalSlab", 7).amount(2)),
                 ItemBracketHandler.getItem("thaumicbases:crystalBlock", 7),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, 30)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 200, VoltageLevels.LV)
         Research.refreshResearchRecipe("TB.Relocator")
         Research.clearPages("TB.AdvAlc")
         Research.addPage("TB.AdvAlc", "tb.rec.advAlc.page.0")

@@ -7,6 +7,8 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.forestry.handlers.Carpenter
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class Botany : Runnable {
     override fun run() {
@@ -16,7 +18,7 @@ class Botany : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Botany:trowelIron", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Botany:trowelGold", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Botany:trowelDiamond", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Botany:insulatedTube", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Botany:insulatedTube", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Botany:soilMeter", 0))
         Carpenter.addRecipe(ItemBracketHandler.getItem("Botany:database", 0),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500),

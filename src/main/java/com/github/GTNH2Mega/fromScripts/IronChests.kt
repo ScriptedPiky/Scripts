@@ -6,6 +6,8 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.nei.NEI
+import net.minecraftforge.oredict.OreDictionary
+import com.github.GTNH2Mega.VoltageLevels
 
 class IronChests : Runnable {
     override fun run() {
@@ -60,7 +62,7 @@ class IronChests : Runnable {
         val ore7 = OreBracketHandler.getOre("craftingToolHardHammer")
         val ore8 = OreBracketHandler.getOre("craftingToolScrewdriver")
         val item32 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809)
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("IronChest:BlockIronChest", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("IronChest:BlockIronChest", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(item9)
         MineTweakerAPI.recipes.remove(item10)
         MineTweakerAPI.recipes.remove(item11)
@@ -130,7 +132,7 @@ class IronChests : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 300, 30)
         Assembler.addRecipe(item9, arrayOf<IIngredient>(item18, item21,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 300, 30)
-        Assembler.addRecipe(item3, item30, item23.amount(3), 200, 30)
+        Assembler.addRecipe(item3, item30, item23.amount(3), 200, VoltageLevels.LV)
         Assembler.addRecipe(item10, arrayOf<IIngredient>(item18, item23,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 400, 30)
         Assembler.addRecipe(item4, item30, item25.amount(3), 250, 64)
@@ -138,7 +140,7 @@ class IronChests : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 500, 64)
         Assembler.addRecipe(item15, arrayOf<IIngredient>(item22, item25,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 500, 64)
-        Assembler.addRecipe(item5, item30, item26.amount(4), 300, 120)
+        Assembler.addRecipe(item5, item30, item26.amount(4), 300, VoltageLevels.MV)
         Assembler.addRecipe(item13, arrayOf<IIngredient>(item24, item26.amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 600, 120)
         Assembler.addRecipe(item6, item5, item27.amount(4), 350, 256)
