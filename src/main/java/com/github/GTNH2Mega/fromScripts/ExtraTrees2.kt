@@ -3737,7 +3737,9 @@ class ExtraTrees2 : Runnable {
         array303[n576] = item500.withTag(ExpandAnyDict.asData(hashMap500))
         array301[n574] = array303
         recipes121.addShaped(withTag46, array301, null)
+
         run2()
+        run3()
     }
 
     private fun run2() {
@@ -6098,6 +6100,9 @@ class ExtraTrees2 : Runnable {
         array432[2] = OreBracketHandler.getOre("stickWood")
         array430[n781] = array432
         recipes248.addShaped(amount87, array430, null)
+    }
+
+    private fun run3() {
         val recipes249 = MineTweakerAPI.recipes
         val item745 = ItemBracketHandler.getItem("ExtraTrees:fence", 40)
         val hashMap745 = HashMap<String, IData>()

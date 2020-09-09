@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.CuttingSaw
 import gttweaker.mods.gregtech.machines.PrecisionLaser
 import minetweaker.MineTweakerAPI
