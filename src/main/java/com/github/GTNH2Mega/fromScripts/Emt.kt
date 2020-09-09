@@ -2304,10 +2304,13 @@ class Emt : Runnable {
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2880).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 200, VoltageLevels.LLV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 9),
-                ItemBracketHandler.getItem("minecraft:paper", 0).amount(12),
-                ItemBracketHandler.getItem("EMT:EMTItems", 10).amount(4),
-                LiquidBracketHandler.getLiquid("glue").withAmount(6912), 600, VoltageLevels.LV)
+
+        //TODO Replace getLiquid("glue")
+        //Assembler.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 9),
+        //        ItemBracketHandler.getItem("minecraft:paper", 0).amount(12),
+        //        ItemBracketHandler.getItem("EMT:EMTItems", 10).amount(4),
+        //        LiquidBracketHandler.getLiquid("glue").withAmount(6912), 600, VoltageLevels.LV)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 9),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(12),
                 ItemBracketHandler.getItem("EMT:EMTItems", 10).amount(4),
@@ -2315,9 +2318,12 @@ class Emt : Runnable {
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
                 LiquidBracketHandler.getLiquid("refinedglue").withAmount(288), 100, VoltageLevels.LLV)
-        FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 8),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
-                LiquidBracketHandler.getLiquid("glue").withAmount(288), 100, VoltageLevels.LLV)
+
+        //TODO Replace getLiquid("glue")
+        //FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 8),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
+        //        LiquidBracketHandler.getLiquid("glue").withAmount(288), 100, VoltageLevels.LLV)
+
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
                 LiquidBracketHandler.getLiquid("molten.rubber").withAmount(576), 100, VoltageLevels.LV)

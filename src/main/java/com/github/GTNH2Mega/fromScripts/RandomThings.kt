@@ -157,16 +157,18 @@ class RandomThings : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:filter", 3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32729),
                 ItemBracketHandler.getItem("minecraft:ender_pearl", 0), 200, VoltageLevels.MV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:wirelessLever", 0),
-                ItemBracketHandler.getItem("minecraft:lever", 0),
-                ItemBracketHandler.getItem("minecraft:redstone_block", 0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 300, VoltageLevels.LV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:whitestone", 0),
-                ItemBracketHandler.getItem("TwilightForest:item.charmOfKeeping3", 0).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(4000), 1200,  VoltageLevels.HV)
 
-        //TODO Replace ("ExtraUtilities:trashcan", 0)
+        //TODO Replace getLiquid("ender")
+        //Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:wirelessLever", 0),
+        //        ItemBracketHandler.getItem("minecraft:lever", 0),
+        //        ItemBracketHandler.getItem("minecraft:redstone_block", 0),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 300, VoltageLevels.LV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:whitestone", 0),
+        //        ItemBracketHandler.getItem("TwilightForest:item.charmOfKeeping3", 0).amount(4),
+        //        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(4000), 1200,  VoltageLevels.HV)
+
+        //TODO Replace ("ExtraUtilities:trashcan", 0) and getLiquid("ender")
         //Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:dropFilter", 1),
         //        ItemBracketHandler.getItem("ExtraUtilities:trashcan", 0),
         //        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
@@ -179,10 +181,13 @@ class RandomThings : Runnable {
         BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("RandomThings:ingredient", 4)),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2032),
                         ItemBracketHandler.getItem("RandomThings:ingredient", 3)), 1200, 480, 2500)
-        ChemicalReactor.addRecipe(ItemBracketHandler.getItem("RandomThings:ingredient", 6), null,
-                ItemBracketHandler.getItem("minecraft:diamond", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 1200, VoltageLevels.LV)
+
+        //TODO Replace getLiquid("ender")
+        //ChemicalReactor.addRecipe(ItemBracketHandler.getItem("RandomThings:ingredient", 6), null,
+        //        ItemBracketHandler.getItem("minecraft:diamond", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 1200, VoltageLevels.LV)
+
         ChemicalReactor.addRecipe(ItemBracketHandler.getItem("RandomThings:fertilizedDirt", 0), null,
                 ItemBracketHandler.getItem("minecraft:dirt", 0),
                 ItemBracketHandler.getItem("minecraft:dye", 15).amount(4),

@@ -405,10 +405,13 @@ class OpenBlocks : Runnable {
         Assembler.addRecipe(withTag4, item24.withTag(ExpandAnyDict.asData(hashMap10)),
                 ItemBracketHandler.getItem("IC2:itemPartCircuitAdv", 0).amount(2),
                 LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(144), 1200, VoltageLevels.LV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:cartographer", 0),
-                ItemBracketHandler.getItem("OpenBlocks:generic", 9),
-                ItemBracketHandler.getItem("minecraft:ender_eye", 0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, VoltageLevels.MV)
+
+        //TODO Replace getLiquid("ender")
+        //Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:cartographer", 0),
+        //        ItemBracketHandler.getItem("OpenBlocks:generic", 9),
+        //        ItemBracketHandler.getItem("minecraft:ender_eye", 0),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600, VoltageLevels.MV)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:pedometer", 0),
                 ItemBracketHandler.getItem("minecraft:clock", 0),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0).amount(2),

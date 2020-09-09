@@ -1459,26 +1459,35 @@ class IC2 : Runnable {
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630),
                 LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, VoltageLevels.LLV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(5),
-                ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassLense", 0).amount(2),
-                LiquidBracketHandler.getLiquid("glue").withAmount(144), 500, VoltageLevels.LV)
+
+        //TODO Replace getLiquid("glue")
+        //Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(5),
+        //        ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassLense", 0).amount(2),
+        //        LiquidBracketHandler.getLiquid("glue").withAmount(144), 500, VoltageLevels.LV)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(5),
                 ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassLense", 0).amount(2),
                 LiquidBracketHandler.getLiquid("refinedglue").withAmount(144), 500, VoltageLevels.LV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatChestplate", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(8),
-                ItemBracketHandler.getItem("minecraft:wool", 1).amount(4),
-                LiquidBracketHandler.getLiquid("glue").withAmount(144), 500, VoltageLevels.LV)
+
+        //TODO Replace getLiquid("glue")
+        //Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatChestplate", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(8),
+        //        ItemBracketHandler.getItem("minecraft:wool", 1).amount(4),
+        //        LiquidBracketHandler.getLiquid("glue").withAmount(144), 500, VoltageLevels.LV)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatChestplate", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(8),
                 ItemBracketHandler.getItem("minecraft:wool", 1).amount(4),
                 LiquidBracketHandler.getLiquid("refinedglue").withAmount(144), 500, VoltageLevels.LV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatLeggings", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(7),
-                ItemBracketHandler.getItem("minecraft:carpet", 1).amount(4),
-                LiquidBracketHandler.getLiquid("glue").withAmount(144), 500, VoltageLevels.LV)
+
+        //TODO Replace getLiquid("glue")
+        //Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatLeggings", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(7),
+        //        ItemBracketHandler.getItem("minecraft:carpet", 1).amount(4),
+        //        LiquidBracketHandler.getLiquid("glue").withAmount(144), 500, VoltageLevels.LV)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatLeggings", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(7),
                 ItemBracketHandler.getItem("minecraft:carpet", 1).amount(4),

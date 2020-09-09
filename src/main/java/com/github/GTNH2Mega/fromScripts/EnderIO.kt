@@ -1385,9 +1385,12 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemSoulVessel", 0),
                 ItemBracketHandler.getItem("EnderIO:blockFusedQuartz", 0).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 25379), 200, VoltageLevels.LMV)
-        ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 1)),
-                ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0),
-                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(576), intArrayOf(10000), 200, VoltageLevels.LULV)
+
+        //TODO Replace getLiquid("obsidian.molten")
+        //ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 1)),
+        //        ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0),
+        //        LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(576), intArrayOf(10000), 200, VoltageLevels.LULV)
+
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1)),

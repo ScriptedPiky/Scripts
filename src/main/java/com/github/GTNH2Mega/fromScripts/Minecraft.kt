@@ -2140,14 +2140,17 @@ class Minecraft : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809), 100, VoltageLevels.ULV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(2),
-                ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032),
-                LiquidBracketHandler.getLiquid("glue").withAmount(16), 100, VoltageLevels.LLV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(4),
-                ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
-                LiquidBracketHandler.getLiquid("glue").withAmount(32), 100, VoltageLevels.LV)
+
+        //TODO Replace getLiquid("glue")
+        //Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(2),
+        //        ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032),
+        //        LiquidBracketHandler.getLiquid("glue").withAmount(16), 100, VoltageLevels.LLV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(4),
+        //        ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
+        //        LiquidBracketHandler.getLiquid("glue").withAmount(32), 100, VoltageLevels.LV)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:brick_block", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:brick", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
@@ -2271,8 +2274,11 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("minecraft:hay_block", 0))
         FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE),
                 LiquidBracketHandler.getLiquid("molten.glass").withAmount(144), 10000, 200, 48)
-        FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:obsidian", 0),
-                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(288), 10000, 600, 30)
+
+        //TODO Replace getLiquid("obsidian.molten")
+        //FluidExtractor.addRecipe(null, ItemBracketHandler.getItem("minecraft:obsidian", 0),
+        //        LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(288), 10000, 600, 30)
+
         Mixer.addRecipe(ItemBracketHandler.getItem("minecraft:soul_sand", 0).amount(4), null,
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE).amount(4),
                         ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE),

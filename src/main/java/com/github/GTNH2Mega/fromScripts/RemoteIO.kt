@@ -157,42 +157,44 @@ class RemoteIO : Runnable {
         //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17316),
         //        LiquidBracketHandler.getLiquid("molten.redstone").withAmount(100), 200,  VoltageLevels.HV)
 
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
-        Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
-                LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //TODO Replace getLiquid("ender")
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32704).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32083).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32084).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32086).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+        //Assembler.addRecipe(item7, ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32085).amount(2),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32089).amount(2),
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(1000), 600,  VoltageLevels.HV)
+
         Assembler.addRecipe(ItemBracketHandler.getItem("RIO:item.chip.transfer", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.BlankPlatedChip", 0),
                 ItemBracketHandler.getItem("EnderStorage:enderChest", 0), 200,  VoltageLevels.HV)

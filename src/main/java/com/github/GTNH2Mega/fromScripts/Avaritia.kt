@@ -669,165 +669,170 @@ class Avaritia : Runnable {
         //array10[8] = arrayOfNulls(9)
         //ExtremeCrafting.addShaped(item14, array10)
 
-        val item16 = ItemBracketHandler.getItem("Avaritia:Infinity_Chest", 0)
-        val array12 = arrayOf(arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), null, null, null,
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                null), arrayOf<IIngredient?>(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium")),
-                arrayOf<IIngredient?>(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateInfinity"),
-                        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium")),
-                arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                        ItemBracketHandler.getItem("GraviSuite:graviChestPlate", 1),
-                        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"), null), null, null, null, null, null)
-        val n17 = 4
-        val array13 = arrayOfNulls<IIngredient>(9)
-        array13[0] = null
-        array13[1] = OreBracketHandler.getOre("plateCosmicNeutronium")
-        array13[2] = OreBracketHandler.getOre("plateInfinity")
-        val n18 = 3
-        val item17 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_chestplate", 0)
-        val hashMap15 = HashMap<String, IData>()
-        hashMap15["LPStored"] = ExpandInt.toData(100000)
-        array13[n18] = item17.withTag(ExpandAnyDict.asData(hashMap15))
-        array13[4] = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothChestGem", OreDictionary.WILDCARD_VALUE)
-        array13[5] = ItemBracketHandler.getItem("AWWayofTime:sanguineRobe", 0)
-        array13[6] = OreBracketHandler.getOre("plateInfinity")
-        array13[7] = OreBracketHandler.getOre("plateCosmicNeutronium")
-        array13[8] = null
-        array12[n17] = array13
-        array12[5] = arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"),
-                ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_jetplate", 0),
-                ItemBracketHandler.getItem("Avaritia:Resource", 5),
-                ItemBracketHandler.getItem("DraconicEvolution:draconicChest", 0),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null)
-        array12[6] = arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), ItemBracketHandler.getItem("EMT:ShieldFocus", 0),
-                ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0),
-                ItemBracketHandler.getItem("TaintedMagic:ItemFocusTime", 0), OreBracketHandler.getOre("plateInfinity"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), null)
-        array12[7] = arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null)
-        array12[8] = arrayOf(null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                null, null)
-        ExtremeCrafting.addShaped(item16, array12)
-        val item18 = ItemBracketHandler.getItem("Avaritia:Infinity_Pants", 0)
-        val array14: Array<Array<IIngredient?>?> = arrayOfNulls(9)
-        array14[0] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        val n19 = 1
-        val array15 = arrayOfNulls<IIngredient>(9)
-        array15[0] = OreBracketHandler.getOre("plateCosmicNeutronium")
-        array15[1] = ItemBracketHandler.getItem("TaintedMagic:ItemFocusTime", 0)
-        array15[2] = ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_leg", 0)
-        val n20 = 3
-        val item19 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_leggings", 0)
-        val hashMap16 = HashMap<String, IData>()
-        hashMap16["LPStored"] = ExpandInt.toData(100000)
-        array15[n20] = item19.withTag(ExpandAnyDict.asData(hashMap16))
-        array15[4] = ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0)
-        array15[5] = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothLegsGem", OreDictionary.WILDCARD_VALUE)
-        array15[6] = ItemBracketHandler.getItem("IC2:itemArmorQuantumLegs", 26)
-        array15[7] = ItemBracketHandler.getItem("EMT:ShieldFocus", 0)
-        array15[8] = OreBracketHandler.getOre("plateCosmicNeutronium")
-        array14[n19] = array15
-        array14[2] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                OreBracketHandler.getOre("plateInfinity"),
-                ItemBracketHandler.getItem("DraconicEvolution:draconicLeggs", 0),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        array14[3] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), ItemBracketHandler.getItem("Avaritia:Resource", 5),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        array14[4] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        array14[5] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                ItemBracketHandler.getItem("Avaritia:big_pearl", 0), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                null, null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                ItemBracketHandler.getItem("Avaritia:big_pearl", 0), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        array14[6] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        array14[7] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        array14[8] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                null, null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        ExtremeCrafting.addShaped(item18, array14)
-        val item20 = ItemBracketHandler.getItem("Avaritia:Infinity_Shoes", 0)
-        val array16 = arrayOf(arrayOf<IIngredient?>(null, null, null, null, null, null, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, null, null, null, null, null, null),
-                arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                        OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"), null),
-                arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        null), arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateInfinity"),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), null),
-                arrayOf<IIngredient?>(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateInfinity"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateInfinity"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium"),
-                        OreBracketHandler.getOre("plateCosmicNeutronium")), null, null, null)
-        val n21 = 6
-        val array17 = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothBootsGem", OreDictionary.WILDCARD_VALUE),
-                ItemBracketHandler.getItem("DraconicEvolution:draconicBoots", 0),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                OreBracketHandler.getOre("plateCosmicNeutronium"),
-                ItemBracketHandler.getItem("IC2:itemArmorQuantumBoots", 1), null, null)
-        val n22 = 7
-        val item21 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_boots", 0)
-        val hashMap17 = HashMap<String, IData>()
-        hashMap17["LPStored"] = ExpandInt.toData(100000)
-        array17[n22] = item21.withTag(ExpandAnyDict.asData(hashMap17))
-        array17[8] = OreBracketHandler.getOre("plateCosmicNeutronium")
-        array16[n21] = array17
-        array16[7] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
-                ItemBracketHandler.getItem("TaintedMagic:ItemFocusTime", 0),
-                ItemBracketHandler.getItem("AWWayofTime:sanguineBoots", 0),
-                OreBracketHandler.getOre("plateCosmicNeutronium"), null,
-                OreBracketHandler.getOre("plateCosmicNeutronium"),
-                ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_gravityboots", 0),
-                ItemBracketHandler.getItem("EMT:ShieldFocus", 0), OreBracketHandler.getOre("plateCosmicNeutronium"))
-        array16[8] = arrayOf(OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
-                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"))
-        ExtremeCrafting.addShaped(item20, array16)
+        //TODO Replace ("GalaxySpace:item.spacesuit_jetplate", 0)
+        //val item16 = ItemBracketHandler.getItem("Avaritia:Infinity_Chest", 0)
+        //val array12 = arrayOf(arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), null, null, null,
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        null), arrayOf<IIngredient?>(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //        null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium")),
+        //        arrayOf<IIngredient?>(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateInfinity"),
+        //                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium")),
+        //        arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //                ItemBracketHandler.getItem("GraviSuite:graviChestPlate", 1),
+        //                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"), null), null, null, null, null, null)
+        //val n17 = 4
+        //val array13 = arrayOfNulls<IIngredient>(9)
+        //array13[0] = null
+        //array13[1] = OreBracketHandler.getOre("plateCosmicNeutronium")
+        //array13[2] = OreBracketHandler.getOre("plateInfinity")
+        //val n18 = 3
+        //val item17 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_chestplate", 0)
+        //val hashMap15 = HashMap<String, IData>()
+        //hashMap15["LPStored"] = ExpandInt.toData(100000)
+        //array13[n18] = item17.withTag(ExpandAnyDict.asData(hashMap15))
+        //array13[4] = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothChestGem", OreDictionary.WILDCARD_VALUE)
+        //array13[5] = ItemBracketHandler.getItem("AWWayofTime:sanguineRobe", 0)
+        //array13[6] = OreBracketHandler.getOre("plateInfinity")
+        //array13[7] = OreBracketHandler.getOre("plateCosmicNeutronium")
+        //array13[8] = null
+        //array12[n17] = array13
+        //array12[5] = arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"),
+        //        ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_jetplate", 0),
+        //        ItemBracketHandler.getItem("Avaritia:Resource", 5),
+        //        ItemBracketHandler.getItem("DraconicEvolution:draconicChest", 0),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null)
+        //array12[6] = arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), ItemBracketHandler.getItem("EMT:ShieldFocus", 0),
+        //        ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0),
+        //        ItemBracketHandler.getItem("TaintedMagic:ItemFocusTime", 0), OreBracketHandler.getOre("plateInfinity"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), null)
+        //array12[7] = arrayOf(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null)
+        //array12[8] = arrayOf(null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        null, null)
+        //ExtremeCrafting.addShaped(item16, array12)
+
+        //TODO Replace ("GalaxySpace:item.spacesuit_leg", 0)
+        //val item18 = ItemBracketHandler.getItem("Avaritia:Infinity_Pants", 0)
+        //val array14: Array<Array<IIngredient?>?> = arrayOfNulls(9)
+        //array14[0] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //val n19 = 1
+        //val array15 = arrayOfNulls<IIngredient>(9)
+        //array15[0] = OreBracketHandler.getOre("plateCosmicNeutronium")
+        //array15[1] = ItemBracketHandler.getItem("TaintedMagic:ItemFocusTime", 0)
+        //array15[2] = ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_leg", 0)
+        //val n20 = 3
+        //val item19 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_leggings", 0)
+        //val hashMap16 = HashMap<String, IData>()
+        //hashMap16["LPStored"] = ExpandInt.toData(100000)
+        //array15[n20] = item19.withTag(ExpandAnyDict.asData(hashMap16))
+        //array15[4] = ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0)
+        //array15[5] = ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothLegsGem", OreDictionary.WILDCARD_VALUE)
+        //array15[6] = ItemBracketHandler.getItem("IC2:itemArmorQuantumLegs", 26)
+        //array15[7] = ItemBracketHandler.getItem("EMT:ShieldFocus", 0)
+        //array15[8] = OreBracketHandler.getOre("plateCosmicNeutronium")
+        //array14[n19] = array15
+        //array14[2] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //        OreBracketHandler.getOre("plateInfinity"),
+        //        ItemBracketHandler.getItem("DraconicEvolution:draconicLeggs", 0),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //array14[3] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), ItemBracketHandler.getItem("Avaritia:Resource", 5),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //array14[4] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //        null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //array14[5] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        ItemBracketHandler.getItem("Avaritia:big_pearl", 0), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        null, null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        ItemBracketHandler.getItem("Avaritia:big_pearl", 0), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //array14[6] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //        null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //array14[7] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //        null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //array14[8] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        null, null, null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //ExtremeCrafting.addShaped(item18, array14)
+
+        //TODO Replace ("GalaxySpace:item.spacesuit_gravityboots", 0)
+        //val item20 = ItemBracketHandler.getItem("Avaritia:Infinity_Shoes", 0)
+        //val array16 = arrayOf(arrayOf<IIngredient?>(null, null, null, null, null, null, null, null, null),
+        //        arrayOf<IIngredient?>(null, null, null, null, null, null, null, null, null),
+        //        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"), null),
+        //        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                null), arrayOf<IIngredient?>(null, OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateInfinity"),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), null),
+        //        arrayOf<IIngredient?>(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateInfinity"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"), OreBracketHandler.getOre("plateInfinity"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //                OreBracketHandler.getOre("plateCosmicNeutronium")), null, null, null)
+        //val n21 = 6
+        //val array17 = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        ItemBracketHandler.getItem("ThaumicTinkerer:ichorclothBootsGem", OreDictionary.WILDCARD_VALUE),
+        //        ItemBracketHandler.getItem("DraconicEvolution:draconicBoots", 0),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        ItemBracketHandler.getItem("IC2:itemArmorQuantumBoots", 1), null, null)
+        //val n22 = 7
+        //val item21 = ItemBracketHandler.getItem("BloodArsenal:life_imbued_boots", 0)
+        //val hashMap17 = HashMap<String, IData>()
+        //hashMap17["LPStored"] = ExpandInt.toData(100000)
+        //array17[n22] = item21.withTag(ExpandAnyDict.asData(hashMap17))
+        //array17[8] = OreBracketHandler.getOre("plateCosmicNeutronium")
+        //array16[n21] = array17
+        //array16[7] = arrayOf(OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        ItemBracketHandler.getItem("TaintedMagic:ItemFocusTime", 0),
+        //        ItemBracketHandler.getItem("AWWayofTime:sanguineBoots", 0),
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"), null,
+        //        OreBracketHandler.getOre("plateCosmicNeutronium"),
+        //        ItemBracketHandler.getItem("GalaxySpace:item.spacesuit_gravityboots", 0),
+        //        ItemBracketHandler.getItem("EMT:ShieldFocus", 0), OreBracketHandler.getOre("plateCosmicNeutronium"))
+        //array16[8] = arrayOf(OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //        ItemBracketHandler.getItem("BloodArsenal:sigil_of_divinity", 0),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"),
+        //        OreBracketHandler.getOre("plateInfinity"), OreBracketHandler.getOre("plateInfinity"))
+        //ExtremeCrafting.addShaped(item20, array16)
 
         //TODO Replace ("TConstruct:heavyPlate", 315) and ("TConstruct:heavyPlate", 500)
         //ExtremeCrafting.addShaped(ItemBracketHandler.getItem("Avaritia:Neutron_Collector", 0),

@@ -392,20 +392,23 @@ class HardcoreEnderExpansion : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:schorching_pickaxe", 0),
                 ItemBracketHandler.getItem("minecraft:golden_pickaxe", 0),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:fire_shard", 0).amount(8), 300,  VoltageLevels.HV)
-        Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1770),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 533),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1770),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 533)), null,
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0).amount(4), null,
-                LiquidBracketHandler.getLiquid("ender").withAmount(100), intArrayOf(9000, 8000, 7500, 5000), 200,  VoltageLevels.HV)
-        Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2770),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2533),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1841),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1770),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1533)),
-                LiquidBracketHandler.getLiquid("endergoo").withAmount(1000), null, null,
-                LiquidBracketHandler.getLiquid("ender").withAmount(250), intArrayOf(9000, 8000, 7500, 5000, 2500), 600,
-                480)
+
+        //TODO Replace getLiquid("ender")
+        //Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1770),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 533),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1770),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 533)), null,
+        //        ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0).amount(4), null,
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(100), intArrayOf(9000, 8000, 7500, 5000), 200,  VoltageLevels.HV)
+        //Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2770),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2533),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1841),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1770),
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1533)),
+        //        LiquidBracketHandler.getLiquid("endergoo").withAmount(1000), null, null,
+        //        LiquidBracketHandler.getLiquid("ender").withAmount(250), intArrayOf(9000, 8000, 7500, 5000, 2500), 600,
+        //        480)
+
         Compressor.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_ingot", 0).amount(9))
         Compressor.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:spooky_log", 0),

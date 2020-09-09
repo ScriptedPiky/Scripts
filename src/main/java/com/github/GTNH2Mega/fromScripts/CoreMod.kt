@@ -872,17 +872,21 @@ class CoreMod : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.EngineeringProcessorItemAdvEmeraldCore", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 24),
                 ItemBracketHandler.getItem("dreamcraft:item.EmeraldHighAdvancedCoreChip", 0), 100, VoltageLevels.LUV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.LeadNickelPlate", 0).amount(2),
-                ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 3),
-                ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 6),
-                LiquidBracketHandler.getLiquid("ic2coolant").withAmount(2000), 600, VoltageLevels.LEV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedAluminiumPlate", 0),
-                arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedAluminiumIronPlate", 0),
-                        OreBracketHandler.getOre("craftingSunnariumPart"),
-                        ItemBracketHandler.getItem("IC2:itemPartIndustrialDiamond", 0),
-                        OreBracketHandler.getOre("plateRedAlloy").amount(2),
-                        OreBracketHandler.getOre("screwRedAlloy").amount(4)),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 600, VoltageLevels.MV)
+
+        //TODO Replace ("GalaxySpace:item.CompressedPlates", 3) and ("GalaxySpace:item.CompressedPlates", 6)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.LeadNickelPlate", 0).amount(2),
+        //        ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 3),
+        //        ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 6),
+        //        LiquidBracketHandler.getLiquid("ic2coolant").withAmount(2000), 600, VoltageLevels.LEV)
+
+        //TODO Replace ("dreamcraft:item.IrradiantReinforcedAluminiumPlate", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedAluminiumPlate", 0),
+        //        arrayOf(ItemBracketHandler.getItem("dreamcraft:item.ReinforcedAluminiumIronPlate", 0),
+        //                OreBracketHandler.getOre("craftingSunnariumPart"),
+        //                ItemBracketHandler.getItem("IC2:itemPartIndustrialDiamond", 0),
+        //                OreBracketHandler.getOre("plateRedAlloy").amount(2),
+        //                OreBracketHandler.getOre("screwRedAlloy").amount(4)),
+        //        LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 600, VoltageLevels.MV)
 
         //TODO Replace ("AdvancedSolarPanel:asp_crafting_items", 0)
         //Assembler.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.IrradiantReinforcedTitaniumPlate", 0),
@@ -947,12 +951,6 @@ class CoreMod : Runnable {
                         OreBracketHandler.getOre("plateInfinityCatalyst").amount(2),
                         OreBracketHandler.getOre("screwRedAlloy").amount(4)),
                 LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36864), 600, VoltageLevels.UEV)
-        Autoclave.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.UnknowCrystal", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2398),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 9000, 3600, 480)
-        Autoclave.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.UnknowCrystal", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2398),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(1000), 10000, 2400, 480)
         Autoclave.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.RawBioFiber", 0),
                 ItemBracketHandler.getItem("IC2:itemFuelPlantBall", 0).amount(16),
                 LiquidBracketHandler.getLiquid("ic2biomass").withAmount(8), 3300, 200, 20)
@@ -1214,8 +1212,6 @@ class CoreMod : Runnable {
                 ItemBracketHandler.getItem("dreamcraft:item.OsmiumItemCasing", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1129).amount(2)),
                 ItemBracketHandler.getItem("dreamcraft:item.NeutroniumItemCasing", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2398)),
-                ItemBracketHandler.getItem("GalaxySpace:item.UnknowCrystal", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2398).amount(9)),
                 ItemBracketHandler.getItem("dreamcraft:item.MysteriousCrystal", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.MytrylDust", 0)),

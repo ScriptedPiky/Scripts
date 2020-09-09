@@ -420,56 +420,59 @@ class BloodMagic : Runnable {
                         arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 0),
                                 ItemBracketHandler.getItem("AWWayofTime:masterBloodOrb", 0),
                                 ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 0))))
-        val item = ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 20)
-        val array: Array<Array<IIngredient?>?> = arrayOfNulls(3)
-        val n = 0
-        val array2 = arrayOf<IIngredient?>(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1),
-                null, null)
-        val n2 = 1
-        val item2 = ItemBracketHandler.getItem("tinkersdefense:HeaterShield", 0)
-        val hashMap = HashMap<String, IData>()
-        val s = "InfiTool"
-        val hashMap2 = HashMap<String, IData>()
-        hashMap2["RenderExtra"] = ExpandInt.toData(31)
-        hashMap2["BaseDurability"] = ExpandInt.toData(663)
-        hashMap2["BaseAttack"] = ExpandInt.toData(4)
-        hashMap2["ToolEXP"] = ExpandLong.asData(0L)
-        hashMap2["HarvestLevel"] = ExpandInt.toData(3)
-        hashMap2["RenderHead"] = ExpandInt.toData(31)
-        hashMap2["ModDurability"] = ExpandFloat.asData(0.0.toFloat())
-        hashMap2["Shoddy"] = ExpandFloat.asData(0.0.toFloat())
-        hashMap2["RenderHandle"] = ExpandInt.toData(31)
-        hashMap2["Accessory"] = ExpandInt.toData(31)
-        hashMap2["MiningSpeed"] = ExpandInt.toData(650)
-        hashMap2["Unbreaking"] = ExpandInt.toData(0)
-        hashMap2["Damage"] = ExpandInt.toData(0)
-        hashMap2["HarvestLevel2"] = ExpandInt.toData(3)
-        hashMap2["BonusDurability"] = ExpandInt.toData(0)
-        hashMap2["TotalDurability"] = ExpandInt.toData(663)
-        hashMap2["MiningSpeed2"] = ExpandInt.toData(650)
-        hashMap2["Head"] = ExpandInt.toData(31)
-        hashMap2["Attack"] = ExpandInt.toData(4)
-        hashMap2["Handle"] = ExpandInt.toData(31)
-        hashMap2["Broken"] = ExpandByte.asData(0.toByte())
-        hashMap2["Extra"] = ExpandInt.toData(31)
-        hashMap2["RenderAccessory"] = ExpandInt.toData(31)
-        hashMap2["ToolLevel"] = ExpandInt.toData(1)
-        hashMap2["Modifiers"] = ExpandInt.toData(2)
-        hashMap[s] = ExpandAnyDict.asData(hashMap2)
-        val s2 = "display"
-        val hashMap3 = HashMap<String, IData>()
-        hashMap3["Name"] = ExpandString.asData("§fThaumium Heater Shield")
-        hashMap[s2] = ExpandAnyDict.asData(hashMap3)
-        array2[n2] = item2.withTag(ExpandAnyDict.asData(hashMap))
-        array2[2] = ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1)
-        array[n] = array2
-        array[1] = arrayOf(ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0),
-                ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 1),
-                ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0))
-        array[2] = arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1),
-                ItemBracketHandler.getItem("AWWayofTime:masterBloodOrb", 0),
-                ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1))
-        BloodOrb.addShaped(item, array)
+
+        //TODO Replace ("tinkersdefense:HeaterShield", 0)
+        //val item = ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 20)
+        //val array: Array<Array<IIngredient?>?> = arrayOfNulls(3)
+        //val n = 0
+        //val array2 = arrayOf<IIngredient?>(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1),
+        //        null, null)
+        //val n2 = 1
+        //val item2 = ItemBracketHandler.getItem("tinkersdefense:HeaterShield", 0)
+        //val hashMap = HashMap<String, IData>()
+        //val s = "InfiTool"
+        //val hashMap2 = HashMap<String, IData>()
+        //hashMap2["RenderExtra"] = ExpandInt.toData(31)
+        //hashMap2["BaseDurability"] = ExpandInt.toData(663)
+        //hashMap2["BaseAttack"] = ExpandInt.toData(4)
+        //hashMap2["ToolEXP"] = ExpandLong.asData(0L)
+        //hashMap2["HarvestLevel"] = ExpandInt.toData(3)
+        //hashMap2["RenderHead"] = ExpandInt.toData(31)
+        //hashMap2["ModDurability"] = ExpandFloat.asData(0.0.toFloat())
+        //hashMap2["Shoddy"] = ExpandFloat.asData(0.0.toFloat())
+        //hashMap2["RenderHandle"] = ExpandInt.toData(31)
+        //hashMap2["Accessory"] = ExpandInt.toData(31)
+        //hashMap2["MiningSpeed"] = ExpandInt.toData(650)
+        //hashMap2["Unbreaking"] = ExpandInt.toData(0)
+        //hashMap2["Damage"] = ExpandInt.toData(0)
+        //hashMap2["HarvestLevel2"] = ExpandInt.toData(3)
+        //hashMap2["BonusDurability"] = ExpandInt.toData(0)
+        //hashMap2["TotalDurability"] = ExpandInt.toData(663)
+        //hashMap2["MiningSpeed2"] = ExpandInt.toData(650)
+        //hashMap2["Head"] = ExpandInt.toData(31)
+        //hashMap2["Attack"] = ExpandInt.toData(4)
+        //hashMap2["Handle"] = ExpandInt.toData(31)
+        //hashMap2["Broken"] = ExpandByte.asData(0.toByte())
+        //hashMap2["Extra"] = ExpandInt.toData(31)
+        //hashMap2["RenderAccessory"] = ExpandInt.toData(31)
+        //hashMap2["ToolLevel"] = ExpandInt.toData(1)
+        //hashMap2["Modifiers"] = ExpandInt.toData(2)
+        //hashMap[s] = ExpandAnyDict.asData(hashMap2)
+        //val s2 = "display"
+        //val hashMap3 = HashMap<String, IData>()
+        //hashMap3["Name"] = ExpandString.asData("§fThaumium Heater Shield")
+        //hashMap[s2] = ExpandAnyDict.asData(hashMap3)
+        //array2[n2] = item2.withTag(ExpandAnyDict.asData(hashMap))
+        //array2[2] = ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1)
+        //array[n] = array2
+        //array[1] = arrayOf(ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0),
+        //        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 1),
+        //        ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0))
+        //array[2] = arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1),
+        //        ItemBracketHandler.getItem("AWWayofTime:masterBloodOrb", 0),
+        //        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1))
+        //BloodOrb.addShaped(item, array)
+
         BloodOrb.addShaped(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 21),
                 arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 2),
                         ItemBracketHandler.getItem("EnderIO:itemMaterial", 8),
