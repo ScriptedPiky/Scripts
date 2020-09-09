@@ -810,267 +810,267 @@ class BloodMagic : Runnable {
                         ItemBracketHandler.getItem("AWWayofTime:ritualStone", 0),
                         ItemBracketHandler.getItem("AWWayofTime:ritualStone", 0),
                         ItemBracketHandler.getItem("AWWayofTime:ritualStone", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0)), 3, 2500)
+                        ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemEssence", 0),
                         ItemBracketHandler.getItem("Genetics:misc", 4),
                         ItemBracketHandler.getItem("minecraft:glowstone_dust", 0),
                         ItemBracketHandler.getItem("minecraft:redstone", 0),
-                        ItemBracketHandler.getItem("minecraft:gunpowder", 0)), 1, 500)
+                        ItemBracketHandler.getItem("minecraft:gunpowder", 0)), 1, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:crystallos", 0),
                 arrayOf(ItemBracketHandler.getItem("BiomesOPlenty:hardIce", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2702),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2702),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2702),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:sanctus", 0),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2086),
                         ItemBracketHandler.getItem("minecraft:glowstone_dust", 0),
                         ItemBracketHandler.getItem("minecraft:glowstone_dust", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2890),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:weakFillingAgent", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0),
                         ItemBracketHandler.getItem("minecraft:glowstone_dust", 0),
                         ItemBracketHandler.getItem("minecraft:redstone", 0),
                         ItemBracketHandler.getItem("minecraft:nether_wart", 0),
-                        ItemBracketHandler.getItem("minecraft:blaze_powder", 0)), 3, 2000)
+                        ItemBracketHandler.getItem("minecraft:blaze_powder", 0)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:weakBindingAgent", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0),
                         ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2020),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2805),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2805)), 2, 2000)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2805)), 2, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:mundaneLengtheningCatalyst", 0),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2028),
                         ItemBracketHandler.getItem("minecraft:redstone", 0),
                         ItemBracketHandler.getItem("minecraft:redstone", 0),
                         ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:weakBindingAgent", 0)), 3, 4000)
+                        ItemBracketHandler.getItem("AWWayofTime:weakBindingAgent", 0)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:averageLengtheningCatalyst", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:standardBindingAgent", 0),
                         ItemBracketHandler.getItem("AWWayofTime:mundaneLengtheningCatalyst", 0),
                         ItemBracketHandler.getItem("AWWayofTime:mundaneLengtheningCatalyst", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)), 4, 6000)
+                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)), 4, VoltageLevels.IV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:greaterLengtheningCatalyst", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:aquasalus", 0),
                         ItemBracketHandler.getItem("AWWayofTime:averageLengtheningCatalyst", 0),
                         ItemBracketHandler.getItem("AWWayofTime:averageLengtheningCatalyst", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)), 4, 8000)
+                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)), 4, VoltageLevels.IV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:mundanePowerCatalyst", 0),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2028),
                         ItemBracketHandler.getItem("minecraft:glowstone_dust", 0),
                         ItemBracketHandler.getItem("minecraft:glowstone_dust", 0),
                         ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:weakBindingAgent", 0)), 3, 4000)
+                        ItemBracketHandler.getItem("AWWayofTime:weakBindingAgent", 0)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:averagePowerCatalyst", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:standardBindingAgent", 0),
                         ItemBracketHandler.getItem("AWWayofTime:mundanePowerCatalyst", 0),
                         ItemBracketHandler.getItem("AWWayofTime:mundanePowerCatalyst", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)), 4, 6000)
+                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)), 4, VoltageLevels.IV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:greaterPowerCatalyst", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:incendium", 0),
                         ItemBracketHandler.getItem("AWWayofTime:averagePowerCatalyst", 0),
                         ItemBracketHandler.getItem("AWWayofTime:averagePowerCatalyst", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)), 4, 8000)
+                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3)), 4, VoltageLevels.IV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:standardBindingAgent", 0),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2028),
                         ItemBracketHandler.getItem("AWWayofTime:weakBindingAgent", 0),
                         ItemBracketHandler.getItem("AWWayofTime:weakBindingAgent", 0),
                         ItemBracketHandler.getItem("AWWayofTime:sanctus", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:crystallos", 0)), 3, 4000)
+                        ItemBracketHandler.getItem("AWWayofTime:crystallos", 0)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:aether", 0),
                 arrayOf(ItemBracketHandler.getItem("EMT:EMTItems", 8),
                         ItemBracketHandler.getItem("minecraft:feather", 0),
                         ItemBracketHandler.getItem("minecraft:feather", 0),
                         ItemBracketHandler.getItem("minecraft:ghast_tear", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("minecraft:web", 0),
                 arrayOf(ItemBracketHandler.getItem("minecraft:string", 0),
                         ItemBracketHandler.getItem("minecraft:string", 0),
                         ItemBracketHandler.getItem("minecraft:string", 0),
                         ItemBracketHandler.getItem("minecraft:string", 0),
-                        ItemBracketHandler.getItem("minecraft:string", 0)), 1, 500)
+                        ItemBracketHandler.getItem("minecraft:string", 0)), 1, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 5),
                 arrayOf(ItemBracketHandler.getItem("minecraft:bone", 0),
                         ItemBracketHandler.getItem("minecraft:bone", 0),
                         ItemBracketHandler.getItem("minecraft:bone", 0),
                         ItemBracketHandler.getItem("minecraft:bone", 0),
-                        ItemBracketHandler.getItem("minecraft:gunpowder", 0)), 1, 500)
+                        ItemBracketHandler.getItem("minecraft:gunpowder", 0)), 1, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("minecraft:leather", 0).amount(3),
                 arrayOf(ItemBracketHandler.getItem("minecraft:rotten_flesh", 0),
                         ItemBracketHandler.getItem("minecraft:rotten_flesh", 0),
                         ItemBracketHandler.getItem("minecraft:rotten_flesh", 0),
                         ItemBracketHandler.getItem("minecraft:water_bucket", 0),
-                        ItemBracketHandler.getItem("minecraft:flint", 0)), 1, 600)
+                        ItemBracketHandler.getItem("minecraft:flint", 0)), 1, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("minecraft:fire_charge", 0),
                 arrayOf(ItemBracketHandler.getItem("minecraft:blaze_powder", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535),
-                        ItemBracketHandler.getItem("minecraft:gunpowder", 0)), 1, 900)
+                        ItemBracketHandler.getItem("minecraft:gunpowder", 0)), 1, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:incendium", 0),
                 arrayOf(ItemBracketHandler.getItem("minecraft:lava_bucket", 0),
                         ItemBracketHandler.getItem("minecraft:blaze_powder", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2347),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2807),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:magicales", 0),
                 arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1),
                         ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2330),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:crepitous", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0),
                         ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
                 arrayOf(ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiMaterial", 45),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2935),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2936),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2804),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:aquasalus", 0),
                 arrayOf(ItemBracketHandler.getItem("minecraft:potion", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2543),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2543),
                         ItemBracketHandler.getItem("minecraft:dye", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:tennebrae", 0),
                 arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2804),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2536),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2538),
-                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, 1000)
+                        ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0)), 2, VoltageLevels.LEV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:activationCrystal", 1),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:activationCrystal", 0),
                         ItemBracketHandler.getItem("AWWayofTime:demonBloodShard", 0),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 0),
                         ItemBracketHandler.getItem("AWWayofTime:aquasalus", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:aether", 0)), 4, 50000)
+                        ItemBracketHandler.getItem("AWWayofTime:aether", 0)), 4, VoltageLevels.LZPM)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:standardFillingAgent", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:weakFillingAgent", 0),
                         ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:aquasalus", 0)), 4, 4000)
+                        ItemBracketHandler.getItem("AWWayofTime:aquasalus", 0)), 4, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:enhancedFillingAgent", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:standardFillingAgent", 0),
                         ItemBracketHandler.getItem("AWWayofTime:magicales", 0),
                         ItemBracketHandler.getItem("AWWayofTime:crystallos", 0),
                         ItemBracketHandler.getItem("AWWayofTime:aether", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:sanctus", 0)), 4, 6000)
+                        ItemBracketHandler.getItem("AWWayofTime:sanctus", 0)), 4, VoltageLevels.IV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:simpleCatalyst", 0),
                         ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
                         ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
                         ItemBracketHandler.getItem("minecraft:dye", 15),
-                        ItemBracketHandler.getItem("minecraft:nether_wart", 0)), 3, 1500)
+                        ItemBracketHandler.getItem("minecraft:nether_wart", 0)), 3, VoltageLevels.EV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 4),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 8),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 8),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 5),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1086)), 4, 3000)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1086)), 4, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:itemComplexSpellCrystal", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:blankSpell", 0),
                         ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0),
                         ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0),
                         ItemBracketHandler.getItem("dreamcraft:item.EngravedGoldChip", 0),
-                        ItemBracketHandler.getItem("dreamcraft:item.EngravedDiamondCrystalChip", 0)), 3, 15000)
+                        ItemBracketHandler.getItem("dreamcraft:item.EngravedDiamondCrystalChip", 0)), 3, VoltageLevels.LLUV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 15).amount(2),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 4),
                         ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
                         ItemBracketHandler.getItem("AWWayofTime:imbuedSlate", 0),
                         ItemBracketHandler.getItem("AWWayofTime:magicales", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:magicales", 0)), 4, 2000)
+                        ItemBracketHandler.getItem("AWWayofTime:magicales", 0)), 4, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 16),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 15),
                         ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
                         ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:demonicSlate", 0)), 5, 6000)
+                        ItemBracketHandler.getItem("AWWayofTime:demonicSlate", 0)), 5, VoltageLevels.IV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 17),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 27),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 16),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 16),
                         ItemBracketHandler.getItem("AWWayofTime:aquasalus", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:incendium", 0)), 5, 12000)
+                        ItemBracketHandler.getItem("AWWayofTime:incendium", 0)), 5, VoltageLevels.LLUV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 30),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 17),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 29),
                         ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 29),
                         ItemBracketHandler.getItem("AWWayofTime:weakBloodShard", 0),
-                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 27)), 6, 25000)
+                        ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 27)), 6, VoltageLevels.LUV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 0),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
                         ItemBracketHandler.getItem("AWWayofTime:incendium", 0),
                         ItemBracketHandler.getItem("AWWayofTime:incendium", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 25028),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 25028)), 3, 2000)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 25028)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 1),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
                         ItemBracketHandler.getItem("AWWayofTime:tennebrae", 0),
                         ItemBracketHandler.getItem("AWWayofTime:tennebrae", 0),
                         ItemBracketHandler.getItem("witchery:ingredient", 56),
-                        ItemBracketHandler.getItem("witchery:ingredient", 56)), 3, 2000)
+                        ItemBracketHandler.getItem("witchery:ingredient", 56)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 2),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
                         ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
                         ItemBracketHandler.getItem("AWWayofTime:terrae", 0),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2542),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2542)), 3, 2000)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2542)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 6),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2100),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2100),
                         ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0),
-                        ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0)), 3, 4000)
+                        ItemBracketHandler.getItem("dreamcraft:item.ChargedCertusQuartzDust", 0)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 7),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2702),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2702),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2379),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2379)), 3, 4000)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2379)), 3, VoltageLevels.LIV)
         Alchemy.addRecipe(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 8),
                 arrayOf(ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseAlchemyItems", 3),
                         ItemBracketHandler.getItem("IC2:itemDust2", 2), ItemBracketHandler.getItem("IC2:itemDust2", 2),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2367),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2367)), 3, 4000)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2367)), 3, VoltageLevels.LIV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("AWWayofTime:weakBloodOrb", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("AWWayofTime:apprenticeBloodOrb", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("AWWayofTime:magicianBloodOrb", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("AWWayofTime:masterBloodOrb", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("AWWayofTime:archmageBloodOrb", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("AWWayofTime:transcendentBloodOrb", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("BloodArsenal:transparent_orb", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("ForbiddenMagic:EldritchOrb", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:AlchemicalWizardrybloodRune", 0),
                 ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(4),
                 ItemBracketHandler.getItem("Avaritia:Orb_Armok", 0).amount(0),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(1152), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("AWWayofTime:ritualDismantler", 0),
                 ItemBracketHandler.getItem("AWWayofTime:itemRitualDiviner", 0),
                 ItemBracketHandler.getItem("minecraft:redstone_torch", 0).amount(2), 600, VoltageLevels.MV)
@@ -1103,10 +1103,10 @@ class BloodMagic : Runnable {
                 ItemBracketHandler.getItem("AWWayofTime:bloodMagicBaseItems", 27).amount(9))
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ArcaneSlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 6),
-                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 1200, 48)
+                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 1200, VoltageLevels.LMV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("AWWayofTime:blankSlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_stone", 0),
-                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 1800, 64)
+                LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 1800, VoltageLevels.LMV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("AWWayofTime:reinforcedSlate", 0).amount(9), null,
                 ItemBracketHandler.getItem("BloodArsenal:blood_stone", 1),
                 LiquidBracketHandler.getLiquid("lifeessence").withAmount(1000), 2400, VoltageLevels.MV)

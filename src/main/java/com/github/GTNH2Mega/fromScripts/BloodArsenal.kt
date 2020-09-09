@@ -350,10 +350,10 @@ class BloodArsenal : Runnable {
                 ItemBracketHandler.getItem("BloodArsenal:blood_infused_wood", 0),
                 LiquidBracketHandler.getLiquid("lubricant").withAmount(2), 100, VoltageLevels.MV)
         Lathe.addRecipe(arrayOf(ItemBracketHandler.getItem("BloodArsenal:blood_infused_stick", 0).amount(2)),
-                ItemBracketHandler.getItem("BloodArsenal:blood_infused_planks", 0), 20, 8)
+                ItemBracketHandler.getItem("BloodArsenal:blood_infused_planks", 0), 20, VoltageLevels.ULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2977)),
-                ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2977).amount(9)),
-                ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron_block", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("BloodArsenal:blood_infused_iron_block", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
     }
 }

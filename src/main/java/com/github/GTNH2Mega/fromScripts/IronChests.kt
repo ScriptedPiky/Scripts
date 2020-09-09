@@ -123,11 +123,11 @@ class IronChests : Runnable {
         MineTweakerAPI.recipes.addShaped(item12,
                 arrayOf(arrayOf(ore5, item29, ore5), arrayOf<IIngredient>(item28, item26, item28),
                         arrayOf(ore7, item29, ore8)), null)
-        Assembler.addRecipe(item8, item30, item31.amount(8), 80, 1)
-        Assembler.addRecipe(item, item30, item19.amount(3), 100, 8)
+        Assembler.addRecipe(item8, item30, item31.amount(8), 80, VoltageLevels.LULV)
+        Assembler.addRecipe(item, item30, item19.amount(3), 100, VoltageLevels.ULV)
         Assembler.addRecipe(item16, arrayOf<IIngredient>(item32, item19.amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 200, 16)
-        Assembler.addRecipe(item2, item30, item21.amount(3), 150, 16)
+        Assembler.addRecipe(item2, item30, item21.amount(3), 150, VoltageLevels.LLV)
         Assembler.addRecipe(item17, arrayOf<IIngredient>(item32, item21.amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 300, 30)
         Assembler.addRecipe(item9, arrayOf<IIngredient>(item18, item21,
@@ -135,7 +135,7 @@ class IronChests : Runnable {
         Assembler.addRecipe(item3, item30, item23.amount(3), 200, VoltageLevels.LV)
         Assembler.addRecipe(item10, arrayOf<IIngredient>(item18, item23,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 400, 30)
-        Assembler.addRecipe(item4, item30, item25.amount(3), 250, 64)
+        Assembler.addRecipe(item4, item30, item25.amount(3), 250, VoltageLevels.LMV)
         Assembler.addRecipe(item14, arrayOf<IIngredient>(item20, item25,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 500, 64)
         Assembler.addRecipe(item15, arrayOf<IIngredient>(item22, item25,
@@ -143,10 +143,10 @@ class IronChests : Runnable {
         Assembler.addRecipe(item5, item30, item26.amount(4), 300, VoltageLevels.MV)
         Assembler.addRecipe(item13, arrayOf<IIngredient>(item24, item26.amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 600, 120)
-        Assembler.addRecipe(item6, item5, item27.amount(4), 350, 256)
+        Assembler.addRecipe(item6, item5, item27.amount(4), 350, VoltageLevels.LHV)
         Assembler.addRecipe(item11, arrayOf<IIngredient>(item26, item27.amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 700, 256)
-        Assembler.addRecipe(item7, item5, item29.amount(3), 400, 256)
+        Assembler.addRecipe(item7, item5, item29.amount(3), 400, VoltageLevels.LHV)
         Assembler.addRecipe(item12, arrayOf<IIngredient>(item26, item29,
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0)), null, 800, 256)
         MineTweakerAPI.oreDict["chestSilver"].remove(item3)

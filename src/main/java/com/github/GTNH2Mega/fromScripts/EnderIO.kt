@@ -1151,12 +1151,12 @@ class EnderIO : Runnable {
         Assembler.addRecipe(item19,
                 arrayOf<IIngredient>(item18.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32726),
                         ItemBracketHandler.getItem("EnderIO:itemMaterial", 13)),
-                LiquidBracketHandler.getLiquid("molten.stellaralloy").withAmount(864), 200, 30720)
+                LiquidBracketHandler.getLiquid("molten.stellaralloy").withAmount(864), 200, VoltageLevels.LUV)
 
         //TODO Replace ("ExtraUtilities:enderCollector", 0)
         //Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockVacuumChest", 0),
         //        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 9231),
-        //        ItemBracketHandler.getItem("ExtraUtilities:enderCollector", 0), 200, 64)
+        //        ItemBracketHandler.getItem("ExtraUtilities:enderCollector", 0), 200, VoltageLevels.LMV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockBuffer", 2),
                 ItemBracketHandler.getItem("EnderIO:blockBuffer", 0),
@@ -1169,78 +1169,78 @@ class EnderIO : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9367).amount(8), 600, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17366),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17369),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17378),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 7),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17379),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 9),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17402),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17403),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17404),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17405),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17406),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17407),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17408),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(item48, ItemBracketHandler.getItem("dreamcraft:item.ManyullynCrystal", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9321).amount(8), 200, 256)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9321).amount(8), 200, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 0),
                 ItemBracketHandler.getItem("minecraft:heavy_weighted_pressure_plate", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364).amount(2), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364).amount(2), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 1),
                 ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 0),
-                ItemBracketHandler.getItem("IC2:blockRubber", 0), 200, 64)
+                ItemBracketHandler.getItem("IC2:blockRubber", 0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelLadder", 0).amount(2),
                 ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 100, 96)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 100, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364).amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockSoulariumBars", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379).amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401).amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 1),
                 ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0),
-                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, 64)
+                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 3),
                 ItemBracketHandler.getItem("EnderIO:blockElectricLight", 2),
                 ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 100, VoltageLevels.LV)
@@ -1248,26 +1248,26 @@ class EnderIO : Runnable {
                 ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0), item40, 200, 256)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 5),
                 ItemBracketHandler.getItem("EnderIO:blockElectricLight", 4),
-                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, 256)
+                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemFusedQuartzFrame", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4905),
-                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(4), 100, 16)
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(4), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2),
                 ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 0),
-                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2), 100, 64)
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2), 100, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 1),
                 ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2),
-                ItemBracketHandler.getItem("minecraft:lever", 0), 100, 64)
+                ItemBracketHandler.getItem("minecraft:lever", 0), 100, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381), 100, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381), 100, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 64)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1420),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17369),
@@ -1275,7 +1275,7 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 1),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1580),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17366),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 256)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 2),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1620),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367),
@@ -1283,11 +1283,11 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17402),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, 8)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 1),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1260),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, 16)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 2),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1280),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17019),
@@ -1295,27 +1295,27 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 3),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1320),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 100, 64)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 100, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 4),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1380),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17035),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 100, 96)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 100, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 5),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1440),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17054),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 160)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 6),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1540),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17303),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 192)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 7),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1660),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17407),
-                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, 320)
+                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 8),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1700),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17403),
-                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, 900)
+                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 9),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1720),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17406),
@@ -1327,7 +1327,7 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 11),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 11390),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17405),
-                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(144), 100, 30720)
+                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(144), 100, VoltageLevels.LUV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5112),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365),
@@ -1335,7 +1335,7 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 1),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5132),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 256)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 2),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5680),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367),
@@ -1347,7 +1347,7 @@ class EnderIO : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMEConduit", 0),
                 ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17020),
-                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 256)
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMEConduit", 1),
                 ItemBracketHandler.getItem("EnderIO:itemMEConduit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17028),
@@ -1366,38 +1366,38 @@ class EnderIO : Runnable {
                 ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(2), 300, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 1),
                 ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 0),
-                ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 2), 300, 256)
+                ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 2), 300, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExistingItemFilter", 0),
                 ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1), item60, 300, 120)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemModItemFilter", 0),
                 ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0),
-                ItemBracketHandler.getItem("EnderIO:itemYetaWrench", 0), 300, 64)
+                ItemBracketHandler.getItem("EnderIO:itemYetaWrench", 0), 300, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerItemFilter", 0),
                 ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0),
-                ItemBracketHandler.getItem("EnderIO:itemConduitProbe", 0), 300, 64)
+                ItemBracketHandler.getItem("EnderIO:itemConduitProbe", 0), 300, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 0),
                 ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640), 300, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640), 300, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 1),
                 ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 0),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 300, 64)
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 300, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemSoulVessel", 0),
                 ItemBracketHandler.getItem("EnderIO:blockFusedQuartz", 0).amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 25379), 200, 48)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 25379), 200, VoltageLevels.LMV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 1)),
                 ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0),
-                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(576), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(576), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 1)),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 2),
-                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), intArrayOf(10000, 9000, 5000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), intArrayOf(10000, 9000, 5000), 200, VoltageLevels.LULV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelAnvil", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32314).amount(0),
                 LiquidBracketHandler.getLiquid("molten.darksteel").withAmount(4464), 900, VoltageLevels.MV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 2).amount(9)),
-                ItemBracketHandler.getItem("IC2:itemPartCFPowder", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("IC2:itemPartCFPowder", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),
                 ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),

@@ -1027,27 +1027,27 @@ class Avaritia : Runnable {
                 ItemBracketHandler.getItem("Avaritia:Crystal_Matrix", 0))
         Extruder.addRecipe(ItemBracketHandler.getItem("Avaritia:Resource", 4).amount(9),
                 ItemBracketHandler.getItem("Avaritia:Resource_Block", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32355).amount(0), 1000, 524000)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32355).amount(0), 1000, VoltageLevels.UV)
         Extruder.addRecipe(ItemBracketHandler.getItem("Avaritia:Resource", 6).amount(9),
                 ItemBracketHandler.getItem("Avaritia:Resource_Block", 1),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32355).amount(0), 1200, 524000)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32355).amount(0), 1200, VoltageLevels.UV)
         Extruder.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17397),
                 ItemBracketHandler.getItem("Avaritia:Resource", 6),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 4000, 524000)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 4000, VoltageLevels.UV)
         Extruder.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17397),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11397),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 4000, 524000)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 4000, VoltageLevels.UV)
         Extruder.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17982),
                 ItemBracketHandler.getItem("Avaritia:Resource", 4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 3000, 524000)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 3000, VoltageLevels.UV)
         Extruder.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17982),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11982),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 3000, 524000)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32350).amount(0), 3000, VoltageLevels.UV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("Avaritia:Resource", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(4),
                 ItemBracketHandler.getItem("dreamcraft:item.StainlessSteelBars", 0), 200, VoltageLevels.MV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("Avaritia:Resource", 2).amount(9)),
-                ItemBracketHandler.getItem("Avaritia:Resource", 3), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("Avaritia:Resource", 3), intArrayOf(10000), 300, VoltageLevels.LULV)
         fox.spiteful.avaritia.compat.minetweaker.Compressor.add(ItemBracketHandler.getItem("Avaritia:Resource", 5), 64,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2394))
     }

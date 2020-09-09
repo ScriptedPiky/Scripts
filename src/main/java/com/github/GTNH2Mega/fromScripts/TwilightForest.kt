@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.AlloySmelter
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
@@ -29,19 +30,19 @@ class TwilightForest : Runnable {
                         arrayOf<IIngredient>(item2, item, item2)), null)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.steeleafIngot", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2339),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.nagaScale", 0),
                 ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(2),
-                ItemBracketHandler.getItem("TwilightForest:item.trophy", 1).amount(0), 600, 64)
+                ItemBracketHandler.getItem("TwilightForest:item.trophy", 1).amount(0), 600, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.fieryBlood", 0),
                 ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(6),
-                ItemBracketHandler.getItem("TwilightForest:item.trophy", 0).amount(0), 1200, 1024)
+                ItemBracketHandler.getItem("TwilightForest:item.trophy", 0).amount(0), 1200, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.fieryTears", 0),
                 ItemBracketHandler.getItem("minecraft:ghast_tear", 0),
-                ItemBracketHandler.getItem("TwilightForest:item.trophy", 3).amount(0), 1500, 256)
+                ItemBracketHandler.getItem("TwilightForest:item.trophy", 3).amount(0), 1500, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.carminite", 0),
                 ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(8),
-                ItemBracketHandler.getItem("TwilightForest:item.trophy", 3).amount(0), 1500, 4096)
+                ItemBracketHandler.getItem("TwilightForest:item.trophy", 3).amount(0), 1500, VoltageLevels.LIV)
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFRoots", 0), "arbor 2")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFRoots", 1), "arbor 2, praecantatio 2")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.liveRoot", 0), "arbor 1, praecantatio 1")

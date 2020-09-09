@@ -2303,7 +2303,7 @@ class Emt : Runnable {
         Research.addInfusionPage("EtheralProcessor", ItemBracketHandler.getItem("EMT:EMTMachines", 1))
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2880).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 9),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(12),
                 ItemBracketHandler.getItem("EMT:EMTItems", 10).amount(4),
@@ -2314,10 +2314,10 @@ class Emt : Runnable {
                 LiquidBracketHandler.getLiquid("refinedglue").withAmount(6912), 600, VoltageLevels.LV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
-                LiquidBracketHandler.getLiquid("refinedglue").withAmount(288), 100, 16)
+                LiquidBracketHandler.getLiquid("refinedglue").withAmount(288), 100, VoltageLevels.LLV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
-                LiquidBracketHandler.getLiquid("glue").withAmount(288), 100, 16)
+                LiquidBracketHandler.getLiquid("glue").withAmount(288), 100, VoltageLevels.LLV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EMT:EMTItems", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0),
                 LiquidBracketHandler.getLiquid("molten.rubber").withAmount(576), 100, VoltageLevels.LV)
@@ -2327,8 +2327,8 @@ class Emt : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2880).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32307).amount(0), 100, VoltageLevels.LV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 826).amount(22)),
-                ItemBracketHandler.getItem("Thaumcraft:ItemNugget", 21), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("Thaumcraft:ItemNugget", 21), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2880).amount(4)),
-                ItemBracketHandler.getItem("EMT:EMTItems", 10), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("EMT:EMTItems", 10), intArrayOf(10000), 300, VoltageLevels.LULV)
     }
 }

@@ -290,22 +290,22 @@ class BiblioCraft : Runnable {
                                 ItemBracketHandler.getItem("minecraft:paper", 0))), null)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470),
-                LiquidBracketHandler.getLiquid("water").withAmount(3), 50, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(3), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(2), 50, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(2), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0).amount(4), null,
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingBoard", 0).amount(4), null,
                 ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(2), 50, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(2), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingBoard", 0).amount(4), null,
                 ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(1), 50, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(1), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("BiblioCraft:item.FramingBoard", 0).amount(4), null,
                 ItemBracketHandler.getItem("BiblioCraft:item.FramingSheet", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, VoltageLevels.ULV)
 
     }
 

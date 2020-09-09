@@ -242,11 +242,11 @@ class JABBA : Runnable {
         Assembler.addRecipe(item35, item34.amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 900, VoltageLevels.LV)
         Assembler.addRecipe(item36, item35.amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, VoltageLevels.LMV)
         Assembler.addRecipe(item37, item36.amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 400, VoltageLevels.MV)
         Assembler.addRecipe(item38, item37.amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 200, 256)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 200, VoltageLevels.LHV)
         Assembler.addRecipe(item39, item38.amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 150,  VoltageLevels.HV)
     }

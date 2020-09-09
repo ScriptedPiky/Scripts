@@ -3772,25 +3772,25 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("Forestry:canBiomass", 0), 8)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("Forestry:beeswax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("Forestry:refractoryWax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 0).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 1).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("MagicBees:wax", 2).amount(9),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 200, VoltageLevels.LLV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Forestry:letters", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2896).amount(6), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2896).amount(6), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:alveary", 0),
                 ItemBracketHandler.getItem("Forestry:impregnatedCasing", 0),
-                ItemBracketHandler.getItem("Forestry:craftingMaterial", 6).amount(8), 1200, 64)
+                ItemBracketHandler.getItem("Forestry:craftingMaterial", 6).amount(8), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockcasings", 1),
                 OreBracketHandler.getOre("itemCasingBronze").amount(4), 800, VoltageLevels.LV)
@@ -3799,40 +3799,40 @@ class Forestry : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(8), 1200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:engine", 1),
                 ItemBracketHandler.getItem("dreamcraft:item.EngineCore", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(10), 800, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(10), 800, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:engine", 2),
                 ItemBracketHandler.getItem("dreamcraft:item.EngineCore", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17300).amount(10), 800, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:engine", 4),
                 ItemBracketHandler.getItem("dreamcraft:item.EngineCore", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17304).amount(10), 800, 48)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17304).amount(10), 800, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:canEmpty", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17057).amount(2),
-                ItemBracketHandler.getItem("minecraft:glass_pane", 0), 120, 8)
+                ItemBracketHandler.getItem("minecraft:glass_pane", 0), 120, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:apiaristHelmet", 0),
                 ItemBracketHandler.getItem("Forestry:craftingMaterial", 3).amount(5),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 5).amount(0), 1200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 5).amount(0), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:apiaristChest", 0),
                 ItemBracketHandler.getItem("Forestry:craftingMaterial", 3).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 1200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:apiaristLegs", 0),
                 ItemBracketHandler.getItem("Forestry:craftingMaterial", 3).amount(7),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 7).amount(0), 1200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 7).amount(0), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:apiaristBoots", 0),
                 ItemBracketHandler.getItem("Forestry:craftingMaterial", 3).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 1200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:cart.beehouse", 0),
                 ItemBracketHandler.getItem("Forestry:apiculture", 2),
-                ItemBracketHandler.getItem("minecraft:minecart", 0), 200, 16)
+                ItemBracketHandler.getItem("minecraft:minecart", 0), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Forestry:cart.beehouse", 1),
                 ItemBracketHandler.getItem("Forestry:apiculture", 0),
-                ItemBracketHandler.getItem("minecraft:minecart", 0), 200, 16)
+                ItemBracketHandler.getItem("minecraft:minecart", 0), 200, VoltageLevels.LLV)
         gttweaker.mods.gregtech.machines.Centrifuge.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("Forestry:propolis", 0)), null,
-                ItemBracketHandler.getItem("BiomesOPlenty:hive", 1), null, null, intArrayOf(500), 400, 40)
+                ItemBracketHandler.getItem("BiomesOPlenty:hive", 1), null, null, intArrayOf(500), 400, VoltageLevels.LMV)
         FluidSolidifier.addRecipe(ItemBracketHandler.getItem("Forestry:honeyDrop", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32309).amount(0),
-                LiquidBracketHandler.getLiquid("for.honey").withAmount(200), 400, 8)
+                LiquidBracketHandler.getLiquid("for.honey").withAmount(200), 400, VoltageLevels.ULV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("Forestry:waxCast", 0),
                 ItemBracketHandler.getItem("Forestry:beeswax", 0).amount(9),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 100, VoltageLevels.LV)

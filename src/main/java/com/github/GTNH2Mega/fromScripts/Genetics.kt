@@ -180,7 +180,7 @@ class Genetics : Runnable {
                 OreBracketHandler.getOre("itemCasingAluminium").amount(8), 1200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 8),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(6),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 6).amount(0), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 6).amount(0), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 5),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0),
@@ -188,27 +188,27 @@ class Genetics : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 6),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0),
-                LiquidBracketHandler.getLiquid("molten.gold").withAmount(144), 200, 48)
+                LiquidBracketHandler.getLiquid("molten.gold").withAmount(144), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 7),
                 ItemBracketHandler.getItem("Genetics:misc", 6).amount(10),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 10).amount(0),
-                LiquidBracketHandler.getLiquid("molten.gold").withAmount(576), 200, 96)
+                LiquidBracketHandler.getLiquid("molten.gold").withAmount(576), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 9),
                 ItemBracketHandler.getItem("Forestry:chipsets", 1),
                 ItemBracketHandler.getItem("IC2:itemPartCircuitAdv", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.stainlesssteel").withAmount(64), 400, 64)
+                LiquidBracketHandler.getLiquid("molten.stainlesssteel").withAmount(64), 400, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 9),
                 ItemBracketHandler.getItem("Forestry:chipsets", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32082).amount(2),
-                LiquidBracketHandler.getLiquid("molten.stainlesssteel").withAmount(64), 400, 64)
+                LiquidBracketHandler.getLiquid("molten.stainlesssteel").withAmount(64), 400, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 9),
                 ItemBracketHandler.getItem("Forestry:chipsets", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32703).amount(2),
-                LiquidBracketHandler.getLiquid("molten.stainlesssteel").withAmount(64), 400, 64)
+                LiquidBracketHandler.getLiquid("molten.stainlesssteel").withAmount(64), 400, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 11),
                 ItemBracketHandler.getItem("Forestry:hardenedMachine", 0),
                 ItemBracketHandler.getItem("Genetics:misc", 9).amount(8),
-                LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(288), 1500, 256)
+                LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(288), 1500, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Genetics:misc", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.03", 32104),
                 ItemBracketHandler.getItem("Genetics:misc", 9).amount(8),

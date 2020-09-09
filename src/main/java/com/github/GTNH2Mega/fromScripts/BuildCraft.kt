@@ -450,15 +450,15 @@ class BuildCraft : Runnable {
                                 OreBracketHandler.getOre("ingotStainlessSteel"))), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Core:engineBlock", 2),
                 ItemBracketHandler.getItem("dreamcraft:item.EngineCore", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17302).amount(10), 800, 256)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17302).amount(10), 800, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis", 0),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1),
                 ItemBracketHandler.getItem("Forestry:propolis", 0).amount(2),
-                LiquidBracketHandler.getLiquid("for.honey").withAmount(400), 300, 48)
+                LiquidBracketHandler.getLiquid("for.honey").withAmount(400), 300, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Compat:item.buildcraftPipe.pipeitemspropolis", 0),
                 ItemBracketHandler.getItem("ProjRed|Transportation:projectred.transportation.pipe", 1),
                 ItemBracketHandler.getItem("Forestry:propolis", 0).amount(2),
-                LiquidBracketHandler.getLiquid("honey").withAmount(400), 300, 48)
+                LiquidBracketHandler.getLiquid("honey").withAmount(400), 300, VoltageLevels.LMV)
         Assembler.addRecipe(item30, ItemBracketHandler.getItem("minecraft:redstone_torch", 0),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30), 100, VoltageLevels.MV)
         Assembler.addRecipe(item29, ItemBracketHandler.getItem("minecraft:redstone_torch", 0),
@@ -471,12 +471,12 @@ class BuildCraft : Runnable {
                 LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
                 ItemBracketHandler.getItem("Railcraft:glass", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, VoltageLevels.ULV)
 
         //TODO Replace ("ExtraUtilities:decorativeBlock2", 5)
         //Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
         //        ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5),
-        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, 8)
+        //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 100, VoltageLevels.ULV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("BuildCraft|Robotics:redstone_board", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),

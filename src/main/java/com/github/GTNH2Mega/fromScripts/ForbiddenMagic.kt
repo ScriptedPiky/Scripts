@@ -49,7 +49,7 @@ class ForbiddenMagic : Runnable {
         Infusion.removeRecipe(ItemBracketHandler.getItem("ForbiddenMagic:WandCaps", 0))
         MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("ForbiddenMagic:FMResource", 1).amount(2), null)
         Centrifuge.addRecipe(arrayOf(ItemBracketHandler.getItem("ForbiddenMagic:FMResource", 0).amount(9)),
-                ItemBracketHandler.getItem("minecraft:emerald", 0), 0, 1200)
+                ItemBracketHandler.getItem("minecraft:emerald", 0), 0, VoltageLevels.LEV)
         Groups.addGroup("netherstar")
         Groups.addVariation("netherstar", ItemBracketHandler.getItem("ForbiddenMagic:StarBlock", 0))
         Groups.addVariation("netherstar", ItemBracketHandler.getItem("gregtech:gt.blockgem3", 3))
@@ -511,7 +511,7 @@ class ForbiddenMagic : Runnable {
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32414).amount(2),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("ForbiddenMagic:InkFlower", 0)), null)
         Extractor.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32414).amount(2),
-                ItemBracketHandler.getItem("ForbiddenMagic:InkFlower", 0), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("ForbiddenMagic:InkFlower", 0), 300, VoltageLevels.LULV)
         NEI.hide(ItemBracketHandler.getItem("ForbiddenMagic:FMResource", 1))
     }
 }

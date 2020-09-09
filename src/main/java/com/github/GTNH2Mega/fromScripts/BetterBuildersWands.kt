@@ -48,7 +48,7 @@ class BetterBuildersWands : Runnable {
         //val item3 = ItemBracketHandler.getItem("TGregworks:tGregToolPartLargePlate", 1594)
         //val hashMap2 = HashMap<String, IData>()
         //hashMap2["material"] = ExpandString.asData("Diamond")
-        //Assembler.addRecipe(item, withTag, item3.withTag(ExpandAnyDict.asData(hashMap2)), 600, 64)
+        //Assembler.addRecipe(item, withTag, item3.withTag(ExpandAnyDict.asData(hashMap2)), 600, VoltageLevels.LMV)
 
         //TODO Replace ("ExtraUtilities:builderswand", 0)
         //Assembler.addRecipe(ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 4),
@@ -58,7 +58,7 @@ class BetterBuildersWands : Runnable {
         //TODO Replace ("TConstruct:heavyPlate", 314)
         //Assembler.addRecipe(ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 5),
         //        ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 4),
-        //        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314), 600, 256)
+        //        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314), 600, VoltageLevels.LHV)
         //Assembler.addRecipe(ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 6),
         //        ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 5),
         //        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314).amount(2), 600,  VoltageLevels.HV)
@@ -66,7 +66,7 @@ class BetterBuildersWands : Runnable {
         //TODO Replace ("ExtraUtilities:builderswand", 0)
         //Assembler.addRecipe(ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 12),
         //        ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 6),
-        //        ItemBracketHandler.getItem("ExtraUtilities:creativebuilderswand", 0), 600, 1024)
+        //        ItemBracketHandler.getItem("ExtraUtilities:creativebuilderswand", 0), 600, VoltageLevels.LEV)
 
         //TODO Replace ("TConstruct:heavyPlate", 314)
         //Assembler.addRecipe(ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 13),
@@ -74,6 +74,6 @@ class BetterBuildersWands : Runnable {
         //        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314).amount(4), 600, VoltageLevels.EV)
         //Assembler.addRecipe(ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 14),
         //        ItemBracketHandler.getItem("betterbuilderswands:wandUnbreakable", 13),
-        //        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314).amount(8), 600, 4096)
+        //        ItemBracketHandler.getItem("TConstruct:heavyPlate", 314).amount(8), 600, VoltageLevels.LIV)
     }
 }

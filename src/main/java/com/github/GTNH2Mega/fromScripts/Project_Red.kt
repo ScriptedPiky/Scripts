@@ -956,7 +956,7 @@ class Project_Red : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 1),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, 16)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 2),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 1),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0), 300, VoltageLevels.LV)
@@ -980,15 +980,15 @@ class Project_Red : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24512), 500, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 9),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 2).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23874).amount(4), 300, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23874).amount(4), 300, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.datacard", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 20879),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(288), 200, 16)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(288), 200, VoltageLevels.LLV)
         Assembler.addRecipe(
                 ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.electric_screwdriver", 0),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.screwdriver", 0),
-                ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.battery", 0), 100, 16)
+                ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.battery", 0), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(5), 300, VoltageLevels.LV)
@@ -1049,7 +1049,7 @@ class Project_Red : Runnable {
                 LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 600, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.plan", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 18879),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 100, VoltageLevels.ULV)
         CircuitAssembler.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 44).amount(4),
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0).amount(4),
                         OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("wireGt01Gold").amount(6)),
@@ -1259,31 +1259,31 @@ class Project_Red : Runnable {
                 LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 900, VoltageLevels.LV)
         Canner.addRecipe(ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.emptybattery", 0),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 56).amount(6),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32500), 100, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32500), 100, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 15).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 14).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 13).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 12).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 11).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 10).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 9).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
@@ -1292,19 +1292,19 @@ class Project_Red : Runnable {
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 8).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 7).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 6).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 5).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 4).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
@@ -1313,43 +1313,43 @@ class Project_Red : Runnable {
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 3).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 2).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 1).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 33).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 32).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 31).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 30).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 29).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 28).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 27).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 26).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
@@ -1358,19 +1358,19 @@ class Project_Red : Runnable {
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 25).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 24).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 23).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 22).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 21).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
@@ -1379,15 +1379,15 @@ class Project_Red : Runnable {
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 20).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 19).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 18).amount(8)),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 17).amount(8),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(288), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(288), intArrayOf(10000), 200, VoltageLevels.LULV)
         Compressor.addRecipe(ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.stone", 11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2812).amount(9))
         Compressor.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 55),
@@ -1427,275 +1427,275 @@ class Project_Red : Runnable {
                         ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 56).amount(8)), 400, VoltageLevels.LV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 19),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 15).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 15).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 19),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 8).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 8).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 19),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("ExtraBees:misc", 23).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("ExtraBees:misc", 23).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 19),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 77).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 77).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 19),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32429).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32429).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 19),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 0).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 14).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 14).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32428).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32428).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 1).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 20),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 51).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 51).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 21),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 13).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 13).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 21),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 40).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 40).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 21),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 2).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 21),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32427).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32427).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 22),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 12).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 12).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 22),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 22).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 22).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 22),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 3).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 22),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32426).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32426).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 23),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 11).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 11).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 23),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("ExtraBees:misc", 20).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("ExtraBees:misc", 20).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 23),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 78).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 78).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 23),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 4).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 23),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32425).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32425).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 10).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 10).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 38).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 38).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 5).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 24),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32424).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32424).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 25),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 9).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 9).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 25),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 29).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 29).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 25),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 6).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 25),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32423).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32423).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 26),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 8).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 8).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 26),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 10).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 10).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 26),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32422).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32422).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 26),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 7).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 27),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 7).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 7).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 27),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 8).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 27),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32421).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32421).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 27),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 35).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 35).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 6).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 6).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 8).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 8).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32420).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32420).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 28),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 9).amount(2)),
                 50, 8)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 29),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 5).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 5).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 29),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 20).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 20).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 29),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 10).amount(
-                                2)), 50, 8)
+                                2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 29),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32419).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32419).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 4).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 4).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 5).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 5).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("ExtraBees:misc", 21).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("ExtraBees:misc", 21).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 24).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 24).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 11).amount(
-                                2)), 50, 8)
+                                2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32418).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32418).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 30),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32410).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32410).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 31),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 6).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 6).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 31),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("ExtraBees:misc", 25).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("ExtraBees:misc", 25).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 31),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 3).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 3).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 31),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 65).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 65).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 31),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32417).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32417).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 31),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 12).amount(
-                                2)), 50, 8)
+                                2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 2).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 2).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 7).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 7).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("ExtraBees:misc", 22).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("ExtraBees:misc", 22).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 28).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 28).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 13).amount(
-                                2)), 50, 8)
+                                2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 32),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32416).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32416).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 33),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 1).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 1).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 33),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("ExtraBees:misc", 19).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("ExtraBees:misc", 19).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 33),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 59).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 59).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 33),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 14).amount(
-                                2)), 50, 8)
+                                2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 33),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32415).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32415).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 34),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("minecraft:dye", 0).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 0).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 34),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 9).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("BiomesOPlenty:misc", 9).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 34),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("ExtraBees:misc", 24).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("ExtraBees:misc", 24).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 34),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("Botany:pigment", 1).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("Botany:pigment", 1).amount(2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 34),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
                         ItemBracketHandler.getItem("ProjRed|Exploration:projectred.exploration.lilyseed", 15).amount(
-                                2)), 50, 8)
+                                2)), 50, VoltageLevels.ULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 34),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(2),
-                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32414).amount(2)), 50, 8)
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32414).amount(2)), 50, VoltageLevels.ULV)
         Packer.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880), 100, VoltageLevels.ULV)
         Packer.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17635), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17635), 100, VoltageLevels.ULV)
         Packer.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16),
                 ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17471), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17471), 100, VoltageLevels.ULV)
         Packer.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 34),
                 ItemBracketHandler.getItem("dreamcraft:item.ElectrotineWire", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880), 100, VoltageLevels.ULV)
         Packer.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 34),
                 ItemBracketHandler.getItem("dreamcraft:item.ElectrotineWire", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17635), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17635), 100, VoltageLevels.ULV)
         Packer.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 34),
                 ItemBracketHandler.getItem("dreamcraft:item.ElectrotineWire", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17471), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17471), 100, VoltageLevels.ULV)
         Unpacker.addRecipe(ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880),
-                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16), 100, 8)
+                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 16), 100, VoltageLevels.ULV)
         Unpacker.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ElectrotineWire", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880),
-                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 34), 100, 8)
+                ItemBracketHandler.getItem("ProjRed|Transmission:projectred.transmission.wire", 34), 100, VoltageLevels.ULV)
         Groups.addVariation("ruby", ItemBracketHandler.getItem("BiomesOPlenty:gemOre", 3))
         Groups.addVariation("ruby", ItemBracketHandler.getItem("gregtech:gt.blockgem1", 9))
         Groups.addVariation("ruby", ItemBracketHandler.getItem("gregtech:gt.blockgem2", 11))

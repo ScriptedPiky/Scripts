@@ -1114,252 +1114,252 @@ class Galacticraft : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(6)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(4000), intArrayOf(10000, 10000, 10000, 10000), 2400,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(41),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(6)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 1),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(4000), intArrayOf(10000, 10000, 10000, 10000), 2400,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(41),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(6)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 2),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(4000), intArrayOf(10000, 10000, 10000, 10000), 2400,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(41),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(6)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(4000), intArrayOf(10000, 10000, 10000, 10000), 2400,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(37),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(32),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(12)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 3600,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(37),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(32),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(12)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 1),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 3600,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(37),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(32),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(12)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 2),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 3600,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(37),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(32),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(12)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 3600,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(12),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(40),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(52)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(8000), intArrayOf(10000, 10000, 10000, 10000), 4800,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(12),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(40),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(52)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 1),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(8000), intArrayOf(10000, 10000, 10000, 10000), 4800,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(12),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(40),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(52)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 2),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(8000), intArrayOf(10000, 10000, 10000, 10000), 4800,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(12),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(40),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(52)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(8000), intArrayOf(10000, 10000, 10000, 10000), 4800,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(64),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(8)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(10000), intArrayOf(10000, 10000, 10000, 10000),
-                6000, 30)
+                6000, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(64),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(8)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 1),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(10000), intArrayOf(10000, 10000, 10000, 10000),
-                6000, 30)
+                6000, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(64),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(8)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 2),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(10000), intArrayOf(10000, 10000, 10000, 10000),
-                6000, 30)
+                6000, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(14),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(64),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(8)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(10000), intArrayOf(10000, 10000, 10000, 10000),
-                6000, 30)
+                6000, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(12),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(62),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(64)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(12000), intArrayOf(10000, 10000, 10000, 10000),
-                7200, 30)
+                7200, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(12),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(62),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(64)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 1),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(12000), intArrayOf(10000, 10000, 10000, 10000),
-                7200, 30)
+                7200, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(12),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(62),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(64)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 2),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(12000), intArrayOf(10000, 10000, 10000, 10000),
-                7200, 30)
+                7200, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(12),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(62),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(64)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(12000), intArrayOf(10000, 10000, 10000, 10000),
-                7200, 30)
+                7200, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(18),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(50)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(14000), intArrayOf(10000, 10000, 10000, 10000),
-                8400, 30)
+                8400, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(18),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(50)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 1),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(14000), intArrayOf(10000, 10000, 10000, 10000),
-                8400, 30)
+                8400, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(18),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(50)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 2),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(14000), intArrayOf(10000, 10000, 10000, 10000),
-                8400, 30)
+                8400, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(18),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(50)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(14000), intArrayOf(10000, 10000, 10000, 10000),
-                8400, 30)
+                8400, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT8", 0).amount(18),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(53),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(20)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(16000), intArrayOf(10000, 10000, 10000, 10000),
-                9600, 30)
+                9600, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT8", 0).amount(18),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(53),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(20)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 1),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(16000), intArrayOf(10000, 10000, 10000, 10000),
-                9600, 30)
+                9600, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT8", 0).amount(18),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(53),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(20)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 2),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(16000), intArrayOf(10000, 10000, 10000, 10000),
-                9600, 30)
+                9600, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT8", 0).amount(18),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(53),
                 ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(20)),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(16000), intArrayOf(10000, 10000, 10000, 10000),
-                9600, 30)
+                9600, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(24),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(40),
                 ItemBracketHandler.getItem("minecraft:diamond", 0).amount(4)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 11),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(4000), intArrayOf(10000, 10000, 10000, 10000), 2400,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(24),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(40),
                 ItemBracketHandler.getItem("minecraft:diamond", 0).amount(4)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 12),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(4000), intArrayOf(10000, 10000, 10000, 10000), 2400,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(24),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(40),
                 ItemBracketHandler.getItem("minecraft:diamond", 0).amount(4)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 13),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(4000), intArrayOf(10000, 10000, 10000, 10000), 2400,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11028).amount(10)),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemAstroMiner", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 3600,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(21),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11306).amount(4)),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 1200,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(28),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11306).amount(4)),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 1200,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(35),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11306).amount(4)),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 2),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 1200,
-                30)
+                VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(42),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11306).amount(4)),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 3),
                 LiquidBracketHandler.getLiquid("oxygen").withAmount(6000), intArrayOf(10000, 10000, 10000, 10000), 1200,
-                30)
+                VoltageLevels.LV)
 
         //TODO Replace ("harvestcraft:wovencottonItem", 0)
         //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7),
@@ -1371,44 +1371,44 @@ class Galacticraft : Runnable {
 
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:tile.glowstoneTorch", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23010),
-                ItemBracketHandler.getItem("minecraft:glowstone_dust", 0), 100, 16)
+                ItemBracketHandler.getItem("minecraft:glowstone_dust", 0), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.oilCanisterPartial", 1001),
                 ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 9).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28305).amount(4), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28305).amount(4), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:tile.hydrogenPipe", 0), item3,
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28035).amount(4), 400, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28035).amount(4), 400, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.thermalPadding", 0), arrayOf<IIngredient>(
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7).amount(5),
                 ItemBracketHandler.getItem("dreamcraft:item.MeteoricIronString", 0).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 5).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(720), 750, 1024)
+                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(720), 750, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7).amount(5),
                 ItemBracketHandler.getItem("GalacticraftMars:item.thermalPadding", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 180, 256)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 180, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.thermalPadding", 1), arrayOf<IIngredient>(
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7).amount(8),
                 ItemBracketHandler.getItem("dreamcraft:item.MeteoricIronString", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(1152), 1200, 1024)
+                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(1152), 1200, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7).amount(8),
                 ItemBracketHandler.getItem("GalacticraftMars:item.thermalPadding", 1),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 300, 256)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 300, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.thermalPadding", 2), arrayOf<IIngredient>(
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7).amount(7),
                 ItemBracketHandler.getItem("dreamcraft:item.MeteoricIronString", 0).amount(7),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 7).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(1008), 1050, 1024)
+                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(1008), 1050, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7).amount(7),
                 ItemBracketHandler.getItem("GalacticraftMars:item.thermalPadding", 2),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 260, 256)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 260, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.thermalPadding", 3), arrayOf<IIngredient>(
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7).amount(4),
                 ItemBracketHandler.getItem("dreamcraft:item.MeteoricIronString", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(576), 600, 1024)
+                LiquidBracketHandler.getLiquid("molten.silicone").withAmount(576), 600, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 7).amount(4),
                 ItemBracketHandler.getItem("GalacticraftMars:item.thermalPadding", 3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 150, 256)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 150, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.oxygenMask", 0),
                 ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassPlate", 0).amount(16),
@@ -1443,13 +1443,13 @@ class Galacticraft : Runnable {
                 100, 480)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 1),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
-                OreBracketHandler.getOre("chestCopper"), 100, 1024)
+                OreBracketHandler.getOre("chestCopper"), 100, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 2),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
-                OreBracketHandler.getOre("chestIron"), 100, 1024)
+                OreBracketHandler.getOre("chestIron"), 100, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 3),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
-                OreBracketHandler.getOre("chestGold"), 100, 1024)
+                OreBracketHandler.getOre("chestGold"), 100, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 1),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
                 OreBracketHandler.getOre("chestCopper"), 100, VoltageLevels.EV)
@@ -1480,16 +1480,16 @@ class Galacticraft : Runnable {
                 1000)
         Canner.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 15),
                 ItemBracketHandler.getItem("minecraft:apple", 0).amount(6),
-                ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0), 800, 1)
+                ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0), 800, VoltageLevels.LULV)
         Canner.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 16),
                 ItemBracketHandler.getItem("minecraft:carrot", 0).amount(8),
-                ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0), 800, 1)
+                ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0), 800, VoltageLevels.LULV)
         Canner.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 17),
                 ItemBracketHandler.getItem("minecraft:melon", 0).amount(8),
-                ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0), 800, 1)
+                ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0), 800, VoltageLevels.LULV)
         Canner.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 18),
                 ItemBracketHandler.getItem("minecraft:potato", 0).amount(16),
-                ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0), 800, 1)
+                ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0), 800, VoltageLevels.LULV)
         Compressor.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:tile.gcBlockCore", 12),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(9))
         Compressor.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:tile.moonBlock", 2),
@@ -1508,25 +1508,25 @@ class Galacticraft : Runnable {
                 ItemBracketHandler.getItem("GalacticraftCore:item.fuelCanisterPartial", 1001), null,
                 LiquidBracketHandler.getLiquid("fuel").withAmount(1000))
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2340).amount(9)),
-                ItemBracketHandler.getItem("GalacticraftCore:tile.gcBlockCore", 12), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalacticraftCore:tile.gcBlockCore", 12), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2884)),
-                ItemBracketHandler.getItem("GalacticraftMars:item.null", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalacticraftMars:item.null", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalacticraftMars:item.null", 0).amount(2)),
-                ItemBracketHandler.getItem("GalacticraftMars:tile.mars", 2), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalacticraftMars:tile.mars", 2), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalacticraftCore:item.meteoricIronRaw", 0).amount(2)),
-                ItemBracketHandler.getItem("GalacticraftCore:tile.fallenMeteor", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalacticraftCore:tile.fallenMeteor", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 4).amount(2)),
-                ItemBracketHandler.getItem("GalacticraftMars:tile.asteroidsBlock", 4), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalacticraftMars:tile.asteroidsBlock", 4), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2020)),
-                ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 2), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 2), intArrayOf(10000), 300, VoltageLevels.LULV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(20),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64)),
                 LiquidBracketHandler.getLiquid("nitrogen").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 0),
                 LiquidBracketHandler.getLiquid("plasma.nitrogen").withAmount(8), intArrayOf(10000, 10000, 10000), 65,
-                30)
+                VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(20),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64)),
@@ -1539,7 +1539,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("nitrogen").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 1),
                 LiquidBracketHandler.getLiquid("plasma.nitrogen").withAmount(8), intArrayOf(10000, 10000, 10000), 65,
-                30)
+                VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(20),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64)),
@@ -1552,7 +1552,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("nitrogen").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 2),
                 LiquidBracketHandler.getLiquid("plasma.nitrogen").withAmount(8), intArrayOf(10000, 10000, 10000), 65,
-                30)
+                VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(20),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64)),
@@ -1565,7 +1565,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("nitrogen").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 3),
                 LiquidBracketHandler.getLiquid("plasma.nitrogen").withAmount(8), intArrayOf(10000, 10000, 10000), 65,
-                30)
+                VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(20),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64)),
@@ -1587,7 +1587,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(6),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(6), intArrayOf(10000, 10000, 10000, 10000),
-                130, 30)
+                130, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(41),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64),
@@ -1603,7 +1603,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(6),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 1),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(6), intArrayOf(10000, 10000, 10000, 10000),
-                130, 30)
+                130, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(41),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64),
@@ -1619,7 +1619,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(6),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 2),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(6), intArrayOf(10000, 10000, 10000, 10000),
-                130, 30)
+                130, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(41),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(64),
@@ -1635,7 +1635,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(6),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 3),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(6), intArrayOf(10000, 10000, 10000, 10000),
-                130, 30)
+                130, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(37),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(32),
@@ -1651,7 +1651,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                200, 30)
+                200, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(37),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(32),
@@ -1667,7 +1667,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 1),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                200, 30)
+                200, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(37),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(32),
@@ -1683,7 +1683,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 2),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                200, 30)
+                200, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(37),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(32),
@@ -1699,7 +1699,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 3),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                200, 30)
+                200, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(12),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(40),
@@ -1717,7 +1717,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(11),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(11), intArrayOf(10000, 10000, 10000, 10000),
-                266, 30)
+                266, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(12),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(40),
@@ -1735,7 +1735,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(11),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 1),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(11), intArrayOf(10000, 10000, 10000, 10000),
-                266, 30)
+                266, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(12),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(40),
@@ -1753,7 +1753,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(11),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 2),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(11), intArrayOf(10000, 10000, 10000, 10000),
-                266, 30)
+                266, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(12),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(40),
@@ -1771,7 +1771,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(11),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier4Rocket", 3),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(11), intArrayOf(10000, 10000, 10000, 10000),
-                266, 30)
+                266, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(14),
@@ -1789,7 +1789,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(14),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(14), intArrayOf(10000, 10000, 10000, 10000),
-                333, 30)
+                333, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(14),
@@ -1807,7 +1807,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(14),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 1),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(14), intArrayOf(10000, 10000, 10000, 10000),
-                333, 30)
+                333, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(14),
@@ -1825,7 +1825,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(14),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 2),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(14), intArrayOf(10000, 10000, 10000, 10000),
-                333, 30)
+                333, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(64),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT4", 0).amount(14),
@@ -1843,7 +1843,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(14),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier5Rocket", 3),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(14), intArrayOf(10000, 10000, 10000, 10000),
-                333, 30)
+                333, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(12),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(62),
@@ -1861,7 +1861,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(17),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(17), intArrayOf(10000, 10000, 10000, 10000),
-                400, 30)
+                400, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(12),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(62),
@@ -1879,7 +1879,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(17),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 1),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(17), intArrayOf(10000, 10000, 10000, 10000),
-                400, 30)
+                400, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(12),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(62),
@@ -1897,7 +1897,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(17),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 2),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(17), intArrayOf(10000, 10000, 10000, 10000),
-                400, 30)
+                400, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(12),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT5", 0).amount(62),
@@ -1915,7 +1915,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(17),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier6Rocket", 3),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(17), intArrayOf(10000, 10000, 10000, 10000),
-                400, 30)
+                400, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(18),
@@ -1933,7 +1933,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(19),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(19), intArrayOf(10000, 10000, 10000, 10000),
-                466, 30)
+                466, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(18),
@@ -1951,7 +1951,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(19),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 1),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(19), intArrayOf(10000, 10000, 10000, 10000),
-                466, 30)
+                466, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(18),
@@ -1969,7 +1969,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(19),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 2),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(19), intArrayOf(10000, 10000, 10000, 10000),
-                466, 30)
+                466, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT6", 0).amount(18),
@@ -1987,7 +1987,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(19),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier7Rocket", 3),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(19), intArrayOf(10000, 10000, 10000, 10000),
-                466, 30)
+                466, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT8", 0).amount(18),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
@@ -2005,7 +2005,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(22),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(22), intArrayOf(10000, 10000, 10000, 10000),
-                533, 30)
+                533, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT8", 0).amount(18),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
@@ -2023,7 +2023,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(22),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 1),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(22), intArrayOf(10000, 10000, 10000, 10000),
-                533, 30)
+                533, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT8", 0).amount(18),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
@@ -2041,7 +2041,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(22),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 2),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(22), intArrayOf(10000, 10000, 10000, 10000),
-                533, 30)
+                533, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(
                 arrayOf(ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT8", 0).amount(18),
                         ItemBracketHandler.getItem("dreamcraft:item.HeavyDutyAlloyIngotT7", 0).amount(64),
@@ -2059,7 +2059,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(22),
                 ItemBracketHandler.getItem("GalaxySpace:item.Tier8Rocket", 3),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(22), intArrayOf(10000, 10000, 10000, 10000),
-                533, 30)
+                533, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(24),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(40),
@@ -2075,7 +2075,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(6),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 11),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(6), intArrayOf(10000, 10000, 10000, 10000),
-                130, 30)
+                130, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(24),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(40),
@@ -2091,7 +2091,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(6),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 12),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(6), intArrayOf(10000, 10000, 10000, 10000),
-                130, 30)
+                130, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(24),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(40),
@@ -2107,7 +2107,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(6),
                 ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 13),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(6), intArrayOf(10000, 10000, 10000, 10000),
-                130, 30)
+                130, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32464).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32463).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(3),
@@ -2123,7 +2123,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftMars:item.itemAstroMiner", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                200, 30)
+                200, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(21),
@@ -2131,7 +2131,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("nitrogen").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0),
                 LiquidBracketHandler.getLiquid("plasma.nitrogen").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                65, 30)
+                65, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(21),
@@ -2139,7 +2139,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(3),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(3), intArrayOf(10000, 10000, 10000, 10000),
-                65, 30)
+                65, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(28),
@@ -2147,7 +2147,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("nitrogen").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
                 LiquidBracketHandler.getLiquid("plasma.nitrogen").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                65, 30)
+                65, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(28),
@@ -2155,7 +2155,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(3),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(3), intArrayOf(10000, 10000, 10000, 10000),
-                65, 30)
+                65, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(35),
@@ -2163,7 +2163,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("nitrogen").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 2),
                 LiquidBracketHandler.getLiquid("plasma.nitrogen").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                65, 30)
+                65, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(35),
@@ -2171,7 +2171,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(3),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 2),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(3), intArrayOf(10000, 10000, 10000, 10000),
-                65, 30)
+                65, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(42),
@@ -2179,7 +2179,7 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("nitrogen").withAmount(8),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 3),
                 LiquidBracketHandler.getLiquid("plasma.nitrogen").withAmount(8), intArrayOf(10000, 10000, 10000, 10000),
-                65, 30)
+                65, VoltageLevels.LV)
         PlasmaArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32462).amount(11),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11340).amount(5),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(42),
@@ -2187,10 +2187,10 @@ class Galacticraft : Runnable {
                 LiquidBracketHandler.getLiquid("argon").withAmount(3),
                 ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 3),
                 LiquidBracketHandler.getLiquid("plasma.argon").withAmount(3), intArrayOf(10000, 10000, 10000, 10000),
-                65, 30)
+                65, VoltageLevels.LV)
         PlateBender.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.canister", 0),
-                ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 7).amount(2), 200, 8)
+                ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 7).amount(2), 200, VoltageLevels.ULV)
         PlateBender.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.canister", 1),
-                ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 6).amount(2), 200, 8)
+                ItemBracketHandler.getItem("GalacticraftCore:item.basicItem", 6).amount(2), 200, VoltageLevels.ULV)
     }
 }

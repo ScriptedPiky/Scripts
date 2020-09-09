@@ -392,79 +392,79 @@ class OpenModularTurrets : Runnable {
                                 OreBracketHandler.getOre("boltIron"), OreBracketHandler.getOre("foilSteel"))), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:fenceTierOne", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:iron_bars", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28305), 100, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28305), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:fenceTierTwo", 0).amount(4),
                 ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28019), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:fenceTierThree", 0).amount(4),
                 ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28306), 100, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28306), 100, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:fenceTierFour", 0).amount(4),
                 ItemBracketHandler.getItem("dreamcraft:item.TungstenSteelBars", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28028), 100, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:fenceTierFive", 0).amount(4),
                 ItemBracketHandler.getItem("dreamcraft:item.IridiumBars", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28316), 100, 256)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28316), 100, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderPowerTierOne", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4905),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32500), 400, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32500), 400, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderPowerTierTwo", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4461),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32501), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderPowerTierThree", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4460),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32502), 400, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32502), 400, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderPowerTierFour", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4462),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32503), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderPowerTierFive", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4463),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32504), 400, 256)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32504), 400, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderInvTierOne", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4905),
-                ItemBracketHandler.getItem("minecraft:chest", 0), 400, 16)
+                ItemBracketHandler.getItem("minecraft:chest", 0), 400, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderInvTierTwo", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4461),
                 ItemBracketHandler.getItem("IronChest:BlockIronChest", 0), 400, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderInvTierThree", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4460),
-                ItemBracketHandler.getItem("IronChest:BlockIronChest", 4), 400, 64)
+                ItemBracketHandler.getItem("IronChest:BlockIronChest", 4), 400, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderInvTierFour", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4462),
                 ItemBracketHandler.getItem("IronChest:BlockIronChest", 2), 400, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:expanderInvTierFive", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4463),
-                ItemBracketHandler.getItem("IronChest:BlockIronChest", 5), 400, 256)
+                ItemBracketHandler.getItem("IronChest:BlockIronChest", 5), 400, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:barrelTierOne", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:barrelTierTwo", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28305).amount(2), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:barrelTierThree", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28306).amount(2), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28306).amount(2), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:barrelTierFour", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17366).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28316).amount(2), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:barrelTierFive", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28084).amount(2), 200, 256)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28084).amount(2), 200, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:chamberTierOne", 0),
                 ItemBracketHandler.getItem("minecraft:piston", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:chamberTierTwo", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24305), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:chamberTierThree", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32641),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24306), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24306), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:chamberTierFour", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32642),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24316), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:chamberTierFive", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32643),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24084), 200, 256)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24084), 200, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:ioBus", 0),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
@@ -476,7 +476,7 @@ class OpenModularTurrets : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:grenadeCraftable", 0).amount(32),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17306).amount(2),
                 ItemBracketHandler.getItem("minecraft:tnt", 0),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(144), 200, 64)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(144), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:rocketCraftable", 0).amount(24),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365).amount(4),
                 ItemBracketHandler.getItem("IC2:blockITNT", 0).amount(3),
@@ -484,7 +484,7 @@ class OpenModularTurrets : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:ferroSlug", 0).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26356),
-                LiquidBracketHandler.getLiquid("molten.tungstensteel").withAmount(144), 200, 256)
+                LiquidBracketHandler.getLiquid("molten.tungstensteel").withAmount(144), 200, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("openmodularturrets:accuraccyUpgradeItem", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365),
                 ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassLense", 0), 100, VoltageLevels.MV)
@@ -523,19 +523,19 @@ class OpenModularTurrets : Runnable {
                 ItemBracketHandler.getItem("openmodularturrets:ioBus", 0).amount(4), 100, VoltageLevels.MV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("openmodularturrets:hardWallTierOne", 0)),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4985),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(144), intArrayOf(10000), 200, 16)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LLV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("openmodularturrets:hardWallTierTwo", 0)),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4461),
                 LiquidBracketHandler.getLiquid("wet.concrete").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("openmodularturrets:hardWallTierThree", 0)),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4460),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(144), intArrayOf(10000), 200, 64)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LMV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("openmodularturrets:hardWallTierFour", 0)),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4462),
                 LiquidBracketHandler.getLiquid("wet.concrete").withAmount(144), intArrayOf(10000), 200, VoltageLevels.MV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("openmodularturrets:hardWallTierFive", 0)),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4463),
-                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(144), intArrayOf(10000), 200, 256)
+                LiquidBracketHandler.getLiquid("wet.concrete").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LHV)
         Mixer.addRecipe(ItemBracketHandler.getItem("openmodularturrets:blazingClayCraftable", 0).amount(32),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2805).amount(4),
                         ItemBracketHandler.getItem("minecraft:redstone", 0).amount(4),

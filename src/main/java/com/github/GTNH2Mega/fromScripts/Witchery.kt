@@ -191,10 +191,10 @@ class Witchery : Runnable {
                 100, 24)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("witchery:ingredient", 7).amount(8), null,
                 ItemBracketHandler.getItem("minecraft:bone", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(16), 100, 24)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(16), 100, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("witchery:ingredient", 7).amount(8), null,
                 ItemBracketHandler.getItem("minecraft:bone", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 50, 24)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(8), 50, VoltageLevels.LV)
         FormingPress.addRecipe(ItemBracketHandler.getItem("witchery:ingredient", 26).amount(4),
                 ItemBracketHandler.getItem("minecraft:clay_ball", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32305).amount(0), 400, VoltageLevels.LV)

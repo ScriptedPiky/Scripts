@@ -1853,13 +1853,13 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("minecraft:coal", 1))
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:brick", 0),
                 ItemBracketHandler.getItem("minecraft:clay_ball", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, VoltageLevels.LULV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:netherbrick", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2807),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 200, VoltageLevels.LULV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:glass", 0),
                 ItemBracketHandler.getItem("BloodArsenal:glass_shard", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 5, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32308).amount(0), 5, VoltageLevels.LMV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("minecraft:iron_helmet", 0),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(5),
                 ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0).amount(0), 200, VoltageLevels.LV)
@@ -1886,85 +1886,85 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("dreamcraft:item.MoldBoots", 0).amount(0), 200, VoltageLevels.LV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:glass", 0).amount(2)),
                 ItemBracketHandler.getItem("minecraft:sand", 1), LiquidBracketHandler.getLiquid("oxygen").withAmount(2),
-                intArrayOf(10000), 20, 256)
+                intArrayOf(10000), 20, VoltageLevels.LHV)
         ArcFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("minecraft:glass", 0).amount(2)),
                 ItemBracketHandler.getItem("minecraft:sand", 0), LiquidBracketHandler.getLiquid("oxygen").withAmount(2),
-                intArrayOf(10000), 20, 256)
+                intArrayOf(10000), 20, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:string", 0),
                 ItemBracketHandler.getItem("Natura:barleyFood", 3).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 200, 24)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:hay_block", 0),
                 ItemBracketHandler.getItem("minecraft:wheat", 0).amount(9),
                 ItemBracketHandler.getItem("minecraft:string", 0).amount(2), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:soul_sand", 0),
                 ItemBracketHandler.getItem("Natura:heatsand", 0),
                 ItemBracketHandler.getItem("Natura:soil.tainted", 0).amount(4),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 100, 16)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:skull", 1),
                 ItemBracketHandler.getItem("MagicBees:miscResources", 4).amount(6),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 6).amount(0),
-                LiquidBracketHandler.getLiquid("molten.thaumium").withAmount(216), 200, 96)
+                LiquidBracketHandler.getLiquid("molten.thaumium").withAmount(216), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(5),
                 ItemBracketHandler.getItem("minecraft:stick", 0), ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE),
-                LiquidBracketHandler.getLiquid("creosote").withAmount(500), 100, 4)
+                LiquidBracketHandler.getLiquid("creosote").withAmount(500), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2536), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2536), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_door", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809).amount(4),
                 ItemBracketHandler.getItem("minecraft:trapdoor", 0),
-                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 400, 4)
+                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 400, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_door", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809).amount(4),
                 ItemBracketHandler.getItem("minecraft:trapdoor", 0),
-                LiquidBracketHandler.getLiquid("molten.copper").withAmount(16), 400, 4)
+                LiquidBracketHandler.getLiquid("molten.copper").withAmount(16), 400, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:iron_door", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(4),
                 ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 400, 8)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 400, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE).amount(4),
-                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE).amount(4),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("BiomesOPlenty:bamboo", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
                 ItemBracketHandler.getItem("BiomesOPlenty:bamboo", 0).amount(4),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, 4)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:piston", 0),
                 ItemBracketHandler.getItem("dreamcraft:tile.PistonBlock", 0),
                 ItemBracketHandler.getItem("dreamcraft:item.PistonPlate", 0), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:bookshelf", 0),
                 ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(6),
-                ItemBracketHandler.getItem("minecraft:book", 0).amount(3), 300, 16)
+                ItemBracketHandler.getItem("minecraft:book", 0).amount(3), 300, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:crafting_table", 0), ore5,
-                ItemBracketHandler.getItem("minecraft:flint", 0).amount(2), 200, 4)
+                ItemBracketHandler.getItem("minecraft:flint", 0).amount(2), 200, VoltageLevels.ULV)
         Assembler.addRecipe(item30, ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
-                ItemBracketHandler.getItem("minecraft:planks", 0).amount(2), 300, 8)
+                ItemBracketHandler.getItem("minecraft:planks", 0).amount(2), 300, VoltageLevels.ULV)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
@@ -2130,20 +2130,20 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("minecraft:stick", 0),
-                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, 16)
+                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE),
-                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, 16)
+                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("BiomesOPlenty:bamboo", 0),
-                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, 16)
+                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("BiomesOPlenty:plants", 8),
-                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, 16)
+                ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032),
-                LiquidBracketHandler.getLiquid("glue").withAmount(16), 100, 16)
+                LiquidBracketHandler.getLiquid("glue").withAmount(16), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
@@ -2151,7 +2151,7 @@ class Minecraft : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:brick_block", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:brick", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
-                LiquidBracketHandler.getLiquid("water").withAmount(500), 300, 16)
+                LiquidBracketHandler.getLiquid("water").withAmount(500), 300, VoltageLevels.LLV)
         Assembler.addRecipe(item140.amount(3), item141, item143, 100, 4)
         Assembler.addRecipe(item140.amount(3), item141, item144, 100, 4)
         Assembler.addRecipe(item140.amount(3), item141, item145, 100, 4)
@@ -2196,16 +2196,16 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item140.amount(3), item142, item163, 100, 4)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:stone_slab", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24032), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0).amount(2),
                 ItemBracketHandler.getItem("minecraft:stone_slab", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 24304), 100, VoltageLevels.ULV)
 
         //TODO Replace ("TConstruct:GlassBlock", 0)
         //gttweaker.mods.gregtech.machines.BlastFurnace.addRecipe(
@@ -2247,22 +2247,22 @@ class Minecraft : Runnable {
                 LiquidBracketHandler.getLiquid("hell_blood").withAmount(1000), intArrayOf(10000, 3000, 5000), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(4), 50, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(4), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 50, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:stone_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(4), 50, 8)
+                LiquidBracketHandler.getLiquid("water").withAmount(4), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:stone_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 50, 8)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 50, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("minecraft:stone_button", 0).amount(2), null,
                 ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, 8)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 25, VoltageLevels.ULV)
         Extractor.addRecipe(ItemBracketHandler.getItem("minecraft:blaze_powder", 0),
                 ItemBracketHandler.getItem("Thaumcraft:blockCustomPlant", 3))
         Extractor.addRecipe(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 3),
@@ -2277,14 +2277,14 @@ class Minecraft : Runnable {
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE).amount(4),
                         ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE),
                         ItemBracketHandler.getItem("MagicBees:wax", 1).amount(4)),
-                LiquidBracketHandler.getLiquid("water").withAmount(1000), 100, 16)
+                LiquidBracketHandler.getLiquid("water").withAmount(1000), 100, VoltageLevels.LLV)
         Mixer.addRecipe(ItemBracketHandler.getItem("minecraft:fire_charge", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:blaze_powder", 0).amount(3),
                         ItemBracketHandler.getItem("minecraft:gunpowder", 0).amount(3),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535).amount(3)), 400, VoltageLevels.LV)
         Slicer.addRecipe(ItemBracketHandler.getItem("minecraft:melon", 0).amount(8),
                 ItemBracketHandler.getItem("minecraft:melon_block", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32398).amount(0), 100, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32398).amount(0), 100, VoltageLevels.ULV)
         MineTweakerAPI.furnace.setFuel(ItemBracketHandler.getItem("minecraft:wooden_pressure_plate", 0), 75)
         NEI.overrideName(ItemBracketHandler.getItem("GalacticraftCore:item.meteoricIronIngot", 1),
                 "Compressed Meteoric Steel Plate")

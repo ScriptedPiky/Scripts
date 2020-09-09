@@ -175,7 +175,7 @@ class RandomThings : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("RandomThings:spectreKey", 0),
                 ItemBracketHandler.getItem("RandomThings:ingredient", 4),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23028),
-                LiquidBracketHandler.getLiquid("bacterialsludge").withAmount(1000), 600, 1024)
+                LiquidBracketHandler.getLiquid("bacterialsludge").withAmount(1000), 600, VoltageLevels.LEV)
         BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("RandomThings:ingredient", 4)),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2032),
                         ItemBracketHandler.getItem("RandomThings:ingredient", 3)), 1200, 480, 2500)

@@ -71,7 +71,7 @@ class FloodLight : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("FloodLights:carbonDissolver", 0),
                 ItemBracketHandler.getItem("minecraft:glass_pane", 0).amount(3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17305).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, 64)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("FloodLights:smallElectricFloodlightMetaBlock", 1),
                 ItemBracketHandler.getItem("FloodLights:electricIncandescentLightBulb", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 28032).amount(2),

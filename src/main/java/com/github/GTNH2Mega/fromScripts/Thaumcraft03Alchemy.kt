@@ -299,9 +299,9 @@ class Thaumcraft03Alchemy : Runnable {
         Compressor.addRecipe(ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 5),
                 ItemBracketHandler.getItem("Thaumcraft:ItemResource", 4).amount(9))
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14)),
-                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("Thaumcraft:ItemShard", 6), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("Thaumcraft:ItemResource", 4).amount(9)),
-                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 5), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("Thaumcraft:blockCosmeticSolid", 5), intArrayOf(10000), 300, VoltageLevels.LULV)
         Research.refreshResearchRecipe("CRUCIBLE")
         Research.refreshResearchRecipe("TALLOW")
         Research.refreshResearchRecipe("NITOR")

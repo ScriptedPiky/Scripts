@@ -77,23 +77,23 @@ class WirelessRedstone : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("WR-CBE|Core:recieverDish", 0),
                 ItemBracketHandler.getItem("WR-CBE|Core:stoneBowl", 0),
                 ItemBracketHandler.getItem("WR-CBE|Core:wirelessTransceiver", 0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(250), 600, 256)
+                LiquidBracketHandler.getLiquid("ender").withAmount(250), 600, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("WR-CBE|Core:blazeRecieverDish", 0),
                 ItemBracketHandler.getItem("WR-CBE|Core:stoneBowl", 0),
                 ItemBracketHandler.getItem("WR-CBE|Core:blazeTransceiver", 0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(250), 600, 256)
+                LiquidBracketHandler.getLiquid("ender").withAmount(250), 600, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 0),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0).amount(3),
                 ItemBracketHandler.getItem("WR-CBE|Core:wirelessTransceiver", 0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(500), 600, 256)
+                LiquidBracketHandler.getLiquid("ender").withAmount(500), 600, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 1),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0).amount(3),
                 ItemBracketHandler.getItem("WR-CBE|Core:recieverDish", 0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(500), 600, 256)
+                LiquidBracketHandler.getLiquid("ender").withAmount(500), 600, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("WR-CBE|Logic:wirelessLogic", 2),
                 ItemBracketHandler.getItem("ProjRed|Core:projectred.core.part", 0).amount(3),
                 ItemBracketHandler.getItem("WR-CBE|Core:blazeTransceiver", 0),
-                LiquidBracketHandler.getLiquid("ender").withAmount(250), 600, 256)
+                LiquidBracketHandler.getLiquid("ender").withAmount(250), 600, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("WR-CBE|Addons:triangulator", 0),
                 ItemBracketHandler.getItem("minecraft:compass", 0),
                 ItemBracketHandler.getItem("WR-CBE|Core:wirelessTransceiver", 0),
@@ -101,7 +101,7 @@ class WirelessRedstone : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("WR-CBE|Addons:map", 0),
                 ItemBracketHandler.getItem("WR-CBE|Addons:triangulator", 0),
                 ItemBracketHandler.getItem("minecraft:paper", 0).amount(8),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 300, 64)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 300, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("WR-CBE|Addons:tracker", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804).amount(3),
                 ItemBracketHandler.getItem("WR-CBE|Core:wirelessTransceiver", 0),

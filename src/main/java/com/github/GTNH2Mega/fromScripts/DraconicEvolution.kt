@@ -1570,11 +1570,11 @@ class DraconicEvolution : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:energyCrystal", 4),
                 ItemBracketHandler.getItem("DraconicEvolution:energyCrystal", 0),
                 ItemBracketHandler.getItem("DraconicEvolution:particleGenerator", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.enderium").withAmount(864), 1200, 1024)
+                LiquidBracketHandler.getLiquid("molten.enderium").withAmount(864), 1200, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:energyCrystal", 5),
                 ItemBracketHandler.getItem("DraconicEvolution:energyCrystal", 1),
                 ItemBracketHandler.getItem("DraconicEvolution:particleGenerator", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.enderium").withAmount(864), 2400, 4096)
+                LiquidBracketHandler.getLiquid("molten.enderium").withAmount(864), 2400, VoltageLevels.LIV)
         Assembler.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:enderArrow", 0),
                 ItemBracketHandler.getItem("minecraft:arrow", 0),
                 ItemBracketHandler.getItem("minecraft:ender_pearl", 0), 200,  VoltageLevels.HV)
@@ -1601,6 +1601,6 @@ class DraconicEvolution : Runnable {
                 ItemBracketHandler.getItem("DraconicEvolution:chaosFragment", 0).amount(9), 2)
         Packer.addRecipe(ItemBracketHandler.getItem("DraconicEvolution:safetyMatch", 0),
                 ItemBracketHandler.getItem("DraconicEvolution:safetyMatch", 1000).amount(16),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 18879), 64, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 18879), 64, VoltageLevels.LLV)
     }
 }

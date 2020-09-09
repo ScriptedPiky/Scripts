@@ -6,7 +6,6 @@ import gttweaker.mods.gregtech.machines.*
 import minetweaker.MineTweakerAPI
 import minetweaker.api.data.IData
 import minetweaker.api.item.IIngredient
-import minetweaker.api.item.IngredientTransform
 import minetweaker.expand.ExpandAnyDict
 import minetweaker.expand.ExpandInt
 import minetweaker.expand.ExpandLong
@@ -1341,15 +1340,15 @@ class IC2 : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:blockGenerator", 3),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32750),
-                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 600, 64)
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(72), 600, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:blockGenerator", 3),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32750),
-                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 600, 64)
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(36), 600, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:blockGenerator", 3),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 10),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32750),
-                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 600, 64)
+                LiquidBracketHandler.getLiquid("molten.lead").withAmount(144), 600, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:blockMachine", 6),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 231),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 431), 1200, VoltageLevels.LV)
@@ -1378,13 +1377,13 @@ class IC2 : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1360).amount(16), 200, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemPartCoalChunk", 0),
                 ItemBracketHandler.getItem("minecraft:coal_block", 0),
-                ItemBracketHandler.getItem("IC2:itemPartCoalBlock", 0).amount(8), 1200, 64)
+                ItemBracketHandler.getItem("IC2:itemPartCoalBlock", 0).amount(8), 1200, VoltageLevels.LMV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemTreetap", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5102).amount(3),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809), 200, 8)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809), 200, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:blockScaffold", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4905),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809), 200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:blockIronScaffold", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4128),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), 300, VoltageLevels.LV)
@@ -1398,11 +1397,11 @@ class IC2 : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemCropnalyzer", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32740),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32702),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(576), 1200, 16)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(576), 1200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemToolMEter", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32740),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0).amount(2),
-                LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(288), 600, 16)
+                LiquidBracketHandler.getLiquid("molten.glowstone").withAmount(288), 600, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("gregtech:gt.reactorUraniumDual", 0),
                 ItemBracketHandler.getItem("gregtech:gt.reactorUraniumSimple", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(4), 200, VoltageLevels.LV)
@@ -1431,11 +1430,11 @@ class IC2 : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemFreq", 0),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1466).amount(2),
-                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 1200, 4)
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(144), 1200, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:upgradeModule", 0),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("IC2:reactorCoolantTriple", 1),
-                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, 16)
+                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:upgradeModule", 1),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("IC2:itemRecipePart", 0).amount(2),
@@ -1443,23 +1442,23 @@ class IC2 : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:upgradeModule", 2),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("IC2:itemBatREDischarged", 0),
-                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, 16)
+                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:upgradeModule", 3),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640),
-                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, 16)
+                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:upgradeModule", 4),
                 ItemBracketHandler.getItem("IC2:upgradeModule", 3),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32610),
-                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, 16)
+                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:upgradeModule", 5),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17308),
-                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, 16)
+                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:upgradeModule", 6),
                 ItemBracketHandler.getItem("IC2:itemPartCircuit", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630),
-                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, 16)
+                LiquidBracketHandler.getLiquid("molten.copper").withAmount(144), 1200, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemArmorHazmatHelmet", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17880).amount(5),
                 ItemBracketHandler.getItem("dreamcraft:item.ReinforcedGlassLense", 0).amount(2),
@@ -1498,14 +1497,14 @@ class IC2 : Runnable {
                 LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(72), 600, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemContainmentbox", 0),
                 ItemBracketHandler.getItem("minecraft:chest", 0), OreBracketHandler.getOre("itemCasingLead").amount(8),
-                300, 120)
+                300, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemToolbox", 0),
                 ItemBracketHandler.getItem("minecraft:chest", 0),
                 OreBracketHandler.getOre("itemCasingBronze").amount(5), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemMOX", 0),
                 ItemBracketHandler.getItem("IC2:itemUran238", 0).amount(6),
                 ItemBracketHandler.getItem("IC2:itemPlutonium", 0).amount(3),
-                LiquidBracketHandler.getLiquid("ic2coolant").withAmount(1000), 400, 256)
+                LiquidBracketHandler.getLiquid("ic2coolant").withAmount(1000), 400, VoltageLevels.LHV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:itemUran", 0),
                 ItemBracketHandler.getItem("IC2:itemUran238", 0).amount(6),
                 ItemBracketHandler.getItem("IC2:itemUran235small", 0).amount(3),
@@ -1529,79 +1528,79 @@ class IC2 : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:blockLuminatorDark", 0).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 30004),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1360).amount(16),
-                LiquidBracketHandler.getLiquid("molten.glass").withAmount(1152), 400, 64)
+                LiquidBracketHandler.getLiquid("molten.glass").withAmount(1152), 400, VoltageLevels.LMV)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:furnace", 0),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(5), 400, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(5), 400, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("IC2:blockCrop", 0).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 22809).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 150, VoltageLevels.LV)
         BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemPartCoalChunk", 0)),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.BioChunk", 0)), 1200, 120, 1000)
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.BioChunk", 0)), 1200, VoltageLevels.MV, 1000)
         BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemPartCarbonMesh", 0)),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.BioOrganicMesh", 0)), 600, 120, 1000)
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.BioOrganicMesh", 0)), 600, VoltageLevels.MV, 1000)
         BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemPartCarbonPlate", 0)),
-                arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.BioCarbonPlate", 0)), 600, 120, 1000)
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.BioCarbonPlate", 0)), 600, VoltageLevels.MV, 1000)
         Brewery.addRecipe(LiquidBracketHandler.getLiquid("ic2biomass").withAmount(1000),
                 ItemBracketHandler.getItem("IC2:itemBiochaff", 0),
                 LiquidBracketHandler.getLiquid("water").withAmount(1000), false)
         Canner.addRecipe(ItemBracketHandler.getItem("IC2:reactorUraniumSimple", 1),
                 ItemBracketHandler.getItem("IC2:itemUran", 0), ItemBracketHandler.getItem("IC2:itemFuelRod", 0), 200,
-                40)
+                VoltageLevels.LMV)
         Canner.addRecipe(ItemBracketHandler.getItem("IC2:reactorMOXSimple", 1),
-                ItemBracketHandler.getItem("IC2:itemMOX", 0), ItemBracketHandler.getItem("IC2:itemFuelRod", 0), 200, 40)
+                ItemBracketHandler.getItem("IC2:itemMOX", 0), ItemBracketHandler.getItem("IC2:itemFuelRod", 0), 200, VoltageLevels.LMV)
         Canner.addRecipe(ItemBracketHandler.getItem("gregtech:gt.Thoriumcell", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2096),
-                ItemBracketHandler.getItem("IC2:itemFuelRod", 0), 200, 40)
+                ItemBracketHandler.getItem("IC2:itemFuelRod", 0), 200, VoltageLevels.LMV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterBlack", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblack").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterRed", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyered").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterGreen", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegreen").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterBrown", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyebrown").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterBlue", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeblue").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterPurple", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepurple").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterCyan", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyecyan").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterLightGrey", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
                 LiquidBracketHandler.getLiquid("dye.watermixed.dyelightgray").withAmount(144), intArrayOf(10000), 200,
-                2)
+                VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterDarkGrey", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyegray").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterPink", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyepink").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterLime", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyelime").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterYellow", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeyellow").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterCloud", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
                 LiquidBracketHandler.getLiquid("dye.watermixed.dyelightblue").withAmount(144), intArrayOf(10000), 200,
-                2)
+                VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterMagenta", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyemagenta").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterOrange", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyeorange").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("IC2:itemToolPainterWhite", 0)),
                 ItemBracketHandler.getItem("IC2:itemToolPainter", 0),
-                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, VoltageLevels.ULV)
+                LiquidBracketHandler.getLiquid("dye.watermixed.dyewhite").withAmount(144), intArrayOf(10000), 200, VoltageLevels.LULV)
         Compressor.addRecipe(ItemBracketHandler.getItem("IC2:blockMetal", 3),
                 ItemBracketHandler.getItem("IC2:itemUran238", 0).amount(9))
         Compressor.addRecipe(ItemBracketHandler.getItem("IC2:itemFuelPlantBall", 0),
@@ -1631,25 +1630,25 @@ class IC2 : Runnable {
                 ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0).amount(0), 600, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("IC2:itemBoat", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11880).amount(4),
-                ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0).amount(0), 200, 16)
+                ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0).amount(0), 200, VoltageLevels.LLV)
         Extruder.addRecipe(ItemBracketHandler.getItem("dreamcraft:item.ElectricBoatHull", 0),
                 ItemBracketHandler.getItem("minecraft:iron_ingot", 0).amount(8),
                 ItemBracketHandler.getItem("dreamcraft:item.ExtruderShapeBoat", 0).amount(0), 1200, VoltageLevels.LV)
         Extruder.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5130),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 1, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 1, VoltageLevels.LMV)
         Extruder.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5131),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 4, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 4, VoltageLevels.LMV)
         Extruder.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(4),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5132),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 8, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 8, VoltageLevels.LMV)
         Extruder.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5133),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 16, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 16, VoltageLevels.LMV)
         Extruder.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(16),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5134),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 32, 64)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 32, VoltageLevels.LMV)
         Extruder.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5140),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32358).amount(0), 4, VoltageLevels.MV)
@@ -1789,39 +1788,39 @@ class IC2 : Runnable {
                 LiquidBracketHandler.getLiquid("ic2coolant").withAmount(6000))
         Lathe.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23500),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1500).amount(2)),
-                ItemBracketHandler.getItem("IC2:itemPartIndustrialDiamond", 0), 3830, 16)
+                ItemBracketHandler.getItem("IC2:itemPartIndustrialDiamond", 0), 3830, VoltageLevels.LLV)
         PlateBender.addRecipe(ItemBracketHandler.getItem("IC2:itemDensePlates", 7),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804).amount(9), 3600, 96)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804).amount(9), 3600, VoltageLevels.MV)
         PlateBender.addRecipe(ItemBracketHandler.getItem("IC2:itemDensePlates", 8),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17526).amount(9), 3600, 96)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17526).amount(9), 3600, VoltageLevels.MV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2844)),
-                ItemBracketHandler.getItem("IC2:blockBasalt", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("IC2:blockBasalt", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("dreamcraft:item.LapotronDust", 0).amount(30)),
-                ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE), intArrayOf(10000), 300, VoltageLevels.LULV)
         Mixer.addRecipe(ItemBracketHandler.getItem("IC2:itemPartCoalBall", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("IC2:itemDust", 2).amount(8),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2802),
-                        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)), 100, 16)
+                        ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)), 100, VoltageLevels.LLV)
         Polarizer.addRecipe(ItemBracketHandler.getItem("IC2:itemStaticBoots", 0),
                 ItemBracketHandler.getItem("minecraft:iron_boots", 0), 600, VoltageLevels.LV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5130), 100, 4)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5130), 100, VoltageLevels.ULV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5131), 150, 8)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5131), 150, VoltageLevels.ULV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(4),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5132), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5132), 200, VoltageLevels.LLV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5133), 250, VoltageLevels.LV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(16),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5134), 300, 64)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5134), 300, VoltageLevels.LMV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5140), 200, 64)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5140), 200, VoltageLevels.LMV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(16),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5141), 250, 96)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5141), 250, VoltageLevels.MV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(32),
                 ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5142), 300, VoltageLevels.MV)
         Wiremill.addRecipe(ItemBracketHandler.getItem("IC2:blockMiningPipe", 0).amount(64),
-                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5143), 350, 256)
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5143), 350, VoltageLevels.LHV)
         val item20 = ItemBracketHandler.getItem("IC2:itemFluidCell", 0)
         val hashMap28 = HashMap<String, IData>()
         val s14 = "Fluid"

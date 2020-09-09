@@ -246,15 +246,15 @@ class ExtraBees : Runnable {
         Research.addArcanePage("SOULFRAME", ItemBracketHandler.getItem("ExtraBees:hiveFrame.soul", 0))
         Warp.addToResearch("SOULFRAME", 1)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 500)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 1), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("ExtraBees:misc", 1), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 501)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 2), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("ExtraBees:misc", 2), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 502)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 3), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("ExtraBees:misc", 3), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 503)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 4), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("ExtraBees:misc", 4), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 526)),
-                ItemBracketHandler.getItem("ExtraBees:misc", 5), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("ExtraBees:misc", 5), intArrayOf(10000), 300, VoltageLevels.LULV)
         Squeezer.addRecipe(LiquidBracketHandler.getLiquid("for.honey").withAmount(200),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32415).percent(100.0f),
                 arrayOf(ItemBracketHandler.getItem("ExtraBees:honeyDrop", 8)), 20)

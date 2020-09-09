@@ -88,7 +88,7 @@ class CatWalk : Runnable {
                 ItemBracketHandler.getItem("minecraft:ladder", 0), 300, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("catwalks:sturdy_rail", 0),
                 ItemBracketHandler.getItem("minecraft:rail", 0), ItemBracketHandler.getItem("catwalks:steelgrate", 0),
-                150, 30)
+                150, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("catwalks:sturdy_rail_activator", 0),
                 ItemBracketHandler.getItem("minecraft:activator_rail", 0),
                 ItemBracketHandler.getItem("catwalks:steelgrate", 0), 150, VoltageLevels.LV)
@@ -100,21 +100,21 @@ class CatWalk : Runnable {
                 ItemBracketHandler.getItem("catwalks:steelgrate", 0), 150, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("catwalks:ropeLight", 0).amount(8),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19305).amount(2),
-                ItemBracketHandler.getItem("minecraft:glowstone_dust", 0), 100, 16)
+                ItemBracketHandler.getItem("minecraft:glowstone_dust", 0), 100, VoltageLevels.LLV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 305).amount(6)),
-                ItemBracketHandler.getItem("catwalks:support_column", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("catwalks:support_column", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2305).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 305).amount(2)),
-                ItemBracketHandler.getItem("catwalks:scaffold", 0), intArrayOf(10000, 10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("catwalks:scaffold", 0), intArrayOf(10000, 10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2305).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 305).amount(2)),
-                ItemBracketHandler.getItem("catwalks:scaffold", 1), intArrayOf(10000, 10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("catwalks:scaffold", 1), intArrayOf(10000, 10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2305).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 305).amount(2)),
-                ItemBracketHandler.getItem("catwalks:catwalk_unlit", 0), intArrayOf(10000, 10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("catwalks:catwalk_unlit", 0), intArrayOf(10000, 10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2305).amount(1)),
-                ItemBracketHandler.getItem("catwalks:cagedLadder_north_unlit", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("catwalks:cagedLadder_north_unlit", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 305).amount(2)),
-                ItemBracketHandler.getItem("catwalks:steelgrate", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("catwalks:steelgrate", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
     }
 }

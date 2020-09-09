@@ -58,48 +58,48 @@ class Ztones : Runnable {
                         arrayOf<IIngredient>(ore, ore, ore)), null)
         Assembler.addRecipe(ItemBracketHandler.getItem("Ztones:stoneTile", 0).amount(8),
                 ItemBracketHandler.getItem("minecraft:stone", 0),
-                ItemBracketHandler.getItem("minecraft:stone_slab", 0).amount(4), 160, 4)
+                ItemBracketHandler.getItem("minecraft:stone_slab", 0).amount(4), 160, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Ztones:cleanDirt", 0).amount(8),
                 ItemBracketHandler.getItem("minecraft:sand", OreDictionary.WILDCARD_VALUE).amount(4),
                 ItemBracketHandler.getItem("minecraft:dirt", OreDictionary.WILDCARD_VALUE).amount(4),
-                LiquidBracketHandler.getLiquid("seedoil").withAmount(5), 160, 4)
+                LiquidBracketHandler.getLiquid("seedoil").withAmount(5), 160, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Ztones:booster", 0),
                 ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0),
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
                 LiquidBracketHandler.getLiquid("molten.blaze").withAmount(8), 100, VoltageLevels.LV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Ztones:auroraBlock", 0).amount(8),
                 ItemBracketHandler.getItem("minecraft:glass", 0).amount(4),
-                ItemBracketHandler.getItem("minecraft:dye", OreDictionary.WILDCARD_VALUE), 160, 4)
+                ItemBracketHandler.getItem("minecraft:dye", OreDictionary.WILDCARD_VALUE), 160, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampf", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 16),
-                LiquidBracketHandler.getLiquid("water").withAmount(100), 200, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(100), 200, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampf", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 16),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(75), 200, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(75), 200, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampf", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 16),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(25), 100, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(25), 100, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampt", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 24),
-                LiquidBracketHandler.getLiquid("water").withAmount(100), 200, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(100), 200, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampt", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 24),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(75), 200, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(75), 200, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampt", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 24),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(25), 100, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(25), 100, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampb", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 23),
-                LiquidBracketHandler.getLiquid("water").withAmount(100), 200, 4)
+                LiquidBracketHandler.getLiquid("water").withAmount(100), 200, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampb", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 23),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(75), 200, 4)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(75), 200, VoltageLevels.ULV)
         CuttingSaw.addRecipe(arrayOf(ItemBracketHandler.getItem("Ztones:lampb", 0).amount(4)),
                 ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 23),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(25), 100, 4)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(25), 100, VoltageLevels.ULV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("Ztones:minicharcoal", 0).amount(9),
-                ItemBracketHandler.getItem("minecraft:coal", 1), 50, 8)
+                ItemBracketHandler.getItem("minecraft:coal", 1), 50, VoltageLevels.ULV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("Ztones:minicoal", 0).amount(9),
-                ItemBracketHandler.getItem("minecraft:coal", 0), 50, 8)
+                ItemBracketHandler.getItem("minecraft:coal", 0), 50, VoltageLevels.ULV)
     }
 }

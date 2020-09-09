@@ -388,7 +388,7 @@ class HardcoreEnderExpansion : Runnable {
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0).amount(64),
                         ItemBracketHandler.getItem("HardcoreEnderExpansion:essence", 0).amount(64),
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("endergoo").withAmount(5760), 1800, 7068)
+                LiquidBracketHandler.getLiquid("endergoo").withAmount(5760), 1800, VoltageLevels.IV)
         Assembler.addRecipe(ItemBracketHandler.getItem("HardcoreEnderExpansion:schorching_pickaxe", 0),
                 ItemBracketHandler.getItem("minecraft:golden_pickaxe", 0),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:fire_shard", 0).amount(8), 300,  VoltageLevels.HV)
@@ -435,7 +435,7 @@ class HardcoreEnderExpansion : Runnable {
         Extractor.addRecipe(ItemBracketHandler.getItem("minecraft:dye", 14).amount(4),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:crossed_decoration", 6))
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 5839).amount(2),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:sphalerite", 0), 4, 10)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:sphalerite", 0), 4, VoltageLevels.ULV)
         Lathe.addRecipe(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:obsidian_rod", 0)),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:obsidian_fragment", 0), 160, VoltageLevels.MV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("HardcoreEnderExpansion:end_powder", 0).amount(4)),
@@ -445,6 +445,6 @@ class HardcoreEnderExpansion : Runnable {
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2770).amount(9)),
                 ItemBracketHandler.getItem("HardcoreEnderExpansion:endium_block", 0), intArrayOf(10000), 50,  VoltageLevels.HV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 5839).amount(4)),
-                ItemBracketHandler.getItem("HardcoreEnderExpansion:sphalerite", 0), intArrayOf(10000), 400, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("HardcoreEnderExpansion:sphalerite", 0), intArrayOf(10000), 400, VoltageLevels.LULV)
     }
 }

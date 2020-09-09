@@ -678,7 +678,7 @@ class GalaxySpace : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29028).amount(8),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(8),
                         ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0)),
-                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(576), 600, 1024)
+                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(576), 600, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 0),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(5),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(5),
@@ -686,7 +686,7 @@ class GalaxySpace : Runnable {
                 LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(1440), 1500, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(5),
                 ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 0),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 360, 1024)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 360, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 1),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(8),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(8),
@@ -694,7 +694,7 @@ class GalaxySpace : Runnable {
                 LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(2304), 2400, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(8),
                 ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 1),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 600, 1024)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 600, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 2),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(7),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(7),
@@ -702,7 +702,7 @@ class GalaxySpace : Runnable {
                 LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(2016), 2100, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(7),
                 ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 2),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 520, 1024)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 520, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 3),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(4),
                         ItemBracketHandler.getItem("dreamcraft:item.TungstenString", 0).amount(4),
@@ -710,7 +710,7 @@ class GalaxySpace : Runnable {
                 LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(1152), 1200, VoltageLevels.EV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:item.ThermalClothT2", 0).amount(4),
                 ItemBracketHandler.getItem("GalaxySpace:item.ThermalPaddingT2", 3),
-                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 300, 1024)
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), 300, VoltageLevels.LEV)
         Assembler.addRecipe(ItemBracketHandler.getItem("GalaxySpace:futureglass", 0),
                 ItemBracketHandler.getItem("minecraft:glass", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23884).amount(8), 200,  VoltageLevels.HV)
@@ -785,15 +785,15 @@ class GalaxySpace : Runnable {
         Compressor.addRecipe(ItemBracketHandler.getItem("GalaxySpace:plutoglowstone", 0),
                 ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 4).amount(4))
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 0).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:ceresglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalaxySpace:ceresglowstone", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 1).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:ioglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalaxySpace:ioglowstone", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 2).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:enceladusglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalaxySpace:enceladusglowstone", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 3).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:proteusglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalaxySpace:proteusglowstone", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("GalaxySpace:item.GlowstoneDusts", 4).amount(4)),
-                ItemBracketHandler.getItem("GalaxySpace:plutoglowstone", 0), intArrayOf(10000), 300, VoltageLevels.ULV)
+                ItemBracketHandler.getItem("GalaxySpace:plutoglowstone", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
         NEI.overrideName(ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 3), "Compressed Lead Plate")
         NEI.overrideName(ItemBracketHandler.getItem("GalaxySpace:item.CompressedPlates", 6), "Compressed Nickel Plate")
     }

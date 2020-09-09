@@ -938,25 +938,25 @@ class ThaumicTinkerer01 : Runnable {
                 ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartzItem", 0).amount(4))
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartzSlab", 0).amount(2), null,
                 ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0),
-                LiquidBracketHandler.getLiquid("water").withAmount(5), 100, 8)
+                LiquidBracketHandler.getLiquid("water").withAmount(5), 100, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartzSlab", 0).amount(2), null,
                 ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0),
-                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(4), 100, 8)
+                LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(4), 100, VoltageLevels.ULV)
         CuttingSaw.addRecipe(ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartzSlab", 0).amount(2), null,
                 ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0),
-                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, 8)
+                LiquidBracketHandler.getLiquid("lubricant").withAmount(1), 50, VoltageLevels.ULV)
         PrecisionLaser.addRecipe(ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24506),
-                ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0), 50, 16)
+                ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0), 50, VoltageLevels.LLV)
         PrecisionLaser.addRecipe(ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24515),
-                ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0), 50, 16)
+                ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0), 50, VoltageLevels.LLV)
         PrecisionLaser.addRecipe(ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24545),
-                ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0), 50, 16)
+                ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0), 50, VoltageLevels.LLV)
         PrecisionLaser.addRecipe(ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 1),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24890),
-                ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0), 50, 16)
+                ItemBracketHandler.getItem("ThaumicTinkerer:darkQuartz", 0), 50, VoltageLevels.LLV)
         Research.refreshResearchRecipe("INTERFACE")
         Research.refreshResearchRecipe("DISLOCATOR")
         Research.refreshResearchRecipe("GASEOUS_LIGHT")

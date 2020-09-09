@@ -789,43 +789,43 @@ class Railcraft : Runnable {
         MineTweakerAPI.recipes.addShaped(item10, arrayOf(arrayOf<IIngredient>(item77, item26, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item26, item77)), null)
-        Assembler.addRecipe(item10, item41, item26.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item10, item41, item26.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item11, arrayOf(arrayOf<IIngredient>(item77, item27, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item27, item77)), null)
-        Assembler.addRecipe(item11, item41, item27.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item11, item41, item27.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item12, arrayOf(arrayOf<IIngredient>(item77, item28, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item28, item77)), null)
-        Assembler.addRecipe(item12, item41, item28.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item12, item41, item28.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item13, arrayOf(arrayOf<IIngredient>(item77, item29, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item29, item77)), null)
-        Assembler.addRecipe(item13, item41, item29.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item13, item41, item29.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item14, arrayOf(arrayOf<IIngredient>(item77, item30, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item30, item77)), null)
-        Assembler.addRecipe(item14, item41, item30.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item14, item41, item30.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item15, arrayOf(arrayOf<IIngredient>(item77, item31, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item31, item77)), null)
-        Assembler.addRecipe(item15, item41, item31.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item15, item41, item31.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item16, arrayOf(arrayOf<IIngredient>(item77, item32, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item32, item77)), null)
-        Assembler.addRecipe(item16, item41, item32.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item16, item41, item32.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item17, arrayOf(arrayOf<IIngredient>(item77, item33, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item33, item77)), null)
-        Assembler.addRecipe(item17, item41, item33.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item17, item41, item33.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item18, arrayOf(arrayOf<IIngredient>(item77, item34, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item34, item77)), null)
-        Assembler.addRecipe(item18, item41, item34.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item18, item41, item34.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item19, arrayOf(arrayOf<IIngredient>(item77, item35, item77),
                 arrayOf(OreBracketHandler.getOre("craftingToolFile"), item41, ore12),
                 arrayOf<IIngredient>(item77, item35, item77)), null)
-        Assembler.addRecipe(item19, item41, item35.amount(2), 200, VoltageLevels.ULV)
+        Assembler.addRecipe(item19, item41, item35.amount(2), 200, VoltageLevels.LULV)
         MineTweakerAPI.recipes.addShaped(item20,
                 arrayOf(arrayOf<IIngredient>(ore39, ore, ore39), arrayOf(ore11, item41, ore12),
                         arrayOf<IIngredient>(ore39, ore, ore39)), null)
@@ -1105,7 +1105,7 @@ class Railcraft : Runnable {
         Fuels.addDieselFuel(ItemBracketHandler.getItem("IC2:itemFluidCell", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 30712), 8)
         MineTweakerAPI.furnace.setFuel(ItemBracketHandler.getItem("Railcraft:fluid.creosote.bucket", 0), 6400)
-        AlloySmelter.addRecipe(item55.amount(5), item42.amount(5), item57.amount(4), 300, 0)
+        AlloySmelter.addRecipe(item55.amount(5), item42.amount(5), item57.amount(4), 300, VoltageLevels.LULV)
         AlloySmelter.addRecipe(ItemBracketHandler.getItem("Railcraft:armor.steel.helmet", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11305).amount(5),
                 ItemBracketHandler.getItem("dreamcraft:item.MoldHelmet", 0).amount(0), 600, VoltageLevels.LV)
@@ -1122,17 +1122,17 @@ class Railcraft : Runnable {
         val hashMap41 = HashMap<String, IData>()
         hashMap41["track"] = ExpandString.asData("railcraft:track.slow.switch")
         Assembler.addRecipe(item127.withTag(ExpandAnyDict.asData(hashMap41)), withTag.amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 23032).amount(4), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 23032).amount(4), 200, VoltageLevels.LLV)
         val item128 = ItemBracketHandler.getItem("Railcraft:track", 0)
         val hashMap42 = HashMap<String, IData>()
         hashMap42["track"] = ExpandString.asData("railcraft:track.slow.wye")
         Assembler.addRecipe(item128.withTag(ExpandAnyDict.asData(hashMap42)), withTag.amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 20032).amount(2), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 20032).amount(2), 200, VoltageLevels.LLV)
         val item129 = ItemBracketHandler.getItem("Railcraft:track", 0)
         val hashMap43 = HashMap<String, IData>()
         hashMap43["track"] = ExpandString.asData("railcraft:track.slow.junction")
         Assembler.addRecipe(item129.withTag(ExpandAnyDict.asData(hashMap43)), withTag.amount(2),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032).amount(4), 200, 16)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032).amount(4), 200, VoltageLevels.LLV)
         val item130 = ItemBracketHandler.getItem("Railcraft:track", 4767)
         val hashMap44 = HashMap<String, IData>()
         hashMap44["track"] = ExpandString.asData("railcraft:track.switch")
@@ -1204,16 +1204,16 @@ class Railcraft : Runnable {
                 LiquidBracketHandler.getLiquid("lava").withAmount(576), 200,  VoltageLevels.HV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Railcraft:cart.work", 0),
                 ItemBracketHandler.getItem("minecraft:minecart", 0),
-                ItemBracketHandler.getItem("minecraft:crafting_table", 0), 100, 16)
+                ItemBracketHandler.getItem("minecraft:crafting_table", 0), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Railcraft:cart.anchor.personal", 0),
                 ItemBracketHandler.getItem("minecraft:minecart", 0),
-                ItemBracketHandler.getItem("Railcraft:machine.alpha", 2), 100, 16)
+                ItemBracketHandler.getItem("Railcraft:machine.alpha", 2), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Railcraft:cart.anchor", 0),
                 ItemBracketHandler.getItem("minecraft:minecart", 0),
-                ItemBracketHandler.getItem("Railcraft:machine.alpha", 0), 100, 16)
+                ItemBracketHandler.getItem("Railcraft:machine.alpha", 0), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Railcraft:cart.tank", 0),
                 ItemBracketHandler.getItem("minecraft:minecart", 0),
-                ItemBracketHandler.getItem("Railcraft:machine.beta", 1), 100, 16)
+                ItemBracketHandler.getItem("Railcraft:machine.beta", 1), 100, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("Railcraft:cart.energy.batbox", 0),
                 ItemBracketHandler.getItem("minecraft:minecart", 0), ItemBracketHandler.getItem("IC2:blockElectric", 0),
                 100, 16)
@@ -1241,24 +1241,24 @@ class Railcraft : Runnable {
         Compressor.addRecipe(ItemBracketHandler.getItem("Railcraft:machine.alpha", 7),
                 ItemBracketHandler.getItem("dreamcraft:item.CokeOvenBrick", 0).amount(4))
         CuttingSaw.addRecipe(item54.amount(4), null, item53, LiquidBracketHandler.getLiquid("water").withAmount(4), 200,
-                30)
+                VoltageLevels.LV)
         CuttingSaw.addRecipe(item54.amount(4), null, item53,
                 LiquidBracketHandler.getLiquid("ic2distilledwater").withAmount(3), 200, VoltageLevels.LV)
         CuttingSaw.addRecipe(item54.amount(4), null, item53, LiquidBracketHandler.getLiquid("lubricant").withAmount(1),
-                100, 30)
+                100, VoltageLevels.LV)
         ForgeHammer.addRecipe(ItemBracketHandler.getItem("Railcraft:fuel.coke", 0).amount(9),
-                ItemBracketHandler.getItem("Railcraft:cube", 0), 100, 24)
+                ItemBracketHandler.getItem("Railcraft:cube", 0), 100, VoltageLevels.LV)
         FluidSolidifier.addRecipe(item2, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32314).amount(0),
-                LiquidBracketHandler.getLiquid("molten.steel").withAmount(4464), 480, 64)
+                LiquidBracketHandler.getLiquid("molten.steel").withAmount(4464), 480, VoltageLevels.LMV)
         Mixer.addRecipe(ItemBracketHandler.getItem("Railcraft:part.bleached.clay", 0).amount(2),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("minecraft:clay_ball", 0),
                         ItemBracketHandler.getItem("minecraft:dye", 15),
                         ItemBracketHandler.getItem("minecraft:dye", 15),
-                        ItemBracketHandler.getItem("minecraft:dye", 15)), 100, 8)
+                        ItemBracketHandler.getItem("minecraft:dye", 15)), 100, VoltageLevels.ULV)
         PlateBender.addRecipe(ItemBracketHandler.getItem("Railcraft:part.rail", 0).amount(8),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23081).amount(3), 800, 15)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23081).amount(3), 800, VoltageLevels.LLV)
         PlateBender.addRecipe(ItemBracketHandler.getItem("Railcraft:part.rail", 0).amount(10),
-                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23316).amount(3), 1000, 15)
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23316).amount(3), 1000, VoltageLevels.LLV)
         PrecisionLaser.addRecipe(ItemBracketHandler.getItem("Railcraft:firestone.cut", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 24500).amount(0),
                 ItemBracketHandler.getItem("Railcraft:firestone.raw", 0), 2400,  VoltageLevels.HV)
