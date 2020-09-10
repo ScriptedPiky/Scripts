@@ -21,7 +21,7 @@ import com.github.GTNH2Mega.VoltageLevels
 
 class Thaumcraft02Thaumaturgy1 : Runnable {
     override fun run() {
-        remove_TC_Arcane(ItemBracketHandler.getItem("thaumicbases:resource", 2))
+        Arcane.removeRecipe(ItemBracketHandler.getItem("thaumicbases:resource", 2))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Thaumcraft:WandCap", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Thaumcraft:WandCasting", 0))
         Arcane.removeRecipe(ItemBracketHandler.getItem("Thaumcraft:WandCap", OreDictionary.WILDCARD_VALUE))
@@ -739,17 +739,5 @@ class Thaumcraft02Thaumaturgy1 : Runnable {
         Research.refreshResearchRecipe("VISCHARGERELAY")
         Research.refreshResearchRecipe("FOCALMANIPULATION")
         Research.refreshResearchRecipe("VAMPBAT")
-    }
-
-    companion object {
-        fun remove_TC_Infusion(itemStack: IItemStack?): IAny? {
-            Infusion.removeRecipe(itemStack)
-            return null
-        }
-
-        fun remove_TC_Arcane(itemStack: IItemStack?): IAny? {
-            Arcane.removeRecipe(itemStack)
-            return null
-        }
     }
 }

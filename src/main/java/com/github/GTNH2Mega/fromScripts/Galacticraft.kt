@@ -1307,42 +1307,45 @@ class Galacticraft : Runnable {
         Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.parachute", 0),
                 ItemBracketHandler.getItem("GalacticraftCore:item.canvas", 0).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 19305).amount(3), 300,  VoltageLevels.HV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 1),
-                ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 0),
-                OreBracketHandler.getOre("chestCopper"), 100,  VoltageLevels.HV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 2),
-                ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 0), OreBracketHandler.getOre("chestIron"),
-                100, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 3),
-                ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 0), OreBracketHandler.getOre("chestGold"),
-                100, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 1),
-                ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
-                OreBracketHandler.getOre("chestCopper"), 100, VoltageLevels.LEV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 2),
-                ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
-                OreBracketHandler.getOre("chestIron"), 100, VoltageLevels.LEV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 3),
-                ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
-                OreBracketHandler.getOre("chestGold"), 100, VoltageLevels.LEV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 1),
-                ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
-                OreBracketHandler.getOre("chestCopper"), 100, VoltageLevels.EV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 2),
-                ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
-                OreBracketHandler.getOre("chestIron"), 100, VoltageLevels.EV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 3),
-                ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
-                OreBracketHandler.getOre("chestGold"), 100, VoltageLevels.EV)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
-                ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0), OreBracketHandler.getOre("chestCopper"),
-                100, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
-                ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0), OreBracketHandler.getOre("chestIron"),
-                100, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
-                ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0), OreBracketHandler.getOre("chestGold"),
-                100, 480)
+
+        //TODO Replace Galaxyspace rocket capacity upgrades
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 1),
+        //        ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 0),
+        //        OreBracketHandler.getOre("chestCopper"), 100,  VoltageLevels.HV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 2),
+        //        ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 0), OreBracketHandler.getOre("chestIron"),
+        //        100, 480)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 3),
+        //        ItemBracketHandler.getItem("GalacticraftCore:item.spaceship", 0), OreBracketHandler.getOre("chestGold"),
+        //        100, 480)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 1),
+        //        ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
+        //        OreBracketHandler.getOre("chestCopper"), 100, VoltageLevels.LEV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 2),
+        //        ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
+        //        OreBracketHandler.getOre("chestIron"), 100, VoltageLevels.LEV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 3),
+        //        ItemBracketHandler.getItem("GalacticraftMars:item.spaceshipTier2", 0),
+        //        OreBracketHandler.getOre("chestGold"), 100, VoltageLevels.LEV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 1),
+        //        ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
+        //        OreBracketHandler.getOre("chestCopper"), 100, VoltageLevels.EV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 2),
+        //        ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
+        //        OreBracketHandler.getOre("chestIron"), 100, VoltageLevels.EV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 3),
+        //        ItemBracketHandler.getItem("GalacticraftMars:item.itemTier3Rocket", 0),
+        //        OreBracketHandler.getOre("chestGold"), 100, VoltageLevels.EV)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
+        //        ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0), OreBracketHandler.getOre("chestCopper"),
+        //        100, 480)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
+        //        ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0), OreBracketHandler.getOre("chestIron"),
+        //        100, 480)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 1),
+        //        ItemBracketHandler.getItem("GalacticraftCore:item.buggy", 0), OreBracketHandler.getOre("chestGold"),
+        //        100, 480)
+
         BlastFurnace.addRecipe(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11028)),
                 arrayOf<IIngredient>(
                         ItemBracketHandler.getItem("GalacticraftMars:item.itemBasicAsteroids", 4).amount(2)), 1500, 120,
