@@ -10,7 +10,6 @@ buildscript {
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
     }
-
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
         //noinspection DifferentKotlinGradleVersion
@@ -27,6 +26,12 @@ apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: 'kotlin'
 
+file "build.properties" withReader {
+    def prop = new Properties()
+    prop.load(it)
+    ext.config = new ConfigSlurper().parse prop
+}
+
 idea.module.downloadJavadoc = true
 idea.module.downloadSources = true
 
@@ -34,16 +39,40 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 compileJava.options.encoding = 'UTF-8'
 
-version = "1.0"
+version = "${config.scripts_version}-${config.minecraft_version}"
 group= "com.github.GTNH2Mega" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "GTNH2MegaCore" + version
+archivesBaseName = "GTNH2MegaCore"
 
 minecraft {
-    version = "1.7.10-10.13.4.1614-1.7.10"
+    version = "${config.minecraft_version}-${config.forge_version}-${config.minecraft_version}"
     runDir = "run"
 }
 
+repositories {
+    //Provided as an example
+    //maven {
+    //    name 'Forge'
+    //    url 'http://files.minecraftforge.net/maven'
+    //}
+    //
+    //ivy {
+    //    name 'gtnh_download_source'
+    //    artifactPattern "http://downloads.gtnewhorizons.com/Mods_for_Jenkins/[module]-[revision].[ext]"
+    //}
+}
+
 dependencies {
+    //Provided as an example
+    //compile is used for providing the library during compilation and runtime/debugging
+    //compile "mantle:Mantle:${config.minecraft.version}-${config.mantle.version}:deobf"
+
+    //compileOnly is used for providing the library during only compilation and excluded during runtime/debugging
+    //Some dependencies come with extra modules, if they cause incompatibilties you may use exclude to remove them.
+    //compileOnly("appeng:appliedenergistics2:${config.ae2.version}:dev") {
+    //  exclude module: '*'
+    //}
+
+    //Also, the dev or deobf flags are used to denote dependencies more suited for modding with.
 }
 
 processResources
