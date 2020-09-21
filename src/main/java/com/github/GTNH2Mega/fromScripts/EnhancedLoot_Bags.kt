@@ -6,7 +6,9 @@ import minetweaker.api.item.IIngredient
 import minetweaker.api.item.IngredientCondition
 import minetweaker.expand.*
 import minetweaker.mc1710.brackets.ItemBracketHandler
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class EnhancedLoot_Bags : Runnable {
     override fun run() {
@@ -176,7 +178,7 @@ class EnhancedLoot_Bags : Runnable {
         array18[n18] = ExpandAnyDict.asData(hashMap24)
         hashMap23[s12] = ExpandAnyArray.asData(array18)
         array17[n17] = IngredientCondition.onlyWithTag(item12, ExpandAnyDict.asData(hashMap23))
-        array17[2] = ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", 32767)
+        array17[2] = ItemBracketHandler.getItem("IC2:itemBatLamaCrystal", OreDictionary.WILDCARD_VALUE)
         recipes6.addShapeless(withTag6, array17, null)
         val recipes7 = MineTweakerAPI.recipes
         val item13 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 8)
@@ -766,34 +768,37 @@ class EnhancedLoot_Bags : Runnable {
         array80[n80] = IngredientCondition.onlyWithTag(item54, ExpandAnyDict.asData(hashMap107))
         array80[2] = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32243)
         recipes27.addShapeless(withTag27, array80, null)
-        val recipes28 = MineTweakerAPI.recipes
-        val item55 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 30)
-        val hashMap109 = HashMap<String, IData>()
-        val s55 = "ench"
-        val array82 = arrayOf<IData?>(null)
-        val n82 = 0
-        val hashMap110 = HashMap<String, IData>()
-        hashMap110["lvl"] = ExpandShort.asNBT(3.toShort())
-        hashMap110["id"] = ExpandShort.asNBT(35.toShort())
-        array82[n82] = ExpandAnyDict.asData(hashMap110)
-        hashMap109[s55] = ExpandAnyArray.asData(array82)
-        hashMap109["RepairCost"] = ExpandInt.toData(2)
-        val withTag28 = item55.withTag(ExpandAnyDict.asData(hashMap109))
-        val array83 = arrayOf<IIngredient?>(ItemBracketHandler.getItem("enhancedlootbags:lootbag", 30), null, null)
-        val n83 = 1
-        val item56 = ItemBracketHandler.getItem("minecraft:enchanted_book", 0)
-        val hashMap111 = HashMap<String, IData>()
-        val s56 = "StoredEnchantments"
-        val array84 = arrayOf<IData?>(null)
-        val n84 = 0
-        val hashMap112 = HashMap<String, IData>()
-        hashMap112["lvl"] = ExpandShort.asNBT(3.toShort())
-        hashMap112["id"] = ExpandShort.asNBT(35.toShort())
-        array84[n84] = ExpandAnyDict.asData(hashMap112)
-        hashMap111[s56] = ExpandAnyArray.asData(array84)
-        array83[n83] = IngredientCondition.onlyWithTag(item56, ExpandAnyDict.asData(hashMap111))
-        array83[2] = ItemBracketHandler.getItem("harvestcraft:delightedmealItem", 0)
-        recipes28.addShapeless(withTag28, array83, null)
+
+        //TODO Replace ("harvestcraft:delightedmealItem", 0)
+        //val recipes28 = MineTweakerAPI.recipes
+        //val item55 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 30)
+        //val hashMap109 = HashMap<String, IData>()
+        //val s55 = "ench"
+        //val array82 = arrayOf<IData?>(null)
+        //val n82 = 0
+        //val hashMap110 = HashMap<String, IData>()
+        //hashMap110["lvl"] = ExpandShort.asNBT(3.toShort())
+        //hashMap110["id"] = ExpandShort.asNBT(35.toShort())
+        //array82[n82] = ExpandAnyDict.asData(hashMap110)
+        //hashMap109[s55] = ExpandAnyArray.asData(array82)
+        //hashMap109["RepairCost"] = ExpandInt.toData(2)
+        //val withTag28 = item55.withTag(ExpandAnyDict.asData(hashMap109))
+        //val array83 = arrayOf<IIngredient?>(ItemBracketHandler.getItem("enhancedlootbags:lootbag", 30), null, null)
+        //val n83 = 1
+        //val item56 = ItemBracketHandler.getItem("minecraft:enchanted_book", 0)
+        //val hashMap111 = HashMap<String, IData>()
+        //val s56 = "StoredEnchantments"
+        //val array84 = arrayOf<IData?>(null)
+        //val n84 = 0
+        //val hashMap112 = HashMap<String, IData>()
+        //hashMap112["lvl"] = ExpandShort.asNBT(3.toShort())
+        //hashMap112["id"] = ExpandShort.asNBT(35.toShort())
+        //array84[n84] = ExpandAnyDict.asData(hashMap112)
+        //hashMap111[s56] = ExpandAnyArray.asData(array84)
+        //array83[n83] = IngredientCondition.onlyWithTag(item56, ExpandAnyDict.asData(hashMap111))
+        //array83[2] = ItemBracketHandler.getItem("harvestcraft:delightedmealItem", 0)
+        //recipes28.addShapeless(withTag28, array83, null)
+
         val recipes29 = MineTweakerAPI.recipes
         val item57 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 31)
         val hashMap113 = HashMap<String, IData>()
@@ -914,62 +919,67 @@ class EnhancedLoot_Bags : Runnable {
         hashMap130["model"] = ExpandString.asData("railcraft:default")
         array95[n98] = item66.withTag(ExpandAnyDict.asData(hashMap130))
         recipes32.addShapeless(withTag32, array95, null)
-        val recipes33 = MineTweakerAPI.recipes
-        val item67 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 35)
-        val hashMap131 = HashMap<String, IData>()
-        val s65 = "ench"
-        val array97 = arrayOf<IData?>(null)
-        val n99 = 0
-        val hashMap132 = HashMap<String, IData>()
-        hashMap132["lvl"] = ExpandShort.asNBT(3.toShort())
-        hashMap132["id"] = ExpandShort.asNBT(35.toShort())
-        array97[n99] = ExpandAnyDict.asData(hashMap132)
-        hashMap131[s65] = ExpandAnyArray.asData(array97)
-        hashMap131["RepairCost"] = ExpandInt.toData(2)
-        val withTag33 = item67.withTag(ExpandAnyDict.asData(hashMap131))
-        val array98 = arrayOf<IIngredient?>(ItemBracketHandler.getItem("enhancedlootbags:lootbag", 35), null, null)
-        val n100 = 1
-        val item68 = ItemBracketHandler.getItem("minecraft:enchanted_book", 0)
-        val hashMap133 = HashMap<String, IData>()
-        val s66 = "StoredEnchantments"
-        val array99 = arrayOf<IData?>(null)
-        val n101 = 0
-        val hashMap134 = HashMap<String, IData>()
-        hashMap134["lvl"] = ExpandShort.asNBT(3.toShort())
-        hashMap134["id"] = ExpandShort.asNBT(35.toShort())
-        array99[n101] = ExpandAnyDict.asData(hashMap134)
-        hashMap133[s66] = ExpandAnyArray.asData(array99)
-        array98[n100] = IngredientCondition.onlyWithTag(item68, ExpandAnyDict.asData(hashMap133))
-        array98[2] = ItemBracketHandler.getItem("harvestcraft:epicbaconItem", 0)
-        recipes33.addShapeless(withTag33, array98, null)
-        val recipes34 = MineTweakerAPI.recipes
-        val item69 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 36)
-        val hashMap135 = HashMap<String, IData>()
-        val s67 = "ench"
-        val array100 = arrayOf<IData?>(null)
-        val n102 = 0
-        val hashMap136 = HashMap<String, IData>()
-        hashMap136["lvl"] = ExpandShort.asNBT(3.toShort())
-        hashMap136["id"] = ExpandShort.asNBT(35.toShort())
-        array100[n102] = ExpandAnyDict.asData(hashMap136)
-        hashMap135[s67] = ExpandAnyArray.asData(array100)
-        hashMap135["RepairCost"] = ExpandInt.toData(2)
-        val withTag34 = item69.withTag(ExpandAnyDict.asData(hashMap135))
-        val array101 = arrayOf<IIngredient?>(ItemBracketHandler.getItem("enhancedlootbags:lootbag", 36), null, null)
-        val n103 = 1
-        val item70 = ItemBracketHandler.getItem("minecraft:enchanted_book", 0)
-        val hashMap137 = HashMap<String, IData>()
-        val s68 = "StoredEnchantments"
-        val array102 = arrayOf<IData?>(null)
-        val n104 = 0
-        val hashMap138 = HashMap<String, IData>()
-        hashMap138["lvl"] = ExpandShort.asNBT(3.toShort())
-        hashMap138["id"] = ExpandShort.asNBT(35.toShort())
-        array102[n104] = ExpandAnyDict.asData(hashMap138)
-        hashMap137[s68] = ExpandAnyArray.asData(array102)
-        array101[n103] = IngredientCondition.onlyWithTag(item70, ExpandAnyDict.asData(hashMap137))
-        array101[2] = ItemBracketHandler.getItem("harvestcraft:beefwellingtonItem", 0)
-        recipes34.addShapeless(withTag34, array101, null)
+
+        //TODO Replace ("harvestcraft:epicbaconItem", 0)
+        //val recipes33 = MineTweakerAPI.recipes
+        //val item67 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 35)
+        //val hashMap131 = HashMap<String, IData>()
+        //val s65 = "ench"
+        //val array97 = arrayOf<IData?>(null)
+        //val n99 = 0
+        //val hashMap132 = HashMap<String, IData>()
+        //hashMap132["lvl"] = ExpandShort.asNBT(3.toShort())
+        //hashMap132["id"] = ExpandShort.asNBT(35.toShort())
+        //array97[n99] = ExpandAnyDict.asData(hashMap132)
+        //hashMap131[s65] = ExpandAnyArray.asData(array97)
+        //hashMap131["RepairCost"] = ExpandInt.toData(2)
+        //val withTag33 = item67.withTag(ExpandAnyDict.asData(hashMap131))
+        //val array98 = arrayOf<IIngredient?>(ItemBracketHandler.getItem("enhancedlootbags:lootbag", 35), null, null)
+        //val n100 = 1
+        //val item68 = ItemBracketHandler.getItem("minecraft:enchanted_book", 0)
+        //val hashMap133 = HashMap<String, IData>()
+        //val s66 = "StoredEnchantments"
+        //val array99 = arrayOf<IData?>(null)
+        //val n101 = 0
+        //val hashMap134 = HashMap<String, IData>()
+        //hashMap134["lvl"] = ExpandShort.asNBT(3.toShort())
+        //hashMap134["id"] = ExpandShort.asNBT(35.toShort())
+        //array99[n101] = ExpandAnyDict.asData(hashMap134)
+        //hashMap133[s66] = ExpandAnyArray.asData(array99)
+        //array98[n100] = IngredientCondition.onlyWithTag(item68, ExpandAnyDict.asData(hashMap133))
+        //array98[2] = ItemBracketHandler.getItem("harvestcraft:epicbaconItem", 0)
+        //recipes33.addShapeless(withTag33, array98, null)
+
+        //TODO Replace ("harvestcraft:beefwellingtonItem", 0)
+        //val recipes34 = MineTweakerAPI.recipes
+        //val item69 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 36)
+        //val hashMap135 = HashMap<String, IData>()
+        //val s67 = "ench"
+        //val array100 = arrayOf<IData?>(null)
+        //val n102 = 0
+        //val hashMap136 = HashMap<String, IData>()
+        //hashMap136["lvl"] = ExpandShort.asNBT(3.toShort())
+        //hashMap136["id"] = ExpandShort.asNBT(35.toShort())
+        //array100[n102] = ExpandAnyDict.asData(hashMap136)
+        //hashMap135[s67] = ExpandAnyArray.asData(array100)
+        //hashMap135["RepairCost"] = ExpandInt.toData(2)
+        //val withTag34 = item69.withTag(ExpandAnyDict.asData(hashMap135))
+        //val array101 = arrayOf<IIngredient?>(ItemBracketHandler.getItem("enhancedlootbags:lootbag", 36), null, null)
+        //val n103 = 1
+        //val item70 = ItemBracketHandler.getItem("minecraft:enchanted_book", 0)
+        //val hashMap137 = HashMap<String, IData>()
+        //val s68 = "StoredEnchantments"
+        //val array102 = arrayOf<IData?>(null)
+        //val n104 = 0
+        //val hashMap138 = HashMap<String, IData>()
+        //hashMap138["lvl"] = ExpandShort.asNBT(3.toShort())
+        //hashMap138["id"] = ExpandShort.asNBT(35.toShort())
+        //array102[n104] = ExpandAnyDict.asData(hashMap138)
+        //hashMap137[s68] = ExpandAnyArray.asData(array102)
+        //array101[n103] = IngredientCondition.onlyWithTag(item70, ExpandAnyDict.asData(hashMap137))
+        //array101[2] = ItemBracketHandler.getItem("harvestcraft:beefwellingtonItem", 0)
+        //recipes34.addShapeless(withTag34, array101, null)
+
         val recipes35 = MineTweakerAPI.recipes
         val item71 = ItemBracketHandler.getItem("enhancedlootbags:lootbag", 37)
         val hashMap139 = HashMap<String, IData>()

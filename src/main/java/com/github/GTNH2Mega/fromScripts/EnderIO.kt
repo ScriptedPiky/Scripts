@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting
 import gttweaker.mods.gregtech.machines.Assembler
 import gttweaker.mods.gregtech.machines.ChemicalBath
@@ -16,6 +17,7 @@ import minetweaker.expand.ExpandString
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
 
 class EnderIO : Runnable {
@@ -70,7 +72,6 @@ class EnderIO : Runnable {
         val item29 = ItemBracketHandler.getItem("EnderIO:blockFusedQuartz", 2)
         val item30 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640)
         val ore20 = OreBracketHandler.getOre("plateDensePulsatingIron")
-        OreBracketHandler.getOre("gearDiamond")
         val ore21 = OreBracketHandler.getOre("gearElectricalSteel")
         val item31 = ItemBracketHandler.getItem("minecraft:cauldron", 0)
         val item32 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 6)
@@ -82,13 +83,10 @@ class EnderIO : Runnable {
         val item38 = ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 2)
         val item39 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 5)
         val item40 = ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 3)
-        ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0)
         val item41 = ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0)
-        ItemBracketHandler.getItem("irontank:ironTank", 0)
         val item42 = ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0)
         val ore22 = OreBracketHandler.getOre("plateDarkSteel")
         val item43 = ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4)
-        ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 5)
         val item44 = ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 6)
         val item45 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 8)
         val ore23 = OreBracketHandler.getOre("chestWood")
@@ -98,7 +96,6 @@ class EnderIO : Runnable {
         val ore25 = OreBracketHandler.getOre("screwDarkSteel")
         val item48 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 10)
         val ore26 = OreBracketHandler.getOre("lensEnderEye")
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32671)
         val ore27 = OreBracketHandler.getOre("plateSoularium")
         val item49 = ItemBracketHandler.getItem("minecraft:shears", 0)
         val item50 = ItemBracketHandler.getItem("minecraft:iron_axe", 0)
@@ -125,7 +122,6 @@ class EnderIO : Runnable {
         val ore41 = OreBracketHandler.getOre("blockObsidian")
         val ore42 = OreBracketHandler.getOre("gemEnderEye")
         val item58 = ItemBracketHandler.getItem("minecraft:compass", 0)
-        OreBracketHandler.getOre("plateRedstoneAlloy")
         val item59 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 1)
         val ore43 = OreBracketHandler.getOre("plateConductiveIron")
         val ore44 = OreBracketHandler.getOre("ingotElectricalSteel")
@@ -151,7 +147,7 @@ class EnderIO : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 2))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockSagMill", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockAlloySmelter", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockCapBank", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockCapBank", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockPainter", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:blockCrafter", 0))
         MineTweakerAPI.recipes.remove(item14)
@@ -274,19 +270,50 @@ class EnderIO : Runnable {
         MineTweakerAPI.recipes.remove(item47)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemYetaWrench", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemConduitProbe", 0))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemTravelStaff", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemTravelStaff", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemXpTransfer", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemSoulVessel", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 1))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMagnet", 32767))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMagnet", OreDictionary.WILDCARD_VALUE))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemOCConduit", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMachinePart", 2))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMachinePart", 3))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("EnderIO:itemAlloy", 6), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("nuggetDarkSteel"), OreBracketHandler.getOre("nuggetDarkSteel"), OreBracketHandler.getOre("nuggetDarkSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("nuggetDarkSteel"), OreBracketHandler.getOre("nuggetDarkSteel"), OreBracketHandler.getOre("nuggetDarkSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("nuggetDarkSteel"), OreBracketHandler.getOre("nuggetDarkSteel"), OreBracketHandler.getOre("nuggetDarkSteel"))))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("EnderIO:itemAlloy", 8), arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemMaterial", 11), ItemBracketHandler.getItem("EnderIO:itemMaterial", 11), ItemBracketHandler.getItem("EnderIO:itemMaterial", 11)), arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemMaterial", 11), ItemBracketHandler.getItem("EnderIO:itemMaterial", 11), ItemBracketHandler.getItem("EnderIO:itemMaterial", 11)), arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemMaterial", 11), ItemBracketHandler.getItem("EnderIO:itemMaterial", 11), ItemBracketHandler.getItem("EnderIO:itemMaterial", 11))))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:ender_pearl", 0), arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5), ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5), ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5)), arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5), ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5), ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5)), arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5), ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5), ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5))))
-        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:ender_pearl", 0), arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("EnderZoo:enderFragment", 0), null), arrayOf<IIngredient?>(ItemBracketHandler.getItem("EnderZoo:enderFragment", 0), ItemBracketHandler.getItem("EnderZoo:enderFragment", 0), ItemBracketHandler.getItem("EnderZoo:enderFragment", 0)), arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("EnderZoo:enderFragment", 0), null)))
+        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("EnderIO:itemAlloy", 6),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("nuggetDarkSteel"),
+                        OreBracketHandler.getOre("nuggetDarkSteel"), OreBracketHandler.getOre("nuggetDarkSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("nuggetDarkSteel"),
+                                OreBracketHandler.getOre("nuggetDarkSteel"),
+                                OreBracketHandler.getOre("nuggetDarkSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("nuggetDarkSteel"),
+                                OreBracketHandler.getOre("nuggetDarkSteel"),
+                                OreBracketHandler.getOre("nuggetDarkSteel"))))
+        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("EnderIO:itemAlloy", 8),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemMaterial", 11),
+                        ItemBracketHandler.getItem("EnderIO:itemMaterial", 11),
+                        ItemBracketHandler.getItem("EnderIO:itemMaterial", 11)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemMaterial", 11),
+                                ItemBracketHandler.getItem("EnderIO:itemMaterial", 11),
+                                ItemBracketHandler.getItem("EnderIO:itemMaterial", 11)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemMaterial", 11),
+                                ItemBracketHandler.getItem("EnderIO:itemMaterial", 11),
+                                ItemBracketHandler.getItem("EnderIO:itemMaterial", 11))))
+        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:ender_pearl", 0),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5),
+                        ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5),
+                        ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5),
+                                ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5),
+                                ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5),
+                                ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5),
+                                ItemBracketHandler.getItem("EnderIO:itemPowderIngot", 5))))
+        MineTweakerAPI.recipes.removeShaped(ItemBracketHandler.getItem("minecraft:ender_pearl", 0),
+                arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("EnderZoo:enderFragment", 0), null),
+                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("EnderZoo:enderFragment", 0),
+                                ItemBracketHandler.getItem("EnderZoo:enderFragment", 0),
+                                ItemBracketHandler.getItem("EnderZoo:enderFragment", 0)),
+                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("EnderZoo:enderFragment", 0), null)))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMaterial", 12))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMaterial", 14))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:itemMaterial", 15))
@@ -299,91 +326,357 @@ class EnderIO : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:item.stellar_chestplate", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:item.stellar_leggings", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("EnderIO:item.stellar_boots", 0))
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockStirlingGenerator", 0), arrayOf(arrayOf<IIngredient>(ore15, ore, ore15), arrayOf(ore18, item24, ore18), arrayOf(item, ore14, item)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockCombustionGenerator", 0), arrayOf(arrayOf<IIngredient>(ore16, ore2, ore16), arrayOf(ore19, item24, ore19), arrayOf<IIngredient>(item2, item27, item2)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockZombieGenerator", 0), arrayOf(arrayOf<IIngredient>(ore16, ore2, ore16), arrayOf<IIngredient>(item28, item24, item28), arrayOf<IIngredient>(item2, item36, item2)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockFrankenzombieGenerator", 0), arrayOf(arrayOf<IIngredient>(ore12, ore3, ore12), arrayOf<IIngredient>(item28, item25, item28), arrayOf<IIngredient>(item3, item37, item3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockEnderGenerator", 0), arrayOf(arrayOf<IIngredient>(ore13, ore4, ore13), arrayOf<IIngredient>(item28, item26, item28), arrayOf<IIngredient>(item4, item40, item4)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 0), arrayOf(arrayOf<IIngredient>(item11, item28, item11), arrayOf<IIngredient>(item13, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32750), item13), arrayOf<IIngredient>(item14, item28, item14)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 1), arrayOf(arrayOf<IIngredient>(item12, item28, item12), arrayOf<IIngredient>(item11, ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 0), item11), arrayOf<IIngredient>(item15, item28, item15)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 2), arrayOf(arrayOf(ore8, item29, ore8), arrayOf<IIngredient>(item11, ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 1), item11), arrayOf<IIngredient>(item16, item29, item16)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSagMill", 0), arrayOf(arrayOf(ore16, item30, ore16), arrayOf(ore, item24, ore), arrayOf<IIngredient>(item, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32721), item)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockAlloySmelter", 0), arrayOf(arrayOf<IIngredient>(ore, ore14, ore), arrayOf(ore14, item24, ore14), arrayOf<IIngredient>(item, item31, item)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockStirlingGenerator", 0),
+                arrayOf(arrayOf<IIngredient>(ore15, ore, ore15), arrayOf(ore18, item24, ore18),
+                        arrayOf(item, ore14, item)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockCombustionGenerator", 0),
+                arrayOf(arrayOf<IIngredient>(ore16, ore2, ore16), arrayOf(ore19, item24, ore19),
+                        arrayOf<IIngredient>(item2, item27, item2)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockZombieGenerator", 0),
+                arrayOf(arrayOf<IIngredient>(ore16, ore2, ore16), arrayOf<IIngredient>(item28, item24, item28),
+                        arrayOf<IIngredient>(item2, item36, item2)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockFrankenzombieGenerator", 0),
+                arrayOf(arrayOf<IIngredient>(ore12, ore3, ore12), arrayOf<IIngredient>(item28, item25, item28),
+                        arrayOf<IIngredient>(item3, item37, item3)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockEnderGenerator", 0),
+                arrayOf(arrayOf<IIngredient>(ore13, ore4, ore13), arrayOf<IIngredient>(item28, item26, item28),
+                        arrayOf<IIngredient>(item4, item40, item4)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 0),
+                arrayOf(arrayOf<IIngredient>(item11, item28, item11),
+                        arrayOf<IIngredient>(item13, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32750),
+                                item13), arrayOf<IIngredient>(item14, item28, item14)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 1),
+                arrayOf(arrayOf<IIngredient>(item12, item28, item12),
+                        arrayOf<IIngredient>(item11, ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 0), item11),
+                        arrayOf<IIngredient>(item15, item28, item15)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 2),
+                arrayOf(arrayOf(ore8, item29, ore8),
+                        arrayOf<IIngredient>(item11, ItemBracketHandler.getItem("EnderIO:blockSolarPanel", 1), item11),
+                        arrayOf<IIngredient>(item16, item29, item16)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSagMill", 0),
+                arrayOf(arrayOf(ore16, item30, ore16), arrayOf(ore, item24, ore),
+                        arrayOf<IIngredient>(item, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32721), item)),
+                null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockAlloySmelter", 0),
+                arrayOf(arrayOf<IIngredient>(ore, ore14, ore), arrayOf(ore14, item24, ore14),
+                        arrayOf<IIngredient>(item, item31, item)), null)
         val recipes = MineTweakerAPI.recipes
         val item65 = ItemBracketHandler.getItem("EnderIO:blockCapBank", 1)
         val hashMap = HashMap<String, IData>()
         hashMap["type"] = ExpandString.asData("SIMPLE")
         hashMap["storedEnergyRF"] = ExpandInt.toData(0)
-        recipes.addShaped(item65.withTag(ExpandAnyDict.asData(hashMap)), arrayOf(arrayOf(item14, ore, item14), arrayOf(ore6, item24, ore6), arrayOf<IIngredient>(item14, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32527), item14)), null)
+        recipes.addShaped(item65.withTag(ExpandAnyDict.asData(hashMap)),
+                arrayOf(arrayOf(item14, ore, item14), arrayOf(ore6, item24, ore6),
+                        arrayOf<IIngredient>(item14, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32527),
+                                item14)), null)
         val recipes2 = MineTweakerAPI.recipes
         val item66 = ItemBracketHandler.getItem("EnderIO:blockCapBank", 2)
         val hashMap2 = HashMap<String, IData>()
         hashMap2["type"] = ExpandString.asData("ACTIVATED")
         hashMap2["storedEnergyRF"] = ExpandInt.toData(0)
-        recipes2.addShaped(item66.withTag(ExpandAnyDict.asData(hashMap2)), arrayOf(arrayOf(item15, ore2, item15), arrayOf<IIngredient>(item13, item24, item13), arrayOf<IIngredient>(item15, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32537), item15)), null)
+        recipes2.addShaped(item66.withTag(ExpandAnyDict.asData(hashMap2)),
+                arrayOf(arrayOf(item15, ore2, item15), arrayOf<IIngredient>(item13, item24, item13),
+                        arrayOf<IIngredient>(item15, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32537),
+                                item15)), null)
         val recipes3 = MineTweakerAPI.recipes
         val item67 = ItemBracketHandler.getItem("EnderIO:blockCapBank", 3)
         val hashMap3 = HashMap<String, IData>()
         hashMap3["type"] = ExpandString.asData("VIBRANT")
         hashMap3["storedEnergyRF"] = ExpandInt.toData(0)
-        recipes3.addShaped(item67.withTag(ExpandAnyDict.asData(hashMap3)), arrayOf(arrayOf(item16, ore3, item16), arrayOf<IIngredient>(item32, item24, item32), arrayOf<IIngredient>(item16, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32540), item16)), null)
+        recipes3.addShaped(item67.withTag(ExpandAnyDict.asData(hashMap3)),
+                arrayOf(arrayOf(item16, ore3, item16), arrayOf<IIngredient>(item32, item24, item32),
+                        arrayOf<IIngredient>(item16, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32540),
+                                item16)), null)
         val recipes4 = MineTweakerAPI.recipes
         val item68 = ItemBracketHandler.getItem("EnderIO:blockCapBank", 3)
         val hashMap4 = HashMap<String, IData>()
         hashMap4["type"] = ExpandString.asData("VIBRANT")
         hashMap4["storedEnergyRF"] = ExpandInt.toData(0)
-        recipes4.addShaped(item68.withTag(ExpandAnyDict.asData(hashMap4)), arrayOf(arrayOf(item16, ore3, item16), arrayOf<IIngredient>(item32, item24, item32), arrayOf<IIngredient>(item16, ItemBracketHandler.getItem("miscutils:MU-metaitem.01", 32054), item16)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockPainter", 0), arrayOf(arrayOf<IIngredient>(ore16, ore19, ore16), arrayOf(ore, item24, ore), arrayOf(item, ore19, item)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockCrafter", 0), arrayOf(arrayOf(ore16, ItemBracketHandler.getItem("BuildCraft|Factory:autoWorkbenchBlock", 0), ore16), arrayOf(ore, item24, ore), arrayOf(ore16, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 1), ore16)), null)
-        MineTweakerAPI.recipes.addShaped(item24, arrayOf(arrayOf<IIngredient>(ore16, ore7, ore16), arrayOf(ore7, item14, ore7), arrayOf<IIngredient>(ore16, ore7, ore16)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemMachinePart", 2), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingSoularium"), OreBracketHandler.getOre("plateSoularium"), OreBracketHandler.getOre("itemCasingSoularium")), arrayOf(OreBracketHandler.getOre("plateSoularium"), item15, OreBracketHandler.getOre("plateSoularium")), arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingSoularium"), OreBracketHandler.getOre("plateSoularium"), OreBracketHandler.getOre("itemCasingSoularium"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemMachinePart", 3), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingEndSteel"), OreBracketHandler.getOre("plateEndSteel"), OreBracketHandler.getOre("itemCasingEndSteel")), arrayOf(OreBracketHandler.getOre("plateEndSteel"), item16, OreBracketHandler.getOre("plateEndSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingEndSteel"), OreBracketHandler.getOre("plateEndSteel"), OreBracketHandler.getOre("itemCasingEndSteel"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockVat", 0), arrayOf(arrayOf(ore16, item31, ore16), arrayOf<IIngredient>(item27, item24, item27), arrayOf(item, ore14, item)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockPowerMonitor", 0), arrayOf(arrayOf(ore7, item33, ore7), arrayOf(ore, item24, ore), arrayOf<IIngredient>(item35, item34, item35)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockFarmStation", 0), arrayOf(arrayOf(item9, ore20, item9), arrayOf<IIngredient>(item39, item24, item39), arrayOf(ore21, item37, ore21)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockWirelessCharger", 0), arrayOf(arrayOf(ore7, item16, ore7), arrayOf(ore3, item24, ore3), arrayOf<IIngredient>(item3, item40, item3)), null)
-        MineTweakerAPI.recipes.addShaped(item27, arrayOf(arrayOf(ore16, item41, ore16), arrayOf<IIngredient>(item41, ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4461), item41), arrayOf(ore16, item6, ore16)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockTank", 1), arrayOf(arrayOf(ore22, item42, ore22), arrayOf<IIngredient>(item42, ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4460), item42), arrayOf(ore22, item7, ore22)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockReservoir", 0).amount(2), arrayOf(arrayOf<IIngredient>(item28, item8, item28), arrayOf<IIngredient>(item28, item31, item28), arrayOf<IIngredient>(item28, item8, item28)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockTransceiver", 0), arrayOf(arrayOf(item17, ore5, item17), arrayOf(item45, OreBracketHandler.getOre("frameGtEnderium"), item45), arrayOf<IIngredient>(item28, item43, item28)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockBuffer", 0), arrayOf(arrayOf<IIngredient>(ore7, ore23, ore7), arrayOf(item46, OreBracketHandler.getOre("frameGtEnderium"), ore)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockBuffer", 1), arrayOf(arrayOf(ore7, item35, ore7), arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32519), OreBracketHandler.getOre("frameGtEnderium"), ore)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockInventoryPanel", 0), arrayOf(arrayOf(ore22, item47, ore22), arrayOf<IIngredient>(item39, item33, item39), arrayOf(ore22, item37, ore22)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 0).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwElectricalSteel"), OreBracketHandler.getOre("plateElectricalSteel"), OreBracketHandler.getOre("screwElectricalSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateElectricalSteel"), OreBracketHandler.getOre("ringElectricalSteel"), OreBracketHandler.getOre("plateElectricalSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwElectricalSteel"), OreBracketHandler.getOre("plateElectricalSteel"), OreBracketHandler.getOre("screwElectricalSteel"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 1).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwEnergeticAlloy"), OreBracketHandler.getOre("plateEnergeticAlloy"), OreBracketHandler.getOre("screwEnergeticAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateEnergeticAlloy"), OreBracketHandler.getOre("ringEnergeticAlloy"), OreBracketHandler.getOre("plateEnergeticAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwEnergeticAlloy"), OreBracketHandler.getOre("plateEnergeticAlloy"), OreBracketHandler.getOre("screwEnergeticAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 2).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwVibrantAlloy"), OreBracketHandler.getOre("plateVibrantAlloy"), OreBracketHandler.getOre("screwVibrantAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateVibrantAlloy"), OreBracketHandler.getOre("ringVibrantAlloy"), OreBracketHandler.getOre("plateVibrantAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwVibrantAlloy"), OreBracketHandler.getOre("plateVibrantAlloy"), OreBracketHandler.getOre("screwVibrantAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 3).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwRedstoneAlloy"), OreBracketHandler.getOre("plateRedstoneAlloy"), OreBracketHandler.getOre("screwRedstoneAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateRedstoneAlloy"), OreBracketHandler.getOre("ringRedstoneAlloy"), OreBracketHandler.getOre("plateRedstoneAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwRedstoneAlloy"), OreBracketHandler.getOre("plateRedstoneAlloy"), OreBracketHandler.getOre("screwRedstoneAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 4).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwConductiveIron"), OreBracketHandler.getOre("plateConductiveIron"), OreBracketHandler.getOre("screwConductiveIron")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateConductiveIron"), OreBracketHandler.getOre("ringConductiveIron"), OreBracketHandler.getOre("plateConductiveIron")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwConductiveIron"), OreBracketHandler.getOre("plateConductiveIron"), OreBracketHandler.getOre("screwConductiveIron"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 5).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwPulsatingIron"), OreBracketHandler.getOre("platePulsatingIron"), OreBracketHandler.getOre("screwPulsatingIron")), arrayOf<IIngredient>(OreBracketHandler.getOre("platePulsatingIron"), OreBracketHandler.getOre("ringPulsatingIron"), OreBracketHandler.getOre("platePulsatingIron")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwPulsatingIron"), OreBracketHandler.getOre("platePulsatingIron"), OreBracketHandler.getOre("screwPulsatingIron"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 6).amount(4), arrayOf(arrayOf<IIngredient>(ore25, ore22, ore25), arrayOf<IIngredient>(ore22, ore24, ore22), arrayOf<IIngredient>(ore25, ore22, ore25)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 7).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwSoularium"), OreBracketHandler.getOre("plateSoularium"), OreBracketHandler.getOre("screwSoularium")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateSoularium"), OreBracketHandler.getOre("ringSoularium"), OreBracketHandler.getOre("plateSoularium")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwSoularium"), OreBracketHandler.getOre("plateSoularium"), OreBracketHandler.getOre("screwSoularium"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 8).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwEndSteel"), OreBracketHandler.getOre("plateEndSteel"), OreBracketHandler.getOre("screwEndSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateEndSteel"), OreBracketHandler.getOre("ringEndSteel"), OreBracketHandler.getOre("plateEndSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwEndSteel"), OreBracketHandler.getOre("plateEndSteel"), OreBracketHandler.getOre("screwEndSteel"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 0).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrudeSteel"), OreBracketHandler.getOre("plateCrudeSteel"), OreBracketHandler.getOre("screwCrudeSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateCrudeSteel"), OreBracketHandler.getOre("ringCrudeSteel"), OreBracketHandler.getOre("plateCrudeSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrudeSteel"), OreBracketHandler.getOre("plateCrudeSteel"), OreBracketHandler.getOre("screwCrudeSteel"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 1).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrystallineAlloy"), OreBracketHandler.getOre("plateCrystallineAlloy"), OreBracketHandler.getOre("screwCrystallineAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateCrystallineAlloy"), OreBracketHandler.getOre("ringCrystallineAlloy"), OreBracketHandler.getOre("plateCrystallineAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrystallineAlloy"), OreBracketHandler.getOre("plateCrystallineAlloy"), OreBracketHandler.getOre("screwCrystallineAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 2).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwMelodicAlloy"), OreBracketHandler.getOre("plateMelodicAlloy"), OreBracketHandler.getOre("screwMelodicAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateMelodicAlloy"), OreBracketHandler.getOre("ringMelodicAlloy"), OreBracketHandler.getOre("plateMelodicAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwMelodicAlloy"), OreBracketHandler.getOre("plateMelodicAlloy"), OreBracketHandler.getOre("screwMelodicAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 3).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwStellarAlloy"), OreBracketHandler.getOre("plateStellarAlloy"), OreBracketHandler.getOre("screwStellarAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateStellarAlloy"), OreBracketHandler.getOre("ringStellarAlloy"), OreBracketHandler.getOre("plateStellarAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwStellarAlloy"), OreBracketHandler.getOre("plateStellarAlloy"), OreBracketHandler.getOre("screwStellarAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 4).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrystallinePinkSlime"), OreBracketHandler.getOre("plateCrystallinePinkSlime"), OreBracketHandler.getOre("screwCrystallinePinkSlime")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateCrystallinePinkSlime"), OreBracketHandler.getOre("ringCrystallinePinkSlime"), OreBracketHandler.getOre("plateCrystallinePinkSlime")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrystallinePinkSlime"), OreBracketHandler.getOre("plateCrystallinePinkSlime"), OreBracketHandler.getOre("screwCrystallinePinkSlime"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 5).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwEnergeticSilver"), OreBracketHandler.getOre("plateEnergeticSilver"), OreBracketHandler.getOre("screwEnergeticSilver")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateEnergeticSilver"), OreBracketHandler.getOre("ringEnergeticSilver"), OreBracketHandler.getOre("plateEnergeticSilver")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwEnergeticSilver"), OreBracketHandler.getOre("plateEnergeticSilver"), OreBracketHandler.getOre("screwEnergeticSilver"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 6).amount(4), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwVividAlloy"), OreBracketHandler.getOre("plateVividAlloy"), OreBracketHandler.getOre("screwVividAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("plateVividAlloy"), OreBracketHandler.getOre("ringVividAlloy"), OreBracketHandler.getOre("plateVividAlloy")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwVividAlloy"), OreBracketHandler.getOre("plateVividAlloy"), OreBracketHandler.getOre("screwVividAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockEnderIo", 0), arrayOf(arrayOf(ore7, item28, ore7), arrayOf(item28, ore26, item28), arrayOf(ore7, item28, ore7)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockTravelAnchor", 0), arrayOf(arrayOf(ore7, item12, ore7), arrayOf<IIngredient>(item39, item24, item39), arrayOf(ore7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32670), ore7)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockTelePad", 0), arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.StargateShieldingFoil", 0), item28, ItemBracketHandler.getItem("dreamcraft:item.StargateShieldingFoil", 0)), arrayOf<IIngredient>(item63, ItemBracketHandler.getItem("SGCraft:sgCoreCrystal", 0), item63), arrayOf<IIngredient>(item5, item10, item5)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSliceAndSplice", 0), arrayOf(arrayOf(ore27, item49, ore27), arrayOf(ore2, item24, ore2), arrayOf<IIngredient>(item2, item50, item2)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSoulBinder", 0), arrayOf(arrayOf(ore27, item40, ore27), arrayOf(ore3, item24, ore3), arrayOf<IIngredient>(item3, item37, item3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockPoweredSpawner", 0), arrayOf(arrayOf<IIngredient>(ore22, ore28, ore22), arrayOf(ore27, item24, ore27), arrayOf<IIngredient>(item45, item38, item45)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockKillerJoe", 0), arrayOf(arrayOf<IIngredient>(ore17, ore2, ore17), arrayOf<IIngredient>(item28, item24, item28), arrayOf<IIngredient>(item2, item38, item2)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockAttractor", 0), arrayOf(arrayOf<IIngredient?>(null, item51, null), arrayOf(item13, ore27, item13), arrayOf(ore27, item24, ore27)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSpawnGuard", 0), arrayOf(arrayOf<IIngredient?>(null, item52, null), arrayOf(item13, ore27, item13), arrayOf(ore27, item24, ore27)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockExperienceObelisk", 0), arrayOf(arrayOf<IIngredient?>(null, item53, null), arrayOf(item13, ore27, item13), arrayOf(ore27, item24, ore27)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockWeatherObelisk", 0), arrayOf(arrayOf<IIngredient?>(null, item48, null), arrayOf<IIngredient?>(ore29, ore27, ore30), arrayOf(ore27, item54, ore27)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockEnchanter", 0), arrayOf(arrayOf(item39, ore31, item32), arrayOf<IIngredient?>(null, ore22, null), arrayOf(ore22, item55, ore22)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0).amount(3), arrayOf(arrayOf<IIngredient?>(null, ore32, null), arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364)), arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSoulariumBars", 0).amount(3), arrayOf(arrayOf<IIngredient?>(null, ore32, null), arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379)), arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(3), arrayOf(arrayOf<IIngredient?>(null, ore32, null), arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401)), arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockDarkSteelLadder", 0), arrayOf(arrayOf(item56, ore35, item56), arrayOf<IIngredient>(ore37, ore36, ore37), arrayOf(item56, ore34, item56)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0), arrayOf(arrayOf<IIngredient>(item28, item28, item28), arrayOf(ore38, item57, ore38), arrayOf(ore, item14, ore)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 2), arrayOf(arrayOf<IIngredient>(item28, item28, item28), arrayOf(ore38, ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 0), ore38), arrayOf<IIngredient>(ore39, ore40, ore39)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockReinforcedObsidian", 0), arrayOf(arrayOf(ore22, item42, ore22), arrayOf(item42, ore41, item42), arrayOf(ore22, item42, ore22)), null)
+
+        //TODO Replace ("miscutils:MU-metaitem.01", 32054)
+        //recipes4.addShaped(item68.withTag(ExpandAnyDict.asData(hashMap4)),
+        //        arrayOf(arrayOf(item16, ore3, item16), arrayOf<IIngredient>(item32, item24, item32),
+        //                arrayOf<IIngredient>(item16, ItemBracketHandler.getItem("miscutils:MU-metaitem.01", 32054),
+        //                        item16)), null)
+
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockPainter", 0),
+                arrayOf(arrayOf<IIngredient>(ore16, ore19, ore16), arrayOf(ore, item24, ore),
+                        arrayOf(item, ore19, item)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockCrafter", 0),
+                arrayOf(arrayOf(ore16, ItemBracketHandler.getItem("BuildCraft|Factory:autoWorkbenchBlock", 0), ore16),
+                        arrayOf(ore, item24, ore),
+                        arrayOf(ore16, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 1), ore16)), null)
+        MineTweakerAPI.recipes.addShaped(item24,
+                arrayOf(arrayOf<IIngredient>(ore16, ore7, ore16), arrayOf(ore7, item14, ore7),
+                        arrayOf<IIngredient>(ore16, ore7, ore16)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemMachinePart", 2),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingSoularium"),
+                        OreBracketHandler.getOre("plateSoularium"), OreBracketHandler.getOre("itemCasingSoularium")),
+                        arrayOf(OreBracketHandler.getOre("plateSoularium"), item15,
+                                OreBracketHandler.getOre("plateSoularium")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingSoularium"),
+                                OreBracketHandler.getOre("plateSoularium"),
+                                OreBracketHandler.getOre("itemCasingSoularium"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemMachinePart", 3),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingEndSteel"),
+                        OreBracketHandler.getOre("plateEndSteel"), OreBracketHandler.getOre("itemCasingEndSteel")),
+                        arrayOf(OreBracketHandler.getOre("plateEndSteel"), item16,
+                                OreBracketHandler.getOre("plateEndSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("itemCasingEndSteel"),
+                                OreBracketHandler.getOre("plateEndSteel"),
+                                OreBracketHandler.getOre("itemCasingEndSteel"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockVat", 0),
+                arrayOf(arrayOf(ore16, item31, ore16), arrayOf<IIngredient>(item27, item24, item27),
+                        arrayOf(item, ore14, item)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockPowerMonitor", 0),
+                arrayOf(arrayOf(ore7, item33, ore7), arrayOf(ore, item24, ore),
+                        arrayOf<IIngredient>(item35, item34, item35)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockFarmStation", 0),
+                arrayOf(arrayOf(item9, ore20, item9), arrayOf<IIngredient>(item39, item24, item39),
+                        arrayOf(ore21, item37, ore21)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockWirelessCharger", 0),
+                arrayOf(arrayOf(ore7, item16, ore7), arrayOf(ore3, item24, ore3),
+                        arrayOf<IIngredient>(item3, item40, item3)), null)
+        MineTweakerAPI.recipes.addShaped(item27, arrayOf(arrayOf(ore16, item41, ore16),
+                arrayOf<IIngredient>(item41, ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4461), item41),
+                arrayOf(ore16, item6, ore16)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockTank", 1),
+                arrayOf(arrayOf(ore22, item42, ore22),
+                        arrayOf<IIngredient>(item42, ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4460),
+                                item42), arrayOf(ore22, item7, ore22)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockReservoir", 0).amount(2),
+                arrayOf(arrayOf<IIngredient>(item28, item8, item28), arrayOf<IIngredient>(item28, item31, item28),
+                        arrayOf<IIngredient>(item28, item8, item28)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockTransceiver", 0),
+                arrayOf(arrayOf(item17, ore5, item17),
+                        arrayOf(item45, OreBracketHandler.getOre("frameGtEnderium"), item45),
+                        arrayOf<IIngredient>(item28, item43, item28)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockBuffer", 0),
+                arrayOf(arrayOf<IIngredient>(ore7, ore23, ore7),
+                        arrayOf(item46, OreBracketHandler.getOre("frameGtEnderium"), ore)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockBuffer", 1),
+                arrayOf(arrayOf(ore7, item35, ore7),
+                        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32519),
+                                OreBracketHandler.getOre("frameGtEnderium"), ore)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockInventoryPanel", 0),
+                arrayOf(arrayOf(ore22, item47, ore22), arrayOf<IIngredient>(item39, item33, item39),
+                        arrayOf(ore22, item37, ore22)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 0).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwElectricalSteel"),
+                        OreBracketHandler.getOre("plateElectricalSteel"),
+                        OreBracketHandler.getOre("screwElectricalSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateElectricalSteel"),
+                                OreBracketHandler.getOre("ringElectricalSteel"),
+                                OreBracketHandler.getOre("plateElectricalSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwElectricalSteel"),
+                                OreBracketHandler.getOre("plateElectricalSteel"),
+                                OreBracketHandler.getOre("screwElectricalSteel"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 1).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwEnergeticAlloy"),
+                        OreBracketHandler.getOre("plateEnergeticAlloy"),
+                        OreBracketHandler.getOre("screwEnergeticAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateEnergeticAlloy"),
+                                OreBracketHandler.getOre("ringEnergeticAlloy"),
+                                OreBracketHandler.getOre("plateEnergeticAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwEnergeticAlloy"),
+                                OreBracketHandler.getOre("plateEnergeticAlloy"),
+                                OreBracketHandler.getOre("screwEnergeticAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 2).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwVibrantAlloy"),
+                        OreBracketHandler.getOre("plateVibrantAlloy"), OreBracketHandler.getOre("screwVibrantAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateVibrantAlloy"),
+                                OreBracketHandler.getOre("ringVibrantAlloy"),
+                                OreBracketHandler.getOre("plateVibrantAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwVibrantAlloy"),
+                                OreBracketHandler.getOre("plateVibrantAlloy"),
+                                OreBracketHandler.getOre("screwVibrantAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 3).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwRedstoneAlloy"),
+                        OreBracketHandler.getOre("plateRedstoneAlloy"), OreBracketHandler.getOre("screwRedstoneAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateRedstoneAlloy"),
+                                OreBracketHandler.getOre("ringRedstoneAlloy"),
+                                OreBracketHandler.getOre("plateRedstoneAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwRedstoneAlloy"),
+                                OreBracketHandler.getOre("plateRedstoneAlloy"),
+                                OreBracketHandler.getOre("screwRedstoneAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 4).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwConductiveIron"),
+                        OreBracketHandler.getOre("plateConductiveIron"),
+                        OreBracketHandler.getOre("screwConductiveIron")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateConductiveIron"),
+                                OreBracketHandler.getOre("ringConductiveIron"),
+                                OreBracketHandler.getOre("plateConductiveIron")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwConductiveIron"),
+                                OreBracketHandler.getOre("plateConductiveIron"),
+                                OreBracketHandler.getOre("screwConductiveIron"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 5).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwPulsatingIron"),
+                        OreBracketHandler.getOre("platePulsatingIron"), OreBracketHandler.getOre("screwPulsatingIron")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("platePulsatingIron"),
+                                OreBracketHandler.getOre("ringPulsatingIron"),
+                                OreBracketHandler.getOre("platePulsatingIron")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwPulsatingIron"),
+                                OreBracketHandler.getOre("platePulsatingIron"),
+                                OreBracketHandler.getOre("screwPulsatingIron"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 6).amount(4),
+                arrayOf(arrayOf<IIngredient>(ore25, ore22, ore25), arrayOf<IIngredient>(ore22, ore24, ore22),
+                        arrayOf<IIngredient>(ore25, ore22, ore25)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 7).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwSoularium"),
+                        OreBracketHandler.getOre("plateSoularium"), OreBracketHandler.getOre("screwSoularium")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateSoularium"),
+                                OreBracketHandler.getOre("ringSoularium"), OreBracketHandler.getOre("plateSoularium")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwSoularium"),
+                                OreBracketHandler.getOre("plateSoularium"),
+                                OreBracketHandler.getOre("screwSoularium"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 8).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwEndSteel"),
+                        OreBracketHandler.getOre("plateEndSteel"), OreBracketHandler.getOre("screwEndSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateEndSteel"),
+                                OreBracketHandler.getOre("ringEndSteel"), OreBracketHandler.getOre("plateEndSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwEndSteel"),
+                                OreBracketHandler.getOre("plateEndSteel"), OreBracketHandler.getOre("screwEndSteel"))),
+                null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 0).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrudeSteel"),
+                        OreBracketHandler.getOre("plateCrudeSteel"), OreBracketHandler.getOre("screwCrudeSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateCrudeSteel"),
+                                OreBracketHandler.getOre("ringCrudeSteel"),
+                                OreBracketHandler.getOre("plateCrudeSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrudeSteel"),
+                                OreBracketHandler.getOre("plateCrudeSteel"),
+                                OreBracketHandler.getOre("screwCrudeSteel"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 1).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrystallineAlloy"),
+                        OreBracketHandler.getOre("plateCrystallineAlloy"),
+                        OreBracketHandler.getOre("screwCrystallineAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateCrystallineAlloy"),
+                                OreBracketHandler.getOre("ringCrystallineAlloy"),
+                                OreBracketHandler.getOre("plateCrystallineAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrystallineAlloy"),
+                                OreBracketHandler.getOre("plateCrystallineAlloy"),
+                                OreBracketHandler.getOre("screwCrystallineAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 2).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwMelodicAlloy"),
+                        OreBracketHandler.getOre("plateMelodicAlloy"), OreBracketHandler.getOre("screwMelodicAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateMelodicAlloy"),
+                                OreBracketHandler.getOre("ringMelodicAlloy"),
+                                OreBracketHandler.getOre("plateMelodicAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwMelodicAlloy"),
+                                OreBracketHandler.getOre("plateMelodicAlloy"),
+                                OreBracketHandler.getOre("screwMelodicAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 3).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwStellarAlloy"),
+                        OreBracketHandler.getOre("plateStellarAlloy"), OreBracketHandler.getOre("screwStellarAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateStellarAlloy"),
+                                OreBracketHandler.getOre("ringStellarAlloy"),
+                                OreBracketHandler.getOre("plateStellarAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwStellarAlloy"),
+                                OreBracketHandler.getOre("plateStellarAlloy"),
+                                OreBracketHandler.getOre("screwStellarAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 4).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrystallinePinkSlime"),
+                        OreBracketHandler.getOre("plateCrystallinePinkSlime"),
+                        OreBracketHandler.getOre("screwCrystallinePinkSlime")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateCrystallinePinkSlime"),
+                                OreBracketHandler.getOre("ringCrystallinePinkSlime"),
+                                OreBracketHandler.getOre("plateCrystallinePinkSlime")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwCrystallinePinkSlime"),
+                                OreBracketHandler.getOre("plateCrystallinePinkSlime"),
+                                OreBracketHandler.getOre("screwCrystallinePinkSlime"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 5).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwEnergeticSilver"),
+                        OreBracketHandler.getOre("plateEnergeticSilver"),
+                        OreBracketHandler.getOre("screwEnergeticSilver")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateEnergeticSilver"),
+                                OreBracketHandler.getOre("ringEnergeticSilver"),
+                                OreBracketHandler.getOre("plateEnergeticSilver")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwEnergeticSilver"),
+                                OreBracketHandler.getOre("plateEnergeticSilver"),
+                                OreBracketHandler.getOre("screwEnergeticSilver"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 6).amount(4),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("screwVividAlloy"),
+                        OreBracketHandler.getOre("plateVividAlloy"), OreBracketHandler.getOre("screwVividAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateVividAlloy"),
+                                OreBracketHandler.getOre("ringVividAlloy"),
+                                OreBracketHandler.getOre("plateVividAlloy")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwVividAlloy"),
+                                OreBracketHandler.getOre("plateVividAlloy"),
+                                OreBracketHandler.getOre("screwVividAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockEnderIo", 0),
+                arrayOf(arrayOf(ore7, item28, ore7), arrayOf(item28, ore26, item28), arrayOf(ore7, item28, ore7)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockTravelAnchor", 0),
+                arrayOf(arrayOf(ore7, item12, ore7), arrayOf<IIngredient>(item39, item24, item39),
+                        arrayOf(ore7, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32670), ore7)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockTelePad", 0),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("dreamcraft:item.StargateShieldingFoil", 0),
+                        item28, ItemBracketHandler.getItem("dreamcraft:item.StargateShieldingFoil", 0)),
+                        arrayOf<IIngredient>(item63, ItemBracketHandler.getItem("SGCraft:sgCoreCrystal", 0), item63),
+                        arrayOf<IIngredient>(item5, item10, item5)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSliceAndSplice", 0),
+                arrayOf(arrayOf(ore27, item49, ore27), arrayOf(ore2, item24, ore2),
+                        arrayOf<IIngredient>(item2, item50, item2)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSoulBinder", 0),
+                arrayOf(arrayOf(ore27, item40, ore27), arrayOf(ore3, item24, ore3),
+                        arrayOf<IIngredient>(item3, item37, item3)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockPoweredSpawner", 0),
+                arrayOf(arrayOf<IIngredient>(ore22, ore28, ore22), arrayOf(ore27, item24, ore27),
+                        arrayOf<IIngredient>(item45, item38, item45)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockKillerJoe", 0),
+                arrayOf(arrayOf<IIngredient>(ore17, ore2, ore17), arrayOf<IIngredient>(item28, item24, item28),
+                        arrayOf<IIngredient>(item2, item38, item2)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockAttractor", 0),
+                arrayOf(arrayOf<IIngredient?>(null, item51, null), arrayOf(item13, ore27, item13),
+                        arrayOf(ore27, item24, ore27)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSpawnGuard", 0),
+                arrayOf(arrayOf<IIngredient?>(null, item52, null), arrayOf(item13, ore27, item13),
+                        arrayOf(ore27, item24, ore27)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockExperienceObelisk", 0),
+                arrayOf(arrayOf<IIngredient?>(null, item53, null), arrayOf(item13, ore27, item13),
+                        arrayOf(ore27, item24, ore27)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockWeatherObelisk", 0),
+                arrayOf(arrayOf<IIngredient?>(null, item48, null), arrayOf<IIngredient?>(ore29, ore27, ore30),
+                        arrayOf(ore27, item54, ore27)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockEnchanter", 0),
+                arrayOf(arrayOf(item39, ore31, item32), arrayOf<IIngredient?>(null, ore22, null),
+                        arrayOf(ore22, item55, ore22)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0).amount(3),
+                arrayOf(arrayOf<IIngredient?>(null, ore32, null),
+                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364)),
+                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockSoulariumBars", 0).amount(3),
+                arrayOf(arrayOf<IIngredient?>(null, ore32, null),
+                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379)),
+                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(3),
+                arrayOf(arrayOf<IIngredient?>(null, ore32, null),
+                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401)),
+                        arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockDarkSteelLadder", 0),
+                arrayOf(arrayOf(item56, ore35, item56), arrayOf<IIngredient>(ore37, ore36, ore37),
+                        arrayOf(item56, ore34, item56)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0),
+                arrayOf(arrayOf<IIngredient>(item28, item28, item28), arrayOf(ore38, item57, ore38),
+                        arrayOf(ore, item14, ore)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 2),
+                arrayOf(arrayOf<IIngredient>(item28, item28, item28), arrayOf(ore38,
+                        ItemBracketHandler.getItem("ProjRed|Illumination:projectred.illumination.lamp", 0), ore38),
+                        arrayOf<IIngredient>(ore39, ore40, ore39)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:blockReinforcedObsidian", 0),
+                arrayOf(arrayOf(ore22, item42, ore22), arrayOf(item42, ore41, item42), arrayOf(ore22, item42, ore22)),
+                null)
         val recipes5 = MineTweakerAPI.recipes
         val item69 = ItemBracketHandler.getItem("EnderIO:itemCoordSelector", 0)
         val hashMap5 = HashMap<String, IData>()
@@ -391,31 +684,89 @@ class EnderIO : Runnable {
         hashMap5["default"] = ExpandByte.asData(1.toByte())
         hashMap5["bc:y"] = ExpandInt.toData(0)
         hashMap5["bc:z"] = ExpandInt.toData(0)
-        recipes5.addShaped(item69.withTag(ExpandAnyDict.asData(hashMap5)), arrayOf(arrayOf<IIngredient>(ore7, ore42, ore7), arrayOf<IIngredient>(item12, item58, item12), arrayOf<IIngredient>(ore7, ore42, ore7)), null)
-        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 0), arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 1)), null)
-        MineTweakerAPI.recipes.addShaped(item47, arrayOf(arrayOf(ore38, item59, ore38), arrayOf<IIngredient>(ore3, ore42, ore3), arrayOf<IIngredient>(ore38, ore7, ore38)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemYetaWrench", 0), arrayOf(arrayOf<IIngredient?>(ore44, ore32, ore44), arrayOf<IIngredient?>(ore44, ore45, ore44), arrayOf<IIngredient?>(null, ore44, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemConduitProbe", 0), arrayOf(arrayOf(ore38, item35, ore38), arrayOf(ore, item60, ore), arrayOf(ore7, item61, ore7)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemTravelStaff", 16), arrayOf(arrayOf(ore35, ore3, item45), arrayOf<IIngredient>(ore46, ore47, ore3), arrayOf<IIngredient>(ore47, ore46, ore34)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemXpTransfer", 0), arrayOf(arrayOf(ore35, ore3, item39), arrayOf<IIngredient>(ore48, ore49, ore3), arrayOf<IIngredient>(ore49, ore48, ore34)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 0), arrayOf(arrayOf<IIngredient>(ore32, ore47, ore50), arrayOf(ore47, item62, ore50), arrayOf<IIngredient>(ore50, ore50, ore50)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 1), arrayOf(arrayOf<IIngredient>(ore25, ore47, ore25), arrayOf(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 0), ore22, ItemBracketHandler.getItem("EnderIO:itemGliderWing", 0)), arrayOf<IIngredient>(ore34, ore47, ore35)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemMagnet", 16), arrayOf(arrayOf<IIngredient>(ore7, ore43, ore43), arrayOf(ore34, ore51, item32), arrayOf<IIngredient>(ore7, ore43, ore43)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_helmet", 0), arrayOf(arrayOf<IIngredient?>(ore8, ore8, ore8), arrayOf<IIngredient?>(ore8, ore32, ore8), arrayOf<IIngredient?>(null, item44, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_chestplate", 0), arrayOf(arrayOf<IIngredient>(ore8, ore32, ore8), arrayOf(ore8, item44, ore8), arrayOf<IIngredient>(ore8, ore8, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_leggings", 0), arrayOf(arrayOf<IIngredient>(ore8, ore8, ore8), arrayOf<IIngredient>(ore8, ore32, ore8), arrayOf(ore8, item44, ore8)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_boots", 0), arrayOf(arrayOf(ore8, item44, ore8), arrayOf<IIngredient?>(ore8, ore32, ore8), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_helmet", 0), arrayOf(arrayOf<IIngredient?>(ore9, ore9, ore9), arrayOf<IIngredient?>(ore9, ore32, ore9), arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_chestplate", 0), arrayOf(arrayOf<IIngredient>(ore9, ore32, ore9), arrayOf(ore9, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore9), arrayOf<IIngredient>(ore9, ore9, ore9)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_leggings", 0), arrayOf(arrayOf<IIngredient>(ore9, ore9, ore9), arrayOf<IIngredient>(ore9, ore32, ore9), arrayOf(ore9, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore9)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_boots", 0), arrayOf(arrayOf(ore9, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore9), arrayOf<IIngredient?>(ore9, ore32, ore9), arrayOfNulls(3)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_pickaxe", 0), arrayOf(arrayOf<IIngredient?>(ore8, ore10, ore10), arrayOf(ore33, item64, ore32), arrayOf<IIngredient?>(null, item64, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_axe", 0), arrayOf(arrayOf<IIngredient?>(ore8, ore10, ore32), arrayOf(ore8, item64, ore8), arrayOf(ore33, item64, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_sword", 0), arrayOf(arrayOf<IIngredient?>(null, ore8, null), arrayOf<IIngredient?>(ore33, ore8, ore32), arrayOf<IIngredient?>(null, item64, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_pickaxe", 0), arrayOf(arrayOf<IIngredient?>(ore9, ore11, ore11), arrayOf(ore33, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore32), arrayOf<IIngredient?>(null, item64, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_axe", 0), arrayOf(arrayOf<IIngredient?>(ore9, ore11, ore32), arrayOf(ore9, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore9), arrayOf(ore33, item64, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_sword", 0), arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), null), arrayOf<IIngredient?>(ore33, ore9, ore32), arrayOf<IIngredient?>(null, item64, null)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemMaterial", 12), arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolScrewdriver"), OreBracketHandler.getOre("screwEndSteel"), OreBracketHandler.getOre("stickDarkSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("screwEndSteel"), OreBracketHandler.getOre("stickDarkSteel"), OreBracketHandler.getOre("screwEndSteel")), arrayOf<IIngredient>(OreBracketHandler.getOre("stickDarkSteel"), OreBracketHandler.getOre("screwEndSteel"), OreBracketHandler.getOre("craftingToolHardHammer"))), null)
+        recipes5.addShaped(item69.withTag(ExpandAnyDict.asData(hashMap5)),
+                arrayOf(arrayOf<IIngredient>(ore7, ore42, ore7), arrayOf<IIngredient>(item12, item58, item12),
+                        arrayOf<IIngredient>(ore7, ore42, ore7)), null)
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 0),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 1)), null)
+        MineTweakerAPI.recipes.addShaped(item47,
+                arrayOf(arrayOf(ore38, item59, ore38), arrayOf<IIngredient>(ore3, ore42, ore3),
+                        arrayOf<IIngredient>(ore38, ore7, ore38)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemYetaWrench", 0),
+                arrayOf(arrayOf<IIngredient?>(ore44, ore32, ore44), arrayOf<IIngredient?>(ore44, ore45, ore44),
+                        arrayOf<IIngredient?>(null, ore44, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemConduitProbe", 0),
+                arrayOf(arrayOf(ore38, item35, ore38), arrayOf(ore, item60, ore), arrayOf(ore7, item61, ore7)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemTravelStaff", 16),
+                arrayOf(arrayOf(ore35, ore3, item45), arrayOf<IIngredient>(ore46, ore47, ore3),
+                        arrayOf<IIngredient>(ore47, ore46, ore34)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemXpTransfer", 0),
+                arrayOf(arrayOf(ore35, ore3, item39), arrayOf<IIngredient>(ore48, ore49, ore3),
+                        arrayOf<IIngredient>(ore49, ore48, ore34)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 0),
+                arrayOf(arrayOf<IIngredient>(ore32, ore47, ore50), arrayOf(ore47, item62, ore50),
+                        arrayOf<IIngredient>(ore50, ore50, ore50)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 1),
+                arrayOf(arrayOf<IIngredient>(ore25, ore47, ore25),
+                        arrayOf(ItemBracketHandler.getItem("EnderIO:itemGliderWing", 0), ore22,
+                                ItemBracketHandler.getItem("EnderIO:itemGliderWing", 0)),
+                        arrayOf<IIngredient>(ore34, ore47, ore35)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemMagnet", 16),
+                arrayOf(arrayOf<IIngredient>(ore7, ore43, ore43), arrayOf(ore34, ore51, item32),
+                        arrayOf<IIngredient>(ore7, ore43, ore43)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_helmet", 0),
+                arrayOf(arrayOf<IIngredient?>(ore8, ore8, ore8), arrayOf<IIngredient?>(ore8, ore32, ore8),
+                        arrayOf<IIngredient?>(null, item44, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_chestplate", 0),
+                arrayOf(arrayOf<IIngredient>(ore8, ore32, ore8), arrayOf(ore8, item44, ore8),
+                        arrayOf<IIngredient>(ore8, ore8, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_leggings", 0),
+                arrayOf(arrayOf<IIngredient>(ore8, ore8, ore8), arrayOf<IIngredient>(ore8, ore32, ore8),
+                        arrayOf(ore8, item44, ore8)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_boots", 0),
+                arrayOf(arrayOf(ore8, item44, ore8), arrayOf<IIngredient?>(ore8, ore32, ore8), arrayOfNulls(3)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_helmet", 0),
+                arrayOf(arrayOf<IIngredient?>(ore9, ore9, ore9), arrayOf<IIngredient?>(ore9, ore32, ore9),
+                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), null)),
+                null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_chestplate", 0),
+                arrayOf(arrayOf<IIngredient>(ore9, ore32, ore9),
+                        arrayOf(ore9, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore9),
+                        arrayOf<IIngredient>(ore9, ore9, ore9)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_leggings", 0),
+                arrayOf(arrayOf<IIngredient>(ore9, ore9, ore9), arrayOf<IIngredient>(ore9, ore32, ore9),
+                        arrayOf(ore9, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore9)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_boots", 0),
+                arrayOf(arrayOf(ore9, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore9),
+                        arrayOf<IIngredient?>(ore9, ore32, ore9), arrayOfNulls(3)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_pickaxe", 0),
+                arrayOf(arrayOf<IIngredient?>(ore8, ore10, ore10), arrayOf(ore33, item64, ore32),
+                        arrayOf<IIngredient?>(null, item64, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_axe", 0),
+                arrayOf(arrayOf<IIngredient?>(ore8, ore10, ore32), arrayOf(ore8, item64, ore8),
+                        arrayOf(ore33, item64, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.endSteel_sword", 0),
+                arrayOf(arrayOf<IIngredient?>(null, ore8, null), arrayOf<IIngredient?>(ore33, ore8, ore32),
+                        arrayOf<IIngredient?>(null, item64, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_pickaxe", 0),
+                arrayOf(arrayOf<IIngredient?>(ore9, ore11, ore11),
+                        arrayOf(ore33, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore32),
+                        arrayOf<IIngredient?>(null, item64, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_axe", 0),
+                arrayOf(arrayOf<IIngredient?>(ore9, ore11, ore32),
+                        arrayOf(ore9, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), ore9),
+                        arrayOf(ore33, item64, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:item.stellar_sword", 0),
+                arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4), null),
+                        arrayOf<IIngredient?>(ore33, ore9, ore32), arrayOf<IIngredient?>(null, item64, null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("EnderIO:itemMaterial", 12),
+                arrayOf(arrayOf<IIngredient>(OreBracketHandler.getOre("craftingToolScrewdriver"),
+                        OreBracketHandler.getOre("screwEndSteel"), OreBracketHandler.getOre("stickDarkSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("screwEndSteel"),
+                                OreBracketHandler.getOre("stickDarkSteel"), OreBracketHandler.getOre("screwEndSteel")),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("stickDarkSteel"),
+                                OreBracketHandler.getOre("screwEndSteel"),
+                                OreBracketHandler.getOre("craftingToolHardHammer"))), null)
         val item70 = ItemBracketHandler.getItem("EnderIO:blockCapBank", 0)
         val hashMap6 = HashMap<String, IData>()
         hashMap6["type"] = ExpandString.asData("CREATIVE")
@@ -767,94 +1118,304 @@ class EnderIO : Runnable {
         array10[n57] = item118.withTag(ExpandAnyDict.asData(hashMap54))
         array[n48] = array10
         ExtremeCrafting.addShaped(withTag, array)
-        Assembler.addRecipe(item14, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26080).amount(4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29031).amount(4), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(288), 200, 30)
-        Assembler.addRecipe(item21, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26054).amount(4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29054).amount(4), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(288), 200, 30)
-        Assembler.addRecipe(item15, item14.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535), LiquidBracketHandler.getLiquid("molten.energeticalloy").withAmount(864), 150, 120)
-        Assembler.addRecipe(item22, item21.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535), LiquidBracketHandler.getLiquid("molten.energeticsilver").withAmount(864), 150, 120)
-        Assembler.addRecipe(item16, item15.amount(2), ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(4), LiquidBracketHandler.getLiquid("molten.vibrantalloy").withAmount(864), 200, 480)
-        Assembler.addRecipe(item23, item22.amount(2), ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(4), LiquidBracketHandler.getLiquid("molten.vividalloy").withAmount(864), 200, 480)
-        Assembler.addRecipe(item17, item16.amount(2), ItemBracketHandler.getItem("minecraft:ender_eye", 0), LiquidBracketHandler.getLiquid("molten.crystallinealloy").withAmount(864), 200, 1920)
-        Assembler.addRecipe(item17, item23.amount(2), ItemBracketHandler.getItem("minecraft:ender_eye", 0), LiquidBracketHandler.getLiquid("molten.crystallinealloy").withAmount(864), 200, 1920)
-        Assembler.addRecipe(item18, arrayOf<IIngredient>(item17.amount(2), ItemBracketHandler.getItem("minecraft:nether_star", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401)), LiquidBracketHandler.getLiquid("molten.melodicalloy").withAmount(864), 200, 7680)
-        Assembler.addRecipe(item19, arrayOf<IIngredient>(item18.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32726), ItemBracketHandler.getItem("EnderIO:itemMaterial", 13)), LiquidBracketHandler.getLiquid("molten.stellaralloy").withAmount(864), 200, 30720)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockVacuumChest", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 9231), ItemBracketHandler.getItem("ExtraUtilities:enderCollector", 0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockBuffer", 2), ItemBracketHandler.getItem("EnderIO:blockBuffer", 0), ItemBracketHandler.getItem("EnderIO:blockBuffer", 1), 400, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMaterial", 5), ItemBracketHandler.getItem("minecraft:diamond", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9378).amount(8), 600, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMaterial", 6), ItemBracketHandler.getItem("minecraft:emerald", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9367).amount(8), 600, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 1), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17366), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17369), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 5), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17378), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 6), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 7), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17379), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 8), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 9), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17402), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 1), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17403), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17404), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17405), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17406), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 5), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17407), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 6), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17408), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, 64)
-        Assembler.addRecipe(item48, ItemBracketHandler.getItem("dreamcraft:item.ManyullynCrystal", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9321).amount(8), 200, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 0), ItemBracketHandler.getItem("minecraft:heavy_weighted_pressure_plate", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364).amount(2), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 1), ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 0), ItemBracketHandler.getItem("IC2:blockRubber", 0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelLadder", 0).amount(2), ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 100, 96)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0).amount(4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364).amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockSoulariumBars", 0).amount(4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379).amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(4), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401).amount(3), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 1), ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0), ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 3), ItemBracketHandler.getItem("EnderIO:blockElectricLight", 2), ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 100, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 4), ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0), item40, 200, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 5), ItemBracketHandler.getItem("EnderIO:blockElectricLight", 4), ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemFusedQuartzFrame", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4905), ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(4), 100, 16)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0), ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(8), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 100, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2), ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 0), ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2), 100, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 1), ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2), ItemBracketHandler.getItem("minecraft:lever", 0), 100, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381), 100, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1420), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17369), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 1), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1580), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17366), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 2), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1620), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367), LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17402), LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, 8)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 1), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1260), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, 16)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 2), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1280), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17019), LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 3), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1320), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086), LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 100, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 4), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1380), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17035), LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 100, 96)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 5), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1440), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17054), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 160)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 6), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1540), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17303), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 192)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 7), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1660), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17407), LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, 320)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 8), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1700), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17403), LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, 900)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 9), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1720), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17406), LiquidBracketHandler.getLiquid("molten.polytetrafluoroethylene").withAmount(144), 100, 1920)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 10), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1780), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17404), LiquidBracketHandler.getLiquid("molten.polytetrafluoroethylene").withAmount(144), 100, 7680)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 11), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 11390), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17405), LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(144), 100, 30720)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5112), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 1), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5132), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 2), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5680), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemItemConduit", 0), ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5611), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17378), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMEConduit", 0), ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17020), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMEConduit", 1), ItemBracketHandler.getItem("EnderIO:itemMEConduit", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17028), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemOCConduit", 0), ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381), LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, 480)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32729), ItemBracketHandler.getItem("minecraft:iron_bars", 0), 300, 30)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1), ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0), item37, 300, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 0), ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1).amount(2), ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(2), 300, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 1), ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 0), ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 2), 300, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExistingItemFilter", 0), ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1), item60, 300, 120)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemModItemFilter", 0), ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0), ItemBracketHandler.getItem("EnderIO:itemYetaWrench", 0), 300, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerItemFilter", 0), ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0), ItemBracketHandler.getItem("EnderIO:itemConduitProbe", 0), 300, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 0), ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640), 300, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 1), ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 0), ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0), LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 300, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemSoulVessel", 0), ItemBracketHandler.getItem("EnderIO:blockFusedQuartz", 0).amount(3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 25379), 200, 48)
-        ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 1)), ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0), LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(576), intArrayOf(10000), 200, 2)
-        ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2), ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2), ItemBracketHandler.getItem("EnderIO:itemMaterial", 1)), ItemBracketHandler.getItem("EnderIO:itemMaterial", 2), LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), intArrayOf(10000, 9000, 5000), 200, 2)
-        FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelAnvil", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32314).amount(0), LiquidBracketHandler.getLiquid("molten.darksteel").withAmount(4464), 900, 120)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 2).amount(9)), ItemBracketHandler.getItem("IC2:itemPartCFPowder", 0), intArrayOf(10000), 300, 2)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 14), ItemBracketHandler.getItem("EnderIO:itemMaterial", 14), ItemBracketHandler.getItem("EnderIO:itemMaterial", 14), ItemBracketHandler.getItem("EnderIO:itemMaterial", 14)), ItemBracketHandler.getItem("EnderIO:itemMaterial", 5), intArrayOf(10000, 1000, 100, 10), 100, 480)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 15), ItemBracketHandler.getItem("EnderIO:itemMaterial", 15), ItemBracketHandler.getItem("EnderIO:itemMaterial", 15), ItemBracketHandler.getItem("EnderIO:itemMaterial", 15)), ItemBracketHandler.getItem("EnderIO:itemMaterial", 6), intArrayOf(10000, 1000, 100, 10), 300, 480)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 16), ItemBracketHandler.getItem("EnderIO:itemMaterial", 16), ItemBracketHandler.getItem("EnderIO:itemMaterial", 16), ItemBracketHandler.getItem("EnderIO:itemMaterial", 16)), ItemBracketHandler.getItem("EnderIO:itemMaterial", 8), intArrayOf(10000, 1000, 100, 10), 300, 480)
-        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 17), ItemBracketHandler.getItem("EnderIO:itemMaterial", 17), ItemBracketHandler.getItem("EnderIO:itemMaterial", 17), ItemBracketHandler.getItem("EnderIO:itemMaterial", 17)), ItemBracketHandler.getItem("EnderIO:itemMaterial", 13), intArrayOf(10000, 1000, 100, 10), 300, 480)
-        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("EnderIO:blockTravelAnchor", 0), ExpandString.asFormattedText("Cooldown 5 seconds"))
+        Assembler.addRecipe(item14, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26080).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29031).amount(4),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(288), 200, VoltageLevels.LV)
+        Assembler.addRecipe(item21, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 26054).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 29054).amount(4),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(288), 200, VoltageLevels.LV)
+        Assembler.addRecipe(item15, item14.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535),
+                LiquidBracketHandler.getLiquid("molten.energeticalloy").withAmount(864), 150, VoltageLevels.MV)
+        Assembler.addRecipe(item22, item21.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535),
+                LiquidBracketHandler.getLiquid("molten.energeticsilver").withAmount(864), 150, VoltageLevels.MV)
+        Assembler.addRecipe(item16, item15.amount(2),
+                ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(4),
+                LiquidBracketHandler.getLiquid("molten.vibrantalloy").withAmount(864), 200,  VoltageLevels.HV)
+        Assembler.addRecipe(item23, item22.amount(2),
+                ItemBracketHandler.getItem("minecraft:glowstone_dust", 0).amount(4),
+                LiquidBracketHandler.getLiquid("molten.vividalloy").withAmount(864), 200,  VoltageLevels.HV)
+        Assembler.addRecipe(item17, item16.amount(2), ItemBracketHandler.getItem("minecraft:ender_eye", 0),
+                LiquidBracketHandler.getLiquid("molten.crystallinealloy").withAmount(864), 200, VoltageLevels.EV)
+        Assembler.addRecipe(item17, item23.amount(2), ItemBracketHandler.getItem("minecraft:ender_eye", 0),
+                LiquidBracketHandler.getLiquid("molten.crystallinealloy").withAmount(864), 200, VoltageLevels.EV)
+        Assembler.addRecipe(item18,
+                arrayOf<IIngredient>(item17.amount(2), ItemBracketHandler.getItem("minecraft:nether_star", 0),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401)),
+                LiquidBracketHandler.getLiquid("molten.melodicalloy").withAmount(864), 200, VoltageLevels.IV)
+        Assembler.addRecipe(item19,
+                arrayOf<IIngredient>(item18.amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32726),
+                        ItemBracketHandler.getItem("EnderIO:itemMaterial", 13)),
+                LiquidBracketHandler.getLiquid("molten.stellaralloy").withAmount(864), 200, VoltageLevels.LUV)
+
+        //TODO Replace ("ExtraUtilities:enderCollector", 0)
+        //Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockVacuumChest", 0),
+        //        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 9231),
+        //        ItemBracketHandler.getItem("ExtraUtilities:enderCollector", 0), 200, VoltageLevels.LMV)
+
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockBuffer", 2),
+                ItemBracketHandler.getItem("EnderIO:blockBuffer", 0),
+                ItemBracketHandler.getItem("EnderIO:blockBuffer", 1), 400, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMaterial", 5),
+                ItemBracketHandler.getItem("minecraft:diamond", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9378).amount(8), 600, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMaterial", 6),
+                ItemBracketHandler.getItem("minecraft:emerald", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9367).amount(8), 600, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 1),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17366),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17369),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 5),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17378),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 6),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 7),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17379),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 8),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBall", 9),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17401),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17402),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 1),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17403),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17404),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17405),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17406),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 5),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17407),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemGrindingBallEndergy", 6),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17408),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 4).amount(0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(item48, ItemBracketHandler.getItem("dreamcraft:item.ManyullynCrystal", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 9321).amount(8), 200, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 0),
+                ItemBracketHandler.getItem("minecraft:heavy_weighted_pressure_plate", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364).amount(2), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 1),
+                ItemBracketHandler.getItem("EnderIO:blockDarkSteelPressurePlate", 0),
+                ItemBracketHandler.getItem("IC2:blockRubber", 0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelLadder", 0).amount(2),
+                ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 2).amount(0), 100, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23364).amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockSoulariumBars", 0).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23379).amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(4),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23401).amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 3).amount(0), 600, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 1),
+                ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0),
+                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 3),
+                ItemBracketHandler.getItem("EnderIO:blockElectricLight", 2),
+                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 100, VoltageLevels.LV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 4),
+                ItemBracketHandler.getItem("EnderIO:blockElectricLight", 0), item40, 200, 256)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:blockElectricLight", 5),
+                ItemBracketHandler.getItem("EnderIO:blockElectricLight", 4),
+                ItemBracketHandler.getItem("minecraft:redstone_torch", 0), 200, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemFusedQuartzFrame", 0),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4905),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(4), 100, VoltageLevels.LLV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(8),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 8).amount(0), 100, VoltageLevels.LV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2),
+                ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 0),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2), 100, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 1),
+                ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2),
+                ItemBracketHandler.getItem("minecraft:lever", 0), 100, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 0),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381), 100, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemRedstoneConduit", 2),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 0),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1420),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17369),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 1),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1580),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17366),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduit", 2),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1620),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367),
+                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100,  VoltageLevels.HV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 0),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 2000),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17402),
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, VoltageLevels.ULV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 1),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1260),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032),
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, VoltageLevels.LLV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 2),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1280),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17019),
+                LiquidBracketHandler.getLiquid("molten.tin").withAmount(144), 100, VoltageLevels.LV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 3),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1320),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17086),
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 100, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 4),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1380),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17035),
+                LiquidBracketHandler.getLiquid("molten.solderingalloy").withAmount(144), 100, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 5),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1440),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17054),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 6),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1540),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17303),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 7),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1660),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17407),
+                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, VoltageLevels.HV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 8),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1700),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17403),
+                LiquidBracketHandler.getLiquid("molten.epoxid").withAmount(144), 100, VoltageLevels.LEV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 9),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1720),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17406),
+                LiquidBracketHandler.getLiquid("molten.polytetrafluoroethylene").withAmount(144), 100, VoltageLevels.EV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 10),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1780),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17404),
+                LiquidBracketHandler.getLiquid("molten.polytetrafluoroethylene").withAmount(144), 100, VoltageLevels.IV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerConduitEndergy", 11),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 11390),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17405),
+                LiquidBracketHandler.getLiquid("molten.polybenzimidazole").withAmount(144), 100, VoltageLevels.LUV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 0),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5112),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17365),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 1),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5132),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17364),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemLiquidConduit", 2),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5680),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17367),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100,  VoltageLevels.HV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemItemConduit", 0),
+                ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5611),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17378),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMEConduit", 0),
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17020),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemMEConduit", 1),
+                ItemBracketHandler.getItem("EnderIO:itemMEConduit", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17028),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100,  VoltageLevels.HV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemOCConduit", 0),
+                ItemBracketHandler.getItem("appliedenergistics2:item.ItemMultiPart", 16),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17381),
+                LiquidBracketHandler.getLiquid("molten.plastic").withAmount(144), 100,  VoltageLevels.HV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32729),
+                ItemBracketHandler.getItem("minecraft:iron_bars", 0), 300, VoltageLevels.LV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1),
+                ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0), item37, 300, 64)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 0),
+                ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1).amount(2),
+                ItemBracketHandler.getItem("EnderIO:blockEndSteelBars", 0).amount(2), 300, VoltageLevels.MV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 1),
+                ItemBracketHandler.getItem("EnderIO:itemBigFilterUpgrade", 0),
+                ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 2), 300, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExistingItemFilter", 0),
+                ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 1), item60, 300, 120)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemModItemFilter", 0),
+                ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0),
+                ItemBracketHandler.getItem("EnderIO:itemYetaWrench", 0), 300, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemPowerItemFilter", 0),
+                ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0),
+                ItemBracketHandler.getItem("EnderIO:itemConduitProbe", 0), 300, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 0),
+                ItemBracketHandler.getItem("EnderIO:itemBasicFilterUpgrade", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640), 300, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 1),
+                ItemBracketHandler.getItem("EnderIO:itemExtractSpeedUpgrade", 0),
+                ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 1).amount(0),
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 300, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("EnderIO:itemSoulVessel", 0),
+                ItemBracketHandler.getItem("EnderIO:blockFusedQuartz", 0).amount(3),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 25379), 200, VoltageLevels.LMV)
+
+        //TODO Replace getLiquid("obsidian.molten")
+        //ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 1)),
+        //        ItemBracketHandler.getItem("EnderIO:itemConduitFacade", 0),
+        //        LiquidBracketHandler.getLiquid("obsidian.molten").withAmount(576), intArrayOf(10000), 200, VoltageLevels.LULV)
+
+        ChemicalBath.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1).amount(2),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 1)),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 2),
+                LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), intArrayOf(10000, 9000, 5000), 200, VoltageLevels.LULV)
+        FluidSolidifier.addRecipe(ItemBracketHandler.getItem("EnderIO:blockDarkSteelAnvil", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32314).amount(0),
+                LiquidBracketHandler.getLiquid("molten.darksteel").withAmount(4464), 900, VoltageLevels.MV)
+        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 2).amount(9)),
+                ItemBracketHandler.getItem("IC2:itemPartCFPowder", 0), intArrayOf(10000), 300, VoltageLevels.LULV)
+        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 14),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 14)),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 5), intArrayOf(10000, 1000, 100, 10), 100,  VoltageLevels.HV)
+        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 15),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 15),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 15),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 15)),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 6), intArrayOf(10000, 1000, 100, 10), 300,  VoltageLevels.HV)
+        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 16),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 16),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 16),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 16)),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 8), intArrayOf(10000, 1000, 100, 10), 300,  VoltageLevels.HV)
+        Pulverizer.addRecipe(arrayOf(ItemBracketHandler.getItem("EnderIO:itemMaterial", 17),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 17),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 17),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 17)),
+                ItemBracketHandler.getItem("EnderIO:itemMaterial", 13), intArrayOf(10000, 1000, 100, 10), 300,  VoltageLevels.HV)
+        IngredientTooltips.addTooltip(ItemBracketHandler.getItem("EnderIO:blockTravelAnchor", 0),
+                ExpandString.asFormattedText("Cooldown 5 seconds"))
     }
 }

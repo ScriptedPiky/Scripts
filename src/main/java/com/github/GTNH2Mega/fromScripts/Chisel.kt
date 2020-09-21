@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
@@ -14,21 +15,14 @@ class Chisel : Runnable {
         val item2 = ItemBracketHandler.getItem("chisel:obsidianChisel", 0)
         val item3 = ItemBracketHandler.getItem("chisel:diamondChisel", 0)
         val item4 = ItemBracketHandler.getItem("chisel:cloudinabottle", 0)
-        OreBracketHandler.getOre("plateWood")
         val ore = OreBracketHandler.getOre("plateAnyIron")
-        OreBracketHandler.getOre("plateSteel")
         val ore2 = OreBracketHandler.getOre("plateObsidian")
-        OreBracketHandler.getOre("screwWood")
         val ore3 = OreBracketHandler.getOre("screwAnyIron")
         val ore4 = OreBracketHandler.getOre("screwWroughtIron")
         val ore5 = OreBracketHandler.getOre("screwSteel")
-        OreBracketHandler.getOre("stickAnyIron")
         val ore6 = OreBracketHandler.getOre("stickSteel")
         val ore7 = OreBracketHandler.getOre("stickWood")
         val ore8 = OreBracketHandler.getOre("stickWroughtIron")
-        OreBracketHandler.getOre("stickObsidian")
-        OreBracketHandler.getOre("dustTinyQuartzite")
-        ItemBracketHandler.getItem("minecraft:glass_bottle", 0)
         val ore9 = OreBracketHandler.getOre("craftingToolHardHammer")
         val ore10 = OreBracketHandler.getOre("craftingToolScrewdriver")
         MineTweakerAPI.recipes.remove(item)
@@ -48,22 +42,88 @@ class Chisel : Runnable {
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("chisel:voidstone2", 0))
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("chisel:concrete", 0), null)
         Groups.removeVariation(ItemBracketHandler.getItem("minecraft:torch", 0))
-        MineTweakerAPI.recipes.addShaped(item, arrayOf(arrayOf<IIngredient>(ore9, ore, ore), arrayOf<IIngredient>(ore3, ore7, ore), arrayOf<IIngredient>(ore7, ore3, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(item, arrayOf(arrayOf<IIngredient>(ore10, ore, ore), arrayOf<IIngredient>(ore3, ore7, ore), arrayOf<IIngredient>(ore7, ore3, ore9)), null)
-        MineTweakerAPI.recipes.addShaped(item2, arrayOf(arrayOf<IIngredient>(ore9, ore2, ore2), arrayOf<IIngredient>(ore4, ore8, ore2), arrayOf<IIngredient>(ore8, ore4, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(item2, arrayOf(arrayOf<IIngredient>(ore10, ore2, ore2), arrayOf<IIngredient>(ore4, ore8, ore2), arrayOf<IIngredient>(ore8, ore4, ore9)), null)
-        MineTweakerAPI.recipes.addShaped(item3, arrayOf(arrayOf<IIngredient>(ore9, OreBracketHandler.getOre("plateDiamond"), OreBracketHandler.getOre("plateDiamond")), arrayOf<IIngredient>(ore5, ore6, OreBracketHandler.getOre("plateDiamond")), arrayOf<IIngredient>(ore6, ore5, ore10)), null)
-        MineTweakerAPI.recipes.addShaped(item3, arrayOf(arrayOf<IIngredient>(ore10, OreBracketHandler.getOre("plateDiamond"), OreBracketHandler.getOre("plateDiamond")), arrayOf<IIngredient>(ore5, ore6, OreBracketHandler.getOre("plateDiamond")), arrayOf<IIngredient>(ore6, ore5, ore9)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:autoChisel", 0), arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("ringWoodSealed"), ore5), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32744), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650)), arrayOf(ore10, ItemBracketHandler.getItem("IronChest:BlockIronChest", 0), ore9)), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:upgrade", 0), arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("plateEmerald"), ore5), arrayOf<IIngredient>(OreBracketHandler.getOre("plateEmerald"), OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateEmerald")), arrayOf(OreBracketHandler.getOre("wireGt01RedAlloy"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630), OreBracketHandler.getOre("wireGt01RedAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:upgrade", 1), arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("plateEmerald"), ore5), arrayOf<IIngredient>(OreBracketHandler.getOre("plateEmerald"), OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateEmerald")), arrayOf(OreBracketHandler.getOre("wireGt01RedAlloy"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650), OreBracketHandler.getOre("wireGt01RedAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:upgrade", 2), arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("plateEmerald"), ore5), arrayOf<IIngredient>(OreBracketHandler.getOre("plateEmerald"), OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateEmerald")), arrayOf(OreBracketHandler.getOre("wireGt01RedAlloy"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32744), OreBracketHandler.getOre("wireGt01RedAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:upgrade", 3), arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("plateEmerald"), ore5), arrayOf<IIngredient>(OreBracketHandler.getOre("plateEmerald"), OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateEmerald")), arrayOf(OreBracketHandler.getOre("wireGt01RedAlloy"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600), OreBracketHandler.getOre("wireGt01RedAlloy"))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:mossy_templeblock", 0), arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("BiomesOPlenty:moss", 0), ItemBracketHandler.getItem("BiomesOPlenty:moss", 0), ItemBracketHandler.getItem("BiomesOPlenty:moss", 0)), arrayOf<IIngredient>(ItemBracketHandler.getItem("BiomesOPlenty:moss", 0), ItemBracketHandler.getItem("chisel:templeblock", 0), ItemBracketHandler.getItem("BiomesOPlenty:moss", 0)), arrayOf<IIngredient>(ItemBracketHandler.getItem("BiomesOPlenty:moss", 0), ItemBracketHandler.getItem("BiomesOPlenty:moss", 0), ItemBracketHandler.getItem("BiomesOPlenty:moss", 0))), null)
-        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:voidstone2", 0).amount(8), arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("chisel:voidstone", 0), ItemBracketHandler.getItem("chisel:voidstone", 0), ItemBracketHandler.getItem("chisel:voidstone", 0)), arrayOf(ItemBracketHandler.getItem("chisel:voidstone", 0), OreBracketHandler.getOre("dustGlowstone"), ItemBracketHandler.getItem("chisel:voidstone", 0)), arrayOf<IIngredient>(ItemBracketHandler.getItem("chisel:voidstone", 0), ItemBracketHandler.getItem("chisel:voidstone", 0), ItemBracketHandler.getItem("chisel:voidstone", 0))), null)
-        Assembler.addRecipe(item, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(2), ItemBracketHandler.getItem("minecraft:stick", 0).amount(2), 300, 30)
-        Assembler.addRecipe(item2, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23304).amount(2), 400, 30)
-        Assembler.addRecipe(item3, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(2), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(2), 600, 30)
+        MineTweakerAPI.recipes.addShaped(item,
+                arrayOf(arrayOf<IIngredient>(ore9, ore, ore), arrayOf<IIngredient>(ore3, ore7, ore),
+                        arrayOf<IIngredient>(ore7, ore3, ore10)), null)
+        MineTweakerAPI.recipes.addShaped(item,
+                arrayOf(arrayOf<IIngredient>(ore10, ore, ore), arrayOf<IIngredient>(ore3, ore7, ore),
+                        arrayOf<IIngredient>(ore7, ore3, ore9)), null)
+        MineTweakerAPI.recipes.addShaped(item2,
+                arrayOf(arrayOf<IIngredient>(ore9, ore2, ore2), arrayOf<IIngredient>(ore4, ore8, ore2),
+                        arrayOf<IIngredient>(ore8, ore4, ore10)), null)
+        MineTweakerAPI.recipes.addShaped(item2,
+                arrayOf(arrayOf<IIngredient>(ore10, ore2, ore2), arrayOf<IIngredient>(ore4, ore8, ore2),
+                        arrayOf<IIngredient>(ore8, ore4, ore9)), null)
+        MineTweakerAPI.recipes.addShaped(item3,
+                arrayOf(arrayOf<IIngredient>(ore9, OreBracketHandler.getOre("plateDiamond"),
+                        OreBracketHandler.getOre("plateDiamond")),
+                        arrayOf<IIngredient>(ore5, ore6, OreBracketHandler.getOre("plateDiamond")),
+                        arrayOf<IIngredient>(ore6, ore5, ore10)), null)
+        MineTweakerAPI.recipes.addShaped(item3,
+                arrayOf(arrayOf<IIngredient>(ore10, OreBracketHandler.getOre("plateDiamond"),
+                        OreBracketHandler.getOre("plateDiamond")),
+                        arrayOf<IIngredient>(ore5, ore6, OreBracketHandler.getOre("plateDiamond")),
+                        arrayOf<IIngredient>(ore6, ore5, ore9)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:autoChisel", 0),
+                arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("ringWoodSealed"), ore5),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32744),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650)),
+                        arrayOf(ore10, ItemBracketHandler.getItem("IronChest:BlockIronChest", 0), ore9)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:upgrade", 0),
+                arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("plateEmerald"), ore5),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateEmerald"),
+                                OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateEmerald")),
+                        arrayOf(OreBracketHandler.getOre("wireGt01RedAlloy"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630),
+                                OreBracketHandler.getOre("wireGt01RedAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:upgrade", 1),
+                arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("plateEmerald"), ore5),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateEmerald"),
+                                OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateEmerald")),
+                        arrayOf(OreBracketHandler.getOre("wireGt01RedAlloy"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32650),
+                                OreBracketHandler.getOre("wireGt01RedAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:upgrade", 2),
+                arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("plateEmerald"), ore5),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateEmerald"),
+                                OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateEmerald")),
+                        arrayOf(OreBracketHandler.getOre("wireGt01RedAlloy"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32744),
+                                OreBracketHandler.getOre("wireGt01RedAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:upgrade", 3),
+                arrayOf(arrayOf<IIngredient>(ore5, OreBracketHandler.getOre("plateEmerald"), ore5),
+                        arrayOf<IIngredient>(OreBracketHandler.getOre("plateEmerald"),
+                                OreBracketHandler.getOre("circuitBasic"), OreBracketHandler.getOre("plateEmerald")),
+                        arrayOf(OreBracketHandler.getOre("wireGt01RedAlloy"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
+                                OreBracketHandler.getOre("wireGt01RedAlloy"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:mossy_templeblock", 0),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
+                        ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
+                        ItemBracketHandler.getItem("BiomesOPlenty:moss", 0)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
+                                ItemBracketHandler.getItem("chisel:templeblock", 0),
+                                ItemBracketHandler.getItem("BiomesOPlenty:moss", 0)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
+                                ItemBracketHandler.getItem("BiomesOPlenty:moss", 0),
+                                ItemBracketHandler.getItem("BiomesOPlenty:moss", 0))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("chisel:voidstone2", 0).amount(8),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("chisel:voidstone", 0),
+                        ItemBracketHandler.getItem("chisel:voidstone", 0),
+                        ItemBracketHandler.getItem("chisel:voidstone", 0)),
+                        arrayOf(ItemBracketHandler.getItem("chisel:voidstone", 0),
+                                OreBracketHandler.getOre("dustGlowstone"),
+                                ItemBracketHandler.getItem("chisel:voidstone", 0)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("chisel:voidstone", 0),
+                                ItemBracketHandler.getItem("chisel:voidstone", 0),
+                                ItemBracketHandler.getItem("chisel:voidstone", 0))), null)
+        Assembler.addRecipe(item, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(2),
+                ItemBracketHandler.getItem("minecraft:stick", 0).amount(2), 300, VoltageLevels.LV)
+        Assembler.addRecipe(item2, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23304).amount(2), 400, VoltageLevels.LV)
+        Assembler.addRecipe(item3, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(2),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305).amount(2), 600, VoltageLevels.LV)
         Groups.addGroup("CobblestoneBricks")
         Groups.addVariation("CobblestoneBricks", ItemBracketHandler.getItem("minecraft:cobblestone", 0))
         Groups.addVariation("CobblestoneBricks", ItemBracketHandler.getItem("chisel:cobblestone", 1))
@@ -98,9 +158,7 @@ class Chisel : Runnable {
         Groups.addVariation("glasswork", ItemBracketHandler.getItem("chisel:glass", 14))
         Groups.addVariation("glasswork", ItemBracketHandler.getItem("chisel:glass", 15))
         Groups.addVariation("glasswork", ItemBracketHandler.getItem("chisel:glass2", 0))
-        Groups.addVariation("glasswork", ItemBracketHandler.getItem("TConstruct:GlassBlock", 0))
         Groups.addVariation("glasswork", ItemBracketHandler.getItem("EnderIO:blockFusedQuartz", 1))
-        Groups.addVariation("glass", ItemBracketHandler.getItem("TConstruct:GlassBlock", 0))
         Groups.addVariation("cloud", ItemBracketHandler.getItem("Natura:Cloud", 0))
         Groups.addVariation("marble", ItemBracketHandler.getItem("Railcraft:cube", 7))
         Groups.addVariation("marble", ItemBracketHandler.getItem("gregtech:gt.blockstones", 0))
@@ -159,8 +217,6 @@ class Chisel : Runnable {
         Groups.addVariation("endstone", ItemBracketHandler.getItem("chisel:end_Stone", 11))
         Groups.addVariation("endstone", ItemBracketHandler.getItem("chisel:end_Stone", 12))
         Groups.addVariation("endstone", ItemBracketHandler.getItem("chisel:end_Stone", 13))
-        Groups.addVariation("endstone", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 12))
-        Groups.addVariation("endstone", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 12))
         Groups.addVariation("concrete", ItemBracketHandler.getItem("gregtech:gt.blockconcretes", 8))
         Groups.addGroup("glowstoneGTNH")
         Groups.addVariation("glowstoneGTNH", ItemBracketHandler.getItem("minecraft:glowstone", 0))
@@ -181,82 +237,16 @@ class Chisel : Runnable {
         Groups.addVariation("glowstoneGTNH", ItemBracketHandler.getItem("chisel:glowstone", 15))
         Groups.addVariation("torch", ItemBracketHandler.getItem("GalacticraftCore:tile.glowstoneTorch", 0))
         Groups.addVariation("aluminumblock", ItemBracketHandler.getItem("gregtech:gt.blockmetal1", 1))
-        Groups.addGroup("searedStoneTCon")
-        Groups.addVariation("searedStoneTCon", ItemBracketHandler.getItem("TConstruct:Smeltery", 4))
-        Groups.addVariation("searedStoneTCon", ItemBracketHandler.getItem("TConstruct:Smeltery", 6))
-        Groups.addVariation("searedStoneTCon", ItemBracketHandler.getItem("TConstruct:Smeltery", 11))
-        Groups.addGroup("searedStoneNetherTCon")
-        Groups.addVariation("searedStoneNetherTCon", ItemBracketHandler.getItem("TConstruct:SmelteryNether", 4))
-        Groups.addVariation("searedStoneNetherTCon", ItemBracketHandler.getItem("TConstruct:SmelteryNether", 6))
-        Groups.addVariation("searedStoneNetherTCon", ItemBracketHandler.getItem("TConstruct:SmelteryNether", 11))
-        Groups.addGroup("searedBricksTCon")
-        Groups.addVariation("searedBricksTCon", ItemBracketHandler.getItem("TConstruct:Smeltery", 2))
-        Groups.addVariation("searedBricksTCon", ItemBracketHandler.getItem("TConstruct:Smeltery", 8))
-        Groups.addVariation("searedBricksTCon", ItemBracketHandler.getItem("TConstruct:Smeltery", 9))
-        Groups.addGroup("searedBricksNetherTCon")
-        Groups.addVariation("searedBricksNetherTCon", ItemBracketHandler.getItem("TConstruct:SmelteryNether", 2))
-        Groups.addVariation("searedBricksNetherTCon", ItemBracketHandler.getItem("TConstruct:SmelteryNether", 8))
-        Groups.addVariation("searedBricksNetherTCon", ItemBracketHandler.getItem("TConstruct:SmelteryNether", 9))
-        Groups.addGroup("speedBlockTCon")
-        Groups.addVariation("speedBlockTCon", ItemBracketHandler.getItem("TConstruct:SpeedBlock", 0))
-        Groups.addVariation("speedBlockTCon", ItemBracketHandler.getItem("TConstruct:SpeedBlock", 1))
-        Groups.addGroup("brownStoneTCon")
-        Groups.addVariation("brownStoneTCon", ItemBracketHandler.getItem("TConstruct:SpeedBlock", 2))
-        Groups.addVariation("brownStoneTCon", ItemBracketHandler.getItem("TConstruct:SpeedBlock", 3))
-        Groups.addVariation("brownStoneTCon", ItemBracketHandler.getItem("TConstruct:SpeedBlock", 4))
-        Groups.addVariation("brownStoneTCon", ItemBracketHandler.getItem("TConstruct:SpeedBlock", 5))
-        Groups.addVariation("brownStoneTCon", ItemBracketHandler.getItem("TConstruct:SpeedBlock", 6))
-        Groups.addGroup("ironBricksTCon")
-        Groups.addVariation("ironBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 4))
-        Groups.addVariation("ironBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 4))
-        Groups.addGroup("goldBricksTCon")
-        Groups.addVariation("goldBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 5))
-        Groups.addVariation("goldBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 5))
-        Groups.addGroup("lapisBricksTCon")
-        Groups.addVariation("lapisBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 6))
-        Groups.addVariation("lapisBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 6))
-        Groups.addGroup("diamondBricksTCon")
-        Groups.addVariation("diamondBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 7))
-        Groups.addVariation("diamondBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 7))
-        Groups.addGroup("redstoneBricksTCon")
-        Groups.addVariation("redstoneBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 8))
-        Groups.addVariation("redstoneBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 8))
-        Groups.addGroup("boneBricksTCon")
-        Groups.addVariation("boneBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 9))
-        Groups.addVariation("boneBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 9))
-        Groups.addGroup("greenSlimeBricksTCon")
-        Groups.addVariation("greenSlimeBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 10))
-        Groups.addVariation("greenSlimeBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 10))
-        Groups.addGroup("blueSlimeBricksTCon")
-        Groups.addVariation("blueSlimeBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 11))
-        Groups.addVariation("blueSlimeBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 11))
-        Groups.addGroup("obsidianBricksTCon")
-        Groups.addVariation("obsidianBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrick", 13))
-        Groups.addVariation("obsidianBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickfancy", 13))
-        Groups.addGroup("alumiteBricksTCon")
-        Groups.addVariation("alumiteBricksTCon", ItemBracketHandler.getItem("TConstruct:MetalBlock", 8))
-        Groups.addVariation("alumiteBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickmetal", 0))
-        Groups.addVariation("alumiteBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickmetal", 4))
-        Groups.addGroup("arditeBricksTCon")
-        Groups.addVariation("arditeBricksTCon", ItemBracketHandler.getItem("TConstruct:MetalBlock", 1))
-        Groups.addVariation("arditeBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickmetal", 1))
-        Groups.addVariation("arditeBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickmetal", 5))
-        Groups.addGroup("cobaltBricksTCon")
-        Groups.addVariation("cobaltBricksTCon", ItemBracketHandler.getItem("TConstruct:MetalBlock", 0))
-        Groups.addVariation("cobaltBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickmetal", 2))
-        Groups.addVariation("cobaltBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickmetal", 6))
-        Groups.addGroup("manyullynBricksTCon")
-        Groups.addVariation("manyullynBricksTCon", ItemBracketHandler.getItem("TConstruct:MetalBlock", 2))
-        Groups.addVariation("manyullynBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickmetal", 3))
-        Groups.addVariation("manyullynBricksTCon", ItemBracketHandler.getItem("TConstruct:decoration.multibrickmetal", 7))
         Groups.addGroup("brown_mushroom")
         Groups.addGroup("red_mushroom")
         val array = intArrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
         var n = 0
         while (array.size > n) {
             val n2 = array[n]
-            Groups.addVariation("brown_mushroom", ItemBracketHandler.getItem("minecraft:brown_mushroom_block", 0).definition.makeStack(n2))
-            Groups.addVariation("red_mushroom", ItemBracketHandler.getItem("minecraft:red_mushroom_block", 0).definition.makeStack(n2))
+            Groups.addVariation("brown_mushroom",
+                    ItemBracketHandler.getItem("minecraft:brown_mushroom_block", 0).definition.makeStack(n2))
+            Groups.addVariation("red_mushroom",
+                    ItemBracketHandler.getItem("minecraft:red_mushroom_block", 0).definition.makeStack(n2))
             ++n
         }
     }

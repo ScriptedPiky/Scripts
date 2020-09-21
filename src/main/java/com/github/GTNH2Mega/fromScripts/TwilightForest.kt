@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.AlloySmelter
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
@@ -17,17 +18,31 @@ class TwilightForest : Runnable {
         val item3 = ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 12)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("TwilightForest:item.carminite", 0))
         MineTweakerAPI.recipes.remove(item3)
-        MineTweakerAPI.recipes.removeShapeless(ItemBracketHandler.getItem("TwilightForest:item.fieryIngot", 0), null, false)
+        MineTweakerAPI.recipes.removeShapeless(ItemBracketHandler.getItem("TwilightForest:item.fieryIngot", 0), null,
+                false)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("TwilightForest:item.emptyMagicMap", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("TwilightForest:item.ironwoodRaw", 0))
-        MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("TwilightForest:item.ironwoodIngot", 0).amount(2), null)
+        MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("TwilightForest:item.ironwoodIngot", 0).amount(2),
+                null)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("TwilightForest:tile.TFUncraftingTable", 0))
-        MineTweakerAPI.recipes.addShaped(item3, arrayOf(arrayOf<IIngredient>(item2, item, item2), arrayOf(item, ore, item), arrayOf<IIngredient>(item2, item, item2)), null)
-        AlloySmelter.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.steeleafIngot", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2339), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 100, 4)
-        Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.nagaScale", 0), ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(2), ItemBracketHandler.getItem("TwilightForest:item.trophy", 1).amount(0), 600, 64)
-        Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.fieryBlood", 0), ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(6), ItemBracketHandler.getItem("TwilightForest:item.trophy", 0).amount(0), 1200, 1024)
-        Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.fieryTears", 0), ItemBracketHandler.getItem("minecraft:ghast_tear", 0), ItemBracketHandler.getItem("TwilightForest:item.trophy", 3).amount(0), 1500, 256)
-        Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.carminite", 0), ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(8), ItemBracketHandler.getItem("TwilightForest:item.trophy", 3).amount(0), 1500, 4096)
+        MineTweakerAPI.recipes.addShaped(item3,
+                arrayOf(arrayOf<IIngredient>(item2, item, item2), arrayOf(item, ore, item),
+                        arrayOf<IIngredient>(item2, item, item2)), null)
+        AlloySmelter.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.steeleafIngot", 0),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2339),
+                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32306).amount(0), 100, VoltageLevels.ULV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.nagaScale", 0),
+                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(2),
+                ItemBracketHandler.getItem("TwilightForest:item.trophy", 1).amount(0), 600, VoltageLevels.LMV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.fieryBlood", 0),
+                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(6),
+                ItemBracketHandler.getItem("TwilightForest:item.trophy", 0).amount(0), 1200, VoltageLevels.LEV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.fieryTears", 0),
+                ItemBracketHandler.getItem("minecraft:ghast_tear", 0),
+                ItemBracketHandler.getItem("TwilightForest:item.trophy", 3).amount(0), 1500, VoltageLevels.LHV)
+        Assembler.addRecipe(ItemBracketHandler.getItem("TwilightForest:item.carminite", 0),
+                ItemBracketHandler.getItem("Thaumcraft:ItemResource", 14).amount(8),
+                ItemBracketHandler.getItem("TwilightForest:item.trophy", 3).amount(0), 1500, VoltageLevels.LIV)
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFRoots", 0), "arbor 2")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFRoots", 1), "arbor 2, praecantatio 2")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:item.liveRoot", 0), "arbor 1, praecantatio 1")
@@ -61,25 +76,38 @@ class TwilightForest : Runnable {
         Aspects.add(ItemBracketHandler.getItem("TwilightForest:tile.TFSapling", 7), "perfodio 1")
         Aspects.add(ItemBracketHandler.getItem("TwilightForest:tile.TFSapling", 9), "sensus 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMoonworm", 0), "victus 1, lux 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLogSpecial", 0), "arbor 4, praecantatio 2, tempus 2, herba 2, lux 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLogSpecial", 1), "arbor 4, praecantatio 2, aer 2, herba 2, invidia 1, lux 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLogSpecial", 2), "arbor 4, praecantatio 2, perfodio 2, herba 2, lucrum 1, lux 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLogSpecial", 3), "arbor 4, praecantatio 2, motus 2, herba 2, cognitio 1, lux 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 2), "arbor 1, machina 1, potentia 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 4), "arbor 1, machina 1, potentia 2")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 5), "arbor 1, machina 1, potentia 2")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 6), "arbor 1, machina 1, potentia 2, iter 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 9), "arbor 1, machina 2, potentia 4, perditio 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 10), "arbor 1, machina 2, potentia 4, vinculum 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLogSpecial", 0),
+                "arbor 4, praecantatio 2, tempus 2, herba 2, lux 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLogSpecial", 1),
+                "arbor 4, praecantatio 2, aer 2, herba 2, invidia 1, lux 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLogSpecial", 2),
+                "arbor 4, praecantatio 2, perfodio 2, herba 2, lucrum 1, lux 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLogSpecial", 3),
+                "arbor 4, praecantatio 2, motus 2, herba 2, cognitio 1, lux 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 2),
+                "arbor 1, machina 1, potentia 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 4),
+                "arbor 1, machina 1, potentia 2")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 5),
+                "arbor 1, machina 1, potentia 2")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 6),
+                "arbor 1, machina 1, potentia 2, iter 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 9),
+                "arbor 1, machina 2, potentia 4, perditio 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTowerDevice", 10),
+                "arbor 1, machina 2, potentia 4, vinculum 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFShield", 0), "terra 4, machina 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTrophyPedestal", 0), "terra 7, ordo 4, lucrum 4, instrumentum 4")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTrophyPedestal", 15), "terra 7, ordo 12, lucrum 12, instrumentum 4")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTrophyPedestal", 0),
+                "terra 7, ordo 4, lucrum 4, instrumentum 4")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFTrophyPedestal", 15),
+                "terra 7, ordo 12, lucrum 12, instrumentum 4")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFAuroraBrick", 0), "terra 4, sensus 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFUnderBrick", 0), "terra 3, ignis 3")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFUnderBrick", 1), "terra 3, ignis 3")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFUnderBrick", 2), "terra 3, ignis 3, perditio 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFThorns", 0), "arbor 2, fabrico 1, telum 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFThorns", 1), "herba 3, fabrico 1, telum 1, aqua 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFThorns", 1),
+                "herba 3, fabrico 1, telum 1, aqua 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFBurntThorns", 0), "arbor 2, perditio 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFThornRose", 0), "herba 2")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TFLeaves3", 0), "herba 1")
@@ -92,10 +120,13 @@ class TwilightForest : Runnable {
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.AuroraSlab", 0), "terra 2, sensus 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.AuroraDoubleSlab", 0), "terra 4, sensus 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.TrollSteinn", 0), "terra 4, potentia 2")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.WispyCloud", 0), "aer 1, volatus 1, aqua 1, tempestas 1")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.FluffyCloud", 0), "aer 1, volatus 1, pannus 1, tempestas 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.WispyCloud", 0),
+                "aer 1, volatus 1, aqua 1, tempestas 1")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.FluffyCloud", 0),
+                "aer 1, volatus 1, pannus 1, tempestas 1")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.HugeStalk", 0), "herba 4")
-        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.UberousSoil", 0), "terra 4, aqua 4, herba 4, victus 10")
+        Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.UberousSoil", 0),
+                "terra 4, aqua 4, herba 4, victus 10")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.HugeGloomBlock", 0), "terra 4, tenebrae 2, herba 2")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.KnightmetalBlock", 0), "metallum 18, lucrum 9")
         Aspects.set(ItemBracketHandler.getItem("TwilightForest:tile.UnripeTrollBer", 0), "herba 1, terra 1, perditio 1")

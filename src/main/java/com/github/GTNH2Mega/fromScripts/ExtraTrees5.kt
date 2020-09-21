@@ -9,167 +9,162 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.forestry.handlers.Carpenter
+import net.minecraftforge.oredict.OreDictionary
 import java.util.*
+import com.github.GTNH2Mega.VoltageLevels
 
 class ExtraTrees5 : Runnable {
     override fun run() {
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 0))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 1))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 2))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 4))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 5))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 6))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 7))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 8))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 3))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:hammer", 0))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:durableHammer", 0))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 6))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 7))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 8))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 9))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 10))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 11))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 5))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 13))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:door", 32767))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:gate", 32767))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:fence", 32767))
-            MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:multifence", 32767))
-            Carpenter.addRecipe(ItemBracketHandler.getItem("ExtraTrees:database", 0), arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500), OreBracketHandler.getOre("itemCasingGold"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500)), arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500), OreBracketHandler.getOre("circuitAdvanced"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17501)), arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500), OreBracketHandler.getOre("itemCasingGold"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500))), LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1440), 60, ItemBracketHandler.getItem("Forestry:treealyzer", 0))
-            MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("ExtraTrees:database", 0), arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraTrees:database", 0)), null)
-            Carpenter.addRecipe(ItemBracketHandler.getItem("ExtraTrees:databaseMoth", 0), arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500), OreBracketHandler.getOre("itemCasingGold"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500)), arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17501), OreBracketHandler.getOre("circuitAdvanced"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500)), arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500), OreBracketHandler.getOre("itemCasingGold"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500))), LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1440), 60, ItemBracketHandler.getItem("Forestry:flutterlyzer", 0))
-            MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("ExtraTrees:databaseMoth", 0), arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraTrees:databaseMoth", 0)), null)
-            MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:machine", 0), arrayOf(arrayOf(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0), OreBracketHandler.getOre("plateSteel"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32721)), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630), ItemBracketHandler.getItem("Forestry:sturdyMachine", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630)), arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraTrees:misc", 3), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600), ItemBracketHandler.getItem("ExtraTrees:misc", 3))), null)
-            MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:machine", 1), arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17889), OreBracketHandler.getOre("plankWood"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17889)), arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:factory2", 2), ItemBracketHandler.getItem("Forestry:sturdyMachine", 0), ItemBracketHandler.getItem("Forestry:factory2", 2)), arrayOf(ItemBracketHandler.getItem("ExtraTrees:misc", 3), OreBracketHandler.getOre("plankWood"), ItemBracketHandler.getItem("ExtraTrees:misc", 3))), null)
-            MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:machine", 2), arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17889), OreBracketHandler.getOre("slabWood"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17889)), arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:factory2", 2), ItemBracketHandler.getItem("Forestry:sturdyMachine", 0), ItemBracketHandler.getItem("Forestry:factory2", 2)), arrayOf(ItemBracketHandler.getItem("ExtraTrees:misc", 3), OreBracketHandler.getOre("slabWood"), ItemBracketHandler.getItem("ExtraTrees:misc", 3))), null)
-            MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:machine", 4), arrayOf(arrayOf(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0), OreBracketHandler.getOre("plateSteel"), ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0)), arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640), ItemBracketHandler.getItem("Forestry:sturdyMachine", 0), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640)), arrayOf(OreBracketHandler.getOre("gearGtSmallBronze"), ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600), OreBracketHandler.getOre("gearGtSmallBronze"))), null)
-            MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:misc", 3), arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:oakStick", 0), ItemBracketHandler.getItem("Railcraft:cube", 8), ItemBracketHandler.getItem("Forestry:oakStick", 0)), arrayOf(ItemBracketHandler.getItem("Railcraft:cube", 8), OreBracketHandler.getOre("craftingToolSaw"), ItemBracketHandler.getItem("Railcraft:cube", 8)), arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:oakStick", 0), ItemBracketHandler.getItem("Railcraft:cube", 8), ItemBracketHandler.getItem("Forestry:oakStick", 0))), null)
-            MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:hammer", 0), arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("plankWood"), OreBracketHandler.getOre("plankWood"), null), arrayOf<IIngredient?>(OreBracketHandler.getOre("ingotIron"), OreBracketHandler.getOre("stickIron"), OreBracketHandler.getOre("stickWood")), arrayOf<IIngredient?>(OreBracketHandler.getOre("plankWood"), OreBracketHandler.getOre("plankWood"), null)), null)
-            MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:durableHammer", 0), arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("plateObsidian"), OreBracketHandler.getOre("plateObsidian"), null), arrayOf(OreBracketHandler.getOre("ingotGold"), ItemBracketHandler.getItem("RandomThings:ingredient", 1), OreBracketHandler.getOre("stickWood")), arrayOf<IIngredient?>(OreBracketHandler.getOre("plateObsidian"), OreBracketHandler.getOre("plateObsidian"), null)), null)
-            MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:misc", 5).amount(5), arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("stickLongAnyIron"), OreBracketHandler.getOre("craftingToolSaw"), OreBracketHandler.getOre("stickLongAnyIron")), arrayOf<IIngredient?>(null, OreBracketHandler.getOre("stickLongAnyIron"), null), arrayOf<IIngredient?>(OreBracketHandler.getOre("stickLongAnyIron"), OreBracketHandler.getOre("craftingToolFile"), OreBracketHandler.getOre("stickLongAnyIron"))), null)
-            Carpenter.removeRecipe(ItemBracketHandler.getItem("ExtraTrees:database", 0), null)
-            Carpenter.removeRecipe(ItemBracketHandler.getItem("ExtraTrees:databaseMoth", 0), null)
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 0))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 1))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 2))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 4))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 5))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 6))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 7))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:machine", 8))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 3))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:hammer", 0))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:durableHammer", 0))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 6))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 7))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 8))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 9))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 10))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 11))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 5))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:misc", 13))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:door", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:gate", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:fence", OreDictionary.WILDCARD_VALUE))
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("ExtraTrees:multifence", OreDictionary.WILDCARD_VALUE))
+        Carpenter.addRecipe(ItemBracketHandler.getItem("ExtraTrees:database", 0),
+                arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500),
+                        OreBracketHandler.getOre("itemCasingGold"),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500)),
+                        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
+                                OreBracketHandler.getOre("circuitAdvanced"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17501)),
+                        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500),
+                                OreBracketHandler.getOre("itemCasingGold"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500))),
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1440), 60,
+                ItemBracketHandler.getItem("Forestry:treealyzer", 0))
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("ExtraTrees:database", 0),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraTrees:database", 0)), null)
+        Carpenter.addRecipe(ItemBracketHandler.getItem("ExtraTrees:databaseMoth", 0),
+                arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500),
+                        OreBracketHandler.getOre("itemCasingGold"),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500)),
+                        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17501),
+                                OreBracketHandler.getOre("circuitAdvanced"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500)),
+                        arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500),
+                                OreBracketHandler.getOre("itemCasingGold"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27500))),
+                LiquidBracketHandler.getLiquid("molten.redstone").withAmount(1440), 60,
+                ItemBracketHandler.getItem("Forestry:flutterlyzer", 0))
+        MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("ExtraTrees:databaseMoth", 0),
+                arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraTrees:databaseMoth", 0)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:machine", 0),
+                arrayOf(arrayOf(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
+                        OreBracketHandler.getOre("plateSteel"),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32721)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630),
+                                ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32630)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("ExtraTrees:misc", 3),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
+                                ItemBracketHandler.getItem("ExtraTrees:misc", 3))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:machine", 1),
+                arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17889),
+                        OreBracketHandler.getOre("plankWood"),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17889)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:factory2", 2),
+                                ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
+                                ItemBracketHandler.getItem("Forestry:factory2", 2)),
+                        arrayOf(ItemBracketHandler.getItem("ExtraTrees:misc", 3), OreBracketHandler.getOre("plankWood"),
+                                ItemBracketHandler.getItem("ExtraTrees:misc", 3))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:machine", 2),
+                arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17889),
+                        OreBracketHandler.getOre("slabWood"),
+                        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17889)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:factory2", 2),
+                                ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
+                                ItemBracketHandler.getItem("Forestry:factory2", 2)),
+                        arrayOf(ItemBracketHandler.getItem("ExtraTrees:misc", 3), OreBracketHandler.getOre("slabWood"),
+                                ItemBracketHandler.getItem("ExtraTrees:misc", 3))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:machine", 4),
+                arrayOf(arrayOf(ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0),
+                        OreBracketHandler.getOre("plateSteel"),
+                        ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640),
+                                ItemBracketHandler.getItem("Forestry:sturdyMachine", 0),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640)),
+                        arrayOf(OreBracketHandler.getOre("gearGtSmallBronze"),
+                                ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32600),
+                                OreBracketHandler.getOre("gearGtSmallBronze"))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:misc", 3),
+                arrayOf(arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:oakStick", 0),
+                        ItemBracketHandler.getItem("Railcraft:cube", 8),
+                        ItemBracketHandler.getItem("Forestry:oakStick", 0)),
+                        arrayOf(ItemBracketHandler.getItem("Railcraft:cube", 8),
+                                OreBracketHandler.getOre("craftingToolSaw"),
+                                ItemBracketHandler.getItem("Railcraft:cube", 8)),
+                        arrayOf<IIngredient>(ItemBracketHandler.getItem("Forestry:oakStick", 0),
+                                ItemBracketHandler.getItem("Railcraft:cube", 8),
+                                ItemBracketHandler.getItem("Forestry:oakStick", 0))), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:hammer", 0),
+                arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("plankWood"),
+                        OreBracketHandler.getOre("plankWood"), null),
+                        arrayOf<IIngredient?>(OreBracketHandler.getOre("ingotIron"),
+                                OreBracketHandler.getOre("stickIron"), OreBracketHandler.getOre("stickWood")),
+                        arrayOf<IIngredient?>(OreBracketHandler.getOre("plankWood"),
+                                OreBracketHandler.getOre("plankWood"), null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:durableHammer", 0),
+                arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("plateObsidian"),
+                        OreBracketHandler.getOre("plateObsidian"), null), arrayOf(OreBracketHandler.getOre("ingotGold"),
+                        ItemBracketHandler.getItem("RandomThings:ingredient", 1),
+                        OreBracketHandler.getOre("stickWood")),
+                        arrayOf<IIngredient?>(OreBracketHandler.getOre("plateObsidian"),
+                                OreBracketHandler.getOre("plateObsidian"), null)), null)
+        MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("ExtraTrees:misc", 5).amount(5),
+                arrayOf(arrayOf<IIngredient?>(OreBracketHandler.getOre("stickLongAnyIron"),
+                        OreBracketHandler.getOre("craftingToolSaw"), OreBracketHandler.getOre("stickLongAnyIron")),
+                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("stickLongAnyIron"), null),
+                        arrayOf<IIngredient?>(OreBracketHandler.getOre("stickLongAnyIron"),
+                                OreBracketHandler.getOre("craftingToolFile"),
+                                OreBracketHandler.getOre("stickLongAnyIron"))), null)
+        Carpenter.removeRecipe(ItemBracketHandler.getItem("ExtraTrees:database", 0), null)
+        Carpenter.removeRecipe(ItemBracketHandler.getItem("ExtraTrees:databaseMoth", 0), null)
         val recipes = MineTweakerAPI.recipes
         val item = ItemBracketHandler.getItem("ExtraTrees:door", 0)
         val hashMap = HashMap<String, IData>()
         hashMap["meta"] = ExpandInt.toData(0)
-        recipes.addShaped(item.withTag(ExpandAnyDict.asData(hashMap)), arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("minecraft:wooden_door", 0), null, null), arrayOfNulls(3), arrayOfNulls(3)), null)
+        recipes.addShaped(item.withTag(ExpandAnyDict.asData(hashMap)),
+                arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("minecraft:wooden_door", 0), null, null),
+                        arrayOfNulls(3), arrayOfNulls(3)), null)
         val recipes2 = MineTweakerAPI.recipes
         val item2 = ItemBracketHandler.getItem("ExtraTrees:door", 256)
         val hashMap2 = HashMap<String, IData>()
         hashMap2["meta"] = ExpandInt.toData(256)
-        recipes2.addShaped(item2.withTag(ExpandAnyDict.asData(hashMap2)), arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("minecraft:wooden_door", 0), null), arrayOfNulls(3), arrayOfNulls(3)), null)
+        recipes2.addShaped(item2.withTag(ExpandAnyDict.asData(hashMap2)),
+                arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("minecraft:wooden_door", 0), null),
+                        arrayOfNulls(3), arrayOfNulls(3)), null)
         val recipes3 = MineTweakerAPI.recipes
         val item3 = ItemBracketHandler.getItem("ExtraTrees:door", 512)
         val hashMap3 = HashMap<String, IData>()
         hashMap3["meta"] = ExpandInt.toData(512)
-        recipes3.addShaped(item3.withTag(ExpandAnyDict.asData(hashMap3)), arrayOf(arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("minecraft:wooden_door", 0)), arrayOfNulls(3), arrayOfNulls(3)), null)
+        recipes3.addShaped(item3.withTag(ExpandAnyDict.asData(hashMap3)),
+                arrayOf(arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("minecraft:wooden_door", 0)),
+                        arrayOfNulls(3), arrayOfNulls(3)), null)
         val recipes4 = MineTweakerAPI.recipes
         val item4 = ItemBracketHandler.getItem("ExtraTrees:door", 768)
         val hashMap4 = HashMap<String, IData>()
         hashMap4["meta"] = ExpandInt.toData(768)
-        recipes4.addShaped(item4.withTag(ExpandAnyDict.asData(hashMap4)), arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(ItemBracketHandler.getItem("minecraft:wooden_door", 0), null, null), arrayOfNulls(3)), null)
-        val recipes5 = MineTweakerAPI.recipes
-        val item5 = ItemBracketHandler.getItem("ExtraTrees:door", 1)
-        val hashMap5 = HashMap<String, IData>()
-        hashMap5["meta"] = ExpandInt.toData(1)
-        recipes5.addShaped(item5.withTag(ExpandAnyDict.asData(hashMap5)), arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_spruce", 0), null, null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes6 = MineTweakerAPI.recipes
-        val item6 = ItemBracketHandler.getItem("ExtraTrees:door", 257)
-        val hashMap6 = HashMap<String, IData>()
-        hashMap6["meta"] = ExpandInt.toData(257)
-        recipes6.addShaped(item6.withTag(ExpandAnyDict.asData(hashMap6)), arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("malisisdoors:item.door_spruce", 0), null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes7 = MineTweakerAPI.recipes
-        val item7 = ItemBracketHandler.getItem("ExtraTrees:door", 513)
-        val hashMap7 = HashMap<String, IData>()
-        hashMap7["meta"] = ExpandInt.toData(513)
-        recipes7.addShaped(item7.withTag(ExpandAnyDict.asData(hashMap7)), arrayOf(arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("malisisdoors:item.door_spruce", 0)), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes8 = MineTweakerAPI.recipes
-        val item8 = ItemBracketHandler.getItem("ExtraTrees:door", 769)
-        val hashMap8 = HashMap<String, IData>()
-        hashMap8["meta"] = ExpandInt.toData(769)
-        recipes8.addShaped(item8.withTag(ExpandAnyDict.asData(hashMap8)), arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_spruce", 0), null, null), arrayOfNulls(3)), null)
-        val recipes9 = MineTweakerAPI.recipes
-        val item9 = ItemBracketHandler.getItem("ExtraTrees:door", 2)
-        val hashMap9 = HashMap<String, IData>()
-        hashMap9["meta"] = ExpandInt.toData(2)
-        recipes9.addShaped(item9.withTag(ExpandAnyDict.asData(hashMap9)), arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_birch", 0), null, null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes10 = MineTweakerAPI.recipes
-        val item10 = ItemBracketHandler.getItem("ExtraTrees:door", 258)
-        val hashMap10 = HashMap<String, IData>()
-        hashMap10["meta"] = ExpandInt.toData(258)
-        recipes10.addShaped(item10.withTag(ExpandAnyDict.asData(hashMap10)), arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("malisisdoors:item.door_birch", 0), null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes11 = MineTweakerAPI.recipes
-        val item11 = ItemBracketHandler.getItem("ExtraTrees:door", 514)
-        val hashMap11 = HashMap<String, IData>()
-        hashMap11["meta"] = ExpandInt.toData(514)
-        recipes11.addShaped(item11.withTag(ExpandAnyDict.asData(hashMap11)), arrayOf(arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("malisisdoors:item.door_birch", 0)), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes12 = MineTweakerAPI.recipes
-        val item12 = ItemBracketHandler.getItem("ExtraTrees:door", 770)
-        val hashMap12 = HashMap<String, IData>()
-        hashMap12["meta"] = ExpandInt.toData(770)
-        recipes12.addShaped(item12.withTag(ExpandAnyDict.asData(hashMap12)), arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_birch", 0), null, null), arrayOfNulls(3)), null)
-        val recipes13 = MineTweakerAPI.recipes
-        val item13 = ItemBracketHandler.getItem("ExtraTrees:door", 3)
-        val hashMap13 = HashMap<String, IData>()
-        hashMap13["meta"] = ExpandInt.toData(3)
-        recipes13.addShaped(item13.withTag(ExpandAnyDict.asData(hashMap13)), arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_jungle", 0), null, null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes14 = MineTweakerAPI.recipes
-        val item14 = ItemBracketHandler.getItem("ExtraTrees:door", 259)
-        val hashMap14 = HashMap<String, IData>()
-        hashMap14["meta"] = ExpandInt.toData(259)
-        recipes14.addShaped(item14.withTag(ExpandAnyDict.asData(hashMap14)), arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("malisisdoors:item.door_jungle", 0), null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes15 = MineTweakerAPI.recipes
-        val item15 = ItemBracketHandler.getItem("ExtraTrees:door", 515)
-        val hashMap15 = HashMap<String, IData>()
-        hashMap15["meta"] = ExpandInt.toData(515)
-        recipes15.addShaped(item15.withTag(ExpandAnyDict.asData(hashMap15)), arrayOf(arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("malisisdoors:item.door_jungle", 0)), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes16 = MineTweakerAPI.recipes
-        val item16 = ItemBracketHandler.getItem("ExtraTrees:door", 771)
-        val hashMap16 = HashMap<String, IData>()
-        hashMap16["meta"] = ExpandInt.toData(771)
-        recipes16.addShaped(item16.withTag(ExpandAnyDict.asData(hashMap16)), arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_jungle", 0), null, null), arrayOfNulls(3)), null)
-        val recipes17 = MineTweakerAPI.recipes
-        val item17 = ItemBracketHandler.getItem("ExtraTrees:door", 4)
-        val hashMap17 = HashMap<String, IData>()
-        hashMap17["meta"] = ExpandInt.toData(4)
-        recipes17.addShaped(item17.withTag(ExpandAnyDict.asData(hashMap17)), arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_acacia", 0), null, null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes18 = MineTweakerAPI.recipes
-        val item18 = ItemBracketHandler.getItem("ExtraTrees:door", 260)
-        val hashMap18 = HashMap<String, IData>()
-        hashMap18["meta"] = ExpandInt.toData(260)
-        recipes18.addShaped(item18.withTag(ExpandAnyDict.asData(hashMap18)), arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("malisisdoors:item.door_acacia", 0), null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes19 = MineTweakerAPI.recipes
-        val item19 = ItemBracketHandler.getItem("ExtraTrees:door", 516)
-        val hashMap19 = HashMap<String, IData>()
-        hashMap19["meta"] = ExpandInt.toData(516)
-        recipes19.addShaped(item19.withTag(ExpandAnyDict.asData(hashMap19)), arrayOf(arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("malisisdoors:item.door_acacia", 0)), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes20 = MineTweakerAPI.recipes
-        val item20 = ItemBracketHandler.getItem("ExtraTrees:door", 772)
-        val hashMap20 = HashMap<String, IData>()
-        hashMap20["meta"] = ExpandInt.toData(772)
-        recipes20.addShaped(item20.withTag(ExpandAnyDict.asData(hashMap20)), arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_acacia", 0), null, null), arrayOfNulls(3)), null)
-        val recipes21 = MineTweakerAPI.recipes
-        val item21 = ItemBracketHandler.getItem("ExtraTrees:door", 5)
-        val hashMap21 = HashMap<String, IData>()
-        hashMap21["meta"] = ExpandInt.toData(5)
-        recipes21.addShaped(item21.withTag(ExpandAnyDict.asData(hashMap21)), arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_dark_oak", 0), null, null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes22 = MineTweakerAPI.recipes
-        val item22 = ItemBracketHandler.getItem("ExtraTrees:door", 261)
-        val hashMap22 = HashMap<String, IData>()
-        hashMap22["meta"] = ExpandInt.toData(261)
-        recipes22.addShaped(item22.withTag(ExpandAnyDict.asData(hashMap22)), arrayOf(arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("malisisdoors:item.door_dark_oak", 0), null), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes23 = MineTweakerAPI.recipes
-        val item23 = ItemBracketHandler.getItem("ExtraTrees:door", 517)
-        val hashMap23 = HashMap<String, IData>()
-        hashMap23["meta"] = ExpandInt.toData(517)
-        recipes23.addShaped(item23.withTag(ExpandAnyDict.asData(hashMap23)), arrayOf(arrayOf<IIngredient?>(null, null, ItemBracketHandler.getItem("malisisdoors:item.door_dark_oak", 0)), arrayOfNulls(3), arrayOfNulls(3)), null)
-        val recipes24 = MineTweakerAPI.recipes
-        val item24 = ItemBracketHandler.getItem("ExtraTrees:door", 773)
-        val hashMap24 = HashMap<String, IData>()
-        hashMap24["meta"] = ExpandInt.toData(773)
-        recipes24.addShaped(item24.withTag(ExpandAnyDict.asData(hashMap24)), arrayOf(arrayOfNulls(3), arrayOf<IIngredient?>(ItemBracketHandler.getItem("malisisdoors:item.door_dark_oak", 0), null, null), arrayOfNulls(3)), null)
+        recipes4.addShaped(item4.withTag(ExpandAnyDict.asData(hashMap4)), arrayOf(arrayOfNulls(3),
+                arrayOf<IIngredient?>(ItemBracketHandler.getItem("minecraft:wooden_door", 0), null, null),
+                arrayOfNulls(3)), null)
         val recipes25 = MineTweakerAPI.recipes
         val item25 = ItemBracketHandler.getItem("ExtraTrees:door", 32)
         val hashMap25 = HashMap<String, IData>()
