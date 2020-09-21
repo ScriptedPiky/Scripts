@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting
 import gttweaker.mods.gregtech.machines.Assembler
 import gttweaker.mods.gregtech.machines.ChemicalBath
@@ -18,7 +19,6 @@ import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import net.minecraftforge.oredict.OreDictionary
 import java.util.*
-import com.github.GTNH2Mega.VoltageLevels
 
 class EnderIO : Runnable {
     override fun run() {
@@ -72,7 +72,6 @@ class EnderIO : Runnable {
         val item29 = ItemBracketHandler.getItem("EnderIO:blockFusedQuartz", 2)
         val item30 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32640)
         val ore20 = OreBracketHandler.getOre("plateDensePulsatingIron")
-        OreBracketHandler.getOre("gearDiamond")
         val ore21 = OreBracketHandler.getOre("gearElectricalSteel")
         val item31 = ItemBracketHandler.getItem("minecraft:cauldron", 0)
         val item32 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 6)
@@ -84,13 +83,10 @@ class EnderIO : Runnable {
         val item38 = ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 2)
         val item39 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 5)
         val item40 = ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 3)
-        ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0)
         val item41 = ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0)
-        ItemBracketHandler.getItem("irontank:ironTank", 0)
         val item42 = ItemBracketHandler.getItem("EnderIO:blockDarkIronBars", 0)
         val ore22 = OreBracketHandler.getOre("plateDarkSteel")
         val item43 = ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 4)
-        ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 5)
         val item44 = ItemBracketHandler.getItem("EnderIO:itemFrankenSkull", 6)
         val item45 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 8)
         val ore23 = OreBracketHandler.getOre("chestWood")
@@ -100,7 +96,6 @@ class EnderIO : Runnable {
         val ore25 = OreBracketHandler.getOre("screwDarkSteel")
         val item48 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 10)
         val ore26 = OreBracketHandler.getOre("lensEnderEye")
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32671)
         val ore27 = OreBracketHandler.getOre("plateSoularium")
         val item49 = ItemBracketHandler.getItem("minecraft:shears", 0)
         val item50 = ItemBracketHandler.getItem("minecraft:iron_axe", 0)
@@ -127,7 +122,6 @@ class EnderIO : Runnable {
         val ore41 = OreBracketHandler.getOre("blockObsidian")
         val ore42 = OreBracketHandler.getOre("gemEnderEye")
         val item58 = ItemBracketHandler.getItem("minecraft:compass", 0)
-        OreBracketHandler.getOre("plateRedstoneAlloy")
         val item59 = ItemBracketHandler.getItem("EnderIO:itemMaterial", 1)
         val ore43 = OreBracketHandler.getOre("plateConductiveIron")
         val ore44 = OreBracketHandler.getOre("ingotElectricalSteel")

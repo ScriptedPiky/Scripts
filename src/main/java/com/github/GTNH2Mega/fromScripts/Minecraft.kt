@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.*
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
@@ -12,19 +13,16 @@ import minetweaker.mods.ic2.machines.Extractor
 import minetweaker.mods.nei.NEI
 import modtweaker2.mods.railcraft.handlers.BlastFurnace
 import net.minecraftforge.oredict.OreDictionary
-import com.github.GTNH2Mega.VoltageLevels
 
 class Minecraft : Runnable {
     override fun run() {
         val item = ItemBracketHandler.getItem("minecraft:chest", 0)
         val item2 = ItemBracketHandler.getItem("minecraft:trapped_chest", 0)
         val item3 = ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersBlock", 0)
-        ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersSlope", 0)
         val item4 = ItemBracketHandler.getItem("minecraft:bedrock", 0)
         val item5 = ItemBracketHandler.getItem("minecraft:dispenser", 0)
         val item6 = ItemBracketHandler.getItem("minecraft:piston", 0)
         val item7 = ItemBracketHandler.getItem("minecraft:sticky_piston", 0)
-        ItemBracketHandler.getItem("minecraft:slime_ball", 0)
         val item8 = ItemBracketHandler.getItem("minecraft:string", 0)
         val item9 = ItemBracketHandler.getItem("minecraft:rail", 0)
         val item10 = ItemBracketHandler.getItem("minecraft:golden_rail", 0)
@@ -32,7 +30,6 @@ class Minecraft : Runnable {
         val item12 = ItemBracketHandler.getItem("minecraft:activator_rail", 0)
         val item13 = ItemBracketHandler.getItem("minecraft:noteblock", 0)
         val item14 = ItemBracketHandler.getItem("minecraft:stone_pressure_plate", 0)
-        ItemBracketHandler.getItem("minecraft:light_weighted_pressure_plate", 0)
         val item15 = ItemBracketHandler.getItem("minecraft:bookshelf", 0)
         val item16 = ItemBracketHandler.getItem("minecraft:book", 0)
         val item17 = ItemBracketHandler.getItem("minecraft:mossy_cobblestone", 0)
@@ -40,7 +37,6 @@ class Minecraft : Runnable {
         val ore = OreBracketHandler.getOre("blockObsidian")
         val item19 = ItemBracketHandler.getItem("minecraft:jukebox", 0)
         val ore2 = OreBracketHandler.getOre("record")
-        OreBracketHandler.getOre("gemDiamond")
         val item20 = ItemBracketHandler.getItem("minecraft:crafting_table", 0)
         val item21 = ItemBracketHandler.getItem("minecraft:lit_pumpkin", 0)
         val item22 = ItemBracketHandler.getItem("minecraft:pumpkin", 0)
@@ -60,7 +56,6 @@ class Minecraft : Runnable {
         val item35 = ItemBracketHandler.getItem("minecraft:ender_chest", 0)
         val item36 = ItemBracketHandler.getItem("minecraft:tripwire_hook", 0)
         val item37 = ItemBracketHandler.getItem("minecraft:beacon", 0)
-        ItemBracketHandler.getItem("minecraft:nether_star", 0)
         val item38 = ItemBracketHandler.getItem("minecraft:anvil", 0)
         val ore4 = OreBracketHandler.getOre("blockIron")
         val item39 = ItemBracketHandler.getItem("minecraft:daylight_detector", 0)
@@ -176,16 +171,9 @@ class Minecraft : Runnable {
         val ore28 = OreBracketHandler.getOre("dyeGreen")
         val ore29 = OreBracketHandler.getOre("dyeRed")
         val ore30 = OreBracketHandler.getOre("dyeBlack")
-
-        //TODO investigate getters with no target field for ("TConstruct:bowstring", 0)
-        //ItemBracketHandler.getItem("TConstruct:bowstring", 0)
-
         val item126 = ItemBracketHandler.getItem("minecraft:iron_bars", 0)
         val item127 = ItemBracketHandler.getItem("dreamcraft:item.SteelBars", 0)
         val ore31 = OreBracketHandler.getOre("plateAnyIron")
-        OreBracketHandler.getOre("stickAnyIron")
-        OreBracketHandler.getOre("stickDiamond")
-        OreBracketHandler.getOre("rodStone")
         val ore32 = OreBracketHandler.getOre("screwWood")
         val ore33 = OreBracketHandler.getOre("screwAnyIron")
         val ore34 = OreBracketHandler.getOre("screwSteel")
@@ -193,19 +181,15 @@ class Minecraft : Runnable {
         val ore36 = OreBracketHandler.getOre("ringAnyIron")
         val ore37 = OreBracketHandler.getOre("gearAnyIron")
         val ore38 = OreBracketHandler.getOre("stickRedAlloy")
-        OreBracketHandler.getOre("stickRedAlloy")
-        OreBracketHandler.getOre("plateGlowstone")
 
         //TODO Replace ("ExtraUtilities:paintbrush", 0)
         //val item128 = ItemBracketHandler.getItem("ExtraUtilities:paintbrush", 0)
 
         val item129 = ItemBracketHandler.getItem("BiomesOPlenty:plants", 7)
         val item130 = ItemBracketHandler.getItem("Railcraft:part.rail", 0)
-        ItemBracketHandler.getItem("Railcraft:part.rail", 1)
         val item131 = ItemBracketHandler.getItem("Railcraft:part.railbed", 0)
         val item132 = ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE)
         val ore39 = OreBracketHandler.getOre("slabWood")
-        OreBracketHandler.getOre("slabStone")
         val ore40 = OreBracketHandler.getOre("paneGlass")
 
         //TODO Replace ("TConstruct:GlassPane", 0)
@@ -215,27 +199,9 @@ class Minecraft : Runnable {
         val ore42 = OreBracketHandler.getOre("gemCharcoal")
         val ore43 = OreBracketHandler.getOre("fuelCoke")
         val ore44 = OreBracketHandler.getOre("itemBeeswax")
-
-        //TODO investigate getters with no target field for ("harvestcraft:wovencottonItem", 0)
-        //ItemBracketHandler.getItem("harvestcraft:wovencottonItem", 0)
-
-        OreBracketHandler.getOre("dustSulfur")
         val item134 = ItemBracketHandler.getItem("TwilightForest:item.torchberries", 0)
         val item135 = ItemBracketHandler.getItem("IC2:itemHarz", 0)
         val ore45 = OreBracketHandler.getOre("stickWood")
-        ItemBracketHandler.getItem("Forestry:oakStick", 0)
-        OreBracketHandler.getOre("plateObsidian")
-        OreBracketHandler.getOre("plateDenseObsidian")
-        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 0)
-        ItemBracketHandler.getItem("Thaumcraft:ItemResource", 1)
-        ItemBracketHandler.getItem("IronChest:BlockIronChest", 6)
-        OreBracketHandler.getOre("dustTinyNetherStar")
-        OreBracketHandler.getOre("stickEnderEye")
-
-        //TODO investigate getters with no target field for ("ExtraUtilities:decorativeBlock2", 7)
-        //ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
-
-        OreBracketHandler.getOre("craftingQuartz")
         val ore46 = OreBracketHandler.getOre("plateCertusQuartz")
         val ore47 = OreBracketHandler.getOre("plateNetherQuartz")
         val ore48 = OreBracketHandler.getOre("craftingToolScrewdriver")

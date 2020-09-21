@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.*
 import minetweaker.MineTweakerAPI
 import minetweaker.api.data.IData
@@ -13,15 +14,13 @@ import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.nei.NEI
 import modtweaker2.mods.chisel.handlers.Groups
-import java.util.*
 import net.minecraftforge.oredict.OreDictionary
-import com.github.GTNH2Mega.VoltageLevels
+import java.util.*
 
 class Natura : Runnable {
     override fun run() {
         val item = ItemBracketHandler.getItem("Natura:barleyFood", 3)
         val item2 = ItemBracketHandler.getItem("Natura:barleyFood", 6)
-        OreBracketHandler.getOre("itemLeather")
         val item3 = ItemBracketHandler.getItem("minecraft:string", 0)
         val ore = OreBracketHandler.getOre("craftingToolSaw")
         val ore2 = OreBracketHandler.getOre("craftingToolScrewdriver")

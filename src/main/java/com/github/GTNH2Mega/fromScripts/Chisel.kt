@@ -1,12 +1,12 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.chisel.handlers.Groups
-import com.github.GTNH2Mega.VoltageLevels
 
 class Chisel : Runnable {
     override fun run() {
@@ -15,21 +15,14 @@ class Chisel : Runnable {
         val item2 = ItemBracketHandler.getItem("chisel:obsidianChisel", 0)
         val item3 = ItemBracketHandler.getItem("chisel:diamondChisel", 0)
         val item4 = ItemBracketHandler.getItem("chisel:cloudinabottle", 0)
-        OreBracketHandler.getOre("plateWood")
         val ore = OreBracketHandler.getOre("plateAnyIron")
-        OreBracketHandler.getOre("plateSteel")
         val ore2 = OreBracketHandler.getOre("plateObsidian")
-        OreBracketHandler.getOre("screwWood")
         val ore3 = OreBracketHandler.getOre("screwAnyIron")
         val ore4 = OreBracketHandler.getOre("screwWroughtIron")
         val ore5 = OreBracketHandler.getOre("screwSteel")
-        OreBracketHandler.getOre("stickAnyIron")
         val ore6 = OreBracketHandler.getOre("stickSteel")
         val ore7 = OreBracketHandler.getOre("stickWood")
         val ore8 = OreBracketHandler.getOre("stickWroughtIron")
-        OreBracketHandler.getOre("stickObsidian")
-        OreBracketHandler.getOre("dustTinyQuartzite")
-        ItemBracketHandler.getItem("minecraft:glass_bottle", 0)
         val ore9 = OreBracketHandler.getOre("craftingToolHardHammer")
         val ore10 = OreBracketHandler.getOre("craftingToolScrewdriver")
         MineTweakerAPI.recipes.remove(item)

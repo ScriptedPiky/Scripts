@@ -1,6 +1,7 @@
 package com.github.GTNH2Mega.fromScripts
 
 import buildcraft.compat.minetweaker.AssemblyTable
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import gttweaker.mods.gregtech.machines.FormingPress
 import gttweaker.mods.gregtech.machines.PrecisionLaser
@@ -11,7 +12,6 @@ import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.nei.NEI
 import net.minecraftforge.oredict.OreDictionary
-import com.github.GTNH2Mega.VoltageLevels
 
 class BuildCraft : Runnable {
     override fun run() {
@@ -22,7 +22,6 @@ class BuildCraft : Runnable {
         val item5 = ItemBracketHandler.getItem("BuildCraft|Core:woodenGearItem", 0)
         val item6 = ItemBracketHandler.getItem("BuildCraft|Factory:miningWellBlock", 0)
         val item7 = ItemBracketHandler.getItem("BuildCraft|Transport:pipeWaterproof", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemswood", 0)
         val item8 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerwood", 0)
         val item9 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemscobblestone", 0)
         val item10 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowercobblestone", 0)
@@ -34,20 +33,9 @@ class BuildCraft : Runnable {
         val item16 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepoweriron", 0)
         val item17 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsquartz", 0)
         val item18 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerquartz", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsgold", 0)
         val item19 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowergold", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemslapis", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsobsidian", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond", 0)
         val item20 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald", 0)
         val item21 = ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipepoweremerald", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsdaizuli", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsemzuli", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsvoid", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay", 0)
-        ItemBracketHandler.getItem("BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone", 0)
         val item22 = ItemBracketHandler.getItem("BuildCraft|Silicon:laserBlock", 0)
         val item23 = ItemBracketHandler.getItem("BuildCraft|Factory:tankBlock", 0)
         val item24 = ItemBracketHandler.getItem("ForgeMicroblock:stoneRod", 0)
@@ -59,15 +47,12 @@ class BuildCraft : Runnable {
         val ore6 = OreBracketHandler.getOre("stickGold")
         val ore7 = OreBracketHandler.getOre("stickEmerald")
         val ore8 = OreBracketHandler.getOre("stickDiamond")
-        OreBracketHandler.getOre("stickRedAlloy")
         val item25 = ItemBracketHandler.getItem("dreamcraft:item.SandStoneRod", 0)
         val item26 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23299)
-        OreBracketHandler.getOre("screwRedAlloy")
 
         //TODO Replace ("TConstruct:GlassPane", 0)
         //val item27 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
 
-        OreBracketHandler.getOre("wireGt01Steel")
         val ore9 = OreBracketHandler.getOre("wireGt01Tin")
         val ore10 = OreBracketHandler.getOre("wireGt01Nickel")
         val ore11 = OreBracketHandler.getOre("wireGt01Copper")
@@ -75,18 +60,12 @@ class BuildCraft : Runnable {
         val ore13 = OreBracketHandler.getOre("wireGt01Silver")
         val ore14 = OreBracketHandler.getOre("wireGt01Aluminium")
         val ore15 = OreBracketHandler.getOre("wireGt01Electrum")
-        OreBracketHandler.getOre("wireGt01Gold")
-        OreBracketHandler.getOre("wireGt01NiobiumTitanium")
         val ore16 = OreBracketHandler.getOre("wireGt01Platinum")
         val ore17 = OreBracketHandler.getOre("wireGt01Nichrome")
-        OreBracketHandler.getOre("pipeMediumBrass")
-        OreBracketHandler.getOre("pipeRestrictiveMediumBrass")
         val item28 = ItemBracketHandler.getItem("BuildCraft|Silicon:redstoneCrystal", 0)
         val item29 = ItemBracketHandler.getItem("BuildCraft|Core:pathMarkerBlock", 0)
         val item30 = ItemBracketHandler.getItem("BuildCraft|Core:markerBlock", 0)
-        ItemBracketHandler.getItem("BuildCraft|Builders:constructionMarkerBlock", 0)
         val item31 = ItemBracketHandler.getItem("BuildCraft|Transport:pipeGate", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("BuildCraft|Transport:pipeWire", OreDictionary.WILDCARD_VALUE)
         val item32 = ItemBracketHandler.getItem("BuildCraft|Transport:pipePlug", 0)
         val item33 = ItemBracketHandler.getItem("BuildCraft|Transport:gateCopier", 0)
         val item34 = ItemBracketHandler.getItem("BuildCraft|Robotics:robotStation", 0)
@@ -101,11 +80,6 @@ class BuildCraft : Runnable {
         val item43 = ItemBracketHandler.getItem("BuildCraft|Robotics:robot", 0)
         val item44 = ItemBracketHandler.getItem("BuildCraft|Transport:filteredBufferBlock", 0)
         val item45 = ItemBracketHandler.getItem("Railcraft:glass", 0)
-
-        //TODO investigate getters with no target field for ("ExtraUtilities:decorativeBlock2", 5) and ("TConstruct:GlassBlock", 0)
-        //ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 5)
-        //ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)
-
         val ore18 = OreBracketHandler.getOre("craftingToolWrench")
         val ore19 = OreBracketHandler.getOre("craftingToolScrewdriver")
         MineTweakerAPI.recipes.remove(item6)

@@ -5,7 +5,6 @@ import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import net.minecraftforge.oredict.OreDictionary
-import com.github.GTNH2Mega.VoltageLevels
 
 class Backpack : Runnable {
     override fun run() {
@@ -60,7 +59,6 @@ class Backpack : Runnable {
         val item49 = ItemBracketHandler.getItem("Backpack:backpack", 214)
         val item50 = ItemBracketHandler.getItem("Backpack:backpack", 215)
         val item51 = ItemBracketHandler.getItem("Backpack:backpack", 216)
-        ItemBracketHandler.getItem("Backpack:backpack", 31999)
         val item52 = ItemBracketHandler.getItem("Backpack:workbenchbackpack", 17)
         val item53 = ItemBracketHandler.getItem("Backpack:workbenchbackpack", 217)
         val item54 = ItemBracketHandler.getItem("Backpack:tannedLeather", 0)

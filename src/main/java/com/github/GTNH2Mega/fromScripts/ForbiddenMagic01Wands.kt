@@ -8,7 +8,6 @@ import modtweaker2.mods.thaumcraft.handlers.*
 
 class ForbiddenMagic01Wands : Runnable {
     override fun run() {
-        ItemBracketHandler.getItem("thaumicbases:resource", 2)
         val item = ItemBracketHandler.getItem("ForbiddenMagic:WandCaps", 3)
         val item2 = ItemBracketHandler.getItem("ForbiddenMagic:WandCaps", 2)
         val item3 = ItemBracketHandler.getItem("ForbiddenMagic:WandCaps", 1)

@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import gttweaker.mods.gregtech.machines.CuttingSaw
 import minetweaker.MineTweakerAPI
@@ -8,18 +9,15 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import net.minecraftforge.oredict.OreDictionary
-import com.github.GTNH2Mega.VoltageLevels
 
 class CarpentersBlocks : Runnable {
     override fun run() {
         val item = ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersBlock", 0)
         val item2 = ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersCollapsibleBlock", 0)
-        OreBracketHandler.getOre("craftingToolWrench")
         val ore = OreBracketHandler.getOre("craftingToolSaw")
         val ore2 = OreBracketHandler.getOre("craftingToolScrewdriver")
         val item3 = ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersSafe", 0)
         val item4 = ItemBracketHandler.getItem("IC2:blockPersonal", 0)
-        ItemBracketHandler.getItem("minecraft:flint", 0)
         val ore3 = OreBracketHandler.getOre("craftingToolHardHammer")
         val item5 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809)
         val item6 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032)
@@ -28,13 +26,10 @@ class CarpentersBlocks : Runnable {
         val item9 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27306)
         val item10 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27028)
         val ore4 = OreBracketHandler.getOre("frameGtWood")
-        OreBracketHandler.getOre("plankWood")
-        OreBracketHandler.getOre("logWood")
         val item11 = ItemBracketHandler.getItem("CarpentersBlocks:itemCarpentersChisel", 0)
         val item12 = ItemBracketHandler.getItem("CarpentersBlocks:itemCarpentersHammer", 0)
         val item13 = ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersDaylightSensor", 0)
         val item14 = ItemBracketHandler.getItem("minecraft:daylight_detector", 0)
-        ItemBracketHandler.getItem("minecraft:stick", 0)
         val ore5 = OreBracketHandler.getOre("dustRedstone")
         MineTweakerAPI.recipes.remove(item)
         MineTweakerAPI.recipes.remove(item2)

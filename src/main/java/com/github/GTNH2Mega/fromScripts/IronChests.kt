@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
@@ -7,7 +8,6 @@ import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.nei.NEI
 import net.minecraftforge.oredict.OreDictionary
-import com.github.GTNH2Mega.VoltageLevels
 
 class IronChests : Runnable {
     override fun run() {
@@ -40,12 +40,6 @@ class IronChests : Runnable {
         val item27 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17890)
         val item28 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804)
         val item29 = ItemBracketHandler.getItem("IC2:itemDensePlates", 7)
-        OreBracketHandler.getOre("stickCopper")
-        OreBracketHandler.getOre("stickIron")
-        OreBracketHandler.getOre("stickSteel")
-        OreBracketHandler.getOre("stickGold")
-        OreBracketHandler.getOre("stickDiamond")
-        ItemBracketHandler.getItem("RandomThings:ingredient", 1)
         val ore = OreBracketHandler.getOre("screwCopper")
         val ore2 = OreBracketHandler.getOre("screwIron")
         val ore3 = OreBracketHandler.getOre("screwSteel")
@@ -53,11 +47,6 @@ class IronChests : Runnable {
         val ore5 = OreBracketHandler.getOre("screwDiamond")
         val ore6 = OreBracketHandler.getOre("screwGlass")
         val item30 = ItemBracketHandler.getItem("minecraft:chest", 0)
-
-        //TODO investigate getters with no target field for ("TConstruct:GlassPane", 0)
-        //ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
-
-        ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersBlock", 0)
         val item31 = ItemBracketHandler.getItem("minecraft:dirt", 0)
         val ore7 = OreBracketHandler.getOre("craftingToolHardHammer")
         val ore8 = OreBracketHandler.getOre("craftingToolScrewdriver")

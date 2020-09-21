@@ -10,65 +10,34 @@ import minetweaker.expand.ExpandLong
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
-import java.util.*
 import net.minecraftforge.oredict.OreDictionary
+import java.util.*
 
 class RemoteIO : Runnable {
     override fun run() {
         val item = ItemBracketHandler.getItem("RIO:tile.machine", 0)
         val item2 = ItemBracketHandler.getItem("RIO:tile.machine", 1)
         val item3 = ItemBracketHandler.getItem("RIO:tile.remote_interface", 0)
-        ItemBracketHandler.getItem("RIO:tile.remote_inventory", 0)
         val item4 = ItemBracketHandler.getItem("RIO:item.wireless_transmitter", 0)
         val item5 = ItemBracketHandler.getItem("RIO:item.io_tool", 0)
         val item6 = ItemBracketHandler.getItem("RIO:skylight", 0)
-        ItemBracketHandler.getItem("RIO:intelligentWorkbench", 0)
         val item7 = ItemBracketHandler.getItem("RIO:item.chip.location", 0)
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 11978)
-        OreBracketHandler.getOre("plateHSLA")
-        OreBracketHandler.getOre("stickRedAlloy")
 
         //TODO Replace ("TConstruct:GlassPane", 0)
         //val item8 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)
 
-        //TODO investigate getters with no target field for ("ExtraUtilities:decorativeBlock2", 7)
-        //ItemBracketHandler.getItem("ExtraUtilities:decorativeBlock2", 7)
-
         val ore = OreBracketHandler.getOre("plateObsidian")
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32674)
-        OreBracketHandler.getOre("screwNeutronium")
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705)
-        OreBracketHandler.getOre("circuitUltimate")
-        OreBracketHandler.getOre("gearNeutronium")
-        OreBracketHandler.getOre("plateKanthal")
         val item9 = ItemBracketHandler.getItem("IC2:itemRecipePart", 0)
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 9279)
         val item10 = ItemBracketHandler.getItem("gregtech:gt.blockmachines", 9275)
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32694)
         val item11 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32693)
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32684)
         val item12 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32683)
-
-        //TODO investigate getters with no target field for ("AdvancedSolarPanel:asp_crafting_items", 13)
-        //ItemBracketHandler.getItem("AdvancedSolarPanel:asp_crafting_items", 13)
-
-        OreBracketHandler.getOre("plateNeutronium")
         val ore2 = OreBracketHandler.getOre("pipeMediumTitanium")
         val item13 = ItemBracketHandler.getItem("gregtech:gt.blockcasings", 3)
         val item14 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32613)
         val ore3 = OreBracketHandler.getOre("plateTitanium")
-        OreBracketHandler.getOre("craftingToolWrench")
         val ore4 = OreBracketHandler.getOre("craftingToolScrewdriver")
-        OreBracketHandler.getOre("craftingToolHardHammer")
         val item15 = ItemBracketHandler.getItem("RIO:item.blank_plate", 0)
-        OreBracketHandler.getOre("plateIron")
         val ore5 = OreBracketHandler.getOre("screwTitanium")
-        OreBracketHandler.getOre("plateEnderEye")
-        ItemBracketHandler.getItem("dreamcraft:item.PikoCircuit", 0)
-        ItemBracketHandler.getItem("dreamcraft:item.HighEnergyFlowCircuit", 0)
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32705)
-        ItemBracketHandler.getItem("EnderStorage:enderChest", 0)
-        ItemBracketHandler.getItem("EnderStorage:enderChest", 4096)
         val item16 = ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1541)
         MineTweakerAPI.recipes.remove(item3)
         MineTweakerAPI.recipes.remove(item)

@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting
 import gttweaker.mods.gregtech.Fuels
 import gttweaker.mods.gregtech.machines.*
@@ -16,7 +17,6 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Compressor
 import net.minecraftforge.oredict.OreDictionary
 import java.util.*
-import com.github.GTNH2Mega.VoltageLevels
 
 class Galacticraft : Runnable {
     override fun run() {
@@ -43,26 +43,18 @@ class Galacticraft : Runnable {
         val item10 = ItemBracketHandler.getItem("GalacticraftCore:item.meteoricIronIngot", 1)
         val ore12 = OreBracketHandler.getOre("screwMeteoricSteel")
         val ore13 = OreBracketHandler.getOre("screwSteel")
-        OreBracketHandler.getOre("boltStainlessSteel")
-        OreBracketHandler.getOre("boltTungstenSteel")
         val item11 = ItemBracketHandler.getItem("GalacticraftMars:item.null", 5)
         val ore14 = OreBracketHandler.getOre("ringDesh")
-        OreBracketHandler.getOre("foilAluminium")
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32631)
         val item12 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32632)
         val item13 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32750)
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32610)
         val item14 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32612)
         val item15 = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 21305)
         val item16 = ItemBracketHandler.getItem("IC2:blockRubber", 0)
-        OreBracketHandler.getOre("glassReinforced")
         val ore15 = OreBracketHandler.getOre("craftingToolHardHammer")
         val ore16 = OreBracketHandler.getOre("craftingToolWrench")
         val ore17 = OreBracketHandler.getOre("craftingToolFile")
         val item17 = ItemBracketHandler.getItem("minecraft:iron_bars", 0)
         val ore18 = OreBracketHandler.getOre("stickWood")
-        OreBracketHandler.getOre("blockWool")
-        ItemBracketHandler.getItem("minecraft:string", 0)
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalacticraftCore:tile.landingPad", 0))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalacticraftCore:tile.landingPad", 1))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("GalacticraftCore:tile.oxygenCollector", 0))

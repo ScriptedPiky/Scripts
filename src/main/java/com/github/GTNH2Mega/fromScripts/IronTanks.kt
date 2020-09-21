@@ -1,12 +1,12 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.LiquidBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
-import com.github.GTNH2Mega.VoltageLevels
 
 class IronTanks : Runnable {
     override fun run() {
@@ -21,21 +21,13 @@ class IronTanks : Runnable {
         val item9 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 18086)
         val item10 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500)
         val item11 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17890)
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804)
         val item12 = ItemBracketHandler.getItem("IC2:itemDensePlates", 7)
-        OreBracketHandler.getOre("stickCopper")
-        OreBracketHandler.getOre("stickIron")
-        OreBracketHandler.getOre("stickSteel")
-        OreBracketHandler.getOre("stickGold")
-        OreBracketHandler.getOre("stickDiamond")
-        ItemBracketHandler.getItem("RandomThings:ingredient", 1)
         val ore = OreBracketHandler.getOre("screwCopper")
         val ore2 = OreBracketHandler.getOre("screwIron")
         val ore3 = OreBracketHandler.getOre("screwEmerald")
         val ore4 = OreBracketHandler.getOre("screwSteel")
         val ore5 = OreBracketHandler.getOre("screwGold")
         val ore6 = OreBracketHandler.getOre("screwDiamond")
-        OreBracketHandler.getOre("screwGlass")
 
         //TODO Replace ("TConstruct:GlassPane", 0)
         //val item13 = ItemBracketHandler.getItem("TConstruct:GlassPane", 0)

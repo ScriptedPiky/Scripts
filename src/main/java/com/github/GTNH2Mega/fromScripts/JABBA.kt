@@ -1,44 +1,18 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
 import minetweaker.mc1710.brackets.ItemBracketHandler
 import minetweaker.mc1710.brackets.OreBracketHandler
 import net.minecraftforge.oredict.OreDictionary
-import com.github.GTNH2Mega.VoltageLevels
 
 class JABBA : Runnable {
     override fun run() {
         val item = ItemBracketHandler.getItem("minecraft:chest", 0)
         val item2 = ItemBracketHandler.getItem("JABBA:barrel", 0)
         val ore = OreBracketHandler.getOre("logWood")
-        ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("minecraft:log2", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("BiomesOPlenty:logs1", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("BiomesOPlenty:logs2", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("BiomesOPlenty:logs3", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("BiomesOPlenty:logs4", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("ExtraTrees:log", 0)
-        ItemBracketHandler.getItem("Forestry:logs", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("IC2:blockRubWood", 0)
-        ItemBracketHandler.getItem("Natura:tree", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Natura:redwood", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Natura:willow", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Natura:bloodwood", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Natura:DarkTree", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Natura:RareTree", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Thaumcraft:blockMagicalLog", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("TwilightForest:tile.TFLog", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("TwilightForest:tile.TFMagicLog", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("minecraft:wooden_slab", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("BiomesOPlenty:woodenSingleSlab1", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("BiomesOPlenty:woodenSingleSlab2", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("ExtraTrees:slab", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Forestry:slabs", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Natura:plankSlab1", OreDictionary.WILDCARD_VALUE)
-        ItemBracketHandler.getItem("Natura:plankSlab2", OreDictionary.WILDCARD_VALUE)
         val item3 = ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE)
         val item4 = ItemBracketHandler.getItem("BiomesOPlenty:planks", OreDictionary.WILDCARD_VALUE)
         val item5 = ItemBracketHandler.getItem("ExtraTrees:planks", OreDictionary.WILDCARD_VALUE)
@@ -64,7 +38,6 @@ class JABBA : Runnable {
         val item22 = ItemBracketHandler.getItem("JABBA:upgradeStructural", 12)
         val item23 = ItemBracketHandler.getItem("JABBA:upgradeStructural", 13)
         val item24 = ItemBracketHandler.getItem("minecraft:piston", 0)
-        ItemBracketHandler.getItem("CarpentersBlocks:blockCarpentersBlock", 0)
         val ore2 = OreBracketHandler.getOre("plateCopper")
         val ore3 = OreBracketHandler.getOre("plateIron")
         val ore4 = OreBracketHandler.getOre("plateBronze")
@@ -89,9 +62,7 @@ class JABBA : Runnable {
         val ore23 = OreBracketHandler.getOre("stickIridium")
         val ore24 = OreBracketHandler.getOre("stickOsmium")
         val ore25 = OreBracketHandler.getOre("stickNeutronium")
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032)
         val ore26 = OreBracketHandler.getOre("plateEnderEye")
-        ItemBracketHandler.getItem("minecraft:ender_chest", 0)
         val item25 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32100)
         val item26 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32101)
         val ore27 = OreBracketHandler.getOre("craftingToolHardHammer")

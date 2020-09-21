@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting
 import gttweaker.mods.gregtech.machines.*
 import minetweaker.MineTweakerAPI
@@ -14,28 +15,9 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.mods.ic2.machines.Canner
 import net.minecraftforge.oredict.OreDictionary
 import java.util.*
-import com.github.GTNH2Mega.VoltageLevels
 
 class Gregtech : Runnable {
     override fun run() {
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 104)
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 119)
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 101)
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1003)
-        ItemBracketHandler.getItem("minecraft:brick_block", 0)
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 5131)
-        OreBracketHandler.getOre("plateSteel")
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 4)
-        ItemBracketHandler.getItem("IC2:blockMachine", 1)
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1000)
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 100)
-        OreBracketHandler.getOre("circuitBasic")
-        OreBracketHandler.getOre("circuitAdvanced")
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1246)
-        ItemBracketHandler.getItem("gregtech:gt.blockmachines", 1386)
-        ItemBracketHandler.getItem("gregtech:gt.blockcasings", 11)
-        OreBracketHandler.getOre("stickWood")
-        ItemBracketHandler.getItem("minecraft:flint", 0)
         val item = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032)
         val item2 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17304)
         val item3 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17019)

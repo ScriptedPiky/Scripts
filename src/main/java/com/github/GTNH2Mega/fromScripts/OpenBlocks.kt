@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.machines.Assembler
 import gttweaker.mods.gregtech.machines.ChemicalBath
 import gttweaker.mods.gregtech.machines.ChemicalReactor
@@ -18,52 +19,29 @@ import minetweaker.mc1710.brackets.OreBracketHandler
 import modtweaker2.mods.thaumcraft.handlers.Infusion
 import modtweaker2.mods.thaumcraft.handlers.Research
 import modtweaker2.mods.thaumcraft.handlers.Warp
-import java.util.*
 import net.minecraftforge.oredict.OreDictionary
-import com.github.GTNH2Mega.VoltageLevels
+import java.util.*
 
 class OpenBlocks : Runnable {
     override fun run() {
         val item = ItemBracketHandler.getItem("OpenBlocks:hangglider", 0)
         val item2 = ItemBracketHandler.getItem("OpenBlocks:generic", 0)
         val item3 = ItemBracketHandler.getItem("OpenBlocks:luggage", 0)
-
-        //TODO investigate getters with no target field for ("TConstruct:GlassBlock", 0)
-        //ItemBracketHandler.getItem("TConstruct:GlassBlock", 0)
-
-        ItemBracketHandler.getItem("minecraft:enchanting_table", 0)
-        ItemBracketHandler.getItem("minecraft:anvil", 0)
         val item4 = ItemBracketHandler.getItem("minecraft:iron_bars", 0)
         val item5 = ItemBracketHandler.getItem("minecraft:stone_slab", 3)
         val item6 = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 21057)
         val item7 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32601)
         val item8 = ItemBracketHandler.getItem("minecraft:hopper", 0)
-        OreBracketHandler.getOre("pipeSmallStainlessSteel")
-        OreBracketHandler.getOre("stickAnyIron")
         val ore = OreBracketHandler.getOre("stickSteel")
-        OreBracketHandler.getOre("stickDiamond")
-        OreBracketHandler.getOre("plateEnderEye")
-        OreBracketHandler.getOre("stickNetherStar")
-        ItemBracketHandler.getItem("IronChest:BlockIronChest", 6)
         val item9 = ItemBracketHandler.getItem("IC2:blockLuminatorDark", 0)
-        OreBracketHandler.getOre("plateAnyIron")
-        OreBracketHandler.getOre("stickRedAlloy")
-        OreBracketHandler.getOre("stickAluminium")
-        OreBracketHandler.getOre("gearSteel")
-        OreBracketHandler.getOre("gearStainlessSteel")
         val ore2 = OreBracketHandler.getOre("lensDiamond")
-        ItemBracketHandler.getItem("minecraft:piston", 0)
-        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32722)
         val ore3 = OreBracketHandler.getOre("stoneObsidian")
-        OreBracketHandler.getOre("stone")
         val ore4 = OreBracketHandler.getOre("itemLeather")
         val item10 = ItemBracketHandler.getItem("OpenBlocks:guide", 0)
         val item11 = ItemBracketHandler.getItem("OpenBlocks:blockPlacer", 0)
         val item12 = ItemBracketHandler.getItem("OpenBlocks:blockbreaker", 0)
         val item13 = ItemBracketHandler.getItem("OpenBlocks:itemDropper", 0)
-        OreBracketHandler.getOre("blockWool")
         val item14 = ItemBracketHandler.getItem("Backpack:tannedLeather", 0)
-        ItemBracketHandler.getItem("minecraft:carpet", OreDictionary.WILDCARD_VALUE)
         MineTweakerAPI.recipes.remove(item)
         MineTweakerAPI.recipes.remove(item2)
         MineTweakerAPI.recipes.remove(item3)
