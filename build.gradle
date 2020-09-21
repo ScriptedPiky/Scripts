@@ -6,18 +6,19 @@ buildscript {
             url = "http://files.minecraftforge.net/maven"
         }
         maven {
+            name = "jitpack"
+            url = "https://jitpack.io"
+        }
+        maven {
             name = "sonatype"
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
     }
+
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-        //noinspection DifferentKotlinGradleVersion
-		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.50"
-        //Don't let Intellij set this to anything but Kotlin 1.3.50
-        //Gradle 4.4.1, which is needed for ForgeGradle 1.2 which is needed to mod MC 1.7.10 using forge
-        //Will not work with anything newer. We really should write our own ForgeGrade for 1.7.10 smh...
-        //TODO Get Technus Arcturus, the almighty doggo to write one someday :)
+        //Defaults to Java 8 & UTF-8 encoding
+        classpath 'com.github.GTNH2:ForgeGradle:061ac05b6c'
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10"
     }
 }
 
@@ -26,64 +27,41 @@ apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: 'kotlin'
 
+idea {
+    module {
+        inheritOutputDirs = true
+        downloadJavadoc = true
+        downloadSources = true
+    }
+}
 file "build.properties" withReader {
     def prop = new Properties()
     prop.load(it)
     ext.config = new ConfigSlurper().parse prop
 }
 
-idea.module.downloadJavadoc = true
-idea.module.downloadSources = true
-
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
-compileJava.options.encoding = 'UTF-8'
-
 version = "${config.scripts_version}-${config.minecraft_version}"
-group= "com.github.GTNH2Mega" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "GTNH2MegaCore"
+group = "com.github.GTNH2Mega" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "GTNH2MegaCore" + version
 
 minecraft {
-    version = "${config.minecraft_version}-${config.forge_version}-${config.minecraft_version}"
+    version = "1.7.10-10.13.4.1614-1.7.10"
     runDir = "run"
 }
-
 repositories {
-    //Provided as an example
-    //maven {
-    //    name 'Forge'
-    //    url 'http://files.minecraftforge.net/maven'
-    //}
-    //
-    //ivy {
-    //    name 'gtnh_download_source'
-    //    artifactPattern "http://downloads.gtnewhorizons.com/Mods_for_Jenkins/[module]-[revision].[ext]"
-    //}
 }
-
 dependencies {
-    //Provided as an example
-    //compile is used for providing the library during compilation and runtime/debugging
-    //compile "mantle:Mantle:${config.minecraft.version}-${config.mantle.version}:deobf"
-
-    //compileOnly is used for providing the library during only compilation and excluded during runtime/debugging
-    //Some dependencies come with extra modules, if they cause incompatibilties you may use exclude to remove them.
-    //compileOnly("appeng:appliedenergistics2:${config.ae2.version}:dev") {
-    //  exclude module: '*'
-    //}
-
-    //Also, the dev or deobf flags are used to denote dependencies more suited for modding with.
 }
-
 processResources
 {
-    inputs.property "version", project.version
+    inputs.property "version",  project.version
     inputs.property "mcversion", project.minecraft.version
+
 
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
                 
-        expand 'version':project.version, 'mcversion':project.minecraft.version
+        expand 'version': project.version, 'mcversion': project.minecraft.version
     }
         
     from(sourceSets.main.resources.srcDirs) {
