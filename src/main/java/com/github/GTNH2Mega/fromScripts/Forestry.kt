@@ -1,5 +1,6 @@
 package com.github.GTNH2Mega.fromScripts
 
+import com.github.GTNH2Mega.VoltageLevels
 import gttweaker.mods.gregtech.Fuels
 import gttweaker.mods.gregtech.machines.AlloySmelter
 import gttweaker.mods.gregtech.machines.Assembler
@@ -17,14 +18,12 @@ import minetweaker.mods.ic2.machines.SemiFluidGenerator
 import minetweaker.mods.nei.NEI
 import modtweaker2.mods.forestry.handlers.Carpenter
 import modtweaker2.mods.forestry.handlers.Centrifuge
-import modtweaker2.mods.forestry.handlers.Fermenter
 import modtweaker2.mods.forestry.handlers.ThermionicFabricator
 import modtweaker2.mods.thaumcraft.handlers.Arcane
 import modtweaker2.mods.thaumcraft.handlers.Infusion
 import modtweaker2.mods.thaumcraft.handlers.Research
 import net.minecraftforge.oredict.OreDictionary
 import java.util.*
-import com.github.GTNH2Mega.VoltageLevels
 
 class Forestry : Runnable {
     override fun run() {
@@ -2038,9 +2037,14 @@ class Forestry : Runnable {
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23305), null, null, null,
                         ItemBracketHandler.getItem("IC2:itemRecipePart", 3)), null,
                 ItemBracketHandler.getItem("Forestry:solderingIron", 0))
-        Carpenter.addRecipe(10, LiquidBracketHandler.getLiquid("seedoil").withAmount(100),
-                arrayOf(ItemBracketHandler.getItem("minecraft:stick", 0), null, null, null, null, null, null, null,
-                        null), null, ItemBracketHandler.getItem("Forestry:oakStick", 0))
+        Carpenter.addRecipe(
+                ItemBracketHandler.getItem("Forestry:oakStick", 0),
+                arrayOf(
+                    arrayOf(OreBracketHandler.getOre("ore:stickWood"), null, null),
+                    arrayOfNulls(3),
+                    arrayOfNulls(3)
+                ),
+                LiquidBracketHandler.getLiquid("seedoil").withAmount(100), 10,null)
         Carpenter.addRecipe(10, LiquidBracketHandler.getLiquid("seedoil").withAmount(100),
                 arrayOf(ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE), null, null, null, null, null, null,
                         null, null), null, ItemBracketHandler.getItem("Forestry:oakStick", 0))
@@ -3737,10 +3741,16 @@ class Forestry : Runnable {
                                 OreBracketHandler.getOre("stickWood")), arrayOf(OreBracketHandler.getOre("stickWood"),
                         ItemBracketHandler.getItem("Forestry:planksFireproof", 28),
                         OreBracketHandler.getOre("stickWood"))), null)
-        Carpenter.addRecipe(10, LiquidBracketHandler.getLiquid("creosote").withAmount(500),
-                arrayOf(null, null, null, null, ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE), null, null,
-                        ItemBracketHandler.getItem("minecraft:stick", 0), null), null,
-                ItemBracketHandler.getItem("minecraft:torch", 0).amount(5))
+
+        Carpenter.addRecipe(
+                ItemBracketHandler.getItem("minecraft:torch", 0).amount(5),
+                arrayOf(
+                        arrayOfNulls(3),
+                        arrayOf(null, ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE), null),
+                        arrayOf(null, OreBracketHandler.getOre("ore:stickWood"), null),
+                ),
+                LiquidBracketHandler.getLiquid("creosote").withAmount(500), 10,null)
+
         MineTweakerAPI.recipes.addShapeless(ItemBracketHandler.getItem("Forestry:factory2", 2),
                 arrayOf<IIngredient>(ItemBracketHandler.getItem("ProjRed|Expansion:projectred.expansion.machine2", 10)),
                 null)

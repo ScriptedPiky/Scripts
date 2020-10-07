@@ -119,7 +119,7 @@ class Chisel : Runnable {
                                 ItemBracketHandler.getItem("chisel:voidstone", 0),
                                 ItemBracketHandler.getItem("chisel:voidstone", 0))), null)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032).amount(2),
-                ItemBracketHandler.getItem("minecraft:stick", 0).amount(2), 300, VoltageLevels.LV)
+                OreBracketHandler.getOre("ore:stickWood").amount(2), 300, VoltageLevels.LV)
         Assembler.addRecipe(item2, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17804).amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 23304).amount(2), 400, VoltageLevels.LV)
         Assembler.addRecipe(item3, ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500).amount(2),

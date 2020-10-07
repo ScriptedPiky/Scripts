@@ -216,7 +216,7 @@ class Minecraft : Runnable {
         val item138 = ItemBracketHandler.getItem("minecraft:wooden_door", 0)
         val item139 = ItemBracketHandler.getItem("minecraft:iron_door", 0)
         val item140 = ItemBracketHandler.getItem("minecraft:sign", 0)
-        val item141 = ItemBracketHandler.getItem("minecraft:stick", 0)
+        val item141 = OreBracketHandler.getOre("ore:stickWood")
         val item142 = ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE)
         val item143 = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32470)
         val item144 = ItemBracketHandler.getItem("gregtech:gt.metaitem.02", 32471)
@@ -1104,36 +1104,36 @@ class Minecraft : Runnable {
                         arrayOf(OreBracketHandler.getOre("craftingToolFile"),
                                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                                 OreBracketHandler.getOre("craftingToolHardHammer")),
-                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("minecraft:stick", 0), null)), null)
+                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("ore:stickWood"), null)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:diamond_shovel", 0),
                 arrayOf(arrayOf(OreBracketHandler.getOre("craftingToolFile"),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                         OreBracketHandler.getOre("craftingToolHardHammer")),
-                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("minecraft:stick", 0), null),
-                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("minecraft:stick", 0), null)), null)
+                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("ore:stickWood"), null),
+                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("ore:stickWood"), null)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:diamond_pickaxe", 0),
                 arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                         ItemBracketHandler.getItem("minecraft:diamond", 0),
                         ItemBracketHandler.getItem("minecraft:diamond", 0)),
                         arrayOf(OreBracketHandler.getOre("craftingToolFile"),
-                                ItemBracketHandler.getItem("minecraft:stick", 0),
+                                OreBracketHandler.getOre("ore:stickWood"),
                                 OreBracketHandler.getOre("craftingToolHardHammer")),
-                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("minecraft:stick", 0), null)), null)
+                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("ore:stickWood"), null)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:diamond_axe", 0),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                         ItemBracketHandler.getItem("minecraft:diamond", 0),
                         OreBracketHandler.getOre("craftingToolHardHammer")),
                         arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
-                                ItemBracketHandler.getItem("minecraft:stick", 0), null),
+                                OreBracketHandler.getOre("ore:stickWood"), null),
                         arrayOf(OreBracketHandler.getOre("craftingToolFile"),
-                                ItemBracketHandler.getItem("minecraft:stick", 0), null)), null)
+                                OreBracketHandler.getOre("ore:stickWood"), null)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:diamond_hoe", 0),
                 arrayOf(arrayOf(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                         ItemBracketHandler.getItem("minecraft:diamond", 0),
                         OreBracketHandler.getOre("craftingToolHardHammer")),
                         arrayOf(OreBracketHandler.getOre("craftingToolFile"),
-                                ItemBracketHandler.getItem("minecraft:stick", 0), null),
-                        arrayOf<IIngredient?>(null, ItemBracketHandler.getItem("minecraft:stick", 0), null)), null)
+                                OreBracketHandler.getOre("ore:stickWood"), null),
+                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("ore:stickWood"), null)), null)
         MineTweakerAPI.recipes.addShaped(ItemBracketHandler.getItem("minecraft:diamond_helmet", 0),
                 arrayOf(arrayOf<IIngredient?>(ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
                         ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17500),
@@ -1871,19 +1871,19 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("gregtech:gt.integrated_circuit", 6).amount(0),
                 LiquidBracketHandler.getLiquid("molten.thaumium").withAmount(216), 200, VoltageLevels.MV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(5),
-                ItemBracketHandler.getItem("minecraft:stick", 0), ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE),
+                OreBracketHandler.getOre("ore:stickWood"), ItemBracketHandler.getItem("minecraft:wool", OreDictionary.WILDCARD_VALUE),
                 LiquidBracketHandler.getLiquid("creosote").withAmount(500), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(4),
-                ItemBracketHandler.getItem("minecraft:stick", 0),
+                OreBracketHandler.getOre("ore:stickWood"),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2536), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(6),
-                ItemBracketHandler.getItem("minecraft:stick", 0),
+                OreBracketHandler.getOre("ore:stickWood"),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2535), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(4),
-                ItemBracketHandler.getItem("minecraft:stick", 0),
+                OreBracketHandler.getOre("ore:stickWood"),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:torch", 0).amount(6),
-                ItemBracketHandler.getItem("minecraft:stick", 0),
+                OreBracketHandler.getOre("ore:stickWood"),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 2022), 100, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:wooden_door", 0),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17809).amount(4),
@@ -1899,11 +1899,11 @@ class Minecraft : Runnable {
                 LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 400, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
-                ItemBracketHandler.getItem("minecraft:stick", 0).amount(4),
+                OreBracketHandler.getOre("ore:stickWood").amount(4),
                 LiquidBracketHandler.getLiquid("molten.iron").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(6),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
-                ItemBracketHandler.getItem("minecraft:stick", 0).amount(4),
+                OreBracketHandler.getOre("ore:stickWood").amount(4),
                 LiquidBracketHandler.getLiquid("molten.steel").withAmount(16), 600, VoltageLevels.ULV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:trapdoor", 0).amount(4),
                 ItemBracketHandler.getItem("minecraft:wooden_slab", 0).amount(4),
@@ -1929,7 +1929,7 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("minecraft:book", 0).amount(3), 300, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:crafting_table", 0), ore5,
                 ItemBracketHandler.getItem("minecraft:flint", 0).amount(2), 200, VoltageLevels.ULV)
-        Assembler.addRecipe(item30, ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
+        Assembler.addRecipe(item30, OreBracketHandler.getOre("ore:stickWood").amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", 0).amount(2), 300, VoltageLevels.ULV)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("minecraft:log", OreDictionary.WILDCARD_VALUE).amount(2),
                 ItemBracketHandler.getItem("minecraft:planks", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
@@ -2095,7 +2095,7 @@ class Minecraft : Runnable {
                 ItemBracketHandler.getItem("Thaumcraft:blockWoodenDevice", 7).amount(2), 100, VoltageLevels.LV)
         Assembler.addRecipe(item, ItemBracketHandler.getItem("Forestry:logsFireproof", OreDictionary.WILDCARD_VALUE).amount(2),
                 ItemBracketHandler.getItem("witchery:witchwood", OreDictionary.WILDCARD_VALUE).amount(2), 100, VoltageLevels.LV)
-        Assembler.addRecipe(item24, ItemBracketHandler.getItem("minecraft:stick", 0),
+        Assembler.addRecipe(item24, OreBracketHandler.getOre("ore:stickWood"),
                 ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("Natura:natura.stick", OreDictionary.WILDCARD_VALUE),
                 ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
@@ -2104,16 +2104,16 @@ class Minecraft : Runnable {
         Assembler.addRecipe(item24, ItemBracketHandler.getItem("BiomesOPlenty:plants", 8),
                 ItemBracketHandler.getItem("minecraft:stone_button", 0), 50, VoltageLevels.LLV)
         Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0),
-                ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
+                OreBracketHandler.getOre("ore:stickWood").amount(2),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27809), 100, VoltageLevels.ULV)
 
         //TODO Replace getLiquid("glue")
         //Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(2),
-        //        ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
+        //        OreBracketHandler.getOre("ore:stickWood").amount(2),
         //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27032),
         //        LiquidBracketHandler.getLiquid("glue").withAmount(16), 100, VoltageLevels.LLV)
         //Assembler.addRecipe(ItemBracketHandler.getItem("minecraft:ladder", 0).amount(4),
-        //        ItemBracketHandler.getItem("minecraft:stick", 0).amount(2),
+        //        OreBracketHandler.getOre("ore:stickWood").amount(2),
         //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 27305),
         //        LiquidBracketHandler.getLiquid("glue").withAmount(32), 100, VoltageLevels.LV)
 

@@ -320,7 +320,7 @@ class OpenBlocks : Runnable {
         //        ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 17032), 200, VoltageLevels.LLV)
 
         Assembler.addRecipe(ItemBracketHandler.getItem("OpenBlocks:generic", 11),
-                ItemBracketHandler.getItem("minecraft:stick", 0),
+                OreBracketHandler.getOre("ore:stickWood"),
                 ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 1865),
                 LiquidBracketHandler.getLiquid("molten.rubber").withAmount(144), 100, VoltageLevels.ULV)
         val item15 = ItemBracketHandler.getItem("OpenBlocks:imaginary", 0)
