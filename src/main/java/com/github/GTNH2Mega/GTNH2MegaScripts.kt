@@ -3,7 +3,8 @@
 package com.github.GTNH2Mega
 
 import cpw.mods.fml.common.Mod
-import cpw.mods.fml.common.event.FMLServerAboutToStartEvent
+import cpw.mods.fml.common.event.FMLPostInitializationEvent
+import minetweaker.MineTweakerImplementationAPI
 import sun.net.www.protocol.file.FileURLConnection
 import java.io.File
 import java.io.IOException
@@ -32,15 +33,8 @@ object GTNH2MegaScripts {
     const val DEPENDENCIES = "required-after:forgelin;required-after:MineTweaker3;"
 
     @Mod.EventHandler
-    fun onServerAboutToStart(ev : FMLServerAboutToStartEvent) {
-        val classes = getClassesForPackage("com.github.GTNH2Mega.fromScripts")
-        classes.forEach {
-            try {
-                (it.newInstance() as Runnable).run()
-            }catch (e : Throwable) {
-                e.printStackTrace()
-            }
-        }
+    fun onPostLoad(ev : FMLPostInitializationEvent) {
+        MineTweakerImplementationAPI.onReloadEvent(RegisterReloadHandler)
     }
 
     @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
