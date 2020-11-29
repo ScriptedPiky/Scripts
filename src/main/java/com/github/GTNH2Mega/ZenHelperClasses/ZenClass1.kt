@@ -1,4 +1,4 @@
-package com.github.GTNH2Mega.fromScripts
+package com.github.GTNH2Mega.ZenHelperClasses
 
 import minetweaker.api.recipes.IRecipeFunction
 import minetweaker.api.item.IItemStack

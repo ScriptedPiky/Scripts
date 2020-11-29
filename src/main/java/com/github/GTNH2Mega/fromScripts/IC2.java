@@ -1,4 +1,8 @@
 package com.github.GTNH2Mega.fromScripts;
+import com.github.GTNH2Mega.ZenHelperClasses.ZenClass0;
+import com.github.GTNH2Mega.ZenHelperClasses.ZenClass1;
+import com.github.GTNH2Mega.ZenHelperClasses.ZenClass2;
+import com.github.GTNH2Mega.ZenHelperClasses.ZenClass3;
 import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting;
 import gttweaker.mods.gregtech.Fuels;
 import gttweaker.mods.gregtech.machines.AlloySmelter;
