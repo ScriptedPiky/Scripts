@@ -4,7 +4,9 @@ package com.github.GTNH2Mega
 
 import cpw.mods.fml.common.Mod
 import cpw.mods.fml.common.event.FMLPostInitializationEvent
+import minetweaker.MineTweakerAPI
 import minetweaker.MineTweakerImplementationAPI
+import minetweaker.api.item.IItemStack
 import sun.net.www.protocol.file.FileURLConnection
 import java.io.File
 import java.io.IOException
@@ -14,6 +16,7 @@ import java.net.URL
 import java.net.URLConnection
 import java.net.URLDecoder
 import java.util.*
+import java.util.function.Consumer
 import java.util.jar.JarEntry
 import java.util.jar.JarFile
 
@@ -154,5 +157,10 @@ object GTNH2MegaScripts {
                     + pckgname, ioex)
         }
         return classes
+    }
+
+    @JvmStatic
+    fun remove(vararg stacks: IItemStack?) {
+        Arrays.stream(stacks).forEach { MineTweakerAPI.recipes.remove(it) }
     }
 }

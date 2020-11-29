@@ -1,211 +1,82 @@
 package com.github.GTNH2Mega.fromScripts
 
-import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting
-import minetweaker.MineTweakerAPI
-import minetweaker.api.data.IData
-import minetweaker.api.item.IIngredient
-import minetweaker.expand.ExpandAnyDict
-import minetweaker.expand.ExpandInt
-import minetweaker.expand.ExpandString
+import java.lang.Runnable
+import minetweaker.api.item.IItemStack
 import minetweaker.mc1710.brackets.ItemBracketHandler
-import minetweaker.mc1710.brackets.OreBracketHandler
+import minetweaker.api.data.IData
+import minetweaker.expand.ExpandString
+import minetweaker.expand.ExpandInt
+import minetweaker.expand.ExpandAnyDict
 import minetweaker.mods.nei.NEI
-import java.util.*
+import minetweaker.MineTweakerAPI
+import fox.spiteful.avaritia.compat.minetweaker.ExtremeCrafting
+import minetweaker.api.item.IIngredient
+import minetweaker.mc1710.brackets.OreBracketHandler
+import minetweaker.api.oredict.IOreDictEntry
+import minetweaker.expand.ExpandLong
+import gttweaker.mods.gregtech.machines.Assembler
+import minetweaker.mc1710.brackets.LiquidBracketHandler
+import gttweaker.mods.gregtech.machines.ChemicalReactor
+import java.util.HashMap
 
 class SGCraft : Runnable {
     override fun run() {
-        val item = ItemBracketHandler.getItem("SGCraft:stargateRing", 0)
-        val item2 = ItemBracketHandler.getItem("SGCraft:stargateRing", 1)
-        val item3 = ItemBracketHandler.getItem("SGCraft:stargateBase", 0)
-        val item4 = ItemBracketHandler.getItem("SGCraft:stargateController", 0)
-        val item5 = ItemBracketHandler.getItem("SGCraft:naquadahBlock", 0)
-        val item6 = ItemBracketHandler.getItem("SGCraft:naquadahOre", 0)
-        val item7 = ItemBracketHandler.getItem("SGCraft:ic2PowerUnit", 0)
-        val item8 = ItemBracketHandler.getItem("SGCraft:rfPowerUnit", 0)
-        val item9 = ItemBracketHandler.getItem("SGCraft:ocInterface", 0)
-        val item10 = ItemBracketHandler.getItem("SGCraft:naquadahIngot", 0)
-        val item11 = ItemBracketHandler.getItem("SGCraft:naquadah", 0)
-        val item12 = ItemBracketHandler.getItem("SGCraft:sgChevronUpgrade", 0)
-        val item13 = ItemBracketHandler.getItem("SGCraft:sgIrisUpgrade", 0)
-        val item14 = ItemBracketHandler.getItem("SGCraft:sgIrisBlade", 0)
-        val item15 = ItemBracketHandler.getItem("SGCraft:ic2Capacitor", 0)
-        val item16 = ItemBracketHandler.getItem("SGCraft:sgControllerCrystal", 0)
-        val item17 = ItemBracketHandler.getItem("SGCraft:sgCoreCrystal", 0)
-        val item18 = ItemBracketHandler.getItem("dreamcraft:item.StargateShieldingFoil", 0)
-        val item19 = ItemBracketHandler.getItem("dreamcraft:item.StargateChevron", 0)
-        val item20 = ItemBracketHandler.getItem("dreamcraft:item.StargateFramePart", 0)
-        val item21 = ItemBracketHandler.getItem("dreamcraft:item.NanoCircuit", 0)
-        val item22 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32677)
-        val item23 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32647)
-        val item24 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32697)
-        val item25 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32687)
-        val item26 = ItemBracketHandler.getItem("EnderIO:blockCapBank", 0)
+        val iItemStack = ItemBracketHandler.getItem("SGCraft:stargateRing", 0)
+        val iItemStack2 = ItemBracketHandler.getItem("SGCraft:stargateRing", 1)
+        val iItemStack3 = ItemBracketHandler.getItem("SGCraft:stargateBase", 0)
+        val iItemStack4 = ItemBracketHandler.getItem("SGCraft:stargateController", 0)
+        val iItemStack5 = ItemBracketHandler.getItem("SGCraft:naquadahBlock", 0)
+        val iItemStack6 = ItemBracketHandler.getItem("SGCraft:naquadahOre", 0)
+        val iItemStack7 = ItemBracketHandler.getItem("SGCraft:ic2PowerUnit", 0)
+        val iItemStack8 = ItemBracketHandler.getItem("SGCraft:rfPowerUnit", 0)
+        val iItemStack9 = ItemBracketHandler.getItem("SGCraft:ocInterface", 0)
+        val iItemStack10 = ItemBracketHandler.getItem("SGCraft:naquadahIngot", 0)
+        val iItemStack11 = ItemBracketHandler.getItem("SGCraft:naquadah", 0)
+        val iItemStack12 = ItemBracketHandler.getItem("SGCraft:sgChevronUpgrade", 0)
+        val iItemStack13 = ItemBracketHandler.getItem("SGCraft:sgIrisUpgrade", 0)
+        val iItemStack14 = ItemBracketHandler.getItem("SGCraft:sgIrisBlade", 0)
+        val iItemStack15 = ItemBracketHandler.getItem("SGCraft:ic2Capacitor", 0)
+        val iItemStack16 = ItemBracketHandler.getItem("SGCraft:sgControllerCrystal", 0)
+        val iItemStack17 = ItemBracketHandler.getItem("SGCraft:sgCoreCrystal", 0)
+        val iItemStack18 = ItemBracketHandler.getItem("dreamcraft:item.StargateShieldingFoil", 0)
+        val iItemStack19 = ItemBracketHandler.getItem("dreamcraft:item.StargateChevron", 0)
+        val iItemStack20 = ItemBracketHandler.getItem("dreamcraft:item.StargateFramePart", 0)
+        val iItemStack21 = ItemBracketHandler.getItem("dreamcraft:item.NanoCircuit", 0)
+        val iItemStack22 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32677)
+        val iItemStack23 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32647)
+        val iItemStack24 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32697)
+        val iItemStack25 = ItemBracketHandler.getItem("gregtech:gt.metaitem.01", 32687)
+        val iItemStack26 = ItemBracketHandler.getItem("EnderIO:blockCapBank", 0)
         val hashMap = HashMap<String, IData>()
         hashMap["type"] = ExpandString.asData("CREATIVE")
         hashMap["storedEnergyRF"] = ExpandInt.toData(2500000)
-        val withTag = item26.withTag(ExpandAnyDict.asData(hashMap))
-        val item27 = ItemBracketHandler.getItem("gregtech:gt.blockcasings", 15)
-        NEI.hide(item4)
-        NEI.hide(item16)
-        MineTweakerAPI.recipes.remove(item)
-        MineTweakerAPI.recipes.remove(item2)
-        MineTweakerAPI.recipes.remove(item3)
-        MineTweakerAPI.recipes.remove(item4)
-        MineTweakerAPI.recipes.remove(item5)
-        MineTweakerAPI.recipes.remove(item6)
-        MineTweakerAPI.recipes.remove(item7)
-        MineTweakerAPI.recipes.remove(item8)
-        MineTweakerAPI.recipes.remove(item9)
-        MineTweakerAPI.recipes.remove(item10)
-        MineTweakerAPI.recipes.remove(item11)
-        MineTweakerAPI.recipes.remove(item12)
-        MineTweakerAPI.recipes.remove(item13)
-        MineTweakerAPI.recipes.remove(item14)
-        MineTweakerAPI.recipes.remove(item15)
-        ExtremeCrafting.addShaped(item, arrayOf(arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"),
-                OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), item20,
-                item19, item20, item20, item18, item18),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item20, item20, item20, item18, item22, item22),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item20, item20, item18, item22, null, null),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item20, item20, item18, item22, null, null),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item20, item19, item18, item22, null, null),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item20, item20, item18, item22, null, null),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item20, item20, item18, item22, null, null),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item20, item20, item20, item18, item22, item22),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item20, item19, item20, item20, item18,
-                        item18)))
-        ExtremeCrafting.addShaped(item12, arrayOf(arrayOfNulls(9),
-                arrayOf<IIngredient?>(null, null, null, item23, item19, item23, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item20, item23, item20, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item22, item19, item22, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item20, item24, item20, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item22, item20, item22, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item20, item23, item20, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item23, item19, item23, null, null, null), arrayOfNulls(9)))
-        ExtremeCrafting.addShaped(item2, arrayOf(arrayOfNulls(9),
-                arrayOf<IIngredient?>(null, null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), null,
-                        null, null, null),
-                arrayOf(null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), item24,
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null),
-                arrayOf(null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), item21, item12, item21,
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), null, null),
-                arrayOf(null, OreBracketHandler.getOre("blockNaquadahAlloy"), item24, item12, item, item12, item24,
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), null),
-                arrayOf(null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), item21, item12, item21,
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), null, null),
-                arrayOf(null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), item24,
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null),
-                arrayOf<IIngredient?>(null, null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), null,
-                        null, null, null), arrayOfNulls(9)))
-        ExtremeCrafting.addShaped(item3, arrayOf(arrayOfNulls(9),
-                arrayOf<IIngredient?>(null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        null, null, null),
-                arrayOf(null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), item25,
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item, item2, item, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item, item17, item, null, null, null),
-                arrayOf<IIngredient?>(null, null, null, item, item, item, null, null, null), arrayOfNulls(9),
-                arrayOfNulls(9), arrayOfNulls(9)))
-        ExtremeCrafting.addShaped(item15, arrayOf(arrayOfNulls(9), arrayOfNulls(9),
-                arrayOf<IIngredient?>(null, null, null, item18, item18, item18, null, null, null),
-                arrayOf<IIngredient?>(null, null, item18, item22, withTag, item22, item18, null, null),
-                arrayOf<IIngredient?>(null, null, item18, withTag, item22, withTag, item18, null, null),
-                arrayOf<IIngredient?>(null, null, item18, item22, withTag, item22, item18, null, null),
-                arrayOf<IIngredient?>(null, null, null, item18, item18, item18, null, null, null), arrayOfNulls(9),
-                arrayOfNulls(9)))
-        ExtremeCrafting.addShaped(item14,
-                arrayOf(arrayOf<IIngredient?>(null, null, null, null, null, OreBracketHandler.getOre("blockTitanium"),
-                        OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                        OreBracketHandler.getOre("blockTitanium")),
-                        arrayOf<IIngredient?>(null, null, null, null, OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), null),
-                        arrayOf<IIngredient?>(null, null, null, OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), null, null),
-                        arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), null, null, null),
-                        arrayOf<IIngredient?>(null, OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                null, null, null), arrayOf<IIngredient?>(OreBracketHandler.getOre("blockTitanium"),
-                        OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                        OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                        OreBracketHandler.getOre("blockTitanium"), null, null, null),
-                        arrayOf<IIngredient?>(OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                null, null), arrayOf(OreBracketHandler.getOre("blockTitanium"), item23,
-                        OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                        OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                        OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), null),
-                        arrayOf(item27, OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"),
-                                OreBracketHandler.getOre("blockTitanium"))))
-        ExtremeCrafting.addShaped(item13,
-                arrayOf(arrayOf<IIngredient?>(null, null, item14, item14, item14, item14, item14, null, null),
-                        arrayOf<IIngredient?>(null, item27, null, null, null, null, null, item27, null),
-                        arrayOf<IIngredient?>(item14, null, null, null, null, null, null, null, item14),
-                        arrayOf<IIngredient?>(item14, null, null, null, null, null, null, null, item14),
-                        arrayOf<IIngredient?>(item14, null, null, null, null, null, null, null, item14),
-                        arrayOf<IIngredient?>(item14, null, null, null, null, null, null, null, item14),
-                        arrayOf<IIngredient?>(item14, null, null, null, null, null, null, null, item14),
-                        arrayOf<IIngredient?>(null, item27, null, null, null, null, null, item27, null),
-                        arrayOf<IIngredient?>(null, null, item14, item14, item14, item14, item14, null, null)))
-        ExtremeCrafting.addShaped(item8, arrayOf(arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"),
-                OreBracketHandler.getOre("blockNaquadahAlloy"), item27, OreBracketHandler.getOre("blockNaquadahAlloy"),
-                OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), item27,
-                OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, item27, null, null, null, item27, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, item27, null, item21, null, item27, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, item27, item15, item27, null, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, item21, item15, item, item15, item21,
-                        null, OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, item27, item15, item27, null, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null, item21, null, null, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf<IIngredient?>(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null, null, null,
-                        null, null, OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf<IIngredient?>(OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"))))
-        ExtremeCrafting.addShaped(item9, arrayOf(arrayOf(item21, item25, OreBracketHandler.getOre("blockNaquadahAlloy"),
-                OreBracketHandler.getOre("blockNaquadahAlloy"), item27, OreBracketHandler.getOre("blockNaquadahAlloy"),
-                OreBracketHandler.getOre("blockNaquadahAlloy"), item24, item21),
-                arrayOf<IIngredient?>(item24, item27, null, null, item27, null, null, item27, item25),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, item27, null, item27, null, item27, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, item27, item27, item27, null, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf<IIngredient?>(item27, item27, item27, item27, item21, item27, item27, item27, item27),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, item27, item27, item27, null, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, item27, null, item27, null, item27, null,
-                        OreBracketHandler.getOre("blockNaquadahAlloy")),
-                arrayOf<IIngredient?>(item25, item27, null, null, item27, null, null, item27, item24),
-                arrayOf(item21, item24, OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), item27,
-                        OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"),
-                        item25, item21)))
+        val iItemStack27 = iItemStack26.withTag(ExpandAnyDict.asData(hashMap))
+        val iItemStack28 = ItemBracketHandler.getItem("gregtech:gt.blockcasings", 15)
+        NEI.hide(iItemStack4)
+        NEI.hide(iItemStack16)
+        MineTweakerAPI.recipes.remove(iItemStack)
+        MineTweakerAPI.recipes.remove(iItemStack2)
+        MineTweakerAPI.recipes.remove(iItemStack3)
+        MineTweakerAPI.recipes.remove(iItemStack4)
+        MineTweakerAPI.recipes.remove(iItemStack5)
+        MineTweakerAPI.recipes.remove(iItemStack6)
+        MineTweakerAPI.recipes.remove(iItemStack7)
+        MineTweakerAPI.recipes.remove(iItemStack8)
+        MineTweakerAPI.recipes.remove(iItemStack9)
+        MineTweakerAPI.recipes.remove(iItemStack10)
+        MineTweakerAPI.recipes.remove(iItemStack11)
+        MineTweakerAPI.recipes.remove(iItemStack12)
+        MineTweakerAPI.recipes.remove(iItemStack13)
+        MineTweakerAPI.recipes.remove(iItemStack14)
+        MineTweakerAPI.recipes.remove(iItemStack15)
+        ExtremeCrafting.addShaped(iItemStack, arrayOf(arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack19, iItemStack20, iItemStack20, iItemStack18, iItemStack18), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack20, iItemStack20, iItemStack18, iItemStack22, iItemStack22), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack20, iItemStack18, iItemStack22, null, null), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack20, iItemStack18, iItemStack22, null, null), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack19, iItemStack18, iItemStack22, null, null), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack20, iItemStack18, iItemStack22, null, null), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack20, iItemStack18, iItemStack22, null, null), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack20, iItemStack20, iItemStack18, iItemStack22, iItemStack22), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack20, iItemStack19, iItemStack20, iItemStack20, iItemStack18, iItemStack18)))
+        ExtremeCrafting.addShaped(iItemStack12, arrayOf(arrayOfNulls(9), arrayOf<IIngredient?>(null, null, null, iItemStack23, iItemStack19, iItemStack23, null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack20, iItemStack23, iItemStack20, null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack22, iItemStack19, iItemStack22, null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack20, iItemStack24, iItemStack20, null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack22, iItemStack20, iItemStack22, null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack20, iItemStack23, iItemStack20, null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack23, iItemStack19, iItemStack23, null, null, null), arrayOfNulls(9)))
+        ExtremeCrafting.addShaped(iItemStack2, arrayOf(arrayOfNulls(9), arrayOf<IIngredient?>(null, null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null, null), arrayOf(null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack24, OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null), arrayOf(null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack21, iItemStack12, iItemStack21, OreBracketHandler.getOre("blockNaquadahAlloy"), null, null), arrayOf(null, OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack24, iItemStack12, iItemStack, iItemStack12, iItemStack24, OreBracketHandler.getOre("blockNaquadahAlloy"), null), arrayOf(null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack21, iItemStack12, iItemStack21, OreBracketHandler.getOre("blockNaquadahAlloy"), null, null), arrayOf(null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack24, OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null), arrayOf<IIngredient?>(null, null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null, null), arrayOfNulls(9)))
+        ExtremeCrafting.addShaped(iItemStack3, arrayOf(arrayOfNulls(9), arrayOf<IIngredient?>(null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null), arrayOf(null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack25, OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack, iItemStack2, iItemStack, null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack, iItemStack17, iItemStack, null, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack, iItemStack, iItemStack, null, null, null), arrayOfNulls(9), arrayOfNulls(9), arrayOfNulls(9)))
+        ExtremeCrafting.addShaped(iItemStack15, arrayOf(arrayOfNulls(9), arrayOfNulls(9), arrayOf<IIngredient?>(null, null, null, iItemStack18, iItemStack18, iItemStack18, null, null, null), arrayOf<IIngredient?>(null, null, iItemStack18, iItemStack22, iItemStack27, iItemStack22, iItemStack18, null, null), arrayOf<IIngredient?>(null, null, iItemStack18, iItemStack27, iItemStack22, iItemStack27, iItemStack18, null, null), arrayOf<IIngredient?>(null, null, iItemStack18, iItemStack22, iItemStack27, iItemStack22, iItemStack18, null, null), arrayOf<IIngredient?>(null, null, null, iItemStack18, iItemStack18, iItemStack18, null, null, null), arrayOfNulls(9), arrayOfNulls(9)))
+        ExtremeCrafting.addShaped(iItemStack14, arrayOf(arrayOf<IIngredient?>(null, null, null, null, null, OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium")), arrayOf<IIngredient?>(null, null, null, null, OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), null), arrayOf<IIngredient?>(null, null, null, OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), null, null), arrayOf<IIngredient?>(null, null, OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), null, null, null), arrayOf<IIngredient?>(null, OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), null, null, null), arrayOf<IIngredient?>(OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), null, null, null), arrayOf<IIngredient?>(OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), null, null), arrayOf(OreBracketHandler.getOre("blockTitanium"), iItemStack23, OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), null), arrayOf(iItemStack28, OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"), OreBracketHandler.getOre("blockTitanium"))))
+        ExtremeCrafting.addShaped(iItemStack13, arrayOf(arrayOf<IIngredient?>(null, null, iItemStack14, iItemStack14, iItemStack14, iItemStack14, iItemStack14, null, null), arrayOf<IIngredient?>(null, iItemStack28, null, null, null, null, null, iItemStack28, null), arrayOf<IIngredient?>(iItemStack14, null, null, null, null, null, null, null, iItemStack14), arrayOf<IIngredient?>(iItemStack14, null, null, null, null, null, null, null, iItemStack14), arrayOf<IIngredient?>(iItemStack14, null, null, null, null, null, null, null, iItemStack14), arrayOf<IIngredient?>(iItemStack14, null, null, null, null, null, null, null, iItemStack14), arrayOf<IIngredient?>(iItemStack14, null, null, null, null, null, null, null, iItemStack14), arrayOf<IIngredient?>(null, iItemStack28, null, null, null, null, null, iItemStack28, null), arrayOf<IIngredient?>(null, null, iItemStack14, iItemStack14, iItemStack14, iItemStack14, iItemStack14, null, null)))
+        ExtremeCrafting.addShaped(iItemStack8, arrayOf(arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack28, OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack28, OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, iItemStack28, null, null, null, iItemStack28, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, iItemStack28, null, iItemStack21, null, iItemStack28, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, iItemStack28, iItemStack15, iItemStack28, null, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, iItemStack21, iItemStack15, iItemStack, iItemStack15, iItemStack21, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, iItemStack28, iItemStack15, iItemStack28, null, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null, iItemStack21, null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf<IIngredient?>(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, null, null, null, null, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf<IIngredient?>(OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"))))
+        ExtremeCrafting.addShaped(iItemStack9, arrayOf(arrayOf(iItemStack21, iItemStack25, OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack28, OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack24, iItemStack21), arrayOf<IIngredient?>(iItemStack24, iItemStack28, null, null, iItemStack28, null, null, iItemStack28, iItemStack25), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, iItemStack28, null, iItemStack28, null, iItemStack28, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, iItemStack28, iItemStack28, iItemStack28, null, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf<IIngredient?>(iItemStack28, iItemStack28, iItemStack28, iItemStack28, iItemStack21, iItemStack28, iItemStack28, iItemStack28, iItemStack28), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, null, iItemStack28, iItemStack28, iItemStack28, null, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf(OreBracketHandler.getOre("blockNaquadahAlloy"), null, iItemStack28, null, iItemStack28, null, iItemStack28, null, OreBracketHandler.getOre("blockNaquadahAlloy")), arrayOf<IIngredient?>(iItemStack25, iItemStack28, null, null, iItemStack28, null, null, iItemStack28, iItemStack24), arrayOf(iItemStack21, iItemStack24, OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack28, OreBracketHandler.getOre("blockNaquadahAlloy"), OreBracketHandler.getOre("blockNaquadahAlloy"), iItemStack25, iItemStack21)))
     }
 }

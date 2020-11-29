@@ -1,273 +1,171 @@
 package com.github.GTNH2Mega.fromScripts
 
+import java.lang.Runnable
+import minetweaker.api.item.IItemStack
+import minetweaker.mc1710.brackets.ItemBracketHandler
+import minetweaker.api.oredict.IOreDictEntry
+import minetweaker.mc1710.brackets.OreBracketHandler
 import minetweaker.MineTweakerAPI
 import minetweaker.api.item.IIngredient
-import minetweaker.mc1710.brackets.ItemBracketHandler
-import minetweaker.mc1710.brackets.OreBracketHandler
-import net.minecraftforge.oredict.OreDictionary
+import modtweaker2.mods.tconstruct.handlers.Drying
 
 class Backpack : Runnable {
     override fun run() {
-        val item = ItemBracketHandler.getItem("Backpack:backpack", 0)
-        val item2 = ItemBracketHandler.getItem("Backpack:backpack", 1)
-        val item3 = ItemBracketHandler.getItem("Backpack:backpack", 2)
-        val item4 = ItemBracketHandler.getItem("Backpack:backpack", 3)
-        val item5 = ItemBracketHandler.getItem("Backpack:backpack", 4)
-        val item6 = ItemBracketHandler.getItem("Backpack:backpack", 5)
-        val item7 = ItemBracketHandler.getItem("Backpack:backpack", 6)
-        val item8 = ItemBracketHandler.getItem("Backpack:backpack", 7)
-        val item9 = ItemBracketHandler.getItem("Backpack:backpack", 8)
-        val item10 = ItemBracketHandler.getItem("Backpack:backpack", 9)
-        val item11 = ItemBracketHandler.getItem("Backpack:backpack", 10)
-        val item12 = ItemBracketHandler.getItem("Backpack:backpack", 11)
-        val item13 = ItemBracketHandler.getItem("Backpack:backpack", 12)
-        val item14 = ItemBracketHandler.getItem("Backpack:backpack", 13)
-        val item15 = ItemBracketHandler.getItem("Backpack:backpack", 14)
-        val item16 = ItemBracketHandler.getItem("Backpack:backpack", 15)
-        val item17 = ItemBracketHandler.getItem("Backpack:backpack", 16)
-        val item18 = ItemBracketHandler.getItem("Backpack:backpack", 100)
-        val item19 = ItemBracketHandler.getItem("Backpack:backpack", 101)
-        val item20 = ItemBracketHandler.getItem("Backpack:backpack", 102)
-        val item21 = ItemBracketHandler.getItem("Backpack:backpack", 103)
-        val item22 = ItemBracketHandler.getItem("Backpack:backpack", 104)
-        val item23 = ItemBracketHandler.getItem("Backpack:backpack", 105)
-        val item24 = ItemBracketHandler.getItem("Backpack:backpack", 106)
-        val item25 = ItemBracketHandler.getItem("Backpack:backpack", 107)
-        val item26 = ItemBracketHandler.getItem("Backpack:backpack", 108)
-        val item27 = ItemBracketHandler.getItem("Backpack:backpack", 109)
-        val item28 = ItemBracketHandler.getItem("Backpack:backpack", 110)
-        val item29 = ItemBracketHandler.getItem("Backpack:backpack", 111)
-        val item30 = ItemBracketHandler.getItem("Backpack:backpack", 112)
-        val item31 = ItemBracketHandler.getItem("Backpack:backpack", 113)
-        val item32 = ItemBracketHandler.getItem("Backpack:backpack", 114)
-        val item33 = ItemBracketHandler.getItem("Backpack:backpack", 115)
-        val item34 = ItemBracketHandler.getItem("Backpack:backpack", 116)
-        val item35 = ItemBracketHandler.getItem("Backpack:backpack", 200)
-        val item36 = ItemBracketHandler.getItem("Backpack:backpack", 201)
-        val item37 = ItemBracketHandler.getItem("Backpack:backpack", 202)
-        val item38 = ItemBracketHandler.getItem("Backpack:backpack", 203)
-        val item39 = ItemBracketHandler.getItem("Backpack:backpack", 204)
-        val item40 = ItemBracketHandler.getItem("Backpack:backpack", 205)
-        val item41 = ItemBracketHandler.getItem("Backpack:backpack", 206)
-        val item42 = ItemBracketHandler.getItem("Backpack:backpack", 207)
-        val item43 = ItemBracketHandler.getItem("Backpack:backpack", 208)
-        val item44 = ItemBracketHandler.getItem("Backpack:backpack", 209)
-        val item45 = ItemBracketHandler.getItem("Backpack:backpack", 210)
-        val item46 = ItemBracketHandler.getItem("Backpack:backpack", 211)
-        val item47 = ItemBracketHandler.getItem("Backpack:backpack", 212)
-        val item48 = ItemBracketHandler.getItem("Backpack:backpack", 213)
-        val item49 = ItemBracketHandler.getItem("Backpack:backpack", 214)
-        val item50 = ItemBracketHandler.getItem("Backpack:backpack", 215)
-        val item51 = ItemBracketHandler.getItem("Backpack:backpack", 216)
-        val item52 = ItemBracketHandler.getItem("Backpack:workbenchbackpack", 17)
-        val item53 = ItemBracketHandler.getItem("Backpack:workbenchbackpack", 217)
-        val item54 = ItemBracketHandler.getItem("Backpack:tannedLeather", 0)
-        val item55 = ItemBracketHandler.getItem("Backpack:boundLeather", 0)
-        val ore = OreBracketHandler.getOre("materialCloth")
-        val item56 = ItemBracketHandler.getItem("minecraft:string", 0)
-        val ore2 = OreBracketHandler.getOre("itemLeather")
-
-        //TODO Replace ("harvestcraft:hardenedleatherItem", 0)
-        //val item57 = ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0)
-
-        //TODO Replace ("ExtraUtilities:paintbrush", 0)
-        //val item58 = ItemBracketHandler.getItem("ExtraUtilities:paintbrush", 0)
-
-        val ore3 = OreBracketHandler.getOre("ringSteel")
-        val ore5 = OreBracketHandler.getOre("ringTitanium")
-
-        //TODO Replace ("TConstruct:CraftingSlab", 0)
-        //val item59 = ItemBracketHandler.getItem("TConstruct:CraftingSlab", 0)
-
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:backpack", OreDictionary.WILDCARD_VALUE))
-        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:workbenchbackpack", OreDictionary.WILDCARD_VALUE))
+        val iItemStack = ItemBracketHandler.getItem("Backpack:backpack", 0)
+        val iItemStack2 = ItemBracketHandler.getItem("Backpack:backpack", 1)
+        val iItemStack3 = ItemBracketHandler.getItem("Backpack:backpack", 2)
+        val iItemStack4 = ItemBracketHandler.getItem("Backpack:backpack", 3)
+        val iItemStack5 = ItemBracketHandler.getItem("Backpack:backpack", 4)
+        val iItemStack6 = ItemBracketHandler.getItem("Backpack:backpack", 5)
+        val iItemStack7 = ItemBracketHandler.getItem("Backpack:backpack", 6)
+        val iItemStack8 = ItemBracketHandler.getItem("Backpack:backpack", 7)
+        val iItemStack9 = ItemBracketHandler.getItem("Backpack:backpack", 8)
+        val iItemStack10 = ItemBracketHandler.getItem("Backpack:backpack", 9)
+        val iItemStack11 = ItemBracketHandler.getItem("Backpack:backpack", 10)
+        val iItemStack12 = ItemBracketHandler.getItem("Backpack:backpack", 11)
+        val iItemStack13 = ItemBracketHandler.getItem("Backpack:backpack", 12)
+        val iItemStack14 = ItemBracketHandler.getItem("Backpack:backpack", 13)
+        val iItemStack15 = ItemBracketHandler.getItem("Backpack:backpack", 14)
+        val iItemStack16 = ItemBracketHandler.getItem("Backpack:backpack", 15)
+        val iItemStack17 = ItemBracketHandler.getItem("Backpack:backpack", 16)
+        val iItemStack18 = ItemBracketHandler.getItem("Backpack:backpack", 100)
+        val iItemStack19 = ItemBracketHandler.getItem("Backpack:backpack", 101)
+        val iItemStack20 = ItemBracketHandler.getItem("Backpack:backpack", 102)
+        val iItemStack21 = ItemBracketHandler.getItem("Backpack:backpack", 103)
+        val iItemStack22 = ItemBracketHandler.getItem("Backpack:backpack", 104)
+        val iItemStack23 = ItemBracketHandler.getItem("Backpack:backpack", 105)
+        val iItemStack24 = ItemBracketHandler.getItem("Backpack:backpack", 106)
+        val iItemStack25 = ItemBracketHandler.getItem("Backpack:backpack", 107)
+        val iItemStack26 = ItemBracketHandler.getItem("Backpack:backpack", 108)
+        val iItemStack27 = ItemBracketHandler.getItem("Backpack:backpack", 109)
+        val iItemStack28 = ItemBracketHandler.getItem("Backpack:backpack", 110)
+        val iItemStack29 = ItemBracketHandler.getItem("Backpack:backpack", 111)
+        val iItemStack30 = ItemBracketHandler.getItem("Backpack:backpack", 112)
+        val iItemStack31 = ItemBracketHandler.getItem("Backpack:backpack", 113)
+        val iItemStack32 = ItemBracketHandler.getItem("Backpack:backpack", 114)
+        val iItemStack33 = ItemBracketHandler.getItem("Backpack:backpack", 115)
+        val iItemStack34 = ItemBracketHandler.getItem("Backpack:backpack", 116)
+        val iItemStack35 = ItemBracketHandler.getItem("Backpack:backpack", 200)
+        val iItemStack36 = ItemBracketHandler.getItem("Backpack:backpack", 201)
+        val iItemStack37 = ItemBracketHandler.getItem("Backpack:backpack", 202)
+        val iItemStack38 = ItemBracketHandler.getItem("Backpack:backpack", 203)
+        val iItemStack39 = ItemBracketHandler.getItem("Backpack:backpack", 204)
+        val iItemStack40 = ItemBracketHandler.getItem("Backpack:backpack", 205)
+        val iItemStack41 = ItemBracketHandler.getItem("Backpack:backpack", 206)
+        val iItemStack42 = ItemBracketHandler.getItem("Backpack:backpack", 207)
+        val iItemStack43 = ItemBracketHandler.getItem("Backpack:backpack", 208)
+        val iItemStack44 = ItemBracketHandler.getItem("Backpack:backpack", 209)
+        val iItemStack45 = ItemBracketHandler.getItem("Backpack:backpack", 210)
+        val iItemStack46 = ItemBracketHandler.getItem("Backpack:backpack", 211)
+        val iItemStack47 = ItemBracketHandler.getItem("Backpack:backpack", 212)
+        val iItemStack48 = ItemBracketHandler.getItem("Backpack:backpack", 213)
+        val iItemStack49 = ItemBracketHandler.getItem("Backpack:backpack", 214)
+        val iItemStack50 = ItemBracketHandler.getItem("Backpack:backpack", 215)
+        val iItemStack51 = ItemBracketHandler.getItem("Backpack:backpack", 216)
+        val iItemStack53 = ItemBracketHandler.getItem("Backpack:workbenchbackpack", 17)
+        val iItemStack54 = ItemBracketHandler.getItem("Backpack:workbenchbackpack", 217)
+        val iItemStack55 = ItemBracketHandler.getItem("Backpack:tannedLeather", 0)
+        val iItemStack56 = ItemBracketHandler.getItem("Backpack:boundLeather", 0)
+        val iOreDictEntry = OreBracketHandler.getOre("materialCloth")
+        val iItemStack57 = ItemBracketHandler.getItem("minecraft:string", 0)
+        val iOreDictEntry2 = OreBracketHandler.getOre("itemLeather")
+        val iItemStack58 = ItemBracketHandler.getItem("harvestcraft:hardenedleatherItem", 0)
+        val iItemStack59 = ItemBracketHandler.getItem("ExtraUtilities:paintbrush", 0)
+        val iOreDictEntry3 = OreBracketHandler.getOre("ringSteel")
+        val iOreDictEntry4 = OreBracketHandler.getOre("ringStainlessSteel")
+        val iOreDictEntry5 = OreBracketHandler.getOre("ringTitanium")
+        val iItemStack60 = ItemBracketHandler.getItem("TConstruct:CraftingSlab", 0)
+        val iItemStack61 = ItemBracketHandler.getItem("Backpack:backpack", 32767)
+        MineTweakerAPI.recipes.remove(iItemStack61)
+        MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:workbenchbackpack", 32767))
         MineTweakerAPI.recipes.remove(ItemBracketHandler.getItem("Backpack:boundLeather", 0))
         MineTweakerAPI.furnace.remove(ItemBracketHandler.getItem("Backpack:tannedLeather", 0), null)
-        MineTweakerAPI.recipes.addShaped(item55,
-                arrayOf(arrayOf(item56, ore2, item56), arrayOf<IIngredient>(ore2, ore, ore2),
-                        arrayOf(item56, ore2, item56)), null)
-        MineTweakerAPI.recipes.addShaped(item,
-                arrayOf(arrayOf<IIngredient>(ore, ore3, ore), arrayOf(item54, ore, item54),
-                        arrayOf<IIngredient>(item54, item54, item54)), null)
-
-        //TODO Replace ("ExtraUtilities:paintbrush", 0) in val item58
-        //MineTweakerAPI.recipes.addShapeless(item2, arrayOf(item, OreBracketHandler.getOre("dyeBlack"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item3, arrayOf(item, OreBracketHandler.getOre("dyeRed"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item4, arrayOf(item, OreBracketHandler.getOre("dyeGreen"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item5, arrayOf(item, OreBracketHandler.getOre("dyeBrown"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item6, arrayOf(item, OreBracketHandler.getOre("dyeBlue"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item7, arrayOf(item, OreBracketHandler.getOre("dyePurple"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item8, arrayOf(item, OreBracketHandler.getOre("dyeCyan"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item9, arrayOf(item, OreBracketHandler.getOre("dyeLightGray"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShapeless(item10, arrayOf(item, OreBracketHandler.getOre("dyeGray"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item11, arrayOf(item, OreBracketHandler.getOre("dyePink"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item12, arrayOf(item, OreBracketHandler.getOre("dyeLime"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item13, arrayOf(item, OreBracketHandler.getOre("dyeYellow"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item14, arrayOf(item, OreBracketHandler.getOre("dyeLightBlue"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShapeless(item15, arrayOf(item, OreBracketHandler.getOre("dyeMagenta"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item16, arrayOf(item, OreBracketHandler.getOre("dyeOrange"), item58), null)
-        //MineTweakerAPI.recipes.addShapeless(item17, arrayOf(item, OreBracketHandler.getOre("dyeWhite"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item18,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item19, arrayOf(item18, OreBracketHandler.getOre("dyeBlack"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item19,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item2, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item20, arrayOf(item18, OreBracketHandler.getOre("dyeRed"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item20,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item3, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item21, arrayOf(item18, OreBracketHandler.getOre("dyeGreen"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item21,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item4, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item22, arrayOf(item18, OreBracketHandler.getOre("dyeBrown"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item22,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item5, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item23, arrayOf(item18, OreBracketHandler.getOre("dyeBlue"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item23,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item6, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item24, arrayOf(item18, OreBracketHandler.getOre("dyePurple"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item24,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item7, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item25, arrayOf(item18, OreBracketHandler.getOre("dyeCyan"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item25,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item8, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item26, arrayOf(item18, OreBracketHandler.getOre("dyeLightBlue"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item26,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item9, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item27, arrayOf(item18, OreBracketHandler.getOre("dyeGray"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item27,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item10, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item28, arrayOf(item18, OreBracketHandler.getOre("dyePink"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item28,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item11, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item29, arrayOf(item18, OreBracketHandler.getOre("dyeLime"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item29,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item12, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item30, arrayOf(item18, OreBracketHandler.getOre("dyeYellow"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item30,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item13, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item31, arrayOf(item18, OreBracketHandler.getOre("dyeLightBlue"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item31,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item14, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item32, arrayOf(item18, OreBracketHandler.getOre("dyeMagenta"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item32,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item15, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item33, arrayOf(item18, OreBracketHandler.getOre("dyeOrange"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item33,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item16, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShapeless(item34, arrayOf(item18, OreBracketHandler.getOre("dyeWhite"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item34,
-        //        arrayOf(arrayOf(ore4, item54, ore4), arrayOf<IIngredient>(item54, item17, item54),
-        //                arrayOf(ore4, item54, ore4)), null)
-        //MineTweakerAPI.recipes.addShaped(item35,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item18, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item36, arrayOf(item35, OreBracketHandler.getOre("dyeBlack"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item36,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item19, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item37, arrayOf(item35, OreBracketHandler.getOre("dyeRed"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item37,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item20, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item38, arrayOf(item35, OreBracketHandler.getOre("dyeGreen"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item38,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item21, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item39, arrayOf(item35, OreBracketHandler.getOre("dyeBrown"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item39,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item22, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item40, arrayOf(item35, OreBracketHandler.getOre("dyeBlue"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item40,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item23, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item41, arrayOf(item35, OreBracketHandler.getOre("dyePurple"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item41,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item24, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item42, arrayOf(item35, OreBracketHandler.getOre("dyeCyan"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item42,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item25, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item43, arrayOf(item35, OreBracketHandler.getOre("dyeLightGray"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item43,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item26, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item44, arrayOf(item35, OreBracketHandler.getOre("dyeGray"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item44,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item27, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item45, arrayOf(item35, OreBracketHandler.getOre("dyePink"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item45,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item28, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item46, arrayOf(item35, OreBracketHandler.getOre("dyeLime"), item58), null)
-        //MineTweakerAPI.recipes.addShaped(item46,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item29, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item47, arrayOf(item35, OreBracketHandler.getOre("dyeYellow"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item47,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item30, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item48, arrayOf(item35, OreBracketHandler.getOre("dyeLightBlue"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item48,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item31, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item49, arrayOf(item35, OreBracketHandler.getOre("dyeMagenta"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item49,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item32, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item50, arrayOf(item35, OreBracketHandler.getOre("dyeOrange"), item58),
-        //        null)
-        //MineTweakerAPI.recipes.addShaped(item50,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item33, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-        //MineTweakerAPI.recipes.addShapeless(item51, arrayOf(item35, OreBracketHandler.getOre("dyeWhite"), item58), null)
-
-        //TODO Replace ("harvestcraft:hardenedleatherItem", 0) in item57
-        //MineTweakerAPI.recipes.addShaped(item51,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item34, item57),
-        //                arrayOf(ore5, item57, ore5)), null)
-
-        //TODO Replace ("TConstruct:CraftingSlab", 0) in item59
-        //MineTweakerAPI.recipes.addShaped(item52,
-        //        arrayOf(arrayOf<IIngredient>(ore, ore3, ore), arrayOf(item54, ore, item54),
-        //                arrayOf<IIngredient>(item54, item59, item54)), null)
-        //MineTweakerAPI.recipes.addShaped(item53,
-        //        arrayOf(arrayOf(ore5, item57, ore5), arrayOf<IIngredient>(item57, item18, item57),
-        //                arrayOf(ore5, item59, ore5)), null)
-
-        //TODO Replace Drying Rack
-        //Drying.addRecipe(ItemBracketHandler.getItem("Backpack:boundLeather", 0),
-        //        ItemBracketHandler.getItem("Backpack:tannedLeather", 0), 12000)
+        MineTweakerAPI.recipes.addShaped(iItemStack56, arrayOf(arrayOf(iItemStack57, iOreDictEntry2, iItemStack57), arrayOf<IIngredient>(iOreDictEntry2, iOreDictEntry, iOreDictEntry2), arrayOf(iItemStack57, iOreDictEntry2, iItemStack57)), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack, arrayOf(arrayOf<IIngredient>(iOreDictEntry, iOreDictEntry3, iOreDictEntry), arrayOf(iItemStack55, iOreDictEntry, iItemStack55), arrayOf<IIngredient>(iItemStack55, iItemStack55, iItemStack55)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack2, arrayOf(iItemStack, OreBracketHandler.getOre("dyeBlack"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack3, arrayOf(iItemStack, OreBracketHandler.getOre("dyeRed"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack4, arrayOf(iItemStack, OreBracketHandler.getOre("dyeGreen"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack5, arrayOf(iItemStack, OreBracketHandler.getOre("dyeBrown"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack6, arrayOf(iItemStack, OreBracketHandler.getOre("dyeBlue"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack7, arrayOf(iItemStack, OreBracketHandler.getOre("dyePurple"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack8, arrayOf(iItemStack, OreBracketHandler.getOre("dyeCyan"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack9, arrayOf(iItemStack, OreBracketHandler.getOre("dyeLightGray"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack10, arrayOf(iItemStack, OreBracketHandler.getOre("dyeGray"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack11, arrayOf(iItemStack, OreBracketHandler.getOre("dyePink"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack12, arrayOf(iItemStack, OreBracketHandler.getOre("dyeLime"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack13, arrayOf(iItemStack, OreBracketHandler.getOre("dyeYellow"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack14, arrayOf(iItemStack, OreBracketHandler.getOre("dyeLightBlue"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack15, arrayOf(iItemStack, OreBracketHandler.getOre("dyeMagenta"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack16, arrayOf(iItemStack, OreBracketHandler.getOre("dyeOrange"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack17, arrayOf(iItemStack, OreBracketHandler.getOre("dyeWhite"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack18, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack19, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeBlack"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack19, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack2, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack20, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeRed"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack20, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack3, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack21, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeGreen"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack21, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack4, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack22, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeBrown"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack22, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack5, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack23, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeBlue"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack23, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack6, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack24, arrayOf(iItemStack18, OreBracketHandler.getOre("dyePurple"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack24, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack7, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack25, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeCyan"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack25, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack8, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack26, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeLightBlue"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack26, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack9, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack27, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeGray"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack27, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack10, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack28, arrayOf(iItemStack18, OreBracketHandler.getOre("dyePink"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack28, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack11, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack29, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeLime"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack29, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack12, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack30, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeYellow"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack30, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack13, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack31, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeLightBlue"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack31, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack14, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack32, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeMagenta"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack32, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack15, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack33, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeOrange"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack33, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack16, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack34, arrayOf(iItemStack18, OreBracketHandler.getOre("dyeWhite"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack34, arrayOf(arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4), arrayOf<IIngredient>(iItemStack55, iItemStack17, iItemStack55), arrayOf(iOreDictEntry4, iItemStack55, iOreDictEntry4)), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack35, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack18, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack36, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeBlack"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack36, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack19, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack37, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeRed"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack37, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack20, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack38, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeGreen"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack38, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack21, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack39, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeBrown"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack39, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack22, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack40, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeBlue"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack40, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack23, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack41, arrayOf(iItemStack35, OreBracketHandler.getOre("dyePurple"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack41, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack24, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack42, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeCyan"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack42, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack25, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack43, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeLightGray"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack43, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack26, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack44, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeGray"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack44, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack27, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack45, arrayOf(iItemStack35, OreBracketHandler.getOre("dyePink"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack45, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack28, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack46, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeLime"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack46, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack29, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack47, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeYellow"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack47, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack30, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack48, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeLightBlue"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack48, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack31, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack49, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeMagenta"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack49, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack32, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack50, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeOrange"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack50, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack33, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShapeless(iItemStack51, arrayOf(iItemStack35, OreBracketHandler.getOre("dyeWhite"), iItemStack59), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack51, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack34, iItemStack58), arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5)), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack53, arrayOf(arrayOf<IIngredient>(iOreDictEntry, iOreDictEntry3, iOreDictEntry), arrayOf(iItemStack55, iOreDictEntry, iItemStack55), arrayOf<IIngredient>(iItemStack55, iItemStack60, iItemStack55)), null)
+        MineTweakerAPI.recipes.addShaped(iItemStack54, arrayOf(arrayOf(iOreDictEntry5, iItemStack58, iOreDictEntry5), arrayOf<IIngredient>(iItemStack58, iItemStack18, iItemStack58), arrayOf(iOreDictEntry5, iItemStack60, iOreDictEntry5)), null)
+        Drying.addRecipe(ItemBracketHandler.getItem("Backpack:boundLeather", 0), ItemBracketHandler.getItem("Backpack:tannedLeather", 0), 12000)
     }
 }
